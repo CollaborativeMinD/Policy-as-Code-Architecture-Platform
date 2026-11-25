@@ -119,7 +119,7 @@ async def run(tmp, source):
             await pilot.pause()
             assert not actor.query_one("#open").display and not actor.query_one("#run").disabled
             await pilot.click("#run")
-            for _ in range(200):
+            for _ in range(2400):
                 if "receipt" in str(actor.query_one("#feedback", Static).content):
                     break
                 await asyncio.sleep(.1)

@@ -15,7 +15,10 @@ class Remote:
 
     async def call(self, tool_name, **arguments):
         token = self.token_file.read_text().strip()
-        async with asyncio.timeout(25), httpx2.AsyncClient(
+        # Export runs several native qualification processes before it returns a receipt.
+        deadline = 240 if tool_name == "task.execute" else 25
+        async with asyncio.timeout(deadline), httpx2.AsyncClient(
+            timeout=httpx2.Timeout(deadline, connect=5),
             headers={"Authorization": "Bearer " + token}, trust_env=False, follow_redirects=False
         ) as http:
             async with Client(streamable_http_client(self.url, http_client=http), mode="2026-07-28") as peer:
