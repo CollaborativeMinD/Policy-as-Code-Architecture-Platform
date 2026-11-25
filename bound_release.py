@@ -5,6 +5,7 @@ import json
 from pathlib import Path, PurePosixPath
 import re
 import stat
+from native_budget import QualificationBudget
 import subprocess
 import sys
 import tempfile
@@ -117,7 +118,7 @@ def _witness(directory):
     code = ("import runpy,sys; from pathlib import Path; root=Path(sys.argv[1]);"
             "sys.path.insert(0,str(root)); runpy.run_module('policy_runtime.witness',run_name='__main__')")
     proc = subprocess.run([sys.executable, "-I", "-B", "-c", code, str(directory)], cwd=directory,
-                          capture_output=True, timeout=60)
+                          capture_output=True, timeout=QualificationBudget.read(Path(__file__).with_name("qualification_policy.toml")).process_seconds)
     if proc.returncode:
         raise AdmissionError("software binding did not qualify:\n" + proc.stderr.decode(errors="replace")[-3000:])
     return json.loads(proc.stdout)

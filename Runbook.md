@@ -59,3 +59,5 @@ Start with [registry.toml](registry.toml) for this component and [console.toml](
 4. Qualify the exact commit on local Forgejo. Review the package, image, security scan and receipt for each release target. Ship the reviewed artifacts and record their digests.
 
 The version 2 `[runtime]` table in `console.toml` sets request size, concurrency and client deadlines. Version 1 files inherit the shipped budget. Reissue them as version 2 to pin these choices in the admitted document.
+
+Set the native witness deadline in [qualification_policy.toml](qualification_policy.toml). It applies to software bindings and OODA subprocesses.

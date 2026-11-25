@@ -7,6 +7,7 @@ import json
 import os
 from pathlib import Path, PurePosixPath
 import re
+from native_budget import QualificationBudget
 import subprocess
 import sys
 import tempfile
@@ -215,7 +216,7 @@ def _stage(root, contents):
 
 def _run(root, bootstrap, *arguments):
     proc = subprocess.run([sys.executable, "-I", "-B", "-c", bootstrap, str(root), *map(str, arguments)],
-                          cwd=root, capture_output=True, timeout=60)
+                          cwd=root, capture_output=True, timeout=QualificationBudget.read(Path(__file__).with_name("qualification_policy.toml")).process_seconds)
     require(proc.returncode == 0, proc.stderr.decode(errors="replace").strip() or "adapter failed")
     return proc.stdout
 
