@@ -1,0 +1,22 @@
+textual==8.2.8
+mcp==2.3.0
+uvicorn==0.54.0
+annotated-types==0.8.0
+asyncpg==0.32.0
+greenlet==3.5.6
+polars==2.1.0
+polars-runtime-32==2.1.0
+psycopg==3.3.7
+psycopg-binary==3.3.7 ; implementation_name != 'pypy'
+psycopg-pool==3.3.3
+pydantic==2.14.2
+pydantic-core==2.50.2
+pyrsistent==0.20.0
+redis==8.1.0
+sqlalchemy==2.1.8
+sqlmodel==0.0.48
+typing-extensions==4.16.0
+typing-inspection==0.4.4
+tzdata==2026.6 ; sys_platform == 'win32'
+networkx==3.6.1
+tenacity==9.2.1
