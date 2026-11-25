@@ -14,7 +14,6 @@ from zipfile import ZIP_STORED, ZipFile, ZipInfo
 from factory import AdmissionError, at, canonical, digest, fields, read_bytes, require
 
 
-ARCHIVE_LIMIT = 4_194_304
 SAFE_PART = re.compile(r"[A-Za-z0-9][A-Za-z0-9_.-]*|__[A-Za-z0-9_]+\.py")
 
 
@@ -76,7 +75,7 @@ def leaf_files(registry, item):
 
 def postgres_files(registry, item, release):
     branch = registry.root / "patterns" / "database" / "postgresql"
-    raw = read_bytes(branch / "release" / "artifact_manifest.json", 1_048_576)
+    raw = read_bytes(branch / "release" / "artifact_manifest.json", QualificationBudget.current().manifest_bytes)
     require(digest(raw) == release["postgres_manifest_sha256"], "PostgreSQL manifest pin differs")
     records = {row["path"]: row["sha256"] for row in json.loads(raw)["files"]}
     catalog = registry.evidence(item)
@@ -106,7 +105,7 @@ def hashes(files):
     folded = set()
     for name, value in sorted(files.items()):
         path_check(name)
-        require(name.casefold() not in folded and len(value) <= 262_144, "duplicate or oversized archive member")
+        require(name.casefold() not in folded and len(value) <= QualificationBudget.current().member_bytes, "duplicate or oversized archive member")
         folded.add(name.casefold())
         index[name] = digest(value)
     require(not any(parent.as_posix().casefold() in folded for name in files for parent in PurePosixPath(name).parents),
@@ -155,16 +154,16 @@ def build_bundle(registry, item, decision, candidate):
 def verify_bundle(path, item, released_files, expected=None):
     from policy_runtime.contracts import parse_policy
 
-    raw = read_bytes(path, ARCHIVE_LIMIT)
+    raw = read_bytes(path, QualificationBudget.current().archive_bytes)
     stamp = digest(raw)
     require(expected is None or stamp == expected, "archive checksum differs")
     with ZipFile(BytesIO(raw)) as archive:
         files = {}
-        require(len(archive.infolist()) <= 100, "too many archive files")
+        require(len(archive.infolist()) <= QualificationBudget.current().archive_members, "too many archive files")
         for member in archive.infolist():
             name = member.filename
             path_check(name)
-            require(name not in files and member.file_size <= 262_144 and member.compress_type == ZIP_STORED
+            require(name not in files and member.file_size <= QualificationBudget.current().member_bytes and member.compress_type == ZIP_STORED
                     and stat.S_ISREG(member.external_attr >> 16), "unsupported archive member")
             files[name] = archive.read(member)
     hashes(files)

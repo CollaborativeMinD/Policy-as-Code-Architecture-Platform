@@ -20,7 +20,6 @@ REGISTRY_ID = "patterns@1"
 BRANCHES = ("behavioral", "creational", "structural", "database", "resilience")
 RETRY_ID = "resilience-ooda"
 MINIMUM_POLICY_FILES = {"bundle_exporter.py", "retry_runtime.py", "witness.py", "requirements.lock", "catalog.toml"}
-MAX_DECLARATION_BYTES = 131_072
 
 
 class AdmissionError(ValueError):
@@ -44,7 +43,9 @@ def canonical(value):
     return (json.dumps(value, sort_keys=True, indent=2, allow_nan=False) + "\n").encode()
 
 
-def read_bytes(path, maximum=MAX_DECLARATION_BYTES):
+def read_bytes(path, maximum=None):
+    if maximum is None:
+        maximum = QualificationBudget.current().declaration_bytes
     with path.open("rb") as source:
         value = source.read(maximum + 1)
     require(len(value) <= maximum, f"file exceeds its limit: {path.name}")
@@ -145,7 +146,7 @@ class Registry:
             if item["binding"] == "reference":
                 holds.append({"pattern": key, "reason": "NO_QUALIFIED_FACTORY_BINDING"})
             elif "configuration" in request_item:
-                configurations[key] = read_bytes(at(self.root, request_item["configuration"]), 65_536)
+                configurations[key] = read_bytes(at(self.root, request_item["configuration"]), QualificationBudget.current().configuration_bytes)
             else:
                 holds.append({"pattern": key, "reason": "CONFIGURATION_REQUIRED"})
         if len(chosen) != 1:
@@ -187,12 +188,12 @@ class Registry:
     def audit(self):
         from bound_release import default_policy, original_files, runtime_files, runtime_release
 
-        raw = read_bytes(self.root / "evidence" / "intake.json", 524_288)
+        raw = read_bytes(self.root / "evidence" / "intake.json", QualificationBudget.current().intake_bytes)
         require(digest(raw) == self.intake_sha256, "intake evidence digest mismatch")
         intake = json.loads(raw)
         preserved = intake["untouched_branch_files"]
         for name, expected in preserved.items():
-            require(digest(read_bytes(at(self.root, name), 8_388_608)) == expected, f"intake bytes changed: {name}")
+            require(digest(read_bytes(at(self.root, name), QualificationBudget.current().source_bytes)) == expected, f"intake bytes changed: {name}")
         release = runtime_release(self)
         runtime_files(self, release)
         for item in self.entries.values():

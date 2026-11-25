@@ -1,1 +1,9 @@
 process_seconds = 60
+declaration_bytes = 131072
+archive_bytes = 4194304
+member_bytes = 262144
+archive_members = 100
+manifest_bytes = 1048576
+configuration_bytes = 65536
+intake_bytes = 524288
+source_bytes = 8388608
