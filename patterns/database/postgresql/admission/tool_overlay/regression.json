@@ -1,0 +1,291 @@
+{
+  "status": "PASS",
+  "scope": "Only loader binding, exact resource ceilings, analyzer identity formatting, unchanged policy and core findings; no target admission claim.",
+  "python": "/workspace/scratch/e7495113964e/work/.optimization/bin/python",
+  "results": [
+    {
+      "name": "original-limits-adversarial_agents",
+      "argv": [
+        "/workspace/scratch/e7495113964e/work/.optimization/bin/python",
+        "/workspace/scratch/e7495113964e/work/admission_overlay/probe.py",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42",
+        "limits",
+        "adversarial_agents",
+        "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "3462032b6946c5935acfc78d0268b0f1dd7bd93e5b654b12fd85fb3764cfa499"
+    },
+    {
+      "name": "overlay-limits-adversarial_agents",
+      "argv": [
+        "/workspace/scratch/e7495113964e/work/.optimization/bin/python",
+        "/workspace/scratch/e7495113964e/work/admission_overlay/probe.py",
+        "/workspace/scratch/e7495113964e/work/admission_overlay/ci42",
+        "limits",
+        "adversarial_agents",
+        "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout_sha256": "06134b11b5250bf12ed962bcca39a7b56f92d4dffe14ff79e9aedbb1b5d6cb40",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "original-reference-parity-adversarial_agents",
+      "argv": [
+        "/workspace/scratch/e7495113964e/work/.optimization/bin/python",
+        "/workspace/scratch/e7495113964e/work/admission_overlay/probe.py",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42",
+        "parity",
+        "adversarial_agents",
+        "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout_sha256": "02b294de255c772791fea2cec549c14519b7f6fb4e1b6cc971aad9875098a797",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "overlay-parity-adversarial_agents",
+      "argv": [
+        "/workspace/scratch/e7495113964e/work/.optimization/bin/python",
+        "/workspace/scratch/e7495113964e/work/admission_overlay/probe.py",
+        "/workspace/scratch/e7495113964e/work/admission_overlay/ci42",
+        "parity",
+        "adversarial_agents",
+        "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout_sha256": "02b294de255c772791fea2cec549c14519b7f6fb4e1b6cc971aad9875098a797",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "adversarial_agents-all-five-cap-call-parity",
+      "passed": true
+    },
+    {
+      "name": "original-limits-optimization",
+      "argv": [
+        "/workspace/scratch/e7495113964e/work/.optimization/bin/python",
+        "/workspace/scratch/e7495113964e/work/admission_overlay/probe.py",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42",
+        "limits",
+        "optimization",
+        "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql"
+      ],
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "cbe375ff554ea46015ba4bf4631043e51218ccc061fbcb622b70337f7c1e4b1a"
+    },
+    {
+      "name": "overlay-limits-optimization",
+      "argv": [
+        "/workspace/scratch/e7495113964e/work/.optimization/bin/python",
+        "/workspace/scratch/e7495113964e/work/admission_overlay/probe.py",
+        "/workspace/scratch/e7495113964e/work/admission_overlay/ci42",
+        "limits",
+        "optimization",
+        "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout_sha256": "8090962e8d78331304f7636b3ec7a1348f2e5c33138ff40aabd3fa955ccbde3e",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "original-reference-parity-optimization",
+      "argv": [
+        "/workspace/scratch/e7495113964e/work/.optimization/bin/python",
+        "/workspace/scratch/e7495113964e/work/admission_overlay/probe.py",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42",
+        "parity",
+        "optimization",
+        "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout_sha256": "25a62ca4764fb4bb1dc1fd31f90fb73ac419ba9c0e1dc84e2d0cf99b15d22b75",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "overlay-parity-optimization",
+      "argv": [
+        "/workspace/scratch/e7495113964e/work/.optimization/bin/python",
+        "/workspace/scratch/e7495113964e/work/admission_overlay/probe.py",
+        "/workspace/scratch/e7495113964e/work/admission_overlay/ci42",
+        "parity",
+        "optimization",
+        "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout_sha256": "25a62ca4764fb4bb1dc1fd31f90fb73ac419ba9c0e1dc84e2d0cf99b15d22b75",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "optimization-all-five-cap-call-parity",
+      "passed": true
+    },
+    {
+      "name": "overlay-adversarial-capture",
+      "argv": [
+        "/workspace/scratch/e7495113964e/work/.optimization/bin/python",
+        "/workspace/scratch/e7495113964e/work/admission_overlay/probe.py",
+        "/workspace/scratch/e7495113964e/work/admission_overlay/ci42",
+        "capture",
+        "adversarial_agents",
+        "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout_sha256": "e55e3810d59caf1a0adf0e8723b14590577bb746a9e293404d8eb502ae3c0db5",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "original-core-analysis",
+      "argv": [
+        "/workspace/scratch/e7495113964e/work/.optimization/bin/python",
+        "/workspace/scratch/e7495113964e/work/admission_overlay/probe.py",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42",
+        "analysis",
+        "optimization",
+        "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout_sha256": "28ae9b18fafa925debe5103fa14ab0263a21e816a02b55e0842991189311d211",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "overlay-core-analysis",
+      "argv": [
+        "/workspace/scratch/e7495113964e/work/.optimization/bin/python",
+        "/workspace/scratch/e7495113964e/work/admission_overlay/probe.py",
+        "/workspace/scratch/e7495113964e/work/admission_overlay/ci42",
+        "analysis",
+        "optimization",
+        "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "stdout_sha256": "28ae9b18fafa925debe5103fa14ab0263a21e816a02b55e0842991189311d211",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "complete-policy-and-core-analysis-parity",
+      "passed": true
+    },
+    {
+      "name": "original-optimization-cli-retained-negative",
+      "argv": [
+        "/workspace/scratch/e7495113964e/work/.optimization/bin/python",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/optimization.py",
+        "scan",
+        "--root",
+        "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql"
+      ],
+      "exit_code": 2,
+      "passed": true,
+      "receipt": {
+        "authority_effect": "NONE",
+        "detail": "1 validation error for Receipt\nanalyzer_digest\n  String should match pattern '^sha256:[0-9a-f]{64}$' [type=string_pattern_mismatch, input_value='0dd15320b3dca977fefe2867...96728a648d1c0c3bb90b9c3', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_pattern_mismatch",
+        "reason_code": "OPT-CLI-ERROR",
+        "status": "HOLD"
+      }
+    },
+    {
+      "name": "overlay-optimization-cli-retained-negative",
+      "argv": [
+        "/workspace/scratch/e7495113964e/work/.optimization/bin/python",
+        "/workspace/scratch/e7495113964e/work/admission_overlay/ci42/tools/optimization.py",
+        "scan",
+        "--root",
+        "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql"
+      ],
+      "exit_code": 2,
+      "passed": true,
+      "receipt": {
+        "analysis_scope": "recognized_python_static_contracts",
+        "analyzer_digest": "sha256:c1d2bfa8819e9bcbea0abf34f1e90e3f85f7a0e402b181515ad3b5895f63739c",
+        "authority_effect": "NONE",
+        "baseline": null,
+        "candidate": null,
+        "checks": [
+          {
+            "assessment": "PASS",
+            "check_id": "POLICY",
+            "detail": "",
+            "execution_status": "COMPLETED",
+            "reason_code": "CHECK_COMPLETED"
+          },
+          {
+            "assessment": "HOLD",
+            "check_id": "ANALYSIS",
+            "detail": "OPT-IMMUTABLE-CANDIDATE-REQUIRED: provide --candidate Git revision",
+            "execution_status": "ERROR",
+            "reason_code": "OPT-IMMUTABLE-CANDIDATE-REQUIRED"
+          }
+        ],
+        "environment_digest": "sha256:1a9ac859e3166a3248df12eb0668e7c3137580a705d210c973ac098589003ea3",
+        "exclusions": [
+          ".git",
+          ".venv",
+          "__pycache__",
+          ".pytest_cache",
+          ".ruff_cache"
+        ],
+        "findings": [],
+        "policy_digest": "sha256:c7f88d0e8d4889500e325777a4ab880446caf428c33461b15297f2c0630b31e2",
+        "policy_source_digest": "sha256:b216e2c2928083d3446a5d7b935d455cf53f138d818d7f7d25bc7ee71a7dd43f",
+        "receipt_digest": "sha256:94aed6c258fe28f4ba9262c2abb67d0183eeaf4d91c0322f5af2240f6c51460c",
+        "required_checks": [
+          "POLICY",
+          "CANDIDATE_SOURCE",
+          "CONTRACT_COVERAGE",
+          "BASELINE",
+          "OPT-ASYNC-001",
+          "OPT-CONCURRENCY-001",
+          "OPT-CONCURRENCY-002",
+          "OPT-RESOURCE-001",
+          "OPT-PACE-001",
+          "OPT-DEADLINE-001",
+          "OPT-PARITY-001",
+          "OPT-CACHE-001",
+          "OPT-PROJECTION-001",
+          "OPT-IO-001",
+          "OPT-IMPORT-001"
+        ],
+        "resolved_findings": [],
+        "runtime": {
+          "gil_enabled": true,
+          "implementation": "CPython",
+          "jit_enabled": false,
+          "machine": "x86_64",
+          "platform": "linux",
+          "python_version": "3.15.0rc3"
+        },
+        "schema_id": "urn:hmt:optimization:receipt:1.0.0",
+        "schema_version": "1.0.0",
+        "status": "HOLD",
+        "tool_version": "1.0.0"
+      }
+    }
+  ],
+  "original_source_unchanged": true
+}

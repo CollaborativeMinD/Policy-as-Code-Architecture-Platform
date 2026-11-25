@@ -1,0 +1,11 @@
+{
+  "valid": true,
+  "tests": 1,
+  "failures": 0,
+  "assertion_failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_ids": [
+    "tests/test_authority_security.py::test_expiration_is_rechecked_after_authority_lock"
+  ]
+}

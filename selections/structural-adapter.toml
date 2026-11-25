@@ -1,0 +1,8 @@
+version = 1
+registry = "patterns@1"
+name = "structural-adapter"
+
+[[patterns]]
+id = "RDP-S01"
+version = "1.0.0"
+configuration = "bindings/RDP-S01.toml"

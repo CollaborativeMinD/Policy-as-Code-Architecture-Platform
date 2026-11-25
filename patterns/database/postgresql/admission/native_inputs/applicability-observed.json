@@ -1,0 +1,215 @@
+{
+  "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+  "unittest_testcase_classes": [],
+  "lanes": {
+    "actionlint": {
+      "predicate": "no files match",
+      "patterns": [
+        ".github/workflows/*.yml",
+        ".github/workflows/*.yaml"
+      ],
+      "absent_imports": [],
+      "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+      "observed_matches": [],
+      "reason": "No GitHub workflow or reusable workflow topology is delivered by this PostgreSQL reference branch; standalone Python commands provide admission."
+    },
+    "repository-contract": {
+      "predicate": "no files match",
+      "patterns": [
+        ".github/workflows/*.yml",
+        ".github/workflows/*.yaml"
+      ],
+      "absent_imports": [],
+      "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+      "observed_matches": [],
+      "reason": "No GitHub workflow or reusable workflow topology is delivered by this PostgreSQL reference branch; standalone Python commands provide admission."
+    },
+    "gitops-contract": {
+      "predicate": "no files match",
+      "patterns": [
+        "infrastructure/gitops/*.yaml",
+        "infrastructure/flux/install.yaml"
+      ],
+      "absent_imports": [],
+      "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+      "observed_matches": [],
+      "reason": "No Flux or GitOps deployment topology is delivered; the concrete service profile uses systemd and PostgreSQL configuration."
+    },
+    "hadolint": {
+      "predicate": "no files match",
+      "patterns": [
+        "Dockerfile",
+        "*.Dockerfile"
+      ],
+      "absent_imports": [],
+      "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+      "observed_matches": [],
+      "reason": "No Dockerfile or container-image build is delivered in this native Python/systemd reference scope."
+    },
+    "trivy": {
+      "predicate": "no files match",
+      "patterns": [
+        "Dockerfile",
+        "*.Dockerfile",
+        "*.tar",
+        "*.oci"
+      ],
+      "absent_imports": [],
+      "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+      "observed_matches": [],
+      "reason": "No OCI/Docker image is delivered or built; Python/npm/backend advisory inventories are separately executed and bound."
+    },
+    "marimo-check": {
+      "predicate": "no files match",
+      "patterns": [
+        "*.ipynb"
+      ],
+      "absent_imports": [
+        "marimo"
+      ],
+      "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+      "observed_matches": [],
+      "reason": "No notebook or statically imported Marimo application exists in the branch."
+    },
+    "notebook-test": {
+      "predicate": "no files match",
+      "patterns": [
+        "*.ipynb"
+      ],
+      "absent_imports": [
+        "marimo"
+      ],
+      "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+      "observed_matches": [],
+      "reason": "No notebook or statically imported Marimo application exists in the branch."
+    },
+    "scaffold-validation": {
+      "predicate": "no files match",
+      "patterns": [
+        "*.ttl",
+        "*scaffold*"
+      ],
+      "absent_imports": [],
+      "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+      "observed_matches": [],
+      "reason": "No scaffold template generator or RDF ontology authority asset is delivered by this runtime reference branch."
+    },
+    "shell-syntax": {
+      "predicate": "no files match",
+      "patterns": [
+        "*.sh"
+      ],
+      "absent_imports": [],
+      "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+      "observed_matches": [],
+      "reason": "No shell program is delivered; command examples do not create a shell-program validation target."
+    },
+    "terraform-validate": {
+      "predicate": "no files match",
+      "patterns": [
+        "*.tf",
+        "*.tf.json"
+      ],
+      "absent_imports": [],
+      "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+      "observed_matches": [],
+      "reason": "No Terraform source or IaC plan is delivered."
+    },
+    "cargo-check": {
+      "predicate": "no files match",
+      "patterns": [
+        "*.rs",
+        "Cargo.toml",
+        "Cargo.lock"
+      ],
+      "absent_imports": [],
+      "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+      "observed_matches": [],
+      "reason": "The branch contains no Rust source or Cargo package; its owned implementation and executable verification use Python/PostgreSQL SQL."
+    },
+    "cargo-clippy": {
+      "predicate": "no files match",
+      "patterns": [
+        "*.rs",
+        "Cargo.toml",
+        "Cargo.lock"
+      ],
+      "absent_imports": [],
+      "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+      "observed_matches": [],
+      "reason": "The branch contains no Rust source or Cargo package; its owned implementation and executable verification use Python/PostgreSQL SQL."
+    },
+    "cargo-fmt": {
+      "predicate": "no files match",
+      "patterns": [
+        "*.rs",
+        "Cargo.toml",
+        "Cargo.lock"
+      ],
+      "absent_imports": [],
+      "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+      "observed_matches": [],
+      "reason": "The branch contains no Rust source or Cargo package; its owned implementation and executable verification use Python/PostgreSQL SQL."
+    },
+    "cargo-test": {
+      "predicate": "no files match",
+      "patterns": [
+        "*.rs",
+        "Cargo.toml",
+        "Cargo.lock"
+      ],
+      "absent_imports": [],
+      "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+      "observed_matches": [],
+      "reason": "The branch contains no Rust source or Cargo package; its owned implementation and executable verification use Python/PostgreSQL SQL."
+    },
+    "cargo-llvm-cov": {
+      "predicate": "no files match",
+      "patterns": [
+        "*.rs",
+        "Cargo.toml",
+        "Cargo.lock"
+      ],
+      "absent_imports": [],
+      "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+      "observed_matches": [],
+      "reason": "The branch contains no Rust source or Cargo package; its owned implementation and executable verification use Python/PostgreSQL SQL."
+    },
+    "cargo-mutants": {
+      "predicate": "no files match",
+      "patterns": [
+        "*.rs",
+        "Cargo.toml",
+        "Cargo.lock"
+      ],
+      "absent_imports": [],
+      "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+      "observed_matches": [],
+      "reason": "The branch contains no Rust source or Cargo package; its owned implementation and executable verification use Python/PostgreSQL SQL."
+    },
+    "cargo-deny": {
+      "predicate": "no files match",
+      "patterns": [
+        "*.rs",
+        "Cargo.toml",
+        "Cargo.lock"
+      ],
+      "absent_imports": [],
+      "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+      "observed_matches": [],
+      "reason": "The branch contains no Rust source or Cargo package; its owned implementation and executable verification use Python/PostgreSQL SQL."
+    },
+    "unittest": {
+      "predicate": "no files match",
+      "patterns": [
+        "tests/unittest/*.py",
+        "tests/unittest/**/*.py",
+        "tests/test_unittest*.py"
+      ],
+      "absent_imports": [],
+      "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+      "observed_matches": [],
+      "reason": "No unittest TestCase suite/discovery entrypoint is defined; AST review observes zero TestCase subclasses. The446 functional/async pytest cases, including unit witnesses, run through the native pytest lane. unittest.mock imports are test utilities, not a unittest suite."
+    }
+  }
+}

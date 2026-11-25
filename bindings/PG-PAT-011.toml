@@ -1,0 +1,8 @@
+version = 1
+pattern = "PG-PAT-011"
+scope = "software"
+
+[settings]
+mode = "copy"
+max_rows = 2
+metrics = [{ id = 1, status = "active", telemetry = { temperature = 2.0 }, observed_at = "2026-01-01T00:00:00+00:00" }]

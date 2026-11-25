@@ -1,0 +1,8 @@
+version = 1
+pattern = "RDP-S01"
+scope = "software"
+
+[settings]
+version = "1"
+unit = "mC"
+temperature = 25000

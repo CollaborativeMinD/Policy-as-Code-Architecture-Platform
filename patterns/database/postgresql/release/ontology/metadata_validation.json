@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-11-04T09:09:13.893310+00:00",
+  "table_checks": [
+    {
+      "table": "readiness",
+      "columns": 10,
+      "rows": 3,
+      "exact_supplied_xml_columns": true,
+      "code_symbol_locators_exist": true
+    },
+    {
+      "table": "release",
+      "columns": 10,
+      "rows": 1,
+      "exact_supplied_xml_columns": true,
+      "code_symbol_locators_exist": true
+    },
+    {
+      "table": "containment",
+      "columns": 10,
+      "rows": 1,
+      "exact_supplied_xml_columns": true,
+      "code_symbol_locators_exist": true
+    },
+    {
+      "table": "seam",
+      "columns": 10,
+      "rows": 4,
+      "exact_supplied_xml_columns": true,
+      "code_symbol_locators_exist": true
+    },
+    {
+      "table": "environment",
+      "columns": 8,
+      "rows": 3,
+      "exact_supplied_xml_columns": true,
+      "code_symbol_locators_exist": true
+    }
+  ],
+  "field_binding_count": 57,
+  "canonical_class_membership": "All selected semantic type URIs are declared owl:Class in supplied TTL.",
+  "scope": "Derived field bindings and declaration membership; no SHACL validation or external ontology approval claimed."
+}

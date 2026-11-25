@@ -1,0 +1,114 @@
+{
+  "profile": {
+    "schema_version": "hmt.pace-profile/1",
+    "profile_id": "PG-PACE-001-native-reference-profile",
+    "policy_version": "2.0.0",
+    "synthetic": true,
+    "margin_unit": "normalized-capability-millipoints",
+    "pressure_unit": "reference-pressure-points",
+    "time_unit": "milliseconds",
+    "freshness_ms": 1000,
+    "max_step_ms": 60000,
+    "accumulation_rate": 0,
+    "decay_rate": 0,
+    "terminal_margin": 0,
+    "terminal_pressure": 1000,
+    "offline_max_ms": 60000,
+    "max_writes": 514,
+    "rules": [
+      {
+        "mode": "P",
+        "operations": [
+          "read",
+          "write",
+          "relay"
+        ],
+        "minima": [
+          {
+            "name": "capability",
+            "value": 250
+          }
+        ],
+        "pressure_max": 100,
+        "recovery_extra": 250,
+        "dwell_ms": 3000
+      },
+      {
+        "mode": "A",
+        "operations": [
+          "read",
+          "write",
+          "relay"
+        ],
+        "minima": [
+          {
+            "name": "capability",
+            "value": 200
+          }
+        ],
+        "pressure_max": 300,
+        "recovery_extra": 250,
+        "dwell_ms": 3000
+      },
+      {
+        "mode": "C",
+        "operations": [
+          "read",
+          "write"
+        ],
+        "minima": [
+          {
+            "name": "capability",
+            "value": 100
+          }
+        ],
+        "pressure_max": 700,
+        "recovery_extra": 250,
+        "dwell_ms": 3000
+      },
+      {
+        "mode": "E",
+        "operations": [
+          "read_checkpoint",
+          "health"
+        ],
+        "minima": [
+          {
+            "name": "capability",
+            "value": 1
+          }
+        ],
+        "pressure_max": 999,
+        "recovery_extra": 250,
+        "dwell_ms": 3000
+      }
+    ]
+  },
+  "state": {
+    "instance": "PG-PACE-001-native-reference",
+    "epoch": 1,
+    "authority_epoch": 1,
+    "mode": "P",
+    "pressure": 0,
+    "observed_ms": 0,
+    "entered_ms": 0,
+    "reconciled": true,
+    "values": [
+      {
+        "key": "source_digest",
+        "value": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7"
+      }
+    ]
+  },
+  "telemetry": {
+    "observed_ms": 1000,
+    "margins": [
+      {
+        "name": "capability",
+        "value": 800
+      }
+    ],
+    "connected": true
+  },
+  "now": 1000
+}

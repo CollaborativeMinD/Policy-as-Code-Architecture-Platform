@@ -1,0 +1,26 @@
+{
+  "valid": true,
+  "tests": 16,
+  "failures": 0,
+  "assertion_failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_ids": [
+    "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change0]",
+    "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change1]",
+    "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change2]",
+    "tests/test_authority_security.py::test_expiration_is_rechecked_after_authority_lock",
+    "tests/test_checkpoints_cache.py::test_foreign_scope_and_loss_are_rejected",
+    "tests/test_checkpoints_cache.py::test_redis_ordering_above_float_precision",
+    "tests/test_mutation_witnesses.py::test_active_guard",
+    "tests/test_mutation_witnesses.py::test_epoch_guard_new_stream",
+    "tests/test_mutation_witnesses.py::test_pace_guard_precedes_callback",
+    "tests/test_outbox_recovery.py::test_cache_loss_rebuild_requires_current_same_epoch_authority",
+    "tests/test_streaming_parity.py::test_all_historical_source_vectors_match_with_changed_packetization",
+    "tests/test_streaming_scanner.py::test_invalid_packet_capacity_and_released_views",
+    "tests/test_streaming_scanner.py::test_mutable_packet_is_snapshotted_and_partial_feed_aborts",
+    "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[1]",
+    "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[2]",
+    "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[3]"
+  ]
+}

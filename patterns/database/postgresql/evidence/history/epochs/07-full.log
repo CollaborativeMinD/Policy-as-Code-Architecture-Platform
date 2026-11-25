@@ -1,0 +1,36 @@
+........................................................................ [ 17%]
+........................................................................ [ 35%]
+........................................................................ [ 53%]
+........................................................................ [ 70%]
+........................................................................ [ 88%]
+...........F...................................                          [100%]
+=================================== FAILURES ===================================
+_______________ test_authenticated_tailcat_replay_and_revocation _______________
+tests/test_tailcat_e2e.py:13: in test_authenticated_tailcat_replay_and_revocation
+    binary = binary_path()
+             ^^^^^^^^^^^^^
+tests/tailcat_runtime.py:74: in binary_path
+    raise RuntimeError("HMT_TAILCAT_BIN_REQUIRED_NO_TEST_SKIP")
+E   RuntimeError: HMT_TAILCAT_BIN_REQUIRED_NO_TEST_SKIP
+=============================== warnings summary ===============================
+tests/test_authority_atomic.py::test_idempotency_conflict_keeps_single_effect[policy_digest-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]
+  /root/.local/share/uv/python/cpython-3.13.17-linux-x86_64-gnu/lib/python3.13/json/encoder.py:185: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fdd4b5b0130>
+    def encode(self, o):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_authority_atomic.py::test_idempotency_conflict_keeps_single_effect[policy_digest-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]
+  /root/.local/share/uv/python/cpython-3.13.17-linux-x86_64-gnu/lib/python3.13/json/encoder.py:185: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7fdd4b5b08b0>
+    def encode(self, o):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.13.17-final-0 _______________
+
+Coverage JSON written to file /workspace/scratch/e7495113964e/work/epochs/07-full-coverage.json
+Required test coverage of 90.0% reached. Total coverage: 98.40%
+=========================== short test summary info ============================
+FAILED tests/test_tailcat_e2e.py::test_authenticated_tailcat_replay_and_revocation
+1 failed, 406 passed, 2 warnings in 14.44s

@@ -1,0 +1,382 @@
+[
+  {
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[packet_invariance]",
+    "source_requirement_or_invariant": "PG-CDC-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[packet_invariance]",
+    "source_requirement_or_invariant": "PG-CDC-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[packet_invariance]",
+    "source_requirement_or_invariant": "PG-CDC-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[packet_invariance]",
+    "source_requirement_or_invariant": "PG-CDC-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[stream_limits]",
+    "source_requirement_or_invariant": "PG-CDC-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[stream_limits]",
+    "source_requirement_or_invariant": "PG-CDC-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[stream_limits]",
+    "source_requirement_or_invariant": "PG-CDC-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[stream_limits]",
+    "source_requirement_or_invariant": "PG-CDC-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[checkpoint_order]",
+    "source_requirement_or_invariant": "PG-CHECKPOINT-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[checkpoint_order]",
+    "source_requirement_or_invariant": "PG-CHECKPOINT-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[checkpoint_order]",
+    "source_requirement_or_invariant": "PG-CHECKPOINT-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[checkpoint_order]",
+    "source_requirement_or_invariant": "PG-CHECKPOINT-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[bounded_close]",
+    "source_requirement_or_invariant": "PG-CLOSE-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[bounded_close]",
+    "source_requirement_or_invariant": "PG-CLOSE-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[bounded_close]",
+    "source_requirement_or_invariant": "PG-CLOSE-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[bounded_close]",
+    "source_requirement_or_invariant": "PG-CLOSE-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[tls_profile]",
+    "source_requirement_or_invariant": "PG-CONFIG-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[tls_profile]",
+    "source_requirement_or_invariant": "PG-CONFIG-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[tls_profile]",
+    "source_requirement_or_invariant": "PG-CONFIG-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[tls_profile]",
+    "source_requirement_or_invariant": "PG-CONFIG-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[contract_rejection]",
+    "source_requirement_or_invariant": "PG-CONTRACT-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[contract_rejection]",
+    "source_requirement_or_invariant": "PG-CONTRACT-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[contract_rejection]",
+    "source_requirement_or_invariant": "PG-CONTRACT-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[contract_rejection]",
+    "source_requirement_or_invariant": "PG-CONTRACT-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[bounded_rows]",
+    "source_requirement_or_invariant": "PG-CONTRACT-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[bounded_rows]",
+    "source_requirement_or_invariant": "PG-CONTRACT-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[bounded_rows]",
+    "source_requirement_or_invariant": "PG-CONTRACT-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[bounded_rows]",
+    "source_requirement_or_invariant": "PG-CONTRACT-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[epoch_fence]",
+    "source_requirement_or_invariant": "PG-FENCE-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[epoch_fence]",
+    "source_requirement_or_invariant": "PG-FENCE-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[epoch_fence]",
+    "source_requirement_or_invariant": "PG-FENCE-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[epoch_fence]",
+    "source_requirement_or_invariant": "PG-FENCE-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[migration_drift]",
+    "source_requirement_or_invariant": "PG-MIGRATION-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[migration_drift]",
+    "source_requirement_or_invariant": "PG-MIGRATION-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[migration_drift]",
+    "source_requirement_or_invariant": "PG-MIGRATION-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[migration_drift]",
+    "source_requirement_or_invariant": "PG-MIGRATION-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[wal_prerequisites]",
+    "source_requirement_or_invariant": "PG-OPS-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[wal_prerequisites]",
+    "source_requirement_or_invariant": "PG-OPS-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[wal_prerequisites]",
+    "source_requirement_or_invariant": "PG-OPS-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[wal_prerequisites]",
+    "source_requirement_or_invariant": "PG-OPS-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[outbox_replay]",
+    "source_requirement_or_invariant": "PG-OUTBOX-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[outbox_replay]",
+    "source_requirement_or_invariant": "PG-OUTBOX-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[outbox_replay]",
+    "source_requirement_or_invariant": "PG-OUTBOX-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[outbox_replay]",
+    "source_requirement_or_invariant": "PG-OUTBOX-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[terminal_authority]",
+    "source_requirement_or_invariant": "PG-PACE-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[terminal_authority]",
+    "source_requirement_or_invariant": "PG-PACE-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[terminal_authority]",
+    "source_requirement_or_invariant": "PG-PACE-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[terminal_authority]",
+    "source_requirement_or_invariant": "PG-PACE-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[guarded_recovery]",
+    "source_requirement_or_invariant": "PG-PACE-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[guarded_recovery]",
+    "source_requirement_or_invariant": "PG-PACE-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[guarded_recovery]",
+    "source_requirement_or_invariant": "PG-PACE-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[guarded_recovery]",
+    "source_requirement_or_invariant": "PG-PACE-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[tailcat_binding]",
+    "source_requirement_or_invariant": "PG-PEER-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[tailcat_binding]",
+    "source_requirement_or_invariant": "PG-PEER-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[tailcat_binding]",
+    "source_requirement_or_invariant": "PG-PEER-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[tailcat_binding]",
+    "source_requirement_or_invariant": "PG-PEER-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[pool_capacity]",
+    "source_requirement_or_invariant": "PG-POOL-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[pool_capacity]",
+    "source_requirement_or_invariant": "PG-POOL-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[pool_capacity]",
+    "source_requirement_or_invariant": "PG-POOL-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[pool_capacity]",
+    "source_requirement_or_invariant": "PG-POOL-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[bound_values]",
+    "source_requirement_or_invariant": "PG-QUERY-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[bound_values]",
+    "source_requirement_or_invariant": "PG-QUERY-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[bound_values]",
+    "source_requirement_or_invariant": "PG-QUERY-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[bound_values]",
+    "source_requirement_or_invariant": "PG-QUERY-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[retry_budget]",
+    "source_requirement_or_invariant": "PG-RETRY-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[retry_budget]",
+    "source_requirement_or_invariant": "PG-RETRY-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[retry_budget]",
+    "source_requirement_or_invariant": "PG-RETRY-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[retry_budget]",
+    "source_requirement_or_invariant": "PG-RETRY-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[immutable_snapshot]",
+    "source_requirement_or_invariant": "PG-SNAPSHOT-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[immutable_snapshot]",
+    "source_requirement_or_invariant": "PG-SNAPSHOT-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[immutable_snapshot]",
+    "source_requirement_or_invariant": "PG-SNAPSHOT-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[immutable_snapshot]",
+    "source_requirement_or_invariant": "PG-SNAPSHOT-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[rollback]",
+    "source_requirement_or_invariant": "PG-TX-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[rollback]",
+    "source_requirement_or_invariant": "PG-TX-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[rollback]",
+    "source_requirement_or_invariant": "PG-TX-001",
+    "evidence_ref": "junit.xml"
+  },
+  {
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[rollback]",
+    "source_requirement_or_invariant": "PG-TX-001",
+    "evidence_ref": "junit.xml"
+  }
+]

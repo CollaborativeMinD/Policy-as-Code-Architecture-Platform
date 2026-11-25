@@ -1,0 +1,363 @@
+{
+  "schema_id": "urn:hmt:pg:traceability:1.0.0",
+  "requirements": [
+    {
+      "id": "PG-CONFIG-001",
+      "invariant_id": "PG-CONFIG-001",
+      "source_refs": [
+        "src/hmt_pg_patterns/asyncpg_driver.py",
+        "src/hmt_pg_patterns/config.py",
+        "src/hmt_pg_patterns/pools.py",
+        "src/hmt_pg_patterns/worker.py",
+        "src/hmt_pg_patterns/worker_config.py"
+      ],
+      "case_ids": [
+        "tls_profile"
+      ],
+      "test_families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "PG-QUERY-001",
+      "invariant_id": "PG-QUERY-001",
+      "source_refs": [
+        "sql/01_metrics.sql",
+        "src/hmt_pg_patterns/analytics.py",
+        "src/hmt_pg_patterns/async_driver.py",
+        "src/hmt_pg_patterns/asyncpg_driver.py",
+        "src/hmt_pg_patterns/bulk.py",
+        "src/hmt_pg_patterns/diagnostics.py",
+        "src/hmt_pg_patterns/orm.py",
+        "src/hmt_pg_patterns/orm_async.py",
+        "src/hmt_pg_patterns/orm_model.py",
+        "src/hmt_pg_patterns/queries.py",
+        "src/hmt_pg_patterns/sync_driver.py"
+      ],
+      "case_ids": [
+        "bound_values"
+      ],
+      "test_families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "PG-TX-001",
+      "invariant_id": "PG-TX-001",
+      "source_refs": [
+        "sql/02_authority.sql",
+        "src/hmt_pg_patterns/analytics.py",
+        "src/hmt_pg_patterns/async_driver.py",
+        "src/hmt_pg_patterns/authority.py",
+        "src/hmt_pg_patterns/authority_async.py",
+        "src/hmt_pg_patterns/bulk.py",
+        "src/hmt_pg_patterns/driver_contracts.py",
+        "src/hmt_pg_patterns/orm.py",
+        "src/hmt_pg_patterns/orm_async.py",
+        "src/hmt_pg_patterns/outbox.py",
+        "src/hmt_pg_patterns/sync_driver.py"
+      ],
+      "case_ids": [
+        "rollback"
+      ],
+      "test_families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "PG-RETRY-001",
+      "invariant_id": "PG-RETRY-001",
+      "source_refs": [
+        "src/hmt_pg_patterns/async_driver.py",
+        "src/hmt_pg_patterns/driver_contracts.py",
+        "src/hmt_pg_patterns/sync_driver.py"
+      ],
+      "case_ids": [
+        "retry_budget"
+      ],
+      "test_families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "PG-CLOSE-001",
+      "invariant_id": "PG-CLOSE-001",
+      "source_refs": [
+        "src/hmt_pg_patterns/analytics.py",
+        "src/hmt_pg_patterns/async_driver.py",
+        "src/hmt_pg_patterns/asyncpg_driver.py",
+        "src/hmt_pg_patterns/asyncpg_pool.py",
+        "src/hmt_pg_patterns/orm.py",
+        "src/hmt_pg_patterns/orm_async.py",
+        "src/hmt_pg_patterns/pools.py",
+        "src/hmt_pg_patterns/streaming.py",
+        "src/hmt_pg_patterns/streaming_runtime.py",
+        "src/hmt_pg_patterns/worker_io.py"
+      ],
+      "case_ids": [
+        "bounded_close"
+      ],
+      "test_families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "PG-CONTRACT-001",
+      "invariant_id": "PG-CONTRACT-001",
+      "source_refs": [
+        "sql/01_metrics.sql",
+        "sql/02_authority.sql",
+        "src/hmt_pg_patterns/analytics.py",
+        "src/hmt_pg_patterns/asyncpg_driver.py",
+        "src/hmt_pg_patterns/authority_types.py",
+        "src/hmt_pg_patterns/bulk.py",
+        "src/hmt_pg_patterns/checkpoints_snapshot.py",
+        "src/hmt_pg_patterns/models.py",
+        "src/hmt_pg_patterns/orm_model.py",
+        "src/hmt_pg_patterns/queries.py",
+        "src/hmt_pg_patterns/streaming_contracts.py"
+      ],
+      "case_ids": [
+        "contract_rejection",
+        "bounded_rows"
+      ],
+      "test_families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "PG-SNAPSHOT-001",
+      "invariant_id": "PG-SNAPSHOT-001",
+      "source_refs": [
+        "src/hmt_pg_patterns/authority_types.py",
+        "src/hmt_pg_patterns/checkpoints.py",
+        "src/hmt_pg_patterns/checkpoints_snapshot.py",
+        "src/hmt_pg_patterns/queries.py",
+        "src/hmt_pg_patterns/streaming_state.py"
+      ],
+      "case_ids": [
+        "immutable_snapshot"
+      ],
+      "test_families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "PG-FENCE-001",
+      "invariant_id": "PG-FENCE-001",
+      "source_refs": [
+        "sql/02_authority.sql",
+        "sql/03_checkpoints.sql",
+        "src/hmt_pg_patterns/authority.py",
+        "src/hmt_pg_patterns/authority_async.py",
+        "src/hmt_pg_patterns/authority_types.py",
+        "src/hmt_pg_patterns/outbox.py",
+        "src/hmt_pg_patterns/streaming_async_writer.py",
+        "src/hmt_pg_patterns/streaming_state.py",
+        "src/hmt_pg_patterns/streaming_writer.py",
+        "src/hmt_pg_patterns/transport.py",
+        "src/hmt_pg_patterns/worker_service.py"
+      ],
+      "case_ids": [
+        "epoch_fence"
+      ],
+      "test_families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "PG-OUTBOX-001",
+      "invariant_id": "PG-OUTBOX-001",
+      "source_refs": [
+        "sql/02_authority.sql",
+        "sql/03_checkpoints.sql",
+        "src/hmt_pg_patterns/authority.py",
+        "src/hmt_pg_patterns/authority_async.py",
+        "src/hmt_pg_patterns/outbox.py",
+        "src/hmt_pg_patterns/streaming_async_writer.py",
+        "src/hmt_pg_patterns/streaming_writer.py",
+        "src/hmt_pg_patterns/worker_service.py"
+      ],
+      "case_ids": [
+        "outbox_replay"
+      ],
+      "test_families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "PG-CHECKPOINT-001",
+      "invariant_id": "PG-CHECKPOINT-001",
+      "source_refs": [
+        "sql/02_authority.sql",
+        "sql/03_checkpoints.sql",
+        "src/hmt_pg_patterns/authority.py",
+        "src/hmt_pg_patterns/authority_async.py",
+        "src/hmt_pg_patterns/checkpoints.py",
+        "src/hmt_pg_patterns/checkpoints_lua.py",
+        "src/hmt_pg_patterns/checkpoints_snapshot.py",
+        "src/hmt_pg_patterns/outbox.py",
+        "src/hmt_pg_patterns/streaming_async_writer.py",
+        "src/hmt_pg_patterns/streaming_writer.py",
+        "src/hmt_pg_patterns/worker_service.py"
+      ],
+      "case_ids": [
+        "checkpoint_order"
+      ],
+      "test_families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "PG-CDC-001",
+      "invariant_id": "PG-CDC-001",
+      "source_refs": [
+        "src/hmt_pg_patterns/streaming.py",
+        "src/hmt_pg_patterns/streaming_async_writer.py",
+        "src/hmt_pg_patterns/streaming_contracts.py",
+        "src/hmt_pg_patterns/streaming_runtime.py",
+        "src/hmt_pg_patterns/streaming_scan.py",
+        "src/hmt_pg_patterns/streaming_state.py",
+        "src/hmt_pg_patterns/streaming_writer.py",
+        "src/hmt_pg_patterns/worker_io.py",
+        "src/hmt_pg_patterns/worker_service.py"
+      ],
+      "case_ids": [
+        "packet_invariance",
+        "stream_limits"
+      ],
+      "test_families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "PG-PACE-001",
+      "invariant_id": "PG-PACE-001",
+      "source_refs": [
+        "src/hmt_pg_patterns/pace.py",
+        "src/hmt_pg_patterns/pace_models.py",
+        "src/hmt_pg_patterns/worker_config.py",
+        "src/hmt_pg_patterns/worker_service.py"
+      ],
+      "case_ids": [
+        "terminal_authority",
+        "guarded_recovery"
+      ],
+      "test_families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "PG-OPS-001",
+      "invariant_id": "PG-OPS-001",
+      "source_refs": [
+        "sql/01_metrics.sql",
+        "src/hmt_pg_patterns/diagnostics.py"
+      ],
+      "case_ids": [
+        "wal_prerequisites"
+      ],
+      "test_families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "PG-POOL-001",
+      "invariant_id": "PG-POOL-001",
+      "source_refs": [
+        "src/hmt_pg_patterns/asyncpg_pool.py",
+        "src/hmt_pg_patterns/driver_contracts.py",
+        "src/hmt_pg_patterns/orm.py",
+        "src/hmt_pg_patterns/orm_async.py",
+        "src/hmt_pg_patterns/pools.py"
+      ],
+      "case_ids": [
+        "pool_capacity"
+      ],
+      "test_families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "PG-MIGRATION-001",
+      "invariant_id": "PG-MIGRATION-001",
+      "source_refs": [
+        "src/hmt_pg_patterns/migrations.py"
+      ],
+      "case_ids": [
+        "migration_drift"
+      ],
+      "test_families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "PG-PEER-001",
+      "invariant_id": "PG-PEER-001",
+      "source_refs": [
+        "sql/02_authority.sql",
+        "src/hmt_pg_patterns/transport.py",
+        "src/hmt_pg_patterns/worker.py",
+        "src/hmt_pg_patterns/worker_config.py",
+        "src/hmt_pg_patterns/worker_io.py",
+        "src/hmt_pg_patterns/worker_service.py"
+      ],
+      "case_ids": [
+        "tailcat_binding"
+      ],
+      "test_families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    }
+  ],
+  "source_mapping_status": "EXPLICIT_PUBLIC_CONTRACT_REFINEMENTS",
+  "refinement_registry": "contracts/contract_refinements.json"
+}

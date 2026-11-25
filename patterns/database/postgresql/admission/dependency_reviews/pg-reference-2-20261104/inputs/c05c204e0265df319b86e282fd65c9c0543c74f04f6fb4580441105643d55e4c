@@ -1,0 +1,8 @@
+--- src/hmt_pg_patterns/pace.py
++++ src/hmt_pg_patterns/pace.py.mutated
+@@ -76,5 +76,4 @@
+ 
+ def perform(state: PaceState, operation: str, action: Callable[[], T]) -> T:
+     """Invoke an operation only after the local capability guard succeeds."""
+-    require_operation(state, operation)
+     return action()

@@ -1,0 +1,7 @@
+version = 1
+pattern = "PG-PAT-005"
+scope = "software"
+
+[settings]
+attempts = 3
+driver = "psycopg-sync"

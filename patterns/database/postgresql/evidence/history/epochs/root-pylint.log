@@ -1,0 +1,79 @@
+pylint 4.1.2
+astroid 4.3.4
+Python 3.13.17 (main, Oct 21 2026, 17:49:22) [Clang 23.1.3 ]
+{
+    "messages": [
+        {
+            "type": "convention",
+            "symbol": "missing-function-docstring",
+            "message": "Missing function or method docstring",
+            "messageId": "C0116",
+            "confidence": "INFERENCE",
+            "module": "hmt_pg_patterns.models",
+            "obj": "Metric.bounded_keys",
+            "line": 22,
+            "column": 4,
+            "endLine": 22,
+            "endColumn": 20,
+            "path": "src/hmt_pg_patterns/models.py",
+            "absolutePath": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/models.py"
+        },
+        {
+            "type": "convention",
+            "symbol": "missing-function-docstring",
+            "message": "Missing function or method docstring",
+            "messageId": "C0116",
+            "confidence": "INFERENCE",
+            "module": "hmt_pg_patterns.models",
+            "obj": "Metric.require_timezone",
+            "line": 32,
+            "column": 4,
+            "endLine": 32,
+            "endColumn": 24,
+            "path": "src/hmt_pg_patterns/models.py",
+            "absolutePath": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/models.py"
+        },
+        {
+            "type": "convention",
+            "symbol": "missing-class-docstring",
+            "message": "Missing class docstring",
+            "messageId": "C0115",
+            "confidence": "HIGH",
+            "module": "hmt_pg_patterns.models",
+            "obj": "QueryWindow",
+            "line": 38,
+            "column": 0,
+            "endLine": 38,
+            "endColumn": 17,
+            "path": "src/hmt_pg_patterns/models.py",
+            "absolutePath": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/models.py"
+        },
+        {
+            "type": "convention",
+            "symbol": "missing-class-docstring",
+            "message": "Missing class docstring",
+            "messageId": "C0115",
+            "confidence": "HIGH",
+            "module": "hmt_pg_patterns.models",
+            "obj": "BatchSpec",
+            "line": 45,
+            "column": 0,
+            "endLine": 45,
+            "endColumn": 15,
+            "path": "src/hmt_pg_patterns/models.py",
+            "absolutePath": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/models.py"
+        }
+    ],
+    "statistics": {
+        "messageTypeCount": {
+            "fatal": 0,
+            "error": 0,
+            "warning": 0,
+            "refactor": 0,
+            "convention": 4,
+            "info": 0
+        },
+        "modulesLinted": 9,
+        "score": 9.822222222222223
+    }
+}

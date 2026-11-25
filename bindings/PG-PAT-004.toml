@@ -1,0 +1,6 @@
+version = 1
+pattern = "PG-PAT-004"
+scope = "software"
+
+[settings]
+timeout_ms = 50

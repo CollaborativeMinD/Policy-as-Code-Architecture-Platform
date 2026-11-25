@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "argv": [
+    "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "--import-mode=importlib",
+    "-p",
+    "pytest_cov.plugin",
+    "-p",
+    "pytest_asyncio.plugin",
+    "-o",
+    "junit_family=xunit1",
+    "--cov=hmt_pg_patterns",
+    "--cov-branch",
+    "--cov-report=json:/workspace/scratch/e7495113964e/work/final/software/coverage.json",
+    "--junitxml=/workspace/scratch/e7495113964e/work/final/software/junit.xml",
+    "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests"
+  ],
+  "returncode": 0,
+  "reason": "COMPLETE",
+  "seconds": 17.937238493999757,
+  "captured_bytes": 2437,
+  "stdout": "pytest.stdout.log",
+  "stderr": "pytest.stderr.log"
+}

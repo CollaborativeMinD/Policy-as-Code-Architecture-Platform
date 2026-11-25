@@ -1,0 +1,28 @@
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+_____________ test_short_tail_retains_rolling_window_across_cut[1] _____________
+tests/test_streaming_scanner.py:110: in test_short_tail_retains_rolling_window_across_cut
+    assert tail.fingerprint == int.from_bytes(data[-4:], "big") % ((1 << 61) - 1)
+E   AssertionError: assert 120 == (1718052984 % ((1 << 61) - 1))
+E    +  where 120 = Chunk(index=2, start=8, end=9, data=b'x', fingerprint=120, reason='tail').fingerprint
+E    +  and   1718052984 = <built-in method from_bytes of type object at 0x1363730>(b'fghx', 'big')
+E    +    where <built-in method from_bytes of type object at 0x1363730> = int.from_bytes
+_____________ test_short_tail_retains_rolling_window_across_cut[2] _____________
+tests/test_streaming_scanner.py:110: in test_short_tail_retains_rolling_window_across_cut
+    assert tail.fingerprint == int.from_bytes(data[-4:], "big") % ((1 << 61) - 1)
+E   AssertionError: assert 30841 == (1734899833 % ((1 << 61) - 1))
+E    +  where 30841 = Chunk(index=2, start=8, end=10, data=b'xy', fingerprint=30841, reason='tail').fingerprint
+E    +  and   1734899833 = <built-in method from_bytes of type object at 0x1363730>(b'ghxy', 'big')
+E    +    where <built-in method from_bytes of type object at 0x1363730> = int.from_bytes
+_____________ test_short_tail_retains_rolling_window_across_cut[3] _____________
+tests/test_streaming_scanner.py:110: in test_short_tail_retains_rolling_window_across_cut
+    assert tail.fingerprint == int.from_bytes(data[-4:], "big") % ((1 << 61) - 1)
+E   AssertionError: assert 7895418 == (1752725882 % ((1 << 61) - 1))
+E    +  where 7895418 = Chunk(index=2, start=8, end=11, data=b'xyz', fingerprint=7895418, reason='tail').fingerprint
+E    +  and   1752725882 = <built-in method from_bytes of type object at 0x1363730>(b'hxyz', 'big')
+E    +    where <built-in method from_bytes of type object at 0x1363730> = int.from_bytes
+=========================== short test summary info ============================
+FAILED tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[1]
+FAILED tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[2]
+FAILED tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[3]
+3 failed in 0.15s

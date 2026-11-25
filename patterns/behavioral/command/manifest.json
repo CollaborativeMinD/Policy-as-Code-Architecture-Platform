@@ -1,0 +1,14 @@
+{
+  "pattern_id": "RDP-B04",
+  "version": "1.0.0",
+  "files": {
+    "SKILL.md": "50fdb13cdf7f67969086d860645a3a202b8a948fd2dc22e3d9f5b188ae7d2a07",
+    "reference.py": "ac618ab3a5d7acb03dd712463e9f0236473b560b379075e5db89e89d6f994d6b",
+    "contracts.py": "d98ce9d900f98a7d48dd45eca4d926be680be6e998f5d42c9c5aec2112375cd2",
+    "example.py": "39a2ef3f0feca4c9cb175b4e6f01e2983fe1cc8c39062be1cdf9ab825103fd69",
+    "lesson.json": "6da7f52157838dab023e2f0fb79f7606a75793a3f51d32d9624c1cae0c2a7cd5",
+    "notebook.py": "962864633ef83091a02d71085dd0d75821d12d0dcffd22fee8b6187fc5925ba0",
+    "tests/test_command.py": "e6423ce7a88854cc15126e2aab9897bad086ce82316d39563c9c03e651d8f121",
+    "evidence/qualification.json": "a6ad153d5f7a284bd950950d8acf7003615d495b7e846070890280445493d5eb"
+  }
+}

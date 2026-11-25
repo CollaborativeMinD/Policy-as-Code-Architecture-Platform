@@ -1,0 +1,25 @@
+{
+  "engine_identity": "5703738103a4686bb3000bd80ef20710d86c7c91838f38a200cc9a3131283739",
+  "epoch": "pg-reference-1-20261104",
+  "human_approval": false,
+  "limits_changed": false,
+  "native_dependency_witness": {
+    "applicability": "APPLICABLE",
+    "detail": "32 manifest/artifact surfaces; nine review families per admitted surface.",
+    "disposition": "PASS",
+    "findings": [],
+    "gate_id": "G-SUPPLY-002"
+  },
+  "native_profile": "static",
+  "policy": {
+    "bytes": 87524,
+    "path": "/workspace/scratch/e7495113964e/work/native_review/pg-reference-1-20261104/policy.json",
+    "sha256": "3847a106df2212e5e9f5f91ca6e4a765740bea618bb638825deb94d123fd88b2"
+  },
+  "promotion_authorized": false,
+  "protected_paths_changed": false,
+  "semantic_sha256": "4366359ca7f0387700826c82c8879f20e066c9cd9f7b924decff43418750835d",
+  "source_digest": "6710f678900766f47969172cc2f1da03de3eb9d6fb42ca86135cb2e3f59ca11d",
+  "status": "PASS",
+  "surface_count": 32
+}

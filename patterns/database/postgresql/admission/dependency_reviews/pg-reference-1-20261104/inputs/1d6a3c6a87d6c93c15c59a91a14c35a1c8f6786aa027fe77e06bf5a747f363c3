@@ -1,0 +1,11 @@
+--- src/hmt_pg_patterns/outbox.py
++++ src/hmt_pg_patterns/outbox.py.mutated
+@@ -110,7 +110,7 @@
+     with connection.transaction():
+         identity = Authority(connection).identity()
+         current = Authority(connection).checkpoint(scope.stream_id)
+-        if current is None or current.epoch != identity.epoch:
++        if current is None:
+             raise ValueError("CHECKPOINT_EPOCH_REVOKED")
+     return _publish(connection, cache, event, immutable_checkpoint(current))
+ 

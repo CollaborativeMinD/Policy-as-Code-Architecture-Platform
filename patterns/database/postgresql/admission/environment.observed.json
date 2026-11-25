@@ -1,0 +1,7 @@
+{
+  "PYTHONDONTWRITEBYTECODE": "1",
+  "PYTEST_DISABLE_PLUGIN_AUTOLOAD": "1",
+  "PYTEST_PLUGINS": "pytest_asyncio.plugin,pytest_cov.plugin",
+  "HMT_PGLITE_CLI": "/workspace/scratch/e7495113964e/work/pg_wasm/fixture_repair/server.mjs",
+  "HMT_REDIS_SERVER": "/workspace/scratch/e7495113964e/work/.services/lib/python3.12/site-packages/redislite/bin/redis-server"
+}

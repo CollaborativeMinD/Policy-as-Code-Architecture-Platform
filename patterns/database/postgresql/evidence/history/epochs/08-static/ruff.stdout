@@ -1,0 +1,1787 @@
+ruff 0.16.10
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/fixtures/pglite/apply_callback.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/qualification/conftest.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/qualification/native_worker_test.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/qualification/tailcat_wire_test.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/__init__.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/analytics.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/async_driver.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/asyncpg_driver.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/asyncpg_pool.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/authority.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/authority_async.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/authority_types.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/bulk.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/checkpoints.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/checkpoints_lua.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/checkpoints_snapshot.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/config.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/diagnostics.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/driver_contracts.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/migrations.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/models.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/orm.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/orm_async.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/orm_model.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/outbox.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/pace.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/pace_models.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/pools.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/queries.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/streaming.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/streaming_async_writer.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/streaming_contracts.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/streaming_runtime.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/streaming_scan.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/streaming_state.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/streaming_writer.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/sync_driver.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/transport.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/worker.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/worker_config.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/worker_io.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/worker_projection.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/worker_service.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/__init__.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/authority_samples.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/causal_samples.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/conftest.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/crossjoin_cases.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/crossjoin_e2e_authority.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/crossjoin_e2e_driver.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/crossjoin_e2e_extensions.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/crossjoin_e2e_flow.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/crossjoin_e2e_stream_pace.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/crossjoin_live_authority.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/crossjoin_live_driver.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/crossjoin_live_extensions.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/crossjoin_live_pace.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/crossjoin_live_stream.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/crossjoin_unit_authority.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/crossjoin_unit_driver.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/crossjoin_unit_extensions.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/crossjoin_unit_pace.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/crossjoin_unit_stream.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/driver_samples.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/service_runtime.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/streaming_oracle.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/streaming_samples.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/tailcat_runtime.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_admission_binding.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_admission_coverage.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_admission_evidence.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_admission_matrix.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_admission_process.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_admission_structure.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_admission_traceability.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_async_driver.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_asyncpg_driver.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_asyncpg_lifecycle_faults.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_authority_atomic.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_authority_security.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_bulk_analytics.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_causal_authority.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_causal_checkpoint.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_causal_pace.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_causal_streaming.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_causal_transaction.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_checkpoints_cache.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_config.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_crossjoin_e2e.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_crossjoin_integration.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_crossjoin_regex.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_crossjoin_unit.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_diagnostics.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_fixture_protocol_regressions.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_migrations.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_models.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_mutation_evidence.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_mutation_isolation.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_mutation_witnesses.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_orm_drivers.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_outbox_recovery.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_pace.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_pools.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_query_contracts.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_streaming_boundaries.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_streaming_parity.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_streaming_pipeline.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_streaming_scanner.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_streaming_writer.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_sync_driver.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_teardown_faults.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_transport_binding.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_worker_cli.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_worker_contracts.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_worker_e2e.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_worker_failures.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/__init__.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/admission_binding.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/admission_campaign.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/admission_causal.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/admission_coverage.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/admission_evidence.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/admission_harness.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/admission_junit.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/admission_process.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/admission_refinements.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/admission_structure.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/admit.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/candidate_ledger.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/candidate_model.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/candidate_sql.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/mutation_campaign.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/mutation_execution.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/mutation_models.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/mutation_probe.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/mutation_python.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/mutation_results.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/mutation_sql.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/mutation_storage.py
+[
+  {
+    "cell": null,
+    "code": "F401",
+    "end_location": {
+      "column": 25,
+      "row": 4
+    },
+    "filename": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_config.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 1,
+            "row": 5
+          },
+          "location": {
+            "column": 1,
+            "row": 4
+          }
+        }
+      ],
+      "message": "Remove unused import: `pathlib.Path`"
+    },
+    "location": {
+      "column": 21,
+      "row": 4
+    },
+    "message": "`pathlib.Path` imported but unused",
+    "name": "unused-import",
+    "noqa_row": 4,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-import"
+  },
+  {
+    "cell": null,
+    "code": "F401",
+    "end_location": {
+      "column": 25,
+      "row": 3
+    },
+    "filename": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_migrations.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 1,
+            "row": 4
+          },
+          "location": {
+            "column": 1,
+            "row": 3
+          }
+        }
+      ],
+      "message": "Remove unused import: `pathlib.Path`"
+    },
+    "location": {
+      "column": 21,
+      "row": 3
+    },
+    "message": "`pathlib.Path` imported but unused",
+    "name": "unused-import",
+    "noqa_row": 3,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-import"
+  },
+  {
+    "cell": null,
+    "code": "F401",
+    "end_location": {
+      "column": 45,
+      "row": 3
+    },
+    "filename": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_models.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "from datetime import UTC, datetime",
+          "end_location": {
+            "column": 45,
+            "row": 3
+          },
+          "location": {
+            "column": 1,
+            "row": 3
+          }
+        }
+      ],
+      "message": "Remove unused import: `datetime.timezone`"
+    },
+    "location": {
+      "column": 37,
+      "row": 3
+    },
+    "message": "`datetime.timezone` imported but unused",
+    "name": "unused-import",
+    "noqa_row": 3,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-import"
+  },
+  {
+    "cell": null,
+    "code": "F401",
+    "end_location": {
+      "column": 25,
+      "row": 4
+    },
+    "filename": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/admission_campaign.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 1,
+            "row": 5
+          },
+          "location": {
+            "column": 1,
+            "row": 4
+          }
+        }
+      ],
+      "message": "Remove unused import: `pathlib.Path`"
+    },
+    "location": {
+      "column": 21,
+      "row": 4
+    },
+    "message": "`pathlib.Path` imported but unused",
+    "name": "unused-import",
+    "noqa_row": 4,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-import"
+  }
+]unformatted: File would be reformatted
+  --> tests/crossjoin_cases.py:2:1
+   |
+1  | """Single explicit case inventory; every selected candidate gets four real test families."""
+2  +
+3  | from pathlib import Path
+--------------------------------------------------------------------------------
+11 |
+   - DIMENSIONS = load_dimensions(Path(__file__).resolve().parents[1] / "contracts/candidate_dimensions.json")
+12 + DIMENSIONS = load_dimensions(
+13 +     Path(__file__).resolve().parents[1] / "contracts/candidate_dimensions.json"
+14 + )
+15 | CASE_IDS = tuple(case["id"] for case in DIMENSIONS["cases"])
+16 | UNIT = {
+   -     "tls_profile": driver.tls_profile, "bound_values": driver.bound_values,
+   -     "rollback": driver.rollback, "retry_budget": driver.retry_budget,
+   -     "bounded_close": driver.bounded_close, "contract_rejection": driver.contract_rejection,
+   -     "immutable_snapshot": authority.immutable_snapshot, "epoch_fence": authority.epoch_fence,
+   -     "outbox_replay": authority.outbox_replay, "checkpoint_order": authority.checkpoint_order,
+   -     "packet_invariance": streaming.packet_invariance, "stream_limits": streaming.stream_limits,
+   -     "terminal_authority": pace.terminal_authority, "guarded_recovery": pace.guarded_recovery,
+17 +     "tls_profile": driver.tls_profile,
+18 +     "bound_values": driver.bound_values,
+19 +     "rollback": driver.rollback,
+20 +     "retry_budget": driver.retry_budget,
+21 +     "bounded_close": driver.bounded_close,
+22 +     "contract_rejection": driver.contract_rejection,
+23 +     "immutable_snapshot": authority.immutable_snapshot,
+24 +     "epoch_fence": authority.epoch_fence,
+25 +     "outbox_replay": authority.outbox_replay,
+26 +     "checkpoint_order": authority.checkpoint_order,
+27 +     "packet_invariance": streaming.packet_invariance,
+28 +     "stream_limits": streaming.stream_limits,
+29 +     "terminal_authority": pace.terminal_authority,
+30 +     "guarded_recovery": pace.guarded_recovery,
+31 |     "wal_prerequisites": driver.wal_prerequisites,
+   -     "pool_capacity": extensions.pool_capacity, "migration_drift": extensions.migration_drift,
+   -     "tailcat_binding": extensions.tailcat_binding, "bounded_rows": extensions.bounded_rows,
+32 +     "pool_capacity": extensions.pool_capacity,
+33 +     "migration_drift": extensions.migration_drift,
+34 +     "tailcat_binding": extensions.tailcat_binding,
+35 +     "bounded_rows": extensions.bounded_rows,
+36 | }
+37 |
+38 | REGEX = {
+39 |     "tls_profile": r"PRODUCTION_REQUIRES_TLS_AND_NONADMIN_ROLE",
+   -     "bound_values": r"TABLE_NOT_ADMITTED", "rollback": r"IDLE_AUTOCOMMIT_CONNECTION_REQUIRED",
+   -     "retry_budget": r"40001", "bounded_close": r"forced",
+   -     "contract_rejection": r"TELEMETRY_KEY_INVALID", "immutable_snapshot": r"[0-9a-f]{64}",
+   -     "epoch_fence": r"int_type", "outbox_replay": r"OUTBOX_REQUIRES_IDLE_AUTOCOMMIT",
+   -     "checkpoint_order": r"greater_than_equal", "packet_invariance": r"content|max size|tail",
+   -     "stream_limits": r"STREAM_CAPACITY", "terminal_authority": r"PACE_OPERATION_DENIED:T:write",
+   -     "guarded_recovery": r"PACE_OPERATION_DENIED:E:write", "wal_prerequisites": r"WAL_PROTECTION_DISABLED",
+   -     "pool_capacity": r"POOL_SIZE_OUT_OF_RANGE", "migration_drift": r"MIGRATION_CHECKSUM_DRIFT",
+   -     "tailcat_binding": r"TAILCAT_PEER_MISMATCH", "bounded_rows": r"BATCH_ROW_LIMIT",
+40 +     "bound_values": r"TABLE_NOT_ADMITTED",
+41 +     "rollback": r"IDLE_AUTOCOMMIT_CONNECTION_REQUIRED",
+42 +     "retry_budget": r"40001",
+43 +     "bounded_close": r"forced",
+44 +     "contract_rejection": r"TELEMETRY_KEY_INVALID",
+45 +     "immutable_snapshot": r"[0-9a-f]{64}",
+46 +     "epoch_fence": r"int_type",
+47 +     "outbox_replay": r"OUTBOX_REQUIRES_IDLE_AUTOCOMMIT",
+48 +     "checkpoint_order": r"greater_than_equal",
+49 +     "packet_invariance": r"content|max size|tail",
+50 +     "stream_limits": r"STREAM_CAPACITY",
+51 +     "terminal_authority": r"PACE_OPERATION_DENIED:T:write",
+52 +     "guarded_recovery": r"PACE_OPERATION_DENIED:E:write",
+53 +     "wal_prerequisites": r"WAL_PROTECTION_DISABLED",
+54 +     "pool_capacity": r"POOL_SIZE_OUT_OF_RANGE",
+55 +     "migration_drift": r"MIGRATION_CHECKSUM_DRIFT",
+56 +     "tailcat_binding": r"TAILCAT_PEER_MISMATCH",
+57 +     "bounded_rows": r"BATCH_ROW_LIMIT",
+58 | }
+   |
+
+unformatted: File would be reformatted
+  --> tests/crossjoin_e2e_authority.py:2:1
+   |
+1  | """Full reference delivery under mutation, stale authority, replay, and reordering."""
+2  +
+3  | import psycopg
+--------------------------------------------------------------------------------
+58 |     result = flow.complete(snapshot, PAYLOAD)
+   -     replay = flow.write([PAYLOAD[index:index + 3] for index in range(0, len(PAYLOAD), 3)])
+59 +     replay = flow.write([PAYLOAD[index : index + 3] for index in range(0, len(PAYLOAD), 3)])
+60 |     assert replay == snapshot and counts(live.conn) == before
+   |
+
+unformatted: File would be reformatted
+  --> tests/crossjoin_e2e_driver.py:2:1
+   |
+1  | """Driver failure mechanisms composed with committed reads and complete delivery."""
+2  +
+3  | import asyncio
+--------------------------------------------------------------------------------
+52 |     attempts = []
+53 +
+54 |     def rejected(connection):
+55 |         attempts.append(len(attempts))
+56 |         flow.write([PAYLOAD])
+57 |         connection.execute("DO $$ BEGIN RAISE EXCEPTION USING ERRCODE='40001'; END $$")
+58 +
+59 |     with pytest.raises(psycopg.errors.SerializationFailure):
+   |
+
+unformatted: File would be reformatted
+  --> tests/crossjoin_e2e_extensions.py:2:1
+   |
+1  | """Pool, migration, Tailcat child binding, and bounded analytics reference flows."""
+2  +
+3  | from contextlib import closing
+--------------------------------------------------------------------------------
+43 |             assert apply_migrations(live.conn, root) == [source.name]
+   -             source.write_text("INSERT INTO hmt_pg.metrics VALUES "
+   -                               "(1,'active','{}','2026-01-01T00:00:00Z')")
+44 +             source.write_text(
+45 +                 "INSERT INTO hmt_pg.metrics VALUES (1,'active','{}','2026-01-01T00:00:00Z')"
+46 +             )
+47 |             with pytest.raises(ValueError, match="MIGRATION_CHECKSUM_DRIFT"):
+   |
+
+unformatted: File would be reformatted
+ --> tests/crossjoin_e2e_flow.py:2:1
+  |
+1 | """Complete CDC -> fenced PostgreSQL effect -> outbox -> Redis projection reference."""
+2 +
+3 | from dataclasses import dataclass
+  |
+
+unformatted: File would be reformatted
+  --> tests/crossjoin_e2e_stream_pace.py:2:1
+   |
+1  | """CDC limits, local capability guards, and durability prerequisites at the effect boundary."""
+2  +
+3  | import pytest
+--------------------------------------------------------------------------------
+17 |     flow = prepare(live)
+   -     snapshot = flow.write([PAYLOAD[index:index + 11] for index in range(0, len(PAYLOAD), 11)])
+18 +     snapshot = flow.write([PAYLOAD[index : index + 11] for index in range(0, len(PAYLOAD), 11)])
+19 |     before = counts(live.conn)
+--------------------------------------------------------------------------------
+63 |     unsafe = observed.model_copy(update={"fsync": "off"})
+64 +
+65 |     def commit_requiring_durability():
+66 |         unsafe.require_local_durable_commit()
+67 |         return flow.write([PAYLOAD])
+68 +
+69 |     with pytest.raises(ValueError, match="WAL_PROTECTION_DISABLED"):
+   |
+
+unformatted: File would be reformatted
+  --> tests/crossjoin_live_authority.py:2:1
+   |
+1  | """Live atomic effects, immutable snapshots, outbox recovery, and Redis ordering."""
+2  +
+3  | from dataclasses import dataclass
+--------------------------------------------------------------------------------
+76 |     earlier = authority.checkpoint(first.stream_id)
+   -     second = request(b"next", stream_id=first.stream_id, sequence=1, start=accepted.end,
+   -                      previous_digest=accepted.digest)
+77 +     second = request(
+78 +         b"next",
+79 +         stream_id=first.stream_id,
+80 +         sequence=1,
+81 +         start=accepted.end,
+82 +         previous_digest=accepted.digest,
+83 +     )
+84 |     authority.admit(second)
+   |
+
+unformatted: File would be reformatted
+  --> tests/crossjoin_live_driver.py:2:1
+   |
+1  | """Real PostgreSQL driver/configuration failures with observed database postconditions."""
+2  +
+3  | import asyncio
+--------------------------------------------------------------------------------
+42 |         raise RuntimeError("crossjoin_after_insert")
+43 +
+44 |     with pytest.raises(RuntimeError, match="crossjoin_after_insert"):
+--------------------------------------------------------------------------------
+51 |     attempts = []
+52 +
+53 |     def operation(connection):
+54 |         attempts.append(len(attempts) + 1)
+55 |         insert_metric(connection, sample())
+56 |         connection.execute("DO $$ BEGIN RAISE EXCEPTION USING ERRCODE='40001'; END $$")
+57 +
+58 |     with pytest.raises(psycopg.errors.SerializationFailure):
+   |
+
+unformatted: File would be reformatted
+  --> tests/crossjoin_live_extensions.py:2:1
+   |
+1  | """Live bounded leases, checksum drift, fixed peer identity, and bulk row budgets."""
+2  +
+3  | from contextlib import closing
+--------------------------------------------------------------------------------
+41 |         with live.conn.transaction():
+   -             live.conn.execute("DELETE FROM hmt_pg.schema_migrations WHERE name=%s",
+   -                               (source.name,)) if migration_table_exists(live.conn) else None
+42 +             live.conn.execute(
+43 +                 "DELETE FROM hmt_pg.schema_migrations WHERE name=%s", (source.name,)
+44 +             ) if migration_table_exists(live.conn) else None
+45 |             assert apply_migrations(live.conn, root) == [source.name]
+--------------------------------------------------------------------------------
+54 | def migration_table_exists(connection):
+   -     return connection.execute("SELECT to_regclass('hmt_pg.schema_migrations')").fetchone()[0] is not None
+55 +     return (
+56 +         connection.execute("SELECT to_regclass('hmt_pg.schema_migrations')").fetchone()[0]
+57 +         is not None
+58 +     )
+59 |
+   |
+
+unformatted: File would be reformatted
+ --> tests/crossjoin_live_pace.py:2:1
+  |
+1 | """Local capability guard plus independently checked database epoch authority."""
+2 +
+3 | import pytest
+  |
+
+unformatted: File would be reformatted
+  --> tests/crossjoin_live_stream.py:2:1
+   |
+1  | """Byte-stream reconstruction and source bounds exercised through PostgreSQL effects."""
+2  +
+3  | from uuid import uuid4
+--------------------------------------------------------------------------------
+12 | def reconstruct(connection, stream_id):
+   -     rows = connection.execute("SELECT payload FROM hmt_pg.chunk_effect "
+   -                               "WHERE db_role=session_user AND stream_id=%s ORDER BY sequence",
+   -                               (stream_id,)).fetchall()
+13 +     rows = connection.execute(
+14 +         "SELECT payload FROM hmt_pg.chunk_effect "
+15 +         "WHERE db_role=session_user AND stream_id=%s ORDER BY sequence",
+16 +         (stream_id,),
+17 +     ).fetchall()
+18 |     return b"".join(row[0] for row in rows)
+--------------------------------------------------------------------------------
+27 |     second = StreamWriter(authority, stream_id, 1, policy).write(
+   -         [PAYLOAD[index:index + 7] for index in range(0, len(PAYLOAD), 7)])
+28 +         [PAYLOAD[index : index + 7] for index in range(0, len(PAYLOAD), 7)]
+29 +     )
+30 |     assert first == second and counts(live.conn) == original_counts
+   |
+
+unformatted: File would be reformatted
+  --> tests/crossjoin_unit_authority.py:2:1
+   |
+1  | """Typed authority/snapshot boundaries; live SQL fences have separate witnesses."""
+2  +
+3  | import json
+--------------------------------------------------------------------------------
+16 | def checkpoint_value():
+   -     return CheckpointData(db_role="peer_alpha", stream_id=uuid4(), epoch=1, sequence=0,
+   -                           end=1, digest=b"a" * 32, policy_digest=b"b" * 32)
+17 +     return CheckpointData(
+18 +         db_role="peer_alpha",
+19 +         stream_id=uuid4(),
+20 +         epoch=1,
+21 +         sequence=0,
+22 +         end=1,
+23 +         digest=b"a" * 32,
+24 +         policy_digest=b"b" * 32,
+25 +     )
+26 |
+   |
+
+unformatted: File would be reformatted
+  --> tests/crossjoin_unit_driver.py:2:1
+   |
+1  | """Isolated public-boundary witnesses for driver and configuration candidates."""
+2  +
+3  | import asyncio
+--------------------------------------------------------------------------------
+53 |     calls = []
+54 +
+55 |     def rejected(conn):
+56 |         calls.append(conn)
+57 |         raise psycopg.errors.SerializationFailure("controlled unit witness")
+58 +
+59 |     with pytest.raises(psycopg.errors.SerializationFailure) as denied:
+--------------------------------------------------------------------------------
+93 | def wal_prerequisites():
+   -     observed = WalSettings(fsync="off", full_page_writes="on",
+   -                            synchronous_commit="on", wal_level="replica")
+94 +     observed = WalSettings(
+95 +         fsync="off", full_page_writes="on", synchronous_commit="on", wal_level="replica"
+96 +     )
+97 |     with pytest.raises(ValueError) as denied:
+   |
+
+unformatted: File would be reformatted
+ --> tests/crossjoin_unit_extensions.py:2:1
+  |
+1 | """Distinct pool, migration, peer-binding, and bounded-row admission mechanisms."""
+2 +
+3 | from contextlib import contextmanager
+  |
+
+unformatted: File would be reformatted
+  --> tests/crossjoin_unit_pace.py:2:1
+   |
+1  | """PACE observations never substitute for database grants or local execution guards."""
+2  +
+3  | import pytest
+--------------------------------------------------------------------------------
+9  | def observation(**changes):
+   -     values = dict(now=1.0, margin=0.8, database_ready=True, cache_ready=True,
+   -                   transport_ready=True, authority_valid=True, epoch_current=True,
+   -                   reconciled=True, uncertain_ack=False)
+10 +     values = dict(
+11 +         now=1.0,
+12 +         margin=0.8,
+13 +         database_ready=True,
+14 +         cache_ready=True,
+15 +         transport_ready=True,
+16 +         authority_valid=True,
+17 +         epoch_current=True,
+18 +         reconciled=True,
+19 +         uncertain_ack=False,
+20 +     )
+21 |     values.update(changes)
+   |
+
+unformatted: File would be reformatted
+  --> tests/crossjoin_unit_stream.py:2:1
+   |
+1  | """Independent packetization and capacity attacks on the live CDC primitive."""
+2  +
+3  | import pytest
+--------------------------------------------------------------------------------
+11 | def chunk_policy(**changes):
+   -     values = dict(block_size_target=16, window_size=4, min_size=8, max_size=32,
+   -                   max_packet_bytes=2048, max_total_bytes=4096, quantum_bytes=64)
+12 +     values = dict(
+13 +         block_size_target=16,
+14 +         window_size=4,
+15 +         min_size=8,
+16 +         max_size=32,
+17 +         max_packet_bytes=2048,
+18 +         max_total_bytes=4096,
+19 +         quantum_bytes=64,
+20 +     )
+21 |     values.update(changes)
+--------------------------------------------------------------------------------
+28 |     for start in range(0, len(data), packet_size):
+   -         chunks.extend(scanner.feed(data[start:start + packet_size]))
+29 +         chunks.extend(scanner.feed(data[start : start + packet_size]))
+30 |     chunks.extend(scanner.finish())
+   |
+
+unformatted: File would be reformatted
+  --> tests/test_admission_binding.py:2:1
+   |
+1  | """PG-ADMIT-004: exact test identity, current source, and nonpassing preservation."""
+2  +
+3  | from pathlib import Path
+--------------------------------------------------------------------------------
+20 |     assertions = export_tables(path)["assertions"]
+   -     execution = {"method": "executed", "source_digest": "a" * 64, "run_id": "observed-001",
+   -                  "tests": [{"test_id": row["test_id"], "outcome": "PASS"} for row in assertions]}
+21 +     execution = {
+22 +         "method": "executed",
+23 +         "source_digest": "a" * 64,
+24 +         "run_id": "observed-001",
+25 +         "tests": [{"test_id": row["test_id"], "outcome": "PASS"} for row in assertions],
+26 +     }
+27 |     return path, execution
+--------------------------------------------------------------------------------
+73 |     path = tmp_path / "junit.xml"
+   -     path.write_text('<testsuite><testcase classname="tests.test_one" name="test_ok"/>'
+   -                     '<testcase classname="tests.test_one" name="test_bad"><failure/>'
+   -                     '</testcase><testcase classname="tests.test_one" name="test_deferred">'
+   -                     '<skipped/></testcase></testsuite>')
+74 +     path.write_text(
+75 +         '<testsuite><testcase classname="tests.test_one" name="test_ok"/>'
+76 +         '<testcase classname="tests.test_one" name="test_bad"><failure/>'
+77 +         '</testcase><testcase classname="tests.test_one" name="test_deferred">'
+78 +         "<skipped/></testcase></testsuite>"
+79 +     )
+80 |     report = read_junit(path, "a" * 64, "run-1")
+--------------------------------------------------------------------------------
+84 | def test_parametrized_id_is_preserved():
+   -     node = ET.fromstring('<testcase classname="tests.test_crossjoin_unit" '
+   -                          'file="tests/test_crossjoin_unit.py" name="test_candidate_unit[epoch_fence]"/>')
+85 +     node = ET.fromstring(
+86 +         '<testcase classname="tests.test_crossjoin_unit" '
+87 +         'file="tests/test_crossjoin_unit.py" name="test_candidate_unit[epoch_fence]"/>'
+88 +     )
+89 |     assert node_id(node) == "tests/test_crossjoin_unit.py::test_candidate_unit[epoch_fence]"
+   |
+
+unformatted: File would be reformatted
+  --> tests/test_admission_coverage.py:2:1
+   |
+1  | """PG-ADMIT-002: branch-only threshold and complete production population."""
+2  +
+3  | from copy import deepcopy
+--------------------------------------------------------------------------------
+13 |     (path / "unit.py").write_text("def decision(x):\n    return x if x else 0\n")
+   -     return {"meta": {"branch_coverage": True}, "files": {
+   -         "src/hmt_pg_patterns/unit.py": {"summary": {
+   -             "num_statements": 1000, "covered_lines": 1000,
+   -             "num_branches": 10, "covered_branches": 9}}}}
+14 +     return {
+15 +         "meta": {"branch_coverage": True},
+16 +         "files": {
+17 +             "src/hmt_pg_patterns/unit.py": {
+18 +                 "summary": {
+19 +                     "num_statements": 1000,
+20 +                     "covered_lines": 1000,
+21 +                     "num_branches": 10,
+22 +                     "covered_branches": 9,
+23 +                 }
+24 +             }
+25 +         },
+26 +     }
+27 |
+--------------------------------------------------------------------------------
+55 |     measured["files"]["./src/hmt_pg_patterns/unit.py"] = deepcopy(
+   -         measured["files"]["src/hmt_pg_patterns/unit.py"])
+56 +         measured["files"]["src/hmt_pg_patterns/unit.py"]
+57 +     )
+58 |     with pytest.raises(ValueError, match="POPULATION"):
+--------------------------------------------------------------------------------
+67 |
+   - @pytest.mark.parametrize("change", [
+   -     {"covered_branches": True}, {"num_branches": -1}, {"covered_branches": 11},
+   -     {"covered_lines": 1001},
+   - ])
+68 + @pytest.mark.parametrize(
+69 +     "change",
+70 +     [
+71 +         {"covered_branches": True},
+72 +         {"num_branches": -1},
+73 +         {"covered_branches": 11},
+74 +         {"covered_lines": 1001},
+75 +     ],
+76 + )
+77 | def test_impossible_counts_rejected(change):
+   -     summary = {"num_statements": 1000, "covered_lines": 1000,
+   -                "num_branches": 10, "covered_branches": 9} | change
+78 +     summary = {
+79 +         "num_statements": 1000,
+80 +         "covered_lines": 1000,
+81 +         "num_branches": 10,
+82 +         "covered_branches": 9,
+83 +     } | change
+84 |     with pytest.raises(ValueError, match="COVERAGE_"):
+   |
+
+unformatted: File would be reformatted
+  --> tests/test_admission_evidence.py:2:1
+   |
+1  | """PG-ADMIT-006: content identities change with source, and receipts are immutable."""
+2  +
+3  | import pytest
+--------------------------------------------------------------------------------
+41 |         raise ValueError("INJECTED_CONTRACT_FAILURE")
+42 +
+43 |     result = observed_gate("gate", broken, tmp_path)
+   |
+
+unformatted: File would be reformatted
+  --> tests/test_admission_matrix.py:2:1
+   |
+1  | """PG-ADMIT-003: candidate-space completeness, exclusions, and immutable history."""
+2  +
+3  | from copy import deepcopy
+--------------------------------------------------------------------------------
+21 |     report = create_ledger(dimensions, path, "a" * 64)
+   -     expected = len(dimensions["invariants"]) * len(dimensions["failure_modes"]) * len(dimensions["gates"])
+22 +     expected = (
+23 +         len(dimensions["invariants"]) * len(dimensions["failure_modes"]) * len(dimensions["gates"])
+24 +     )
+25 |     assert report["status"] == "PASS"
+   |
+
+unformatted: File would be reformatted
+  --> tests/test_admission_process.py:2:1
+   |
+1  | """PG-ADMIT-005: actual subprocess failure, timeout, and bounded output witnesses."""
+2  +
+3  | import os
+--------------------------------------------------------------------------------
+10 | def execute(tmp_path, script, timeout=2):
+   -     return admission_process.run_command([sys.executable, "-c", script], tmp_path,
+   -                                          tmp_path / "logs", dict(os.environ), timeout)
+11 +     return admission_process.run_command(
+12 +         [sys.executable, "-c", script], tmp_path, tmp_path / "logs", dict(os.environ), timeout
+13 +     )
+14 |
+15 |
+16 | def test_real_process_success_retains_both_logs(tmp_path):
+   -     result = execute(tmp_path, "import sys; print('observed'); print('diagnostic', file=sys.stderr)")
+17 +     result = execute(
+18 +         tmp_path, "import sys; print('observed'); print('diagnostic', file=sys.stderr)"
+19 +     )
+20 |     assert result["status"] == "PASS"
+   |
+
+unformatted: File would be reformatted
+  --> tests/test_admission_structure.py:2:1
+   |
+1  | """PG-ADMIT-001: threshold edges, suppression, and malformed-source attacks."""
+2  +
+3  | import ast
+--------------------------------------------------------------------------------
+8  |
+   - @pytest.mark.parametrize("count,expected", [
+   -     (44, "NOMINAL"), (45, "WATCH"), (49, "WATCH"), (50, "REFACTOR_REQUIRED"),
+   -     (59, "REFACTOR_REQUIRED"), (60, "BLOCK"), (61, "BLOCK"),
+   - ])
+9  + @pytest.mark.parametrize(
+10 +     "count,expected",
+11 +     [
+12 +         (44, "NOMINAL"),
+13 +         (45, "WATCH"),
+14 +         (49, "WATCH"),
+15 +         (50, "REFACTOR_REQUIRED"),
+16 +         (59, "REFACTOR_REQUIRED"),
+17 +         (60, "BLOCK"),
+18 +         (61, "BLOCK"),
+19 +     ],
+20 + )
+21 | def test_function_policy_boundaries(count, expected):
+22 |     assert band(count, True) == expected
+23 |
+24 |
+   - @pytest.mark.parametrize("count,expected", [
+   -     (99, "NOMINAL"), (100, "WATCH"), (149, "WATCH"), (150, "REFACTOR_REQUIRED"),
+   -     (179, "REFACTOR_REQUIRED"), (180, "BLOCK"), (181, "BLOCK"),
+   - ])
+25 + @pytest.mark.parametrize(
+26 +     "count,expected",
+27 +     [
+28 +         (99, "NOMINAL"),
+29 +         (100, "WATCH"),
+30 +         (149, "WATCH"),
+31 +         (150, "REFACTOR_REQUIRED"),
+32 +         (179, "REFACTOR_REQUIRED"),
+33 +         (180, "BLOCK"),
+34 +         (181, "BLOCK"),
+35 +     ],
+36 + )
+37 | def test_module_policy_boundaries(count, expected):
+--------------------------------------------------------------------------------
+65 |
+   - @pytest.mark.parametrize("source", [
+   -     "import pytest\npytest.skip('reason')",
+   -     "from pytest import xfail as defer\ndefer('reason')",
+   -     "import unittest\n@unittest.skipIf(True, 'reason')\ndef check(): pass",
+   - ])
+66 + @pytest.mark.parametrize(
+67 +     "source",
+68 +     [
+69 +         "import pytest\npytest.skip('reason')",
+70 +         "from pytest import xfail as defer\ndefer('reason')",
+71 +         "import unittest\n@unittest.skipIf(True, 'reason')\ndef check(): pass",
+72 +     ],
+73 + )
+74 | def test_suppression_aliases_are_observed(source):
+   |
+
+unformatted: File would be reformatted
+  --> tests/test_admission_traceability.py:2:1
+   |
+1  | """PG-ADMIT-007: unknown source/test contracts and missing causal experiments fail."""
+2  +
+3  | from copy import deepcopy
+--------------------------------------------------------------------------------
+40 |     registry = read_registry(ROOT)
+   -     execution = {"source_digest": "a" * 64, "run_id": "observed-causal", "method": "executed",
+   -                  "tests": [{"test_id": identity, "outcome": "PASS"}
+   -                            for edge in registry["causal_edges"] for identity in edge["tests"].values()]}
+41 +     execution = {
+42 +         "source_digest": "a" * 64,
+43 +         "run_id": "observed-causal",
+44 +         "method": "executed",
+45 +         "tests": [
+46 +             {"test_id": identity, "outcome": "PASS"}
+47 +             for edge in registry["causal_edges"]
+48 +             for identity in edge["tests"].values()
+49 +         ],
+50 +     }
+51 |     return path, registry, execution
+   |
+
+unformatted: File would be reformatted
+  --> tests/test_crossjoin_e2e.py:2:1
+   |
+1  | """Every applicable candidate has an end-to-end failure or delivery witness."""
+2  +
+3  | import pytest
+--------------------------------------------------------------------------------
+14 | FLOWS = {
+   -     "tls_profile": driver.tls_profile, "bound_values": driver.bound_values,
+   -     "rollback": driver.rollback, "retry_budget": driver.retry_budget,
+   -     "bounded_close": driver.bounded_close, "contract_rejection": driver.contract_rejection,
+   -     "immutable_snapshot": authority.immutable_snapshot, "epoch_fence": authority.epoch_fence,
+   -     "outbox_replay": authority.outbox_replay, "checkpoint_order": authority.checkpoint_order,
+   -     "packet_invariance": streaming.packet_invariance, "stream_limits": streaming.stream_limits,
+   -     "terminal_authority": streaming.terminal_authority, "guarded_recovery": streaming.guarded_recovery,
+   -     "wal_prerequisites": streaming.wal_prerequisites, "pool_capacity": extensions.pool_capacity,
+   -     "migration_drift": extensions.migration_drift, "tailcat_binding": extensions.tailcat_binding,
+15 +     "tls_profile": driver.tls_profile,
+16 +     "bound_values": driver.bound_values,
+17 +     "rollback": driver.rollback,
+18 +     "retry_budget": driver.retry_budget,
+19 +     "bounded_close": driver.bounded_close,
+20 +     "contract_rejection": driver.contract_rejection,
+21 +     "immutable_snapshot": authority.immutable_snapshot,
+22 +     "epoch_fence": authority.epoch_fence,
+23 +     "outbox_replay": authority.outbox_replay,
+24 +     "checkpoint_order": authority.checkpoint_order,
+25 +     "packet_invariance": streaming.packet_invariance,
+26 +     "stream_limits": streaming.stream_limits,
+27 +     "terminal_authority": streaming.terminal_authority,
+28 +     "guarded_recovery": streaming.guarded_recovery,
+29 +     "wal_prerequisites": streaming.wal_prerequisites,
+30 +     "pool_capacity": extensions.pool_capacity,
+31 +     "migration_drift": extensions.migration_drift,
+32 +     "tailcat_binding": extensions.tailcat_binding,
+33 |     "bounded_rows": extensions.bounded_rows,
+   |
+
+unformatted: File would be reformatted
+  --> tests/test_crossjoin_integration.py:2:1
+   |
+1  | """Every applicable candidate is attacked against live PostgreSQL or Redis components."""
+2  +
+3  | import pytest
+--------------------------------------------------------------------------------
+14 | LIVE = {
+   -     "tls_profile": driver.tls_profile, "bound_values": driver.bound_values,
+   -     "rollback": driver.rollback, "retry_budget": driver.retry_budget,
+   -     "bounded_close": driver.bounded_close, "contract_rejection": driver.contract_rejection,
+   -     "immutable_snapshot": authority.immutable_snapshot, "epoch_fence": authority.epoch_fence,
+   -     "outbox_replay": authority.outbox_replay, "checkpoint_order": authority.checkpoint_order,
+   -     "packet_invariance": streaming.packet_invariance, "stream_limits": streaming.stream_limits,
+   -     "terminal_authority": pace.terminal_authority, "guarded_recovery": pace.guarded_recovery,
+15 +     "tls_profile": driver.tls_profile,
+16 +     "bound_values": driver.bound_values,
+17 +     "rollback": driver.rollback,
+18 +     "retry_budget": driver.retry_budget,
+19 +     "bounded_close": driver.bounded_close,
+20 +     "contract_rejection": driver.contract_rejection,
+21 +     "immutable_snapshot": authority.immutable_snapshot,
+22 +     "epoch_fence": authority.epoch_fence,
+23 +     "outbox_replay": authority.outbox_replay,
+24 +     "checkpoint_order": authority.checkpoint_order,
+25 +     "packet_invariance": streaming.packet_invariance,
+26 +     "stream_limits": streaming.stream_limits,
+27 +     "terminal_authority": pace.terminal_authority,
+28 +     "guarded_recovery": pace.guarded_recovery,
+29 |     "wal_prerequisites": driver.wal_prerequisites,
+   -     "pool_capacity": extensions.pool_capacity, "migration_drift": extensions.migration_drift,
+   -     "tailcat_binding": extensions.tailcat_binding, "bounded_rows": extensions.bounded_rows,
+30 +     "pool_capacity": extensions.pool_capacity,
+31 +     "migration_drift": extensions.migration_drift,
+32 +     "tailcat_binding": extensions.tailcat_binding,
+33 +     "bounded_rows": extensions.bounded_rows,
+34 | }
+   |
+
+unformatted: File would be reformatted
+ --> tests/test_crossjoin_regex.py:2:1
+  |
+1 | """Regex oracles inspect actual rejected-input and serialization outputs of live primitives."""
+2 +
+3 | import re
+  |
+
+unformatted: File would be reformatted
+ --> tests/test_crossjoin_unit.py:2:1
+  |
+1 | """One unit-boundary attack for every applicable candidate-space row."""
+2 +
+3 | import pytest
+  |
+
+unformatted: File would be reformatted
+   --> tests/test_streaming_writer.py:72:58
+    |
+71  |     async def exercise():
+    -         async with await psycopg.AsyncConnection.connect(pg_dsn, autocommit=True, prepare_threshold=None) as connection:
+72  +         async with await psycopg.AsyncConnection.connect(
+73  +             pg_dsn, autocommit=True, prepare_threshold=None
+74  +         ) as connection:
+75  |             authority = AsyncAuthority(connection)
+--------------------------------------------------------------------------------
+98  |     async def exercise():
+    -         async with await psycopg.AsyncConnection.connect(pg_dsn, autocommit=True, prepare_threshold=None) as connection:
+99  +         async with await psycopg.AsyncConnection.connect(
+100 +             pg_dsn, autocommit=True, prepare_threshold=None
+101 +         ) as connection:
+102 |             with pytest.raises(RuntimeError, match="abort"):
+    |
+
+unformatted: File would be reformatted
+  --> tools/admission_binding.py:2:1
+   |
+1  | """Preserve every candidate assertion and attach current, observed test witnesses."""
+2  +
+3  | from contextlib import closing
+--------------------------------------------------------------------------------
+22 |             actual = expected if passed else "TEST_NOT_PASSED"
+   -             db.execute("INSERT INTO executions VALUES (?,?,?,?,?,?)",
+   -                        (execution["run_id"] + ":" + assertion, assertion, source,
+   -                         "PASS" if passed else "FAIL", actual, evidence_digest))
+   -             manifest.append({"test_id": identity, "source_requirement_or_invariant": requirement,
+   -                              "evidence_ref": "junit.xml"})
+23 +             db.execute(
+24 +                 "INSERT INTO executions VALUES (?,?,?,?,?,?)",
+25 +                 (
+26 +                     execution["run_id"] + ":" + assertion,
+27 +                     assertion,
+28 +                     source,
+29 +                     "PASS" if passed else "FAIL",
+30 +                     actual,
+31 +                     evidence_digest,
+32 +                 ),
+33 +             )
+34 +             manifest.append(
+35 +                 {
+36 +                     "test_id": identity,
+37 +                     "source_requirement_or_invariant": requirement,
+38 +                     "evidence_ref": "junit.xml",
+39 +                 }
+40 +             )
+41 |             selected.append(witness or {"test_id": identity, "outcome": "MISSING"})
+--------------------------------------------------------------------------------
+45 |     subset["tests"] = selected
+   -     return {"status": "FAIL" if missing else "PASS", "missing_or_nonpassing": missing,
+   -             "assertions": len(manifest), "manifest": manifest, "execution": subset}
+46 +     return {
+47 +         "status": "FAIL" if missing else "PASS",
+48 +         "missing_or_nonpassing": missing,
+49 +         "assertions": len(manifest),
+50 +         "manifest": manifest,
+51 +         "execution": subset,
+52 +     }
+   |
+
+unformatted: File would be reformatted
+  --> tools/admission_campaign.py:2:1
+   |
+1  | """Fresh subprocess execution and exact-source-bound PostgreSQL branch evidence."""
+2  +
+3  | import json
+--------------------------------------------------------------------------------
+20 | def pytest_command(root, output):
+   -     return [sys.executable, "-m", "pytest", "-q", "--import-mode=importlib",
+   -             "-p", "pytest_cov.plugin", "-p", "pytest_asyncio.plugin",
+   -             "-o", "junit_family=xunit1", "--cov=hmt_pg_patterns", "--cov-branch",
+   -             "--cov-report=json:" + str(output / "coverage.json"),
+   -             "--junitxml=" + str(output / "junit.xml"), str(root / "tests")]
+21 +     return [
+22 +         sys.executable,
+23 +         "-m",
+24 +         "pytest",
+25 +         "-q",
+26 +         "--import-mode=importlib",
+27 +         "-p",
+28 +         "pytest_cov.plugin",
+29 +         "-p",
+30 +         "pytest_asyncio.plugin",
+31 +         "-o",
+32 +         "junit_family=xunit1",
+33 +         "--cov=hmt_pg_patterns",
+34 +         "--cov-branch",
+35 +         "--cov-report=json:" + str(output / "coverage.json"),
+36 +         "--junitxml=" + str(output / "junit.xml"),
+37 +         str(root / "tests"),
+38 +     ]
+39 |
+--------------------------------------------------------------------------------
+44 |     environment = dict(os.environ)
+   -     environment.update(PYTHONDONTWRITEBYTECODE="1", PYTEST_DISABLE_PLUGIN_AUTOLOAD="1",
+   -                        HMT_EVIDENCE_DIR=str(output), COVERAGE_FILE=str(output / ".coverage"))
+45 +     environment.update(
+46 +         PYTHONDONTWRITEBYTECODE="1",
+47 +         PYTEST_DISABLE_PLUGIN_AUTOLOAD="1",
+48 +         HMT_EVIDENCE_DIR=str(output),
+49 +         COVERAGE_FILE=str(output / ".coverage"),
+50 +     )
+51 |     process = run_command(pytest_command(root, output), root, output, environment, timeout)
+--------------------------------------------------------------------------------
+68 |     write_json(output / "test-manifest.json", full_test_manifest(measured, registry, dimensions))
+   -     bound = bind_executions(output / "candidate-space.sqlite3", measured,
+   -                             measured["evidence_digest"])
+69 +     bound = bind_executions(
+70 +         output / "candidate-space.sqlite3", measured, measured["evidence_digest"]
+71 +     )
+72 |     write_json(output / "crossjoin-manifest.json", bound.pop("manifest"))
+73 |     write_json(output / "crossjoin-execution.json", bound.pop("execution"))
+74 |     write_json(output / "candidate-binding.json", bound)
+   -     causal = attach_causal(output / "candidate-space.sqlite3", measured, registry,
+   -                            measured["evidence_digest"])
+75 +     causal = attach_causal(
+76 +         output / "candidate-space.sqlite3", measured, registry, measured["evidence_digest"]
+77 +     )
+78 |     write_json(output / "causal-binding.json", causal)
+   -     write_json(output / "candidate-space-native.json", export_tables(output / "candidate-space.sqlite3"))
+79 +     write_json(
+80 +         output / "candidate-space-native.json", export_tables(output / "candidate-space.sqlite3")
+81 +     )
+82 |     coverage = check_coverage(json.loads((output / "coverage.json").read_text()), root)
+83 |     write_json(output / "branch-coverage.json", coverage)
+84 |     clear = measured["failed"] == 0 and measured["suppressed"] == 0
+   -     return {"status": "PASS" if clear and bound["status"] == coverage["status"] == causal["status"] == "PASS"
+   -             else "FAIL", "test_count": len(measured["tests"]), "test_binding": bound,
+   -             "coverage": coverage, "causal": causal, "junit_sha256": measured["evidence_digest"]}
+85 +     return {
+86 +         "status": "PASS"
+87 +         if clear and bound["status"] == coverage["status"] == causal["status"] == "PASS"
+88 +         else "FAIL",
+89 +         "test_count": len(measured["tests"]),
+90 +         "test_binding": bound,
+91 +         "coverage": coverage,
+92 +         "causal": causal,
+93 +         "junit_sha256": measured["evidence_digest"],
+94 +     }
+   |
+
+unformatted: File would be reformatted
+  --> tools/admission_causal.py:2:1
+   |
+1  | """Bind all four causal experiments to actual, current pytest executions."""
+2  +
+3  | from contextlib import closing
+--------------------------------------------------------------------------------
+16 |         for edge in registry["causal_edges"]:
+   -             if set(edge["tests"]) != {"deletion", "restoration", "matched_control", "alternate_path"}:
+17 +             if set(edge["tests"]) != {
+18 +                 "deletion",
+19 +                 "restoration",
+20 +                 "matched_control",
+21 +                 "alternate_path",
+22 +             }:
+23 |                 raise ValueError("CAUSAL_EXPERIMENT_POPULATION")
+24 |             db.execute("INSERT INTO causal_edges VALUES (?,?)", (edge["id"], edge["requirement"]))
+   -             candidate = db.execute("SELECT id FROM candidates WHERE invariant_id=? "
+   -                                    "AND status='PENDING' ORDER BY id LIMIT 1",
+   -                                    (edge["requirement"],)).fetchone()
+25 +             candidate = db.execute(
+26 +                 "SELECT id FROM candidates WHERE invariant_id=? "
+27 +                 "AND status='PENDING' ORDER BY id LIMIT 1",
+28 +                 (edge["requirement"],),
+29 +             ).fetchone()
+30 |             if candidate is None:
+--------------------------------------------------------------------------------
+37 |                 execution_id = execution["run_id"] + ":" + assertion
+   -                 db.execute("INSERT INTO assertions VALUES (?,?,?,?,?,?)", (assertion, candidate[0],
+   -                            edge["requirement"], "causal", identity, "ASSERTIONS_PASSED"))
+   -                 db.execute("INSERT INTO executions VALUES (?,?,?,?,?,?)", (execution_id, assertion,
+   -                            execution["source_digest"], "PASS" if passed else "FAIL", actual, evidence_digest))
+   -                 db.execute("INSERT INTO causal_witnesses VALUES (?,?,?)",
+   -                            (edge["id"], experiment, execution_id))
+38 +                 db.execute(
+39 +                     "INSERT INTO assertions VALUES (?,?,?,?,?,?)",
+40 +                     (
+41 +                         assertion,
+42 +                         candidate[0],
+43 +                         edge["requirement"],
+44 +                         "causal",
+45 +                         identity,
+46 +                         "ASSERTIONS_PASSED",
+47 +                     ),
+48 +                 )
+49 +                 db.execute(
+50 +                     "INSERT INTO executions VALUES (?,?,?,?,?,?)",
+51 +                     (
+52 +                         execution_id,
+53 +                         assertion,
+54 +                         execution["source_digest"],
+55 +                         "PASS" if passed else "FAIL",
+56 +                         actual,
+57 +                         evidence_digest,
+58 +                     ),
+59 +                 )
+60 +                 db.execute(
+61 +                     "INSERT INTO causal_witnesses VALUES (?,?,?)",
+62 +                     (edge["id"], experiment, execution_id),
+63 +                 )
+64 |                 if not passed:
+65 |                     missing.append(identity)
+   -     return {"status": "FAIL" if missing else "PASS", "edges": len(registry["causal_edges"]),
+   -             "missing_or_nonpassing": missing, "experiment_count": len(registry["causal_edges"]) * 4}
+66 +     return {
+67 +         "status": "FAIL" if missing else "PASS",
+68 +         "edges": len(registry["causal_edges"]),
+69 +         "missing_or_nonpassing": missing,
+70 +         "experiment_count": len(registry["causal_edges"]) * 4,
+71 +     }
+   |
+
+unformatted: File would be reformatted
+  --> tools/admission_coverage.py:2:1
+   |
+1  | """PG-ADMIT-002: pure branch coverage over every delivered production module."""
+2  +
+3  | from pathlib import Path
+4  |
+5  |
+6  | def expected_sources(root):
+   -     return {path.relative_to(root).as_posix()
+   -             for path in (root / "src/hmt_pg_patterns").rglob("*.py")}
+7  +     return {
+8  +         path.relative_to(root).as_posix() for path in (root / "src/hmt_pg_patterns").rglob("*.py")
+9  +     }
+10 |
+--------------------------------------------------------------------------------
+34 |         raise ValueError("BRANCH_MEASUREMENT_REQUIRED")
+   -     observed = {normalize_source(name, root): row["summary"]
+   -                 for name, row in report["files"].items()}
+35 +     observed = {
+36 +         normalize_source(name, root): row["summary"] for name, row in report["files"].items()
+37 +     }
+38 |     expected = expected_sources(root)
+--------------------------------------------------------------------------------
+46 |     line_percent = 100 * lines / statements if statements else 100
+   -     return {"status": "PASS" if percent >= 90 and line_percent >= 90 else "FAIL",
+   -             "branch_percent": percent, "minimum_branch_percent": 90,
+   -             "covered_branches": covered, "num_branches": branches,
+   -             "line_percent": line_percent, "minimum_line_percent": 90,
+   -             "covered_lines": lines, "num_statements": statements,
+   -             "scope": "all delivered src/hmt_pg_patterns/*.py, recursively",
+   -             "tooling_scope": "independent admission tool tests and structural checks",
+   -             "files": len(observed)}
+47 +     return {
+48 +         "status": "PASS" if percent >= 90 and line_percent >= 90 else "FAIL",
+49 +         "branch_percent": percent,
+50 +         "minimum_branch_percent": 90,
+51 +         "covered_branches": covered,
+52 +         "num_branches": branches,
+53 +         "line_percent": line_percent,
+54 +         "minimum_line_percent": 90,
+55 +         "covered_lines": lines,
+56 +         "num_statements": statements,
+57 +         "scope": "all delivered src/hmt_pg_patterns/*.py, recursively",
+58 +         "tooling_scope": "independent admission tool tests and structural checks",
+59 +         "files": len(observed),
+60 +     }
+   |
+
+unformatted: File would be reformatted
+  --> tools/admission_evidence.py:2:1
+   |
+1  | """Source identity and append-only receipts for one fresh engineering test run."""
+2  +
+3  | from datetime import datetime, timezone
+--------------------------------------------------------------------------------
+34 |                 paths.append(path)
+   -     paths.extend(root / name for name in ("pyproject.toml", "uv.lock")
+   -                  if (root / name).exists())
+35 +     paths.extend(root / name for name in ("pyproject.toml", "uv.lock") if (root / name).exists())
+36 |     if not paths or len(paths) > 4096:
+--------------------------------------------------------------------------------
+49 |         files[path.relative_to(root).as_posix()] = file_digest(path)
+   -     return {"source_digest": canonical_digest(files), "files": files,
+   -             "total_bytes": total, "measured_at": timestamp(),
+   -             "scope": ["src", "tests", "tools", "contracts", "sql", "qualification",
+   -                       "pyproject.toml", "uv.lock"]}
+50 +     return {
+51 +         "source_digest": canonical_digest(files),
+52 +         "files": files,
+53 +         "total_bytes": total,
+54 +         "measured_at": timestamp(),
+55 +         "scope": [
+56 +             "src",
+57 +             "tests",
+58 +             "tools",
+59 +             "contracts",
+60 +             "sql",
+61 +             "qualification",
+62 +             "pyproject.toml",
+63 +             "uv.lock",
+64 +         ],
+65 +     }
+66 |
+--------------------------------------------------------------------------------
+76 |     for row in rows:
+   -         cases = {case["id"] for case in dimensions["cases"]
+   -                  if case["invariant_id"] == row["id"]}
+77 +         cases = {case["id"] for case in dimensions["cases"] if case["invariant_id"] == row["id"]}
+78 |         if cases != set(row["case_ids"]):
+--------------------------------------------------------------------------------
+85 |                 errors.append("SOURCE_REFERENCE_INVALID:" + reference)
+   -     return {"status": "FAIL" if errors else "PASS", "errors": errors,
+   -             "requirements": len(rows), "traceability_sha256": file_digest(path)}
+86 +     return {
+87 +         "status": "FAIL" if errors else "PASS",
+88 +         "errors": errors,
+89 +         "requirements": len(rows),
+90 +         "traceability_sha256": file_digest(path),
+91 +     }
+   |
+
+unformatted: File would be reformatted
+  --> tools/admission_harness.py:2:1
+   |
+1  | """Bind external service programs without recording connection strings or credentials."""
+2  +
+3  | import hashlib
+--------------------------------------------------------------------------------
+23 |             programs[name] = binary_identity(os.environ[name])
+   -     return {"programs": programs, "python_version": platform.python_version(),
+   -             "external_postgresql_configured": bool(os.environ.get("HMT_TEST_DSN")),
+   -             "external_redis_configured": bool(os.environ.get("HMT_TEST_REDIS_URL")),
+   -             "qualification_scope": "Managed software services or explicitly configured external services; "
+   -                                    "native qualification requires its separate execution receipt."}
+24 +     return {
+25 +         "programs": programs,
+26 +         "python_version": platform.python_version(),
+27 +         "external_postgresql_configured": bool(os.environ.get("HMT_TEST_DSN")),
+28 +         "external_redis_configured": bool(os.environ.get("HMT_TEST_REDIS_URL")),
+29 +         "qualification_scope": "Managed software services or explicitly configured external services; "
+30 +         "native qualification requires its separate execution receipt.",
+31 +     }
+   |
+
+unformatted: File would be reformatted
+  --> tools/admission_junit.py:2:1
+   |
+1  | """Bind native pytest XML to exact test identities; suppression never becomes PASS."""
+2  +
+3  | from pathlib import Path
+--------------------------------------------------------------------------------
+12 |         marker = Path(filename).stem
+   -         classes = parts[parts.index(marker) + 1:] if marker in parts else []
+13 +         classes = parts[parts.index(marker) + 1 :] if marker in parts else []
+14 |     else:
+   -         module_end = max((i for i, part in enumerate(parts) if part.startswith("test_")),
+   -                          default=len(parts) - 1)
+   -         filename = "/".join(parts[:module_end + 1]) + ".py"
+   -         classes = parts[module_end + 1:]
+15 +         module_end = max(
+16 +             (i for i, part in enumerate(parts) if part.startswith("test_")), default=len(parts) - 1
+17 +         )
+18 +         filename = "/".join(parts[: module_end + 1]) + ".py"
+19 +         classes = parts[module_end + 1 :]
+20 |     return "::".join([filename, *classes, testcase.get("name", "")])
+--------------------------------------------------------------------------------
+38 |             outcome = "FAIL"
+   -         tests.append({"test_id": identity, "outcome": outcome,
+   -                       "seconds": float(node.get("time", "0"))})
+39 +         tests.append(
+40 +             {"test_id": identity, "outcome": outcome, "seconds": float(node.get("time", "0"))}
+41 +         )
+42 |     if not tests or len(tests) > 10000:
+43 |         raise ValueError("EXECUTED_TEST_POPULATION_BOUND")
+   -     return {"method": "executed", "source_digest": source_digest, "run_id": run_id,
+   -             "tests": tests, "passed": sum(row["outcome"] == "PASS" for row in tests),
+   -             "failed": sum(row["outcome"] == "FAIL" for row in tests),
+   -             "suppressed": sum(row["outcome"] == "SUPPRESSED" for row in tests)}
+44 +     return {
+45 +         "method": "executed",
+46 +         "source_digest": source_digest,
+47 +         "run_id": run_id,
+48 +         "tests": tests,
+49 +         "passed": sum(row["outcome"] == "PASS" for row in tests),
+50 +         "failed": sum(row["outcome"] == "FAIL" for row in tests),
+51 +         "suppressed": sum(row["outcome"] == "SUPPRESSED" for row in tests),
+52 +     }
+   |
+
+unformatted: File would be reformatted
+  --> tools/admission_process.py:2:1
+   |
+1  | """Bounded local pytest process capture; the runner grants no runtime authority."""
+2  +
+3  | import os
+--------------------------------------------------------------------------------
+49 |         with (folder / "pytest.stderr.log").open("xb") as stderr:
+   -             with subprocess.Popen(argv, cwd=root, env=environment, stdout=subprocess.PIPE,
+   -                                   stderr=subprocess.PIPE, start_new_session=True) as process:
+50 +             with subprocess.Popen(
+51 +                 argv,
+52 +                 cwd=root,
+53 +                 env=environment,
+54 +                 stdout=subprocess.PIPE,
+55 +                 stderr=subprocess.PIPE,
+56 +                 start_new_session=True,
+57 +             ) as process:
+58 |                 reason, captured = capture(process, (stdout, stderr), started + timeout)
+59 |                 if reason != "COMPLETE":
+60 |                     terminate(process)
+61 |                 returncode = process.wait(timeout=5)
+   -     return {"status": "PASS" if reason == "COMPLETE" and returncode == 0 else "FAIL",
+   -             "argv": argv, "returncode": returncode, "reason": reason,
+   -             "seconds": time.monotonic() - started, "captured_bytes": captured,
+   -             "stdout": "pytest.stdout.log", "stderr": "pytest.stderr.log"}
+62 +     return {
+63 +         "status": "PASS" if reason == "COMPLETE" and returncode == 0 else "FAIL",
+64 +         "argv": argv,
+65 +         "returncode": returncode,
+66 +         "reason": reason,
+67 +         "seconds": time.monotonic() - started,
+68 +         "captured_bytes": captured,
+69 +         "stdout": "pytest.stdout.log",
+70 +         "stderr": "pytest.stderr.log",
+71 +     }
+   |
+
+unformatted: File would be reformatted
+  --> tools/admission_refinements.py:2:1
+   |
+1  | """Closed source/test inventory and explicit mappings for all public refinements."""
+2  +
+3  | import ast
+--------------------------------------------------------------------------------
+17 |     registry = read_registry(root)
+   -     sources = {path.relative_to(root).as_posix()
+   -                for path in (root / "src/hmt_pg_patterns").rglob("*.py")}
+18 +     sources = {
+19 +         path.relative_to(root).as_posix() for path in (root / "src/hmt_pg_patterns").rglob("*.py")
+20 +     }
+21 |     sources.update(path.relative_to(root).as_posix() for path in (root / "sql").glob("*.sql"))
+--------------------------------------------------------------------------------
+34 |             missing.append("UNMAPPED_BEHAVIOR:" + relative)
+   -     return {"status": "FAIL" if missing or unknown else "PASS", "inventory_gaps": missing,
+   -             "unmapped_public_contracts": sorted(unknown), "source_files": len(sources),
+   -             "test_files": len(tests), "public_contracts": len(registry["public_contracts"])}
+35 +     return {
+36 +         "status": "FAIL" if missing or unknown else "PASS",
+37 +         "inventory_gaps": missing,
+38 +         "unmapped_public_contracts": sorted(unknown),
+39 +         "source_files": len(sources),
+40 +         "test_files": len(tests),
+41 +         "public_contracts": len(registry["public_contracts"]),
+42 +     }
+43 |
+--------------------------------------------------------------------------------
+50 |         filename = identity.split("::", 1)[0]
+   -         entry = registry["test_files"].get(filename) or registry.get("qualification_files", {}).get(filename)
+51 +         entry = registry["test_files"].get(filename) or registry.get("qualification_files", {}).get(
+52 +             filename
+53 +         )
+54 |         if entry is None:
+--------------------------------------------------------------------------------
+63 |             raise ValueError("TEST_CONTRACT_UNMAPPED:" + requirement)
+   -         result.append({"test_id": identity, "source_requirement_or_invariant": requirement,
+   -                        "selected_invariants": registry["public_contracts"][requirement],
+   -                        "evidence_ref": "junit.xml"})
+64 +         result.append(
+65 +             {
+66 +                 "test_id": identity,
+67 +                 "source_requirement_or_invariant": requirement,
+68 +                 "selected_invariants": registry["public_contracts"][requirement],
+69 +                 "evidence_ref": "junit.xml",
+70 +             }
+71 +         )
+72 |     return result
+   |
+
+unformatted: File would be reformatted
+   --> tools/admission_structure.py:2:1
+    |
+1   | """PG-ADMIT-001: current-policy physical LOC, control depth, and test integrity."""
+2   +
+3   | import ast
+--------------------------------------------------------------------------------
+13  | def control_depth(node, level=0):
+    -     controls = (ast.If, ast.For, ast.AsyncFor, ast.While, ast.Try,
+    -                 ast.With, ast.AsyncWith, ast.Match)
+14  +     controls = (
+15  +         ast.If,
+16  +         ast.For,
+17  +         ast.AsyncFor,
+18  +         ast.While,
+19  +         ast.Try,
+20  +         ast.With,
+21  +         ast.AsyncWith,
+22  +         ast.Match,
+23  +     )
+24  |     depth = level + isinstance(node, controls)
+    -     return max([depth, *(control_depth(child, depth)
+    -                          for child in ast.iter_child_nodes(node))])
+25  +     return max([depth, *(control_depth(child, depth) for child in ast.iter_child_nodes(node))])
+26  |
+--------------------------------------------------------------------------------
+31  |     size = node.end_lineno - node.lineno + 1
+    -     return {"name": node.name, "line": node.lineno, "physical_loc": size,
+    -             "band": band(size, True), "arguments": len(arguments) - implicit,
+    -             "control_depth": control_depth(node)}
+32  +     return {
+33  +         "name": node.name,
+34  +         "line": node.lineno,
+35  +         "physical_loc": size,
+36  +         "band": band(size, True),
+37  +         "arguments": len(arguments) - implicit,
+38  +         "control_depth": control_depth(node),
+39  +     }
+40  |
+--------------------------------------------------------------------------------
+46  |         if isinstance(node, ast.ImportFrom):
+    -             aliases.update(item.asname or item.name for item in node.names
+    -                            if item.name in names)
+    -     return any((isinstance(node, ast.Attribute) and node.attr in names)
+    -                or (isinstance(node, ast.Call) and isinstance(node.func, ast.Name)
+    -                    and node.func.id in aliases) for node in ast.walk(tree))
+47  +             aliases.update(item.asname or item.name for item in node.names if item.name in names)
+48  +     return any(
+49  +         (isinstance(node, ast.Attribute) and node.attr in names)
+50  +         or (
+51  +             isinstance(node, ast.Call)
+52  +             and isinstance(node.func, ast.Name)
+53  +             and node.func.id in aliases
+54  +         )
+55  +         for node in ast.walk(tree)
+56  +     )
+57  |
+--------------------------------------------------------------------------------
+62  |     lines = source.splitlines()
+    -     functions = [function_metrics(node) for node in ast.walk(tree)
+    -                  if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))]
+    -     record = {"path": path.relative_to(root).as_posix(), "physical_loc": len(lines),
+    -               "counted_loc": sum(bool(line.strip()) and not line.lstrip().startswith("#")
+    -                                  for line in lines), "band": band(len(lines)),
+    -               "functions": functions, "test_suppression": suppressed(tree)}
+63  +     functions = [
+64  +         function_metrics(node)
+65  +         for node in ast.walk(tree)
+66  +         if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))
+67  +     ]
+68  +     record = {
+69  +         "path": path.relative_to(root).as_posix(),
+70  +         "physical_loc": len(lines),
+71  +         "counted_loc": sum(
+72  +             bool(line.strip()) and not line.lstrip().startswith("#") for line in lines
+73  +         ),
+74  +         "band": band(len(lines)),
+75  +         "functions": functions,
+76  +         "test_suppression": suppressed(tree),
+77  +     }
+78  |     return record
+--------------------------------------------------------------------------------
+96  |     root = Path(root).resolve()
+    -     paths = sorted(path for folder in ("src", "tests", "tools")
+    -                    for path in (root / folder).rglob("*.py"))
+97  +     paths = sorted(
+98  +         path for folder in ("src", "tests", "tools") for path in (root / folder).rglob("*.py")
+99  +     )
+100 |     records, errors = [], []
+--------------------------------------------------------------------------------
+108 |             records.append(record)
+    -             errors.extend({"path": record["path"], "reason": reason}
+    -                           for reason in violations(record))
+109 +             errors.extend(
+110 +                 {"path": record["path"], "reason": reason} for reason in violations(record)
+111 +             )
+112 |         except (OSError, ValueError, SyntaxError, UnicodeError) as error:
+113 |             errors.append({"path": str(path), "reason": type(error).__name__})
+    -     return {"status": "FAIL" if errors else "PASS", "files": records,
+    -             "errors": errors, "metric": "physical lines including comments and blanks",
+    -             "watch_count": sum(row["band"] == "WATCH" for row in records)}
+114 +     return {
+115 +         "status": "FAIL" if errors else "PASS",
+116 +         "files": records,
+117 +         "errors": errors,
+118 +         "metric": "physical lines including comments and blanks",
+119 +         "watch_count": sum(row["band"] == "WATCH" for row in records),
+120 +     }
+    |
+
+unformatted: File would be reformatted
+  --> tools/admit.py:2:1
+   |
+1  | """Fresh scoped admission: python tools/admit.py --output /external/evidence/run-id."""
+2  +
+3  | import argparse
+--------------------------------------------------------------------------------
+39 |     gates["structure"] = observed_gate("structure", lambda: check_structure(root), output)
+   -     gates["traceability"] = observed_gate("traceability",
+   -                                          lambda: check_traceability(root, dimensions), output)
+40 +     gates["traceability"] = observed_gate(
+41 +         "traceability", lambda: check_traceability(root, dimensions), output
+42 +     )
+43 |     gates["refinements"] = observed_gate("refinements", lambda: check_refinements(root), output)
+   -     gates["candidate_space"] = observed_gate("candidate-space", lambda: create_ledger(
+   -         dimensions, output / "candidate-space.sqlite3", identity["source_digest"]), output)
+44 +     gates["candidate_space"] = observed_gate(
+45 +         "candidate-space",
+46 +         lambda: create_ledger(
+47 +             dimensions, output / "candidate-space.sqlite3", identity["source_digest"]
+48 +         ),
+49 +         output,
+50 +     )
+51 |     process, stable = execute_tests(root, output, identity, timeout)
+52 |     gates["pytest"] = process
+53 |     gates["source_stability"] = {"status": "PASS" if stable else "FAIL"}
+   -     gates["witnesses"] = observed_gate("witnesses", lambda: bind_campaign(
+   -         root, output, identity, run_id), output)
+   -     result = {"status": "PASS" if all(g["status"] == "PASS" for g in gates.values()) else "FAIL",
+   -               "run_id": run_id, "completed_at": timestamp(), "source_digest": identity["source_digest"],
+   -               "gates": gates, "scope": "fresh software tests and explicit PostgreSQL branch contracts",
+   -               "native_ci42": "Separate immutable 42-lane campaign; this runner does not replace it.",
+   -               "promotion_authority": False}
+54 +     gates["witnesses"] = observed_gate(
+55 +         "witnesses", lambda: bind_campaign(root, output, identity, run_id), output
+56 +     )
+57 +     result = {
+58 +         "status": "PASS" if all(g["status"] == "PASS" for g in gates.values()) else "FAIL",
+59 +         "run_id": run_id,
+60 +         "completed_at": timestamp(),
+61 +         "source_digest": identity["source_digest"],
+62 +         "gates": gates,
+63 +         "scope": "fresh software tests and explicit PostgreSQL branch contracts",
+64 +         "native_ci42": "Separate immutable 42-lane campaign; this runner does not replace it.",
+65 +         "promotion_authority": False,
+66 +     }
+67 |     write_json(output / "summary.json", result)
+   |
+
+unformatted: File would be reformatted
+   --> tools/candidate_ledger.py:2:1
+    |
+1   | """Materialize every CROSS JOIN row and retain explicit exclusions and witnesses."""
+2   +
+3   | from contextlib import closing
+--------------------------------------------------------------------------------
+13  | def canonical_digest(value):
+    -     raw = json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False,
+    -                      allow_nan=False).encode()
+14  +     raw = json.dumps(
+15  +         value, sort_keys=True, separators=(",", ":"), ensure_ascii=False, allow_nan=False
+16  +     ).encode()
+17  |     return hashlib.sha256(raw).hexdigest()
+--------------------------------------------------------------------------------
+23  |     if not case:
+    -         db.execute("INSERT INTO predicates VALUES (?,?,?,?,?)",
+    -                    (excluded_id, *triple, predicate))
+    -     db.execute("INSERT INTO candidates VALUES (?,?,?,?,?,?)",
+    -                (candidate_id, *triple, "PENDING" if case else "NOT_APPLICABLE", excluded_id))
+24  +         db.execute("INSERT INTO predicates VALUES (?,?,?,?,?)", (excluded_id, *triple, predicate))
+25  +     db.execute(
+26  +         "INSERT INTO candidates VALUES (?,?,?,?,?,?)",
+27  +         (candidate_id, *triple, "PENDING" if case else "NOT_APPLICABLE", excluded_id),
+28  +     )
+29  |     if case:
+    -         db.execute("INSERT INTO case_bindings VALUES (?,?,?)",
+    -                    (candidate_id, case["id"], case["assertion"]))
+30  +         db.execute(
+31  +             "INSERT INTO case_bindings VALUES (?,?,?)",
+32  +             (candidate_id, case["id"], case["assertion"]),
+33  +         )
+34  |         for family in case["families"]:
+    -             db.execute("INSERT INTO assertions VALUES (?,?,?,?,?,?)",
+    -                        (f"{candidate_id}:{family}", candidate_id, case["requirement"],
+    -                         family, test_id(case["id"], family), "ASSERTIONS_PASSED"))
+35  +             db.execute(
+36  +                 "INSERT INTO assertions VALUES (?,?,?,?,?,?)",
+37  +                 (
+38  +                     f"{candidate_id}:{family}",
+39  +                     candidate_id,
+40  +                     case["requirement"],
+41  +                     family,
+42  +                     test_id(case["id"], family),
+43  +                     "ASSERTIONS_PASSED",
+44  +                 ),
+45  +             )
+46  |
+--------------------------------------------------------------------------------
+55  |         create_tables(db)
+    -         for group, kind in (("invariants", "invariant"), ("failure_modes", "failure"),
+    -                             ("gates", "gate")):
+    -             db.executemany("INSERT INTO dimensions VALUES (?,?,?)",
+    -                            [(kind, row["id"], row["requirement"]) for row in data[group]])
+56  +         for group, kind in (
+57  +             ("invariants", "invariant"),
+58  +             ("failure_modes", "failure"),
+59  +             ("gates", "gate"),
+60  +         ):
+61  +             db.executemany(
+62  +                 "INSERT INTO dimensions VALUES (?,?,?)",
+63  +                 [(kind, row["id"], row["requirement"]) for row in data[group]],
+64  +             )
+65  |         triples = db.execute(CROSS_JOIN).fetchall()
+66  |         for index, triple in enumerate(triples, 1):
+67  |             append_candidate(db, index, triple, data)
+    -         db.executemany("INSERT INTO metadata VALUES (?,?)",
+    -                        [("dimensions_digest", canonical_digest(data)),
+    -                         ("source_digest", source_digest), ("expected_count", str(len(triples)))])
+68  +         db.executemany(
+69  +             "INSERT INTO metadata VALUES (?,?)",
+70  +             [
+71  +                 ("dimensions_digest", canonical_digest(data)),
+72  +                 ("source_digest", source_digest),
+73  +                 ("expected_count", str(len(triples))),
+74  +             ],
+75  +         )
+76  |         protect_history(db)
+--------------------------------------------------------------------------------
+82  |         expected = db.execute(CROSS_JOIN).fetchall()
+    -         observed = db.execute("SELECT invariant_id,failure_id,gate_id FROM candidates "
+    -                               "ORDER BY invariant_id,failure_id,gate_id").fetchall()
+    -         invalid = db.execute("SELECT count(*) FROM candidates c LEFT JOIN predicates p "
+    -                              "ON p.id=c.predicate_id WHERE c.status='NOT_APPLICABLE' "
+    -                              "AND (p.reason IS NULL OR trim(p.reason)='')").fetchone()[0]
+    -         applicable = db.execute("SELECT count(*) FROM candidates WHERE status='PENDING'").fetchone()[0]
+83  +         observed = db.execute(
+84  +             "SELECT invariant_id,failure_id,gate_id FROM candidates "
+85  +             "ORDER BY invariant_id,failure_id,gate_id"
+86  +         ).fetchall()
+87  +         invalid = db.execute(
+88  +             "SELECT count(*) FROM candidates c LEFT JOIN predicates p "
+89  +             "ON p.id=c.predicate_id WHERE c.status='NOT_APPLICABLE' "
+90  +             "AND (p.reason IS NULL OR trim(p.reason)='')"
+91  +         ).fetchone()[0]
+92  +         applicable = db.execute(
+93  +             "SELECT count(*) FROM candidates WHERE status='PENDING'"
+94  +         ).fetchone()[0]
+95  |         assertions = db.execute("SELECT count(*) FROM assertions").fetchone()[0]
+    -         families = db.execute("SELECT c.id,count(DISTINCT a.family) FROM candidates c "
+    -                               "LEFT JOIN assertions a ON a.candidate_id=c.id "
+    -                               "AND a.family IN ('unit','regex','integration','e2e') "
+    -                               "WHERE c.status='PENDING' GROUP BY c.id").fetchall()
+    -         wrong = db.execute("SELECT count(*) FROM assertions a JOIN candidates c "
+    -                            "ON c.id=a.candidate_id WHERE a.requirement!=c.invariant_id "
+    -                            "OR c.status!='PENDING' OR a.family NOT IN "
+    -                            "('unit','regex','integration','e2e','negative','mutation',"
+    -                            "'behavioral','api','routing','boundary','security','complexity',"
+    -                            "'authorization_drift','causal','speed')").fetchone()[0]
+96  +         families = db.execute(
+97  +             "SELECT c.id,count(DISTINCT a.family) FROM candidates c "
+98  +             "LEFT JOIN assertions a ON a.candidate_id=c.id "
+99  +             "AND a.family IN ('unit','regex','integration','e2e') "
+100 +             "WHERE c.status='PENDING' GROUP BY c.id"
+101 +         ).fetchall()
+102 +         wrong = db.execute(
+103 +             "SELECT count(*) FROM assertions a JOIN candidates c "
+104 +             "ON c.id=a.candidate_id WHERE a.requirement!=c.invariant_id "
+105 +             "OR c.status!='PENDING' OR a.family NOT IN "
+106 +             "('unit','regex','integration','e2e','negative','mutation',"
+107 +             "'behavioral','api','routing','boundary','security','complexity',"
+108 +             "'authorization_drift','causal','speed')"
+109 +         ).fetchone()[0]
+110 |         passed = bool(expected) and expected == observed and not invalid
+111 |         passed = passed and applicable > 0 and assertions >= applicable * 4
+112 |         passed = passed and not wrong and all(count == 4 for _, count in families)
+    -     return {"status": "PASS" if passed else "FAIL", "candidate_count": len(observed),
+    -             "expected_count": len(expected), "applicable": applicable,
+    -             "not_applicable": len(observed) - applicable, "assertions": assertions,
+    -             "sql": CROSS_JOIN, "exclusions_missing_predicates": invalid}
+113 +     return {
+114 +         "status": "PASS" if passed else "FAIL",
+115 +         "candidate_count": len(observed),
+116 +         "expected_count": len(expected),
+117 +         "applicable": applicable,
+118 +         "not_applicable": len(observed) - applicable,
+119 +         "assertions": assertions,
+120 +         "sql": CROSS_JOIN,
+121 +         "exclusions_missing_predicates": invalid,
+122 +     }
+123 |
+    |
+
+unformatted: File would be reformatted
+ --> tools/candidate_model.py:2:1
+  |
+1 | """PG-ADMIT-003: bounded, explicit applicability for the complete candidate space."""
+2 +
+3 | import json
+  |
+
+unformatted: File would be reformatted
+  --> tools/candidate_sql.py:4:74
+   |
+3  | DDL = (
+   -     "CREATE TABLE dimensions(kind TEXT,id TEXT,requirement TEXT NOT NULL,"
+   -     "PRIMARY KEY(kind,id))",
+4  +     "CREATE TABLE dimensions(kind TEXT,id TEXT,requirement TEXT NOT NULL,PRIMARY KEY(kind,id))",
+5  |     "CREATE TABLE predicates(id TEXT PRIMARY KEY,invariant_id TEXT,failure_id TEXT,"
+--------------------------------------------------------------------------------
+28 |
+   - TABLES = ("dimensions", "predicates", "candidates", "metadata", "assertions", "executions",
+   -           "supersessions", "causal_edges", "causal_witnesses", "case_bindings")
+29 + TABLES = (
+30 +     "dimensions",
+31 +     "predicates",
+32 +     "candidates",
+33 +     "metadata",
+34 +     "assertions",
+35 +     "executions",
+36 +     "supersessions",
+37 +     "causal_edges",
+38 +     "causal_witnesses",
+39 +     "case_bindings",
+40 + )
+41 |
+--------------------------------------------------------------------------------
+51 |         for operation in ("UPDATE", "DELETE"):
+   -             db.execute(f"CREATE TRIGGER freeze_{table}_{operation} BEFORE {operation} "
+   -                        f"ON {table} BEGIN SELECT RAISE(ABORT,'APPEND_ONLY_LEDGER'); END")
+52 +             db.execute(
+53 +                 f"CREATE TRIGGER freeze_{table}_{operation} BEFORE {operation} "
+54 +                 f"ON {table} BEGIN SELECT RAISE(ABORT,'APPEND_ONLY_LEDGER'); END"
+55 +             )
+   |
+
+42 files would be reformatted, 97 files already formatted

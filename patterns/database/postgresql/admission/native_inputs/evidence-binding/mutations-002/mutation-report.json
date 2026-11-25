@@ -1,0 +1,1107 @@
+{
+  "schema": "hmt-native-mutation-evidence-v1",
+  "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+  "status": "PASS",
+  "start_time": "2026-11-04T08:51:51.962894+00:00",
+  "end_time": "2026-11-04T08:52:30.973818+00:00",
+  "total_mutants": 12,
+  "missed": 0,
+  "caught": 12,
+  "timeout": 0,
+  "unviable": 0,
+  "all_mutants_caught": true,
+  "source_unchanged": true,
+  "baseline_passed": true,
+  "baseline_process": {
+    "status": "PASS",
+    "argv": [
+      "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--tb=short",
+      "-o",
+      "addopts=",
+      "-p",
+      "tools.mutation_probe",
+      "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/baseline/junit.xml",
+      "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect",
+      "tests/test_authority_security.py::test_expiration_is_rechecked_after_authority_lock",
+      "tests/test_checkpoints_cache.py::test_foreign_scope_and_loss_are_rejected",
+      "tests/test_checkpoints_cache.py::test_redis_ordering_above_float_precision",
+      "tests/test_mutation_witnesses.py::test_active_guard",
+      "tests/test_mutation_witnesses.py::test_epoch_guard_new_stream",
+      "tests/test_mutation_witnesses.py::test_pace_guard_precedes_callback",
+      "tests/test_outbox_recovery.py::test_cache_loss_rebuild_requires_current_same_epoch_authority",
+      "tests/test_streaming_parity.py::test_all_historical_source_vectors_match_with_changed_packetization",
+      "tests/test_streaming_scanner.py::test_invalid_packet_capacity_and_released_views",
+      "tests/test_streaming_scanner.py::test_mutable_packet_is_snapshotted_and_partial_feed_aborts",
+      "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut"
+    ],
+    "returncode": 0,
+    "reason": "COMPLETE",
+    "seconds": 3.435514167002111,
+    "captured_bytes": 99,
+    "stdout": "pytest.stdout.log",
+    "stderr": "pytest.stderr.log",
+    "import_verified": true,
+    "source_unchanged": true,
+    "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7"
+  },
+  "baseline_tests": {
+    "valid": true,
+    "tests": 16,
+    "failures": 0,
+    "assertion_failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "test_ids": [
+      "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change0]",
+      "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change1]",
+      "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change2]",
+      "tests/test_authority_security.py::test_expiration_is_rechecked_after_authority_lock",
+      "tests/test_checkpoints_cache.py::test_foreign_scope_and_loss_are_rejected",
+      "tests/test_checkpoints_cache.py::test_redis_ordering_above_float_precision",
+      "tests/test_mutation_witnesses.py::test_active_guard",
+      "tests/test_mutation_witnesses.py::test_epoch_guard_new_stream",
+      "tests/test_mutation_witnesses.py::test_pace_guard_precedes_callback",
+      "tests/test_outbox_recovery.py::test_cache_loss_rebuild_requires_current_same_epoch_authority",
+      "tests/test_streaming_parity.py::test_all_historical_source_vectors_match_with_changed_packetization",
+      "tests/test_streaming_scanner.py::test_invalid_packet_capacity_and_released_views",
+      "tests/test_streaming_scanner.py::test_mutable_packet_is_snapshotted_and_partial_feed_aborts",
+      "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[1]",
+      "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[2]",
+      "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[3]"
+    ]
+  },
+  "results": [
+    {
+      "id": "PG-M01",
+      "requirement": "PG-CDC-001",
+      "path": "src/hmt_pg_patterns/streaming_scan.py",
+      "selector": "tests/test_streaming_parity.py::test_all_historical_source_vectors_match_with_changed_packetization",
+      "outcome": "caught",
+      "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "mutated_source_digest": "a0224e8c8fe28a4191133c5af6a88f89757202802be413c467aa891161e61420",
+      "restored_source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "restoration_observed": true,
+      "restored_file_sha256": "dfad648f930834a2b9b4b6643efb7823a46c401cc9e3d14e86937a36f88b96e8",
+      "application_error": null,
+      "mutation_process": {
+        "status": "FAIL",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M01/mutated/junit.xml",
+          "tests/test_streaming_parity.py::test_all_historical_source_vectors_match_with_changed_packetization"
+        ],
+        "returncode": 1,
+        "reason": "COMPLETE",
+        "seconds": 0.46337847700488055,
+        "captured_bytes": 1143,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "a0224e8c8fe28a4191133c5af6a88f89757202802be413c467aa891161e61420"
+      },
+      "mutation_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 1,
+        "assertion_failures": 1,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_streaming_parity.py::test_all_historical_source_vectors_match_with_changed_packetization"
+        ]
+      },
+      "restoration_process": {
+        "status": "PASS",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M01/restored/junit.xml",
+          "tests/test_streaming_parity.py::test_all_historical_source_vectors_match_with_changed_packetization"
+        ],
+        "returncode": 0,
+        "reason": "COMPLETE",
+        "seconds": 0.5823467860027449,
+        "captured_bytes": 98,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7"
+      },
+      "restoration_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 0,
+        "assertion_failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_streaming_parity.py::test_all_historical_source_vectors_match_with_changed_packetization"
+        ]
+      }
+    },
+    {
+      "id": "PG-M02",
+      "requirement": "PG-CDC-001",
+      "path": "src/hmt_pg_patterns/streaming_scan.py",
+      "selector": "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut",
+      "outcome": "caught",
+      "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "mutated_source_digest": "1c8dedaa3b6898eb0dfa73ae2f5a12c1a17b63d366ebcbae2ca641c8f4bb1c01",
+      "restored_source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "restoration_observed": true,
+      "restored_file_sha256": "dfad648f930834a2b9b4b6643efb7823a46c401cc9e3d14e86937a36f88b96e8",
+      "application_error": null,
+      "mutation_process": {
+        "status": "FAIL",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M02/mutated/junit.xml",
+          "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut"
+        ],
+        "returncode": 1,
+        "reason": "COMPLETE",
+        "seconds": 0.5118778149990248,
+        "captured_bytes": 2404,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "1c8dedaa3b6898eb0dfa73ae2f5a12c1a17b63d366ebcbae2ca641c8f4bb1c01"
+      },
+      "mutation_tests": {
+        "valid": true,
+        "tests": 3,
+        "failures": 3,
+        "assertion_failures": 3,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[1]",
+          "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[2]",
+          "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[3]"
+        ]
+      },
+      "restoration_process": {
+        "status": "PASS",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M02/restored/junit.xml",
+          "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut"
+        ],
+        "returncode": 0,
+        "reason": "COMPLETE",
+        "seconds": 0.48259411699837074,
+        "captured_bytes": 98,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7"
+      },
+      "restoration_tests": {
+        "valid": true,
+        "tests": 3,
+        "failures": 0,
+        "assertion_failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[1]",
+          "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[2]",
+          "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[3]"
+        ]
+      }
+    },
+    {
+      "id": "PG-M03",
+      "requirement": "PG-CDC-001",
+      "path": "src/hmt_pg_patterns/streaming_scan.py",
+      "selector": "tests/test_streaming_scanner.py::test_mutable_packet_is_snapshotted_and_partial_feed_aborts",
+      "outcome": "caught",
+      "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "mutated_source_digest": "9b13ce99040e1c1b4395bc8d7b9de744aa66b5c444764cf0a2a1106da21bf3bd",
+      "restored_source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "restoration_observed": true,
+      "restored_file_sha256": "dfad648f930834a2b9b4b6643efb7823a46c401cc9e3d14e86937a36f88b96e8",
+      "application_error": null,
+      "mutation_process": {
+        "status": "FAIL",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M03/mutated/junit.xml",
+          "tests/test_streaming_scanner.py::test_mutable_packet_is_snapshotted_and_partial_feed_aborts"
+        ],
+        "returncode": 1,
+        "reason": "COMPLETE",
+        "seconds": 0.4992023180020624,
+        "captured_bytes": 732,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "9b13ce99040e1c1b4395bc8d7b9de744aa66b5c444764cf0a2a1106da21bf3bd"
+      },
+      "mutation_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 1,
+        "assertion_failures": 1,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_streaming_scanner.py::test_mutable_packet_is_snapshotted_and_partial_feed_aborts"
+        ]
+      },
+      "restoration_process": {
+        "status": "PASS",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M03/restored/junit.xml",
+          "tests/test_streaming_scanner.py::test_mutable_packet_is_snapshotted_and_partial_feed_aborts"
+        ],
+        "returncode": 0,
+        "reason": "COMPLETE",
+        "seconds": 0.5012296959976084,
+        "captured_bytes": 98,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7"
+      },
+      "restoration_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 0,
+        "assertion_failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_streaming_scanner.py::test_mutable_packet_is_snapshotted_and_partial_feed_aborts"
+        ]
+      }
+    },
+    {
+      "id": "PG-M04",
+      "requirement": "PG-CDC-001",
+      "path": "src/hmt_pg_patterns/streaming_scan.py",
+      "selector": "tests/test_streaming_scanner.py::test_invalid_packet_capacity_and_released_views",
+      "outcome": "caught",
+      "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "mutated_source_digest": "f572fdb0fa70ec947709f2c8589fa34de07390b14f89733c4febe7bb419c9cdc",
+      "restored_source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "restoration_observed": true,
+      "restored_file_sha256": "dfad648f930834a2b9b4b6643efb7823a46c401cc9e3d14e86937a36f88b96e8",
+      "application_error": null,
+      "mutation_process": {
+        "status": "FAIL",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M04/mutated/junit.xml",
+          "tests/test_streaming_scanner.py::test_invalid_packet_capacity_and_released_views"
+        ],
+        "returncode": 1,
+        "reason": "COMPLETE",
+        "seconds": 0.4692914780025603,
+        "captured_bytes": 742,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "f572fdb0fa70ec947709f2c8589fa34de07390b14f89733c4febe7bb419c9cdc"
+      },
+      "mutation_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 1,
+        "assertion_failures": 1,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_streaming_scanner.py::test_invalid_packet_capacity_and_released_views"
+        ]
+      },
+      "restoration_process": {
+        "status": "PASS",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M04/restored/junit.xml",
+          "tests/test_streaming_scanner.py::test_invalid_packet_capacity_and_released_views"
+        ],
+        "returncode": 0,
+        "reason": "COMPLETE",
+        "seconds": 0.5121790249977494,
+        "captured_bytes": 98,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7"
+      },
+      "restoration_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 0,
+        "assertion_failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_streaming_scanner.py::test_invalid_packet_capacity_and_released_views"
+        ]
+      }
+    },
+    {
+      "id": "PG-M05",
+      "requirement": "PG-FENCE-001",
+      "path": "sql/02_authority.sql",
+      "selector": "tests/test_mutation_witnesses.py::test_epoch_guard_new_stream",
+      "outcome": "caught",
+      "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "mutated_source_digest": "dee22d2d3928ba1ac9a736cd66d34502e0a4ae8dc29d09af2d86d54cd58f252e",
+      "restored_source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "restoration_observed": true,
+      "restored_file_sha256": "cf3df01dd62ebddf42b6e61ffea4caabe21027301ce1287170ffbd24df21a9ed",
+      "application_error": null,
+      "mutation_process": {
+        "status": "FAIL",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M05/mutated/junit.xml",
+          "tests/test_mutation_witnesses.py::test_epoch_guard_new_stream"
+        ],
+        "returncode": 1,
+        "reason": "COMPLETE",
+        "seconds": 2.6273903510009404,
+        "captured_bytes": 651,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "dee22d2d3928ba1ac9a736cd66d34502e0a4ae8dc29d09af2d86d54cd58f252e"
+      },
+      "mutation_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 1,
+        "assertion_failures": 1,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_mutation_witnesses.py::test_epoch_guard_new_stream"
+        ]
+      },
+      "restoration_process": {
+        "status": "PASS",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M05/restored/junit.xml",
+          "tests/test_mutation_witnesses.py::test_epoch_guard_new_stream"
+        ],
+        "returncode": 0,
+        "reason": "COMPLETE",
+        "seconds": 2.5884126460005064,
+        "captured_bytes": 98,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7"
+      },
+      "restoration_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 0,
+        "assertion_failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_mutation_witnesses.py::test_epoch_guard_new_stream"
+        ]
+      }
+    },
+    {
+      "id": "PG-M06",
+      "requirement": "PG-FENCE-001",
+      "path": "sql/02_authority.sql",
+      "selector": "tests/test_mutation_witnesses.py::test_active_guard",
+      "outcome": "caught",
+      "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "mutated_source_digest": "2d6f67ebaef88df4518cc6391706e8fe2d31a8219226d0252edf8fa44a0e2618",
+      "restored_source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "restoration_observed": true,
+      "restored_file_sha256": "cf3df01dd62ebddf42b6e61ffea4caabe21027301ce1287170ffbd24df21a9ed",
+      "application_error": null,
+      "mutation_process": {
+        "status": "FAIL",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M06/mutated/junit.xml",
+          "tests/test_mutation_witnesses.py::test_active_guard"
+        ],
+        "returncode": 1,
+        "reason": "COMPLETE",
+        "seconds": 3.3551507299998775,
+        "captured_bytes": 641,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "2d6f67ebaef88df4518cc6391706e8fe2d31a8219226d0252edf8fa44a0e2618"
+      },
+      "mutation_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 1,
+        "assertion_failures": 1,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_mutation_witnesses.py::test_active_guard"
+        ]
+      },
+      "restoration_process": {
+        "status": "PASS",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M06/restored/junit.xml",
+          "tests/test_mutation_witnesses.py::test_active_guard"
+        ],
+        "returncode": 0,
+        "reason": "COMPLETE",
+        "seconds": 2.5771232660044916,
+        "captured_bytes": 98,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7"
+      },
+      "restoration_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 0,
+        "assertion_failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_mutation_witnesses.py::test_active_guard"
+        ]
+      }
+    },
+    {
+      "id": "PG-M07",
+      "requirement": "PG-FENCE-001",
+      "path": "sql/02_authority.sql",
+      "selector": "tests/test_authority_security.py::test_expiration_is_rechecked_after_authority_lock",
+      "outcome": "caught",
+      "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "mutated_source_digest": "41fe25a47795f11b83c18211b15bcee28901cc740951d25ba563b1eb5d5309b6",
+      "restored_source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "restoration_observed": true,
+      "restored_file_sha256": "cf3df01dd62ebddf42b6e61ffea4caabe21027301ce1287170ffbd24df21a9ed",
+      "application_error": null,
+      "mutation_process": {
+        "status": "FAIL",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M07/mutated/junit.xml",
+          "tests/test_authority_security.py::test_expiration_is_rechecked_after_authority_lock"
+        ],
+        "returncode": 1,
+        "reason": "COMPLETE",
+        "seconds": 2.532225066999672,
+        "captured_bytes": 685,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "41fe25a47795f11b83c18211b15bcee28901cc740951d25ba563b1eb5d5309b6"
+      },
+      "mutation_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 1,
+        "assertion_failures": 1,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_authority_security.py::test_expiration_is_rechecked_after_authority_lock"
+        ]
+      },
+      "restoration_process": {
+        "status": "PASS",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M07/restored/junit.xml",
+          "tests/test_authority_security.py::test_expiration_is_rechecked_after_authority_lock"
+        ],
+        "returncode": 0,
+        "reason": "COMPLETE",
+        "seconds": 2.8981049089998123,
+        "captured_bytes": 98,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7"
+      },
+      "restoration_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 0,
+        "assertion_failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_authority_security.py::test_expiration_is_rechecked_after_authority_lock"
+        ]
+      }
+    },
+    {
+      "id": "PG-M08",
+      "requirement": "PG-FENCE-001",
+      "path": "sql/02_authority.sql",
+      "selector": "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect",
+      "outcome": "caught",
+      "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "mutated_source_digest": "53e8fd38fec9d2ed958cb92b04a72d75ad57e4927475da246d427f72893d5234",
+      "restored_source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "restoration_observed": true,
+      "restored_file_sha256": "cf3df01dd62ebddf42b6e61ffea4caabe21027301ce1287170ffbd24df21a9ed",
+      "application_error": null,
+      "mutation_process": {
+        "status": "FAIL",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M08/mutated/junit.xml",
+          "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect"
+        ],
+        "returncode": 1,
+        "reason": "COMPLETE",
+        "seconds": 2.499171679999563,
+        "captured_bytes": 1574,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "53e8fd38fec9d2ed958cb92b04a72d75ad57e4927475da246d427f72893d5234"
+      },
+      "mutation_tests": {
+        "valid": true,
+        "tests": 3,
+        "failures": 3,
+        "assertion_failures": 3,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change0]",
+          "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change1]",
+          "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change2]"
+        ]
+      },
+      "restoration_process": {
+        "status": "PASS",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M08/restored/junit.xml",
+          "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect"
+        ],
+        "returncode": 0,
+        "reason": "COMPLETE",
+        "seconds": 2.422270300994569,
+        "captured_bytes": 98,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7"
+      },
+      "restoration_tests": {
+        "valid": true,
+        "tests": 3,
+        "failures": 0,
+        "assertion_failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change0]",
+          "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change1]",
+          "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change2]"
+        ]
+      }
+    },
+    {
+      "id": "PG-M09",
+      "requirement": "PG-CHECKPOINT-001",
+      "path": "src/hmt_pg_patterns/checkpoints_lua.py",
+      "selector": "tests/test_checkpoints_cache.py::test_redis_ordering_above_float_precision",
+      "outcome": "caught",
+      "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "mutated_source_digest": "ec415f22dd5129ba14e4efa94cb16116f5c232b56ef18e7629fd4f2547c0b4f9",
+      "restored_source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "restoration_observed": true,
+      "restored_file_sha256": "70043ac9022ee1aca096ba7ad2cac4ee83f6ad92849a2e580c85cc56efc27722",
+      "application_error": null,
+      "mutation_process": {
+        "status": "FAIL",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M09/mutated/junit.xml",
+          "tests/test_checkpoints_cache.py::test_redis_ordering_above_float_precision"
+        ],
+        "returncode": 1,
+        "reason": "COMPLETE",
+        "seconds": 0.8193033720017411,
+        "captured_bytes": 638,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "ec415f22dd5129ba14e4efa94cb16116f5c232b56ef18e7629fd4f2547c0b4f9"
+      },
+      "mutation_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 1,
+        "assertion_failures": 1,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_checkpoints_cache.py::test_redis_ordering_above_float_precision"
+        ]
+      },
+      "restoration_process": {
+        "status": "PASS",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M09/restored/junit.xml",
+          "tests/test_checkpoints_cache.py::test_redis_ordering_above_float_precision"
+        ],
+        "returncode": 0,
+        "reason": "COMPLETE",
+        "seconds": 0.7503177839971613,
+        "captured_bytes": 98,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7"
+      },
+      "restoration_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 0,
+        "assertion_failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_checkpoints_cache.py::test_redis_ordering_above_float_precision"
+        ]
+      }
+    },
+    {
+      "id": "PG-M10",
+      "requirement": "PG-CHECKPOINT-001",
+      "path": "src/hmt_pg_patterns/checkpoints.py",
+      "selector": "tests/test_checkpoints_cache.py::test_foreign_scope_and_loss_are_rejected",
+      "outcome": "caught",
+      "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "mutated_source_digest": "85dfb9782f1433fdd6050e8504c317d4af6a7462b3ecf085ee3ca6b262148c81",
+      "restored_source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "restoration_observed": true,
+      "restored_file_sha256": "edd92d8ef2fb9faea64a645c03c62588c088e7fb0441bba655d34891c30b6bf3",
+      "application_error": null,
+      "mutation_process": {
+        "status": "FAIL",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M10/mutated/junit.xml",
+          "tests/test_checkpoints_cache.py::test_foreign_scope_and_loss_are_rejected"
+        ],
+        "returncode": 1,
+        "reason": "COMPLETE",
+        "seconds": 0.7386364630001481,
+        "captured_bytes": 1378,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "85dfb9782f1433fdd6050e8504c317d4af6a7462b3ecf085ee3ca6b262148c81"
+      },
+      "mutation_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 1,
+        "assertion_failures": 1,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_checkpoints_cache.py::test_foreign_scope_and_loss_are_rejected"
+        ]
+      },
+      "restoration_process": {
+        "status": "PASS",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M10/restored/junit.xml",
+          "tests/test_checkpoints_cache.py::test_foreign_scope_and_loss_are_rejected"
+        ],
+        "returncode": 0,
+        "reason": "COMPLETE",
+        "seconds": 0.7021980380013702,
+        "captured_bytes": 98,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7"
+      },
+      "restoration_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 0,
+        "assertion_failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_checkpoints_cache.py::test_foreign_scope_and_loss_are_rejected"
+        ]
+      }
+    },
+    {
+      "id": "PG-M11",
+      "requirement": "PG-OUTBOX-001",
+      "path": "src/hmt_pg_patterns/outbox.py",
+      "selector": "tests/test_outbox_recovery.py::test_cache_loss_rebuild_requires_current_same_epoch_authority",
+      "outcome": "caught",
+      "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "mutated_source_digest": "73973682e4ddf8c179d73cf83fa0fd0e504dd7bee1d0afa80563e634e1c505d8",
+      "restored_source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "restoration_observed": true,
+      "restored_file_sha256": "42ea0bf4235c003cccf38da9ac6b8cee7b16f10b128fc3cce1949a6ff7447d84",
+      "application_error": null,
+      "mutation_process": {
+        "status": "FAIL",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M11/mutated/junit.xml",
+          "tests/test_outbox_recovery.py::test_cache_loss_rebuild_requires_current_same_epoch_authority"
+        ],
+        "returncode": 1,
+        "reason": "COMPLETE",
+        "seconds": 2.5609369260055246,
+        "captured_bytes": 716,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "73973682e4ddf8c179d73cf83fa0fd0e504dd7bee1d0afa80563e634e1c505d8"
+      },
+      "mutation_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 1,
+        "assertion_failures": 1,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_outbox_recovery.py::test_cache_loss_rebuild_requires_current_same_epoch_authority"
+        ]
+      },
+      "restoration_process": {
+        "status": "PASS",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M11/restored/junit.xml",
+          "tests/test_outbox_recovery.py::test_cache_loss_rebuild_requires_current_same_epoch_authority"
+        ],
+        "returncode": 0,
+        "reason": "COMPLETE",
+        "seconds": 2.4839971519977553,
+        "captured_bytes": 98,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7"
+      },
+      "restoration_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 0,
+        "assertion_failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_outbox_recovery.py::test_cache_loss_rebuild_requires_current_same_epoch_authority"
+        ]
+      }
+    },
+    {
+      "id": "PG-M12",
+      "requirement": "PG-PACE-001",
+      "path": "src/hmt_pg_patterns/pace.py",
+      "selector": "tests/test_mutation_witnesses.py::test_pace_guard_precedes_callback",
+      "outcome": "caught",
+      "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "mutated_source_digest": "2638a6d5b99c6b369f41a2647e5f4237052b869f299f876eba55b5b73ab09169",
+      "restored_source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "restoration_observed": true,
+      "restored_file_sha256": "16cf73affcf814760affdec9fe4999a868600e97e14f313dbadd39a09d198684",
+      "application_error": null,
+      "mutation_process": {
+        "status": "FAIL",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M12/mutated/junit.xml",
+          "tests/test_mutation_witnesses.py::test_pace_guard_precedes_callback"
+        ],
+        "returncode": 1,
+        "reason": "COMPLETE",
+        "seconds": 0.4930944579973584,
+        "captured_bytes": 681,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "2638a6d5b99c6b369f41a2647e5f4237052b869f299f876eba55b5b73ab09169"
+      },
+      "mutation_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 1,
+        "assertion_failures": 1,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_mutation_witnesses.py::test_pace_guard_precedes_callback"
+        ]
+      },
+      "restoration_process": {
+        "status": "PASS",
+        "argv": [
+          "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "--tb=short",
+          "-o",
+          "addopts=",
+          "-p",
+          "tools.mutation_probe",
+          "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M12/restored/junit.xml",
+          "tests/test_mutation_witnesses.py::test_pace_guard_precedes_callback"
+        ],
+        "returncode": 0,
+        "reason": "COMPLETE",
+        "seconds": 0.4720969359987066,
+        "captured_bytes": 98,
+        "stdout": "pytest.stdout.log",
+        "stderr": "pytest.stderr.log",
+        "import_verified": true,
+        "source_unchanged": true,
+        "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7"
+      },
+      "restoration_tests": {
+        "valid": true,
+        "tests": 1,
+        "failures": 0,
+        "assertion_failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "test_ids": [
+          "tests/test_mutation_witnesses.py::test_pace_guard_precedes_callback"
+        ]
+      }
+    }
+  ]
+}

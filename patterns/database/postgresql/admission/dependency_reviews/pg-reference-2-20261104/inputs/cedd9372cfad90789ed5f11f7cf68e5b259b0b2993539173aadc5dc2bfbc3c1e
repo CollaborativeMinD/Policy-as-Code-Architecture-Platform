@@ -1,0 +1,1 @@
+{"packages":[{"license":"MIT ","name":"setuptools","version":"84.2.1"}],"policy":"native_license_text_substring_allowlist","scope":"selected_lock_dependency_closure_under_current_interpreter_markers","status":"PASS"}

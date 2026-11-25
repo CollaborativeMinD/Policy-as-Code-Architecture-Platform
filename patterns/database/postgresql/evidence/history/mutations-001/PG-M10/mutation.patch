@@ -1,0 +1,8 @@
+--- src/hmt_pg_patterns/checkpoints.py
++++ src/hmt_pg_patterns/checkpoints.py.mutated
+@@ -43,4 +43,4 @@
+         encoded = encode_checkpoint(snapshot).encode("utf-8")
+         if isinstance(cached, str):
+             cached = cached.encode("utf-8")
+-        return snapshot if cached == encoded else None
++        return snapshot if cached is not None else None

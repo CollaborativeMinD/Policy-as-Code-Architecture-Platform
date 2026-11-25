@@ -1,0 +1,23 @@
+{
+  "programs": {
+    "python": {
+      "path": "/root/.local/share/uv/python/cpython-3.13.17-linux-x86_64-gnu/bin/python3.13",
+      "sha256": "06176065174ea24f24d109e55a374022ef5c4390234516c683d4726431be027d",
+      "bytes": 31624264
+    },
+    "HMT_PGLITE_CLI": {
+      "path": "/workspace/scratch/e7495113964e/work/pg_wasm/fixture_repair/server.mjs",
+      "sha256": "6c6a8eaa180cf8d17be09d94dd9a9e165853602b1cdee66d4642e3d96d719ebf",
+      "bytes": 2485
+    },
+    "HMT_REDIS_SERVER": {
+      "path": "/workspace/scratch/e7495113964e/work/.services/lib/python3.12/site-packages/redislite/bin/redis-server",
+      "sha256": "e812d172f2b85b3f1303608a77fe9fc9b37727f6233cc94d7c9b996f17012be3",
+      "bytes": 6744216
+    }
+  },
+  "python_version": "3.13.17",
+  "external_postgresql_configured": false,
+  "external_redis_configured": false,
+  "qualification_scope": "Managed software services or explicitly configured external services; native qualification requires its separate execution receipt."
+}

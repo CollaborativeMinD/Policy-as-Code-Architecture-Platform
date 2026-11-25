@@ -1,0 +1,13 @@
+{
+  "valid": true,
+  "tests": 3,
+  "failures": 3,
+  "assertion_failures": 3,
+  "errors": 0,
+  "skipped": 0,
+  "test_ids": [
+    "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change0]",
+    "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change1]",
+    "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change2]"
+  ]
+}

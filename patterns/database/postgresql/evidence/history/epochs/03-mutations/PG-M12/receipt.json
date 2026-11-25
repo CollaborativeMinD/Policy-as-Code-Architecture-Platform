@@ -1,0 +1,85 @@
+{
+  "id": "PG-M12",
+  "requirement": "PG-PACE-001",
+  "path": "src/hmt_pg_patterns/pace.py",
+  "selector": "tests/test_mutation_witnesses.py::test_pace_guard_precedes_callback",
+  "outcome": "caught",
+  "source_digest": "e2b79b530a64931d056234ffba5ed3952c6af0deb1f309213ff858bbfdb7e6f1",
+  "mutated_source_digest": "16d62b7412f9f00aace21a7cf61e0149dc5d1ae9e333e95120caf36605c623b9",
+  "restored_source_digest": "e2b79b530a64931d056234ffba5ed3952c6af0deb1f309213ff858bbfdb7e6f1",
+  "restoration_observed": true,
+  "restored_file_sha256": "16cf73affcf814760affdec9fe4999a868600e97e14f313dbadd39a09d198684",
+  "application_error": null,
+  "mutation_process": {
+    "status": "FAIL",
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--tb=short",
+      "-o",
+      "addopts=",
+      "-p",
+      "tools.mutation_probe",
+      "--junitxml=/workspace/scratch/e7495113964e/work/epochs/03-mutations/PG-M12/mutated/junit.xml",
+      "tests/test_mutation_witnesses.py::test_pace_guard_precedes_callback"
+    ],
+    "returncode": 1,
+    "reason": "COMPLETE",
+    "seconds": 0.5646794899985252,
+    "captured_bytes": 681,
+    "stdout": "pytest.stdout.log",
+    "stderr": "pytest.stderr.log",
+    "import_verified": true,
+    "source_unchanged": true,
+    "source_digest": "16d62b7412f9f00aace21a7cf61e0149dc5d1ae9e333e95120caf36605c623b9"
+  },
+  "mutation_tests": {
+    "valid": true,
+    "tests": 1,
+    "failures": 1,
+    "assertion_failures": 1,
+    "errors": 0,
+    "skipped": 0,
+    "test_ids": [
+      "tests/test_mutation_witnesses.py::test_pace_guard_precedes_callback"
+    ]
+  },
+  "restoration_process": {
+    "status": "PASS",
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--tb=short",
+      "-o",
+      "addopts=",
+      "-p",
+      "tools.mutation_probe",
+      "--junitxml=/workspace/scratch/e7495113964e/work/epochs/03-mutations/PG-M12/restored/junit.xml",
+      "tests/test_mutation_witnesses.py::test_pace_guard_precedes_callback"
+    ],
+    "returncode": 0,
+    "reason": "COMPLETE",
+    "seconds": 0.6242615159972047,
+    "captured_bytes": 98,
+    "stdout": "pytest.stdout.log",
+    "stderr": "pytest.stderr.log",
+    "import_verified": true,
+    "source_unchanged": true,
+    "source_digest": "e2b79b530a64931d056234ffba5ed3952c6af0deb1f309213ff858bbfdb7e6f1"
+  },
+  "restoration_tests": {
+    "valid": true,
+    "tests": 1,
+    "failures": 0,
+    "assertion_failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "test_ids": [
+      "tests/test_mutation_witnesses.py::test_pace_guard_precedes_callback"
+    ]
+  }
+}

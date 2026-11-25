@@ -1,0 +1,11 @@
+/workspace/scratch/e7495113964e/work/admission_overlay/ci42/src/hmt_native/pytest/n014_Evidence.py:36: PytestRemovedIn10Warning: config.inicfg is deprecated, use config.getini() to access configuration values instead.
+See https://docs.pytest.org/en/stable/deprecations.html#config-inicfg
+  if session.config.inicfg.get("norecursedirs"):
+........................................................................ [ 16%]
+........................................................................ [ 32%]
+........................................................................ [ 48%]
+........................................................................ [ 64%]
+........................................................................ [ 80%]
+........................................................................ [ 96%]
+..............                                                           [100%]
+446 passed in 18.10s

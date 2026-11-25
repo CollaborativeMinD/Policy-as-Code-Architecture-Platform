@@ -1,0 +1,11 @@
+{
+  "valid": true,
+  "tests": 1,
+  "failures": 0,
+  "assertion_failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_ids": [
+    "tests/test_checkpoints_cache.py::test_foreign_scope_and_loss_are_rejected"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "case": "private_owned_fifo_config",
+  "blocked_before_regular_file_check": true,
+  "outer_watchdog_seconds": 0.7,
+  "exitcode": -9,
+  "seconds": 0.7029496620016289
+}

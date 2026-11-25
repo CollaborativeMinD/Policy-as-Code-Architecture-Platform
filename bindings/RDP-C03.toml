@@ -1,0 +1,7 @@
+version = 1
+pattern = "RDP-C03"
+scope = "software"
+
+[settings]
+provider = "uppercase"
+text = "hello"

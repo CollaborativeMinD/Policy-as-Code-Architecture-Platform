@@ -1,0 +1,15 @@
+--- a/packages/pglite/src/pglite.ts
++++ b/packages/pglite/src/pglite.ts
+@@ -753,6 +753,12 @@
+       (ptr: number, max_length: number) => {
+         // copy current data to wasm buffer
+         let length = this.#outputData.length - this.#readOffset
++        // HMT local fixture only: actual COPY waits for future bytes on its socket.
++        if (length === 0 && this._hmtFixtureReadMore) {
++          const bytes = this._hmtFixtureReadMore(max_length)
++          this.mod!.HEAPU8.set(bytes, ptr)
++          return bytes.length
++        }
+         if (length > max_length) {
+           length = max_length
+         }

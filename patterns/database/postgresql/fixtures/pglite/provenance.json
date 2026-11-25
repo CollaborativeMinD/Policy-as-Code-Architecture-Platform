@@ -1,0 +1,97 @@
+{
+  "schema": "urn:hmt:postgresql:fixture-repair:1.0.0",
+  "status": "REPAIRED_SQL_PROTOCOL_FIXTURE",
+  "runtime": {
+    "node": "24.22.1",
+    "platform": "linux",
+    "architecture": "x64",
+    "pglite": "0.5.15",
+    "pglite_socket": "0.2.18"
+  },
+  "upstream_sha256": "c4e70a0a9f71c5a0509e863d9ed87f8723c96d7c1dfea2b20de0e423d09356d1",
+  "patched_sha256": "13dd30ac3ddc65d1f7f25c51b6a2fd37158480acaa753bd9eef0ce244207cca3",
+  "repairs": [
+    "COPY read callback waits for real frontend bytes with a five-second,64-MiB bound",
+    "Named prepared statements use per-handler protocol namespaces and disconnect cleanup"
+  ],
+  "genuine_postgresql_copy": true,
+  "fabricated_copy_success": false,
+  "insert_substitution": false,
+  "production_code_changed": false,
+  "evidence": {
+    "driver_suite": {
+      "passed": 58,
+      "failed": 0,
+      "duration_seconds": 3.76
+    },
+    "focused_copy_and_regressions": {
+      "passed": 8,
+      "failed": 0,
+      "duration_seconds": 1.98,
+      "junit": "regression.xml"
+    },
+    "pre_repair_wire_trace": "libpq-copy.trace"
+  },
+  "limits": [
+    "One PostgreSQL backend, not independent sessions",
+    "Shared session roles/GUCs/advisory locks and unnamed-statement interleaving are not repaired",
+    "Native TLS/authentication/contention/replication/storage power-loss/cancellation are not qualified",
+    "Node event loop blocks during bounded COPY input",
+    "Tailcat wire transport is not qualified",
+    "Upstream Terminate behavior remains; asyncpg may classify forced teardown"
+  ],
+  "new_files": [
+    {
+      "path": "apply_callback.py",
+      "status": "new",
+      "sha256": "4691535a7a47cc260ab493010cf40e6b45245ce550295faf345daf67d884f0a9"
+    },
+    {
+      "path": "callback.readable.patch",
+      "status": "new",
+      "sha256": "804654d99549b7fd51935197caa95a89b78edb40130dde86179ea506de81fb34"
+    },
+    {
+      "path": "copy_reader.mjs",
+      "status": "new",
+      "sha256": "b0b669bed384208e02c9eebc892ad211d7a36c59b8ab812aeb526acfc388ef79"
+    },
+    {
+      "path": "identity.mjs",
+      "status": "new",
+      "sha256": "e621412c70c8024c2067f3bad88071f7ca85bd234b84666481d9f7cf71be0735"
+    },
+    {
+      "path": "statement_namespace.mjs",
+      "status": "new",
+      "sha256": "038aea86ab9adc2aa7c75117061f5edba93c60f866aaf4385e73ee4f2663488f"
+    },
+    {
+      "path": "server.mjs",
+      "status": "new",
+      "sha256": "6c6a8eaa180cf8d17be09d94dd9a9e165853602b1cdee66d4642e3d96d719ebf"
+    },
+    {
+      "path": "package.json",
+      "status": "new",
+      "sha256": "a93daa8c1eaeacf1c0b5cdb8810a11cddbfac6541ee57315e3a43c4a5822c4c0"
+    },
+    {
+      "path": "package-lock.json",
+      "status": "new",
+      "sha256": "73328c688b3513c864944140efbb5ebfb052b47a236c8d7f95f76ef54fe8dcaa"
+    },
+    {
+      "path": "README.md",
+      "status": "new",
+      "sha256": "0e5a1c8b17282424fe4fb1bbbc7db3c0477472db0ffa64f9948466de17360471"
+    }
+  ],
+  "inspection_only": [
+    "upstream/",
+    "read_callback.patch",
+    "libpq-copy.trace",
+    "server-copy.log"
+  ],
+  "attestation": "The repair preserves the installed upstream bytes and checks its before/after digest. Successful COPY and rollback are decisions of the actual PostgreSQL WASM engine. This statement does not extend SQL fixture evidence to native service qualification."
+}

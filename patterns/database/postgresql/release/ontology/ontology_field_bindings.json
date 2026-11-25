@@ -1,0 +1,992 @@
+{
+  "ontology_uris": [
+    "https://terminal-state.systems/ontology/forge",
+    "https://terminal-state.systems/ontology/forge/phase_4_subtypes"
+  ],
+  "namespace_uri": "https://terminal-state.systems/ontology/forge#",
+  "domain_package_uri": "https://terminal-state.systems/ontology/forge#edge_devsecops_iac_package",
+  "mapping_artifact_type_uri": "https://terminal-state.systems/ontology/forge#MappingArtifact",
+  "evidence_class_uri": "https://terminal-state.systems/ontology/forge#ValidationEvidence",
+  "mapping_status": "derived_draft",
+  "authority_note": "Supplied XML declares field names; supplied TTL declares semantic classes/properties. No canonical field registry or ontology mapping approval is invented.",
+  "bindings": [
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "environment",
+      "kb_id": "EdgeOps_Env_ReproduceStack",
+      "field": "environment_id",
+      "column_index": 0,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArtifactIdentifierField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/04-EdgeOps_Env_ReproduceStack_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "environment",
+      "kb_id": "EdgeOps_Env_ReproduceStack",
+      "field": "deployment_profile",
+      "column_index": 1,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ReleaseLifecycleField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/04-EdgeOps_Env_ReproduceStack_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "environment",
+      "kb_id": "EdgeOps_Env_ReproduceStack",
+      "field": "runtime_version",
+      "column_index": 2,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ProvenanceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/04-EdgeOps_Env_ReproduceStack_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "environment",
+      "kb_id": "EdgeOps_Env_ReproduceStack",
+      "field": "lockfile_hash",
+      "column_index": 3,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ProvenanceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/04-EdgeOps_Env_ReproduceStack_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "environment",
+      "kb_id": "EdgeOps_Env_ReproduceStack",
+      "field": "bootstrap_status",
+      "column_index": 4,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ValidationStatusField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/04-EdgeOps_Env_ReproduceStack_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "environment",
+      "kb_id": "EdgeOps_Env_ReproduceStack",
+      "field": "ci_parity_status",
+      "column_index": 5,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ValidationStatusField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/04-EdgeOps_Env_ReproduceStack_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "environment",
+      "kb_id": "EdgeOps_Env_ReproduceStack",
+      "field": "config_schema_ref",
+      "column_index": 6,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArchitectureReferenceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/04-EdgeOps_Env_ReproduceStack_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "environment",
+      "kb_id": "EdgeOps_Env_ReproduceStack",
+      "field": "evidence_id",
+      "column_index": 7,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArtifactIdentifierField",
+      "related_source_property_uri": "https://terminal-state.systems/ontology/forge#evidence_id",
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/04-EdgeOps_Env_ReproduceStack_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "containment",
+      "kb_id": "EdgeOps_Containment_HardenRuntime",
+      "field": "container_id",
+      "column_index": 0,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArtifactIdentifierField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/08-EdgeOps_Containment_HardenRuntime_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "containment",
+      "kb_id": "EdgeOps_Containment_HardenRuntime",
+      "field": "image_ref",
+      "column_index": 1,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArtifactReferenceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/08-EdgeOps_Containment_HardenRuntime_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "containment",
+      "kb_id": "EdgeOps_Containment_HardenRuntime",
+      "field": "base_image_ref",
+      "column_index": 2,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArtifactReferenceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/08-EdgeOps_Containment_HardenRuntime_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "containment",
+      "kb_id": "EdgeOps_Containment_HardenRuntime",
+      "field": "build_stage_count",
+      "column_index": 3,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#OperationalParameterField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/08-EdgeOps_Containment_HardenRuntime_FieldDeclarations.xml",
+      "value_type": [
+        "integer",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "containment",
+      "kb_id": "EdgeOps_Containment_HardenRuntime",
+      "field": "runtime_user",
+      "column_index": 4,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#DeploymentConstraintField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/08-EdgeOps_Containment_HardenRuntime_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "containment",
+      "kb_id": "EdgeOps_Containment_HardenRuntime",
+      "field": "health_endpoint_ref",
+      "column_index": 5,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArchitectureReferenceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/08-EdgeOps_Containment_HardenRuntime_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "containment",
+      "kb_id": "EdgeOps_Containment_HardenRuntime",
+      "field": "readiness_status",
+      "column_index": 6,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#RuntimeStateStatusField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/08-EdgeOps_Containment_HardenRuntime_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "containment",
+      "kb_id": "EdgeOps_Containment_HardenRuntime",
+      "field": "liveness_status",
+      "column_index": 7,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#RuntimeStateStatusField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/08-EdgeOps_Containment_HardenRuntime_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "containment",
+      "kb_id": "EdgeOps_Containment_HardenRuntime",
+      "field": "sbom_ref",
+      "column_index": 8,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArtifactReferenceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/08-EdgeOps_Containment_HardenRuntime_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "containment",
+      "kb_id": "EdgeOps_Containment_HardenRuntime",
+      "field": "evidence_id",
+      "column_index": 9,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArtifactIdentifierField",
+      "related_source_property_uri": "https://terminal-state.systems/ontology/forge#evidence_id",
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/08-EdgeOps_Containment_HardenRuntime_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "seam",
+      "kb_id": "EdgeOps_Contracts_ValidateSeams",
+      "field": "seam_id",
+      "column_index": 0,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#InterfaceIdentifierField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/03-EdgeOps_Contracts_ValidateSeams_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "seam",
+      "kb_id": "EdgeOps_Contracts_ValidateSeams",
+      "field": "service_name",
+      "column_index": 1,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArtifactIdentifierField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/03-EdgeOps_Contracts_ValidateSeams_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "seam",
+      "kb_id": "EdgeOps_Contracts_ValidateSeams",
+      "field": "request_schema_ref",
+      "column_index": 2,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArchitectureReferenceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/03-EdgeOps_Contracts_ValidateSeams_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "seam",
+      "kb_id": "EdgeOps_Contracts_ValidateSeams",
+      "field": "response_schema_ref",
+      "column_index": 3,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArchitectureReferenceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/03-EdgeOps_Contracts_ValidateSeams_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "seam",
+      "kb_id": "EdgeOps_Contracts_ValidateSeams",
+      "field": "config_model_ref",
+      "column_index": 4,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArchitectureReferenceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/03-EdgeOps_Contracts_ValidateSeams_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "seam",
+      "kb_id": "EdgeOps_Contracts_ValidateSeams",
+      "field": "openapi_export_ref",
+      "column_index": 5,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArtifactReferenceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/03-EdgeOps_Contracts_ValidateSeams_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "seam",
+      "kb_id": "EdgeOps_Contracts_ValidateSeams",
+      "field": "icd_ref",
+      "column_index": 6,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArchitectureReferenceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/03-EdgeOps_Contracts_ValidateSeams_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "seam",
+      "kb_id": "EdgeOps_Contracts_ValidateSeams",
+      "field": "contract_version",
+      "column_index": 7,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ProvenanceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/03-EdgeOps_Contracts_ValidateSeams_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "seam",
+      "kb_id": "EdgeOps_Contracts_ValidateSeams",
+      "field": "validation_status",
+      "column_index": 8,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ValidationStatusField",
+      "related_source_property_uri": "https://terminal-state.systems/ontology/forge#validation_status",
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/03-EdgeOps_Contracts_ValidateSeams_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "seam",
+      "kb_id": "EdgeOps_Contracts_ValidateSeams",
+      "field": "evidence_id",
+      "column_index": 9,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArtifactIdentifierField",
+      "related_source_property_uri": "https://terminal-state.systems/ontology/forge#evidence_id",
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/03-EdgeOps_Contracts_ValidateSeams_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "readiness",
+      "kb_id": "EdgeOps_Orchestration_ReadyDeploy",
+      "field": "deployment_unit_id",
+      "column_index": 0,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#BuildIdentifierField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/06-EdgeOps_Orchestration_ReadyDeploy_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "readiness",
+      "kb_id": "EdgeOps_Orchestration_ReadyDeploy",
+      "field": "topology_choice",
+      "column_index": 1,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ReleaseLifecycleField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/06-EdgeOps_Orchestration_ReadyDeploy_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "readiness",
+      "kb_id": "EdgeOps_Orchestration_ReadyDeploy",
+      "field": "service_name",
+      "column_index": 2,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArtifactIdentifierField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/06-EdgeOps_Orchestration_ReadyDeploy_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "readiness",
+      "kb_id": "EdgeOps_Orchestration_ReadyDeploy",
+      "field": "dependency_ref",
+      "column_index": 3,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArtifactReferenceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/06-EdgeOps_Orchestration_ReadyDeploy_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "readiness",
+      "kb_id": "EdgeOps_Orchestration_ReadyDeploy",
+      "field": "probe_policy_ref",
+      "column_index": 4,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ConstraintReferenceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/06-EdgeOps_Orchestration_ReadyDeploy_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "readiness",
+      "kb_id": "EdgeOps_Orchestration_ReadyDeploy",
+      "field": "pace_lane",
+      "column_index": 5,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#RecoveryControlField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/06-EdgeOps_Orchestration_ReadyDeploy_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "readiness",
+      "kb_id": "EdgeOps_Orchestration_ReadyDeploy",
+      "field": "rollback_point_ref",
+      "column_index": 6,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArtifactReferenceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/06-EdgeOps_Orchestration_ReadyDeploy_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "readiness",
+      "kb_id": "EdgeOps_Orchestration_ReadyDeploy",
+      "field": "orchestration_status",
+      "column_index": 7,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ReleaseLifecycleField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/06-EdgeOps_Orchestration_ReadyDeploy_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "readiness",
+      "kb_id": "EdgeOps_Orchestration_ReadyDeploy",
+      "field": "shutdown_behavior_ref",
+      "column_index": 8,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArchitectureReferenceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/06-EdgeOps_Orchestration_ReadyDeploy_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "readiness",
+      "kb_id": "EdgeOps_Orchestration_ReadyDeploy",
+      "field": "evidence_id",
+      "column_index": 9,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArtifactIdentifierField",
+      "related_source_property_uri": "https://terminal-state.systems/ontology/forge#evidence_id",
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/06-EdgeOps_Orchestration_ReadyDeploy_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "release",
+      "kb_id": "EdgeOps_Release_TraceLifecycle",
+      "field": "release_unit_id",
+      "column_index": 0,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#BuildIdentifierField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/07-EdgeOps_Release_TraceLifecycle_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "release",
+      "kb_id": "EdgeOps_Release_TraceLifecycle",
+      "field": "source_revision",
+      "column_index": 1,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ProvenanceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/07-EdgeOps_Release_TraceLifecycle_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "release",
+      "kb_id": "EdgeOps_Release_TraceLifecycle",
+      "field": "artifact_hash",
+      "column_index": 2,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ProvenanceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/07-EdgeOps_Release_TraceLifecycle_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "release",
+      "kb_id": "EdgeOps_Release_TraceLifecycle",
+      "field": "provenance_ref",
+      "column_index": 3,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArtifactReferenceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/07-EdgeOps_Release_TraceLifecycle_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "release",
+      "kb_id": "EdgeOps_Release_TraceLifecycle",
+      "field": "test_evidence_ref",
+      "column_index": 4,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#EvidenceLocatorField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/07-EdgeOps_Release_TraceLifecycle_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "release",
+      "kb_id": "EdgeOps_Release_TraceLifecycle",
+      "field": "promotion_status",
+      "column_index": 5,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ApprovalStatusField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/07-EdgeOps_Release_TraceLifecycle_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "release",
+      "kb_id": "EdgeOps_Release_TraceLifecycle",
+      "field": "rollback_ref",
+      "column_index": 6,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArtifactReferenceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/07-EdgeOps_Release_TraceLifecycle_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "release",
+      "kb_id": "EdgeOps_Release_TraceLifecycle",
+      "field": "regression_status",
+      "column_index": 7,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ValidationStatusField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/07-EdgeOps_Release_TraceLifecycle_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "release",
+      "kb_id": "EdgeOps_Release_TraceLifecycle",
+      "field": "release_checklist_ref",
+      "column_index": 8,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArtifactReferenceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/07-EdgeOps_Release_TraceLifecycle_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "edgeops_minimum_table",
+      "table": "release",
+      "kb_id": "EdgeOps_Release_TraceLifecycle",
+      "field": "evidence_id",
+      "column_index": 9,
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArtifactIdentifierField",
+      "related_source_property_uri": "https://terminal-state.systems/ontology/forge#evidence_id",
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/07-EdgeOps_Release_TraceLifecycle_FieldDeclarations.xml",
+      "value_type": [
+        "string",
+        "null"
+      ],
+      "serialization_note": "A source-defined property is a semantic reference only; no RDF triple or new canonical field IRI is asserted."
+    },
+    {
+      "scope": "machine_handoff",
+      "table": "response",
+      "kb_id": null,
+      "field": "agent_role",
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#DomainDescriptorField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/09-Ontology_MachineHandoff_Schema.json",
+      "wire_schema": {
+        "type": "string"
+      },
+      "serialization_note": "JSON Schema09 remains the wire authority. TTL class binding does not override its types or mint status IRIs."
+    },
+    {
+      "scope": "machine_handoff",
+      "table": "response",
+      "kb_id": null,
+      "field": "task_owned",
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#DomainDescriptorField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/09-Ontology_MachineHandoff_Schema.json",
+      "wire_schema": {
+        "type": "string"
+      },
+      "serialization_note": "JSON Schema09 remains the wire authority. TTL class binding does not override its types or mint status IRIs."
+    },
+    {
+      "scope": "machine_handoff",
+      "table": "response",
+      "kb_id": null,
+      "field": "implementation",
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#DomainDescriptorField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/09-Ontology_MachineHandoff_Schema.json",
+      "wire_schema": {
+        "oneOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        ]
+      },
+      "serialization_note": "JSON Schema09 remains the wire authority. TTL class binding does not override its types or mint status IRIs."
+    },
+    {
+      "scope": "machine_handoff",
+      "table": "response",
+      "kb_id": null,
+      "field": "risks",
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#RiskField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/09-Ontology_MachineHandoff_Schema.json",
+      "wire_schema": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "serialization_note": "JSON Schema09 remains the wire authority. TTL class binding does not override its types or mint status IRIs."
+    },
+    {
+      "scope": "machine_handoff",
+      "table": "response",
+      "kb_id": null,
+      "field": "assumptions",
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#DomainDescriptorField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/09-Ontology_MachineHandoff_Schema.json",
+      "wire_schema": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "serialization_note": "JSON Schema09 remains the wire authority. TTL class binding does not override its types or mint status IRIs."
+    },
+    {
+      "scope": "machine_handoff",
+      "table": "response",
+      "kb_id": null,
+      "field": "follow_up_instructions",
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ReviewDecisionField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/09-Ontology_MachineHandoff_Schema.json",
+      "wire_schema": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "serialization_note": "JSON Schema09 remains the wire authority. TTL class binding does not override its types or mint status IRIs."
+    },
+    {
+      "scope": "machine_handoff",
+      "table": "response",
+      "kb_id": null,
+      "field": "validation_status",
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ValidationStatusField",
+      "related_source_property_uri": "https://terminal-state.systems/ontology/forge#validation_status",
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/09-Ontology_MachineHandoff_Schema.json",
+      "wire_schema": {
+        "type": "string",
+        "enum": [
+          "pass",
+          "hold",
+          "fail"
+        ]
+      },
+      "serialization_note": "JSON Schema09 remains the wire authority. TTL class binding does not override its types or mint status IRIs."
+    },
+    {
+      "scope": "machine_handoff",
+      "table": "response",
+      "kb_id": null,
+      "field": "artifact_refs",
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ArtifactReferenceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/09-Ontology_MachineHandoff_Schema.json",
+      "wire_schema": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "serialization_note": "JSON Schema09 remains the wire authority. TTL class binding does not override its types or mint status IRIs."
+    },
+    {
+      "scope": "machine_handoff",
+      "table": "response",
+      "kb_id": null,
+      "field": "provenance_id",
+      "canonical_field_uri": null,
+      "semantic_subtype_uri": "https://terminal-state.systems/ontology/forge#ProvenanceField",
+      "related_source_property_uri": null,
+      "binding_status": "derived_semantic_type_not_ontology_approval",
+      "source_declaration": "project_sources/09-Ontology_MachineHandoff_Schema.json",
+      "wire_schema": {
+        "type": "string"
+      },
+      "serialization_note": "JSON Schema09 remains the wire authority. TTL class binding does not override its types or mint status IRIs."
+    }
+  ]
+}

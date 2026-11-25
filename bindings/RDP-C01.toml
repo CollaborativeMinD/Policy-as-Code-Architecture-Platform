@@ -1,0 +1,7 @@
+version = 1
+pattern = "RDP-C01"
+scope = "software"
+
+[settings]
+tenant = "alpha"
+limit = 4

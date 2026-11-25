@@ -1,0 +1,587 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "Primary-source research for standalone Python PostgreSQL reference primitives",
+  "scope": "Research only. No adapter code, production deployment, or runtime conformance claimed by this note.",
+  "attestation": {
+    "agent": "driver_research",
+    "task": "Read supplied V&V, Structural, and PACE-T v2.0.0 policies; research driver, ORM, parsing, and Tailcat seams.",
+    "policy_inputs": [
+      "/workspace/scratch/e7495113964e/upload/Verification and Validation Policy_v2.0.0.md",
+      "/workspace/scratch/e7495113964e/upload/Structural Complexity Policy_v2.0.0.md",
+      "/workspace/scratch/e7495113964e/upload/PACE-T Ops Matrix Policy_v2.0.0.md"
+    ],
+    "source_method": "Read-only web search/open and authenticated GitHub connector GET of public upstream source. Citation references below are observed web retrieval references, not invented citations. GitHub URLs are direct primary provenance.",
+    "performed": [
+      "policy read",
+      "primary-source API review",
+      "Tailcat version and hermetic test discovery",
+      "falsifiable primitive recommendations"
+    ],
+    "not_performed": [
+      "package installation",
+      "implementation execution",
+      "native PostgreSQL multi-backend test",
+      "TLS handshake verification",
+      "production acceptance"
+    ],
+    "confidence": "Source-supported semantics; installed version conformance still requires repository test evidence."
+  },
+  "source_notes": [
+    {
+      "id": "psycopg-async",
+      "url": "https://www.psycopg.org/psycopg3/docs/advanced/async.html",
+      "retrieval_refs": [
+        "turn2search0",
+        "turn4view0",
+        "turn12view0"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "AsyncConnection and AsyncCursor expose native asyncio counterparts. Same-connection query execution is serialized and all cursors share the same transaction.",
+        "Cancellation asks PostgreSQL to cancel the operation, but CancelledError does not prove the operation did not complete. Reconcile uncertain committed writes using stable operation identity.",
+        "Connections must be created after process fork, never shared across processes."
+      ]
+    },
+    {
+      "id": "psycopg-pool",
+      "url": "https://www.psycopg.org/psycopg3/docs/advanced/pool.html",
+      "retrieval_refs": [
+        "turn2search8",
+        "turn4view1",
+        "turn11view3"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "Pool connection context commits normally, rolls back on exception, then returns the connection.",
+        "Create async pool open=False and explicitly await open/close or use its async context. Constructor-opening is deprecated.",
+        "Bound max_size and acquisition timeout; run startup wait to fail promptly rather than deferring connection failure."
+      ]
+    },
+    {
+      "id": "psycopg-copy",
+      "url": "https://www.psycopg.org/psycopg3/docs/basic/copy.html",
+      "retrieval_refs": [
+        "turn4view2"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "COPY participates in normal transaction semantics. Context errors discard COPY input; the outer transaction still controls durable commit.",
+        "write_row adapts Python values. Do not combine row-wise adaptation with CSV/DELIMITER/NULL options; preformatted blocks require their own exact format contract.",
+        "Binary COPY is type-exact; use set_types when necessary. COPY output lacks complete type information unless supplied."
+      ]
+    },
+    {
+      "id": "psycopg-pipeline",
+      "url": "https://www.psycopg.org/psycopg3/docs/advanced/pipeline.html",
+      "retrieval_refs": [
+        "turn2search2"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "Pipeline batches protocol round trips; performance depends on latency/workload and is not a universal speed guarantee.",
+        "Statement failure aborts the current transaction and skips subsequent queued work until synchronization; PipelineAborted requires rollback/recovery.",
+        "executemany uses pipeline internally on supported versions; pipeline mode and COPY are separate primitives."
+      ]
+    },
+    {
+      "id": "psycopg-cursors",
+      "url": "https://www.psycopg.org/psycopg3/docs/advanced/cursors.html",
+      "retrieval_refs": [
+        "turn0search4"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "Ordinary Cursor materializes results client-side. Named ServerCursor retrieves partial results from the server and keeps server resources/transaction open.",
+        "A bounded fetchmany/iteration and prompt cursor cleanup are required for bounded retained rows."
+      ]
+    },
+    {
+      "id": "psycopg-params",
+      "url": "https://www.psycopg.org/psycopg3/docs/basic/params.html",
+      "retrieval_refs": [
+        "turn12view1"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "Bind data values with %s placeholders and a separate parameter sequence; never interpolate data into SQL text.",
+        "SQL identifiers require psycopg.sql.Identifier composition, not value placeholders. Constrain dynamic identifiers to an application allowlist where practical."
+      ]
+    },
+    {
+      "id": "psycopg-transactions",
+      "url": "https://www.psycopg.org/psycopg3/docs/basic/transactions.html",
+      "retrieval_refs": [
+        "turn13view1"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "Even SELECT starts a transaction by default. End transactions promptly to avoid idle-in-transaction connections.",
+        "Connection context commits/rolls back and closes. Connection.transaction on autocommit connection gives explicit top-level transaction ownership; on an already active transaction it may form a savepoint.",
+        "Do not pretend nested transaction contexts are independent top-level commits."
+      ]
+    },
+    {
+      "id": "asyncpg-api",
+      "url": "https://magicstack.github.io/asyncpg/current/api/index.html",
+      "retrieval_refs": [
+        "turn2search7",
+        "turn12view3"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "Asyncpg is native asyncio and PostgreSQL protocol, with $1 value parameters. Use explicit transaction and pool acquisition scopes.",
+        "Default SSL mode is prefer and may fall back. Production must explicitly require verify-full or validating SSLContext; SSL is ignored for Unix sockets.",
+        "Bound command_timeout, pool min/max, acquisition timeout, and cursor prefetch."
+      ]
+    },
+    {
+      "id": "asyncpg-usage",
+      "url": "https://magicstack.github.io/asyncpg/current/usage.html",
+      "retrieval_refs": [
+        "turn2search6"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "Connection.transaction provides explicit transactions. create_pool is the native pooling API.",
+        "Independent tasks acquire independent connections; a single asyncpg connection is not a shared parallel execution lane."
+      ]
+    },
+    {
+      "id": "asyncpg-faq",
+      "url": "https://magicstack.github.io/asyncpg/current/faq.html",
+      "retrieval_refs": [
+        "turn2search4"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "Cursor iteration requires an explicit transaction.",
+        "PgBouncer prepared statement behavior is deployment-dependent; disabling statement_cache_size can be necessary. Do not claim every pooler/version supports prepared statements."
+      ]
+    },
+    {
+      "id": "sqlalchemy-pg",
+      "url": "https://docs.sqlalchemy.org/en/21/dialects/postgresql.html",
+      "retrieval_refs": [
+        "turn2search30"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "Use explicit postgresql+psycopg URLs for both create_engine and create_async_engine. The constructor selects sync/async.",
+        "Use SQLAlchemy URL.create for structured credentials and connect_args for TLS/timeouts. Avoid layering a second pool unless deliberately configured."
+      ]
+    },
+    {
+      "id": "sqlalchemy-transactions",
+      "url": "https://docs.sqlalchemy.org/en/21/core/connections.html",
+      "retrieval_refs": [
+        "turn10view2",
+        "turn11view0"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "engine.begin manages both connection and transaction, committing normal exit and rolling back exceptions.",
+        "engine.connect alone is not a commit context. Autobegun writes must be explicitly committed or use engine.begin.",
+        "yield_per/stream_results configure server-side result streaming; close result and connection when stopping early."
+      ]
+    },
+    {
+      "id": "sqlalchemy-async",
+      "url": "https://docs.sqlalchemy.org/en/21/orm/extensions/asyncio.html",
+      "retrieval_refs": [
+        "turn10view3",
+        "turn12view2"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "AsyncSession is mutable transaction state and must not be shared by concurrent tasks.",
+        "Use independent session contexts and avoid implicit lazy I/O in async code; explicit async execution/streaming and eager load decisions make I/O ownership visible.",
+        "Dispose async engine at shutdown; connection/session cleanup must survive exceptions."
+      ]
+    },
+    {
+      "id": "sqlmodel-multiple",
+      "url": "https://sqlmodel.tiangolo.com/tutorial/fastapi/multiple-models/",
+      "retrieval_refs": [
+        "turn6search30"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "Separate table models from create/public data models. Construct persistence model from explicitly validated input.",
+        "SQLModel uses SQLAlchemy; therefore PostgreSQL driver and transaction semantics still apply."
+      ]
+    },
+    {
+      "id": "sqlmodel-validation",
+      "url": "https://sqlmodel.tiangolo.com/advanced/datetime/",
+      "retrieval_refs": [
+        "turn6search26",
+        "turn7view2"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "Table-model constructor semantics differ from ordinary DTO validation; docs call for model_validate when validation is needed.",
+        "Use a separate strict Pydantic input contract and timezone-aware PostgreSQL column; do not assume ORM declaration alone proves boundary validation."
+      ]
+    },
+    {
+      "id": "polars-database",
+      "url": "https://docs.pola.rs/api/python/stable/reference/api/polars.read_database.html",
+      "retrieval_refs": [
+        "turn6search0"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "iter_batches=True yields DataFrames but may still materialize the full driver result unless the driver is configured for streaming.",
+        "With SQLAlchemy use stream_results=True and explicit batch_size. A backend may ignore requested batch sizes.",
+        "For the narrow reference, use a psycopg server cursor, bounded fetchmany, and explicit DataFrame schema; memory contract also needs a maximum row/payload size."
+      ]
+    },
+    {
+      "id": "pydantic-strict",
+      "url": "https://pydantic.dev/docs/validation/latest/concepts/strict_mode/",
+      "retrieval_refs": [
+        "turn7view0"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "Default validation may coerce values. strict=True rejects type coercion for Python input; JSON input has some permitted string representations.",
+        "Use model_validate on the declared boundary; add explicit tests for booleans-as-integers, nonfinite floats, oversized strings/bodies, unknown fields, and malformed JSON."
+      ]
+    },
+    {
+      "id": "pydantic-config",
+      "url": "https://pydantic.dev/docs/validation/latest/api/pydantic/config/",
+      "retrieval_refs": [
+        "turn7view1",
+        "turn11view4"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "extra=forbid rejects undeclared fields. frozen prevents assignment and may make a model hashable.",
+        "Frozen is faux-immutability: nested mutable containers are not a deep immutable authorization snapshot. Use immutable field types or recursively freeze copied data."
+      ]
+    },
+    {
+      "id": "pyrsistent",
+      "url": "https://github.com/tobgu/pyrsistent",
+      "retrieval_refs": [
+        "turn8search32"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "pyrsistent supplies immutable/persistent functional collections (PMap, PRecord, PVector). Persistent here describes retained versions, not disk or database durability.",
+        "Use freeze or immutable nested values for snapshots. Store durable checkpoint/effect data in PostgreSQL, not only a PMap."
+      ]
+    },
+    {
+      "id": "pg-tls",
+      "url": "https://www.postgresql.org/docs/current/libpq-ssl.html",
+      "retrieval_refs": [
+        "turn10view0"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "verify-full validates both trusted certificate chain and host name. require does not express equivalent host identity validation.",
+        "Local test transport and production transport must be explicit separate profiles; a local non-TLS PG-wire run cannot prove production certificate verification."
+      ]
+    },
+    {
+      "id": "pg-ordering",
+      "url": "https://www.postgresql.org/docs/current/queries-limit.html",
+      "retrieval_refs": [
+        "turn10view1"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "LIMIT requires a unique ORDER BY for predictable subsets.",
+        "Use monotonic unique keyset cursor (id > last_id ORDER BY id LIMIT bound) or composite immutable ordering with unique tiebreaker.",
+        "If a stable multi-page snapshot is required, keep REPEATABLE READ read-only transaction; high-water id alone does not isolate updates/deletes."
+      ]
+    },
+    {
+      "id": "pg-locking",
+      "url": "https://www.postgresql.org/docs/current/sql-select.html",
+      "retrieval_refs": [
+        "turn13view0"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "READ COMMITTED ordered locking reads may observe updated ordering values after waiting; use immutable ordering for queue/keyset paths.",
+        "Authority check/use must use a single transaction with a locked grant or atomic guarded mutation. Independent preflight authorization is insufficient."
+      ]
+    },
+    {
+      "id": "tailcat-release",
+      "url": "https://github.com/tailscale/tailcat/releases/tag/v0.7.0",
+      "retrieval_refs": [
+        "github-get:https://api.github.com/repos/tailscale/tailcat/releases?per_page=5"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "Observed current stable release v0.7.0 published 2026-09-20. Linux amd64 tar.gz asset digest is recorded separately.",
+        "Go library is github.com/tailscale/tailcat. It is not a native Python package; a pinned CLI provides a narrow standalone Python integration seam."
+      ]
+    },
+    {
+      "id": "tailcat-readme",
+      "url": "https://raw.githubusercontent.com/tailscale/tailcat/v0.7.0/README.md",
+      "retrieval_refs": [
+        "turn0search5",
+        "github-get:README.md@v0.7.0"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "Tailcat uses WireGuard data-plane connections without Tailscale control-plane account configuration; address data is exchanged out of band.",
+        "Use --allow with explicit client node keys; an unrestricted address is a capability secret. Keep PSK enabled.",
+        "forward binds loopback by default. Port forwarding does not automatically pass tunnel peer identity to PostgreSQL."
+      ]
+    },
+    {
+      "id": "tailcat-cli",
+      "url": "https://raw.githubusercontent.com/tailscale/tailcat/v0.7.0/cmd/tailcat/tailcat.go",
+      "retrieval_refs": [
+        "github-get:cmd/tailcat/tailcat.go@v0.7.0"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "tailcat serve --allow=nodekey:<key> exec -- <command> runs a fixed command per connection.",
+        "Spawned command receives TAILCAT_PEER_KEY and TAILCAT_REMOTE_ADDR from tunnel context.",
+        "Use argv lists without shell=True. Worker obtains peer only from trusted launcher environment, rejects any client-provided peer override, and validates key grammar."
+      ]
+    },
+    {
+      "id": "tailcat-hermetic",
+      "url": "https://raw.githubusercontent.com/tailscale/tailcat/v0.7.0/cmd/tailcat/pipe_test.go",
+      "retrieval_refs": [
+        "github-get:cmd/tailcat/pipe_test.go@v0.7.0"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "Upstream TestLocalDERPMode sets TS_DEBUG_TAILCAT_LOCAL_DERP=1 and TAILCAT_ADDR_FILE on the server.",
+        "Both server and client use --derpmap-url=none; server embeds local relay in generated address, enabling live hermetic encrypted transport tests without public DERP.",
+        "Keep this upstream debug mode isolated to test profile; it is not a production relay configuration."
+      ]
+    },
+    {
+      "id": "tailcat-exec-e2e",
+      "url": "https://raw.githubusercontent.com/tailscale/tailcat/v0.7.0/cmd/tailcat/exec_e2e_test.go",
+      "retrieval_refs": [
+        "github-get:cmd/tailcat/exec_e2e_test.go@v0.7.0"
+      ],
+      "retrieved_on": "2026-11-04",
+      "claims": [
+        "Upstream live exec test generates a client key, starts serve exec, round-trips bytes, and checks TAILCAT_PEER_KEY.",
+        "This can be adapted to a fixed Python worker over stdin/stdout with bounded framing and PostgreSQL grant checks; no FastAPI layer is required."
+      ]
+    }
+  ],
+  "installed_candidate_pins": {
+    "provenance": "Parent agent reported successful installation on 2026-11-04; root-owned lock and test results are authoritative.",
+    "python": "3.13.17",
+    "psycopg": "3.3.7",
+    "psycopg_pool": "3.3.3",
+    "asyncpg": "0.32.0",
+    "SQLAlchemy": "2.1.8",
+    "sqlmodel": "0.0.48",
+    "polars": "2.1.0",
+    "pydantic": "2.14.2",
+    "pyrsistent": "0.20.0",
+    "redis_python": "8.1.0",
+    "pytest": "9.2.0",
+    "note": "Current Psycopg web docs and PyPI now report 3.3.8 (released 2026-11-03); source semantics should be checked against installed 3.3.7 API. Latest docs are not a reason to churn a passing explicit pin without evidence."
+  },
+  "tailcat_pin": {
+    "version": "0.7.0",
+    "published_at": "2026-09-20T00:37:32Z",
+    "archive_url": "https://github.com/tailscale/tailcat/releases/download/v0.7.0/tailcat_0.7.0_linux_amd64.tar.gz",
+    "sha256": "23c0b1887a5ec422f0d18a9c52b4f5357815febdaae738a1eb54036d10bd9ee6",
+    "source_go_version": "1.27.1",
+    "source_go_version_url": "https://raw.githubusercontent.com/tailscale/tailcat/v0.7.0/go.mod",
+    "justification": "Verified public release metadata. Static executable avoids introducing new Go source into the standalone Python admitted branch. If packaged, checksum verification and provenance must be active."
+  },
+  "recommended_primitives": [
+    {
+      "id": "PG-CONNECT",
+      "contract": "Bounded connection/pool lifecycle with explicit production verify-full and isolated local-test profile.",
+      "falsifiers": [
+        "malformed DSN",
+        "missing trusted CA",
+        "invalid max_size",
+        "acquisition timeout",
+        "exception closes/releases connection"
+      ]
+    },
+    {
+      "id": "PG-EXECUTE",
+      "contract": "Synchronous and asynchronous parameter-bound raw SQL, explicit transaction ownership, no shared task connection.",
+      "falsifiers": [
+        "quote/semicolon injection remains data",
+        "rollback leaves zero effects",
+        "cancelled task propagates",
+        "resource cleanup after query failure"
+      ]
+    },
+    {
+      "id": "PG-BULK",
+      "contract": "Atomic Psycopg COPY row ingestion and separate pipeline reference; no universal speed claim.",
+      "falsifiers": [
+        "generator fails mid-COPY => rollback",
+        "one pipeline statement fails => whole transaction no effects",
+        "empty bounded input",
+        "oversized batch rejected"
+      ]
+    },
+    {
+      "id": "PG-PAGE",
+      "contract": "Unique immutable keyset ordering, explicit batch cap and end boundary.",
+      "falsifiers": [
+        "empty result",
+        "exact boundary",
+        "multi-page no duplicates or gaps in fixture",
+        "early stop closes cursor",
+        "mutation of ordering disallowed or stated"
+      ]
+    },
+    {
+      "id": "PG-ORM",
+      "contract": "SQLAlchemy explicit postgresql+psycopg sync/async engine and SQLModel with separate input DTO.",
+      "falsifiers": [
+        "rollback",
+        "unknown input field",
+        "invalid field type",
+        "async session isolation",
+        "parameter injection"
+      ]
+    },
+    {
+      "id": "PG-PARSE",
+      "contract": "Bounded cursor batches parsed into strict DTO and Polars with explicit schema.",
+      "falsifiers": [
+        "nullability mismatch",
+        "nonfinite value",
+        "empty batches",
+        "wrong dtype",
+        "single oversized row",
+        "bounded retained batch count"
+      ]
+    },
+    {
+      "id": "PG-PEER",
+      "contract": "Tailcat-authenticated peer from trusted launcher; PG live authority + epoch check and effect/outbox mutation in one transaction.",
+      "falsifiers": [
+        "unallowed tunnel key",
+        "spoofed JSON peer",
+        "wrong epoch",
+        "revoked peer",
+        "wrong resource",
+        "same op id different payload",
+        "local env spoof excluded by containment boundary"
+      ]
+    },
+    {
+      "id": "PG-OUTBOX",
+      "contract": "PG authoritative effect+outbox atomicity, Redis delivery at least once, durable consumer checkpoint/idempotency before ACK.",
+      "falsifiers": [
+        "DB commit then Redis failure",
+        "Redis send then lost ACK",
+        "replay duplicate",
+        "Redis outage",
+        "stale epoch between attempts",
+        "consumer crash before/after checkpoint"
+      ]
+    },
+    {
+      "id": "PG-STREAM",
+      "contract": "Content-defined chunks persist hash/sequence/length with strict total size bounds, repeatable boundaries and resumable checkpoint.",
+      "falsifiers": [
+        "truncation",
+        "reorder",
+        "tampering",
+        "duplicate replay",
+        "oversized envelope",
+        "checkpoint mismatch",
+        "same content different network read segmentation"
+      ]
+    }
+  ],
+  "verification_boundary": {
+    "parent_runtime": "PGlite 0.5.15 + socket 0.2.18 PostgreSQL 18 engine via single-backend multiplexer, Redis server 6.2.14 child per invocation.",
+    "can_evidence": [
+      "SQL/parameter semantics",
+      "transaction commit/rollback behavior supported by adapter",
+      "DDL constraints",
+      "driver/ORM/parser compatibility on exact pinned runtime",
+      "sequential replay/idempotency",
+      "local Redis stream/checkpoint composition"
+    ],
+    "cannot_infer": [
+      "native PostgreSQL process containment",
+      "native multi-backend lock contention/deadlock behavior",
+      "native SCRAM/password auth",
+      "production TLS certificate enforcement",
+      "physical WAL crash durability or PITR",
+      "WAN Tailcat traversal performance"
+    ],
+    "required_reporting": "Keep these native-only claims unverified or outside the acceptance scope. Do not label simulated or sequential tests as concurrent production proof.",
+    "standalone_admission": "Apply supplied Python admission on new branch only; inherited baseline remains excluded from final package. Target modules <100 physical lines and functions <45. Watch/refactor thresholds do not justify discarding scenario-required executable checks.",
+    "policy_candidates": "Build invariant \u00d7 failure \u00d7 gate CROSS JOIN candidate ledger; preserve NOT_APPLICABLE rows with explicit scope predicate. Causal deletion includes restoration, matched control, and alternate-path compensation. Failure/error paths count toward >=90% branch coverage."
+  },
+  "draft_corrections": [
+    "Replace hardcoded superuser/password DSNs with configuration and least-privilege runtime role.",
+    "Do not rank asyncpg universally faster; benchmark actual payload, transaction, concurrency, and latency profiles.",
+    "Psycopg2 has legacy asynchronous/polling capability; say it lacks Psycopg3 native asyncio API rather than all async support.",
+    "psycopg[binary] bundles compiled dependencies; plain psycopg can use system libpq. Binary option is packaging choice, not absence of libpq.",
+    "Pin drivers and extras explicitly; do not add FastAPI, Kubernetes, or a second database engine merely because baseline tools mention them.",
+    "Use explicit projection rather than SELECT *, stable order when fetching one row, and explicit row absence behavior.",
+    "Use try/finally or async connection context for asyncpg closure, explicit transaction scope for multi-statement effects.",
+    "SQLAlchemy connection context alone does not commit application writes."
+  ],
+  "documentation_supplement": {
+    "recorded_at": "2026-11-04T08:30:13.843957+00:00",
+    "primary_sources": [
+      {
+        "id": "psycopg-install",
+        "url": "https://www.psycopg.org/psycopg3/docs/basic/install.html",
+        "retrieval_refs": [
+          "turn16view0"
+        ]
+      },
+      {
+        "id": "pg-retry",
+        "url": "https://www.postgresql.org/docs/current/mvcc-serialization-failure-handling.html",
+        "retrieval_refs": [
+          "turn16view1"
+        ]
+      },
+      {
+        "id": "pg-wal-reliability",
+        "url": "https://www.postgresql.org/docs/current/wal-reliability.html",
+        "retrieval_refs": [
+          "turn16view2"
+        ]
+      },
+      {
+        "id": "pg-definer-security",
+        "url": "https://www.postgresql.org/docs/current/sql-createfunction.html",
+        "retrieval_refs": [
+          "turn16view3"
+        ]
+      },
+      {
+        "id": "pg-advisory-locking",
+        "url": "https://www.postgresql.org/docs/current/explicit-locking.html",
+        "retrieval_refs": [
+          "turn17view0"
+        ]
+      },
+      {
+        "id": "pg-explain",
+        "url": "https://www.postgresql.org/docs/current/using-explain.html",
+        "retrieval_refs": [
+          "turn17view1"
+        ]
+      }
+    ],
+    "purpose": "Verify installation choices, complete-transaction retries, WAL qualification limits, function security, advisory locking, and plan observations for the 17-pattern catalog."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "argv": [
+    "/workspace/scratch/e7495113964e/work/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "--tb=short",
+    "-o",
+    "addopts=",
+    "-p",
+    "tools.mutation_probe",
+    "--junitxml=/workspace/scratch/e7495113964e/work/epochs/03-mutations/PG-M02/mutated/junit.xml",
+    "tests/test_streaming_parity.py::test_all_historical_source_vectors_match_with_changed_packetization"
+  ],
+  "returncode": 0,
+  "reason": "COMPLETE",
+  "seconds": 0.7052230210028938,
+  "captured_bytes": 98,
+  "stdout": "pytest.stdout.log",
+  "stderr": "pytest.stderr.log",
+  "import_verified": true,
+  "source_unchanged": true,
+  "source_digest": "eb2f7fbf92ca23c47ae4048311d7650adcc2b1bd686d3e61295c890da74b2918"
+}

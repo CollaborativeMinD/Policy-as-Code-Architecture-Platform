@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="12" time="2.524" timestamp="2026-11-04T15:00:33.750011+07:00" hostname="18a71ec14d7e"><testcase classname="tests.test_worker_contracts" name="test_private_configuration_and_link_rejection" time="0.002" /><testcase classname="tests.test_worker_contracts" name="test_request_cannot_weaken_projection_config[redis://remote.example/0]" time="0.000" /><testcase classname="tests.test_worker_contracts" name="test_request_cannot_weaken_projection_config[redis://127.0.0.1/1]" time="0.000" /><testcase classname="tests.test_worker_contracts" name="test_request_cannot_weaken_projection_config[redis://127.0.0.1/0?ssl_cert_reqs=none]" time="0.000" /><testcase classname="tests.test_worker_contracts" name="test_request_cannot_weaken_projection_config[redis:///0]" time="0.000" /><testcase classname="tests.test_worker_contracts" name="test_closed_request_and_canonical_payload" time="0.000" /><testcase classname="tests.test_worker_contracts" name="test_ingress_frames[abc\n-10-None]" time="0.001" /><testcase classname="tests.test_worker_contracts" name="test_ingress_frames[abcdef\n-3-CAPACITY]" time="0.001" /><testcase classname="tests.test_worker_contracts" name="test_ingress_frames[a\nb\n-10-ONE_REQUEST]" time="0.001" /><testcase classname="tests.test_worker_contracts" name="test_ingress_frames[abc-10-TRUNCATED]" time="0.001" /><testcase classname="tests.test_worker_contracts" name="test_ingress_stall_and_expired_budget" time="0.011" /><testcase classname="tests.test_tailcat_e2e" name="test_authenticated_tailcat_replay_and_revocation" time="2.420"><failure message="RuntimeError: TAILCAT_SERVER_EXITED">tests/test_tailcat_e2e.py:39: in test_authenticated_tailcat_replay_and_revocation
+    with server(binary, tmp_path, peer, path) as address:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/root/.local/share/uv/python/cpython-3.13.17-linux-x86_64-gnu/lib/python3.13/contextlib.py:141: in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+tests/tailcat_runtime.py:56: in server
+    yield ready_address(address_path, process)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/tailcat_runtime.py:28: in ready_address
+    raise RuntimeError("TAILCAT_SERVER_EXITED")
+E   RuntimeError: TAILCAT_SERVER_EXITED</failure></testcase></testsuite></testsuites>

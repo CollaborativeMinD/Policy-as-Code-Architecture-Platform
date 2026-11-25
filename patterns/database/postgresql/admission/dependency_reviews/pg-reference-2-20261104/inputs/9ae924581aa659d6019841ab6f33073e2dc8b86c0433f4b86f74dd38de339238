@@ -1,0 +1,11 @@
+--- sql/02_authority.sql
++++ sql/02_authority.sql.mutated
+@@ -58,7 +58,7 @@
+ DECLARE a hmt_pg.peer_authority;
+ BEGIN
+  SELECT * INTO a FROM hmt_pg.peer_authority WHERE db_role=session_user FOR UPDATE;
+- IF NOT FOUND OR NOT a.active OR (expected IS NOT NULL AND a.epoch<>expected) OR
++ IF NOT FOUND OR NOT a.active OR false OR
+   a.expires_at<=clock_timestamp() THEN RAISE EXCEPTION 'AUTHORITY_DENIED'; END IF;
+  RETURN a;
+ END $$;

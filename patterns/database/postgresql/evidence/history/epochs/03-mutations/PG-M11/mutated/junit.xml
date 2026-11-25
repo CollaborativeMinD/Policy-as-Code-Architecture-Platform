@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="2.181" timestamp="2026-11-04T15:09:57.826884+07:00" hostname="18a71ec14d7e"><testcase classname="tests.test_outbox_recovery" name="test_cache_loss_rebuild_requires_current_same_epoch_authority" time="2.080"><failure message="Failed: DID NOT RAISE ValueError">tests/test_outbox_recovery.py:63: in test_cache_loss_rebuild_requires_current_same_epoch_authority
+    with pytest.raises(ValueError, match="CHECKPOINT_EPOCH_REVOKED"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE ValueError</failure></testcase></testsuite></testsuites>

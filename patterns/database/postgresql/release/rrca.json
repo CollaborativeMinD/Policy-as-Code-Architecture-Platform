@@ -1,0 +1,144 @@
+{
+  "columns": [
+    "timestamp",
+    "incident_id",
+    "checkpoint",
+    "observed_state",
+    "causal_evidence",
+    "validation_test",
+    "disposition",
+    "sub_agent_task_attestation"
+  ],
+  "rows": [
+    {
+      "timestamp": "2026-11-04T07:38:21.890401+00:00",
+      "incident_id": "RCA-001",
+      "checkpoint": "environment qualification",
+      "observed_state": "Native PostgreSQL 16.2 initdb refused uid0; namespace contains only uid0",
+      "causal_evidence": "tool transcript:0461f5; uid_map:0 0 1",
+      "validation_test": "PGlite PostgreSQL18.6 tracer plus separate native qualification suite",
+      "disposition": "INVESTIGATION_COMPLETE;SOLUTION_CANDIDATE_APPLIED:scoped SQL engine qualification, native service remains unexecuted",
+      "sub_agent_task_attestation": "root inspected runtime"
+    },
+    {
+      "timestamp": "2026-11-04T07:38:21.890401+00:00",
+      "incident_id": "RCA-002",
+      "checkpoint": "teardown",
+      "observed_state": "asyncpg close timeout reproduced after successful query",
+      "causal_evidence": "tool transcript:58eafb; PGlite socket Terminate handshake",
+      "validation_test": "tracer_probe.py bounded close then terminate; is_closed assertion",
+      "disposition": "INVESTIGATION_COMPLETE;SOLUTION_CANDIDATE_APPLIED:explicit classified forced termination",
+      "sub_agent_task_attestation": "root and driver_research cross-seam review"
+    },
+    {
+      "timestamp": "2026-11-04T07:38:21.890401+00:00",
+      "incident_id": "RCA-003",
+      "checkpoint": "admission source availability",
+      "observed_state": "Original hmt-tools excluded from supplied RDP; historical receipts insufficient",
+      "causal_evidence": "evidence/history/admission_audit.json; source_registry exported_in_packet false",
+      "validation_test": "Recovered CI42 source sha85882a410803d8741bdce4a56f6f6c2a7629e950bb5c938241bd6fd74944a6f1",
+      "disposition": "INVESTIGATION_COMPLETE;SOLUTION_CANDIDATE_APPLIED:exact42 executable lanes recovered",
+      "sub_agent_task_attestation": "admission_audit read-only source attestation"
+    },
+    {
+      "timestamp": "2026-11-04T08:10:04.874918+00:00",
+      "incident_id": "PG-RRCA-M02",
+      "checkpoint": "INITIAL_MUTATION_WITNESS",
+      "observed_state": "Initial campaign caught 11 of 12 mutants; resetting rolling state at a chunk cut survived selected historical vectors.",
+      "causal_evidence": "evidence/history/epochs/03-mutations/mutation-report.json; complete initial evidence is preserved.",
+      "validation_test": "tests/test_streaming_parity.py::test_all_historical_source_vectors_match_with_changed_packetization",
+      "disposition": "INVESTIGATION_INCOMPLETE",
+      "sub_agent_task_attestation": "owner=/root/streaming_authority; task=primitive mutation and independent worker review; evidence=evidence/history/sourcehashes/streaming_authority_attestation.json; supervisor=/root"
+    },
+    {
+      "timestamp": "2026-11-04T08:17:08.908389+00:00",
+      "incident_id": "PG-RRCA-M02",
+      "checkpoint": "CAUSE_REPAIR_AND_RESTORATION",
+      "observed_state": "A tail shorter than window_size exposes missing predecessor bytes. Same 12 mutants then caught; all 12 restoration runs passed; zero timeout/unviable.",
+      "causal_evidence": "Independent abcde/window 4 tail fingerprint 1650680933 versus mutant 101; new tail sizes 1, 2, and 3 witnesses; evidence/history/epochs/04-mutations-closed/native-mutation-qualification.json PASS.",
+      "validation_test": "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut",
+      "disposition": "INVESTIGATION_COMPLETE;SOLUTION_CANDIDATE_APPLIED",
+      "sub_agent_task_attestation": "owner=/root/streaming_authority; task=primitive mutation and independent worker review; evidence=evidence/history/sourcehashes/streaming_authority_attestation.json; supervisor=/root"
+    },
+    {
+      "timestamp": "2026-11-04T08:25:29.181801+00:00",
+      "incident_id": "PG-RRCA-WATCHDOG-PIPE",
+      "checkpoint": "BOUNDED_REPRODUCTION",
+      "observed_state": "Closed or full stderr prevented the 0.1-second watchdog from exiting; both child processes required outer kill after 0.7 seconds.",
+      "causal_evidence": "evidence/history/worker_readonly_deadline_probe.json; os.write executed before os._exit, so diagnostic failure blocked termination.",
+      "validation_test": "tests/test_worker_deadline_attacks.py::test_hard_exit_does_not_depend_on_diagnostic_pipe",
+      "disposition": "INVESTIGATION_INCOMPLETE",
+      "sub_agent_task_attestation": "owner=/root/streaming_authority; task=primitive mutation and independent worker review; evidence=evidence/history/sourcehashes/streaming_authority_attestation.json; supervisor=/root"
+    },
+    {
+      "timestamp": "2026-11-04T08:28:25.484148+00:00",
+      "incident_id": "PG-RRCA-WATCHDOG-PIPE",
+      "checkpoint": "REPAIR_AND_REGRESSION",
+      "observed_state": "Watchdog now invokes os._exit(124) without logging. Both closed/full-stderr process witnesses pass in 26-test regression with no failures/errors/skips.",
+      "causal_evidence": "src/hmt_pg_patterns/worker_io.py::_expired; evidence/history/epochs/10-deadline-regression.xml.",
+      "validation_test": "tests/test_worker_deadline_attacks.py::test_hard_exit_does_not_depend_on_diagnostic_pipe",
+      "disposition": "INVESTIGATION_COMPLETE;SOLUTION_CANDIDATE_APPLIED",
+      "sub_agent_task_attestation": "owner=/root/streaming_authority; task=primitive mutation and independent worker review; evidence=evidence/history/sourcehashes/streaming_authority_attestation.json; supervisor=/root"
+    },
+    {
+      "timestamp": "2026-11-04T08:26:43.041373+00:00",
+      "incident_id": "PG-RRCA-CONFIG-FIFO",
+      "checkpoint": "BOUNDED_REPRODUCTION",
+      "observed_state": "Private UID-owned 0600 FIFO blocked open before regular-file validation and before watchdog startup.",
+      "causal_evidence": "evidence/history/worker_readonly_config_probe.json; child remained blocked beyond 0.7-second observation.",
+      "validation_test": "tests/test_worker_deadline_attacks.py::test_private_fifo_is_rejected_without_waiting_for_a_writer",
+      "disposition": "INVESTIGATION_INCOMPLETE",
+      "sub_agent_task_attestation": "owner=/root/streaming_authority; task=primitive mutation and independent worker review; evidence=evidence/history/sourcehashes/streaming_authority_attestation.json; supervisor=/root"
+    },
+    {
+      "timestamp": "2026-11-04T08:28:25.484148+00:00",
+      "incident_id": "PG-RRCA-CONFIG-FIFO",
+      "checkpoint": "REPAIR_AND_REGRESSION",
+      "observed_state": "O_NONBLOCK, fstat before read, and finally-close reject FIFO without waiting for a writer; regression passed.",
+      "causal_evidence": "src/hmt_pg_patterns/worker_config.py::load_config; evidence/history/epochs/10-deadline-regression.xml.",
+      "validation_test": "tests/test_worker_deadline_attacks.py::test_private_fifo_is_rejected_without_waiting_for_a_writer",
+      "disposition": "INVESTIGATION_COMPLETE;SOLUTION_CANDIDATE_APPLIED",
+      "sub_agent_task_attestation": "owner=/root/streaming_authority; task=primitive mutation and independent worker review; evidence=evidence/history/sourcehashes/streaming_authority_attestation.json; supervisor=/root"
+    },
+    {
+      "timestamp": "2026-11-04T08:33:20.584766+00:00",
+      "incident_id": "PG-RRCA-REJECTION-PIPE",
+      "checkpoint": "CAUSE_AND_REPAIR",
+      "observed_state": "Error printing could block after watchdog cancellation or before startup. Fixed worker rejection now returns 1 without depending on diagnostic output.",
+      "causal_evidence": "Supervisor/admission-agent finding; old worker exception handler printed to stderr. Four config/request\u00d7closed/full pipe regressions cover both ownership boundaries.",
+      "validation_test": "tests/test_worker_deadline_attacks.py::test_rejection_has_no_blocking_diagnostic_dependency",
+      "disposition": "INVESTIGATION_COMPLETE;SOLUTION_CANDIDATE_APPLIED",
+      "sub_agent_task_attestation": "owner=/root/admission_audit; task=independent rejection-path review; repair_owner=/root; independent_probe=evidence/history/worker_rejection_diagnostic_probe.json; source_unchanged=true in probe"
+    },
+    {
+      "timestamp": "2026-11-04T08:35:58.802146+00:00",
+      "incident_id": "PG-RRCA-REJECTION-PIPE",
+      "checkpoint": "INDEPENDENT_REVALIDATION",
+      "observed_state": "Final 14-test rejection regression has no failures/errors/skips. Independent real full-pipe invalid-request probe exited 1 in 0.333248 seconds, below its 0.8-second observation bound.",
+      "causal_evidence": "evidence/history/epochs/11-rejection-regression.xml; evidence/history/worker_rejection_diagnostic_probe.json; observed source unchanged.",
+      "validation_test": "tests/test_worker_deadline_attacks.py::test_rejection_has_no_blocking_diagnostic_dependency",
+      "disposition": "INVESTIGATION_COMPLETE;SOLUTION_CANDIDATE_APPLIED",
+      "sub_agent_task_attestation": "owner=/root/admission_audit; task=independent rejection-path review; repair_owner=/root; independent_probe=evidence/history/worker_rejection_diagnostic_probe.json; source_unchanged=true in probe"
+    },
+    {
+      "timestamp": "2026-11-04T09:09:13.893310+00:00",
+      "incident_id": "PG-RRCA-NATIVE42-001",
+      "checkpoint": "FRESH_RERUN_CLOSED",
+      "observed_state": "Initial native campaign22PASS18NA2FAIL; tests themselves446PASS. Three unused imports and an auto-loaded Hypothesis collection hook failed separate admission checks.",
+      "causal_evidence": "evidence/history/native42-001/summary.json; evidence/history/source-import-cleanup.json; evidence/history/nativepytest-runtime-check/pytest.json",
+      "validation_test": "Fresh software446, mutations12/12, nativeVV, native42-002 all PASS on 6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "disposition": "INVESTIGATION_COMPLETE;SOLUTION_CANDIDATE_APPLIED",
+      "sub_agent_task_attestation": "owner=/root/admission_audit; root reran software and mutations; driver_research rebound epoch2 reviews; original failed receipts preserved"
+    },
+    {
+      "timestamp": "2026-11-04T09:09:13.893310+00:00",
+      "incident_id": "PG-RRCA-NATIVE-TOOL-OVERLAY",
+      "checkpoint": "REPAIR_PARITY",
+      "observed_state": "Two resource-symbol collisions and one missing sha256 prefix prevented supplied native tool execution/output acceptance.",
+      "causal_evidence": "admission/tool_overlay/manifest.json; admission/tool_overlay/regression.json",
+      "validation_test": "16 original/overlay regression and parity checks; actual final24 applicable lanes passed",
+      "disposition": "INVESTIGATION_COMPLETE;SOLUTION_CANDIDATE_APPLIED; original policies, ceilings, and protections retained",
+      "sub_agent_task_attestation": "owner=/root/admission_audit; independent package scope reviewed by /root"
+    }
+  ]
+}

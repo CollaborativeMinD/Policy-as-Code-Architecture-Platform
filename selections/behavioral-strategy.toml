@@ -1,0 +1,8 @@
+version = 1
+registry = "patterns@1"
+name = "behavioral-strategy"
+
+[[patterns]]
+id = "RDP-B01"
+version = "1.0.0"
+configuration = "bindings/RDP-B01.toml"

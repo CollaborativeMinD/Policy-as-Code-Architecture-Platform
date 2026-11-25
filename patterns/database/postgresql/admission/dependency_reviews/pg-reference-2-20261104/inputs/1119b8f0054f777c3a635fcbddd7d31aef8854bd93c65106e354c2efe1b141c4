@@ -1,0 +1,140 @@
+api_version: hmt.iac/v1
+kind: Policy
+metadata:
+  object_id: HMT-SECURITY-DEPLOYMENT-RUNTIME-ASSURANCE
+  name: HMT Security Deployment and Runtime Assurance Policy
+  version: 1.0.0
+  status: RELEASED
+  classification: NEW_POLICY
+  global_requirements_ref: HMT-GLOBAL-DECLARATIVE-IAC/1.0.0
+  source_format: YAML
+  source_ref: snapshot/inputs/declarative-iac/global/hmt_global_declarative_requirements_v1.0.0.yaml
+  source_sha256: 55d4353831822f01dd8015d213241ac4389cd1252c26d880b7f275bae5bb09a2
+  semantic_change: ADD_SECURITY_DEPLOYMENT_RUNTIME_ASSURANCE
+  human_promotion_required: true
+spec:
+  policy_law: A dependency, artifact, model, tool, agent, configuration, image, deployment, sensor, or
+    evidence source acquires no trust or authority from existence, prior admission, reputation, or quorum
+    alone.
+  control_families:
+    supply_chain:
+      required_checks:
+      - reputation
+      - pinning
+      - source_integrity
+      - sha256_or_signature
+      - sbom_or_manifest
+      - vulnerability
+      - license
+      - organizational_standard
+      governed_surfaces:
+      - packages
+      - lockfiles
+      - model_weights
+      - containers
+      - actions
+      - terraform
+      - yaml
+      - mcp_tools
+      unknown_source_disposition: HOLD
+    security_testing:
+      required:
+      - static
+      - unit
+      - contract
+      - dynamic_endpoint
+      - authorization_negative
+      - secret_scan
+      - dependency_scan
+      - fuzz_property
+      - policy
+      - compliance
+      - fault_injection
+      - degraded_path
+      - replay
+      - regression
+      failure_disposition: REJECT_INTEGRATION_TESTS_FAILED
+    semantic_authority_admission:
+      transaction_fields:
+      - who
+      - action
+      - object
+      - rules
+      - relationships
+      - information
+      - authority
+      - state
+      - evidence
+      - expected_effect
+      unresolved_field_disposition: HOLD
+    agentic_zero_trust:
+      rules:
+      - identity_required
+      - default_deny
+      - least_privilege
+      - tool_fencing
+      - bounded_capability
+      - lease_epoch_checks
+      - time_resource_limits
+      - immutable_receipts
+      visibility_is_policy_derived: true
+    moon_assurance:
+      pattern: 2oo3
+      witness_requirement: HETEROGENEOUS_AND_INDEPENDENCE_CHECKED
+      purpose: EVIDENCE_CONFIDENCE_AND_FAULT_TOLERANCE
+      authority_effect: NONE
+      pace_t_consumes_quorum_evidence: true
+    deployment_assurance:
+      checks:
+      - image_integrity
+      - non_root
+      - immutable_configuration
+      - target_identity
+      - environment_parity
+      - secret_mounts
+      - network_policy
+      - resource_limits
+      - health_probes
+      - rollback_readiness
+      - deployment_authorization
+      - post_deploy_replay
+      mutable_latest_tags: REJECT
+      privileged_default: REJECT
+    continuous_validation:
+      monitored_drift:
+      - vulnerability
+      - dependency
+      - image
+      - config
+      - policy
+      - authority
+      - tool_inventory
+      - schema
+      - model
+      - evidence_chain
+      prior_admission_is_permanent: false
+      revalidation_required: true
+    forensic_reconstruction:
+      required_lineage:
+      - intent
+      - admission
+      - tool
+      - execution
+      - state_transition
+      - output
+      - effect
+      - reason_code
+      - policy_version
+      - model_version
+      - tool_version
+      rrca_v4_on_breach: true
+  dispositions:
+  - PASS
+  - HOLD
+  - FAIL
+  - ESCALATE
+  - REJECT
+  non_claims:
+  - This policy does not grant deployment authority.
+  - A 2oo3 quorum does not establish truth or permission by itself.
+  - Security scanners do not replace deterministic policy or human acceptance authority.

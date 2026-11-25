@@ -1,0 +1,5 @@
+{
+  "path": "src/hmt_pg_patterns/outbox.py",
+  "before_sha256": "42ea0bf4235c003cccf38da9ac6b8cee7b16f10b128fc3cce1949a6ff7447d84",
+  "after_sha256": "2a89b76bf939e4d688e79c20ca421ae2dedc87f441d70e00cce56b5470d79c91"
+}

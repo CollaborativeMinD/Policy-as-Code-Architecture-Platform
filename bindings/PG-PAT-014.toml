@@ -1,0 +1,6 @@
+version = 1
+pattern = "PG-PAT-014"
+scope = "software"
+
+[settings]
+limit = 4

@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "argv": [
+    "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "--tb=short",
+    "-o",
+    "addopts=",
+    "-p",
+    "tools.mutation_probe",
+    "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M10/restored/junit.xml",
+    "tests/test_checkpoints_cache.py::test_foreign_scope_and_loss_are_rejected"
+  ],
+  "returncode": 0,
+  "reason": "COMPLETE",
+  "seconds": 0.7021980380013702,
+  "captured_bytes": 98,
+  "stdout": "pytest.stdout.log",
+  "stderr": "pytest.stderr.log",
+  "import_verified": true,
+  "source_unchanged": true,
+  "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7"
+}

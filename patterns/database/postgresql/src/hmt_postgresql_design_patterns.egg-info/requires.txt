@@ -1,0 +1,9 @@
+psycopg[binary,pool]==3.3.7
+psycopg-pool==3.3.3
+asyncpg==0.32.0
+sqlalchemy[asyncio]==2.1.8
+sqlmodel==0.0.48
+pydantic==2.14.2
+polars==2.1.0
+pyrsistent==0.20.0
+redis==8.1.0

@@ -1,0 +1,301 @@
+version = 1
+registry = "patterns@1"
+bindings_sha256 = "248a873b9bc85e5ed0a18ca8f1f31fa4cb85bfeb650d2e0b64009ab5e4ceb79b"
+intake_sha256 = "b73424d6a55a6da8c8fbc87ec379522a67acf33097fdc03154ca8ffa411080c1"
+
+[[entries]]
+id = "RDP-B01"
+branch = "behavioral"
+version = "1.0.0"
+path = "patterns/behavioral/strategy"
+evidence = "patterns/behavioral/strategy/manifest.json"
+evidence_sha256 = "c4e70c5a3f3e4fe94c16fc56571912c7d74bdc434934c952ccc2c689100b03a8"
+binding = "rdp-software-v1"
+
+[[entries]]
+id = "RDP-B02"
+branch = "behavioral"
+version = "1.0.0"
+path = "patterns/behavioral/observer"
+evidence = "patterns/behavioral/observer/manifest.json"
+evidence_sha256 = "425cabeaf6cc5836719e0f273432fa935f1ea55ca9aa136f2c441e5798e6c121"
+binding = "rdp-software-v1"
+
+[[entries]]
+id = "RDP-B03"
+branch = "behavioral"
+version = "1.0.0"
+path = "patterns/behavioral/state"
+evidence = "patterns/behavioral/state/manifest.json"
+evidence_sha256 = "be3bbc7f683524ad7e0ccaab7ee8111381375e3926b30bc4681a45ec8f66d1f1"
+binding = "rdp-software-v1"
+
+[[entries]]
+id = "RDP-B04"
+branch = "behavioral"
+version = "1.0.0"
+path = "patterns/behavioral/command"
+evidence = "patterns/behavioral/command/manifest.json"
+evidence_sha256 = "5d3ec356782b14f26c251b5dfa854abc262c1c690bc0974acb32348555b57531"
+binding = "rdp-software-v1"
+
+[[entries]]
+id = "RDP-B05"
+branch = "behavioral"
+version = "1.0.0"
+path = "patterns/behavioral/template-method"
+evidence = "patterns/behavioral/template-method/manifest.json"
+evidence_sha256 = "c0bd108a8791e98e57e8a3f7ceeff8864c8d1bc30c9509b73564cf9aeda0e1ab"
+binding = "rdp-software-v1"
+
+[[entries]]
+id = "RDP-B06"
+branch = "behavioral"
+version = "1.0.0"
+path = "patterns/behavioral/iterator"
+evidence = "patterns/behavioral/iterator/manifest.json"
+evidence_sha256 = "c960b153ac0b71ee63df0bd682864c89fc4e258ad7bced94263cb2b524ff68eb"
+binding = "rdp-software-v1"
+
+[[entries]]
+id = "RDP-B07"
+branch = "behavioral"
+version = "1.0.0"
+path = "patterns/behavioral/chain-of-responsibility"
+evidence = "patterns/behavioral/chain-of-responsibility/manifest.json"
+evidence_sha256 = "38c2a4d2d7940f832bbddaadea8a3cda0e134c05715e053d37219381f37b0cc4"
+binding = "rdp-software-v1"
+
+[[entries]]
+id = "RDP-C01"
+branch = "creational"
+version = "1.0.0"
+path = "patterns/creational/singleton"
+evidence = "patterns/creational/singleton/manifest.json"
+evidence_sha256 = "c1a6125c9b1ea705a9e60e128d66defeac4fd8a2ba4d40b13afe576912886897"
+binding = "rdp-software-v1"
+
+[[entries]]
+id = "RDP-C02"
+branch = "creational"
+version = "1.0.0"
+path = "patterns/creational/builder"
+evidence = "patterns/creational/builder/manifest.json"
+evidence_sha256 = "073d00925eb0dee686d282707f2f90397cd851b0c92054a422620dcc757df220"
+binding = "rdp-software-v1"
+
+[[entries]]
+id = "RDP-C03"
+branch = "creational"
+version = "1.0.0"
+path = "patterns/creational/factory-method"
+evidence = "patterns/creational/factory-method/manifest.json"
+evidence_sha256 = "d29de901e172ddeba0a4b59b54b006d52f94cab50d93f12e2e2fb5ffd7783a35"
+binding = "rdp-software-v1"
+
+[[entries]]
+id = "RDP-S01"
+branch = "structural"
+version = "1.0.0"
+path = "patterns/structural/adapter"
+evidence = "patterns/structural/adapter/manifest.json"
+evidence_sha256 = "258e15768999a2cab50b925c9014c8829fb88c10a2fcb8ff94294398c85e216a"
+binding = "rdp-software-v1"
+
+[[entries]]
+id = "RDP-S02"
+branch = "structural"
+version = "1.0.0"
+path = "patterns/structural/facade"
+evidence = "patterns/structural/facade/manifest.json"
+evidence_sha256 = "4546e11bd787c9cc2ccd428da4cf0e03ef5e4cd956c85ac04ec5dcad5a03209b"
+binding = "rdp-software-v1"
+
+[[entries]]
+id = "RDP-S03"
+branch = "structural"
+version = "1.0.0"
+path = "patterns/structural/proxy"
+evidence = "patterns/structural/proxy/manifest.json"
+evidence_sha256 = "3feb5559637d242d465edc1b375886835e7ee828069dae44b1ee4b41e071d23f"
+binding = "rdp-software-v1"
+
+[[entries]]
+id = "RDP-S04"
+branch = "structural"
+version = "1.0.0"
+path = "patterns/structural/decorator"
+evidence = "patterns/structural/decorator/manifest.json"
+evidence_sha256 = "d16e229f78c223b89e81d486727fa9bb60db8b355c7507b933b195d7c6c20a49"
+binding = "rdp-software-v1"
+
+[[entries]]
+id = "RDP-S05"
+branch = "structural"
+version = "1.0.0"
+path = "patterns/structural/composite"
+evidence = "patterns/structural/composite/manifest.json"
+evidence_sha256 = "68e71b74894ca708b2d98ccd3a167f551e367e45178d5c02daca3126dc651db7"
+binding = "rdp-software-v1"
+
+[[entries]]
+id = "PG-PAT-001"
+branch = "database"
+version = "1.0.0"
+path = "patterns/database/postgresql/patterns/01-secure-postgresql-configuration"
+evidence = "patterns/database/postgresql/catalog.json"
+evidence_sha256 = "6377fa00cb8627b95b4ba411fe90fd6fa706b682b5a2dd26426c290c16752f59"
+binding = "postgres-software-v1"
+
+[[entries]]
+id = "PG-PAT-002"
+branch = "database"
+version = "1.0.0"
+path = "patterns/database/postgresql/patterns/02-psycopg-sync-bound-sql"
+evidence = "patterns/database/postgresql/catalog.json"
+evidence_sha256 = "6377fa00cb8627b95b4ba411fe90fd6fa706b682b5a2dd26426c290c16752f59"
+binding = "postgres-software-v1"
+
+[[entries]]
+id = "PG-PAT-003"
+branch = "database"
+version = "1.0.0"
+path = "patterns/database/postgresql/patterns/03-psycopg-async-bound-sql"
+evidence = "patterns/database/postgresql/catalog.json"
+evidence_sha256 = "6377fa00cb8627b95b4ba411fe90fd6fa706b682b5a2dd26426c290c16752f59"
+binding = "postgres-software-v1"
+
+[[entries]]
+id = "PG-PAT-004"
+branch = "database"
+version = "1.0.0"
+path = "patterns/database/postgresql/patterns/04-asyncpg-bounded-lifecycle"
+evidence = "patterns/database/postgresql/catalog.json"
+evidence_sha256 = "6377fa00cb8627b95b4ba411fe90fd6fa706b682b5a2dd26426c290c16752f59"
+binding = "postgres-software-v1"
+
+[[entries]]
+id = "PG-PAT-005"
+branch = "database"
+version = "1.0.0"
+path = "patterns/database/postgresql/patterns/05-owned-transactions-and-bounded-retry"
+evidence = "patterns/database/postgresql/catalog.json"
+evidence_sha256 = "6377fa00cb8627b95b4ba411fe90fd6fa706b682b5a2dd26426c290c16752f59"
+binding = "postgres-software-v1"
+
+[[entries]]
+id = "PG-PAT-006"
+branch = "database"
+version = "1.0.0"
+path = "patterns/database/postgresql/patterns/06-finite-connection-pools"
+evidence = "patterns/database/postgresql/catalog.json"
+evidence_sha256 = "6377fa00cb8627b95b4ba411fe90fd6fa706b682b5a2dd26426c290c16752f59"
+binding = "postgres-software-v1"
+
+[[entries]]
+id = "PG-PAT-007"
+branch = "database"
+version = "1.0.0"
+path = "patterns/database/postgresql/patterns/07-sqlalchemy-postgresql-core-and-async"
+evidence = "patterns/database/postgresql/catalog.json"
+evidence_sha256 = "6377fa00cb8627b95b4ba411fe90fd6fa706b682b5a2dd26426c290c16752f59"
+binding = "postgres-software-v1"
+
+[[entries]]
+id = "PG-PAT-008"
+branch = "database"
+version = "1.0.0"
+path = "patterns/database/postgresql/patterns/08-sqlmodel-postgresql-mapping"
+evidence = "patterns/database/postgresql/catalog.json"
+evidence_sha256 = "6377fa00cb8627b95b4ba411fe90fd6fa706b682b5a2dd26426c290c16752f59"
+binding = "postgres-software-v1"
+
+[[entries]]
+id = "PG-PAT-009"
+branch = "database"
+version = "1.0.0"
+path = "patterns/database/postgresql/patterns/09-strict-pydantic-data-contracts"
+evidence = "patterns/database/postgresql/catalog.json"
+evidence_sha256 = "6377fa00cb8627b95b4ba411fe90fd6fa706b682b5a2dd26426c290c16752f59"
+binding = "postgres-software-v1"
+
+[[entries]]
+id = "PG-PAT-010"
+branch = "database"
+version = "1.0.0"
+path = "patterns/database/postgresql/patterns/10-polars-server-cursor-batches"
+evidence = "patterns/database/postgresql/catalog.json"
+evidence_sha256 = "6377fa00cb8627b95b4ba411fe90fd6fa706b682b5a2dd26426c290c16752f59"
+binding = "postgres-software-v1"
+
+[[entries]]
+id = "PG-PAT-011"
+branch = "database"
+version = "1.0.0"
+path = "patterns/database/postgresql/patterns/11-atomic-copy-and-pipeline-batches"
+evidence = "patterns/database/postgresql/catalog.json"
+evidence_sha256 = "6377fa00cb8627b95b4ba411fe90fd6fa706b682b5a2dd26426c290c16752f59"
+binding = "postgres-software-v1"
+
+[[entries]]
+id = "PG-PAT-012"
+branch = "database"
+version = "1.0.0"
+path = "patterns/database/postgresql/patterns/12-checksum-bound-migrations"
+evidence = "patterns/database/postgresql/catalog.json"
+evidence_sha256 = "6377fa00cb8627b95b4ba411fe90fd6fa706b682b5a2dd26426c290c16752f59"
+binding = "postgres-software-v1"
+
+[[entries]]
+id = "PG-PAT-013"
+branch = "database"
+version = "1.0.0"
+path = "patterns/database/postgresql/patterns/13-peer-epoch-authority-and-tailcat-worker"
+evidence = "patterns/database/postgresql/catalog.json"
+evidence_sha256 = "6377fa00cb8627b95b4ba411fe90fd6fa706b682b5a2dd26426c290c16752f59"
+binding = "postgres-software-v1"
+
+[[entries]]
+id = "PG-PAT-014"
+branch = "database"
+version = "1.0.0"
+path = "patterns/database/postgresql/patterns/14-wal-checkpoints-outbox-and-redis-projection"
+evidence = "patterns/database/postgresql/catalog.json"
+evidence_sha256 = "6377fa00cb8627b95b4ba411fe90fd6fa706b682b5a2dd26426c290c16752f59"
+binding = "postgres-software-v1"
+
+[[entries]]
+id = "PG-PAT-015"
+branch = "database"
+version = "1.0.0"
+path = "patterns/database/postgresql/patterns/15-content-defined-streaming"
+evidence = "patterns/database/postgresql/catalog.json"
+evidence_sha256 = "6377fa00cb8627b95b4ba411fe90fd6fa706b682b5a2dd26426c290c16752f59"
+binding = "postgres-software-v1"
+
+[[entries]]
+id = "PG-PAT-016"
+branch = "database"
+version = "1.0.0"
+path = "patterns/database/postgresql/patterns/16-pace-capability-and-recovery"
+evidence = "patterns/database/postgresql/catalog.json"
+evidence_sha256 = "6377fa00cb8627b95b4ba411fe90fd6fa706b682b5a2dd26426c290c16752f59"
+binding = "postgres-software-v1"
+
+[[entries]]
+id = "PG-PAT-017"
+branch = "database"
+version = "1.0.0"
+path = "patterns/database/postgresql/patterns/17-postgresql-plans-indexes-and-operations"
+evidence = "patterns/database/postgresql/catalog.json"
+evidence_sha256 = "6377fa00cb8627b95b4ba411fe90fd6fa706b682b5a2dd26426c290c16752f59"
+binding = "postgres-software-v1"
+
+[[entries]]
+id = "resilience-ooda"
+branch = "resilience"
+version = "1"
+path = "patterns/resilience_ooda"
+evidence = "patterns/resilience_ooda/release.json"
+evidence_sha256 = "2766b2c74bf13fde665662f2a9e482fb896d5327a082a76f270c8306cc6834c5"
+binding = "ooda-v1"

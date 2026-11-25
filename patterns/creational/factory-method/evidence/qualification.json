@@ -1,0 +1,25 @@
+{
+  "pattern_id": "RDP-C03",
+  "status": "PASS",
+  "scope": "SOFTWARE_CANDIDATE_WITNESSES",
+  "source_sha256": "0a8b347c069d477f8f9404692ff5105a4559862783e0da528777a7819849cf0c",
+  "test_sha256": "8a4d9c4d5631e35ad29ee1285a3bcbedd3f72338fed01e7ce632dd21c12c6e4d",
+  "families": [
+    "unit",
+    "negative",
+    "mutation",
+    "integration",
+    "behavioral",
+    "api"
+  ],
+  "campaign_receipts": [
+    "evidence/epochs/2026-10-11-software/final-regression-04/G-EXIST-004.json",
+    "evidence/epochs/2026-10-11-software/qualified-gates-03/mutations.json",
+    "evidence/epochs/2026-10-11-software/qualified-gates-03/native_books/native_books.json"
+  ],
+  "non_claims": [
+    "Owner Hub/Docker/browser integration remains pending.",
+    "No independent release admission, activation or Human Architect promotion.",
+    "A scoped software witness does not qualify a historical missing source or a physical model."
+  ]
+}

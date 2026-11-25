@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "npm",
+    "audit",
+    "--json",
+    "--package-lock-only",
+    "--prefix",
+    "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/fixtures/pglite"
+  ],
+  "cwd": "/workspace/scratch/e7495113964e",
+  "start_time": "2026-11-04T08:43:49.212926+00:00",
+  "seconds": 7.146793094005261,
+  "returncode": 0,
+  "stdout_sha256": "31cdfa775207da2fe229944121d4939587d59efa9651a899dc1ba9575d681896",
+  "stderr_sha256": "7125f194612fcff2f454c05d848e7cb71facc1967b4d5017e25b34fdee3ba74f"
+}

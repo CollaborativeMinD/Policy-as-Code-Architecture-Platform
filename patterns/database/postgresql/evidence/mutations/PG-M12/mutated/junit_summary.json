@@ -1,0 +1,11 @@
+{
+  "valid": true,
+  "tests": 1,
+  "failures": 1,
+  "assertion_failures": 1,
+  "errors": 0,
+  "skipped": 0,
+  "test_ids": [
+    "tests/test_mutation_witnesses.py::test_pace_guard_precedes_callback"
+  ]
+}

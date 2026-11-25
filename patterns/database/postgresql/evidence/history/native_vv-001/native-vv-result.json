@@ -1,0 +1,295 @@
+{
+  "status": "PASS",
+  "source_digest": "6710f678900766f47969172cc2f1da03de3eb9d6fb42ca86135cb2e3f59ca11d",
+  "results": {
+    "campaign": {
+      "status": "PASS",
+      "gaps": [],
+      "failed_executions": []
+    },
+    "claims": {
+      "status": "PASS",
+      "findings": [],
+      "claim_digest": "98926fa9c235764e21f971bc3157eec355e2101658f63f59c7233544f2d06609",
+      "scope": "declared_claims_only"
+    },
+    "trace": {
+      "status": "PASS",
+      "findings": [],
+      "scope": "execution_to_declared_requirements_binding"
+    },
+    "python_mutation": {
+      "status": "PASS",
+      "complete": true,
+      "total_mutants": 12,
+      "missed": 0,
+      "caught": 12,
+      "timeout": 0,
+      "unviable": 0,
+      "scope": "all_reported_mutants_without_equivalence_exemptions"
+    },
+    "python_coverage": {
+      "status": "PASS",
+      "covered": 265,
+      "total": 278,
+      "percent": 95.32374100719424
+    },
+    "python_power10": {
+      "status": "PASS",
+      "findings": [],
+      "scope": "declared_platform_mapping",
+      "observations": [
+        {
+          "rule": "P10-02",
+          "line": 27,
+          "path": "src/hmt_pg_patterns/analytics.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "16d2f177fa01d91a6ddc1e680d0ad5de16e515ab3e4c399151285cbe6d90c0e3"
+        },
+        {
+          "rule": "P10-02",
+          "line": 54,
+          "path": "src/hmt_pg_patterns/analytics.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "e422218b56bf938de2ba37f5baa6e223e1d5c40f4fa5ece10be1f96cb068dc43"
+        },
+        {
+          "rule": "P10-02",
+          "line": 37,
+          "path": "src/hmt_pg_patterns/async_driver.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "dfeb5e9d8e06ff92e2bcb44428a61792d2865751ef8194f07687c2d478a02128"
+        },
+        {
+          "rule": "P10-02",
+          "line": 18,
+          "path": "src/hmt_pg_patterns/async_driver.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "da4e342a66861cceb07430a2e6c3a569fb486f2e2e44043db2d3ee37cd1eadc7"
+        },
+        {
+          "rule": "P10-02",
+          "line": 21,
+          "path": "src/hmt_pg_patterns/asyncpg_driver.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "eb4621884cd447afacaefc1202d86f847d4ac3f83052c7680551c547ba6a47f1"
+        },
+        {
+          "rule": "P10-02",
+          "line": 20,
+          "path": "src/hmt_pg_patterns/bulk.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "6a584fa5effc4db8297f6fd91d366714763ce829de7836d2caf99d361f4afad8"
+        },
+        {
+          "rule": "P10-02",
+          "line": 30,
+          "path": "src/hmt_pg_patterns/bulk.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "7804672d1202eef6c85cdc7ea03c611f5692e61a4a79b2cf8f0575375294376f"
+        },
+        {
+          "rule": "P10-02",
+          "line": 24,
+          "path": "src/hmt_pg_patterns/checkpoints_snapshot.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "9bd382dd91c782b20a4afef35f784d79b6e3839f6db35db7caf6c8d7e53c75e8"
+        },
+        {
+          "rule": "P10-02",
+          "line": 26,
+          "path": "src/hmt_pg_patterns/checkpoints_snapshot.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "86624d011ac06c03a4d8f24f22ad61d468e1b3c7ef8a9448755788996b0df304"
+        },
+        {
+          "rule": "P10-02",
+          "line": 62,
+          "path": "src/hmt_pg_patterns/config.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "1b8304dfbe06845c5aeb02ce7369ff2529d4d968e3e68f5584819243653262c0"
+        },
+        {
+          "rule": "P10-02",
+          "line": 18,
+          "path": "src/hmt_pg_patterns/migrations.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "e075ab65cdceced018c1f8eae1377723d9f2cb3517f8ae3254e5d236a7d9d9d2"
+        },
+        {
+          "rule": "P10-02",
+          "line": 37,
+          "path": "src/hmt_pg_patterns/migrations.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "6254f3602c70d18725fa3f01a4daa15853a37d99eb8fe21439c47895774c8626"
+        },
+        {
+          "rule": "P10-02",
+          "line": 24,
+          "path": "src/hmt_pg_patterns/models.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "19debeecb6e4ada8750a856eee936ad972f307f90c61c7c0db27fe1cc7f9f106"
+        },
+        {
+          "rule": "P10-02",
+          "line": 34,
+          "path": "src/hmt_pg_patterns/orm.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "f2379544e4c5e708c41374b8fbc0ef48b47964fb467f8233c8a38e8ea6126804"
+        },
+        {
+          "rule": "P10-02",
+          "line": 64,
+          "path": "src/hmt_pg_patterns/orm.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "e990c88147f6df7504adf015d6dc4473c568106145ef8761988d6cae284e4f0c"
+        },
+        {
+          "rule": "P10-02",
+          "line": 29,
+          "path": "src/hmt_pg_patterns/orm_async.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "e990c88147f6df7504adf015d6dc4473c568106145ef8761988d6cae284e4f0c"
+        },
+        {
+          "rule": "P10-02",
+          "line": 47,
+          "path": "src/hmt_pg_patterns/orm_model.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "db98053b465d800b101fbad7a1726954018191eacdf54ac29e4d0dc4983cddda"
+        },
+        {
+          "rule": "P10-02",
+          "line": 51,
+          "path": "src/hmt_pg_patterns/outbox.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "7ff44ba7ccd6a694f8aba0dfacb1d0efc207090ae8a5bf4eca691022ccecc638"
+        },
+        {
+          "rule": "P10-02",
+          "line": 10,
+          "path": "src/hmt_pg_patterns/pace.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "90269441e817749f17e1483759df17cf87235b88fca95048f4d734ee9599b644"
+        },
+        {
+          "rule": "P10-02",
+          "line": 52,
+          "path": "src/hmt_pg_patterns/queries.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "dbc6ec7a126df575b831419125f056cfd3ef8300a88621d90e4253e1089092b2"
+        },
+        {
+          "rule": "P10-02",
+          "line": 41,
+          "path": "src/hmt_pg_patterns/streaming_contracts.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "e29417976c5ff35fc57def12b730d6be14e8093abbfa9e89747b69c912114d03"
+        },
+        {
+          "rule": "P10-02",
+          "line": 44,
+          "path": "src/hmt_pg_patterns/streaming_runtime.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "a4d7152ea68422877bb3db605cff239808518b8ce04065135f9e10d9b2a93f59"
+        },
+        {
+          "rule": "P10-02",
+          "line": 64,
+          "path": "src/hmt_pg_patterns/streaming_runtime.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "3be9dec08b396ee249eeb3d64d3e5ac8e5985e9197cad5c41fe1769271c520ee"
+        },
+        {
+          "rule": "P10-02",
+          "line": 55,
+          "path": "src/hmt_pg_patterns/streaming_runtime.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "77b48cbd8e074ebd3316b54984680ae583e22704c6d5c69875011205ecb8c1f6"
+        },
+        {
+          "rule": "P10-02",
+          "line": 58,
+          "path": "src/hmt_pg_patterns/streaming_runtime.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "e7cfd4e707b7a13625003121f86e4d0182df5b4d8e447444e0c25fc14e1b9355"
+        },
+        {
+          "rule": "P10-02",
+          "line": 81,
+          "path": "src/hmt_pg_patterns/streaming_scan.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "c1ddf5e21b7a7a2d122db8aea82887409422d0202fdf7ae77315121ee9f16309"
+        },
+        {
+          "rule": "P10-02",
+          "line": 19,
+          "path": "src/hmt_pg_patterns/streaming_scan.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "12265786008936e67e6955a53b8b26867c39b6355b61b1d5906a5dce10ef0df7"
+        },
+        {
+          "rule": "P10-02",
+          "line": 13,
+          "path": "src/hmt_pg_patterns/streaming_writer.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "c04326342c62e758c8e238503f54c8a05b87adaa54a2e1feaedd5d7877c33f78"
+        },
+        {
+          "rule": "P10-02",
+          "line": 28,
+          "path": "src/hmt_pg_patterns/streaming_writer.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "dcd5f2d30973e1a06006f535f7d88d8f27628670034f7c7395238eef39770c85"
+        },
+        {
+          "rule": "P10-02",
+          "line": 36,
+          "path": "src/hmt_pg_patterns/sync_driver.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "5a18de1ca717019e652895b8f1b3948bc89d392e682a041238ae92263e39fa1a"
+        },
+        {
+          "rule": "P10-02",
+          "line": 18,
+          "path": "src/hmt_pg_patterns/sync_driver.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "d859b86f424721340bd6ec1718ae4e2d6fcfc30e8a0aeec38018b4cce95db935"
+        },
+        {
+          "rule": "P10-02",
+          "line": 39,
+          "path": "src/hmt_pg_patterns/worker_io.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "d96598cb29d31bcc3920e99c81d82155896a333c46471974c8b8d8eb00a6ed0f"
+        },
+        {
+          "rule": "P10-02",
+          "line": 11,
+          "path": "src/hmt_pg_patterns/worker_projection.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "008c0f7d10026fe4d52bc35257e89dc3789f716d0732f3ed6ae80f05a02d6fc8"
+        },
+        {
+          "rule": "P10-02",
+          "line": 15,
+          "path": "src/hmt_pg_patterns/worker_projection.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "71e2439596c5747336e842fd69b59b4963a278e549b6da14a0180fe41d4df08c"
+        },
+        {
+          "rule": "P10-02",
+          "line": 19,
+          "path": "src/hmt_pg_patterns/worker_projection.py",
+          "mechanism": "loop_bound",
+          "ast_digest": "4e5257584701c2222404ac3b71ff990eaa23333c2c876f8d35213aa373b868a4"
+        }
+      ]
+    }
+  },
+  "scope": "declared_requirements_and_supplied_execution_evidence",
+  "admission_run_id": "pg-admission-c28b0679915045b19c389bc69df5f055",
+  "native_schema_sha256": "079664ac7a38d96bb9efd65212f3a1b27a9bfbca0bf7dae2876d02cdd3405431",
+  "database_sha256": "dc0c94f74d674f986eadae530c05193aebeecd5e4513353aeb3ab7af924cf5bd",
+  "mutation_sha256": "63f9a3f29af70a2f13387d59da03fd5a64638188cadaf7dfaf1b0d31bc1ba017"
+}

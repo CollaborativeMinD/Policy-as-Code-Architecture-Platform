@@ -1,0 +1,85 @@
+{
+  "id": "PG-M11",
+  "requirement": "PG-OUTBOX-001",
+  "path": "src/hmt_pg_patterns/outbox.py",
+  "selector": "tests/test_outbox_recovery.py::test_cache_loss_rebuild_requires_current_same_epoch_authority",
+  "outcome": "caught",
+  "source_digest": "e2b79b530a64931d056234ffba5ed3952c6af0deb1f309213ff858bbfdb7e6f1",
+  "mutated_source_digest": "5e6c231dc4644dc32e7335e9ad4beec5b3bfed1ae27917e335cf82a8fc892cdf",
+  "restored_source_digest": "e2b79b530a64931d056234ffba5ed3952c6af0deb1f309213ff858bbfdb7e6f1",
+  "restoration_observed": true,
+  "restored_file_sha256": "cf06d47ef14ce7fb712acceb2ab134d9509eaa85bc68e5968de1c6aee2425f63",
+  "application_error": null,
+  "mutation_process": {
+    "status": "FAIL",
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--tb=short",
+      "-o",
+      "addopts=",
+      "-p",
+      "tools.mutation_probe",
+      "--junitxml=/workspace/scratch/e7495113964e/work/epochs/03-mutations/PG-M11/mutated/junit.xml",
+      "tests/test_outbox_recovery.py::test_cache_loss_rebuild_requires_current_same_epoch_authority"
+    ],
+    "returncode": 1,
+    "reason": "COMPLETE",
+    "seconds": 3.0069927780023136,
+    "captured_bytes": 716,
+    "stdout": "pytest.stdout.log",
+    "stderr": "pytest.stderr.log",
+    "import_verified": true,
+    "source_unchanged": true,
+    "source_digest": "5e6c231dc4644dc32e7335e9ad4beec5b3bfed1ae27917e335cf82a8fc892cdf"
+  },
+  "mutation_tests": {
+    "valid": true,
+    "tests": 1,
+    "failures": 1,
+    "assertion_failures": 1,
+    "errors": 0,
+    "skipped": 0,
+    "test_ids": [
+      "tests/test_outbox_recovery.py::test_cache_loss_rebuild_requires_current_same_epoch_authority"
+    ]
+  },
+  "restoration_process": {
+    "status": "PASS",
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--tb=short",
+      "-o",
+      "addopts=",
+      "-p",
+      "tools.mutation_probe",
+      "--junitxml=/workspace/scratch/e7495113964e/work/epochs/03-mutations/PG-M11/restored/junit.xml",
+      "tests/test_outbox_recovery.py::test_cache_loss_rebuild_requires_current_same_epoch_authority"
+    ],
+    "returncode": 0,
+    "reason": "COMPLETE",
+    "seconds": 3.0600068959975033,
+    "captured_bytes": 98,
+    "stdout": "pytest.stdout.log",
+    "stderr": "pytest.stderr.log",
+    "import_verified": true,
+    "source_unchanged": true,
+    "source_digest": "e2b79b530a64931d056234ffba5ed3952c6af0deb1f309213ff858bbfdb7e6f1"
+  },
+  "restoration_tests": {
+    "valid": true,
+    "tests": 1,
+    "failures": 0,
+    "assertion_failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "test_ids": [
+      "tests/test_outbox_recovery.py::test_cache_loss_rebuild_requires_current_same_epoch_authority"
+    ]
+  }
+}

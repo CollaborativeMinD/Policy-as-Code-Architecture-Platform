@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "argv": [
+    "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+    "-m",
+    "pyrefly",
+    "check",
+    "src/hmt_pg_patterns"
+  ],
+  "returncode": 0,
+  "reason": "COMPLETE",
+  "seconds": 0.46430476900422946,
+  "captured_bytes": 164,
+  "stdout": "pytest.stdout.log",
+  "stderr": "pytest.stderr.log"
+}

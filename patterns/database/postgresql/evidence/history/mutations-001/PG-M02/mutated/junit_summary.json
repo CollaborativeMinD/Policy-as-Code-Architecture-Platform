@@ -1,0 +1,13 @@
+{
+  "valid": true,
+  "tests": 3,
+  "failures": 3,
+  "assertion_failures": 3,
+  "errors": 0,
+  "skipped": 0,
+  "test_ids": [
+    "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[1]",
+    "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[2]",
+    "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[3]"
+  ]
+}

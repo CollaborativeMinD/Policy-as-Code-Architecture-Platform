@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.053" timestamp="2026-11-04T15:52:30.235183+07:00" hostname="18a71ec14d7e"><testcase classname="tests.test_mutation_witnesses" name="test_pace_guard_precedes_callback" time="0.001"><failure message="Failed: DID NOT RAISE PermissionError">tests/test_mutation_witnesses.py:33: in test_pace_guard_precedes_callback
+    with pytest.raises(PermissionError, match="PACE_OPERATION_DENIED"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE PermissionError</failure></testcase></testsuite></testsuites>

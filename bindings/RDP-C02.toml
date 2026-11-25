@@ -1,0 +1,8 @@
+version = 1
+pattern = "RDP-C02"
+scope = "software"
+
+[settings]
+owner = "alpha"
+limit = 4
+enabled = true

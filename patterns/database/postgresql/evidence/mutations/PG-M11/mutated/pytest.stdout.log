@@ -1,0 +1,10 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+________ test_cache_loss_rebuild_requires_current_same_epoch_authority _________
+tests/test_outbox_recovery.py:63: in test_cache_loss_rebuild_requires_current_same_epoch_authority
+    with pytest.raises(ValueError, match="CHECKPOINT_EPOCH_REVOKED"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE ValueError
+=========================== short test summary info ============================
+FAILED tests/test_outbox_recovery.py::test_cache_loss_rebuild_requires_current_same_epoch_authority
+1 failed in 2.14s

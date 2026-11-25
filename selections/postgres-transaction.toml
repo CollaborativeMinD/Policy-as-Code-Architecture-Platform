@@ -1,0 +1,8 @@
+version = 1
+registry = "patterns@1"
+name = "postgres-transaction"
+
+[[patterns]]
+id = "PG-PAT-005"
+version = "1.0.0"
+configuration = "bindings/PG-PAT-005.toml"

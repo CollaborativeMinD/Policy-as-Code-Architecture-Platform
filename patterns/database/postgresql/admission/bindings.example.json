@@ -1,0 +1,17 @@
+{
+  "TARGET_ROOT": "/absolute/path/target_root",
+  "EVIDENCE_ROOT": "/absolute/path/evidence_root",
+  "CANDIDATE_SHA": "9bc06522f27d4576f08caf44f4989031d1b145f1",
+  "BASELINE_SHA": "e3387ddb0772fdeaa4093f7b049033c5ef6f43eb",
+  "RUN_ID": "pg-native42-replay-001",
+  "ANALYZER_PYTHON": "/absolute/path/analyzer_python",
+  "TARGET_PYTHON": "/absolute/path/target_python",
+  "OPTIMIZATION_PYTHON": "/absolute/path/optimization_python",
+  "NATIVE_VV_ROOT": "/absolute/path/native_vv_root",
+  "EVIDENCE_BINDING_ROOT": "/absolute/path/evidence_binding_root",
+  "PACE_INPUT": "/absolute/path/pace_input",
+  "ADVERSARIAL_POLICY": "/absolute/path/adversarial_policy",
+  "POLICY_SHA256": "6a819f707026021de229ffd9d5aebb6e39d9f594c6f4df6d09fa93abd48c26e2",
+  "POLICY_EPOCH": "pg-reference-2-20261104",
+  "SOURCE_DIGEST": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7"
+}

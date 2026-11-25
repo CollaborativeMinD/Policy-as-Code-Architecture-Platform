@@ -1,0 +1,17 @@
+version = 1
+bundle = "resilience-ooda"
+release = "1"
+source_archive = "sources/resilience_ooda.zip"
+source_sha256 = "21176bc80f788512e7b8dd47e55fe663f5c88d06e646c472feac297c223eabcc"
+source_prefix = "resilience"
+manifest_sha256 = "ee7a05f3d4972ff77a75a0570cdcd6ce3afbecf31fb07dce1b3a2811779aee69"
+tenacity = "9.2.1"
+evidence = ["QUALIFICATION.md", "TEST_EVIDENCE.md"]
+
+[patterns]
+basic = "core_example_configs/tenacity_basic_retry.py"
+filtering = "core_example_configs/tenacity_filtering_errors.py"
+logging = "core_example_configs/tenacity_logging_hooks.py"
+async = "core_example_configs/tenacity_retry_async_code.py"
+waiting = "core_example_configs/tenacity_waiting_strategies.py"
+ooda = "core_example_configs/tenacity_stopping_conditions.py"

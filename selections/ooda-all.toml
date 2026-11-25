@@ -1,0 +1,8 @@
+version = 1
+registry = "patterns@1"
+name = "ooda-all"
+
+[[patterns]]
+id = "resilience-ooda"
+version = "1"
+configuration = "patterns/resilience_ooda/selections/all-configurations.toml"

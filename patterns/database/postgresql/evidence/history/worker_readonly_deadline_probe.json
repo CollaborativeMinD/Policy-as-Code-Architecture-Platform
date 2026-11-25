@@ -1,0 +1,20 @@
+[
+  {
+    "case": "closed_stderr",
+    "hard_deadline_seconds": 0.1,
+    "outer_watchdog_seconds": 0.7,
+    "hard_deadline_missed": true,
+    "exitcode": -9,
+    "seconds": 0.7030443749972619,
+    "stderr_bytes": 0
+  },
+  {
+    "case": "full_stderr_pipe",
+    "hard_deadline_seconds": 0.1,
+    "outer_watchdog_seconds": 0.7,
+    "hard_deadline_missed": true,
+    "exitcode": -9,
+    "seconds": 0.7031788129970664,
+    "stderr_bytes": 0
+  }
+]

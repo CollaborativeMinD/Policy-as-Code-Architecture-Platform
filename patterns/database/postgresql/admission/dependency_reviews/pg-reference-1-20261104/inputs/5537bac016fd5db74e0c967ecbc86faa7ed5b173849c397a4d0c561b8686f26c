@@ -1,0 +1,11 @@
+--- src/hmt_pg_patterns/streaming_scan.py
++++ src/hmt_pg_patterns/streaming_scan.py.mutated
+@@ -66,6 +66,8 @@
+             self._index, self._start, self._offset, bytes(self._buffer), self._fingerprint, reason
+         )
+         self._buffer.clear()
++        self._window.clear()
++        self._fingerprint = 0
+         self._start = self._offset
+         self._index += 1
+         return value

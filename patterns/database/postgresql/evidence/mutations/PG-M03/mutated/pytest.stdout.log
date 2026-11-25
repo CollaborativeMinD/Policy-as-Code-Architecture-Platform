@@ -1,0 +1,12 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+__________ test_mutable_packet_is_snapshotted_and_partial_feed_aborts __________
+tests/test_streaming_scanner.py:62: in test_mutable_packet_is_snapshotted_and_partial_feed_aborts
+    assert first.data == bytes(range(len(first.data)))
+E   AssertionError: assert b'xxxxx' == b'\x00\x01\x02\x03\x04'
+E     
+E     At index 0 diff: b'x' != b'\x00'
+E     Use -v to get more diff
+=========================== short test summary info ============================
+FAILED tests/test_streaming_scanner.py::test_mutable_packet_is_snapshotted_and_partial_feed_aborts
+1 failed in 0.06s

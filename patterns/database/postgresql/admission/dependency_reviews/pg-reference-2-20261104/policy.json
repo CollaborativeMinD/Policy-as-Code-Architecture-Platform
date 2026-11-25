@@ -1,0 +1,2232 @@
+{
+  "admissions": [
+    {
+      "path": "fixtures/pglite/package-lock.json",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "73328c688b3513c864944140efbb5ebfb052b47a236c8d7f95f76ef54fe8dcaa"
+    },
+    {
+      "path": "fixtures/pglite/package.json",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "a93daa8c1eaeacf1c0b5cdb8810a11cddbfac6541ee57315e3a43c4a5822c4c0"
+    },
+    {
+      "path": "pyproject.toml",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "2016fe4bc3bea91d5830d18e9a4aadaad626a946674c315a57ca84264b3bcd92"
+    },
+    {
+      "path": "tools/__init__.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "547fc04ae36d8eadc5c0dc7cbddcdeab37ff350913d803c7b3b4c42749be630e"
+    },
+    {
+      "path": "tools/admission_binding.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "0f319f888eaf84375504990d70d1bb1a8dfedf1c0fb4dd520ff193c4de9f5c19"
+    },
+    {
+      "path": "tools/admission_campaign.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "c181a9f0633c22f9b2dda14ed1aa6620bc21a289a3b1fab57697cf03fdffc3e8"
+    },
+    {
+      "path": "tools/admission_causal.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "e49e161a0ff4fb80b9bf52f85cc839d7f89e2edd3590f7550a5dfca9d7d887e9"
+    },
+    {
+      "path": "tools/admission_coverage.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "144a0d69431c0adad6dbc701af08ec4ae46b75dbfe40c979854e724e0726c89a"
+    },
+    {
+      "path": "tools/admission_evidence.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "ab84a75000c7320d80f0920daba71ae9c5698fec18aff6f84094c51791ec2349"
+    },
+    {
+      "path": "tools/admission_harness.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "fecf4b81ccf65e76a4ce702e507064055e81d7d2a6582964aa95d44dc01be94a"
+    },
+    {
+      "path": "tools/admission_junit.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "152c48e97ef3f0458bcc4ae606d1c960b39001ebc1689e30bc7815f69e117f7c"
+    },
+    {
+      "path": "tools/admission_process.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "ba769e31d2079db6885e0dc3c891ba530f40e2ccd7bfc4540af74990b5a42f10"
+    },
+    {
+      "path": "tools/admission_refinements.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "679401295b7d1b5d2b7b0b13f9dd2b71b40b7e744a933527b66b0d7f63c85e2e"
+    },
+    {
+      "path": "tools/admission_structure.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "91be0f88020e11a44605856f9ae7aebeb7a11fe27a7799249cf8c2e27277732f"
+    },
+    {
+      "path": "tools/admit.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "d6530c8fbdae2464d747a67f0795eb0492f80bfc356d7ccf4e938afe74364209"
+    },
+    {
+      "path": "tools/candidate_ledger.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "43504dffc2fff6aadb94c7ea801f269cb473b1bd106732b926fe59c11059c75a"
+    },
+    {
+      "path": "tools/candidate_model.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "4cf079eb01de51ea14e901926e8d3172e29c3d7f9139fefaff95ce1ae8021ef8"
+    },
+    {
+      "path": "tools/candidate_sql.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "2b06d07917a61e4911b41c0450b7e94d815acacc07c1713b75dc570b2dd721d4"
+    },
+    {
+      "path": "tools/mutation_campaign.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "ef60cd4b805f7f4f20e8ab739894b91789e747431ae021e09cc45c6beaece5ce"
+    },
+    {
+      "path": "tools/mutation_execution.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "2610dcca26716ae4857df42497c9d2f0cd0e62b6dcd6fdb543cd216bdb9e13ff"
+    },
+    {
+      "path": "tools/mutation_models.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "6c7bf9023fb4cc0df3d2168f5d547cfe1ef60a0c03228c5192d04a5517a03e92"
+    },
+    {
+      "path": "tools/mutation_probe.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "8d222af1bd93925ec5d1472ab49932a747b3a10e55768ba626afb4942adbb07e"
+    },
+    {
+      "path": "tools/mutation_python.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "ee653d029fb9ca88112cf94a6e2a2a7d965fc412ed50da4a3816dea6cc7cf8b6"
+    },
+    {
+      "path": "tools/mutation_results.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "d867b2db3e2d20192e7bb5ca87210edc30f76d58f317405f5fb278be4874248b"
+    },
+    {
+      "path": "tools/mutation_sql.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "4a667f92fea4c8c6435d17730bae7c1cf99023589276ae749902f1b591028ddf"
+    },
+    {
+      "path": "tools/mutation_storage.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "6e1103b4226116d0192a7b31f20627eecb1c27711d0fd36a8faa318742fc7ae7"
+    },
+    {
+      "path": "tools/native_vv.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "e4f7a57c944dcde43de01476737625144c9ae0b1d70d7e55e06fb905652796d9"
+    },
+    {
+      "path": "tools/native_vv_analysis.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "597bf6fbb53d5cbf5543c040bdb7b4f131a4bbf80ab76b7ed74d1fbdb5ec2fce"
+    },
+    {
+      "path": "tools/native_vv_database.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "23fe709ce4c31a14293caeaf91e5b231d437fdae4c0cfb0a849b891ea3189b43"
+    },
+    {
+      "path": "tools/native_vv_inputs.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "457968570a3efcf787c7903c68cb49f15194bc600b636b58b1d89010539bb676"
+    },
+    {
+      "path": "tools/native_vv_power10.py",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "cc274c1b0d20f4bd0903850846ad9e71237595ddf3797cef3abb8ea8ff63270b"
+    },
+    {
+      "path": "uv.lock",
+      "reviews": [
+        {
+          "check": "reputation",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/reputation.json",
+          "evidence_sha256": "0d7ce1783422757c5b72eea01830ac66ea67b578c436e75d4d64f494221372e4"
+        },
+        {
+          "check": "identity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/identity.json",
+          "evidence_sha256": "e051219c5b2e362d61dd9be79eff62033cc2b8840d2b5017a51a53b07a5e54c2"
+        },
+        {
+          "check": "source_integrity",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/source_integrity.json",
+          "evidence_sha256": "994833de6a4c73bacc17848f0004d7848f0fa9004cdf39d17531a0311ee49de3"
+        },
+        {
+          "check": "hash",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/hash.json",
+          "evidence_sha256": "3a532b089dcb028b77a1392644f0ec6e46b3c10c002bab78f5d68fed4731ada4"
+        },
+        {
+          "check": "provenance",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/provenance.json",
+          "evidence_sha256": "e5c6955b8b9eb3f38169c89156217434c4a4ba0db8e7f1d67188c3ee6be3f06e"
+        },
+        {
+          "check": "vulnerability",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/vulnerability.json",
+          "evidence_sha256": "7b666955d827439d5b38d01a3aacaf80ce642521a696e531e9d654ca9da1d2c2"
+        },
+        {
+          "check": "license",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/license.json",
+          "evidence_sha256": "6fb59ba3c0b023ea9152aa8e399e75b0c9edb4a8b894effc11b80a545e6a6c1b"
+        },
+        {
+          "check": "organizational_standard",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/organizational_standard.json",
+          "evidence_sha256": "cd97d00bfe6b3bbdb67e4a6a3eb2e7e28869ce686f87cc7c235c4bda4cfdf54d"
+        },
+        {
+          "check": "closure",
+          "disposition": "PASS",
+          "epoch": "pg-reference-2-20261104",
+          "evidence_ref": "reviews/closure.json",
+          "evidence_sha256": "581c971829c80487225146800bb5812a3a987c9ba77af39c3120fad4b28f9f19"
+        }
+      ],
+      "sha256": "73baf5c7335997906a9f22bd8cce04b5837ff65796b23de3578115c580f8847c"
+    }
+  ],
+  "api_version": "hmt.adversarial/v1",
+  "epoch": "pg-reference-2-20261104",
+  "limits": {
+    "file_bytes": 524288,
+    "files": 2048,
+    "memory_bytes": 268435456,
+    "output_bytes": 65536,
+    "seconds": 5,
+    "total_bytes": 16777216
+  },
+  "object_id": "HMT-POSTGRESQL-ENGINEERING-REVIEW",
+  "owner": "engineering-review",
+  "profile": "static",
+  "protected_paths": [
+    "tests/adversarial/",
+    "config/adversarial/",
+    "security/"
+  ],
+  "runtime": null,
+  "version": "1.0.0"
+}

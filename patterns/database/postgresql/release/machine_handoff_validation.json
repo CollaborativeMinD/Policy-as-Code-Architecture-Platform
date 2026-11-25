@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "schema_sha256": "916f5a82442a85b18c941c760ee058bdc8b64a797667f088de4f92ac4beb3142",
+  "instance_sha256": "f62f48f0ad3ecc3bf8ae32b3b1e730860a647322cc99bc3312ae46a3c5307807",
+  "method": "jsonschema Draft202012Validator using exact supplied09schema",
+  "additional_properties": false
+}

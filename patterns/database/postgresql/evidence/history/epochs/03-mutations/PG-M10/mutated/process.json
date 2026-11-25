@@ -1,0 +1,25 @@
+{
+  "status": "FAIL",
+  "argv": [
+    "/workspace/scratch/e7495113964e/work/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "--tb=short",
+    "-o",
+    "addopts=",
+    "-p",
+    "tools.mutation_probe",
+    "--junitxml=/workspace/scratch/e7495113964e/work/epochs/03-mutations/PG-M10/mutated/junit.xml",
+    "tests/test_checkpoints_cache.py::test_foreign_scope_and_loss_are_rejected"
+  ],
+  "returncode": 1,
+  "reason": "COMPLETE",
+  "seconds": 0.9377593399985926,
+  "captured_bytes": 1378,
+  "stdout": "pytest.stdout.log",
+  "stderr": "pytest.stderr.log",
+  "import_verified": true,
+  "source_unchanged": true,
+  "source_digest": "c59464760c7adbd1001d171f36153db2d30cc3e9a1ec5c9b254d433ccf84a86a"
+}

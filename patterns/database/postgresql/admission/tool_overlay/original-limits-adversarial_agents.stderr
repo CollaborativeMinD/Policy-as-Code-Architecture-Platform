@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/e7495113964e/work/admission_overlay/probe.py", line 29, in <module>
+    limits()
+    ~~~~~~^^
+  File "/workspace/scratch/e7495113964e/work/admission_overlay/probe.py", line 22, in limits
+    module.ceilings(4096, 536870912)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/e7495113964e/work/admission_sources/ci42/src/hmt_native/adversarial_agents/n051_ceilings.py", line 6, in ceilings
+    api.resource.setrlimit(api.resource.RLIMIT_FSIZE, (output_bytes, output_bytes))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'setrlimit'

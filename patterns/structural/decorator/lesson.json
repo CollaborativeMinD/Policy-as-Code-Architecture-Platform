@@ -1,0 +1,17 @@
+{
+  "bluf": "# RDP-S04 \u2014 Decorator\n\n## 1. BLUF\nCompose scanner, semantic view, and watchdog before a read-only target. Use one plain guard function if composition adds no reuse. Added abstraction earns its cost only when the declared variation or custody is needed.\n\n",
+  "identity": "## 2. Identity and contracts\nVersion 1.0.0; RDP-S04-INV-001. Strict frozen Pydantic contracts reject extra fields and invalid bounds. Source pins live in manifest.json and catalog.json. Engineering reference only; no operational or promotion authority. \n\n",
+  "problem": "## 3. Problem and anti-pattern\nReordered wrappers or unchecked target entry bypass required admission. The live negative witness below runs a bounded local counterexample or forbidden input. It is an educational defect, not privileged service code.\n\n",
+  "mechanism": "## 4. Mechanism and simpler alternative\nread_reference(Call); scanner -> semantic -> watchdog -> target; metadata preserved.\n\nSimpler alternative: explicit ordered guard function. Responsibilities and associations are visible in the actual implementation. No inherited scanner/provider authority is copied.\n\nThe source below identifies the actual interfaces, constructor dependencies and associations. The educational fixture shows the invalid input and any deliberately defective comparison.\n\n",
+  "inputs": "## 6. Worked inputs\nChoose nominal or edge. Declared bounds are enforced by contracts.py. Both choices recompute a positive result and an independent negative predicate. The JSON output exposes the exact input and output.\n\n",
+  "pressure": "## 8. Behavior under pressure\nFailure hypothesis: wrong guard order. A True negative_detected predicate means the forbidden behavior was rejected or the defective fixture differed from the lawful oracle. Tests include boundary and exception/replay pressure as applicable.\n\n",
+  "applicability": "## 9. Applicability gate\nCompose scanner, semantic view, and watchdog before a read-only target. Use one plain guard function if composition adds no reuse.\n\nThe explicit ordered guard function comparison avoids carrying a hierarchy when a plain function or immutable table satisfies the same contract.\n\nAlternative pattern: Chain of Responsibility when its documented variation is the actual problem. This pattern costs extra contracts, classes, state or dispatch; prefer the simpler alternative unless its ownership/variation boundary is required.\n\n",
+  "reproducibility": "## 10. Reproducibility and non-claims\nFrom repository root: `uv run --frozen pytest -q patterns/structural/decorator/tests`. Run `uv run --frozen marimo run patterns/structural/decorator/notebook.py`. Python/marimo versions are frozen in uv.lock. Evidence is source-bound in evidence/qualification.json; digests in manifest.json. Native script/export is separate from local Hub/browser qualification. No physics, hostile-host isolation, distributed exactly-once, production identity, or human promotion claim.\n",
+  "invalid_model": "Call",
+  "invalid_payload": {
+    "authorized": true,
+    "semantic_label": "EXECUTE",
+    "source_intact": true,
+    "stages": []
+  }
+}

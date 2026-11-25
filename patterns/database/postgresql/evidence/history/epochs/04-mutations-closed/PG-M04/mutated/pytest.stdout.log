@@ -1,0 +1,12 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_______________ test_invalid_packet_capacity_and_released_views ________________
+tests/test_streaming_scanner.py:82: in test_invalid_packet_capacity_and_released_views
+    with pytest.raises(StreamError, match=code):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   AssertionError: Regex pattern did not match.
+E     Expected regex: 'PACKET_CAPACITY'
+E     Actual message: 'STREAM_CAPACITY'
+=========================== short test summary info ============================
+FAILED tests/test_streaming_scanner.py::test_invalid_packet_capacity_and_released_views
+1 failed in 0.12s

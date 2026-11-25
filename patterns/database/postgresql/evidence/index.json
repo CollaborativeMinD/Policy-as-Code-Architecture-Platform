@@ -1,0 +1,16 @@
+{
+  "final_source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+  "final": [
+    "software",
+    "mutations",
+    "native_vv",
+    "native42"
+  ],
+  "historical": "history/ contains earlier source epochs and observed failures; never substitute them for final qualification.",
+  "dependency_reviews": "../admission/dependency_reviews/pg-reference-2-20261104",
+  "path_policy": "Raw receipts preserve observed absolute execution paths. Portable instructions and final artifact paths are separate records.",
+  "mutation_snapshot_policy": "Duplicated baseline_source trees omitted; exact snapshot manifests and mutation patches/receipts retained. First-party Git bundle preserves baseline/candidate source custody.",
+  "excluded_working_data": "Native lane tmp directories, ephemeral pytest fixtures including deliberate symlinks, runtime caches, and owner lockfiles are omitted; actual receipts, captured outputs, journal/WAL/SHM, and reports are unchanged.",
+  "original_ledger": "history/initial-qualification-ledger.sqlite3",
+  "derived_ledger": "../release/qualification_ledger.sqlite3"
+}

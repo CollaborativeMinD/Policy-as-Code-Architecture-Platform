@@ -1,0 +1,12 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+__________________ test_redis_ordering_above_float_precision ___________________
+tests/test_checkpoints_cache.py:50: in test_redis_ordering_above_float_precision
+    assert cache.offer(later) == "APPLIED"
+E   AssertionError: assert 'CONFLICT' == 'APPLIED'
+E     
+E     - APPLIED
+E     + CONFLICT
+=========================== short test summary info ============================
+FAILED tests/test_checkpoints_cache.py::test_redis_ordering_above_float_precision
+1 failed in 0.34s

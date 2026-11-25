@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "candidate_count": 896,
+  "expected_count": 896,
+  "applicable": 19,
+  "not_applicable": 877,
+  "assertions": 76,
+  "sql": "SELECT i.id,f.id,g.id FROM dimensions i CROSS JOIN dimensions f CROSS JOIN dimensions g WHERE i.kind='invariant' AND f.kind='failure' AND g.kind='gate' ORDER BY i.id,f.id,g.id",
+  "exclusions_missing_predicates": 0
+}

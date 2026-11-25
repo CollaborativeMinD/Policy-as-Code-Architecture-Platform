@@ -1,0 +1,14 @@
+{
+  "schema": "hmt.git.portable-history/1",
+  "path": "/workspace/scratch/e7495113964e/work/final/git_custody/reference-history.bundle",
+  "sha256": "35623e912abb5afa2942b672f332b34d394e513c49136232d245029d7bf8288f",
+  "bytes": 317789,
+  "ref": "refs/heads/master",
+  "candidate_commit": "9bc06522f27d4576f08caf44f4989031d1b145f1",
+  "historical_commit": "e3387ddb0772fdeaa4093f7b049033c5ef6f43eb",
+  "verification_exit_code": 0,
+  "listed_heads": "9bc06522f27d4576f08caf44f4989031d1b145f1 refs/heads/master\n",
+  "complete_first_party_history": true,
+  "worktree_written": false,
+  "scope": "Only first-party PostgreSQL branch development history and actual preserved source snapshots; inherited nativeCI42 engine source is not included."
+}

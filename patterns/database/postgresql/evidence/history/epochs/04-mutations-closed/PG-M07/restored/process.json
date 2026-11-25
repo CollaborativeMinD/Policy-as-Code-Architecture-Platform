@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "argv": [
+    "/workspace/scratch/e7495113964e/work/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "--tb=short",
+    "-o",
+    "addopts=",
+    "-p",
+    "tools.mutation_probe",
+    "--junitxml=/workspace/scratch/e7495113964e/work/epochs/04-mutations-closed/PG-M07/restored/junit.xml",
+    "tests/test_authority_security.py::test_expiration_is_rechecked_after_authority_lock"
+  ],
+  "returncode": 0,
+  "reason": "COMPLETE",
+  "seconds": 2.625019273000362,
+  "captured_bytes": 98,
+  "stdout": "pytest.stdout.log",
+  "stderr": "pytest.stderr.log",
+  "import_verified": true,
+  "source_unchanged": true,
+  "source_digest": "f8176d2758232ae58f0ad7d87906df6d9a07d430f813017899093228ac98b886"
+}

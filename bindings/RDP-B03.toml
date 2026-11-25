@@ -1,0 +1,12 @@
+version = 1
+pattern = "RDP-B03"
+scope = "software"
+
+[settings]
+state = "PRIMARY"
+soft_failures = [true, false]
+recovery_streak = 0
+pressure = true
+hard_terminal = false
+emergency = false
+history_epoch = 1

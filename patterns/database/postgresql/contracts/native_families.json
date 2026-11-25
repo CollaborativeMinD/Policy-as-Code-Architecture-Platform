@@ -1,0 +1,77 @@
+{
+  "unit": {
+    "requirement": "PG-CONFIG-001",
+    "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[tls_profile]",
+    "assertion": "Strict connection policy denies unsafe production configuration."
+  },
+  "negative": {
+    "requirement": "PG-QUERY-001",
+    "test_id": "tests/test_query_contracts.py::test_identifier_allowlist_rejects_sql_text[metrics;DROP TABLE x]",
+    "assertion": "SQL identifier injection is refused before execution."
+  },
+  "mutation": {
+    "requirement": "PG-PACE-001",
+    "test_id": "tests/test_causal_pace.py::test_deletion",
+    "assertion": "Deleting the operation guard causes an otherwise blocked live callback to execute."
+  },
+  "behavioral": {
+    "requirement": "PG-CDC-001",
+    "test_id": "tests/test_streaming_pipeline.py::test_source_failure_keeps_primary_code_and_closes[failure0-SOURCE_FAILURE]",
+    "assertion": "Source failure retains primary classification and owns teardown."
+  },
+  "api": {
+    "requirement": "PG-QUERY-001",
+    "test_id": "tests/test_orm_drivers.py::test_core_and_sqlmodel_commit_and_seek[hmt_pg_patterns.orm]",
+    "assertion": "Public Core and SQLModel APIs preserve the query/commit contract."
+  },
+  "routing": {
+    "requirement": "PG-PEER-001",
+    "test_id": "tests/test_transport_binding.py::test_fixed_login_and_stored_binding_required",
+    "assertion": "A fixed peer route is bound to session_user and the stored key."
+  },
+  "boundary": {
+    "requirement": "PG-CONTRACT-001",
+    "test_id": "tests/test_query_contracts.py::test_infinite_iterator_has_finite_rejection_boundary",
+    "assertion": "Infinite row input reaches the finite admission rejection boundary."
+  },
+  "security": {
+    "requirement": "PG-FENCE-001",
+    "test_id": "tests/test_authority_security.py::test_role_is_server_identity_and_client_claim_forbidden",
+    "assertion": "Caller claims cannot replace server role identity."
+  },
+  "complexity": {
+    "requirement": "PG-CDC-001",
+    "test_id": "tests/test_streaming_pipeline.py::test_zero_queue_backpressure_and_complete_reconstruction",
+    "assertion": "A blocked sink prevents queued source consumption while preserving bytes."
+  },
+  "authorization_drift": {
+    "requirement": "PG-FENCE-001",
+    "test_id": "tests/test_authority_security.py::test_revocation_fences_new_effect_and_old_replay",
+    "assertion": "New effects and old replay remain fenced after authority revocation."
+  },
+  "causal": {
+    "requirement": "PG-FENCE-001",
+    "test_id": "tests/test_causal_authority.py::test_restoration",
+    "assertion": "Restoring the exact removed SQL guard restores denial behavior."
+  },
+  "speed": {
+    "requirement": "PG-PEER-001",
+    "test_id": "tests/test_worker_cli.py::test_hard_deadline_terminates_a_blocked_process",
+    "assertion": "The declared hard wall-clock deadline terminates a blocked worker; this is a bounded-deadline claim, not a throughput benchmark."
+  },
+  "regex": {
+    "requirement": "PG-QUERY-001",
+    "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[bound_values]",
+    "assertion": "Syntax witness invokes the real guarded query boundary and matches exact observed output."
+  },
+  "integration": {
+    "requirement": "PG-OUTBOX-001",
+    "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[outbox_replay]",
+    "assertion": "Real PostgreSQL and Redis recover a lost publication without repeating an effect."
+  },
+  "e2e": {
+    "requirement": "PG-CDC-001",
+    "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[packet_invariance]",
+    "assertion": "Content-defined stream writes, checkpoints, projection, reconciliation, and reconstruction complete."
+  }
+}

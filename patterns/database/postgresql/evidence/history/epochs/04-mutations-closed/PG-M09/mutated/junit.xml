@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.284" timestamp="2026-11-04T15:16:56.813134+07:00" hostname="18a71ec14d7e"><testcase classname="tests.test_checkpoints_cache" name="test_redis_ordering_above_float_precision" time="0.222"><failure message="AssertionError: assert 'CONFLICT' == 'APPLIED'&#10;  &#10;  - APPLIED&#10;  + CONFLICT">tests/test_checkpoints_cache.py:50: in test_redis_ordering_above_float_precision
+    assert cache.offer(later) == "APPLIED"
+E   AssertionError: assert 'CONFLICT' == 'APPLIED'
+E     
+E     - APPLIED
+E     + CONFLICT</failure></testcase></testsuite></testsuites>

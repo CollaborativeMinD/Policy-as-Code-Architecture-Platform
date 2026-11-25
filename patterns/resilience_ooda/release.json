@@ -1,0 +1,17 @@
+{
+  "files": {
+    "README.md": "62569606eab6ddc7dbf721a4a9c55f561217e08761e5c92c5e23d1a8c26d5aa5",
+    "STARTER.md": "3ed33ab82deb1fce46722bac06daac079decac22c439581250928f5778a5c433",
+    "bundle_exporter.py": "8beec828846e63491150a059dba80ef7f5aa6c86d2eebd287569fe5121db0131",
+    "catalog.toml": "d2a6cb752c639870f67f3fe9232c5afaab55860ec7898f424493531de1e6f516",
+    "requirements.lock": "89a7ab7b736aaa12ae5fb93662fdcf46e608988182fe98b353a345d6eabeb0d6",
+    "retry_runtime.py": "393b5fd61462f5cbd1d033fda1ff8c58d24f4dd4921bcfcfb506b43c4ec0b04e",
+    "selections/all-configurations.toml": "67970d9ad8962275cdaab3cf5f1a0c3d12618d904db18606ab4828e78a82c8c8",
+    "selections/ooda-starter.toml": "d0edb46d1deb29ba840a265508c4f2bcb298ec0aa0c8622c7ee4980c0b66bf0e",
+    "sources/resilience_ooda.zip": "21176bc80f788512e7b8dd47e55fe663f5c88d06e646c472feac297c223eabcc",
+    "test_bundle_exporter.py": "43940ed4472239665f0b0faf2f4609c7c2914c039fb307b4123378602e7d637e",
+    "witness.py": "e4bbde3b5f69f065b3e0bd21d170d67f3acde6e8936210872ec2b8103adc7f8c"
+  },
+  "id": "resilience-ooda",
+  "version": "1"
+}

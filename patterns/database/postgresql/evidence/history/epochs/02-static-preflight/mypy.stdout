@@ -1,0 +1,13 @@
+mypy 1.20.2 (compiled: yes)
+src/hmt_pg_patterns/streaming_scan.py:21:24:21:30: error: Need type annotation for "_window"  [var-annotated]
+src/hmt_pg_patterns/config.py:65:19:65:74: error: Incompatible types in assignment (expression has type "SSLContext", variable has type "bool")  [assignment]
+src/hmt_pg_patterns/asyncpg_pool.py:6:1:6:1: error: Skipping analyzing "asyncpg": module is installed, but missing library stubs or py.typed marker  [import-untyped]
+src/hmt_pg_patterns/queries.py:43:5:43:10: error: Need type annotation for "result" (hint: "result: list[<type>] = ...")  [var-annotated]
+src/hmt_pg_patterns/sync_driver.py:27:1:41:21: error: Missing return statement  [return]
+src/hmt_pg_patterns/sync_driver.py:27:92:27:92: error: A function returning TypeVar should receive at least one argument containing the same TypeVar  [type-var]
+src/hmt_pg_patterns/asyncpg_driver.py:7:1:7:1: error: Skipping analyzing "asyncpg": module is installed, but missing library stubs or py.typed marker  [import-untyped]
+src/hmt_pg_patterns/asyncpg_driver.py:7:1:7:1: note: See https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-imports
+src/hmt_pg_patterns/async_driver.py:24:1:38:21: error: Missing return statement  [return]
+src/hmt_pg_patterns/analytics.py:27:40:27:45: error: Argument "schema" to "DataFrame" has incompatible type "dict[str, object]"; expected "Mapping[str, DataTypeClass | DataType | type[int] | type[float] | type[bool] | type[str] | type[date] | <9 more items> | None] | Sequence[str | tuple[str, DataTypeClass | DataType | type[int] | type[float] | type[bool] | type[str] | type[date] | <9 more items> | None]] | None"  [arg-type]
+src/hmt_pg_patterns/orm_model.py:30:16:30:27: error: Argument 1 to "order_by" of "GenerativeSelect" has incompatible type "int"; expected "Literal[_NoArg.NO_ARG] | str | ColumnElement[Any] | _HasClauseElement[Any] | SQLCoreOperations[Any] | ExpressionElementRole[Any] | TypedColumnsClauseRole[Any] | Callable[[], ColumnElement[Any]] | LambdaElement | OrderByRole | None"  [arg-type]
+Found 10 errors in 9 files (checked 33 source files)

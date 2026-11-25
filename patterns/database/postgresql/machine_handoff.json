@@ -1,0 +1,59 @@
+{
+  "response": {
+    "agent_role": "Chief Edge DevSecOps and IaC Engineer",
+    "task_owned": "Extract, harden, verify, and package the software-only PostgreSQL reusable design-pattern branch.",
+    "implementation": [
+      "Synchronous and asyncio PostgreSQL adapters, SQLAlchemy/SQLModel references, bounded row contracts, and Polars/Pydantic parsing seams.",
+      "Session-derived peer/epoch admission, transactional effects and checkpoint outbox, immutable Pyrsistent snapshots, and disposable Redis projection recovery.",
+      "Bounded content-defined streaming, a fixed-command Tailcat worker, and separate native worker and wire qualification profiles.",
+      "Current source 6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7:446 tests PASS,95.323741%branch coverage,12/12 mutations caught and restored, nativeV&V PASS, and standalone42-lane campaign24PASS18NOT_APPLICABLE0FAIL0HOLD."
+    ],
+    "risks": [
+      "The native fixed-LOGIN worker profile is NOT_QUALIFIED: attempted PGlite startup ignored the requested username and admission returned AUTHORITY_DENIED.",
+      "The actual Tailcat wire profile is NOT_QUALIFIED: netlink EPERM stopped setup before tunnel establishment.",
+      "Single-backend PostgreSQL WASM evidence does not establish native contention, LOGIN/SCRAM/TLS, wire cancellation, or power-loss durability.",
+      "A lost worker response can follow committed database effects; origin replay and PostgreSQL reconciliation remain required."
+    ],
+    "assumptions": [
+      "Software verification and external service qualification are separate evidence scopes; blocked external profiles do not automatically hold the software branch.",
+      "Tailcat peer context comes from a trusted key-pinned launcher, and one configured PostgreSQL LOGIN role is bound to that peer.",
+      "Production verifies TLS and local WAL prerequisites; Redis stores only a projection and Pyrsistent supplies memory immutability, not durable custody.",
+      "No mission-specific physical formulas or digital-twin fidelity claims are introduced."
+    ],
+    "follow_up_instructions": [
+      "Unpack database_design_patterns/postgresql beside the existing references; preserve its independent catalog and frozen lock.",
+      "Follow Runbook.md and admission/README.md to reproduce software and source-bound standalone admission in fresh evidence directories.",
+      "Retain native worker, actual Tailcat wire, independent-backend contention, storage recovery, and activated production containment as NOT_QUALIFIED until their relevant profiles execute successfully.",
+      "Replay the same immutable source from byte zero after uncertainty; each chunk transaction is atomic and a committed prefix may survive a later failure.",
+      "Any implementation, contract, dependency, policy, or fixture change requires a fresh evidence epoch."
+    ],
+    "validation_status": "pass",
+    "artifact_refs": [
+      "catalog.json",
+      "Runbook.md",
+      "Agents.md",
+      "pyproject.toml",
+      "uv.lock",
+      "contracts/traceability.json",
+      "contracts/contract_refinements.json",
+      "references/primitive_lineage.json",
+      "sql/02_authority.sql",
+      "sql/03_checkpoints.sql",
+      "src/hmt_pg_patterns/worker.py",
+      "deployment/hmt-pg-worker.service",
+      "qualification/native_worker_test.py",
+      "qualification/tailcat_wire_test.py",
+      "VERIFICATION_REPORT.md",
+      "release/artifact_manifest.json",
+      "release/provenance.json",
+      "release/cumulative_gates.json",
+      "release/rrca.json",
+      "release/ontology/ontology_field_bindings.json",
+      "evidence/software/summary.json",
+      "evidence/mutations/mutation-report.json",
+      "evidence/native_vv/native-vv-result.json",
+      "evidence/native42/summary.json"
+    ],
+    "provenance_id": "hmt-pg-reference-1.0.0-20261104-6771f2465d4f"
+  }
+}

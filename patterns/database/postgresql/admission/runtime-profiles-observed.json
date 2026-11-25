@@ -1,0 +1,898 @@
+{
+  "registry_sha256": "e9e562d1234af44d05e6124d966925bf2d34504cecb8e7bf107a67cfc9406ffa",
+  "scope": "Exact42 declared lane runtime profiles; no universal runtime/dependency compatibility assumption.",
+  "prepared_optimization": {
+    "python": "/workspace/scratch/e7495113964e/work/.optimization/bin/python",
+    "observed_version": "3.15.0rc3",
+    "original_lock_used": true
+  },
+  "prepared_analyzers": {
+    "python": "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+    "observed_version": "3.13.17",
+    "interpretation": "Explicit prepared override; not the declared3.13.15 microprofile and not all lane dependency pins. Per-lane execution receipts retain actual versions."
+  },
+  "lanes": {
+    "actionlint": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [],
+      "pyproject_sha256": "1b64440add08788b880242a7bd054810ac06560e4dda957e9e8125d220e73b96",
+      "uv_lock_sha256": "0f2755dc907a1e5c510f90f985e39f1da7dc108875d1b7f6215561cfa74360e1",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/actionlint",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/actionlint.py"
+    },
+    "adversarial-agents": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "PyYAML==6.0.3",
+        "annotated-types==0.8.0",
+        "pydantic-core==2.46.4",
+        "pydantic==2.13.4",
+        "typing-extensions==4.16.0",
+        "typing-inspection==0.4.3"
+      ],
+      "pyproject_sha256": "5571a22456d62d71f23da2d31eb4db3b26f823db9a833ae43e61d671c629eb86",
+      "uv_lock_sha256": "d118864b7f684d82107b42a471ce5fb73494802686d091f90ed40bb9f5a40209",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/adversarial-agents",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/adversarial-agents.py"
+    },
+    "adversarial-hints": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "PyYAML==6.0.3",
+        "annotated-types==0.8.0",
+        "pydantic-core==2.50.1",
+        "pydantic==2.14.1",
+        "typing-extensions==4.16.0",
+        "typing-inspection==0.4.4"
+      ],
+      "pyproject_sha256": "b12823b850a9b7d89c648c6a7c72a404533a7d915d5685ffe661f49fb616ede8",
+      "uv_lock_sha256": "8a2d5db7c1c35d95aff9c6ea8a7b02fd0aac3488d5a4b082b7b36af377898446",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/adversarial-hints",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/adversarial-hints.py"
+    },
+    "architecture-contract": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [],
+      "pyproject_sha256": "273caeb813dacbac8b0b4ed79535d16b6ecba206bbaa34d22104d3683353de57",
+      "uv_lock_sha256": "016c4d34e22c81690e27a6a628b1fb3f246f1b5fb6a2c64764a7d36469f360f6",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/architecture-contract",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/architecture-contract.py"
+    },
+    "bandit": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "bandit==1.9.4",
+        "markdown-it-py==4.2.0",
+        "mdurl==0.1.2",
+        "pygments==2.21.0",
+        "pyyaml==6.0.3",
+        "rich==15.0.0",
+        "stevedore==5.9.1"
+      ],
+      "pyproject_sha256": "e2e9152afb008bb8e68dc4d405b5bcd0f76e49e3e939daa0e954ce6421f9ba82",
+      "uv_lock_sha256": "f0cde817b8e3fecb69832c73c4d2ae12ed68fcf0593940cf71f995cc804bc5b8",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/bandit",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/bandit.py"
+    },
+    "deptry": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "click==8.5.0",
+        "deptry==0.25.1",
+        "packaging==26.3",
+        "requirements-parser==0.13.1",
+        "tomli==2.4.1"
+      ],
+      "pyproject_sha256": "ba288f5ad438964fa78f6e5b8c5bb2235650285932f61dd9a7a73e533f41980f",
+      "uv_lock_sha256": "99c48a0502760ae393c426944b62fb085dac3dcdb6c2513c6492cd9eae2c6beb",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/deptry",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/deptry.py"
+    },
+    "evidence-binding": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "pydantic==2.13.5"
+      ],
+      "pyproject_sha256": "8280659a82d0b21ffc3adf407f4009dd01d835ff538b775efe0d8c17c14c5c1c",
+      "uv_lock_sha256": "341dfc53ac4dbbff39d7ba8f541836cfdc9c4ad87d92f3e80d5405233d4bc39e",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/evidence-binding",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/evidence-binding.py"
+    },
+    "gitops-contract": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "PyYAML==6.0.3"
+      ],
+      "pyproject_sha256": "2a4bf70f5ebaa3b8944b2fe5745b5a621bfc84945947fc4dd5a683a2b738a61c",
+      "uv_lock_sha256": "32d193fba228fde0be5e65cd1685f5d81ae2ae787d58903c0e52c92ca7a70aad",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/gitops-contract",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/gitops-contract.py"
+    },
+    "hadolint": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [],
+      "pyproject_sha256": "08d95416303ff8d6d9491e38d833f0672c70e196569231b2ca9a7df3e6be99f4",
+      "uv_lock_sha256": "20c6ee1a2f54253a36cb4c3ae130a84337f771961d7f918d2e036941124720b1",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/hadolint",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/hadolint.py"
+    },
+    "license-inventory": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "packaging==26.3"
+      ],
+      "pyproject_sha256": "efb62523af30d1f1e0940c4462987698e40f15113c7866f366c5082800279142",
+      "uv_lock_sha256": "ff2b8d9eb043aee99632c5fd7774b0f57ec212078e8adbc1dbd6322e14b58a98",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/license-inventory",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/license-inventory.py"
+    },
+    "marimo-check": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "marimo==0.25.1"
+      ],
+      "pyproject_sha256": "3419bae86debb7da4fb4ba794422a2c4030d5dcf7c5b8466cc53c5904534422a",
+      "uv_lock_sha256": "16bba735150b25b99881c0469113dafc6c449cd6850409da66325cd78f8fc7d4",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/marimo-check",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/marimo-check.py"
+    },
+    "mypy": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "librt==0.16.0",
+        "mypy-extensions==1.1.0",
+        "mypy==1.20.2",
+        "pathspec==1.1.1",
+        "typing-extensions==4.16.0"
+      ],
+      "pyproject_sha256": "f853694fb73c30c04cc2671a77424739ec8a2c47a9f5f3b43fbad644cc121e30",
+      "uv_lock_sha256": "9f4a9139b83e9cdc95ba3282e056cb5b2346065acd335d13aeaa54f8c08f3980",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/mypy",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/mypy.py"
+    },
+    "notebook-test": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "marimo==0.25.1"
+      ],
+      "pyproject_sha256": "03e37850b7d9eb81b45e15067b7c61b34128e3faa0352ec393fcf7fe4ceb1c7b",
+      "uv_lock_sha256": "82540cd85b5e9199cbcebf1c548fb82e29b55d69d3bef584261ed1e35f6fb697",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/notebook-test",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/notebook-test.py"
+    },
+    "optimization": {
+      "declared_python": "3.15.0rc3",
+      "declared_dependencies": [
+        "PyYAML==6.0.3",
+        "annotated-types==0.8.0",
+        "pydantic-core==2.46.5",
+        "pydantic==2.13.5",
+        "ruamel.yaml==0.18.17",
+        "typing-extensions==4.16.0",
+        "typing-inspection==0.4.4"
+      ],
+      "pyproject_sha256": "78fb5a51398f5915dc300c9cee2ca6de9803178ec795c1add1738887669a7695",
+      "uv_lock_sha256": "c09cbb85377019216bd2a56db1dcc6f8206cf78175181826e778a11febc07d2b",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/optimization",
+        "--python",
+        "3.15.0rc3"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/optimization.py"
+    },
+    "pip-audit": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "boolean-py==5.0",
+        "cachecontrol==0.14.4",
+        "certifi==2026.7.22",
+        "charset-normalizer==3.5.2",
+        "cyclonedx-python-lib==11.12.0",
+        "defusedxml==0.7.1",
+        "filelock==4.0.12",
+        "idna==3.20",
+        "license-expression==30.4.4",
+        "markdown-it-py==4.2.0",
+        "mdurl==0.1.2",
+        "msgpack==1.2.3",
+        "packageurl-python==0.17.6",
+        "packaging==26.3",
+        "pip-api==0.0.35",
+        "pip-audit==2.10.1",
+        "pip-requirements-parser==32.0.1",
+        "pip==26.2.1",
+        "platformdirs==4.12.3",
+        "py-serializable==2.1.0",
+        "pygments==2.21.0",
+        "pyparsing==3.3.3",
+        "requests==2.34.2",
+        "rich==15.0.0",
+        "sortedcontainers==2.4.0",
+        "tomli-w==1.2.0",
+        "tomli==2.4.1",
+        "urllib3==2.8.0"
+      ],
+      "pyproject_sha256": "742f930e54eef73a48c3f7ec693f0971555e4904ab40e4b2412fbec8bc224650",
+      "uv_lock_sha256": "1f8db0986fcb7680ab2c72eae7b5824d44144fed046b1e9388557c960a1ca0a3",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/pip-audit",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/pip-audit.py"
+    },
+    "pylint": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "astroid==4.3.3",
+        "dill==0.4.1",
+        "isort==9.0.2",
+        "mccabe==0.7.0",
+        "mypy-extensions==1.1.0",
+        "platformdirs==4.12.3",
+        "pylint==4.1.2",
+        "tomlkit==0.15.1"
+      ],
+      "pyproject_sha256": "d65972fbc0fb21aef339a0b3d1040fa8209ea898e8c5e6f3b5a318820bfa435f",
+      "uv_lock_sha256": "17658d0d70b523c70480fa331d2db223ed743b0de4e7edb602e7cd5917397f50",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/pylint",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/pylint.py"
+    },
+    "pyrefly": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "pyrefly==1.3.2"
+      ],
+      "pyproject_sha256": "10c884405b327f031945e5ba0578559c3f07a40b70b18d63fb90b2fe0205c9ec",
+      "uv_lock_sha256": "70ef0bdedd93853b3763cdbff54a74fbbd14fffd47cc9681d335d6084a6dd48c",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/pyrefly",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/pyrefly.py"
+    },
+    "pytest": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "coverage==7.16.2",
+        "iniconfig==2.3.1",
+        "packaging==26.3",
+        "pluggy==1.6.0",
+        "pygments==2.21.0",
+        "pytest==9.1.1"
+      ],
+      "pyproject_sha256": "5e7a08d92c6075d380c95afbad6de263cd1c80294db74ff473991074ef25ba4a",
+      "uv_lock_sha256": "1dacac33559c14af79f6ca5bb7f7b7c65e74e2cb4d7ff69701a521cd1741fb8e",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/pytest",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/pytest.py"
+    },
+    "repository-contract": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "PyYAML==6.0.3"
+      ],
+      "pyproject_sha256": "1d831ceec93d5b11dd02783432fa126aede814952488bb15d8f5627ede02e420",
+      "uv_lock_sha256": "1be487dafdb9ba4551792db50688e3ee2f123f336db072bfae37159032fa6bdb",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/repository-contract",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/repository-contract.py"
+    },
+    "ruff": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "ruff==0.16.10"
+      ],
+      "pyproject_sha256": "36e9843696a2c0656a628f2017f458b43172e38013f30be23141a9acc61032ff",
+      "uv_lock_sha256": "c6b65c257323499220c18387d9ac60f7f2ac5be3ec08eb0f19a817cd87fe758c",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/ruff",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/ruff.py"
+    },
+    "scaffold-validation": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "annotated-types==0.8.0",
+        "pydantic-core==2.46.5",
+        "pydantic==2.13.5",
+        "pyparsing==3.3.3",
+        "rdflib==7.6.0",
+        "typing-extensions==4.16.0",
+        "typing-inspection==0.4.4"
+      ],
+      "pyproject_sha256": "e5eb19e33527ceb4b7804c02b25b392968012ee09dceb6af41a38f0fff32279e",
+      "uv_lock_sha256": "628491a7af5ce3853f5dc39282df04c48da7ac2b855060df942bfda7c063a71f",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/scaffold-validation",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/scaffold-validation.py"
+    },
+    "secret-contract": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [],
+      "pyproject_sha256": "26d85e4e68885695db02dd8580657bdb246b5c4b250ae77f44deb76f8c1e4b5d",
+      "uv_lock_sha256": "da891579944af8b1b128243c7ec13d75a72f65bda84bc44ecfa955136d202707",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/secret-contract",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/secret-contract.py"
+    },
+    "semgrep": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "annotated-types==0.8.0",
+        "anyio==4.15.1",
+        "attrs==26.1.0",
+        "boltons==21.0.0",
+        "bracex==3.0.1",
+        "certifi==2026.7.22",
+        "cffi==2.1.1",
+        "charset-normalizer==3.5.2",
+        "click-option-group==0.5.9",
+        "click==8.4.2",
+        "colorama==0.4.6",
+        "cryptography==50.0.2",
+        "exceptiongroup==1.2.2",
+        "face==26.0.1",
+        "glom==25.12.0",
+        "googleapis-common-protos==1.75.5",
+        "h11==0.16.0",
+        "httpcore==1.0.9",
+        "httpx-sse==0.4.3",
+        "httpx==0.28.1",
+        "idna==3.20",
+        "importlib-metadata==8.7.1",
+        "jsonschema-specifications==2025.9.1",
+        "jsonschema==4.25.1",
+        "markdown-it-py==4.2.0",
+        "mcp==1.29.0",
+        "mdurl==0.1.2",
+        "opentelemetry-api==1.37.0",
+        "opentelemetry-exporter-otlp-proto-common==1.37.0",
+        "opentelemetry-exporter-otlp-proto-http==1.37.0",
+        "opentelemetry-instrumentation-requests==0.58b0",
+        "opentelemetry-instrumentation-threading==0.58b0",
+        "opentelemetry-instrumentation==0.58b0",
+        "opentelemetry-proto==1.37.0",
+        "opentelemetry-sdk==1.37.0",
+        "opentelemetry-semantic-conventions==0.58b0",
+        "opentelemetry-util-http==0.58b0",
+        "packaging==26.3",
+        "peewee==3.19.0",
+        "protobuf==6.33.6",
+        "pycparser==3.0",
+        "pydantic-core==2.46.5",
+        "pydantic-settings==2.15.0",
+        "pydantic==2.13.5",
+        "pygments==2.21.0",
+        "pyjwt==2.15.1",
+        "python-dotenv==1.2.4",
+        "python-multipart==0.0.32",
+        "referencing==0.37.0",
+        "requests==2.34.2",
+        "rich==15.0.0",
+        "rpds-py==2026.9.1",
+        "ruamel-yaml-clib==0.2.15",
+        "ruamel-yaml==0.19.1",
+        "semantic-version==2.10.0",
+        "semgrep==1.179.0",
+        "sse-starlette==3.5.0",
+        "starlette==1.7.0",
+        "tomli==2.4.1",
+        "typing-extensions==4.16.0",
+        "typing-inspection==0.4.4",
+        "urllib3==2.8.0",
+        "uvicorn==0.54.0",
+        "wcmatch==8.5.2",
+        "wrapt==1.17.3",
+        "zipp==4.1.1"
+      ],
+      "pyproject_sha256": "ce76159415146ca5c03dbce6be252b35c9c0508956faa37793c9b0a0068cff1f",
+      "uv_lock_sha256": "7066d45a0535b2e968002cdf264e3dfbf654369d0268771033fde12d841addd1",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/semgrep",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/semgrep.py"
+    },
+    "shell-syntax": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [],
+      "pyproject_sha256": "73aeedab94c232d530402671520dcbe97b32d29115d829ec781609bc593b2029",
+      "uv_lock_sha256": "093d42ed4f1924a84f4d820d0888dccb896f3ef8c9f7a5df8414deead9919f4e",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/shell-syntax",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/shell-syntax.py"
+    },
+    "source-contract": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [],
+      "pyproject_sha256": "b382e066f0ac2b7dc1c8dd12d32c2648e7a6f66784fd571044677042a34fec18",
+      "uv_lock_sha256": "f9263ddaaa665d29adae7a21261b2673fb28fba230e25d80872f220b0d358aa6",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/source-contract",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/source-contract.py"
+    },
+    "structural-complexity": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "PyYAML==6.0.3",
+        "annotated-types==0.8.0",
+        "pydantic-core==2.50.1",
+        "pydantic==2.14.1",
+        "ruff==0.16.10",
+        "typing-extensions==4.16.0",
+        "typing-inspection==0.4.4"
+      ],
+      "pyproject_sha256": "f15383667c543258ca9ef89bd4de27f6c8cb95af5ef0f02f777e7071719932ac",
+      "uv_lock_sha256": "f8415c60b221473df89d1c8b583252ec4ba26a83cf722217ca430cf878bd3bf3",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/structural-complexity",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/structural-complexity.py"
+    },
+    "structured-data": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "PyYAML==6.0.3"
+      ],
+      "pyproject_sha256": "dac01b39034c669ea91b6f6606ebc2fa47c03cd028a65a989412845186f71051",
+      "uv_lock_sha256": "90c2f186b10e63a24f8fecb75773129cab025cd7bb7cb2bfcdc8dbe359dfae36",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/structured-data",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/structured-data.py"
+    },
+    "terraform-validate": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [],
+      "pyproject_sha256": "0e079c550e62de2559fb9402199136d92e84af431e19df494b11ce99241ccf10",
+      "uv_lock_sha256": "251f74c193a2b5ac03beb8133cf8288008a8740d5b54842bd378276637c7a511",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/terraform-validate",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/terraform-validate.py"
+    },
+    "test-traceability": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [],
+      "pyproject_sha256": "b48c119ba1779d74da385a146a6f0847e01512b3b3ca7c800ecea7b567f4f1ad",
+      "uv_lock_sha256": "53327d26e8ed55828bbcaea161b6e8963337c6c1b4bc2b1acc16c33ca248ecdc",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/test-traceability",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/test-traceability.py"
+    },
+    "trivy": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [],
+      "pyproject_sha256": "9f73fbcb799db273861226cf21fb8e291b8f4be76957818d341c4b7966866b3b",
+      "uv_lock_sha256": "b9a6afde831a192ae57db41db08f206047dc9629b21842df2ac104973a55b451",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/trivy",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/trivy.py"
+    },
+    "unittest": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "coverage==7.17.0"
+      ],
+      "pyproject_sha256": "5f1a1a3d9563ae9f06f3a225ad6640341d055957b6a5744680b525f5aede0c05",
+      "uv_lock_sha256": "ce03a65776fa3976101b9e769082ea874456d4712bff5c753121d4d04b065943",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/unittest",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/unittest.py"
+    },
+    "uv-lock": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [],
+      "pyproject_sha256": "45d85770671b4ee78c5009075c1fbaf87086d2156cabc4101d59074038aa5089",
+      "uv_lock_sha256": "cf838fd4304f70f195850288dddee87b03564471f60196c033e7b8db5c0399cc",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/uv-lock",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/uv-lock.py"
+    },
+    "yamllint": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "pathspec==1.1.1",
+        "pyyaml==6.0.3",
+        "yamllint==1.38.0"
+      ],
+      "pyproject_sha256": "2f8b7bd5570a32e686e7a9b27c05ce3871ae2e75cbdc05651ef929ec332c034c",
+      "uv_lock_sha256": "78200cda70579a1d55394f1368a5cea76da6d2e430eba74e11316144a60ff7b7",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/yamllint",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/yamllint.py"
+    },
+    "cargo-check": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [],
+      "pyproject_sha256": "c9f26db6c88d6456790f4af0a82f3964ccd248a7a583bbed9a75a329eb8ff82b",
+      "uv_lock_sha256": "bc8ed16deed89e9bd91173cc120e05ec608828355c9421207e225593532f4982",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/cargo-check",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/cargo-check.py"
+    },
+    "cargo-clippy": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [],
+      "pyproject_sha256": "66b92e0064d3be21b18e76a6428993ee106f248b96c98ddc30dec1ddbd1401a0",
+      "uv_lock_sha256": "bd7a9937d73db084d44c004a0f30253829c776d30f7c0b57754b367a010dab5f",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/cargo-clippy",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/cargo-clippy.py"
+    },
+    "cargo-fmt": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [],
+      "pyproject_sha256": "98a0b8d0c014ee33d0c5060a45bb20868d5c52041cd108ebbdb1f457bd64e367",
+      "uv_lock_sha256": "6ec52f1a54e702bac1cad42e1a58b9395d17d87b8379937bf0e053e221e9de58",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/cargo-fmt",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/cargo-fmt.py"
+    },
+    "cargo-test": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [],
+      "pyproject_sha256": "c12251bc2ffeda17ed20f6240a9c4d095876672f42a7115fd00224d310776afb",
+      "uv_lock_sha256": "7984c2521d2a5ef9da03a83679c135beaa08351664309a80b64c08abc1a90a7f",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/cargo-test",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/cargo-test.py"
+    },
+    "cargo-llvm-cov": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [],
+      "pyproject_sha256": "9477bf08a1941a844edddab7b2fca1b36b64d3c01a1ee23d5866f24447960033",
+      "uv_lock_sha256": "528e191951cfe4ff6da8b0ac223139b9e35b5ae4969c95144f0d4f5a7a1a8452",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/cargo-llvm-cov",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/cargo-llvm-cov.py"
+    },
+    "cargo-mutants": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [],
+      "pyproject_sha256": "b18765f82c6914979c03a99de7537e2645ba037dd673bae1d5499bc2f5c33a8c",
+      "uv_lock_sha256": "6cb1da2dc8dbc8e287bad0f158657f31093c3c319d94d8d62ff916d09ac32aad",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/cargo-mutants",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/cargo-mutants.py"
+    },
+    "cargo-deny": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [],
+      "pyproject_sha256": "f73a5294f21c846cf9b8e8c4c77a4292d0d3952d377676bff057e7f4244982b5",
+      "uv_lock_sha256": "5efaabe6f8de586ef428d0c9f6cf080b1b3f82e09af2b682e3b7ff3ccc59a57e",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/cargo-deny",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/cargo-deny.py"
+    },
+    "pace-t": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "pydantic==2.14.2",
+        "cryptography==50.0.2",
+        "duckdb==1.5.4",
+        "psycopg[binary]==3.3.6",
+        "pytest==9.2.0",
+        "coverage==7.17.0",
+        "hypothesis==6.170.14"
+      ],
+      "pyproject_sha256": "0c216ec50befc22e1b551809266a40d685262548b201999be62a3d0cda17429a",
+      "uv_lock_sha256": "29fe8163467b9d59a1346ec2ecf9fa9def0a5e958ec512971d48f213f15dea92",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/pace-t",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/pace-t.py"
+    },
+    "verification-validation": {
+      "declared_python": "3.13.15",
+      "declared_dependencies": [
+        "pydantic==2.14.2",
+        "cryptography==50.0.2",
+        "duckdb==1.5.4",
+        "psycopg[binary]==3.3.6",
+        "pytest==9.2.0",
+        "coverage==7.17.0",
+        "hypothesis==6.170.14"
+      ],
+      "pyproject_sha256": "68eb0e455070343852d430fb8d879fac9146f80dc991c5d4b9baa63850eeb46a",
+      "uv_lock_sha256": "cc4c8fc15e83b323c373bc2ba09132f8c488113d360aefe29c0fd93b858866c4",
+      "frozen_environment_command": [
+        "uv",
+        "sync",
+        "--frozen",
+        "--project",
+        "/workspace/scratch/e7495113964e/work/admission_sources/ci42/lanes/verification-validation",
+        "--python",
+        "3.13.15"
+      ],
+      "entrypoint": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/verification-validation.py"
+    }
+  }
+}

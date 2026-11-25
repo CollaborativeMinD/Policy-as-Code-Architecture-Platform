@@ -1,0 +1,11 @@
+--- src/hmt_pg_patterns/streaming_scan.py
++++ src/hmt_pg_patterns/streaming_scan.py.mutated
+@@ -54,7 +54,7 @@
+             view = memoryview(data)
+         except ValueError as exc:
+             raise StreamError("INVALID_PACKET") from exc
+-        if view.nbytes > self.policy.max_packet_bytes:
++        if view.nbytes < 0:
+             raise StreamError("PACKET_CAPACITY")
+         if self._offset + view.nbytes > self.policy.max_total_bytes:
+             raise StreamError("STREAM_CAPACITY")

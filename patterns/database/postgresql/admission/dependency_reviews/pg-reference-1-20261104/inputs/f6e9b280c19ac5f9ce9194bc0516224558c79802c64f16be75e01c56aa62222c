@@ -1,0 +1,33 @@
+{
+  "argv": [
+    "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+    "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/license-inventory.py",
+    "--root",
+    "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql",
+    "--roots-json",
+    "[\"annotated-types\", \"asyncpg\", \"asyncpg-stubs\", \"attrs\", \"coverage\", \"duckdb\", \"greenlet\", \"hypothesis\", \"iniconfig\", \"jsonschema\", \"jsonschema-specifications\", \"packaging\", \"pluggy\", \"polars\", \"polars-runtime-32\", \"psycopg\", \"psycopg-binary\", \"psycopg-pool\", \"pydantic\", \"pydantic-core\", \"pygments\", \"pyrsistent\", \"pytest\", \"pytest-asyncio\", \"pytest-cov\", \"pyyaml\", \"redis\", \"referencing\", \"rpds-py\", \"ruff\", \"sortedcontainers\", \"sqlalchemy\", \"sqlmodel\", \"typing-extensions\", \"typing-inspection\"]",
+    "--allowed-json",
+    "[\"MIT\", \"Apache\", \"BSD\", \"PSF\", \"Python Software Foundation\", \"MPL\", \"ISC\", \"CNRI\", \"Public Domain\", \"Unlicense\", \"LGPL-3.0-only\"]"
+  ],
+  "human_approval": false,
+  "native_engine": "e0b6b309db3c53b600962ab37233b9453f374ca6d6529d0b0e919d8c14fb1dad",
+  "profile": {
+    "bytes": 5321,
+    "path": "/workspace/scratch/e7495113964e/work/native_review/license/profile.json",
+    "sha256": "b74040e0a3317b837d8b7893c941ffbf3fa3bc8e91706d9c28af64d9c17418a9"
+  },
+  "promotion_authorized": false,
+  "returncode": 0,
+  "scope": "Installed Linux Python reference dependencies, metadata inventory only; no vendored dependencies shipped.",
+  "status": "PASS",
+  "stderr": {
+    "bytes": 0,
+    "path": "/workspace/scratch/e7495113964e/work/native_review/license/stderr.log",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "stdout": {
+    "bytes": 3859,
+    "path": "/workspace/scratch/e7495113964e/work/native_review/license/stdout.log",
+    "sha256": "413c2554778a31a620b047d90f231c4d9e86548ae8b6d41f65eed47bb6b68dad"
+  }
+}

@@ -1,0 +1,11 @@
+--- src/hmt_pg_patterns/streaming_scan.py
++++ src/hmt_pg_patterns/streaming_scan.py.mutated
+@@ -85,7 +85,7 @@
+                     if len(self._window) == p.window_size
+                     else 0
+                 )
+-                self._fingerprint = ((self._fingerprint << 8) + byte - old) % PRIME
++                self._fingerprint = ((self._fingerprint << 8) + byte + old) % PRIME
+                 self._window.append(byte)
+                 self._buffer.append(byte)
+                 self._offset += 1

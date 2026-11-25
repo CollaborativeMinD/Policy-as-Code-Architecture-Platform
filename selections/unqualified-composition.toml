@@ -1,0 +1,13 @@
+version = 1
+registry = "patterns@1"
+name = "retry-with-store"
+
+[[patterns]]
+id = "resilience-ooda"
+version = "1"
+configuration = "patterns/resilience_ooda/selections/ooda-starter.toml"
+
+[[patterns]]
+id = "PG-PAT-005"
+version = "1.0.0"
+configuration = "bindings/PG-PAT-005.toml"

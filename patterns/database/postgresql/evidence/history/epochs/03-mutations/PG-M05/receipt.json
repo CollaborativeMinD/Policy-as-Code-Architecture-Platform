@@ -1,0 +1,85 @@
+{
+  "id": "PG-M05",
+  "requirement": "PG-FENCE-001",
+  "path": "sql/02_authority.sql",
+  "selector": "tests/test_mutation_witnesses.py::test_epoch_guard_new_stream",
+  "outcome": "caught",
+  "source_digest": "e2b79b530a64931d056234ffba5ed3952c6af0deb1f309213ff858bbfdb7e6f1",
+  "mutated_source_digest": "4d0488f6bc348bb472b5a6209e4df1f36321deb5bc48fd5f066bc0ea3cd8d268",
+  "restored_source_digest": "e2b79b530a64931d056234ffba5ed3952c6af0deb1f309213ff858bbfdb7e6f1",
+  "restoration_observed": true,
+  "restored_file_sha256": "cf3df01dd62ebddf42b6e61ffea4caabe21027301ce1287170ffbd24df21a9ed",
+  "application_error": null,
+  "mutation_process": {
+    "status": "FAIL",
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--tb=short",
+      "-o",
+      "addopts=",
+      "-p",
+      "tools.mutation_probe",
+      "--junitxml=/workspace/scratch/e7495113964e/work/epochs/03-mutations/PG-M05/mutated/junit.xml",
+      "tests/test_mutation_witnesses.py::test_epoch_guard_new_stream"
+    ],
+    "returncode": 1,
+    "reason": "COMPLETE",
+    "seconds": 3.081617460000416,
+    "captured_bytes": 651,
+    "stdout": "pytest.stdout.log",
+    "stderr": "pytest.stderr.log",
+    "import_verified": true,
+    "source_unchanged": true,
+    "source_digest": "4d0488f6bc348bb472b5a6209e4df1f36321deb5bc48fd5f066bc0ea3cd8d268"
+  },
+  "mutation_tests": {
+    "valid": true,
+    "tests": 1,
+    "failures": 1,
+    "assertion_failures": 1,
+    "errors": 0,
+    "skipped": 0,
+    "test_ids": [
+      "tests/test_mutation_witnesses.py::test_epoch_guard_new_stream"
+    ]
+  },
+  "restoration_process": {
+    "status": "PASS",
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--tb=short",
+      "-o",
+      "addopts=",
+      "-p",
+      "tools.mutation_probe",
+      "--junitxml=/workspace/scratch/e7495113964e/work/epochs/03-mutations/PG-M05/restored/junit.xml",
+      "tests/test_mutation_witnesses.py::test_epoch_guard_new_stream"
+    ],
+    "returncode": 0,
+    "reason": "COMPLETE",
+    "seconds": 3.1963204280000355,
+    "captured_bytes": 98,
+    "stdout": "pytest.stdout.log",
+    "stderr": "pytest.stderr.log",
+    "import_verified": true,
+    "source_unchanged": true,
+    "source_digest": "e2b79b530a64931d056234ffba5ed3952c6af0deb1f309213ff858bbfdb7e6f1"
+  },
+  "restoration_tests": {
+    "valid": true,
+    "tests": 1,
+    "failures": 0,
+    "assertion_failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "test_ids": [
+      "tests/test_mutation_witnesses.py::test_epoch_guard_new_stream"
+    ]
+  }
+}

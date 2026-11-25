@@ -1,0 +1,28 @@
+{
+  "baseline": "e3387ddb0772fdeaa4093f7b049033c5ef6f43eb",
+  "candidate": "9bc06522f27d4576f08caf44f4989031d1b145f1",
+  "epoch": "pg-reference-2-20261104",
+  "git_files": 208,
+  "human_approval": false,
+  "native_engine_identity": "07b713e95b924fe6bed0755b06f7a62385368301fd1ef31c104b5f3d2fc7536c",
+  "native_supply": {
+    "applicability": "APPLICABLE",
+    "detail": "32 manifest/artifact surfaces; nine review families per admitted surface.",
+    "disposition": "PASS",
+    "findings": [],
+    "gate_id": "G-SUPPLY-002"
+  },
+  "overlay": {
+    "bytes": 572753,
+    "path": "/workspace/scratch/e7495113964e/work/admission_overlay/manifest.json",
+    "sha256": "efb8e82791417a1d91dee6a2a173afb37d2138cf1789b62cb4b62b0e5e6ebf6c"
+  },
+  "policy": {
+    "bytes": 87524,
+    "path": "/workspace/scratch/e7495113964e/work/native_review/pg-reference-2-20261104/policy.json",
+    "sha256": "6a819f707026021de229ffd9d5aebb6e39d9f594c6f4df6d09fa93abd48c26e2"
+  },
+  "promotion_authorized": false,
+  "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+  "status": "PASS"
+}

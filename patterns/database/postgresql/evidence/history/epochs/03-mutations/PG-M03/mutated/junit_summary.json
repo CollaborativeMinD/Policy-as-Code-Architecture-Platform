@@ -1,0 +1,11 @@
+{
+  "valid": true,
+  "tests": 1,
+  "failures": 1,
+  "assertion_failures": 1,
+  "errors": 0,
+  "skipped": 0,
+  "test_ids": [
+    "tests/test_streaming_scanner.py::test_mutable_packet_is_snapshotted_and_partial_feed_aborts"
+  ]
+}

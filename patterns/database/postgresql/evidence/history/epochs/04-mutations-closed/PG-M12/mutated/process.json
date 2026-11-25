@@ -1,0 +1,25 @@
+{
+  "status": "FAIL",
+  "argv": [
+    "/workspace/scratch/e7495113964e/work/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "--tb=short",
+    "-o",
+    "addopts=",
+    "-p",
+    "tools.mutation_probe",
+    "--junitxml=/workspace/scratch/e7495113964e/work/epochs/04-mutations-closed/PG-M12/mutated/junit.xml",
+    "tests/test_mutation_witnesses.py::test_pace_guard_precedes_callback"
+  ],
+  "returncode": 1,
+  "reason": "COMPLETE",
+  "seconds": 0.7967505059968971,
+  "captured_bytes": 681,
+  "stdout": "pytest.stdout.log",
+  "stderr": "pytest.stderr.log",
+  "import_verified": true,
+  "source_unchanged": true,
+  "source_digest": "7b9bb0e95fdf58651a2d6380bd6cd3097030c6440dd5a80379056a854be2ecfd"
+}

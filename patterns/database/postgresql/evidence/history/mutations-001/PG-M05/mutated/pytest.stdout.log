@@ -1,0 +1,10 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_________________________ test_epoch_guard_new_stream __________________________
+tests/test_mutation_witnesses.py:18: in test_epoch_guard_new_stream
+    with pytest.raises(psycopg.Error, match="AUTHORITY_DENIED"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE Error
+=========================== short test summary info ============================
+FAILED tests/test_mutation_witnesses.py::test_epoch_guard_new_stream - Failed...
+1 failed in 2.16s

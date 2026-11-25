@@ -1,0 +1,17 @@
+version = 1
+catalog = "resilience-ooda@1"
+name = "ooda-starter"
+
+[profiles.delivery]
+kind = "ooda"
+attempts = 3
+window_ns = 10_000_000_000
+attempt_bound_ns = 750_000_000
+fallback_reserve_ns = 100_000_000
+uncertainty_ns = 10_000_000
+backoff_ns = 50_000_000
+
+[profiles.lookup]
+kind = "basic"
+attempts = 3
+backoff_ms = 0

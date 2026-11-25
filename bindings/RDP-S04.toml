@@ -1,0 +1,7 @@
+version = 1
+pattern = "RDP-S04"
+scope = "software"
+
+[settings]
+guards = ["scanner", "semantic", "watchdog"]
+semantic_label = "READ"

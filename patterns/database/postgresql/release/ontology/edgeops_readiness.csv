@@ -1,0 +1,4 @@
+deployment_unit_id,topology_choice,service_name,dependency_ref,probe_policy_ref,pace_lane,rollback_point_ref,orchestration_status,shutdown_behavior_ref,evidence_id
+PG-UNIT-SOFTWARE-P,fixed child process with external PostgreSQL and Redis,hmt-pg-worker,uv.lock,src/hmt_pg_patterns/worker_service.py::_state,P,\N,software_reference_only_not_deployed,src/hmt_pg_patterns/worker_io.py::process_deadline,evidence/software/summary.json
+PG-UNIT-SOFTWARE-A,database effects continue while Redis projection is unavailable,hmt-pg-worker,uv.lock,src/hmt_pg_patterns/worker_service.py::_state,A,\N,software_reference_only_not_deployed,deployment/hmt-pg-worker.service,evidence/software/summary.json
+PG-UNIT-EXTERNAL-QUALIFICATION,Tailcat pinned peer to fixed LOGIN worker,hmt-pg-worker,qualification/tailcat_wire_test.py,qualification/native_worker_test.py,\N,\N,NOT_QUALIFIED,deployment/hmt-pg-worker.service,evidence/history/epochs/03-tailcat.xml

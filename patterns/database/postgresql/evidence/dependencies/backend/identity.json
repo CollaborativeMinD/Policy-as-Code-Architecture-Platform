@@ -1,0 +1,22 @@
+{
+  "artifact": {
+    "bytes": 876263,
+    "path": "/workspace/scratch/e7495113964e/work/native_review/backend/setuptools-84.2.1-py3-none-any.whl",
+    "sha256": "ca140b45d5325a9478f880e351484f62fef15f336462e449ca0c03c873d589c2"
+  },
+  "name": "setuptools",
+  "published_sha256": "ca140b45d5325a9478f880e351484f62fef15f336462e449ca0c03c873d589c2",
+  "pypi_metadata": {
+    "bytes": 8162,
+    "path": "/workspace/scratch/e7495113964e/work/native_review/backend/pypi-metadata.json",
+    "sha256": "d75de8ba0d3304a3d74484fb9f340edb87ef02712da4fa02a2ed92e71b0572dd"
+  },
+  "requirements": {
+    "bytes": 98,
+    "path": "/workspace/scratch/e7495113964e/work/native_review/backend/requirements.txt",
+    "sha256": "0d5ab27e0fa2cc72eeb7a0b3fa12dba6f34bbc8df2c7dac705c08aafb18c20d7"
+  },
+  "scope": "Build backend only; scratch inventory lock is not the product lock.",
+  "source_url": "https://files.pythonhosted.org/packages/ef/55/6dc6d6bb953bdfc52519a0059592c52b6e3b8ad51cf8256dffceb55b0610/setuptools-84.2.1-py3-none-any.whl",
+  "version": "84.2.1"
+}

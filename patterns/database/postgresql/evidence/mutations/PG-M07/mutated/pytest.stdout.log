@@ -1,0 +1,10 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+______________ test_expiration_is_rechecked_after_authority_lock _______________
+tests/test_authority_security.py:91: in test_expiration_is_rechecked_after_authority_lock
+    with pytest.raises(psycopg.Error, match="AUTHORITY_EXPIRED"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE Error
+=========================== short test summary info ============================
+FAILED tests/test_authority_security.py::test_expiration_is_rechecked_after_authority_lock
+1 failed in 1.97s

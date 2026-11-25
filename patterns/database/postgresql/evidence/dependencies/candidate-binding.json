@@ -1,0 +1,46 @@
+{
+  "baseline": "e3387ddb0772fdeaa4093f7b049033c5ef6f43eb",
+  "byte_identical_review_snapshot_modules": [
+    "n073_snapshot.py",
+    "n081_dependency_surface.py",
+    "n082_dependencies.py",
+    "n037_Review.py",
+    "n038_Admission.py",
+    "n040_Policy.py",
+    "n068_verify_reviews.py"
+  ],
+  "candidate": "4cbd9152b079cf3f745b5de4ac6e181cc2f782d9",
+  "declared_overlay": {
+    "bytes": 572753,
+    "path": "/workspace/scratch/e7495113964e/work/admission_overlay/manifest.json",
+    "sha256": "efb8e82791417a1d91dee6a2a173afb37d2138cf1789b62cb4b62b0e5e6ebf6c"
+  },
+  "git_files": 208,
+  "human_approval": false,
+  "native_engine_identity": "07b713e95b924fe6bed0755b06f7a62385368301fd1ef31c104b5f3d2fc7536c",
+  "native_supply": {
+    "applicability": "APPLICABLE",
+    "detail": "32 manifest/artifact surfaces; nine review families per admitted surface.",
+    "disposition": "PASS",
+    "findings": [],
+    "gate_id": "G-SUPPLY-002"
+  },
+  "original_snapshot_failure": {
+    "cause": "Known resource symbol collision: api.resource resolves to JSON resource-loader function, so native ceilings attempts attributes on that function before OS limits.",
+    "exception": "subprocess.SubprocessError: Exception occurred in preexec_fn.",
+    "failure_retained": true,
+    "proof": {
+      "bytes": 11770,
+      "path": "/workspace/scratch/e7495113964e/work/admission_overlay/regression.json",
+      "sha256": "68123015781d19020e342395891cd33f23d159e93f5f8825529dcb041ecde3df"
+    }
+  },
+  "policy": {
+    "bytes": 87524,
+    "path": "/workspace/scratch/e7495113964e/work/native_review/pg-reference-1-20261104/policy.json",
+    "sha256": "3847a106df2212e5e9f5f91ca6e4a765740bea618bb638825deb94d123fd88b2"
+  },
+  "promotion_authorized": false,
+  "source_digest": "6710f678900766f47969172cc2f1da03de3eb9d6fb42ca86135cb2e3f59ca11d",
+  "status": "PASS"
+}

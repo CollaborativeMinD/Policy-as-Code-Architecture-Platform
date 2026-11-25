@@ -1,0 +1,8 @@
+version = 1
+pattern = "RDP-B04"
+scope = "software"
+
+[settings]
+operation_id = "fixture"
+value = 3
+mode = "COMMIT_CONFINED_TEST"

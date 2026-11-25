@@ -1,0 +1,363 @@
+{
+  "schema": "hmt-python-power10-platform-mapping/1",
+  "scope": "owned src/hmt_pg_patterns Python; SQL contracts separately bind authority and atomicity",
+  "rules": {
+    "P10-01": {
+      "mapping": "Production code avoids dynamic eval/exec/compile; explicit bounded control and exception contracts are checked by fresh analyzers and the complete loop-site inventory. Dependency internals are outside the owned control-flow claim.",
+      "test_id": "POWER10:ANALYZERS"
+    },
+    "P10-02": {
+      "mapping": "Every observed production loop is bound to an explicit reviewed finite collection/limit and a current executed witness; no unobserved loop is admitted.",
+      "test_id": "tests/test_query_contracts.py::test_infinite_iterator_has_finite_rejection_boundary"
+    },
+    "P10-03": {
+      "mapping": "Python allocates dynamically; the platform mapping is finite input, packet, frame, row, pool and retry budgets, not a claim of no heap allocation after initialization.",
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[stream_limits]"
+    },
+    "P10-04": {
+      "mapping": "Fresh physical-line structural check requires every function<50 and module<150 lines; argument and nesting limits remain active.",
+      "test_id": "POWER10:ANALYZERS"
+    },
+    "P10-05": {
+      "mapping": "Runtime contracts use explicit exceptions and strict closed validation rather than optimizable assert statements; independently asserted negative and positive behavior supplies check evidence.",
+      "test_id": "tests/test_config.py::test_unvalidated_copy_cannot_bypass_connection_admission[connect_kwargs]"
+    },
+    "P10-06": {
+      "mapping": "Authority snapshots are deeply immutable; caller-owned nested values are detached and no production global mutation statement is permitted.",
+      "test_id": "tests/test_checkpoints_cache.py::test_snapshot_is_persistent_and_encoding_is_exact"
+    },
+    "P10-07": {
+      "mapping": "Public parameters are revalidated at execution boundaries; failed transactions and uncertain teardown outcomes remain classified and cannot silently succeed.",
+      "test_id": "tests/test_query_contracts.py::test_validation_bypass_and_nested_mutation_are_rejected_or_snapshotted"
+    },
+    "P10-08": {
+      "mapping": "Python has no user preprocessor in this branch; dynamic SQL values stay parameter-bound and identifiers come from a closed quoted allowlist.",
+      "test_id": "tests/test_query_contracts.py::test_identifier_allowlist_rejects_sql_text[metrics;DROP TABLE x]"
+    },
+    "P10-09": {
+      "mapping": "Python references replace pointer arithmetic: exact types, immutable snapshots and copied input bytes prevent caller mutation from changing admitted authority.",
+      "test_id": "tests/test_streaming_scanner.py::test_mutable_packet_is_snapshotted_and_partial_feed_aborts"
+    },
+    "P10-10": {
+      "mapping": "Fresh Ruff, mypy and Pyrefly run with an explicit pinned analyzer interpreter and must all succeed on the same production source; native CI42 retains its independent checks.",
+      "test_id": "POWER10:ANALYZERS"
+    }
+  },
+  "bound_sites": [
+    {
+      "rule": "P10-02",
+      "line": 27,
+      "path": "src/hmt_pg_patterns/analytics.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "16d2f177fa01d91a6ddc1e680d0ad5de16e515ab3e4c399151285cbe6d90c0e3",
+      "bound": "Server query has Window.limit<=10000; finite page_count and batch_size<=4096 bound fetches and frame rows.",
+      "test_id": "tests/test_bulk_analytics.py::test_server_cursor_batches_have_explicit_stable_schema"
+    },
+    {
+      "rule": "P10-02",
+      "line": 54,
+      "path": "src/hmt_pg_patterns/analytics.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "e422218b56bf938de2ba37f5baa6e223e1d5c40f4fa5ece10be1f96cb068dc43",
+      "bound": "Server query has Window.limit<=10000; finite page_count and batch_size<=4096 bound fetches and frame rows.",
+      "test_id": "tests/test_bulk_analytics.py::test_server_cursor_batches_have_explicit_stable_schema"
+    },
+    {
+      "rule": "P10-02",
+      "line": 37,
+      "path": "src/hmt_pg_patterns/async_driver.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "dfeb5e9d8e06ff92e2bcb44428a61792d2865751ef8194f07687c2d478a02128",
+      "bound": "Window.limit bounds fetched rows; attempts admitted 1..5 bounds whole-transaction retry.",
+      "test_id": "tests/test_async_driver.py::test_async_exhaustion_and_nonretry_error"
+    },
+    {
+      "rule": "P10-02",
+      "line": 18,
+      "path": "src/hmt_pg_patterns/async_driver.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "da4e342a66861cceb07430a2e6c3a569fb486f2e2e44043db2d3ee37cd1eadc7",
+      "bound": "Window.limit bounds fetched rows; attempts admitted 1..5 bounds whole-transaction retry.",
+      "test_id": "tests/test_async_driver.py::test_async_exhaustion_and_nonretry_error"
+    },
+    {
+      "rule": "P10-02",
+      "line": 21,
+      "path": "src/hmt_pg_patterns/asyncpg_driver.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "eb4621884cd447afacaefc1202d86f847d4ac3f83052c7680551c547ba6a47f1",
+      "bound": "Bound SQL LIMIT comes from Window.limit<=10000; one validation pass per returned row.",
+      "test_id": "tests/test_asyncpg_driver.py::test_asyncpg_bound_io_and_classified_close"
+    },
+    {
+      "rule": "P10-02",
+      "line": 20,
+      "path": "src/hmt_pg_patterns/bulk.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "6a584fa5effc4db8297f6fd91d366714763ce829de7836d2caf99d361f4afad8",
+      "bound": "Complete prevalidation materializes at most10000 rows; row10001 rejects before COPY or pipeline side effects.",
+      "test_id": "tests/test_bulk_analytics.py::test_bulk_validates_entire_batch_before_first_database_effect"
+    },
+    {
+      "rule": "P10-02",
+      "line": 30,
+      "path": "src/hmt_pg_patterns/bulk.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "7804672d1202eef6c85cdc7ea03c611f5692e61a4a79b2cf8f0575375294376f",
+      "bound": "Complete prevalidation materializes at most10000 rows; row10001 rejects before COPY or pipeline side effects.",
+      "test_id": "tests/test_bulk_analytics.py::test_bulk_validates_entire_batch_before_first_database_effect"
+    },
+    {
+      "rule": "P10-02",
+      "line": 24,
+      "path": "src/hmt_pg_patterns/checkpoints_snapshot.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "9bd382dd91c782b20a4afef35f784d79b6e3839f6db35db7caf6c8d7e53c75e8",
+      "bound": "Literal tuples contain three integer names and two digest names; checkpoint is a closed model.",
+      "test_id": "tests/test_checkpoints_cache.py::test_snapshot_is_persistent_and_encoding_is_exact"
+    },
+    {
+      "rule": "P10-02",
+      "line": 26,
+      "path": "src/hmt_pg_patterns/checkpoints_snapshot.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "86624d011ac06c03a4d8f24f22ad61d468e1b3c7ef8a9448755788996b0df304",
+      "bound": "Literal tuples contain three integer names and two digest names; checkpoint is a closed model.",
+      "test_id": "tests/test_checkpoints_cache.py::test_snapshot_is_persistent_and_encoding_is_exact"
+    },
+    {
+      "rule": "P10-02",
+      "line": 62,
+      "path": "src/hmt_pg_patterns/config.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "1b8304dfbe06845c5aeb02ce7369ff2529d4d968e3e68f5584819243653262c0",
+      "bound": "server_settings returns a fixed five-key dictionary; no caller-controlled collection.",
+      "test_id": "tests/test_config.py::test_secret_safe_config_and_bounded_settings"
+    },
+    {
+      "rule": "P10-02",
+      "line": 18,
+      "path": "src/hmt_pg_patterns/migrations.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "e075ab65cdceced018c1f8eae1377723d9f2cb3517f8ae3254e5d236a7d9d9d2",
+      "bound": "Migration inventory admits at most99 named files, each<=262144 bytes; checksums bind the admitted list.",
+      "test_id": "tests/test_migrations.py::test_checksum_bound_migration_and_transaction_rollback"
+    },
+    {
+      "rule": "P10-02",
+      "line": 37,
+      "path": "src/hmt_pg_patterns/migrations.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "6254f3602c70d18725fa3f01a4daa15853a37d99eb8fe21439c47895774c8626",
+      "bound": "Migration inventory admits at most99 named files, each<=262144 bytes; checksums bind the admitted list.",
+      "test_id": "tests/test_migrations.py::test_checksum_bound_migration_and_transaction_rollback"
+    },
+    {
+      "rule": "P10-02",
+      "line": 24,
+      "path": "src/hmt_pg_patterns/models.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "19debeecb6e4ada8750a856eee936ad972f307f90c61c7c0db27fe1cc7f9f106",
+      "bound": "Telemetry mapping has at most64 fields with bounded names and finite numeric values.",
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[contract_rejection]"
+    },
+    {
+      "rule": "P10-02",
+      "line": 34,
+      "path": "src/hmt_pg_patterns/orm.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "f2379544e4c5e708c41374b8fbc0ef48b47964fb467f8233c8a38e8ea6126804",
+      "bound": "Literal connection key tuple has five entries; SQL LIMIT bounds returned mapping rows by Window.limit<=10000.",
+      "test_id": "tests/test_orm_drivers.py::test_core_and_sqlmodel_commit_and_seek[hmt_pg_patterns.orm]"
+    },
+    {
+      "rule": "P10-02",
+      "line": 64,
+      "path": "src/hmt_pg_patterns/orm.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "e990c88147f6df7504adf015d6dc4473c568106145ef8761988d6cae284e4f0c",
+      "bound": "Literal connection key tuple has five entries; SQL LIMIT bounds returned mapping rows by Window.limit<=10000.",
+      "test_id": "tests/test_orm_drivers.py::test_core_and_sqlmodel_commit_and_seek[hmt_pg_patterns.orm]"
+    },
+    {
+      "rule": "P10-02",
+      "line": 29,
+      "path": "src/hmt_pg_patterns/orm_async.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "e990c88147f6df7504adf015d6dc4473c568106145ef8761988d6cae284e4f0c",
+      "bound": "SQL LIMIT bounds returned mapping rows by Window.limit<=10000.",
+      "test_id": "tests/test_orm_drivers.py::test_sqlalchemy_async_uses_native_psycopg"
+    },
+    {
+      "rule": "P10-02",
+      "line": 49,
+      "path": "src/hmt_pg_patterns/orm_model.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "db98053b465d800b101fbad7a1726954018191eacdf54ac29e4d0dc4983cddda",
+      "bound": "SQLModel seek statement applies admitted Window.limit<=10000.",
+      "test_id": "tests/test_orm_drivers.py::test_core_and_sqlmodel_commit_and_seek[hmt_pg_patterns.orm_model]"
+    },
+    {
+      "rule": "P10-02",
+      "line": 49,
+      "path": "src/hmt_pg_patterns/outbox.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "7ff44ba7ccd6a694f8aba0dfacb1d0efc207090ae8a5bf4eca691022ccecc638",
+      "bound": "recover accepts limit1..100 and binds it to SQL LIMIT; each result becomes one closed claim.",
+      "test_id": "tests/test_outbox_recovery.py::test_claim_token_state_and_transaction_guards"
+    },
+    {
+      "rule": "P10-02",
+      "line": 10,
+      "path": "src/hmt_pg_patterns/pace.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "90269441e817749f17e1483759df17cf87235b88fca95048f4d734ee9599b644",
+      "bound": "Mode is a closed five-value enum; enumeration builds only its ordinal ordering.",
+      "test_id": "tests/test_pace.py::test_capability_contracts[changes0-P]"
+    },
+    {
+      "rule": "P10-02",
+      "line": 52,
+      "path": "src/hmt_pg_patterns/queries.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "dbc6ec7a126df575b831419125f056cfd3ef8300a88621d90e4253e1089092b2",
+      "bound": "islice stops after10001 values; the extra value is a negative bound witness before any persistence.",
+      "test_id": "tests/test_query_contracts.py::test_infinite_iterator_has_finite_rejection_boundary"
+    },
+    {
+      "rule": "P10-02",
+      "line": 41,
+      "path": "src/hmt_pg_patterns/streaming_contracts.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "e29417976c5ff35fc57def12b730d6be14e8093abbfa9e89747b69c912114d03",
+      "bound": "dataclasses.fields returns the fixed Policy field schema, independent of stream content.",
+      "test_id": "tests/test_streaming_scanner.py::test_all_policy_dimensions_are_typed_and_finite[change0]"
+    },
+    {
+      "rule": "P10-02",
+      "line": 44,
+      "path": "src/hmt_pg_patterns/streaming_runtime.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "a4d7152ea68422877bb3db605cff239808518b8ce04065135f9e10d9b2a93f59",
+      "bound": "max_packets, max_packet_bytes, max_total_bytes, quantum_bytes and deadline jointly bound source, inner packet and emitted chunk work; sink backpressure admits no queue.",
+      "test_id": "tests/test_streaming_pipeline.py::test_empty_packet_source_stops_at_finite_admission_count"
+    },
+    {
+      "rule": "P10-02",
+      "line": 64,
+      "path": "src/hmt_pg_patterns/streaming_runtime.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "3be9dec08b396ee249eeb3d64d3e5ac8e5985e9197cad5c41fe1769271c520ee",
+      "bound": "max_packets, max_packet_bytes, max_total_bytes, quantum_bytes and deadline jointly bound source, inner packet and emitted chunk work; sink backpressure admits no queue.",
+      "test_id": "tests/test_streaming_pipeline.py::test_empty_packet_source_stops_at_finite_admission_count"
+    },
+    {
+      "rule": "P10-02",
+      "line": 55,
+      "path": "src/hmt_pg_patterns/streaming_runtime.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "77b48cbd8e074ebd3316b54984680ae583e22704c6d5c69875011205ecb8c1f6",
+      "bound": "max_packets, max_packet_bytes, max_total_bytes, quantum_bytes and deadline jointly bound source, inner packet and emitted chunk work; sink backpressure admits no queue.",
+      "test_id": "tests/test_streaming_pipeline.py::test_empty_packet_source_stops_at_finite_admission_count"
+    },
+    {
+      "rule": "P10-02",
+      "line": 58,
+      "path": "src/hmt_pg_patterns/streaming_runtime.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "e7cfd4e707b7a13625003121f86e4d0182df5b4d8e447444e0c25fc14e1b9355",
+      "bound": "max_packets, max_packet_bytes, max_total_bytes, quantum_bytes and deadline jointly bound source, inner packet and emitted chunk work; sink backpressure admits no queue.",
+      "test_id": "tests/test_streaming_pipeline.py::test_empty_packet_source_stops_at_finite_admission_count"
+    },
+    {
+      "rule": "P10-02",
+      "line": 81,
+      "path": "src/hmt_pg_patterns/streaming_scan.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "c1ddf5e21b7a7a2d122db8aea82887409422d0202fdf7ae77315121ee9f16309",
+      "bound": "Removal lookup has exactly256 entries; feed admits bytes<=max_packet_bytes and total<=max_total_bytes, retains window_size and max_size buffers only.",
+      "test_id": "tests/test_streaming_scanner.py::test_invalid_packet_capacity_and_released_views"
+    },
+    {
+      "rule": "P10-02",
+      "line": 19,
+      "path": "src/hmt_pg_patterns/streaming_scan.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "12265786008936e67e6955a53b8b26867c39b6355b61b1d5906a5dce10ef0df7",
+      "bound": "Removal lookup has exactly256 entries; feed admits bytes<=max_packet_bytes and total<=max_total_bytes, retains window_size and max_size buffers only.",
+      "test_id": "tests/test_streaming_scanner.py::test_invalid_packet_capacity_and_released_views"
+    },
+    {
+      "rule": "P10-02",
+      "line": 13,
+      "path": "src/hmt_pg_patterns/streaming_writer.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "c04326342c62e758c8e238503f54c8a05b87adaa54a2e1feaedd5d7877c33f78",
+      "bound": "Source packet count<=max_packets; scanner output count is bounded by packet bytes/min_size plus final tail; total stream bound and owned close remain active.",
+      "test_id": "tests/test_streaming_writer.py::test_writer_empty_cap_and_strict_epoch"
+    },
+    {
+      "rule": "P10-02",
+      "line": 28,
+      "path": "src/hmt_pg_patterns/streaming_writer.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "dcd5f2d30973e1a06006f535f7d88d8f27628670034f7c7395238eef39770c85",
+      "bound": "Source packet count<=max_packets; scanner output count is bounded by packet bytes/min_size plus final tail; total stream bound and owned close remain active.",
+      "test_id": "tests/test_streaming_writer.py::test_writer_empty_cap_and_strict_epoch"
+    },
+    {
+      "rule": "P10-02",
+      "line": 36,
+      "path": "src/hmt_pg_patterns/sync_driver.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "5a18de1ca717019e652895b8f1b3948bc89d392e682a041238ae92263e39fa1a",
+      "bound": "Window.limit bounds fetched rows; attempts admitted1..5 bounds whole-transaction retry.",
+      "test_id": "tests/test_sync_driver.py::test_retry_exhaustion_rolls_back"
+    },
+    {
+      "rule": "P10-02",
+      "line": 18,
+      "path": "src/hmt_pg_patterns/sync_driver.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "d859b86f424721340bd6ec1718ae4e2d6fcfc30e8a0aeec38018b4cce95db935",
+      "bound": "Window.limit bounds fetched rows; attempts admitted1..5 bounds whole-transaction retry.",
+      "test_id": "tests/test_sync_driver.py::test_retry_exhaustion_rolls_back"
+    },
+    {
+      "rule": "P10-02",
+      "line": 34,
+      "path": "src/hmt_pg_patterns/worker_io.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "d96598cb29d31bcc3920e99c81d82155896a333c46471974c8b8d8eb00a6ed0f",
+      "bound": "Ingress admitted maximum bytes and absolute monotonic deadline bound reads; one extra byte detects overflow.",
+      "test_id": "tests/test_worker_contracts.py::test_ingress_stall_and_expired_budget"
+    },
+    {
+      "rule": "P10-02",
+      "line": 11,
+      "path": "src/hmt_pg_patterns/worker_projection.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "008c0f7d10026fe4d52bc35257e89dc3789f716d0732f3ed6ae80f05a02d6fc8",
+      "bound": "maximum admitted1..514 bounds relay calls; recovery uses ceil(maximum/100) pages with SQL LIMIT<=100 and stops on UNKNOWN.",
+      "test_id": "tests/test_worker_e2e.py::test_worker_commits_replays_reconciles_and_obeys_revocation"
+    },
+    {
+      "rule": "P10-02",
+      "line": 15,
+      "path": "src/hmt_pg_patterns/worker_projection.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "71e2439596c5747336e842fd69b59b4963a278e549b6da14a0180fe41d4df08c",
+      "bound": "maximum admitted1..514 bounds relay calls; recovery uses ceil(maximum/100) pages with SQL LIMIT<=100 and stops on UNKNOWN.",
+      "test_id": "tests/test_worker_e2e.py::test_worker_commits_replays_reconciles_and_obeys_revocation"
+    },
+    {
+      "rule": "P10-02",
+      "line": 19,
+      "path": "src/hmt_pg_patterns/worker_projection.py",
+      "mechanism": "loop_bound",
+      "ast_digest": "4e5257584701c2222404ac3b71ff990eaa23333c2c876f8d35213aa373b868a4",
+      "bound": "maximum admitted1..514 bounds relay calls; recovery uses ceil(maximum/100) pages with SQL LIMIT<=100 and stops on UNKNOWN.",
+      "test_id": "tests/test_worker_e2e.py::test_worker_commits_replays_reconciles_and_obeys_revocation"
+    }
+  ]
+}

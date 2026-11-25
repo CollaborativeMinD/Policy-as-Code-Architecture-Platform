@@ -1,0 +1,130 @@
+{
+  "generator_sources": [
+    {
+      "bytes": 2877,
+      "path": "/workspace/scratch/e7495113964e/work/native_review/backend_check.py",
+      "sha256": "140f4c4fe532a012ce20533d9dba0c41d0686d77f76308e2fb51e4b18135da5f"
+    },
+    {
+      "bytes": 6627,
+      "path": "/workspace/scratch/e7495113964e/work/native_review/generate.py",
+      "sha256": "01ba57bb76df2c6e081a99a365e2105fb66b08b1931e7ff0580d91c3b8ee5259"
+    },
+    {
+      "bytes": 4317,
+      "path": "/workspace/scratch/e7495113964e/work/native_review/license_profile.py",
+      "sha256": "f4f435b960c084451cc9307608ba8c5fd938070af04750a6788fa5dcda032267"
+    },
+    {
+      "bytes": 6676,
+      "path": "/workspace/scratch/e7495113964e/work/native_review/review_findings.py",
+      "sha256": "c3dc9ac2a207e4642f4ec93ce676a3560307b7ca3885d0d16e9854a774b00c72"
+    },
+    {
+      "bytes": 5228,
+      "path": "/workspace/scratch/e7495113964e/work/native_review/review_inventory.py",
+      "sha256": "f36dd4854df3e8a5749f042d4211754dc6ce5d077a2148e70e373ca75b3cbdbb"
+    },
+    {
+      "bytes": 2329,
+      "path": "/workspace/scratch/e7495113964e/work/native_review/review_io.py",
+      "sha256": "5a1e28a21d8876520db66f2d666143eb24af88d22c45e63d5a264533ae0e496e"
+    },
+    {
+      "bytes": 3655,
+      "path": "/workspace/scratch/e7495113964e/work/native_review/review_software.py",
+      "sha256": "ffd5958d8d352da51c9aba37a0e9613687d0b8dd7ec3abad0e053bdc8008ef50"
+    },
+    {
+      "bytes": 5496,
+      "path": "/workspace/scratch/e7495113964e/work/native_review/review_supply.py",
+      "sha256": "c199021e4bd6ac8a5b63c54724754b95b204921288bf58b68275b7342611b304"
+    },
+    {
+      "bytes": 4685,
+      "path": "/workspace/scratch/e7495113964e/work/native_review/verify_generator.py",
+      "sha256": "90dee5aa7b76943dc9a073f8a11a3455452b6c8b36fc0474f5434f7015335614"
+    }
+  ],
+  "human_approval": false,
+  "negative_tests": [
+    {
+      "observed": "ValueError:REVIEWED_DEPENDENCY_BYTES_CHANGED",
+      "status": "PASS",
+      "test": "reviewed_dependency_drift"
+    },
+    {
+      "observed": "ValueError:REVIEW_EPOCH_MISMATCH",
+      "status": "PASS",
+      "test": "review_epoch_drift"
+    },
+    {
+      "observed": "ValueError:SUPPLY_PACKAGE_POPULATION_MISMATCH",
+      "status": "PASS",
+      "test": "advisory_missing_package"
+    },
+    {
+      "observed": "ValueError:VULNERABLE_OR_SKIPPED_PACKAGE",
+      "status": "PASS",
+      "test": "advisory_vulnerability"
+    },
+    {
+      "observed": "ValueError:VULNERABLE_OR_SKIPPED_PACKAGE",
+      "status": "PASS",
+      "test": "advisory_skipped_package"
+    },
+    {
+      "observed": "POLICY_PIN_MISMATCH",
+      "status": "PASS",
+      "test": "policy_digest_mismatch"
+    },
+    {
+      "observed": "POLICY_EPOCH_STALE",
+      "status": "PASS",
+      "test": "native_stale_epoch"
+    },
+    {
+      "observed": "REVIEW_EVIDENCE_TAMPERED",
+      "status": "PASS",
+      "test": "native_review_hash_tamper"
+    },
+    {
+      "observed": "ValueError:SUPPLY_PROCESS_EXIT_NOT_ZERO",
+      "status": "PASS",
+      "test": "pass_label_cannot_hide_failed_process"
+    },
+    {
+      "observed": "ValidationError:2 validation errors for Policy\nprotected_paths\n  Input should be a valid tuple [type=tuple_type, input_value=['tests/adversarial/', 'c...ersarial/', 'security/'], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/tuple_type\nadmissions\n  Input should be a valid tuple [type=tuple_type, input_value=[{'path': 'fixtures/pglit...23de3578115c580f8847c'}], input_type=list]\n    For further information visit https://errors.pydantic.dev/2.14/v/tuple_type",
+      "status": "PASS",
+      "test": "native_duplicate_review_family"
+    },
+    {
+      "observed": {
+        "applicability": "APPLICABLE",
+        "detail": "1 manifest/artifact surfaces; nine review families per admitted surface.",
+        "disposition": "HOLD",
+        "findings": [
+          {
+            "code": "DEPENDENCY_BYTES_CHANGED",
+            "disposition": "HOLD",
+            "line": 0,
+            "path": "uv.lock"
+          }
+        ],
+        "gate_id": "G-SUPPLY-002"
+      },
+      "status": "PASS",
+      "test": "native_changed_dependency_hold"
+    }
+  ],
+  "promotion_authorized": false,
+  "scope": "Generator rejection semantics and unchanged original native review validator; synthetic attacks are explicitly limited to the reviewer.",
+  "sealed_policy": {
+    "bytes": 87524,
+    "path": "/workspace/scratch/e7495113964e/work/native_review/pg-reference-1-20261104/policy.json",
+    "sha256": "3847a106df2212e5e9f5f91ca6e4a765740bea618bb638825deb94d123fd88b2"
+  },
+  "semantic_policy_sha256": "4366359ca7f0387700826c82c8879f20e066c9cd9f7b924decff43418750835d",
+  "source_digest": "6710f678900766f47969172cc2f1da03de3eb9d6fb42ca86135cb2e3f59ca11d",
+  "status": "PASS"
+}

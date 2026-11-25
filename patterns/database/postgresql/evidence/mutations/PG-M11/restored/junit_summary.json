@@ -1,0 +1,11 @@
+{
+  "valid": true,
+  "tests": 1,
+  "failures": 0,
+  "assertion_failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_ids": [
+    "tests/test_outbox_recovery.py::test_cache_loss_rebuild_requires_current_same_epoch_authority"
+  ]
+}

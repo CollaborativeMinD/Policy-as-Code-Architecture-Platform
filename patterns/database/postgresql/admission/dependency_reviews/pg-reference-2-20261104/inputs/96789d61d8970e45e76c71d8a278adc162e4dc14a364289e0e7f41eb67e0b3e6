@@ -1,0 +1,31 @@
+{
+  "admission": "/workspace/scratch/e7495113964e/work/final/software-002",
+  "analysis": "/workspace/scratch/e7495113964e/work/final/native_vv-002/analysis.json",
+  "epoch": "pg-reference-2-20261104",
+  "mutation": "/workspace/scratch/e7495113964e/work/final/mutations-002/mutation-report.json",
+  "native_vv": "/workspace/scratch/e7495113964e/work/final/native_vv-002/native-vv-result.json",
+  "supply": {
+    "backend_advisory": "/workspace/scratch/e7495113964e/work/native_review/backend/advisory.receipt.json",
+    "backend_identity": "/workspace/scratch/e7495113964e/work/native_review/backend/identity.json",
+    "backend_license": "/workspace/scratch/e7495113964e/work/native_review/backend/license.receipt.json",
+    "default_license_hold": "/workspace/scratch/e7495113964e/work/epochs/final-license.json",
+    "license_profile": "/workspace/scratch/e7495113964e/work/native_review/license/profile.json",
+    "npm_advisory": "/workspace/scratch/e7495113964e/work/native_review/root_audits/npm.receipt.json",
+    "python_advisory": "/workspace/scratch/e7495113964e/work/native_review/root_audits/python.receipt.json",
+    "python_license": "/workspace/scratch/e7495113964e/work/native_review/license/receipt.json"
+  },
+  "supply_reuse": {
+    "current_preparation": {
+      "bytes": 202405,
+      "path": "/workspace/scratch/e7495113964e/work/native_review/prepared-002-final.json",
+      "sha256": "a60cd1c0e070044be0ca29f7694b8c53281b18ef3a7c95eefb02008743103d9e"
+    },
+    "from_review_epoch": "pg-reference-1-20261104",
+    "justification": "All32 dependency surface hashes and complete package inventories are byte-identical; only3 unused test imports changed. Original audit execution times retained; no fresh query implied.",
+    "prior_preparation": {
+      "bytes": 201987,
+      "path": "/workspace/scratch/e7495113964e/work/native_review/prepared.json",
+      "sha256": "578bc41fb5cc41d1bc43153a6210c791ecf782ff89526dca518b723b7d695a84"
+    }
+  }
+}

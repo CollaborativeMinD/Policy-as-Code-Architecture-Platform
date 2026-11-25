@@ -1,0 +1,8 @@
+version = 1
+pattern = "PG-PAT-010"
+scope = "software"
+
+[settings]
+window = { status = "active", after_id = 0, limit = 4 }
+batch_size = 1
+metrics = [{ id = 1, status = "active", telemetry = { temperature = 2.0 }, observed_at = "2026-01-01T00:00:00+00:00" }, { id = 2, status = "active", telemetry = { temperature = 2.0 }, observed_at = "2026-01-01T00:00:00+00:00" }]

@@ -1,0 +1,116 @@
+{
+  "table": "environment",
+  "kb_id": "EdgeOps_Env_ReproduceStack",
+  "declaration_source": "project_sources/04-EdgeOps_Env_ReproduceStack_FieldDeclarations.xml",
+  "declaration_sha256": "ab5f29718d0c50f6f753f15c79b27dd6ca67950d5cad30d8ea2dd25d6b9f75ab",
+  "columns": [
+    "environment_id",
+    "deployment_profile",
+    "runtime_version",
+    "lockfile_hash",
+    "bootstrap_status",
+    "ci_parity_status",
+    "config_schema_ref",
+    "evidence_id"
+  ],
+  "column_types": {
+    "environment_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "deployment_profile": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "runtime_version": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "lockfile_hash": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "bootstrap_status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "ci_parity_status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "config_schema_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "evidence_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    }
+  },
+  "rows": [
+    {
+      "environment_id": "PG-ENV-SOFTWARE",
+      "deployment_profile": "software_reference_pglite_and_redis",
+      "runtime_version": "CPython 3.13.17; PGlite 0.5.15 / PostgreSQL 18.6; Redis 6.2.14",
+      "lockfile_hash": "sha256:73baf5c7335997906a9f22bd8cce04b5837ff65796b23de3578115c580f8847c",
+      "bootstrap_status": "observed_in_disposable_software_harness",
+      "ci_parity_status": "hosted_ci_not_executed",
+      "config_schema_ref": "src/hmt_pg_patterns/config.py::DbConfig",
+      "evidence_id": "evidence/software/summary.json"
+    },
+    {
+      "environment_id": "PG-ENV-NATIVE-WORKER",
+      "deployment_profile": "native_fixed_login_worker_qualification",
+      "runtime_version": null,
+      "lockfile_hash": "sha256:73baf5c7335997906a9f22bd8cce04b5837ff65796b23de3578115c580f8847c",
+      "bootstrap_status": "NOT_QUALIFIED",
+      "ci_parity_status": "not_qualified",
+      "config_schema_ref": "src/hmt_pg_patterns/worker_config.py::WorkerConfig",
+      "evidence_id": "evidence/history/epochs/05-worker.xml"
+    },
+    {
+      "environment_id": "PG-ENV-TAILCAT-WIRE",
+      "deployment_profile": "tailcat_0.7.0_local_derp_wire_qualification",
+      "runtime_version": "Tailcat 0.7.0 attempted; qualified native PostgreSQL runtime not observed",
+      "lockfile_hash": "sha256:73baf5c7335997906a9f22bd8cce04b5837ff65796b23de3578115c580f8847c",
+      "bootstrap_status": "NOT_QUALIFIED",
+      "ci_parity_status": "not_qualified",
+      "config_schema_ref": "src/hmt_pg_patterns/worker_config.py::WorkerConfig",
+      "evidence_id": "evidence/history/epochs/03-tailcat.xml"
+    }
+  ],
+  "field_dispositions": [
+    {
+      "row_index": 1,
+      "field": "runtime_version",
+      "status": "not_qualified",
+      "reason": "A native PostgreSQL LOGIN runtime was not qualified in this environment."
+    }
+  ],
+  "csv_null_token": "\\N",
+  "release_binding": "final_source_and_observed_receipts"
+}

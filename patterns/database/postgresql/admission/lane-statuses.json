@@ -1,0 +1,454 @@
+{
+  "run_id": "pg-native42-final-002",
+  "counts": {
+    "FAIL": 0,
+    "HOLD": 0,
+    "NOT_APPLICABLE": 18,
+    "PASS": 24
+  },
+  "lanes": [
+    {
+      "lane": "actionlint",
+      "status": "NOT_APPLICABLE",
+      "reason": "ABSENCE_PROVEN",
+      "applicability": {
+        "absent_imports": [],
+        "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+        "observed_matches": [],
+        "patterns": [
+          ".github/workflows/*.yml",
+          ".github/workflows/*.yaml"
+        ],
+        "predicate": "no files match",
+        "reason": "No GitHub workflow or reusable workflow topology is delivered by this PostgreSQL reference branch; standalone Python commands provide admission."
+      }
+    },
+    {
+      "lane": "adversarial-agents",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "adversarial-hints",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "architecture-contract",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "bandit",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "cargo-check",
+      "status": "NOT_APPLICABLE",
+      "reason": "ABSENCE_PROVEN",
+      "applicability": {
+        "absent_imports": [],
+        "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+        "observed_matches": [],
+        "patterns": [
+          "*.rs",
+          "Cargo.toml",
+          "Cargo.lock"
+        ],
+        "predicate": "no files match",
+        "reason": "The branch contains no Rust source or Cargo package; its owned implementation and executable verification use Python/PostgreSQL SQL."
+      }
+    },
+    {
+      "lane": "cargo-clippy",
+      "status": "NOT_APPLICABLE",
+      "reason": "ABSENCE_PROVEN",
+      "applicability": {
+        "absent_imports": [],
+        "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+        "observed_matches": [],
+        "patterns": [
+          "*.rs",
+          "Cargo.toml",
+          "Cargo.lock"
+        ],
+        "predicate": "no files match",
+        "reason": "The branch contains no Rust source or Cargo package; its owned implementation and executable verification use Python/PostgreSQL SQL."
+      }
+    },
+    {
+      "lane": "cargo-deny",
+      "status": "NOT_APPLICABLE",
+      "reason": "ABSENCE_PROVEN",
+      "applicability": {
+        "absent_imports": [],
+        "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+        "observed_matches": [],
+        "patterns": [
+          "*.rs",
+          "Cargo.toml",
+          "Cargo.lock"
+        ],
+        "predicate": "no files match",
+        "reason": "The branch contains no Rust source or Cargo package; its owned implementation and executable verification use Python/PostgreSQL SQL."
+      }
+    },
+    {
+      "lane": "cargo-fmt",
+      "status": "NOT_APPLICABLE",
+      "reason": "ABSENCE_PROVEN",
+      "applicability": {
+        "absent_imports": [],
+        "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+        "observed_matches": [],
+        "patterns": [
+          "*.rs",
+          "Cargo.toml",
+          "Cargo.lock"
+        ],
+        "predicate": "no files match",
+        "reason": "The branch contains no Rust source or Cargo package; its owned implementation and executable verification use Python/PostgreSQL SQL."
+      }
+    },
+    {
+      "lane": "cargo-llvm-cov",
+      "status": "NOT_APPLICABLE",
+      "reason": "ABSENCE_PROVEN",
+      "applicability": {
+        "absent_imports": [],
+        "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+        "observed_matches": [],
+        "patterns": [
+          "*.rs",
+          "Cargo.toml",
+          "Cargo.lock"
+        ],
+        "predicate": "no files match",
+        "reason": "The branch contains no Rust source or Cargo package; its owned implementation and executable verification use Python/PostgreSQL SQL."
+      }
+    },
+    {
+      "lane": "cargo-mutants",
+      "status": "NOT_APPLICABLE",
+      "reason": "ABSENCE_PROVEN",
+      "applicability": {
+        "absent_imports": [],
+        "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+        "observed_matches": [],
+        "patterns": [
+          "*.rs",
+          "Cargo.toml",
+          "Cargo.lock"
+        ],
+        "predicate": "no files match",
+        "reason": "The branch contains no Rust source or Cargo package; its owned implementation and executable verification use Python/PostgreSQL SQL."
+      }
+    },
+    {
+      "lane": "cargo-test",
+      "status": "NOT_APPLICABLE",
+      "reason": "ABSENCE_PROVEN",
+      "applicability": {
+        "absent_imports": [],
+        "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+        "observed_matches": [],
+        "patterns": [
+          "*.rs",
+          "Cargo.toml",
+          "Cargo.lock"
+        ],
+        "predicate": "no files match",
+        "reason": "The branch contains no Rust source or Cargo package; its owned implementation and executable verification use Python/PostgreSQL SQL."
+      }
+    },
+    {
+      "lane": "deptry",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "evidence-binding",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "gitops-contract",
+      "status": "NOT_APPLICABLE",
+      "reason": "ABSENCE_PROVEN",
+      "applicability": {
+        "absent_imports": [],
+        "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+        "observed_matches": [],
+        "patterns": [
+          "infrastructure/gitops/*.yaml",
+          "infrastructure/flux/install.yaml"
+        ],
+        "predicate": "no files match",
+        "reason": "No Flux or GitOps deployment topology is delivered; the concrete service profile uses systemd and PostgreSQL configuration."
+      }
+    },
+    {
+      "lane": "hadolint",
+      "status": "NOT_APPLICABLE",
+      "reason": "ABSENCE_PROVEN",
+      "applicability": {
+        "absent_imports": [],
+        "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+        "observed_matches": [],
+        "patterns": [
+          "Dockerfile",
+          "*.Dockerfile"
+        ],
+        "predicate": "no files match",
+        "reason": "No Dockerfile or container-image build is delivered in this native Python/systemd reference scope."
+      }
+    },
+    {
+      "lane": "license-inventory",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "marimo-check",
+      "status": "NOT_APPLICABLE",
+      "reason": "ABSENCE_PROVEN",
+      "applicability": {
+        "absent_imports": [
+          "marimo"
+        ],
+        "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+        "observed_matches": [],
+        "patterns": [
+          "*.ipynb"
+        ],
+        "predicate": "no files match",
+        "reason": "No notebook or statically imported Marimo application exists in the branch."
+      }
+    },
+    {
+      "lane": "mypy",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "notebook-test",
+      "status": "NOT_APPLICABLE",
+      "reason": "ABSENCE_PROVEN",
+      "applicability": {
+        "absent_imports": [
+          "marimo"
+        ],
+        "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+        "observed_matches": [],
+        "patterns": [
+          "*.ipynb"
+        ],
+        "predicate": "no files match",
+        "reason": "No notebook or statically imported Marimo application exists in the branch."
+      }
+    },
+    {
+      "lane": "optimization",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "pace-t",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "pip-audit",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "pylint",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "pyrefly",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "pytest",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "repository-contract",
+      "status": "NOT_APPLICABLE",
+      "reason": "ABSENCE_PROVEN",
+      "applicability": {
+        "absent_imports": [],
+        "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+        "observed_matches": [],
+        "patterns": [
+          ".github/workflows/*.yml",
+          ".github/workflows/*.yaml"
+        ],
+        "predicate": "no files match",
+        "reason": "No GitHub workflow or reusable workflow topology is delivered by this PostgreSQL reference branch; standalone Python commands provide admission."
+      }
+    },
+    {
+      "lane": "ruff",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "scaffold-validation",
+      "status": "NOT_APPLICABLE",
+      "reason": "ABSENCE_PROVEN",
+      "applicability": {
+        "absent_imports": [],
+        "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+        "observed_matches": [],
+        "patterns": [
+          "*.ttl",
+          "*scaffold*"
+        ],
+        "predicate": "no files match",
+        "reason": "No scaffold template generator or RDF ontology authority asset is delivered by this runtime reference branch."
+      }
+    },
+    {
+      "lane": "secret-contract",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "semgrep",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "shell-syntax",
+      "status": "NOT_APPLICABLE",
+      "reason": "ABSENCE_PROVEN",
+      "applicability": {
+        "absent_imports": [],
+        "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+        "observed_matches": [],
+        "patterns": [
+          "*.sh"
+        ],
+        "predicate": "no files match",
+        "reason": "No shell program is delivered; command examples do not create a shell-program validation target."
+      }
+    },
+    {
+      "lane": "source-contract",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "structural-complexity",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "structured-data",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "terraform-validate",
+      "status": "NOT_APPLICABLE",
+      "reason": "ABSENCE_PROVEN",
+      "applicability": {
+        "absent_imports": [],
+        "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+        "observed_matches": [],
+        "patterns": [
+          "*.tf",
+          "*.tf.json"
+        ],
+        "predicate": "no files match",
+        "reason": "No Terraform source or IaC plan is delivered."
+      }
+    },
+    {
+      "lane": "test-traceability",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "trivy",
+      "status": "NOT_APPLICABLE",
+      "reason": "ABSENCE_PROVEN",
+      "applicability": {
+        "absent_imports": [],
+        "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+        "observed_matches": [],
+        "patterns": [
+          "Dockerfile",
+          "*.Dockerfile",
+          "*.tar",
+          "*.oci"
+        ],
+        "predicate": "no files match",
+        "reason": "No OCI/Docker image is delivered or built; Python/npm/backend advisory inventories are separately executed and bound."
+      }
+    },
+    {
+      "lane": "unittest",
+      "status": "NOT_APPLICABLE",
+      "reason": "ABSENCE_PROVEN",
+      "applicability": {
+        "absent_imports": [],
+        "import_scan": "static Python imports only; dynamic loading is outside this predicate",
+        "observed_matches": [],
+        "patterns": [
+          "tests/unittest/*.py",
+          "tests/unittest/**/*.py",
+          "tests/test_unittest*.py"
+        ],
+        "predicate": "no files match",
+        "reason": "No unittest TestCase suite/discovery entrypoint is defined; AST review observes zero TestCase subclasses. The446 functional/async pytest cases, including unit witnesses, run through the native pytest lane. unittest.mock imports are test utilities, not a unittest suite."
+      }
+    },
+    {
+      "lane": "uv-lock",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "verification-validation",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    },
+    {
+      "lane": "yamllint",
+      "status": "PASS",
+      "reason": "EXITED",
+      "applicability": null
+    }
+  ]
+}

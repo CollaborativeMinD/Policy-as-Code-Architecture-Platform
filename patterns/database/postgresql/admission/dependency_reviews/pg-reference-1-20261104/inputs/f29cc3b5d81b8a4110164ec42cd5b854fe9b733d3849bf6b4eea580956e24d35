@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="1.908" timestamp="2026-11-04T15:36:10.138138+07:00" hostname="18a71ec14d7e"><testcase classname="tests.test_mutation_witnesses" name="test_active_guard" time="1.850"><failure message="Failed: DID NOT RAISE Error">tests/test_mutation_witnesses.py:26: in test_active_guard
+    with pytest.raises(psycopg.Error, match="AUTHORITY_DENIED"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE Error</failure></testcase></testsuite></testsuites>

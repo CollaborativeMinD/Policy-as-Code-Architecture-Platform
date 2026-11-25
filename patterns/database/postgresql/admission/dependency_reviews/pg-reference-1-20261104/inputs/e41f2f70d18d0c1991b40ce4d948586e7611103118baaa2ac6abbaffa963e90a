@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+    "/workspace/scratch/e7495113964e/work/admission_overlay/ci42/tools/pip-audit.py",
+    "--root",
+    "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql"
+  ],
+  "cwd": "/workspace/scratch/e7495113964e",
+  "start_time": "2026-11-04T08:43:49.206523+00:00",
+  "seconds": 8.814859860001889,
+  "returncode": 0,
+  "stdout_sha256": "f602d7cb19c712cdc72d5275d2bd9db7f4e85ca0130534d26fbf3fd752343273",
+  "stderr_sha256": "79d30422388543b2563e1dde76bb7e7857d7ef0c6fdf05c8c71598633ca07e1e"
+}

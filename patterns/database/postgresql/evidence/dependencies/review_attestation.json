@@ -1,0 +1,88 @@
+{
+  "actual_results": {
+    "build_backend": "setuptools84.2.1 published artifact hash and native advisory/license checks PASS",
+    "generator_negative_controls": 11,
+    "linux_python_packages_audited_and_licensed": 35,
+    "mutation_assertion_kills_and_restorations": 12,
+    "native_dependency_surface_count": 32,
+    "npm_lock_packages_audited_and_license_inventoried": 9,
+    "reviews_per_surface": 9,
+    "software_tests": 446
+  },
+  "agent": "/root/driver_research",
+  "changes": "Scratch-only; no branch source, contracts, lockfile, governing policy, or original native implementation modified. Exactly3 later test-import changes belong to parent/other agent and require epoch2 source-bound reruns.",
+  "created_at": "2026-11-04T08:57:35.309121+00:00",
+  "epoch": "pg-reference-2-20261104",
+  "final_policy": {
+    "bytes": 87524,
+    "path": "/workspace/scratch/e7495113964e/work/native_review/pg-reference-2-20261104/policy.json",
+    "sha256": "6a819f707026021de229ffd9d5aebb6e39d9f594c6f4df6d09fa93abd48c26e2"
+  },
+  "historical_preservation": "First sealed review packet and original license HOLD retained. Epoch2 reuses actual supply queries only after exact32 dependency hashes and full package inventory equality; original timestamps retained.",
+  "human_approval": false,
+  "native_42_status": "Separate parent/admission agent campaign; this attestation is not a clean42-lane claim.",
+  "native_snapshot_boundary": "Unmodified original snapshot preexec failed due confirmed api.resource loader symbol collision. Declared overlay snapshot passed for208 Git files and32 exact dependency surfaces; original review/snapshot/dependency semantic modules were byte-identical.",
+  "promotion_authorized": false,
+  "read_original_engine_contracts": [
+    "Review",
+    "Admission",
+    "Policy",
+    "Limits",
+    "dependency_surface",
+    "dependencies",
+    "verify_reviews",
+    "load_policy",
+    "snapshot"
+  ],
+  "report_review": {
+    "corrections_sent": [
+      "Owner-private regular config file admits0400 as well as0600;0600 is recommended rather than exact admitted mode.",
+      "Deadline timer begins after configuration and peer validation; state request-processing deadline.",
+      "Archive checksum binds manifest bytes without asserting a manifest self-hash.",
+      "Update source/Git IDs and native statuses after epoch2 completion."
+    ],
+    "facts_checked": [
+      "PostgreSQL18.6 actual service identity",
+      "35Python+9npm+setuptools dependency counts",
+      "Psycopg LGPL token scope",
+      "COPY bytes and prepared-statement fixture limitations",
+      "asyncpg bounded forced teardown",
+      "coverage and structural observed counts"
+    ]
+  },
+  "reports": [
+    {
+      "bytes": 1098,
+      "path": "/workspace/scratch/e7495113964e/work/native_review/candidate-binding-002.json",
+      "sha256": "77f833efeaded2678a3897c3c9fb75b3a8f72b9c42b51e3b32a56e4aab0b0a08"
+    },
+    {
+      "bytes": 4836,
+      "path": "/workspace/scratch/e7495113964e/work/native_review/generator-verification.json",
+      "sha256": "e41c00fea1c53b41eb0f8e319430ee4cd470a176f42268ebb05f3bcef734479d"
+    },
+    {
+      "bytes": 5321,
+      "path": "/workspace/scratch/e7495113964e/work/native_review/license/profile.json",
+      "sha256": "b74040e0a3317b837d8b7893c941ffbf3fa3bc8e91706d9c28af64d9c17418a9"
+    },
+    {
+      "bytes": 2001,
+      "path": "/workspace/scratch/e7495113964e/work/native_review/license/receipt.json",
+      "sha256": "f6e9b280c19ac5f9ce9194bc0516224558c79802c64f16be75e01c56aa62222c"
+    },
+    {
+      "bytes": 1048,
+      "path": "/workspace/scratch/e7495113964e/work/native_review/backend/identity.json",
+      "sha256": "e5eef82b0df99b5954dfdc5c2a7f30bba3808e02381b415602b91358a7dcc56f"
+    },
+    {
+      "bytes": 7215,
+      "path": "/workspace/scratch/e7495113964e/work/native_review/REPRODUCTION.md",
+      "sha256": "fc19e616b18947c8c4604ce73f90820f489be81bfe2017b7b665aeb6af6a2da5"
+    }
+  ],
+  "schema": "hmt.sub_agent_task_attestation/1",
+  "scope": "Final native nine-family dependency reviews, identity-bound license profile, separate build-backend supply checks, and release-report factual review.",
+  "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7"
+}

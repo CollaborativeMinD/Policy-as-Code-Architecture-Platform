@@ -1,0 +1,10 @@
+{
+  "scope": "Actual worker.main invalid request against a real full diagnostic pipe; no DB call is needed because strict DTO validation rejects first.",
+  "configured_worker_seconds": 0.1,
+  "observation_seconds": 0.8,
+  "elapsed_seconds": 0.33324771000479814,
+  "source_sha256": "da5ec2b6ff99ef37bbad60384162b61cc9b2ef352456734f8c6e0938441e1986",
+  "source_unchanged": true,
+  "exit_code": 1,
+  "exceeded_observation_deadline": false
+}

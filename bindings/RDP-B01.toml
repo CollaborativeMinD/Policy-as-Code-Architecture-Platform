@@ -1,0 +1,7 @@
+version = 1
+pattern = "RDP-B01"
+scope = "software"
+
+[settings]
+algorithm = "scan"
+costs = [5, 3, 3, 7]

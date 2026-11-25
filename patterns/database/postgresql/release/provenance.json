@@ -1,0 +1,48 @@
+{
+  "schema": "hmt.postgresql.release-provenance/1",
+  "provenance_id": "hmt-pg-reference-1.0.0-20261104-6771f2465d4f",
+  "created_at": "2026-11-04T07:19:55.263410+00:00",
+  "assembled_at": "2026-11-04T09:09:13.893310+00:00",
+  "creation_record": {
+    "timestamp": "2026-11-04T07:19:55.263410+00:00",
+    "source": "/workspace/scratch/e7495113964e/upload/hmt-reusable-design-references.zip",
+    "sha256": "5e4d800ac89d07a2b55670b44032fe2cb93202fc6c78cd17298e9fc5aafc1e22",
+    "action": "readonly_baseline_extraction",
+    "new_branch": "database_design_patterns/postgresql",
+    "source_mutation": false
+  },
+  "branch": "database_design_patterns/postgresql",
+  "version": "1.0.0",
+  "scope": "Software reference qualification; no live deployment promotion",
+  "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+  "source_inventory": "evidence/software/source-before.json",
+  "source_revision": "9bc06522f27d4576f08caf44f4989031d1b145f1",
+  "historical_revision": "e3387ddb0772fdeaa4093f7b049033c5ef6f43eb",
+  "git_custody": "evidence/git_custody/receipt-002.json",
+  "git_bundle": "evidence/git_custody/reference-history.bundle",
+  "native_target_worktree_digest": "32f657c21db285274e40de63e57a6c760e2853b2cf0626afdf6a705e958719b7",
+  "native_engine_digest": "c5fb2a4895108113445b9cbc3559b8ef033008b0f653f73f42ceb0c6a3a1ecd1",
+  "software_run_id": "pg-admission-4370ce597c7c4f49b35b315fdeaa1987",
+  "native_run_id": "pg-native42-final-002",
+  "final_status": "PASS",
+  "native_counts": {
+    "FAIL": 0,
+    "HOLD": 0,
+    "NOT_APPLICABLE": 18,
+    "PASS": 24
+  },
+  "policy_epoch": "pg-reference-2-20261104",
+  "policy_sha256": "6a819f707026021de229ffd9d5aebb6e39d9f594c6f4df6d09fa93abd48c26e2",
+  "runtime_scope": "CPython3.13.17; PostgreSQL18.6/PGlite0.5.15; live Redis6.2.14; injected trusted launcher context",
+  "post_candidate_changes": "Only release documentation, admission reproduction guidance, and observed/derived evidence; every183 admitted source file is unchanged.",
+  "nonqualified_profiles": [
+    "native PostgreSQL LOGIN/SCRAM/TLS",
+    "independent-backend contention",
+    "native wire cancellation",
+    "actual Tailcat transport",
+    "storage crash/power-loss recovery",
+    "production service containment activation"
+  ],
+  "inherited_inputs": "references/governing_inputs.json",
+  "cryptographic_signature": "none; hashes provide integrity, not external attestation or deployment authorization"
+}

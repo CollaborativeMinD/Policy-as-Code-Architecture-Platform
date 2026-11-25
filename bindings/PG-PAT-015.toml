@@ -1,0 +1,8 @@
+version = 1
+pattern = "PG-PAT-015"
+scope = "software"
+
+[settings]
+policy = { block_size_target = 16, window_size = 4, min_size = 8, max_size = 16, target = 1, max_packet_bytes = 32, max_total_bytes = 100, quantum_bytes = 8, max_packets = 8 }
+limits = { deadline_s = 5.0, cleanup_timeout_s = 1.0 }
+packets = ["one packet", "second packet"]

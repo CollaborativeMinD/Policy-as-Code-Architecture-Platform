@@ -1,0 +1,17 @@
+{
+  "schema": "hmt.git.source-custody/1",
+  "historical_commit": "e3387ddb0772fdeaa4093f7b049033c5ef6f43eb",
+  "prior_candidate": "4cbd9152b079cf3f745b5de4ac6e181cc2f782d9",
+  "candidate_commit": "9bc06522f27d4576f08caf44f4989031d1b145f1",
+  "candidate_tree": "893b41687f9b06adbe9fa629c6cc9344e1c8adf8",
+  "changed_files": [
+    "tests/test_config.py",
+    "tests/test_migrations.py",
+    "tests/test_models.py"
+  ],
+  "change": "Only unused imports removed; no production implementation change.",
+  "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+  "verified_source_files": 183,
+  "source_unchanged": true,
+  "worktree_written": false
+}

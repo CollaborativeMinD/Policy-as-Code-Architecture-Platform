@@ -1,0 +1,74 @@
+[
+  {
+    "path": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/queries.py",
+    "status": "new",
+    "created_at": "2026-11-04T07:33:08.727492+00:00",
+    "purpose": "Python native PostgreSQL primitive under standalone admission"
+  },
+  {
+    "path": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/driver_contracts.py",
+    "status": "new",
+    "created_at": "2026-11-04T07:33:08.727517+00:00",
+    "purpose": "Python native PostgreSQL primitive under standalone admission"
+  },
+  {
+    "path": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/sync_driver.py",
+    "status": "new",
+    "created_at": "2026-11-04T07:33:08.727527+00:00",
+    "purpose": "Python native PostgreSQL primitive under standalone admission"
+  },
+  {
+    "path": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/async_driver.py",
+    "status": "new",
+    "created_at": "2026-11-04T07:33:08.727533+00:00",
+    "purpose": "Python native PostgreSQL primitive under standalone admission"
+  },
+  {
+    "path": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/pools.py",
+    "status": "new",
+    "created_at": "2026-11-04T07:33:08.727540+00:00",
+    "purpose": "Python native PostgreSQL primitive under standalone admission"
+  },
+  {
+    "path": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/asyncpg_driver.py",
+    "status": "new",
+    "created_at": "2026-11-04T07:33:08.727549+00:00",
+    "purpose": "Python native PostgreSQL primitive under standalone admission"
+  },
+  {
+    "path": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/asyncpg_pool.py",
+    "status": "new",
+    "created_at": "2026-11-04T07:33:08.727555+00:00",
+    "purpose": "Python native PostgreSQL primitive under standalone admission"
+  },
+  {
+    "path": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/orm.py",
+    "status": "new",
+    "created_at": "2026-11-04T07:33:08.727561+00:00",
+    "purpose": "Python native PostgreSQL primitive under standalone admission"
+  },
+  {
+    "path": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/orm_async.py",
+    "status": "new",
+    "created_at": "2026-11-04T07:33:08.727566+00:00",
+    "purpose": "Python native PostgreSQL primitive under standalone admission"
+  },
+  {
+    "path": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/orm_model.py",
+    "status": "new",
+    "created_at": "2026-11-04T07:33:08.727572+00:00",
+    "purpose": "Python native PostgreSQL primitive under standalone admission"
+  },
+  {
+    "path": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/bulk.py",
+    "status": "new",
+    "created_at": "2026-11-04T07:33:08.727578+00:00",
+    "purpose": "Python native PostgreSQL primitive under standalone admission"
+  },
+  {
+    "path": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/analytics.py",
+    "status": "new",
+    "created_at": "2026-11-04T07:33:08.727586+00:00",
+    "purpose": "Python native PostgreSQL primitive under standalone admission"
+  }
+]

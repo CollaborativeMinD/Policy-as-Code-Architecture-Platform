@@ -1,0 +1,17 @@
+{
+  "TARGET_ROOT": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql",
+  "EVIDENCE_ROOT": "/workspace/scratch/e7495113964e/work/final/native42",
+  "CANDIDATE_SHA": "9bc06522f27d4576f08caf44f4989031d1b145f1",
+  "BASELINE_SHA": "e3387ddb0772fdeaa4093f7b049033c5ef6f43eb",
+  "RUN_ID": "pg-native42-final-002",
+  "ANALYZER_PYTHON": "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+  "TARGET_PYTHON": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+  "OPTIMIZATION_PYTHON": "/workspace/scratch/e7495113964e/work/.optimization/bin/python",
+  "NATIVE_VV_ROOT": "/workspace/scratch/e7495113964e/work/final/native_vv-002",
+  "EVIDENCE_BINDING_ROOT": "/workspace/scratch/e7495113964e/work/final/native_inputs-002/evidence-binding",
+  "PACE_INPUT": "/workspace/scratch/e7495113964e/work/final/native_inputs-002/pace-evaluate.json",
+  "ADVERSARIAL_POLICY": "/workspace/scratch/e7495113964e/work/native_review/pg-reference-2-20261104/policy.json",
+  "POLICY_SHA256": "6a819f707026021de229ffd9d5aebb6e39d9f594c6f4df6d09fa93abd48c26e2",
+  "POLICY_EPOCH": "pg-reference-2-20261104",
+  "SOURCE_DIGEST": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7"
+}

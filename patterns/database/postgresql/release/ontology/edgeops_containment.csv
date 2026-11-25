@@ -1,0 +1,2 @@
+container_id,image_ref,base_image_ref,build_stage_count,runtime_user,health_endpoint_ref,readiness_status,liveness_status,sbom_ref,evidence_id
+\N,\N,\N,\N,hmt-pg (declared systemd service identity; not a deployment observation),\N,reference_only_not_deployed,software_deadline_regressions_observed,release/dependency_inventory.json,evidence/history/epochs/11-rejection-regression.xml

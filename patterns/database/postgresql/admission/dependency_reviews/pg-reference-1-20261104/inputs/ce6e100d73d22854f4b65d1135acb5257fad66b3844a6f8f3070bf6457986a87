@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="0.268" timestamp="2026-11-04T15:36:25.887799+07:00" hostname="18a71ec14d7e"><testcase classname="tests.test_checkpoints_cache" name="test_redis_ordering_above_float_precision" time="0.222" /></testsuite></testsuites>

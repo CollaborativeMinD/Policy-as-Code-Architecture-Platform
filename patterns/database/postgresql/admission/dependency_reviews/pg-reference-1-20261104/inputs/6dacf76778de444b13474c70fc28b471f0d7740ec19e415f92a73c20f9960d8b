@@ -1,0 +1,209 @@
+{
+  "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+  "documents": 20,
+  "python_blocks": 20,
+  "syntax_and_imports": "PASS",
+  "catalog_integrity": "PASS",
+  "patterns": 17,
+  "mapped_source_modules": 39,
+  "missing_local_links": [
+    {
+      "document": "README.md",
+      "target": "VERIFICATION_REPORT.md"
+    },
+    {
+      "document": "README.md",
+      "target": "machine_handoff.json"
+    },
+    {
+      "document": "README.md",
+      "target": "release/artifact_manifest.json"
+    },
+    {
+      "document": "README.md",
+      "target": "release/provenance.json"
+    },
+    {
+      "document": "README.md",
+      "target": "admission/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "VERIFICATION_REPORT.md"
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/software/summary.json"
+    },
+    {
+      "document": "README.md",
+      "target": "evidence/native42/summary.json"
+    },
+    {
+      "document": "README.md",
+      "target": "release/cumulative_gates.json"
+    },
+    {
+      "document": "README.md",
+      "target": "release/rrca.json"
+    },
+    {
+      "document": "Index.md",
+      "target": "VERIFICATION_REPORT.md"
+    },
+    {
+      "document": "Index.md",
+      "target": "evidence/software/summary.json"
+    },
+    {
+      "document": "Index.md",
+      "target": "evidence/native42/summary.json"
+    },
+    {
+      "document": "Index.md",
+      "target": "admission/README.md"
+    },
+    {
+      "document": "Index.md",
+      "target": "machine_handoff.json"
+    },
+    {
+      "document": "Index.md",
+      "target": "release/artifact_manifest.json"
+    },
+    {
+      "document": "Index.md",
+      "target": "release/provenance.json"
+    },
+    {
+      "document": "SKILLS.md",
+      "target": "admission/README.md"
+    },
+    {
+      "document": "SKILLS.md",
+      "target": "VERIFICATION_REPORT.md"
+    }
+  ],
+  "examples": [
+    {
+      "document": "README.md",
+      "block": 1,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    },
+    {
+      "document": "patterns/01-secure-postgresql-configuration/README.md",
+      "block": 1,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    },
+    {
+      "document": "patterns/02-psycopg-sync-bound-sql/README.md",
+      "block": 1,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    },
+    {
+      "document": "patterns/03-psycopg-async-bound-sql/README.md",
+      "block": 1,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    },
+    {
+      "document": "patterns/04-asyncpg-bounded-lifecycle/README.md",
+      "block": 1,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    },
+    {
+      "document": "patterns/05-owned-transactions-and-bounded-retry/README.md",
+      "block": 1,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    },
+    {
+      "document": "patterns/06-finite-connection-pools/README.md",
+      "block": 1,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    },
+    {
+      "document": "patterns/06-finite-connection-pools/README.md",
+      "block": 2,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    },
+    {
+      "document": "patterns/07-sqlalchemy-postgresql-core-and-async/README.md",
+      "block": 1,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    },
+    {
+      "document": "patterns/07-sqlalchemy-postgresql-core-and-async/README.md",
+      "block": 2,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    },
+    {
+      "document": "patterns/08-sqlmodel-postgresql-mapping/README.md",
+      "block": 1,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    },
+    {
+      "document": "patterns/09-strict-pydantic-data-contracts/README.md",
+      "block": 1,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    },
+    {
+      "document": "patterns/10-polars-server-cursor-batches/README.md",
+      "block": 1,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    },
+    {
+      "document": "patterns/11-atomic-copy-and-pipeline-batches/README.md",
+      "block": 1,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    },
+    {
+      "document": "patterns/12-checksum-bound-migrations/README.md",
+      "block": 1,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    },
+    {
+      "document": "patterns/13-peer-epoch-authority-and-tailcat-worker/README.md",
+      "block": 1,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    },
+    {
+      "document": "patterns/14-wal-checkpoints-outbox-and-redis-projection/README.md",
+      "block": 1,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    },
+    {
+      "document": "patterns/15-content-defined-streaming/README.md",
+      "block": 1,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    },
+    {
+      "document": "patterns/16-pace-capability-and-recovery/README.md",
+      "block": 1,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    },
+    {
+      "document": "patterns/17-postgresql-plans-indexes-and-operations/README.md",
+      "block": 1,
+      "syntax_and_imports": "PASS",
+      "database_calls": "covered by linked live primitive tests; example functions require host-supplied inputs"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+--- sql/02_authority.sql
++++ sql/02_authority.sql.mutated
+@@ -96,7 +96,6 @@
+  IF ROW(head.epoch,head.sequence+1,head.end_offset,head.digest,head.policy_digest) IS DISTINCT FROM
+   ROW(v.epoch,v.sequence,v.start_offset,v.previous_digest,v.policy_digest) THEN RAISE EXCEPTION 'CHECKPOINT_CONFLICT'; END IF;
+  d:=hmt_pg.chunk_digest(a.db_role,v,p);
+- IF a.expires_at<=clock_timestamp() THEN RAISE EXCEPTION 'AUTHORITY_EXPIRED'; END IF;
+  INSERT INTO hmt_pg.chunk_effect VALUES(a.db_role,v.stream_id,v.request_id,v.epoch,v.sequence,v.start_offset,
+   v.start_offset+octet_length(p),v.previous_digest,d,v.policy_digest,p);
+  UPDATE hmt_pg.stream_head s SET sequence=v.sequence,end_offset=v.start_offset+octet_length(p),digest=d

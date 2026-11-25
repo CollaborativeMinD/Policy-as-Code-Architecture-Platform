@@ -1,0 +1,9 @@
+version = 1
+pattern = "PG-PAT-016"
+scope = "software"
+
+[settings]
+policy = { recovery_margin = 0.25, pressure_limit = 0.1, pressure_decay = 0.8, recovery_samples = 3, dwell_seconds = 3.0, max_sample_gap = 60.0 }
+observation = { now = 4.0, margin = 0.8, database_ready = true, cache_ready = true, transport_ready = true, authority_valid = true, epoch_current = true, reconciled = true, uncertain_ack = false }
+state = { mode = "A", pressure = 0.0, healthy_samples = 2, healthy_since = 0.0, last_at = 1.0, reason = "RECOVERY_PENDING" }
+operation = "read"

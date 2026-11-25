@@ -1,0 +1,6 @@
+version = 1
+pattern = "RDP-B07"
+scope = "software"
+
+[settings]
+guards = ["authenticate", "policy", "evidence", "receipt"]

@@ -1,0 +1,75 @@
+{
+  "draft_status": "hold_pending_root_final_receipt_binding",
+  "files": [
+    {
+      "name": "edgeops_containment.csv",
+      "sha256": "3677ba15937ef27f23717ba9574fb91faddc843ccec5e3e8085992b3351b6e6a"
+    },
+    {
+      "name": "edgeops_containment.json",
+      "sha256": "72d1721e37476b6a3799283d390a43c53f9b2e8d49f4acf4bae850d6abeb9040"
+    },
+    {
+      "name": "edgeops_environment.csv",
+      "sha256": "1c6e127389b763e359ca7d9b9e069199073a1d5c7bf4453307eedc67ff2e4e8d"
+    },
+    {
+      "name": "edgeops_environment.json",
+      "sha256": "3308a78761e1bcedf6e22f38abba6646baf17715a44b74a9357fe81ebecaeb49"
+    },
+    {
+      "name": "edgeops_readiness.csv",
+      "sha256": "29a143b2aebbe3bd01e52e70978d05c94ad1d4694dedf39b435f51d7f4c78d21"
+    },
+    {
+      "name": "edgeops_readiness.json",
+      "sha256": "51e861bc26599be30f875eb07d66425d033dbcc3907a46c225de1489fc25e127"
+    },
+    {
+      "name": "edgeops_release.csv",
+      "sha256": "f1558a1443a13c9a9091f5aa88d9f655fa625fb9164334177c3dbddb89ab04d5"
+    },
+    {
+      "name": "edgeops_release.json",
+      "sha256": "4edb56a333043c0820a582393a82f4f4eec0b481c8959e50d86d4c773fe253fe"
+    },
+    {
+      "name": "edgeops_seam.csv",
+      "sha256": "f01feb9b7d9510f1c991499ce8ac742edfb4a1840e24cc5ae67b488a6e3eb80f"
+    },
+    {
+      "name": "edgeops_seam.json",
+      "sha256": "82a478bee907cef335cfe84eaf313cef57426bbba615e939afb1e4c42c592fd8"
+    },
+    {
+      "name": "machine_handoff.draft.json",
+      "sha256": "fd4d245a985fbebfcf551a12fe5751a29fa77b11c9b4d8aab0f6b9bbdd2dfff5"
+    },
+    {
+      "name": "metadata_validation.json",
+      "sha256": "c42565fe7c2219f2dd6e08f54cfd247ca64a0544edf2d71176dc888b6ec578ec"
+    },
+    {
+      "name": "ontology_field_bindings.csv",
+      "sha256": "1af6263e270e308841b18a0af803c7e201fa5e6d0a8651d0e3e1057e2ab26b61"
+    },
+    {
+      "name": "ontology_field_bindings.json",
+      "sha256": "69f1b1805132f9263534271533119738185e7adacbfc87af1f4652e022cda52d"
+    },
+    {
+      "name": "rrca_events.draft.csv",
+      "sha256": "991da1942e970c19ad9b6ad98c1c8e1583e37cf8d472c1bcbea46a293a21a3e1"
+    },
+    {
+      "name": "rrca_events.draft.json",
+      "sha256": "f0ca43cf2576ad9be8abbd90528c169c5b1f6348cedee6dcf508ef22dcf08de0"
+    },
+    {
+      "name": "scope_and_bindings.json",
+      "sha256": "a361a6f4d64b83281a1892715538943b82b8e6f085d6001ff936f7323bdcc1f3"
+    }
+  ],
+  "canonical_authority": "Supplied09JSON Schema for handoff; supplied XML column declarations; supplied11/12TTL classes and properties.",
+  "root_action": "Fill pending hashes/evidence/provenance, preserve external profile NOT_QUALIFIED states, then export under final artifact manifest."
+}

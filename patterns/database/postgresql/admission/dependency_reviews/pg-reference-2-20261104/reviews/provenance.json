@@ -1,0 +1,961 @@
+{
+  "check": "provenance",
+  "disposition": "PASS",
+  "epoch": "pg-reference-2-20261104",
+  "evidence": [
+    {
+      "bytes": 202405,
+      "evidence_ref": "inputs/a60cd1c0e070044be0ca29f7694b8c53281b18ef3a7c95eefb02008743103d9e",
+      "original_path": "/workspace/scratch/e7495113964e/work/native_review/prepared-002-final.json",
+      "sha256": "a60cd1c0e070044be0ca29f7694b8c53281b18ef3a7c95eefb02008743103d9e"
+    },
+    {
+      "bytes": 1969,
+      "evidence_ref": "inputs/96789d61d8970e45e76c71d8a278adc162e4dc14a364289e0e7f41eb67e0b3e6",
+      "original_path": "/workspace/scratch/e7495113964e/work/native_review/inputs-002.json",
+      "sha256": "96789d61d8970e45e76c71d8a278adc162e4dc14a364289e0e7f41eb67e0b3e6"
+    },
+    {
+      "bytes": 10449,
+      "evidence_ref": "inputs/868a7f925720074be59f5a44cacdedad0170b82d22be74a8b87c132c7919ac45",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/native_vv-002/native-vv-result.json",
+      "sha256": "868a7f925720074be59f5a44cacdedad0170b82d22be74a8b87c132c7919ac45"
+    },
+    {
+      "bytes": 26398,
+      "evidence_ref": "inputs/6aa1288bcba12aa5a19aa0c5b93b4665b34716fc26108cde8e1554b266fe69c4",
+      "original_path": "/workspace/scratch/e7495113964e/work/upstream_notes.json",
+      "sha256": "6aa1288bcba12aa5a19aa0c5b93b4665b34716fc26108cde8e1554b266fe69c4"
+    },
+    {
+      "bytes": 6477,
+      "evidence_ref": "inputs/ea1774e6034e0072865b3d71cd81fdf66058a5983f956d677fff7deca90b791d",
+      "original_path": "/workspace/scratch/e7495113964e/work/admission_build_attestation.json",
+      "sha256": "ea1774e6034e0072865b3d71cd81fdf66058a5983f956d677fff7deca90b791d"
+    },
+    {
+      "bytes": 30736,
+      "evidence_ref": "inputs/c89fa591ffcac769c7300fa3752a7d142fac8db3f7ae0317043f9de3bc983f2c",
+      "original_path": "/workspace/scratch/e7495113964e/work/admission_audit.json",
+      "sha256": "c89fa591ffcac769c7300fa3752a7d142fac8db3f7ae0317043f9de3bc983f2c"
+    },
+    {
+      "bytes": 3426,
+      "evidence_ref": "inputs/f1ec71f95a2c082fff4d0a34eb81617e904b1008908113acdd6e273c2f18f9c5",
+      "original_path": "/workspace/scratch/e7495113964e/work/driver_creation_ledger.json",
+      "sha256": "f1ec71f95a2c082fff4d0a34eb81617e904b1008908113acdd6e273c2f18f9c5"
+    },
+    {
+      "bytes": 6513,
+      "evidence_ref": "inputs/32d4f8fabbd75d649f291ee3504bbdf48f1f0d11cd83b4bd8837bca6eb46113f",
+      "original_path": "/workspace/scratch/e7495113964e/work/driver_documentation_ledger.json",
+      "sha256": "32d4f8fabbd75d649f291ee3504bbdf48f1f0d11cd83b4bd8837bca6eb46113f"
+    },
+    {
+      "bytes": 6946,
+      "evidence_ref": "inputs/6dacf76778de444b13474c70fc28b471f0d7740ec19e415f92a73c20f9960d8b",
+      "original_path": "/workspace/scratch/e7495113964e/work/driver_docs_verification.json",
+      "sha256": "6dacf76778de444b13474c70fc28b471f0d7740ec19e415f92a73c20f9960d8b"
+    },
+    {
+      "bytes": 318,
+      "evidence_ref": "inputs/39100f195e312586a563811896de6cce77ca885fd8313c9c977e5459b96aa1ca",
+      "original_path": "/workspace/scratch/e7495113964e/work/streaming_authority_final_status.md",
+      "sha256": "39100f195e312586a563811896de6cce77ca885fd8313c9c977e5459b96aa1ca"
+    },
+    {
+      "bytes": 15750,
+      "evidence_ref": "inputs/f665ed6da3166976d155975e5892254dfc34fb523ffd70bc9ed292eed1bbe736",
+      "original_path": "/workspace/scratch/e7495113964e/work/sourcehashes/streaming_authority_attestation.json",
+      "sha256": "f665ed6da3166976d155975e5892254dfc34fb523ffd70bc9ed292eed1bbe736"
+    },
+    {
+      "bytes": 438,
+      "evidence_ref": "inputs/7a223f559cbda926bb17ee40b40d2646651d86a11b78476683c1f2e8b8c33dd5",
+      "original_path": "/workspace/scratch/e7495113964e/work/worker_rejection_diagnostic_probe.json",
+      "sha256": "7a223f559cbda926bb17ee40b40d2646651d86a11b78476683c1f2e8b8c33dd5"
+    },
+    {
+      "bytes": 23351,
+      "evidence_ref": "inputs/74a51cec2d0a13e90e6302add3abaa6a5c331710935b9bd1ad6b1e1703f6e6ad",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/git_custody/receipt.json",
+      "sha256": "74a51cec2d0a13e90e6302add3abaa6a5c331710935b9bd1ad6b1e1703f6e6ad"
+    },
+    {
+      "bytes": 3328,
+      "evidence_ref": "inputs/5f4f910c2935afe56252b8b35357b8f5acf307d8375f397ecdb744e82722b11d",
+      "original_path": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/fixtures/pglite/provenance.json",
+      "sha256": "5f4f910c2935afe56252b8b35357b8f5acf307d8375f397ecdb744e82722b11d"
+    },
+    {
+      "bytes": 3718,
+      "evidence_ref": "inputs/1119b8f0054f777c3a635fcbddd7d31aef8854bd93c65106e354c2efe1b141c4",
+      "original_path": "/workspace/scratch/e7495113964e/baseline/hmt-reusable-design-references/policy/released/policies/security-deployment-runtime-assurance/HMT_Security_Deployment_and_Runtime_Assurance_Policy_v1.0.0.yaml",
+      "sha256": "1119b8f0054f777c3a635fcbddd7d31aef8854bd93c65106e354c2efe1b141c4"
+    },
+    {
+      "bytes": 675,
+      "evidence_ref": "inputs/b26492861be77694fe7a062091508cafe47d751d36a7fef36cb27430de507b71",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/git_custody/receipt-002.json",
+      "sha256": "b26492861be77694fe7a062091508cafe47d751d36a7fef36cb27430de507b71"
+    },
+    {
+      "bytes": 4836,
+      "evidence_ref": "inputs/e41c00fea1c53b41eb0f8e319430ee4cd470a176f42268ebb05f3bcef734479d",
+      "original_path": "/workspace/scratch/e7495113964e/work/native_review/generator-verification.json",
+      "sha256": "e41c00fea1c53b41eb0f8e319430ee4cd470a176f42268ebb05f3bcef734479d"
+    },
+    {
+      "bytes": 171652,
+      "evidence_ref": "inputs/fa31ea2a761e60b10d7f7e6ec9ee4f106c81a38b9e54be5c0b696cf609d528fd",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/software-002/summary.json",
+      "sha256": "fa31ea2a761e60b10d7f7e6ec9ee4f106c81a38b9e54be5c0b696cf609d528fd"
+    },
+    {
+      "bytes": 19791,
+      "evidence_ref": "inputs/a80528c45fb9b6e47984d336a7fdde5b0bfb7fe7500581c72969878df046774e",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/software-002/source-before.json",
+      "sha256": "a80528c45fb9b6e47984d336a7fdde5b0bfb7fe7500581c72969878df046774e"
+    },
+    {
+      "bytes": 19791,
+      "evidence_ref": "inputs/6d3d9db079cdc59cc59c839a73e5091eb605b7eba985d350b08c47a8e3d1f406",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/software-002/source-after.json",
+      "sha256": "6d3d9db079cdc59cc59c839a73e5091eb605b7eba985d350b08c47a8e3d1f406"
+    },
+    {
+      "bytes": 72483,
+      "evidence_ref": "inputs/ec6376be2773775bdcd6d7361564e0d34a5c080e675b8b11cfdfb9e151b14374",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/software-002/test-execution.json",
+      "sha256": "ec6376be2773775bdcd6d7361564e0d34a5c080e675b8b11cfdfb9e151b14374"
+    },
+    {
+      "bytes": 123469,
+      "evidence_ref": "inputs/8a740486f24efd50fc812b799a19aacdf76303c70d5674541aa31267093ea9d4",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/software-002/test-manifest.json",
+      "sha256": "8a740486f24efd50fc812b799a19aacdf76303c70d5674541aa31267093ea9d4"
+    },
+    {
+      "bytes": 75332,
+      "evidence_ref": "inputs/7dba478d1225aabec64a5959100f829e54a295adcfa622b5d45ab85b7755d223",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/software-002/junit.xml",
+      "sha256": "7dba478d1225aabec64a5959100f829e54a295adcfa622b5d45ab85b7755d223"
+    },
+    {
+      "bytes": 420,
+      "evidence_ref": "inputs/846d680721dd9e95b9c2aa901b6d26c54ba3b5ec85083d452511ff992aa5edd5",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/software-002/branch-coverage.json",
+      "sha256": "846d680721dd9e95b9c2aa901b6d26c54ba3b5ec85083d452511ff992aa5edd5"
+    },
+    {
+      "bytes": 796,
+      "evidence_ref": "inputs/b2fff1faa9b59b96851d1e26640125ef3f8ae0c3595def0f688e12fe9dc70087",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/software-002/pytest-process.json",
+      "sha256": "b2fff1faa9b59b96851d1e26640125ef3f8ae0c3595def0f688e12fe9dc70087"
+    },
+    {
+      "bytes": 42469,
+      "evidence_ref": "inputs/904a69f598e6f91e3321a1c08c8d19c26c68172313d8cda1b78d12359fcd7a21",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/mutation-report.json",
+      "sha256": "904a69f598e6f91e3321a1c08c8d19c26c68172313d8cda1b78d12359fcd7a21"
+    },
+    {
+      "bytes": 2918,
+      "evidence_ref": "inputs/5dfcce5cb4a050aeb9c0e0d15aaff8083e74482f590a2defbc636d53b0152d44",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M01/receipt.json",
+      "sha256": "5dfcce5cb4a050aeb9c0e0d15aaff8083e74482f590a2defbc636d53b0152d44"
+    },
+    {
+      "bytes": 507,
+      "evidence_ref": "inputs/a230e414232f81b56f6f3efae8afbf5b6dc4adef454f8bd68db68785011e1919",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M01/mutation.patch",
+      "sha256": "a230e414232f81b56f6f3efae8afbf5b6dc4adef454f8bd68db68785011e1919"
+    },
+    {
+      "bytes": 227,
+      "evidence_ref": "inputs/c376f8729a2fd5180603258c47c10c9d49d5a6469aee90b65812299ec30dbf84",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M01/patch_receipt.json",
+      "sha256": "c376f8729a2fd5180603258c47c10c9d49d5a6469aee90b65812299ec30dbf84"
+    },
+    {
+      "bytes": 1669,
+      "evidence_ref": "inputs/efebb7769022f0afcc0ff5b1f8b553c48a64aa4bf18c61f667f9004e3f6eeb44",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M01/mutated/junit.xml",
+      "sha256": "efebb7769022f0afcc0ff5b1f8b553c48a64aa4bf18c61f667f9004e3f6eeb44"
+    },
+    {
+      "bytes": 771,
+      "evidence_ref": "inputs/564e4c26fcf10fb1de3f2fbf06b9e3e152c4b4d6f035d88cac58a6b1404b4dd1",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M01/mutated/process.json",
+      "sha256": "564e4c26fcf10fb1de3f2fbf06b9e3e152c4b4d6f035d88cac58a6b1404b4dd1"
+    },
+    {
+      "bytes": 388,
+      "evidence_ref": "inputs/a44cdb4c281aa4997c991a8e6f28a2c683ebfc4d72dc5bf3e2c13526dbfc7289",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M01/restored/junit.xml",
+      "sha256": "a44cdb4c281aa4997c991a8e6f28a2c683ebfc4d72dc5bf3e2c13526dbfc7289"
+    },
+    {
+      "bytes": 769,
+      "evidence_ref": "inputs/2b9003d519cd2262cecda196197a9cb46780056e9587ce7a05584567204e6e02",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M01/restored/process.json",
+      "sha256": "2b9003d519cd2262cecda196197a9cb46780056e9587ce7a05584567204e6e02"
+    },
+    {
+      "bytes": 3219,
+      "evidence_ref": "inputs/36bdada4460ccc1164388c3264517f81acc7a8e8db0f460c1605182ceb6af4a6",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M02/receipt.json",
+      "sha256": "36bdada4460ccc1164388c3264517f81acc7a8e8db0f460c1605182ceb6af4a6"
+    },
+    {
+      "bytes": 396,
+      "evidence_ref": "inputs/5537bac016fd5db74e0c967ecbc86faa7ed5b173849c397a4d0c561b8686f26c",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M02/mutation.patch",
+      "sha256": "5537bac016fd5db74e0c967ecbc86faa7ed5b173849c397a4d0c561b8686f26c"
+    },
+    {
+      "bytes": 227,
+      "evidence_ref": "inputs/e48b01eac6bcdeeee0655e5f5c3ce51df4f6b88c7c7663cdfcae041cd62795fd",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M02/patch_receipt.json",
+      "sha256": "e48b01eac6bcdeeee0655e5f5c3ce51df4f6b88c7c7663cdfcae041cd62795fd"
+    },
+    {
+      "bytes": 3579,
+      "evidence_ref": "inputs/559925c3fccc2b5fe9898425f45c3b1f31dbb014fed40a909582a64d29509232",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M02/mutated/junit.xml",
+      "sha256": "559925c3fccc2b5fe9898425f45c3b1f31dbb014fed40a909582a64d29509232"
+    },
+    {
+      "bytes": 753,
+      "evidence_ref": "inputs/c557e70914e1203a9061b8c3eafc064b22950e62472b90c27558e7f2ac9794a9",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M02/mutated/process.json",
+      "sha256": "c557e70914e1203a9061b8c3eafc064b22950e62472b90c27558e7f2ac9794a9"
+    },
+    {
+      "bytes": 626,
+      "evidence_ref": "inputs/6c0c17c1cd6e5a114cb64ea8aaf8ec96bbeb98557eb8ad5f06bc5dfbe4613e39",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M02/restored/junit.xml",
+      "sha256": "6c0c17c1cd6e5a114cb64ea8aaf8ec96bbeb98557eb8ad5f06bc5dfbe4613e39"
+    },
+    {
+      "bytes": 753,
+      "evidence_ref": "inputs/0d42e1ad6e74f2d0b80f2467c2659501b848d8b71565622e941b9304b12706bf",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M02/restored/process.json",
+      "sha256": "0d42e1ad6e74f2d0b80f2467c2659501b848d8b71565622e941b9304b12706bf"
+    },
+    {
+      "bytes": 2876,
+      "evidence_ref": "inputs/3b5d063f108b38b6e03b23c9129b7aaf8107f551d51157c501a9b069b4ea31a9",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M03/receipt.json",
+      "sha256": "3b5d063f108b38b6e03b23c9129b7aaf8107f551d51157c501a9b069b4ea31a9"
+    },
+    {
+      "bytes": 442,
+      "evidence_ref": "inputs/0d3e16a037942f6f6d5f82aba34d19b47223f6830edc5dbde6211e62a4cd3b8f",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M03/mutation.patch",
+      "sha256": "0d3e16a037942f6f6d5f82aba34d19b47223f6830edc5dbde6211e62a4cd3b8f"
+    },
+    {
+      "bytes": 227,
+      "evidence_ref": "inputs/23552fda36cd4ed3e6e2ba93be8ae51a410346b34f64cc8006ce852711a8ef15",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M03/patch_receipt.json",
+      "sha256": "23552fda36cd4ed3e6e2ba93be8ae51a410346b34f64cc8006ce852711a8ef15"
+    },
+    {
+      "bytes": 844,
+      "evidence_ref": "inputs/65aaf6c86036f6a3a82118cde84afe51846338eb7efd101d9a43a7def9c6072f",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M03/mutated/junit.xml",
+      "sha256": "65aaf6c86036f6a3a82118cde84afe51846338eb7efd101d9a43a7def9c6072f"
+    },
+    {
+      "bytes": 761,
+      "evidence_ref": "inputs/7a3883d6db5be1ef60e86a309685396de3f53a32215a4d3394b4d0ed1e93e67e",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M03/mutated/process.json",
+      "sha256": "7a3883d6db5be1ef60e86a309685396de3f53a32215a4d3394b4d0ed1e93e67e"
+    },
+    {
+      "bytes": 380,
+      "evidence_ref": "inputs/f7fa5cd5c869039f35a03616c34ca6c58cb431179a6d2bb53ebf0b5306582c0a",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M03/restored/junit.xml",
+      "sha256": "f7fa5cd5c869039f35a03616c34ca6c58cb431179a6d2bb53ebf0b5306582c0a"
+    },
+    {
+      "bytes": 761,
+      "evidence_ref": "inputs/f525f1c7db7718b80542f5081a6750f780910117d8967faf4c54a32df98463c3",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M03/restored/process.json",
+      "sha256": "f525f1c7db7718b80542f5081a6750f780910117d8967faf4c54a32df98463c3"
+    },
+    {
+      "bytes": 2821,
+      "evidence_ref": "inputs/e674d9f84a81d32b9a12a04bfa7285c9a11b7d22821992f309943ba5f2520f58",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M04/receipt.json",
+      "sha256": "e674d9f84a81d32b9a12a04bfa7285c9a11b7d22821992f309943ba5f2520f58"
+    },
+    {
+      "bytes": 495,
+      "evidence_ref": "inputs/011c4d022d2fbbb0b1c60c381ec1fc0bdbd216a71abc58ebd82f979718ec1024",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M04/mutation.patch",
+      "sha256": "011c4d022d2fbbb0b1c60c381ec1fc0bdbd216a71abc58ebd82f979718ec1024"
+    },
+    {
+      "bytes": 227,
+      "evidence_ref": "inputs/b11c7ccf4cecb9c73e9fb5502fb65ada8dcfbfa81a59a98e943e4f4f6ae00b7b",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M04/patch_receipt.json",
+      "sha256": "b11c7ccf4cecb9c73e9fb5502fb65ada8dcfbfa81a59a98e943e4f4f6ae00b7b"
+    },
+    {
+      "bytes": 844,
+      "evidence_ref": "inputs/d100681f80a00ed8a4fbce6dd0d7796cdffbc3fc4ef25635bf78816782fd9a2a",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M04/mutated/junit.xml",
+      "sha256": "d100681f80a00ed8a4fbce6dd0d7796cdffbc3fc4ef25635bf78816782fd9a2a"
+    },
+    {
+      "bytes": 750,
+      "evidence_ref": "inputs/1448db470fd0124d6907f2a22f20f2450a58f8747de3595111cacdee7f8e9143",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M04/mutated/process.json",
+      "sha256": "1448db470fd0124d6907f2a22f20f2450a58f8747de3595111cacdee7f8e9143"
+    },
+    {
+      "bytes": 369,
+      "evidence_ref": "inputs/45648861a813359df5b5a3fb6506ad8ae906045d4ee271ae62a383c46b52d2be",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M04/restored/junit.xml",
+      "sha256": "45648861a813359df5b5a3fb6506ad8ae906045d4ee271ae62a383c46b52d2be"
+    },
+    {
+      "bytes": 750,
+      "evidence_ref": "inputs/0fe40ffee1210d6fb64ed1cb95f809f40992a477610812f253adc15e60110321",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M04/restored/process.json",
+      "sha256": "0fe40ffee1210d6fb64ed1cb95f809f40992a477610812f253adc15e60110321"
+    },
+    {
+      "bytes": 2711,
+      "evidence_ref": "inputs/5f5cb4ad8007d057068cc1de4f473d5c7d25e665e330f2b8532d3ba2281c79f6",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M05/receipt.json",
+      "sha256": "5f5cb4ad8007d057068cc1de4f473d5c7d25e665e330f2b8532d3ba2281c79f6"
+    },
+    {
+      "bytes": 431,
+      "evidence_ref": "inputs/9ae924581aa659d6019841ab6f33073e2dc8b86c0433f4b86f74dd38de339238",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M05/mutation.patch",
+      "sha256": "9ae924581aa659d6019841ab6f33073e2dc8b86c0433f4b86f74dd38de339238"
+    },
+    {
+      "bytes": 210,
+      "evidence_ref": "inputs/e74bf4c6663f826522cc0034084bb1661ef48bd641b44843f51b71df8d061cd9",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M05/patch_receipt.json",
+      "sha256": "e74bf4c6663f826522cc0034084bb1661ef48bd641b44843f51b71df8d061cd9"
+    },
+    {
+      "bytes": 644,
+      "evidence_ref": "inputs/fd7ad7dfb4d478ca3dfdb584375b04c208a506ae31fc89f28aaace8462fa5368",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M05/mutated/junit.xml",
+      "sha256": "fd7ad7dfb4d478ca3dfdb584375b04c208a506ae31fc89f28aaace8462fa5368"
+    },
+    {
+      "bytes": 731,
+      "evidence_ref": "inputs/5834ccac5a07d4c137a15613c0e597d06e977a477c69b2f2ae09d7eee8d55fdd",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M05/mutated/process.json",
+      "sha256": "5834ccac5a07d4c137a15613c0e597d06e977a477c69b2f2ae09d7eee8d55fdd"
+    },
+    {
+      "bytes": 350,
+      "evidence_ref": "inputs/11ba8c5afaa3e43329652ab40bf22d854de463b5a150534bf16f459c88191786",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M05/restored/junit.xml",
+      "sha256": "11ba8c5afaa3e43329652ab40bf22d854de463b5a150534bf16f459c88191786"
+    },
+    {
+      "bytes": 731,
+      "evidence_ref": "inputs/2c218bab6f74e877ca4b37deaa09bddbc13e5dada0a914c494fe34695186635f",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M05/restored/process.json",
+      "sha256": "2c218bab6f74e877ca4b37deaa09bddbc13e5dada0a914c494fe34695186635f"
+    },
+    {
+      "bytes": 2661,
+      "evidence_ref": "inputs/ae1d1db340f1cb6a3a0edb97ff2fb7d54bba59f1ee4f062678e8cf4d063cd054",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M06/receipt.json",
+      "sha256": "ae1d1db340f1cb6a3a0edb97ff2fb7d54bba59f1ee4f062678e8cf4d063cd054"
+    },
+    {
+      "bytes": 463,
+      "evidence_ref": "inputs/39da1303e1ac10ed5aa7b0a3e91913308a64cafc652f17ddd599baf137b3d55a",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M06/mutation.patch",
+      "sha256": "39da1303e1ac10ed5aa7b0a3e91913308a64cafc652f17ddd599baf137b3d55a"
+    },
+    {
+      "bytes": 210,
+      "evidence_ref": "inputs/76f86fd0f6359ed015845c1d0470954d0f3d116801e85677c8a0cdd434ebdb00",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M06/patch_receipt.json",
+      "sha256": "76f86fd0f6359ed015845c1d0470954d0f3d116801e85677c8a0cdd434ebdb00"
+    },
+    {
+      "bytes": 624,
+      "evidence_ref": "inputs/9903de76ced0755e0fb2ca9e9a334ca71a9db5a21f93b905729a7a0d4688e9a0",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M06/mutated/junit.xml",
+      "sha256": "9903de76ced0755e0fb2ca9e9a334ca71a9db5a21f93b905729a7a0d4688e9a0"
+    },
+    {
+      "bytes": 721,
+      "evidence_ref": "inputs/e975840ac01212b4972969cf54e16d7322778ca31c43c8cc652c9b0fe97db1be",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M06/mutated/process.json",
+      "sha256": "e975840ac01212b4972969cf54e16d7322778ca31c43c8cc652c9b0fe97db1be"
+    },
+    {
+      "bytes": 340,
+      "evidence_ref": "inputs/b7268850a81f47ec8671f3b8c08ef612eb1c5da5f4a83d84e0aa3029915fd5f6",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M06/restored/junit.xml",
+      "sha256": "b7268850a81f47ec8671f3b8c08ef612eb1c5da5f4a83d84e0aa3029915fd5f6"
+    },
+    {
+      "bytes": 721,
+      "evidence_ref": "inputs/2665860a840e12bfb05ff35b8b5e644185315357ace3e969fcb15011d0b7b70c",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M06/restored/process.json",
+      "sha256": "2665860a840e12bfb05ff35b8b5e644185315357ace3e969fcb15011d0b7b70c"
+    },
+    {
+      "bytes": 2820,
+      "evidence_ref": "inputs/496cf61f0b8000a597dcdf34545a638a71e8be37a3f5d200b40102b5ff7bbb1a",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M07/receipt.json",
+      "sha256": "496cf61f0b8000a597dcdf34545a638a71e8be37a3f5d200b40102b5ff7bbb1a"
+    },
+    {
+      "bytes": 723,
+      "evidence_ref": "inputs/bef33072dab2e2afe3f91bf3cffc424ecbaf0ab11d9ceb66bdda458d573cbed8",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M07/mutation.patch",
+      "sha256": "bef33072dab2e2afe3f91bf3cffc424ecbaf0ab11d9ceb66bdda458d573cbed8"
+    },
+    {
+      "bytes": 210,
+      "evidence_ref": "inputs/7cd4ff1320e904316ae27901a22191001fc053401e09130685b9a662bad34a17",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M07/patch_receipt.json",
+      "sha256": "7cd4ff1320e904316ae27901a22191001fc053401e09130685b9a662bad34a17"
+    },
+    {
+      "bytes": 690,
+      "evidence_ref": "inputs/ec4dbf7d4e477068b57d832148b984d0c03d34d347128a3985037c7c187ff585",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M07/mutated/junit.xml",
+      "sha256": "ec4dbf7d4e477068b57d832148b984d0c03d34d347128a3985037c7c187ff585"
+    },
+    {
+      "bytes": 752,
+      "evidence_ref": "inputs/1acabf6d760ac78a4d4bbb517e1ec6dcedcf083416f746681c3318413fa18a53",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M07/mutated/process.json",
+      "sha256": "1acabf6d760ac78a4d4bbb517e1ec6dcedcf083416f746681c3318413fa18a53"
+    },
+    {
+      "bytes": 372,
+      "evidence_ref": "inputs/aba6f8ed4e2e9eb2c58b422f3a384f4fca871f4bb8788eb76f5541d75462f12a",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M07/restored/junit.xml",
+      "sha256": "aba6f8ed4e2e9eb2c58b422f3a384f4fca871f4bb8788eb76f5541d75462f12a"
+    },
+    {
+      "bytes": 753,
+      "evidence_ref": "inputs/1d9ab000707a92a7d069eef6cf6bcb810bd2a6e7bd3f55e7918a984fe8b33188",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M07/restored/process.json",
+      "sha256": "1d9ab000707a92a7d069eef6cf6bcb810bd2a6e7bd3f55e7918a984fe8b33188"
+    },
+    {
+      "bytes": 3246,
+      "evidence_ref": "inputs/501b80892f42c2d429ae6f60212afe7cec507632448053fd1a1b9fd69685dfc2",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M08/receipt.json",
+      "sha256": "501b80892f42c2d429ae6f60212afe7cec507632448053fd1a1b9fd69685dfc2"
+    },
+    {
+      "bytes": 911,
+      "evidence_ref": "inputs/5f90009ef916ee6526cc61c8a2bcc1b7562df728944312fe0c32e46633da672c",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M08/mutation.patch",
+      "sha256": "5f90009ef916ee6526cc61c8a2bcc1b7562df728944312fe0c32e46633da672c"
+    },
+    {
+      "bytes": 210,
+      "evidence_ref": "inputs/c44bd9752454eb5cf216cce0c52944741385ace888a6610e24019fe65407764c",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M08/patch_receipt.json",
+      "sha256": "c44bd9752454eb5cf216cce0c52944741385ace888a6610e24019fe65407764c"
+    },
+    {
+      "bytes": 1613,
+      "evidence_ref": "inputs/ff881b3b30957dae9fb593375285b6c5c9cf8300b5325694e58f06b64c500fe0",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M08/mutated/junit.xml",
+      "sha256": "ff881b3b30957dae9fb593375285b6c5c9cf8300b5325694e58f06b64c500fe0"
+    },
+    {
+      "bytes": 753,
+      "evidence_ref": "inputs/92afa3c16bdb32da8ecc1dc1a817f477bb16551b1a58bb579ad3423e5f8d7f3e",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M08/mutated/process.json",
+      "sha256": "92afa3c16bdb32da8ecc1dc1a817f477bb16551b1a58bb579ad3423e5f8d7f3e"
+    },
+    {
+      "bytes": 647,
+      "evidence_ref": "inputs/2e894c6e2909d5b869d1c8d083f5a3a13ca3b67e08af7582b0a6945145af033c",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M08/restored/junit.xml",
+      "sha256": "2e894c6e2909d5b869d1c8d083f5a3a13ca3b67e08af7582b0a6945145af033c"
+    },
+    {
+      "bytes": 752,
+      "evidence_ref": "inputs/e7ee932a852d0ac0743ed632e65851abcc3d391e40ef7ac739032d6aa5f8f3f5",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M08/restored/process.json",
+      "sha256": "e7ee932a852d0ac0743ed632e65851abcc3d391e40ef7ac739032d6aa5f8f3f5"
+    },
+    {
+      "bytes": 2799,
+      "evidence_ref": "inputs/eb0ab3a88f3f66631d637ea943bb379f31b13fdd4f6352b7c79e45709e650001",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M09/receipt.json",
+      "sha256": "eb0ab3a88f3f66631d637ea943bb379f31b13fdd4f6352b7c79e45709e650001"
+    },
+    {
+      "bytes": 615,
+      "evidence_ref": "inputs/0649502ae23b94f8d9b58dade36c5624ad8e8b76e02c656e37ee74a78c907c77",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M09/mutation.patch",
+      "sha256": "0649502ae23b94f8d9b58dade36c5624ad8e8b76e02c656e37ee74a78c907c77"
+    },
+    {
+      "bytes": 228,
+      "evidence_ref": "inputs/2c1ac22c72606c42a48f2f48fb8df7def7de1f58e0adf8d64cb26782553b9b4d",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M09/patch_receipt.json",
+      "sha256": "2c1ac22c72606c42a48f2f48fb8df7def7de1f58e0adf8d64cb26782553b9b4d"
+    },
+    {
+      "bytes": 702,
+      "evidence_ref": "inputs/dc73d4eb1764699b09cbd7b10deab9da4a98ff46716eef64284a97c2f595e6d2",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M09/mutated/junit.xml",
+      "sha256": "dc73d4eb1764699b09cbd7b10deab9da4a98ff46716eef64284a97c2f595e6d2"
+    },
+    {
+      "bytes": 744,
+      "evidence_ref": "inputs/e78fe87882437d63b13284d221f381c672f559d4b3a112dcb8086e29c7226e03",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M09/mutated/process.json",
+      "sha256": "e78fe87882437d63b13284d221f381c672f559d4b3a112dcb8086e29c7226e03"
+    },
+    {
+      "bytes": 363,
+      "evidence_ref": "inputs/8dccdb667f144277626cbc8917bd313d345283d8fc21f65386105fe4292fbd19",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M09/restored/junit.xml",
+      "sha256": "8dccdb667f144277626cbc8917bd313d345283d8fc21f65386105fe4292fbd19"
+    },
+    {
+      "bytes": 744,
+      "evidence_ref": "inputs/51822c140ce723226504e58ab0c81c94525e0eb81fb7ff7d1d97fdba0ad5f1af",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M09/restored/process.json",
+      "sha256": "51822c140ce723226504e58ab0c81c94525e0eb81fb7ff7d1d97fdba0ad5f1af"
+    },
+    {
+      "bytes": 2791,
+      "evidence_ref": "inputs/bcebe6d643d00e4477913c7fc9aedf974d38eeed2f825a64f0656eb9f864e1f9",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M10/receipt.json",
+      "sha256": "bcebe6d643d00e4477913c7fc9aedf974d38eeed2f825a64f0656eb9f864e1f9"
+    },
+    {
+      "bytes": 362,
+      "evidence_ref": "inputs/adeb0775cc9331f03dd8dcf76594b696f152d2ea531c23a61e1ca3910738a2c1",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M10/mutation.patch",
+      "sha256": "adeb0775cc9331f03dd8dcf76594b696f152d2ea531c23a61e1ca3910738a2c1"
+    },
+    {
+      "bytes": 224,
+      "evidence_ref": "inputs/1059df5049899152730ec503e1aacf82af431d03cb1aa2a3f4e91572f308a23a",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M10/patch_receipt.json",
+      "sha256": "1059df5049899152730ec503e1aacf82af431d03cb1aa2a3f4e91572f308a23a"
+    },
+    {
+      "bytes": 1673,
+      "evidence_ref": "inputs/ad9a022e0c71790aad9354d397c86625d169a1206968232b80b52cc442aa063b",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M10/mutated/junit.xml",
+      "sha256": "ad9a022e0c71790aad9354d397c86625d169a1206968232b80b52cc442aa063b"
+    },
+    {
+      "bytes": 744,
+      "evidence_ref": "inputs/e0096bfc4fc07826a01fbcb217c1c4bebad604c5a03052dcf9d632ceed473a97",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M10/mutated/process.json",
+      "sha256": "e0096bfc4fc07826a01fbcb217c1c4bebad604c5a03052dcf9d632ceed473a97"
+    },
+    {
+      "bytes": 362,
+      "evidence_ref": "inputs/8e8a13f2ef22a62e5d2ee777fef81ab1ea19d9f5180c317a7d8807407c618cb6",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M10/restored/junit.xml",
+      "sha256": "8e8a13f2ef22a62e5d2ee777fef81ab1ea19d9f5180c317a7d8807407c618cb6"
+    },
+    {
+      "bytes": 743,
+      "evidence_ref": "inputs/e644279ec1c087e7bed42de3c59d85ab2b13da9a2180a5d4a1338050a1513c15",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M10/restored/process.json",
+      "sha256": "e644279ec1c087e7bed42de3c59d85ab2b13da9a2180a5d4a1338050a1513c15"
+    },
+    {
+      "bytes": 2876,
+      "evidence_ref": "inputs/a5ad0d5be2cfa8eaa275155e60eb258c4c7f7ee59a1b277db8d73cb20d01b1b2",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M11/receipt.json",
+      "sha256": "a5ad0d5be2cfa8eaa275155e60eb258c4c7f7ee59a1b277db8d73cb20d01b1b2"
+    },
+    {
+      "bytes": 485,
+      "evidence_ref": "inputs/1d6a3c6a87d6c93c15c59a91a14c35a1c8f6786aa027fe77e06bf5a747f363c3",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M11/mutation.patch",
+      "sha256": "1d6a3c6a87d6c93c15c59a91a14c35a1c8f6786aa027fe77e06bf5a747f363c3"
+    },
+    {
+      "bytes": 219,
+      "evidence_ref": "inputs/d364b659513a5650e7ec6937a660937f0d9ad5a75a495d403d1eeca5486b9090",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M11/patch_receipt.json",
+      "sha256": "d364b659513a5650e7ec6937a660937f0d9ad5a75a495d403d1eeca5486b9090"
+    },
+    {
+      "bytes": 726,
+      "evidence_ref": "inputs/e6bd13f1df6daa2806bb3291d9824fe0a8b58f07494bf758009958d5fa0e6026",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M11/mutated/junit.xml",
+      "sha256": "e6bd13f1df6daa2806bb3291d9824fe0a8b58f07494bf758009958d5fa0e6026"
+    },
+    {
+      "bytes": 762,
+      "evidence_ref": "inputs/63831fb9d0f2a286b18be137bf7bd8bdfd00fb0442b31c0ef425aa46ad2f0707",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M11/mutated/process.json",
+      "sha256": "63831fb9d0f2a286b18be137bf7bd8bdfd00fb0442b31c0ef425aa46ad2f0707"
+    },
+    {
+      "bytes": 381,
+      "evidence_ref": "inputs/132482137887990f600f5da2e340b9f0ff7a4ef7deb0bd14e7b5d6b82661a194",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M11/restored/junit.xml",
+      "sha256": "132482137887990f600f5da2e340b9f0ff7a4ef7deb0bd14e7b5d6b82661a194"
+    },
+    {
+      "bytes": 762,
+      "evidence_ref": "inputs/3669eda8d954ee58d0178b0db850b800e94ce5ab79dfec89d02457e7179a4a80",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M11/restored/process.json",
+      "sha256": "3669eda8d954ee58d0178b0db850b800e94ce5ab79dfec89d02457e7179a4a80"
+    },
+    {
+      "bytes": 2747,
+      "evidence_ref": "inputs/699270cf55a7cd40aab37df5938d67dcc4dce617903148ed9e8c05102407d7a9",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M12/receipt.json",
+      "sha256": "699270cf55a7cd40aab37df5938d67dcc4dce617903148ed9e8c05102407d7a9"
+    },
+    {
+      "bytes": 311,
+      "evidence_ref": "inputs/c05c204e0265df319b86e282fd65c9c0543c74f04f6fb4580441105643d55e4c",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M12/mutation.patch",
+      "sha256": "c05c204e0265df319b86e282fd65c9c0543c74f04f6fb4580441105643d55e4c"
+    },
+    {
+      "bytes": 217,
+      "evidence_ref": "inputs/5506455403bc6cac59153d67b9830bbdeceb5d3b8f4ce61969dbc9f21a9f1480",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M12/patch_receipt.json",
+      "sha256": "5506455403bc6cac59153d67b9830bbdeceb5d3b8f4ce61969dbc9f21a9f1480"
+    },
+    {
+      "bytes": 690,
+      "evidence_ref": "inputs/9ebd397552639f26d013511b230eff721dfae91a23737490666937fdd3d64b7c",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M12/mutated/junit.xml",
+      "sha256": "9ebd397552639f26d013511b230eff721dfae91a23737490666937fdd3d64b7c"
+    },
+    {
+      "bytes": 737,
+      "evidence_ref": "inputs/8c224c777f426e5a99ca1dec6c7a52a5f46c2e65aa559d4f4f370ccdd5655c25",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M12/mutated/process.json",
+      "sha256": "8c224c777f426e5a99ca1dec6c7a52a5f46c2e65aa559d4f4f370ccdd5655c25"
+    },
+    {
+      "bytes": 356,
+      "evidence_ref": "inputs/51ed03421e81584ae749007508712dccc69fccedf1574b51df1d33e7a32b80a3",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M12/restored/junit.xml",
+      "sha256": "51ed03421e81584ae749007508712dccc69fccedf1574b51df1d33e7a32b80a3"
+    },
+    {
+      "bytes": 737,
+      "evidence_ref": "inputs/abdee3d54dc688751a9b668d61a042aeadd1a84fa8dbb20d05138e542365d444",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M12/restored/process.json",
+      "sha256": "abdee3d54dc688751a9b668d61a042aeadd1a84fa8dbb20d05138e542365d444"
+    },
+    {
+      "bytes": 170128,
+      "evidence_ref": "inputs/7c67fbb13f33f4d8671901e43d14d19edea9ebfedd500f7885367b9aebbde7af",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/native_vv-002/analysis.json",
+      "sha256": "7c67fbb13f33f4d8671901e43d14d19edea9ebfedd500f7885367b9aebbde7af"
+    },
+    {
+      "bytes": 318,
+      "evidence_ref": "inputs/2fd0db7b1c8361712b644099a9077963decc4bc978eba8589cd19a30c1d9521f",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/native_vv-002/ruff/receipt.json",
+      "sha256": "2fd0db7b1c8361712b644099a9077963decc4bc978eba8589cd19a30c1d9521f"
+    },
+    {
+      "bytes": 19,
+      "evidence_ref": "inputs/82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/native_vv-002/ruff/pytest.stdout.log",
+      "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "bytes": 0,
+      "evidence_ref": "inputs/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/native_vv-002/pyrefly/pytest.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 321,
+      "evidence_ref": "inputs/33e3af030848d6983be413ad9511f6e16de4c2bf9eb5f409a9988448dd17e29e",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/native_vv-002/mypy/receipt.json",
+      "sha256": "33e3af030848d6983be413ad9511f6e16de4c2bf9eb5f409a9988448dd17e29e"
+    },
+    {
+      "bytes": 44,
+      "evidence_ref": "inputs/8b09188cd4334b7a36b9f6dc1f7ef942a9f88d6aa8cc3cdbb7ae7841468e6997",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/native_vv-002/mypy/pytest.stdout.log",
+      "sha256": "8b09188cd4334b7a36b9f6dc1f7ef942a9f88d6aa8cc3cdbb7ae7841468e6997"
+    },
+    {
+      "bytes": 338,
+      "evidence_ref": "inputs/e0ca63f9aa38515a0a212758e5d27b7200953130ef91ecbc90e1f16570b6afce",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/native_vv-002/pyrefly/receipt.json",
+      "sha256": "e0ca63f9aa38515a0a212758e5d27b7200953130ef91ecbc90e1f16570b6afce"
+    },
+    {
+      "bytes": 164,
+      "evidence_ref": "inputs/05d3adb250ea5d9900fd29288c6bfc6d7b9b2734aca99f5e4a115c28729dee3d",
+      "original_path": "/workspace/scratch/e7495113964e/work/final/native_vv-002/pyrefly/pytest.stderr.log",
+      "sha256": "05d3adb250ea5d9900fd29288c6bfc6d7b9b2734aca99f5e4a115c28729dee3d"
+    },
+    {
+      "bytes": 587,
+      "evidence_ref": "inputs/e41f2f70d18d0c1991b40ce4d948586e7611103118baaa2ac6abbaffa963e90a",
+      "original_path": "/workspace/scratch/e7495113964e/work/native_review/root_audits/python.receipt.json",
+      "sha256": "e41f2f70d18d0c1991b40ce4d948586e7611103118baaa2ac6abbaffa963e90a"
+    },
+    {
+      "bytes": 35354,
+      "evidence_ref": "inputs/f602d7cb19c712cdc72d5275d2bd9db7f4e85ca0130534d26fbf3fd752343273",
+      "original_path": "/workspace/scratch/e7495113964e/work/native_review/root_audits/python.stdout",
+      "sha256": "f602d7cb19c712cdc72d5275d2bd9db7f4e85ca0130534d26fbf3fd752343273"
+    },
+    {
+      "bytes": 2001,
+      "evidence_ref": "inputs/f6e9b280c19ac5f9ce9194bc0516224558c79802c64f16be75e01c56aa62222c",
+      "original_path": "/workspace/scratch/e7495113964e/work/native_review/license/receipt.json",
+      "sha256": "f6e9b280c19ac5f9ce9194bc0516224558c79802c64f16be75e01c56aa62222c"
+    },
+    {
+      "bytes": 3859,
+      "evidence_ref": "inputs/413c2554778a31a620b047d90f231c4d9e86548ae8b6d41f65eed47bb6b68dad",
+      "original_path": "/workspace/scratch/e7495113964e/work/native_review/license/stdout.log",
+      "sha256": "413c2554778a31a620b047d90f231c4d9e86548ae8b6d41f65eed47bb6b68dad"
+    },
+    {
+      "bytes": 5321,
+      "evidence_ref": "inputs/b74040e0a3317b837d8b7893c941ffbf3fa3bc8e91706d9c28af64d9c17418a9",
+      "original_path": "/workspace/scratch/e7495113964e/work/native_review/license/profile.json",
+      "sha256": "b74040e0a3317b837d8b7893c941ffbf3fa3bc8e91706d9c28af64d9c17418a9"
+    },
+    {
+      "bytes": 73,
+      "evidence_ref": "inputs/c27a647860a8316b000d101d9ad84fd19395958eda041d082caa9d4a4aefdc2c",
+      "original_path": "/workspace/scratch/e7495113964e/work/epochs/final-license.json",
+      "sha256": "c27a647860a8316b000d101d9ad84fd19395958eda041d082caa9d4a4aefdc2c"
+    },
+    {
+      "bytes": 518,
+      "evidence_ref": "inputs/7f0fab053e1c03eff16702c3606b26dca27a67c26c6b83a108af7d1e0a088f99",
+      "original_path": "/workspace/scratch/e7495113964e/work/native_review/root_audits/npm.receipt.json",
+      "sha256": "7f0fab053e1c03eff16702c3606b26dca27a67c26c6b83a108af7d1e0a088f99"
+    },
+    {
+      "bytes": 358,
+      "evidence_ref": "inputs/31cdfa775207da2fe229944121d4939587d59efa9651a899dc1ba9575d681896",
+      "original_path": "/workspace/scratch/e7495113964e/work/native_review/root_audits/npm.stdout",
+      "sha256": "31cdfa775207da2fe229944121d4939587d59efa9651a899dc1ba9575d681896"
+    },
+    {
+      "bytes": 1372,
+      "evidence_ref": "inputs/54c60027beec0606461f979f06b699b5b3dbd002eb221e27c8da3e0e9ef2eab8",
+      "original_path": "/workspace/scratch/e7495113964e/work/native_review/backend/advisory.receipt.json",
+      "sha256": "54c60027beec0606461f979f06b699b5b3dbd002eb221e27c8da3e0e9ef2eab8"
+    },
+    {
+      "bytes": 107,
+      "evidence_ref": "inputs/7917dc46dfd4f74ef07d079f6c7368d0eef18f8ce84b80018418a603fed1c45a",
+      "original_path": "/workspace/scratch/e7495113964e/work/native_review/backend/advisory.stdout",
+      "sha256": "7917dc46dfd4f74ef07d079f6c7368d0eef18f8ce84b80018418a603fed1c45a"
+    },
+    {
+      "bytes": 1430,
+      "evidence_ref": "inputs/9a8be5fdb598b874c7644b140b210721a7a80dc99e723b1bc65d83d8d36b9639",
+      "original_path": "/workspace/scratch/e7495113964e/work/native_review/backend/license.receipt.json",
+      "sha256": "9a8be5fdb598b874c7644b140b210721a7a80dc99e723b1bc65d83d8d36b9639"
+    },
+    {
+      "bytes": 217,
+      "evidence_ref": "inputs/cedd9372cfad90789ed5f11f7cf68e5b259b0b2993539173aadc5dc2bfbc3c1e",
+      "original_path": "/workspace/scratch/e7495113964e/work/native_review/backend/license.stdout",
+      "sha256": "cedd9372cfad90789ed5f11f7cf68e5b259b0b2993539173aadc5dc2bfbc3c1e"
+    },
+    {
+      "bytes": 1048,
+      "evidence_ref": "inputs/e5eef82b0df99b5954dfdc5c2a7f30bba3808e02381b415602b91358a7dcc56f",
+      "original_path": "/workspace/scratch/e7495113964e/work/native_review/backend/identity.json",
+      "sha256": "e5eef82b0df99b5954dfdc5c2a7f30bba3808e02381b415602b91358a7dcc56f"
+    },
+    {
+      "bytes": 8162,
+      "evidence_ref": "inputs/d75de8ba0d3304a3d74484fb9f340edb87ef02712da4fa02a2ed92e71b0572dd",
+      "original_path": "/workspace/scratch/e7495113964e/work/native_review/backend/pypi-metadata.json",
+      "sha256": "d75de8ba0d3304a3d74484fb9f340edb87ef02712da4fa02a2ed92e71b0572dd"
+    },
+    {
+      "bytes": 98,
+      "evidence_ref": "inputs/0d5ab27e0fa2cc72eeb7a0b3fa12dba6f34bbc8df2c7dac705c08aafb18c20d7",
+      "original_path": "/workspace/scratch/e7495113964e/work/native_review/backend/requirements.txt",
+      "sha256": "0d5ab27e0fa2cc72eeb7a0b3fa12dba6f34bbc8df2c7dac705c08aafb18c20d7"
+    }
+  ],
+  "finding": "Source creation, upstream research, fixture repair, agent reviews, final executed witnesses, and native engine identity are preserved as hashed references. Old failure epochs remain historical observations. The supplied baseline and original native suite are not promoted or overwritten. There is no human signature, institutional attestation, or release approval represented by this automated engineering record.",
+  "human_approval": false,
+  "promotion_authorized": false,
+  "review_method": "automated_engineering_review",
+  "reviewer": "/root/driver_research",
+  "schema": "hmt.pg.engineering-review/1",
+  "software_observation": {
+    "coverage": {
+      "branch_percent": 95.32374100719424,
+      "covered_branches": 265,
+      "covered_lines": 1285,
+      "files": 39,
+      "line_percent": 98.77017678708685,
+      "minimum_branch_percent": 90,
+      "minimum_line_percent": 90,
+      "num_branches": 278,
+      "num_statements": 1301,
+      "scope": "all delivered src/hmt_pg_patterns/*.py, recursively",
+      "status": "PASS",
+      "tooling_scope": "independent admission tool tests and structural checks"
+    },
+    "mutants": 12,
+    "scope": "fresh software tests and explicit PostgreSQL branch contracts",
+    "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+    "tests": 446
+  },
+  "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+  "supply_observation": {
+    "backend": "setuptools==84.2.1",
+    "claim_limit": "No known advisory in queried feeds at execution time; metadata license inventory, not legal compatibility or absence of undisclosed flaws.",
+    "npm_packages": {
+      "@electric-sql/pglite": "0.5.15",
+      "@electric-sql/pglite-age": "0.0.16",
+      "@electric-sql/pglite-pg_hashids": "0.0.16",
+      "@electric-sql/pglite-pg_ivm": "0.0.16",
+      "@electric-sql/pglite-pg_textsearch": "0.0.17",
+      "@electric-sql/pglite-pg_uuidv7": "0.0.16",
+      "@electric-sql/pglite-pgtap": "0.0.16",
+      "@electric-sql/pglite-pgvector": "0.0.16",
+      "@electric-sql/pglite-socket": "0.2.18"
+    },
+    "platform_exclusions": {
+      "colorama": [
+        "sys_platform == 'win32'"
+      ],
+      "tzdata": [
+        "sys_platform == 'win32'"
+      ]
+    },
+    "python_packages": {
+      "annotated-types": "0.8.0",
+      "asyncpg": "0.32.0",
+      "asyncpg-stubs": "0.32.0",
+      "attrs": "26.1.0",
+      "coverage": "7.17.1",
+      "duckdb": "2.0.0",
+      "greenlet": "3.5.6",
+      "hypothesis": "6.170.14",
+      "iniconfig": "2.3.1",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "packaging": "26.3",
+      "pluggy": "1.7.0",
+      "polars": "2.1.0",
+      "polars-runtime-32": "2.1.0",
+      "psycopg": "3.3.7",
+      "psycopg-binary": "3.3.7",
+      "psycopg-pool": "3.3.3",
+      "pydantic": "2.14.2",
+      "pydantic-core": "2.50.2",
+      "pygments": "2.21.0",
+      "pyrsistent": "0.20.0",
+      "pytest": "9.2.0",
+      "pytest-asyncio": "1.4.1.post1",
+      "pytest-cov": "7.1.0",
+      "pyyaml": "6.0.3",
+      "redis": "8.1.0",
+      "referencing": "0.37.0",
+      "rpds-py": "2026.9.1",
+      "ruff": "0.17.3",
+      "sortedcontainers": "2.4.0",
+      "sqlalchemy": "2.1.8",
+      "sqlmodel": "0.0.48",
+      "typing-extensions": "4.16.0",
+      "typing-inspection": "0.4.4"
+    }
+  },
+  "surface_assessments": {
+    "fixtures/pglite/package-lock.json": "Exact node24.22.1 and fixture package versions; registry artifact integrity; explicit test-only PostgreSQL WASM adapter and separate patch provenance.",
+    "fixtures/pglite/package.json": "Exact node24.22.1 and fixture package versions; registry artifact integrity; explicit test-only PostgreSQL WASM adapter and separate patch provenance.",
+    "pyproject.toml": "Exact Python runtime/dev/build requirements and official-source artifact hashes; tested Linux closure distinguished from platform-only entries.",
+    "tools/__init__.py": "Package marker only; inspected for import-time behavior.",
+    "tools/admission_binding.py": "Bounded test runner and captures; exact source/manifest/JUnit checks; explicit coverage and causal witnesses. Output overflow, timeout, stale source, duplicate identities, and suppression are rejected.",
+    "tools/admission_campaign.py": "Bounded test runner and captures; exact source/manifest/JUnit checks; explicit coverage and causal witnesses. Output overflow, timeout, stale source, duplicate identities, and suppression are rejected.",
+    "tools/admission_causal.py": "Bounded test runner and captures; exact source/manifest/JUnit checks; explicit coverage and causal witnesses. Output overflow, timeout, stale source, duplicate identities, and suppression are rejected.",
+    "tools/admission_coverage.py": "Bounded test runner and captures; exact source/manifest/JUnit checks; explicit coverage and causal witnesses. Output overflow, timeout, stale source, duplicate identities, and suppression are rejected.",
+    "tools/admission_evidence.py": "Bounded test runner and captures; exact source/manifest/JUnit checks; explicit coverage and causal witnesses. Output overflow, timeout, stale source, duplicate identities, and suppression are rejected.",
+    "tools/admission_harness.py": "Bounded test runner and captures; exact source/manifest/JUnit checks; explicit coverage and causal witnesses. Output overflow, timeout, stale source, duplicate identities, and suppression are rejected.",
+    "tools/admission_junit.py": "Bounded test runner and captures; exact source/manifest/JUnit checks; explicit coverage and causal witnesses. Output overflow, timeout, stale source, duplicate identities, and suppression are rejected.",
+    "tools/admission_process.py": "Bounded test runner and captures; exact source/manifest/JUnit checks; explicit coverage and causal witnesses. Output overflow, timeout, stale source, duplicate identities, and suppression are rejected.",
+    "tools/admission_refinements.py": "Bounded test runner and captures; exact source/manifest/JUnit checks; explicit coverage and causal witnesses. Output overflow, timeout, stale source, duplicate identities, and suppression are rejected.",
+    "tools/admission_structure.py": "Bounded test runner and captures; exact source/manifest/JUnit checks; explicit coverage and causal witnesses. Output overflow, timeout, stale source, duplicate identities, and suppression are rejected.",
+    "tools/admit.py": "Bounded test runner and captures; exact source/manifest/JUnit checks; explicit coverage and causal witnesses. Output overflow, timeout, stale source, duplicate identities, and suppression are rejected.",
+    "tools/candidate_ledger.py": "Bounded dimension parsing; real SQL CROSS JOIN; explicit applicability reasons; bound SQL values; append-only UPDATE/DELETE protection; closed constant table names.",
+    "tools/candidate_model.py": "Bounded dimension parsing; real SQL CROSS JOIN; explicit applicability reasons; bound SQL values; append-only UPDATE/DELETE protection; closed constant table names.",
+    "tools/candidate_sql.py": "Bounded dimension parsing; real SQL CROSS JOIN; explicit applicability reasons; bound SQL values; append-only UPDATE/DELETE protection; closed constant table names.",
+    "tools/mutation_campaign.py": "Semantic mutations occur only in isolated source copies; exact literal anchors and path fences; imported-source proof; assertion failures distinguished from timeout/startup; byte restoration and passing rerun required.",
+    "tools/mutation_execution.py": "Semantic mutations occur only in isolated source copies; exact literal anchors and path fences; imported-source proof; assertion failures distinguished from timeout/startup; byte restoration and passing rerun required.",
+    "tools/mutation_models.py": "Semantic mutations occur only in isolated source copies; exact literal anchors and path fences; imported-source proof; assertion failures distinguished from timeout/startup; byte restoration and passing rerun required.",
+    "tools/mutation_probe.py": "Semantic mutations occur only in isolated source copies; exact literal anchors and path fences; imported-source proof; assertion failures distinguished from timeout/startup; byte restoration and passing rerun required.",
+    "tools/mutation_python.py": "Semantic mutations occur only in isolated source copies; exact literal anchors and path fences; imported-source proof; assertion failures distinguished from timeout/startup; byte restoration and passing rerun required.",
+    "tools/mutation_results.py": "Semantic mutations occur only in isolated source copies; exact literal anchors and path fences; imported-source proof; assertion failures distinguished from timeout/startup; byte restoration and passing rerun required.",
+    "tools/mutation_sql.py": "Semantic mutations occur only in isolated source copies; exact literal anchors and path fences; imported-source proof; assertion failures distinguished from timeout/startup; byte restoration and passing rerun required.",
+    "tools/mutation_storage.py": "Semantic mutations occur only in isolated source copies; exact literal anchors and path fences; imported-source proof; assertion failures distinguished from timeout/startup; byte restoration and passing rerun required.",
+    "tools/native_vv.py": "Final admission is reparsed against current source; original supplied DuckDB schema retained; no synthetic PASS conversion; actual analyzers, observed loop sites, and named executed families are required.",
+    "tools/native_vv_analysis.py": "Final admission is reparsed against current source; original supplied DuckDB schema retained; no synthetic PASS conversion; actual analyzers, observed loop sites, and named executed families are required.",
+    "tools/native_vv_database.py": "Final admission is reparsed against current source; original supplied DuckDB schema retained; no synthetic PASS conversion; actual analyzers, observed loop sites, and named executed families are required.",
+    "tools/native_vv_inputs.py": "Final admission is reparsed against current source; original supplied DuckDB schema retained; no synthetic PASS conversion; actual analyzers, observed loop sites, and named executed families are required.",
+    "tools/native_vv_power10.py": "Final admission is reparsed against current source; original supplied DuckDB schema retained; no synthetic PASS conversion; actual analyzers, observed loop sites, and named executed families are required.",
+    "uv.lock": "Exact Python runtime/dev/build requirements and official-source artifact hashes; tested Linux closure distinguished from platform-only entries."
+  },
+  "surface_digest": "508e8552ccd4e63f4ec6866dcd83321d1ea2eb4baca56b889d488099a37dff9c",
+  "surfaces": {
+    "fixtures/pglite/package-lock.json": "73328c688b3513c864944140efbb5ebfb052b47a236c8d7f95f76ef54fe8dcaa",
+    "fixtures/pglite/package.json": "a93daa8c1eaeacf1c0b5cdb8810a11cddbfac6541ee57315e3a43c4a5822c4c0",
+    "pyproject.toml": "2016fe4bc3bea91d5830d18e9a4aadaad626a946674c315a57ca84264b3bcd92",
+    "tools/__init__.py": "547fc04ae36d8eadc5c0dc7cbddcdeab37ff350913d803c7b3b4c42749be630e",
+    "tools/admission_binding.py": "0f319f888eaf84375504990d70d1bb1a8dfedf1c0fb4dd520ff193c4de9f5c19",
+    "tools/admission_campaign.py": "c181a9f0633c22f9b2dda14ed1aa6620bc21a289a3b1fab57697cf03fdffc3e8",
+    "tools/admission_causal.py": "e49e161a0ff4fb80b9bf52f85cc839d7f89e2edd3590f7550a5dfca9d7d887e9",
+    "tools/admission_coverage.py": "144a0d69431c0adad6dbc701af08ec4ae46b75dbfe40c979854e724e0726c89a",
+    "tools/admission_evidence.py": "ab84a75000c7320d80f0920daba71ae9c5698fec18aff6f84094c51791ec2349",
+    "tools/admission_harness.py": "fecf4b81ccf65e76a4ce702e507064055e81d7d2a6582964aa95d44dc01be94a",
+    "tools/admission_junit.py": "152c48e97ef3f0458bcc4ae606d1c960b39001ebc1689e30bc7815f69e117f7c",
+    "tools/admission_process.py": "ba769e31d2079db6885e0dc3c891ba530f40e2ccd7bfc4540af74990b5a42f10",
+    "tools/admission_refinements.py": "679401295b7d1b5d2b7b0b13f9dd2b71b40b7e744a933527b66b0d7f63c85e2e",
+    "tools/admission_structure.py": "91be0f88020e11a44605856f9ae7aebeb7a11fe27a7799249cf8c2e27277732f",
+    "tools/admit.py": "d6530c8fbdae2464d747a67f0795eb0492f80bfc356d7ccf4e938afe74364209",
+    "tools/candidate_ledger.py": "43504dffc2fff6aadb94c7ea801f269cb473b1bd106732b926fe59c11059c75a",
+    "tools/candidate_model.py": "4cf079eb01de51ea14e901926e8d3172e29c3d7f9139fefaff95ce1ae8021ef8",
+    "tools/candidate_sql.py": "2b06d07917a61e4911b41c0450b7e94d815acacc07c1713b75dc570b2dd721d4",
+    "tools/mutation_campaign.py": "ef60cd4b805f7f4f20e8ab739894b91789e747431ae021e09cc45c6beaece5ce",
+    "tools/mutation_execution.py": "2610dcca26716ae4857df42497c9d2f0cd0e62b6dcd6fdb543cd216bdb9e13ff",
+    "tools/mutation_models.py": "6c7bf9023fb4cc0df3d2168f5d547cfe1ef60a0c03228c5192d04a5517a03e92",
+    "tools/mutation_probe.py": "8d222af1bd93925ec5d1472ab49932a747b3a10e55768ba626afb4942adbb07e",
+    "tools/mutation_python.py": "ee653d029fb9ca88112cf94a6e2a2a7d965fc412ed50da4a3816dea6cc7cf8b6",
+    "tools/mutation_results.py": "d867b2db3e2d20192e7bb5ca87210edc30f76d58f317405f5fb278be4874248b",
+    "tools/mutation_sql.py": "4a667f92fea4c8c6435d17730bae7c1cf99023589276ae749902f1b591028ddf",
+    "tools/mutation_storage.py": "6e1103b4226116d0192a7b31f20627eecb1c27711d0fd36a8faa318742fc7ae7",
+    "tools/native_vv.py": "e4f7a57c944dcde43de01476737625144c9ae0b1d70d7e55e06fb905652796d9",
+    "tools/native_vv_analysis.py": "597bf6fbb53d5cbf5543c040bdb7b4f131a4bbf80ab76b7ed74d1fbdb5ec2fce",
+    "tools/native_vv_database.py": "23fe709ce4c31a14293caeaf91e5b231d437fdae4c0cfb0a849b891ea3189b43",
+    "tools/native_vv_inputs.py": "457968570a3efcf787c7903c68cb49f15194bc600b636b58b1d89010539bb676",
+    "tools/native_vv_power10.py": "cc274c1b0d20f4bd0903850846ad9e71237595ddf3797cef3abb8ea8ff63270b",
+    "uv.lock": "73baf5c7335997906a9f22bd8cce04b5837ff65796b23de3578115c580f8847c"
+  }
+}

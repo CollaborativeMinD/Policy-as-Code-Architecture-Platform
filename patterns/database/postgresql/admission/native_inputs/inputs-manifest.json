@@ -1,0 +1,10 @@
+{
+  "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+  "candidate": "9bc06522f27d4576f08caf44f4989031d1b145f1",
+  "baseline": "e3387ddb0772fdeaa4093f7b049033c5ef6f43eb",
+  "request": "/workspace/scratch/e7495113964e/work/final/native42-request-002.json",
+  "request_sha256": "075ec8a3d7eda0fd365676bec988bd0c8932bce285b29024063765100aa2c88a",
+  "policy_sha256": "6a819f707026021de229ffd9d5aebb6e39d9f594c6f4df6d09fa93abd48c26e2",
+  "qualification_sha256": "26ed0ba2555b4d2cc838e6af7d8bee344315050834a0e094ddf3ea4f599b2a1c",
+  "declared_runtime_scope": "41 original lanes declare3.13.15; explicit prepared3.13.17 overrides retained. Optimization uses original3.15.0rc3 lock environment. Target tests/license/VV use exact target dependencies."
+}

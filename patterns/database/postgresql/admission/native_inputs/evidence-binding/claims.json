@@ -1,0 +1,52 @@
+{
+  "claims": [
+    {
+      "claim_id": "PG-EVIDENCE-001",
+      "statement": "Exact bytes of observed final-source software-002/summary.json; source6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7. Hash binding is distinct from behavioral qualification.",
+      "file_path": "software-002/summary.json",
+      "sha256": "fa31ea2a761e60b10d7f7e6ec9ee4f106c81a38b9e54be5c0b696cf609d528fd"
+    },
+    {
+      "claim_id": "PG-EVIDENCE-002",
+      "statement": "Exact bytes of observed final-source software-002/source-before.json; source6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7. Hash binding is distinct from behavioral qualification.",
+      "file_path": "software-002/source-before.json",
+      "sha256": "a80528c45fb9b6e47984d336a7fdde5b0bfb7fe7500581c72969878df046774e"
+    },
+    {
+      "claim_id": "PG-EVIDENCE-003",
+      "statement": "Exact bytes of observed final-source software-002/junit.xml; source6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7. Hash binding is distinct from behavioral qualification.",
+      "file_path": "software-002/junit.xml",
+      "sha256": "7dba478d1225aabec64a5959100f829e54a295adcfa622b5d45ab85b7755d223"
+    },
+    {
+      "claim_id": "PG-EVIDENCE-004",
+      "statement": "Exact bytes of observed final-source software-002/test-manifest.json; source6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7. Hash binding is distinct from behavioral qualification.",
+      "file_path": "software-002/test-manifest.json",
+      "sha256": "8a740486f24efd50fc812b799a19aacdf76303c70d5674541aa31267093ea9d4"
+    },
+    {
+      "claim_id": "PG-EVIDENCE-005",
+      "statement": "Exact bytes of observed final-source mutations-002/mutation-report.json; source6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7. Hash binding is distinct from behavioral qualification.",
+      "file_path": "mutations-002/mutation-report.json",
+      "sha256": "904a69f598e6f91e3321a1c08c8d19c26c68172313d8cda1b78d12359fcd7a21"
+    },
+    {
+      "claim_id": "PG-EVIDENCE-006",
+      "statement": "Exact bytes of observed final-source native_vv-002/native-vv-result.json; source6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7. Hash binding is distinct from behavioral qualification.",
+      "file_path": "native_vv-002/native-vv-result.json",
+      "sha256": "868a7f925720074be59f5a44cacdedad0170b82d22be74a8b87c132c7919ac45"
+    },
+    {
+      "claim_id": "PG-EVIDENCE-007",
+      "statement": "Exact bytes of observed final-source native_vv-002/test-manifest.json; source6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7. Hash binding is distinct from behavioral qualification.",
+      "file_path": "native_vv-002/test-manifest.json",
+      "sha256": "8a740486f24efd50fc812b799a19aacdf76303c70d5674541aa31267093ea9d4"
+    },
+    {
+      "claim_id": "PG-EVIDENCE-008",
+      "statement": "Exact bytes of observed final-source native_vv-002/test-execution.json; source6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7. Hash binding is distinct from behavioral qualification.",
+      "file_path": "native_vv-002/test-execution.json",
+      "sha256": "ec6376be2773775bdcd6d7361564e0d34a5c080e675b8b11cfdfb9e151b14374"
+    }
+  ]
+}

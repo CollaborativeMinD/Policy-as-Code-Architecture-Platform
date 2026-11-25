@@ -1,0 +1,135 @@
+{
+  "schema": "hmt.sub_agent_task_attestation/1",
+  "agent": "/root/admission_audit",
+  "created_at": "2026-11-04T08:33:55.452037+00:00",
+  "scope_reviewed": [
+    "Original baseline admission interfaces, all three uploaded v2 policies, native42 runtime/qualification contracts, closed source/test refinement registry, source-bound candidate ledger, current JUnit binding, independent four-family and causal witnesses, Power10 site obligations, native exporter, and exactly three native loader/receipt overlay repairs."
+  ],
+  "owned_new_code": [
+    "tools/admission*.py",
+    "tools/admit.py",
+    "tools/candidate*.py",
+    "tools/native_vv*.py",
+    "tests/test_admission*.py",
+    "tests/crossjoin*.py",
+    "tests/test_crossjoin*.py"
+  ],
+  "owned_contracts": [
+    "contracts/candidate_dimensions.json",
+    "contracts/contract_refinements.json",
+    "contracts/traceability.json",
+    "contracts/native_families.json",
+    "contracts/native_claims.json",
+    "contracts/power10.json"
+  ],
+  "baseline_preservation": {
+    "original_catalog_count": 15,
+    "original_baseline_modified": false,
+    "native_original_source_modified": false,
+    "native_original_noncache_files_rechecked": 2327
+  },
+  "candidate_space": {
+    "invariants": 16,
+    "failure_modes": 14,
+    "gates": 4,
+    "total_rows": 896,
+    "applicable_cases": 19,
+    "explicit_not_applicable": 877,
+    "primary_witnesses": 76,
+    "causal_edges": 5,
+    "causal_experiments": 20,
+    "native_required_families": 15,
+    "native_claims": 16,
+    "power10_observed_sites": 35
+  },
+  "observed_executions": [
+    {
+      "scope": "owned admission tool unit/security boundary tests",
+      "result": "PASS",
+      "test_count": 79,
+      "receipt": "Actual pytest invocation recorded in agent tool transcript; final parent admission must reexecute same tests on final source."
+    },
+    {
+      "scope": "four distinct crossjoin test families on real PG/Redis software services",
+      "result": "PASS",
+      "test_count": 76,
+      "junit": "/workspace/scratch/e7495113964e/work/crossjoin_reconciled.xml"
+    },
+    {
+      "scope": "three native overlay edit regressions only",
+      "result": "PASS",
+      "cases": 16,
+      "receipt": "/workspace/scratch/e7495113964e/work/admission_overlay/regression.json"
+    },
+    {
+      "scope": "native V&V fresh analyzer preflight",
+      "result": "PASS",
+      "checks": [
+        "ruff",
+        "mypy",
+        "pyrefly",
+        "physical_structure",
+        "current_source"
+      ],
+      "receipt": "/workspace/scratch/e7495113964e/work/native_vv_analysis_preflight/analysis.json"
+    }
+  ],
+  "independent_findings": [
+    {
+      "id": "PACE-EFFECT-GUARD",
+      "finding": "Mode selection initially had no executable capability wrapper.",
+      "resolution": "Parent added public require_operation/perform guards and input revalidation; tests invoke real callback boundaries with valid independent DB grant.",
+      "claim_limit": "Local PACE capability gating; it does not remotely revoke DB grants."
+    },
+    {
+      "id": "COPY-WIRE-FIXTURE",
+      "finding": "Real PostgreSQL COPY input was prematurely exhausted by the software fixture.",
+      "resolution": "Driver agent corrected fixture callback and prepared-statement client namespaces; same failed live witness subsequently passed.",
+      "historical_receipts": [
+        "work/crossjoin_preflight.xml",
+        "work/crossjoin_repaired.xml"
+      ]
+    },
+    {
+      "id": "OUTBOX-E2E-ORACLE",
+      "finding": "An earlier E2E helper wrongly required immediate ACK for earlier checkpoints after the durable head advanced.",
+      "resolution": "Corrected witness drains, reads back current head, and explicitly reconciles UNKNOWN to ACK; no product weakening.",
+      "passing_receipt": "work/crossjoin_reconciled.xml"
+    },
+    {
+      "id": "NATIVE-RUNTIME",
+      "finding": "Optimization frozendict failed under3.13.",
+      "resolution": "Used declared3.15.0rc3 with original lock; no source patch for a correct runtime feature."
+    },
+    {
+      "id": "NATIVE-LOADER-DIGEST",
+      "finding": "Two resource-loader collisions and one receipt digest-format mismatch.",
+      "resolution": "Exactly three scratch overlay patches; OS caps and complete core findings parity proved; original bytes preserved."
+    },
+    {
+      "id": "WORKER-REJECTION-DIAGNOSTIC",
+      "finding": "Outer error print after watchdog cancellation can block on full stderr.",
+      "resolution": "Closed: parent removes diagnostic writes from fixed-child rejection path and adds full/closed-pipe regression cases. Independent actual worker.main malformed-request/full-pipe probe exits1 without blocking.",
+      "evidence_ref": "/workspace/scratch/e7495113964e/work/worker_rejection_diagnostic_probe.json"
+    }
+  ],
+  "source_identity_ref": "/workspace/scratch/e7495113964e/work/admission_scope_manifest_reviewed.json",
+  "limits": [
+    "NativeCI42 final target execution belongs to root; this attestation is not a clean42-lane admission claim.",
+    "Independent native PostgreSQL multi-backend contention, transport TLS/SCRAM, authenticated Tailcat remote-wire operation, and physical storage power-loss claims require their separate declared qualification profiles.",
+    "Earlier failed source epochs and mutation miss are retained; no result is erased or relabeled.",
+    "Final source digest and final run_id must come from fresh parent admission after all worker and mapping repairs."
+  ],
+  "handoff_commands": {
+    "admission": "python tools/admit.py --root BRANCH --output EXTERNAL_FRESH_DIR",
+    "native_export": "python -m tools.native_vv --root BRANCH --suite ORIGINAL_OR_OVERLAY_SUITE --admission FRESH_ADMISSION_DIR --mutation FINAL_MUTATION_REPORT --output FRESH_NATIVE_VV_DIR --analyzers-python EXPLICIT_PREPARED_INTERPRETER",
+    "native_vv_lane": "python SUITE/tools/verification-validation.py qualify NATIVE_VV_DIR/qualification.json",
+    "native_trace_lane": "python SUITE/tools/test-traceability.py --root NATIVE_VV_DIR --expected test-manifest.json --execution test-execution.json --source-digest FINAL_SOURCE_DIGEST"
+  },
+  "current_source_inventory": {
+    "production_and_sql_files": 42,
+    "test_modules": 51,
+    "all_refinements_mapped": true
+  },
+  "final_campaign_binding": "Await fresh parent admission/mutation/CI42 on the complete final source; this attestation preserves supporting observation scopes rather than upgrading earlier source epochs."
+}

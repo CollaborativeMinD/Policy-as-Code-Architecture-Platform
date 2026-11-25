@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "inventory_gaps": [],
+  "unmapped_public_contracts": [],
+  "source_files": 42,
+  "test_files": 51,
+  "public_contracts": 44
+}

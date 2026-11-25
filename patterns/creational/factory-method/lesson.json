@@ -1,0 +1,15 @@
+{
+  "bluf": "# RDP-C03 \u2014 Factory Method\n\n## 1. BLUF\nSelect an approved offline adapter product through a stable creator method. Use a dictionary of pure functions for two trivial choices. Added abstraction earns its cost only when the declared variation or custody is needed.\n\n",
+  "identity": "## 2. Identity and contracts\nVersion 1.0.0; RDP-C03-INV-001. Strict frozen Pydantic contracts reject extra fields and invalid bounds. Source pins live in manifest.json and catalog.json. Engineering reference only; no operational or promotion authority. \n\n",
+  "problem": "## 3. Problem and anti-pattern\nDynamic provider names import privileged or unknown implementations. The live negative witness below runs a bounded local counterexample or forbidden input. It is an educational defect, not privileged service code.\n\n",
+  "mechanism": "## 4. Mechanism and simpler alternative\ncreate(Request); echo and uppercase are the entire offline product family.\n\nSimpler alternative: fixed callable lookup table. Responsibilities and associations are visible in the actual implementation. No inherited scanner/provider authority is copied.\n\nThe source below identifies the actual interfaces, constructor dependencies and associations. The educational fixture shows the invalid input and any deliberately defective comparison.\n\n",
+  "inputs": "## 6. Worked inputs\nChoose nominal or edge. Declared bounds are enforced by contracts.py. Both choices recompute a positive result and an independent negative predicate. The JSON output exposes the exact input and output.\n\n",
+  "pressure": "## 8. Behavior under pressure\nFailure hypothesis: unknown or privileged type. A True negative_detected predicate means the forbidden behavior was rejected or the defective fixture differed from the lawful oracle. Tests include boundary and exception/replay pressure as applicable.\n\n",
+  "applicability": "## 9. Applicability gate\nSelect an approved offline adapter product through a stable creator method. Use a dictionary of pure functions for two trivial choices.\n\nThe fixed callable lookup table comparison avoids carrying a hierarchy when a plain function or immutable table satisfies the same contract.\n\nAlternative pattern: Strategy when its documented variation is the actual problem. This pattern costs extra contracts, classes, state or dispatch; prefer the simpler alternative unless its ownership/variation boundary is required.\n\n",
+  "reproducibility": "## 10. Reproducibility and non-claims\nFrom repository root: `uv run --frozen pytest -q patterns/creational/factory-method/tests`. Run `uv run --frozen marimo run patterns/creational/factory-method/notebook.py`. Python/marimo versions are frozen in uv.lock. Evidence is source-bound in evidence/qualification.json; digests in manifest.json. Native script/export is separate from local Hub/browser qualification. No physics, hostile-host isolation, distributed exactly-once, production identity, or human promotion claim.\n",
+  "invalid_model": "Request",
+  "invalid_payload": {
+    "provider": "shell",
+    "text": "sample"
+  }
+}

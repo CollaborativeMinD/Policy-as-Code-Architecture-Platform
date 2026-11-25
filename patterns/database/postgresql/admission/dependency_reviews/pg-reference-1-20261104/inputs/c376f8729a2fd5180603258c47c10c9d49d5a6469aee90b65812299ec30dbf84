@@ -1,0 +1,5 @@
+{
+  "path": "src/hmt_pg_patterns/streaming_scan.py",
+  "before_sha256": "dfad648f930834a2b9b4b6643efb7823a46c401cc9e3d14e86937a36f88b96e8",
+  "after_sha256": "e23d7af0c1f125655473b2f123ae609b1bd1808536303fa5a2cafcbbd92f79de"
+}

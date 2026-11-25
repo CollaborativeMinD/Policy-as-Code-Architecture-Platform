@@ -1,0 +1,10 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+______________________ test_pace_guard_precedes_callback _______________________
+tests/test_mutation_witnesses.py:33: in test_pace_guard_precedes_callback
+    with pytest.raises(PermissionError, match="PACE_OPERATION_DENIED"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE PermissionError
+=========================== short test summary info ============================
+FAILED tests/test_mutation_witnesses.py::test_pace_guard_precedes_callback - ...
+1 failed in 0.12s

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="0.039" timestamp="2026-11-04T15:16:34.017929+07:00" hostname="18a71ec14d7e"><testcase classname="tests.test_streaming_scanner" name="test_invalid_packet_capacity_and_released_views" time="0.001" /></testsuite></testsuites>

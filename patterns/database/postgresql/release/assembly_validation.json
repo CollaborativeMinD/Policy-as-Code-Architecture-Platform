@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "verified_at": "2026-11-04T09:09:13.893310+00:00",
+  "admitted_source_files": 183,
+  "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+  "native42_status": "PASS",
+  "native42_counts": {
+    "FAIL": 0,
+    "HOLD": 0,
+    "NOT_APPLICABLE": 18,
+    "PASS": 24
+  },
+  "catalog_patterns": 17,
+  "source_modules": 39,
+  "all_catalog_paths_exist": true,
+  "machine_handoff_schema": "PASS",
+  "inherited_baseline_unchanged": true,
+  "admitted_source_changes_after_verification": 0,
+  "evidence_receipts": "copied unmodified; derived release metadata separately identified"
+}

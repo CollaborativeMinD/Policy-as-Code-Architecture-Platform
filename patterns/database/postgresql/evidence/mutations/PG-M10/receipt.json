@@ -1,0 +1,85 @@
+{
+  "id": "PG-M10",
+  "requirement": "PG-CHECKPOINT-001",
+  "path": "src/hmt_pg_patterns/checkpoints.py",
+  "selector": "tests/test_checkpoints_cache.py::test_foreign_scope_and_loss_are_rejected",
+  "outcome": "caught",
+  "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+  "mutated_source_digest": "85dfb9782f1433fdd6050e8504c317d4af6a7462b3ecf085ee3ca6b262148c81",
+  "restored_source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+  "restoration_observed": true,
+  "restored_file_sha256": "edd92d8ef2fb9faea64a645c03c62588c088e7fb0441bba655d34891c30b6bf3",
+  "application_error": null,
+  "mutation_process": {
+    "status": "FAIL",
+    "argv": [
+      "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--tb=short",
+      "-o",
+      "addopts=",
+      "-p",
+      "tools.mutation_probe",
+      "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M10/mutated/junit.xml",
+      "tests/test_checkpoints_cache.py::test_foreign_scope_and_loss_are_rejected"
+    ],
+    "returncode": 1,
+    "reason": "COMPLETE",
+    "seconds": 0.7386364630001481,
+    "captured_bytes": 1378,
+    "stdout": "pytest.stdout.log",
+    "stderr": "pytest.stderr.log",
+    "import_verified": true,
+    "source_unchanged": true,
+    "source_digest": "85dfb9782f1433fdd6050e8504c317d4af6a7462b3ecf085ee3ca6b262148c81"
+  },
+  "mutation_tests": {
+    "valid": true,
+    "tests": 1,
+    "failures": 1,
+    "assertion_failures": 1,
+    "errors": 0,
+    "skipped": 0,
+    "test_ids": [
+      "tests/test_checkpoints_cache.py::test_foreign_scope_and_loss_are_rejected"
+    ]
+  },
+  "restoration_process": {
+    "status": "PASS",
+    "argv": [
+      "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--tb=short",
+      "-o",
+      "addopts=",
+      "-p",
+      "tools.mutation_probe",
+      "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations-002/PG-M10/restored/junit.xml",
+      "tests/test_checkpoints_cache.py::test_foreign_scope_and_loss_are_rejected"
+    ],
+    "returncode": 0,
+    "reason": "COMPLETE",
+    "seconds": 0.7021980380013702,
+    "captured_bytes": 98,
+    "stdout": "pytest.stdout.log",
+    "stderr": "pytest.stderr.log",
+    "import_verified": true,
+    "source_unchanged": true,
+    "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7"
+  },
+  "restoration_tests": {
+    "valid": true,
+    "tests": 1,
+    "failures": 0,
+    "assertion_failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "test_ids": [
+      "tests/test_checkpoints_cache.py::test_foreign_scope_and_loss_are_rejected"
+    ]
+  }
+}

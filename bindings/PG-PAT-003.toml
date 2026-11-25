@@ -1,0 +1,8 @@
+version = 1
+pattern = "PG-PAT-003"
+scope = "software"
+
+[settings]
+status = "active"
+after_id = 0
+limit = 4

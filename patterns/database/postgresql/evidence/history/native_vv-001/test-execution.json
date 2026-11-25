@@ -1,0 +1,2241 @@
+{
+  "method": "executed",
+  "source_digest": "6710f678900766f47969172cc2f1da03de3eb9d6fb42ca86135cb2e3f59ca11d",
+  "run_id": "pg-admission-c28b0679915045b19c389bc69df5f055",
+  "tests": [
+    {
+      "test_id": "tests/test_admission_binding.py::test_all_four_families_bind_to_current_source",
+      "outcome": "PASS",
+      "seconds": 0.054
+    },
+    {
+      "test_id": "tests/test_admission_binding.py::test_failure_or_suppression_never_becomes_passing_evidence[FAIL]",
+      "outcome": "PASS",
+      "seconds": 0.113
+    },
+    {
+      "test_id": "tests/test_admission_binding.py::test_failure_or_suppression_never_becomes_passing_evidence[SUPPRESSED]",
+      "outcome": "PASS",
+      "seconds": 0.037
+    },
+    {
+      "test_id": "tests/test_admission_binding.py::test_failure_or_suppression_never_becomes_passing_evidence[MISSING]",
+      "outcome": "PASS",
+      "seconds": 0.039
+    },
+    {
+      "test_id": "tests/test_admission_binding.py::test_absent_witness_is_retained_as_failed",
+      "outcome": "PASS",
+      "seconds": 0.047
+    },
+    {
+      "test_id": "tests/test_admission_binding.py::test_old_source_evidence_rejected_before_insertion",
+      "outcome": "PASS",
+      "seconds": 0.043
+    },
+    {
+      "test_id": "tests/test_admission_binding.py::test_prior_witness_cannot_be_overwritten",
+      "outcome": "PASS",
+      "seconds": 0.058
+    },
+    {
+      "test_id": "tests/test_admission_binding.py::test_xml_preserves_skipped_and_failure_states",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_admission_binding.py::test_parametrized_id_is_preserved",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_binding.py::test_xml_empty_discovery_cannot_pass",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_coverage.py::test_pure_branch_gate_cannot_hide_behind_lines",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_admission_coverage.py::test_exact_ninety_percent_is_accepted",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_admission_coverage.py::test_missing_module_is_not_dropped_from_denominator",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_admission_coverage.py::test_instrumentation_must_be_explicit_boolean[False]",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_admission_coverage.py::test_instrumentation_must_be_explicit_boolean[None]",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_admission_coverage.py::test_instrumentation_must_be_explicit_boolean[true]",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_admission_coverage.py::test_instrumentation_must_be_explicit_boolean[1]",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_admission_coverage.py::test_duplicate_normalized_paths_cannot_replace_a_module",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_admission_coverage.py::test_escaping_coverage_path_rejected",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_admission_coverage.py::test_impossible_counts_rejected[change0]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_coverage.py::test_impossible_counts_rejected[change1]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_coverage.py::test_impossible_counts_rejected[change2]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_coverage.py::test_impossible_counts_rejected[change3]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_coverage.py::test_zero_branch_population_is_not_vacuous_admission",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_admission_coverage.py::test_lines_and_branches_have_independent_thresholds",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_admission_evidence.py::test_changed_source_changes_identity_and_restoration_matches",
+      "outcome": "PASS",
+      "seconds": 0.004
+    },
+    {
+      "test_id": "tests/test_admission_evidence.py::test_generated_bytecode_is_not_source_truth",
+      "outcome": "PASS",
+      "seconds": 0.003
+    },
+    {
+      "test_id": "tests/test_admission_evidence.py::test_prior_receipt_is_not_rewritten",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_evidence.py::test_gate_exception_produces_nonpassing_receipt",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_matrix.py::test_full_cartesian_population_and_explicit_exclusions",
+      "outcome": "PASS",
+      "seconds": 0.049
+    },
+    {
+      "test_id": "tests/test_admission_matrix.py::test_history_cannot_be_overwritten_or_deleted",
+      "outcome": "PASS",
+      "seconds": 0.04
+    },
+    {
+      "test_id": "tests/test_admission_matrix.py::test_corrupted_candidate_population_is_detected",
+      "outcome": "PASS",
+      "seconds": 0.046
+    },
+    {
+      "test_id": "tests/test_admission_matrix.py::test_duplicate_dimensions_fail_before_materialization",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_matrix.py::test_ambiguous_case_cannot_hide_exclusions",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_matrix.py::test_candidate_resource_limit_cannot_be_silently_truncated",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_matrix.py::test_missing_family_obligation_is_rejected",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_matrix.py::test_uncovered_declared_failure_relation_is_rejected",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_matrix.py::test_duplicate_json_keys_rejected",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_native.py::test_native_transfer_preserves_every_candidate_and_failed_execution",
+      "outcome": "PASS",
+      "seconds": 2.23
+    },
+    {
+      "test_id": "tests/test_admission_native.py::test_edited_passing_json_cannot_replace_failed_junit",
+      "outcome": "PASS",
+      "seconds": 0.004
+    },
+    {
+      "test_id": "tests/test_admission_native.py::test_new_loop_site_cannot_inherit_old_bound_claim",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_native.py::test_failed_bound_witness_cannot_establish_power10",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_process.py::test_real_process_success_retains_both_logs",
+      "outcome": "PASS",
+      "seconds": 0.015
+    },
+    {
+      "test_id": "tests/test_admission_process.py::test_nonzero_is_not_a_success_receipt",
+      "outcome": "PASS",
+      "seconds": 0.015
+    },
+    {
+      "test_id": "tests/test_admission_process.py::test_timeout_revokes_execution",
+      "outcome": "PASS",
+      "seconds": 0.104
+    },
+    {
+      "test_id": "tests/test_admission_process.py::test_output_budget_terminates_flood",
+      "outcome": "PASS",
+      "seconds": 0.015
+    },
+    {
+      "test_id": "tests/test_admission_process.py::test_invalid_timeout_fails_before_process[0]",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_admission_process.py::test_invalid_timeout_fails_before_process[-1]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_process.py::test_invalid_timeout_fails_before_process[7201]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_function_policy_boundaries[44-NOMINAL]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_function_policy_boundaries[45-WATCH]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_function_policy_boundaries[49-WATCH]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_function_policy_boundaries[50-REFACTOR_REQUIRED]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_function_policy_boundaries[59-REFACTOR_REQUIRED]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_function_policy_boundaries[60-BLOCK]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_function_policy_boundaries[61-BLOCK]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_module_policy_boundaries[99-NOMINAL]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_module_policy_boundaries[100-WATCH]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_module_policy_boundaries[149-WATCH]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_module_policy_boundaries[150-REFACTOR_REQUIRED]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_module_policy_boundaries[179-REFACTOR_REQUIRED]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_module_policy_boundaries[180-BLOCK]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_module_policy_boundaries[181-BLOCK]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_exact_limit_is_not_legacy_off_by_one",
+      "outcome": "PASS",
+      "seconds": 0.006
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_function_refactor_band_denies_further_responsibility",
+      "outcome": "PASS",
+      "seconds": 0.004
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_empty_source_and_parse_error_fail_closed",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_suppression_aliases_are_observed[import pytest\\npytest.skip('reason')]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_suppression_aliases_are_observed[from pytest import xfail as defer\\ndefer('reason')]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_suppression_aliases_are_observed[import unittest\\n@unittest.skipIf(True, 'reason')\\ndef check(): pass]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_literal_error_names_are_not_suppression",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_argument_and_control_depth_measurements",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_method_self_is_not_a_callers_argument",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_admission_structure.py::test_linked_source_is_rejected",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_traceability.py::test_unmapped_executed_test_cannot_be_discarded",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_admission_traceability.py::test_new_runtime_file_requires_explicit_refinement",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_admission_traceability.py::test_all_distinct_causal_experiments_extend_complete_ledger",
+      "outcome": "PASS",
+      "seconds": 0.045
+    },
+    {
+      "test_id": "tests/test_admission_traceability.py::test_missing_causal_execution_is_retained_as_failure",
+      "outcome": "PASS",
+      "seconds": 0.04
+    },
+    {
+      "test_id": "tests/test_admission_traceability.py::test_old_causal_source_and_omitted_experiment_are_rejected",
+      "outcome": "PASS",
+      "seconds": 0.036
+    },
+    {
+      "test_id": "tests/test_admission_traceability.py::test_qualification_code_changes_bound_source_identity",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_async_driver.py::test_async_parameter_read_and_write",
+      "outcome": "PASS",
+      "seconds": 1.77
+    },
+    {
+      "test_id": "tests/test_async_driver.py::test_async_retry_rolls_back_then_replays",
+      "outcome": "PASS",
+      "seconds": 0.013
+    },
+    {
+      "test_id": "tests/test_async_driver.py::test_async_exhaustion_and_nonretry_error",
+      "outcome": "PASS",
+      "seconds": 0.017
+    },
+    {
+      "test_id": "tests/test_async_driver.py::test_coroutine_cancellation_rolls_back_staged_write",
+      "outcome": "PASS",
+      "seconds": 0.012
+    },
+    {
+      "test_id": "tests/test_asyncpg_driver.py::test_asyncpg_bound_io_and_classified_close",
+      "outcome": "PASS",
+      "seconds": 0.115
+    },
+    {
+      "test_id": "tests/test_asyncpg_driver.py::test_asyncpg_context_rolls_back_failed_transaction",
+      "outcome": "PASS",
+      "seconds": 0.11
+    },
+    {
+      "test_id": "tests/test_asyncpg_driver.py::test_asyncpg_original_query_exception_survives_teardown",
+      "outcome": "PASS",
+      "seconds": 0.11
+    },
+    {
+      "test_id": "tests/test_asyncpg_driver.py::test_asyncpg_finite_pool_lease_and_close",
+      "outcome": "PASS",
+      "seconds": 0.116
+    },
+    {
+      "test_id": "tests/test_asyncpg_driver.py::test_exhausted_pool_wait_is_bounded",
+      "outcome": "PASS",
+      "seconds": 0.118
+    },
+    {
+      "test_id": "tests/test_asyncpg_lifecycle_faults.py::test_primary_failure_preserved_with_cleanup_failure[hmt_pg_patterns.asyncpg_driver-connection-connect]",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_asyncpg_lifecycle_faults.py::test_primary_failure_preserved_with_cleanup_failure[hmt_pg_patterns.asyncpg_pool-pool-create_pool]",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_asyncpg_lifecycle_faults.py::test_successful_body_does_not_hide_cleanup_failure[hmt_pg_patterns.asyncpg_driver-connection-connect]",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_asyncpg_lifecycle_faults.py::test_successful_body_does_not_hide_cleanup_failure[hmt_pg_patterns.asyncpg_pool-pool-create_pool]",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_authority_atomic.py::test_atomic_digest_replay_and_exact_bytes",
+      "outcome": "PASS",
+      "seconds": 0.047
+    },
+    {
+      "test_id": "tests/test_authority_atomic.py::test_outer_rollback_removes_effect_head_and_intent",
+      "outcome": "PASS",
+      "seconds": 0.023
+    },
+    {
+      "test_id": "tests/test_authority_atomic.py::test_idempotency_conflict_keeps_single_effect[data-other]",
+      "outcome": "PASS",
+      "seconds": 0.035
+    },
+    {
+      "test_id": "tests/test_authority_atomic.py::test_idempotency_conflict_keeps_single_effect[policy_digest-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]",
+      "outcome": "PASS",
+      "seconds": 0.022
+    },
+    {
+      "test_id": "tests/test_authority_atomic.py::test_idempotency_conflict_keeps_single_effect[previous_digest-yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy]",
+      "outcome": "PASS",
+      "seconds": 0.021
+    },
+    {
+      "test_id": "tests/test_authority_atomic.py::test_idempotency_conflict_keeps_single_effect[start-1]",
+      "outcome": "PASS",
+      "seconds": 0.021
+    },
+    {
+      "test_id": "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change0]",
+      "outcome": "PASS",
+      "seconds": 0.02
+    },
+    {
+      "test_id": "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change1]",
+      "outcome": "PASS",
+      "seconds": 0.019
+    },
+    {
+      "test_id": "tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change2]",
+      "outcome": "PASS",
+      "seconds": 0.018
+    },
+    {
+      "test_id": "tests/test_authority_atomic.py::test_contiguous_append_and_immutable_history",
+      "outcome": "PASS",
+      "seconds": 0.022
+    },
+    {
+      "test_id": "tests/test_authority_security.py::test_role_is_server_identity_and_client_claim_forbidden",
+      "outcome": "PASS",
+      "seconds": 0.038
+    },
+    {
+      "test_id": "tests/test_authority_security.py::test_direct_sql_contract_cannot_bypass_python_validation[header_change0-x]",
+      "outcome": "PASS",
+      "seconds": 0.016
+    },
+    {
+      "test_id": "tests/test_authority_security.py::test_direct_sql_contract_cannot_bypass_python_validation[header_change1-x]",
+      "outcome": "PASS",
+      "seconds": 0.017
+    },
+    {
+      "test_id": "tests/test_authority_security.py::test_direct_sql_contract_cannot_bypass_python_validation[header_change2-x]",
+      "outcome": "PASS",
+      "seconds": 0.012
+    },
+    {
+      "test_id": "tests/test_authority_security.py::test_direct_sql_contract_cannot_bypass_python_validation[header_change3-x]",
+      "outcome": "PASS",
+      "seconds": 0.014
+    },
+    {
+      "test_id": "tests/test_authority_security.py::test_direct_sql_contract_cannot_bypass_python_validation[header_change4-x]",
+      "outcome": "PASS",
+      "seconds": 0.014
+    },
+    {
+      "test_id": "tests/test_authority_security.py::test_direct_sql_contract_cannot_bypass_python_validation[header_change5-x]",
+      "outcome": "PASS",
+      "seconds": 0.012
+    },
+    {
+      "test_id": "tests/test_authority_security.py::test_direct_sql_contract_cannot_bypass_python_validation[header_change6-x]",
+      "outcome": "PASS",
+      "seconds": 0.013
+    },
+    {
+      "test_id": "tests/test_authority_security.py::test_direct_sql_contract_cannot_bypass_python_validation[header_change7-]",
+      "outcome": "PASS",
+      "seconds": 0.011
+    },
+    {
+      "test_id": "tests/test_authority_security.py::test_direct_sql_contract_cannot_bypass_python_validation[header_change8-payload8]",
+      "outcome": "PASS",
+      "seconds": 0.022
+    },
+    {
+      "test_id": "tests/test_authority_security.py::test_revocation_fences_new_effect_and_old_replay",
+      "outcome": "PASS",
+      "seconds": 0.024
+    },
+    {
+      "test_id": "tests/test_authority_security.py::test_expiration_is_rechecked_after_authority_lock",
+      "outcome": "PASS",
+      "seconds": 0.219
+    },
+    {
+      "test_id": "tests/test_authority_security.py::test_unregistered_identity_and_expired_lease_are_denied",
+      "outcome": "PASS",
+      "seconds": 0.026
+    },
+    {
+      "test_id": "tests/test_bulk_analytics.py::test_atomic_bulk_and_duplicate_rollback[copy_metrics]",
+      "outcome": "PASS",
+      "seconds": 0.014
+    },
+    {
+      "test_id": "tests/test_bulk_analytics.py::test_atomic_bulk_and_duplicate_rollback[pipeline_metrics]",
+      "outcome": "PASS",
+      "seconds": 0.009
+    },
+    {
+      "test_id": "tests/test_bulk_analytics.py::test_server_cursor_batches_have_explicit_stable_schema",
+      "outcome": "PASS",
+      "seconds": 0.014
+    },
+    {
+      "test_id": "tests/test_bulk_analytics.py::test_early_generator_close_releases_cursor_and_transaction",
+      "outcome": "PASS",
+      "seconds": 0.009
+    },
+    {
+      "test_id": "tests/test_bulk_analytics.py::test_bulk_validates_entire_batch_before_first_database_effect",
+      "outcome": "PASS",
+      "seconds": 0.005
+    },
+    {
+      "test_id": "tests/test_causal_authority.py::test_deletion",
+      "outcome": "PASS",
+      "seconds": 0.022
+    },
+    {
+      "test_id": "tests/test_causal_authority.py::test_restoration",
+      "outcome": "PASS",
+      "seconds": 0.028
+    },
+    {
+      "test_id": "tests/test_causal_authority.py::test_matched_control",
+      "outcome": "PASS",
+      "seconds": 0.02
+    },
+    {
+      "test_id": "tests/test_causal_authority.py::test_alternate_path",
+      "outcome": "PASS",
+      "seconds": 0.027
+    },
+    {
+      "test_id": "tests/test_causal_checkpoint.py::test_deletion",
+      "outcome": "PASS",
+      "seconds": 0.13
+    },
+    {
+      "test_id": "tests/test_causal_checkpoint.py::test_restoration",
+      "outcome": "PASS",
+      "seconds": 0.039
+    },
+    {
+      "test_id": "tests/test_causal_checkpoint.py::test_matched_control",
+      "outcome": "PASS",
+      "seconds": 0.028
+    },
+    {
+      "test_id": "tests/test_causal_checkpoint.py::test_alternate_path",
+      "outcome": "PASS",
+      "seconds": 0.016
+    },
+    {
+      "test_id": "tests/test_causal_pace.py::test_deletion",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_causal_pace.py::test_restoration",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_causal_pace.py::test_matched_control",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_causal_pace.py::test_alternate_path",
+      "outcome": "PASS",
+      "seconds": 0.012
+    },
+    {
+      "test_id": "tests/test_causal_streaming.py::test_deletion",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_causal_streaming.py::test_restoration",
+      "outcome": "PASS",
+      "seconds": 0.003
+    },
+    {
+      "test_id": "tests/test_causal_streaming.py::test_matched_control",
+      "outcome": "PASS",
+      "seconds": 0.003
+    },
+    {
+      "test_id": "tests/test_causal_streaming.py::test_alternate_path",
+      "outcome": "PASS",
+      "seconds": 0.003
+    },
+    {
+      "test_id": "tests/test_causal_transaction.py::test_deletion",
+      "outcome": "PASS",
+      "seconds": 0.018
+    },
+    {
+      "test_id": "tests/test_causal_transaction.py::test_restoration",
+      "outcome": "PASS",
+      "seconds": 0.016
+    },
+    {
+      "test_id": "tests/test_causal_transaction.py::test_matched_control",
+      "outcome": "PASS",
+      "seconds": 0.024
+    },
+    {
+      "test_id": "tests/test_causal_transaction.py::test_alternate_path",
+      "outcome": "PASS",
+      "seconds": 0.016
+    },
+    {
+      "test_id": "tests/test_checkpoints_cache.py::test_snapshot_is_persistent_and_encoding_is_exact",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_checkpoints_cache.py::test_redis_ordering_above_float_precision",
+      "outcome": "PASS",
+      "seconds": 0.007
+    },
+    {
+      "test_id": "tests/test_checkpoints_cache.py::test_poisoned_projection_never_becomes_authority[broken-json]",
+      "outcome": "PASS",
+      "seconds": 0.004
+    },
+    {
+      "test_id": "tests/test_checkpoints_cache.py::test_poisoned_projection_never_becomes_authority[[]]",
+      "outcome": "PASS",
+      "seconds": 0.004
+    },
+    {
+      "test_id": "tests/test_checkpoints_cache.py::test_poisoned_projection_never_becomes_authority[{\"epoch\":2,\"sequence\":\"0\"}]",
+      "outcome": "PASS",
+      "seconds": 0.003
+    },
+    {
+      "test_id": "tests/test_checkpoints_cache.py::test_poisoned_projection_never_becomes_authority[{\"epoch\":\"01\",\"sequence\":\"0\"}]",
+      "outcome": "PASS",
+      "seconds": 0.004
+    },
+    {
+      "test_id": "tests/test_checkpoints_cache.py::test_poisoned_projection_never_becomes_authority[{\"epoch\":\"9223372036854775808\",\"sequence\":\"0\"}]",
+      "outcome": "PASS",
+      "seconds": 0.003
+    },
+    {
+      "test_id": "tests/test_checkpoints_cache.py::test_poisoned_projection_never_becomes_authority[prior5]",
+      "outcome": "PASS",
+      "seconds": 0.003
+    },
+    {
+      "test_id": "tests/test_checkpoints_cache.py::test_foreign_scope_and_loss_are_rejected",
+      "outcome": "PASS",
+      "seconds": 0.004
+    },
+    {
+      "test_id": "tests/test_checkpoints_cache.py::test_unavailable_and_unknown_driver_outcomes_fail_closed",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_config.py::test_secret_safe_config_and_bounded_settings",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_config.py::test_invalid_connection_config[changes0]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_config.py::test_invalid_connection_config[changes1]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_config.py::test_invalid_connection_config[changes2]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_config.py::test_invalid_connection_config[changes3]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_config.py::test_invalid_connection_config[changes4]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_config.py::test_invalid_connection_config[changes5]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_config.py::test_invalid_connection_config[changes6]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_config.py::test_production_security_gates",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_config.py::test_tls_ca_uses_hostname_verified_context",
+      "outcome": "PASS",
+      "seconds": 0.005
+    },
+    {
+      "test_id": "tests/test_config.py::test_unvalidated_copy_cannot_bypass_connection_admission[connect_kwargs]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_config.py::test_unvalidated_copy_cannot_bypass_connection_admission[asyncpg_kwargs]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[tls_profile]",
+      "outcome": "PASS",
+      "seconds": 0.11
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[bound_values]",
+      "outcome": "PASS",
+      "seconds": 0.035
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[rollback]",
+      "outcome": "PASS",
+      "seconds": 0.116
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[retry_budget]",
+      "outcome": "PASS",
+      "seconds": 0.153
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[bounded_close]",
+      "outcome": "PASS",
+      "seconds": 0.062
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[contract_rejection]",
+      "outcome": "PASS",
+      "seconds": 0.014
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[immutable_snapshot]",
+      "outcome": "PASS",
+      "seconds": 0.1
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[epoch_fence]",
+      "outcome": "PASS",
+      "seconds": 0.045
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[outbox_replay]",
+      "outcome": "PASS",
+      "seconds": 0.035
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[checkpoint_order]",
+      "outcome": "PASS",
+      "seconds": 0.087
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[packet_invariance]",
+      "outcome": "PASS",
+      "seconds": 0.12
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[stream_limits]",
+      "outcome": "PASS",
+      "seconds": 0.018
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[terminal_authority]",
+      "outcome": "PASS",
+      "seconds": 0.117
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[guarded_recovery]",
+      "outcome": "PASS",
+      "seconds": 0.125
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[wal_prerequisites]",
+      "outcome": "PASS",
+      "seconds": 0.031
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[pool_capacity]",
+      "outcome": "PASS",
+      "seconds": 0.043
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[migration_drift]",
+      "outcome": "PASS",
+      "seconds": 0.023
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[tailcat_binding]",
+      "outcome": "PASS",
+      "seconds": 0.154
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[bounded_rows]",
+      "outcome": "PASS",
+      "seconds": 0.16
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[tls_profile]",
+      "outcome": "PASS",
+      "seconds": 0.021
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[bound_values]",
+      "outcome": "PASS",
+      "seconds": 0.015
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[rollback]",
+      "outcome": "PASS",
+      "seconds": 0.016
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[retry_budget]",
+      "outcome": "PASS",
+      "seconds": 0.026
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[bounded_close]",
+      "outcome": "PASS",
+      "seconds": 0.066
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[contract_rejection]",
+      "outcome": "PASS",
+      "seconds": 0.01
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[immutable_snapshot]",
+      "outcome": "PASS",
+      "seconds": 0.022
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[epoch_fence]",
+      "outcome": "PASS",
+      "seconds": 0.031
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[outbox_replay]",
+      "outcome": "PASS",
+      "seconds": 0.046
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[checkpoint_order]",
+      "outcome": "PASS",
+      "seconds": 0.031
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[packet_invariance]",
+      "outcome": "PASS",
+      "seconds": 0.277
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[stream_limits]",
+      "outcome": "PASS",
+      "seconds": 0.02
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[terminal_authority]",
+      "outcome": "PASS",
+      "seconds": 0.024
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[guarded_recovery]",
+      "outcome": "PASS",
+      "seconds": 0.022
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[wal_prerequisites]",
+      "outcome": "PASS",
+      "seconds": 0.01
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[pool_capacity]",
+      "outcome": "PASS",
+      "seconds": 0.035
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[migration_drift]",
+      "outcome": "PASS",
+      "seconds": 0.015
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[tailcat_binding]",
+      "outcome": "PASS",
+      "seconds": 0.024
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[bounded_rows]",
+      "outcome": "PASS",
+      "seconds": 0.162
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[tls_profile]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[bound_values]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[rollback]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[retry_budget]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[bounded_close]",
+      "outcome": "PASS",
+      "seconds": 0.012
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[contract_rejection]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[immutable_snapshot]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[epoch_fence]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[outbox_replay]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[checkpoint_order]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[packet_invariance]",
+      "outcome": "PASS",
+      "seconds": 0.013
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[stream_limits]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[terminal_authority]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[guarded_recovery]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[wal_prerequisites]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[pool_capacity]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[migration_drift]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[tailcat_binding]",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[bounded_rows]",
+      "outcome": "PASS",
+      "seconds": 0.113
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[tls_profile]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[bound_values]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[rollback]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[retry_budget]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[bounded_close]",
+      "outcome": "PASS",
+      "seconds": 0.012
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[contract_rejection]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[immutable_snapshot]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[epoch_fence]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[outbox_replay]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[checkpoint_order]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[packet_invariance]",
+      "outcome": "PASS",
+      "seconds": 0.015
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[stream_limits]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[terminal_authority]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[guarded_recovery]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[wal_prerequisites]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[pool_capacity]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[migration_drift]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[tailcat_binding]",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[bounded_rows]",
+      "outcome": "PASS",
+      "seconds": 0.106
+    },
+    {
+      "test_id": "tests/test_deployment_contracts.py::test_shipped_role_grants_preserve_authority_boundary",
+      "outcome": "PASS",
+      "seconds": 0.017
+    },
+    {
+      "test_id": "tests/test_deployment_contracts.py::test_runtime_containment_and_wal_config_are_concrete",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_diagnostics.py::test_wal_guard_rejects_weakened_settings[off-on-on]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_diagnostics.py::test_wal_guard_rejects_weakened_settings[on-off-on]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_diagnostics.py::test_wal_guard_rejects_weakened_settings[on-on-off]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_diagnostics.py::test_wal_guard_accepts_local_commit_configuration",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_diagnostics.py::test_missing_observations_fail_visibly",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_diagnostics.py::test_postgresql_plan_and_settings_are_observed",
+      "outcome": "PASS",
+      "seconds": 0.011
+    },
+    {
+      "test_id": "tests/test_fixture_protocol_regressions.py::test_two_open_clients_keep_their_prepared_plans",
+      "outcome": "PASS",
+      "seconds": 0.006
+    },
+    {
+      "test_id": "tests/test_fixture_protocol_regressions.py::test_copy_consumes_multiple_protocol_data_frames",
+      "outcome": "PASS",
+      "seconds": 0.037
+    },
+    {
+      "test_id": "tests/test_fixture_protocol_regressions.py::test_copy_fail_message_rolls_back_and_connection_recovers",
+      "outcome": "PASS",
+      "seconds": 0.007
+    },
+    {
+      "test_id": "tests/test_migrations.py::test_migration_inputs_reject_empty_unsafe_and_oversized",
+      "outcome": "PASS",
+      "seconds": 0.003
+    },
+    {
+      "test_id": "tests/test_migrations.py::test_checksum_bound_migration_and_transaction_rollback",
+      "outcome": "PASS",
+      "seconds": 0.019
+    },
+    {
+      "test_id": "tests/test_models.py::test_valid_metric_and_window",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_models.py::test_contract_rejects_invalid_metric[changes0]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_models.py::test_contract_rejects_invalid_metric[changes1]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_models.py::test_contract_rejects_invalid_metric[changes2]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_models.py::test_contract_rejects_invalid_metric[changes3]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_models.py::test_contract_rejects_invalid_metric[changes4]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_models.py::test_contract_rejects_invalid_metric[changes5]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_models.py::test_contract_rejects_invalid_metric[changes6]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_models.py::test_contract_rejects_invalid_metric[changes7]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_models.py::test_contract_rejects_invalid_metric[changes8]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_models.py::test_contract_rejects_invalid_metric[changes9]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_models.py::test_contract_rejects_invalid_metric[changes10]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_models.py::test_resource_bounds[QueryWindow-values0]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_models.py::test_resource_bounds[QueryWindow-values1]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_models.py::test_resource_bounds[QueryWindow-values2]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_models.py::test_resource_bounds[BatchSpec-values3]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_models.py::test_resource_bounds[BatchSpec-values4]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_models.py::test_resource_bounds[BatchSpec-values5]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_mutation_evidence.py::test_process_failure_is_never_caught[change0-timeout]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_mutation_evidence.py::test_process_failure_is_never_caught[change1-unviable]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_mutation_evidence.py::test_process_failure_is_never_caught[change2-unviable]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_mutation_evidence.py::test_process_failure_is_never_caught[change3-unviable]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_mutation_evidence.py::test_process_failure_is_never_caught[change4-unviable]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_mutation_evidence.py::test_nonassertion_results_are_unviable[change0]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_mutation_evidence.py::test_nonassertion_results_are_unviable[change1]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_mutation_evidence.py::test_nonassertion_results_are_unviable[change2]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_mutation_evidence.py::test_nonassertion_results_are_unviable[change3]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_mutation_evidence.py::test_only_assertion_failures_count_as_caught",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_mutation_evidence.py::test_junit_distinguishes_runtime_failure_from_fixture_error",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_mutation_isolation.py::test_frozen_copy_has_independent_bytes_and_original_is_unchanged",
+      "outcome": "PASS",
+      "seconds": 0.007
+    },
+    {
+      "test_id": "tests/test_mutation_isolation.py::test_patch_target_cannot_escape_owned_copy[]",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_mutation_isolation.py::test_patch_target_cannot_escape_owned_copy[/tmp/forbidden.py]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_mutation_isolation.py::test_patch_target_cannot_escape_owned_copy[../guard.py]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_mutation_isolation.py::test_patch_target_cannot_escape_owned_copy[src/../../guard.py]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_mutation_isolation.py::test_patch_target_cannot_escape_owned_copy[tests/guard.py]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_mutation_isolation.py::test_patch_target_cannot_escape_owned_copy[src/guard.txt]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_mutation_isolation.py::test_symlink_patch_target_cannot_touch_original",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_mutation_isolation.py::test_unviable_anchor_and_syntax_never_modify_source",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_mutation_witnesses.py::test_epoch_guard_new_stream",
+      "outcome": "PASS",
+      "seconds": 0.022
+    },
+    {
+      "test_id": "tests/test_mutation_witnesses.py::test_active_guard",
+      "outcome": "PASS",
+      "seconds": 0.017
+    },
+    {
+      "test_id": "tests/test_mutation_witnesses.py::test_pace_guard_precedes_callback",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_orm_drivers.py::test_core_and_sqlmodel_commit_and_seek[hmt_pg_patterns.orm]",
+      "outcome": "PASS",
+      "seconds": 0.022
+    },
+    {
+      "test_id": "tests/test_orm_drivers.py::test_core_and_sqlmodel_commit_and_seek[hmt_pg_patterns.orm_model]",
+      "outcome": "PASS",
+      "seconds": 0.03
+    },
+    {
+      "test_id": "tests/test_orm_drivers.py::test_strict_dto_precedes_engine_or_session_access[hmt_pg_patterns.orm]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_orm_drivers.py::test_strict_dto_precedes_engine_or_session_access[hmt_pg_patterns.orm_model]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_orm_drivers.py::test_sqlalchemy_async_uses_native_psycopg",
+      "outcome": "PASS",
+      "seconds": 0.018
+    },
+    {
+      "test_id": "tests/test_outbox_recovery.py::test_crash_before_first_send_is_explicitly_rebuildable",
+      "outcome": "PASS",
+      "seconds": 0.027
+    },
+    {
+      "test_id": "tests/test_outbox_recovery.py::test_send_then_lost_ack_records_observation_after_revocation",
+      "outcome": "PASS",
+      "seconds": 0.021
+    },
+    {
+      "test_id": "tests/test_outbox_recovery.py::test_cache_loss_rebuild_requires_current_same_epoch_authority",
+      "outcome": "PASS",
+      "seconds": 0.035
+    },
+    {
+      "test_id": "tests/test_outbox_recovery.py::test_normal_relay_and_forged_claim_scope",
+      "outcome": "PASS",
+      "seconds": 0.032
+    },
+    {
+      "test_id": "tests/test_outbox_recovery.py::test_unavailable_send_and_readback_remain_unknown",
+      "outcome": "PASS",
+      "seconds": 0.02
+    },
+    {
+      "test_id": "tests/test_outbox_recovery.py::test_claim_token_state_and_transaction_guards",
+      "outcome": "PASS",
+      "seconds": 0.018
+    },
+    {
+      "test_id": "tests/test_pace.py::test_capability_contracts[changes0-P]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_pace.py::test_capability_contracts[changes1-A]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_pace.py::test_capability_contracts[changes2-C]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_pace.py::test_capability_contracts[changes3-E]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_pace.py::test_capability_contracts[changes4-T]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_pace.py::test_capability_contracts[changes5-T]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_pace.py::test_capability_contracts[changes6-T]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_pace.py::test_causal_recovery_guard_deletion_restoration_controls[reconciled]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_pace.py::test_causal_recovery_guard_deletion_restoration_controls[uncertain_ack]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_pace.py::test_causal_recovery_guard_deletion_restoration_controls[margin]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_pace.py::test_qualified_alternate_continues_without_redis",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_pace.py::test_temporal_boundaries_pressure_and_terminal_latch",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_pace.py::test_pace_rejects_nonfinite_and_invalid_policy",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_pools.py::test_sync_pool_has_finite_capacity_and_closes",
+      "outcome": "PASS",
+      "seconds": 0.008
+    },
+    {
+      "test_id": "tests/test_pools.py::test_async_pool_explicit_open_and_close",
+      "outcome": "PASS",
+      "seconds": 0.009
+    },
+    {
+      "test_id": "tests/test_pools.py::test_sync_pool_still_closes_on_application_error",
+      "outcome": "PASS",
+      "seconds": 0.003
+    },
+    {
+      "test_id": "tests/test_query_contracts.py::test_identifier_allowlist_rejects_sql_text[metrics;DROP TABLE x]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_query_contracts.py::test_identifier_allowlist_rejects_sql_text[public.metrics]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_query_contracts.py::test_identifier_allowlist_rejects_sql_text[\\nmetrics]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_query_contracts.py::test_identifier_allowlist_rejects_sql_text[Metrics]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_query_contracts.py::test_identifier_allowlist_rejects_sql_text[]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_query_contracts.py::test_identifier_is_quoted_and_schema_qualified",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_query_contracts.py::test_validation_bypass_and_nested_mutation_are_rejected_or_snapshotted",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_query_contracts.py::test_infinite_iterator_has_finite_rejection_boundary",
+      "outcome": "PASS",
+      "seconds": 0.105
+    },
+    {
+      "test_id": "tests/test_query_contracts.py::test_retry_bounds_rejected_before_connection_use[0]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_query_contracts.py::test_retry_bounds_rejected_before_connection_use[6]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_query_contracts.py::test_retry_bounds_rejected_before_connection_use[True]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_query_contracts.py::test_retry_bounds_rejected_before_connection_use[1.0]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_query_contracts.py::test_pool_and_teardown_deadlines_are_finite[0-1]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_query_contracts.py::test_pool_and_teardown_deadlines_are_finite[33-1]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_query_contracts.py::test_pool_and_teardown_deadlines_are_finite[True-1]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_query_contracts.py::test_pool_and_teardown_deadlines_are_finite[1-0]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_query_contracts.py::test_pool_and_teardown_deadlines_are_finite[1-31]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_query_contracts.py::test_pool_and_teardown_deadlines_are_finite[1-inf]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_query_contracts.py::test_pool_and_teardown_deadlines_are_finite[1-True]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_boundaries.py::test_deadline_types_and_limits_fail_before_source_consumption[None]",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_streaming_boundaries.py::test_deadline_types_and_limits_fail_before_source_consumption[limits1]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_boundaries.py::test_deadline_types_and_limits_fail_before_source_consumption[limits2]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_boundaries.py::test_deadline_types_and_limits_fail_before_source_consumption[limits3]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_boundaries.py::test_deadline_types_and_limits_fail_before_source_consumption[limits4]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_boundaries.py::test_deadline_types_and_limits_fail_before_source_consumption[limits5]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_boundaries.py::test_invalid_packet_types[text]",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_streaming_boundaries.py::test_invalid_packet_types[1]",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_streaming_boundaries.py::test_invalid_packet_types[None]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_boundaries.py::test_packet_and_total_capacity_and_released_view",
+      "outcome": "PASS",
+      "seconds": 0.003
+    },
+    {
+      "test_id": "tests/test_streaming_boundaries.py::test_invalid_source_sink_and_reused_stats",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_streaming_boundaries.py::test_source_without_close_is_supported",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_boundaries.py::test_cleanup_and_sink_cancellation_are_visible",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_parity.py::test_all_historical_source_vectors_match_with_changed_packetization",
+      "outcome": "PASS",
+      "seconds": 0.043
+    },
+    {
+      "test_id": "tests/test_streaming_pipeline.py::test_zero_queue_backpressure_and_complete_reconstruction",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_streaming_pipeline.py::test_sync_sink_and_empty_packets_are_supported",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_pipeline.py::test_source_failure_keeps_primary_code_and_closes[failure0-SOURCE_FAILURE]",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_streaming_pipeline.py::test_source_failure_keeps_primary_code_and_closes[failure1-SOURCE_FAILURE]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_pipeline.py::test_sink_failure_is_not_retried",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_streaming_pipeline.py::test_deadline_and_source_cancellation_propagate",
+      "outcome": "PASS",
+      "seconds": 0.012
+    },
+    {
+      "test_id": "tests/test_streaming_pipeline.py::test_success_does_not_hide_cleanup_failure[cleanup0-CLEANUP_FAILURE]",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_streaming_pipeline.py::test_success_does_not_hide_cleanup_failure[slow-CLEANUP_TIMEOUT]",
+      "outcome": "PASS",
+      "seconds": 0.012
+    },
+    {
+      "test_id": "tests/test_streaming_pipeline.py::test_empty_packet_source_stops_at_finite_admission_count",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_independent_polynomial_and_all_tiny_partitions",
+      "outcome": "PASS",
+      "seconds": 2.191
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_all_policy_dimensions_are_typed_and_finite[change0]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_all_policy_dimensions_are_typed_and_finite[change1]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_all_policy_dimensions_are_typed_and_finite[change2]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_all_policy_dimensions_are_typed_and_finite[change3]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_all_policy_dimensions_are_typed_and_finite[change4]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_all_policy_dimensions_are_typed_and_finite[change5]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_all_policy_dimensions_are_typed_and_finite[change6]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_all_policy_dimensions_are_typed_and_finite[change7]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_all_policy_dimensions_are_typed_and_finite[change8]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_all_policy_dimensions_are_typed_and_finite[change9]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_all_policy_dimensions_are_typed_and_finite[change10]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_all_policy_dimensions_are_typed_and_finite[change11]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_all_policy_dimensions_are_typed_and_finite[change12]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_empty_source_terminal_states_and_policy_type",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_mutable_packet_is_snapshotted_and_partial_feed_aborts",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_precreated_feed_revalidates_live_total_bound",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_invalid_packet_capacity_and_released_views",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_non_contiguous_memoryview_preserves_logical_bytes",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[1]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[2]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[3]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_streaming_writer.py::test_sync_storage_replay_and_immutable_tip",
+      "outcome": "PASS",
+      "seconds": 0.171
+    },
+    {
+      "test_id": "tests/test_streaming_writer.py::test_source_failure_owns_cleanup_and_origin_replay",
+      "outcome": "PASS",
+      "seconds": 0.025
+    },
+    {
+      "test_id": "tests/test_streaming_writer.py::test_writer_empty_cap_and_strict_epoch",
+      "outcome": "PASS",
+      "seconds": 0.014
+    },
+    {
+      "test_id": "tests/test_streaming_writer.py::test_async_authority_and_writer",
+      "outcome": "PASS",
+      "seconds": 0.094
+    },
+    {
+      "test_id": "tests/test_streaming_writer.py::test_async_caller_rollback_owns_commit",
+      "outcome": "PASS",
+      "seconds": 0.017
+    },
+    {
+      "test_id": "tests/test_sync_driver.py::test_keyset_page_is_bounded_and_deterministic",
+      "outcome": "PASS",
+      "seconds": 0.01
+    },
+    {
+      "test_id": "tests/test_sync_driver.py::test_exception_rolls_back_complete_transaction",
+      "outcome": "PASS",
+      "seconds": 0.006
+    },
+    {
+      "test_id": "tests/test_sync_driver.py::test_retry_reexecutes_whole_transaction_only_on_admitted_sqlstate[40001]",
+      "outcome": "PASS",
+      "seconds": 0.008
+    },
+    {
+      "test_id": "tests/test_sync_driver.py::test_retry_reexecutes_whole_transaction_only_on_admitted_sqlstate[40P01]",
+      "outcome": "PASS",
+      "seconds": 0.009
+    },
+    {
+      "test_id": "tests/test_sync_driver.py::test_retry_exhaustion_rolls_back",
+      "outcome": "PASS",
+      "seconds": 0.006
+    },
+    {
+      "test_id": "tests/test_sync_driver.py::test_uniqueness_and_uncertain_transport_never_retry",
+      "outcome": "PASS",
+      "seconds": 0.004
+    },
+    {
+      "test_id": "tests/test_sync_driver.py::test_savepoint_cannot_substitute_for_retry_owner",
+      "outcome": "PASS",
+      "seconds": 0.003
+    },
+    {
+      "test_id": "tests/test_teardown_faults.py::test_close_deadline_forces_and_classifies_termination[close_connection]",
+      "outcome": "PASS",
+      "seconds": 0.012
+    },
+    {
+      "test_id": "tests/test_teardown_faults.py::test_close_deadline_forces_and_classifies_termination[close_pool]",
+      "outcome": "PASS",
+      "seconds": 0.012
+    },
+    {
+      "test_id": "tests/test_teardown_faults.py::test_graceful_close_is_distinct_from_timeout[close_connection]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_teardown_faults.py::test_graceful_close_is_distinct_from_timeout[close_pool]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_teardown_faults.py::test_unexpected_close_error_propagates[close_connection]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_teardown_faults.py::test_unexpected_close_error_propagates[close_pool]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_transport_binding.py::test_binding_configuration_is_bounded[bad-peer]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_transport_binding.py::test_binding_configuration_is_bounded[nodekey:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-postgres;drop]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_transport_binding.py::test_binding_configuration_is_bounded[None-peer]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_transport_binding.py::test_binding_configuration_is_bounded[nodekey:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa-None]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_transport_binding.py::test_context_mismatch_denies_before_database[None]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_transport_binding.py::test_context_mismatch_denies_before_database[]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_transport_binding.py::test_context_mismatch_denies_before_database[nodekey:bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_transport_binding.py::test_context_mismatch_denies_before_database[\\u2603]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_transport_binding.py::test_fixed_login_and_stored_binding_required",
+      "outcome": "PASS",
+      "seconds": 0.016
+    },
+    {
+      "test_id": "tests/test_worker_cli.py::test_cli_success_and_rejection",
+      "outcome": "PASS",
+      "seconds": 0.004
+    },
+    {
+      "test_id": "tests/test_worker_cli.py::test_deadline_cancellation_and_hard_exit_contract",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_worker_cli.py::test_hard_deadline_terminates_a_blocked_process",
+      "outcome": "PASS",
+      "seconds": 0.208
+    },
+    {
+      "test_id": "tests/test_worker_cli.py::test_invalid_hard_deadline_never_launches_watchdog[0]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_worker_cli.py::test_invalid_hard_deadline_never_launches_watchdog[True]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_worker_cli.py::test_invalid_hard_deadline_never_launches_watchdog[nan]",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_worker_cli.py::test_invalid_hard_deadline_never_launches_watchdog[31]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_worker_contracts.py::test_private_configuration_and_link_rejection",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_worker_contracts.py::test_request_cannot_weaken_projection_config[redis://remote.example/0]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_worker_contracts.py::test_request_cannot_weaken_projection_config[redis://127.0.0.1/1]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_worker_contracts.py::test_request_cannot_weaken_projection_config[redis://127.0.0.1/0?ssl_cert_reqs=none]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_worker_contracts.py::test_request_cannot_weaken_projection_config[redis:///0]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_worker_contracts.py::test_closed_request_and_canonical_payload",
+      "outcome": "PASS",
+      "seconds": 0.0
+    },
+    {
+      "test_id": "tests/test_worker_contracts.py::test_ingress_frames[abc\\n-10-None]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_worker_contracts.py::test_ingress_frames[abcdef\\n-3-CAPACITY]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_worker_contracts.py::test_ingress_frames[a\\nb\\n-10-ONE_REQUEST]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_worker_contracts.py::test_ingress_frames[abc-10-TRUNCATED]",
+      "outcome": "PASS",
+      "seconds": 0.006
+    },
+    {
+      "test_id": "tests/test_worker_contracts.py::test_ingress_stall_and_expired_budget",
+      "outcome": "PASS",
+      "seconds": 0.011
+    },
+    {
+      "test_id": "tests/test_worker_contracts.py::test_invalid_ingress_limits_fail_before_descriptor_use[0-1.0]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_worker_contracts.py::test_invalid_ingress_limits_fail_before_descriptor_use[True-1.0]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_worker_contracts.py::test_invalid_ingress_limits_fail_before_descriptor_use[131073-1.0]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_worker_contracts.py::test_invalid_ingress_limits_fail_before_descriptor_use[1-nan]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_worker_contracts.py::test_invalid_ingress_limits_fail_before_descriptor_use[1-True]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_worker_deadline_attacks.py::test_hard_exit_does_not_depend_on_diagnostic_pipe[closed]",
+      "outcome": "PASS",
+      "seconds": 0.221
+    },
+    {
+      "test_id": "tests/test_worker_deadline_attacks.py::test_hard_exit_does_not_depend_on_diagnostic_pipe[full]",
+      "outcome": "PASS",
+      "seconds": 0.187
+    },
+    {
+      "test_id": "tests/test_worker_deadline_attacks.py::test_private_fifo_is_rejected_without_waiting_for_a_writer",
+      "outcome": "PASS",
+      "seconds": 0.197
+    },
+    {
+      "test_id": "tests/test_worker_deadline_attacks.py::test_rejection_has_no_blocking_diagnostic_dependency[config-closed]",
+      "outcome": "PASS",
+      "seconds": 0.32
+    },
+    {
+      "test_id": "tests/test_worker_deadline_attacks.py::test_rejection_has_no_blocking_diagnostic_dependency[config-full]",
+      "outcome": "PASS",
+      "seconds": 0.311
+    },
+    {
+      "test_id": "tests/test_worker_deadline_attacks.py::test_rejection_has_no_blocking_diagnostic_dependency[request-closed]",
+      "outcome": "PASS",
+      "seconds": 0.31
+    },
+    {
+      "test_id": "tests/test_worker_deadline_attacks.py::test_rejection_has_no_blocking_diagnostic_dependency[request-full]",
+      "outcome": "PASS",
+      "seconds": 0.35
+    },
+    {
+      "test_id": "tests/test_worker_e2e.py::test_worker_commits_replays_reconciles_and_obeys_revocation",
+      "outcome": "PASS",
+      "seconds": 0.077
+    },
+    {
+      "test_id": "tests/test_worker_failures.py::test_cache_failure_keeps_committed_effect_and_recoverable_work",
+      "outcome": "PASS",
+      "seconds": 0.049
+    },
+    {
+      "test_id": "tests/test_worker_failures.py::test_privileged_or_unobserved_role_is_rejected[None]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_worker_failures.py::test_privileged_or_unobserved_role_is_rejected[row1]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_worker_failures.py::test_observed_tls_and_wal_prerequisites_are_both_required",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_worker_failures.py::test_connection_owners_close_resources_after_primary_failure",
+      "outcome": "PASS",
+      "seconds": 0.183
+    }
+  ],
+  "passed": 446,
+  "failed": 0,
+  "suppressed": 0,
+  "evidence_digest": "c687a723682a2ac6f6ea9d30b7031377207e811e125a3cca3cf890586742c48f"
+}

@@ -1,0 +1,664 @@
+[
+  {
+    "id": "PG-CONFIG-001",
+    "state": "Connection configuration preserves production TLS and bounded loopback test admission.",
+    "evidence": {
+      "contract": "contracts/traceability.json",
+      "candidate_cases": [
+        "tls_profile"
+      ],
+      "test_receipt": "test-execution.json"
+    },
+    "causal_path": [
+      "Unsafe plaintext production or nonloopback test configuration is rejected."
+    ],
+    "authority": "The named local API guard and caller-owned lifecycle. PACE gates local callbacks; the separate database epoch remains authoritative.",
+    "freshness": "Every scenario is bound to the current measured source digest and exact fresh pytest identity by native verification.",
+    "invariants": [
+      "PG-CONFIG-001"
+    ],
+    "falsifier": "Any selected adversarial witness observes an admitted forbidden effect, wrong bytes, lost recovery intent, or an exceeded declared bound.",
+    "hold_condition": "A missing, failed, suppressed, stale, or unmapped execution prevents admission. External native-service transport, storage power loss, and multibackend contention remain separately qualified profiles.",
+    "scenarios": [
+      {
+        "id": "PG-CONFIG-001:positive",
+        "mode": "positive",
+        "execution_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[tls_profile]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-CONFIG-001:negative",
+        "mode": "negative",
+        "execution_id": "tests/test_crossjoin_unit.py::test_candidate_unit[tls_profile]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-CONFIG-001:regression",
+        "mode": "regression",
+        "execution_id": "tests/test_crossjoin_integration.py::test_candidate_integration[tls_profile]",
+        "expected": "ASSERTIONS_PASSED"
+      }
+    ]
+  },
+  {
+    "id": "PG-QUERY-001",
+    "state": "Values are bound and dynamic identifiers are admitted before SQL execution.",
+    "evidence": {
+      "contract": "contracts/traceability.json",
+      "candidate_cases": [
+        "bound_values"
+      ],
+      "test_receipt": "test-execution.json"
+    },
+    "causal_path": [
+      "Untrusted SQL text remains data and unadmitted identifiers are rejected."
+    ],
+    "authority": "The named local API guard and caller-owned lifecycle. PACE gates local callbacks; the separate database epoch remains authoritative.",
+    "freshness": "Every scenario is bound to the current measured source digest and exact fresh pytest identity by native verification.",
+    "invariants": [
+      "PG-QUERY-001"
+    ],
+    "falsifier": "Any selected adversarial witness observes an admitted forbidden effect, wrong bytes, lost recovery intent, or an exceeded declared bound.",
+    "hold_condition": "A missing, failed, suppressed, stale, or unmapped execution prevents admission. External native-service transport, storage power loss, and multibackend contention remain separately qualified profiles.",
+    "scenarios": [
+      {
+        "id": "PG-QUERY-001:positive",
+        "mode": "positive",
+        "execution_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[bound_values]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-QUERY-001:negative",
+        "mode": "negative",
+        "execution_id": "tests/test_crossjoin_unit.py::test_candidate_unit[bound_values]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-QUERY-001:regression",
+        "mode": "regression",
+        "execution_id": "tests/test_crossjoin_integration.py::test_candidate_integration[bound_values]",
+        "expected": "ASSERTIONS_PASSED"
+      }
+    ]
+  },
+  {
+    "id": "PG-TX-001",
+    "state": "A failed owned transaction leaves no partial database effect.",
+    "evidence": {
+      "contract": "contracts/traceability.json",
+      "candidate_cases": [
+        "rollback"
+      ],
+      "test_receipt": "test-execution.json"
+    },
+    "causal_path": [
+      "Injected operation failure leaves the metrics table unchanged."
+    ],
+    "authority": "The named local API guard and caller-owned lifecycle. PACE gates local callbacks; the separate database epoch remains authoritative.",
+    "freshness": "Every scenario is bound to the current measured source digest and exact fresh pytest identity by native verification.",
+    "invariants": [
+      "PG-TX-001"
+    ],
+    "falsifier": "Any selected adversarial witness observes an admitted forbidden effect, wrong bytes, lost recovery intent, or an exceeded declared bound.",
+    "hold_condition": "A missing, failed, suppressed, stale, or unmapped execution prevents admission. External native-service transport, storage power loss, and multibackend contention remain separately qualified profiles.",
+    "scenarios": [
+      {
+        "id": "PG-TX-001:positive",
+        "mode": "positive",
+        "execution_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[rollback]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-TX-001:negative",
+        "mode": "negative",
+        "execution_id": "tests/test_crossjoin_unit.py::test_candidate_unit[rollback]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-TX-001:regression",
+        "mode": "regression",
+        "execution_id": "tests/test_crossjoin_integration.py::test_candidate_integration[rollback]",
+        "expected": "ASSERTIONS_PASSED"
+      }
+    ]
+  },
+  {
+    "id": "PG-RETRY-001",
+    "state": "Only known transaction-abort SQLSTATEs retry, within a finite attempt budget.",
+    "evidence": {
+      "contract": "contracts/traceability.json",
+      "candidate_cases": [
+        "retry_budget"
+      ],
+      "test_receipt": "test-execution.json"
+    },
+    "causal_path": [
+      "Retry budget exhausts exactly and uncertain connection errors are not retried."
+    ],
+    "authority": "The named local API guard and caller-owned lifecycle. PACE gates local callbacks; the separate database epoch remains authoritative.",
+    "freshness": "Every scenario is bound to the current measured source digest and exact fresh pytest identity by native verification.",
+    "invariants": [
+      "PG-RETRY-001"
+    ],
+    "falsifier": "Any selected adversarial witness observes an admitted forbidden effect, wrong bytes, lost recovery intent, or an exceeded declared bound.",
+    "hold_condition": "A missing, failed, suppressed, stale, or unmapped execution prevents admission. External native-service transport, storage power loss, and multibackend contention remain separately qualified profiles.",
+    "scenarios": [
+      {
+        "id": "PG-RETRY-001:positive",
+        "mode": "positive",
+        "execution_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[retry_budget]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-RETRY-001:negative",
+        "mode": "negative",
+        "execution_id": "tests/test_crossjoin_unit.py::test_candidate_unit[retry_budget]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-RETRY-001:regression",
+        "mode": "regression",
+        "execution_id": "tests/test_crossjoin_integration.py::test_candidate_integration[retry_budget]",
+        "expected": "ASSERTIONS_PASSED"
+      }
+    ]
+  },
+  {
+    "id": "PG-CLOSE-001",
+    "state": "Async connection teardown finishes within its configured deadline.",
+    "evidence": {
+      "contract": "contracts/traceability.json",
+      "candidate_cases": [
+        "bounded_close"
+      ],
+      "test_receipt": "test-execution.json"
+    },
+    "causal_path": [
+      "A stalled graceful close forces termination within the explicit deadline."
+    ],
+    "authority": "The named local API guard and caller-owned lifecycle. PACE gates local callbacks; the separate database epoch remains authoritative.",
+    "freshness": "Every scenario is bound to the current measured source digest and exact fresh pytest identity by native verification.",
+    "invariants": [
+      "PG-CLOSE-001"
+    ],
+    "falsifier": "Any selected adversarial witness observes an admitted forbidden effect, wrong bytes, lost recovery intent, or an exceeded declared bound.",
+    "hold_condition": "A missing, failed, suppressed, stale, or unmapped execution prevents admission. External native-service transport, storage power loss, and multibackend contention remain separately qualified profiles.",
+    "scenarios": [
+      {
+        "id": "PG-CLOSE-001:positive",
+        "mode": "positive",
+        "execution_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[bounded_close]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-CLOSE-001:negative",
+        "mode": "negative",
+        "execution_id": "tests/test_crossjoin_unit.py::test_candidate_unit[bounded_close]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-CLOSE-001:regression",
+        "mode": "regression",
+        "execution_id": "tests/test_crossjoin_integration.py::test_candidate_integration[bounded_close]",
+        "expected": "ASSERTIONS_PASSED"
+      }
+    ]
+  },
+  {
+    "id": "PG-CONTRACT-001",
+    "state": "Strict telemetry contracts reject malformed or unbounded inputs before persistence.",
+    "evidence": {
+      "contract": "contracts/traceability.json",
+      "candidate_cases": [
+        "contract_rejection",
+        "bounded_rows"
+      ],
+      "test_receipt": "test-execution.json"
+    },
+    "causal_path": [
+      "Invalid telemetry fails strict validation before the database write.",
+      "An oversized or infinite row source is rejected before bulk database effects."
+    ],
+    "authority": "The named local API guard and caller-owned lifecycle. PACE gates local callbacks; the separate database epoch remains authoritative.",
+    "freshness": "Every scenario is bound to the current measured source digest and exact fresh pytest identity by native verification.",
+    "invariants": [
+      "PG-CONTRACT-001"
+    ],
+    "falsifier": "Any selected adversarial witness observes an admitted forbidden effect, wrong bytes, lost recovery intent, or an exceeded declared bound.",
+    "hold_condition": "A missing, failed, suppressed, stale, or unmapped execution prevents admission. External native-service transport, storage power loss, and multibackend contention remain separately qualified profiles.",
+    "scenarios": [
+      {
+        "id": "PG-CONTRACT-001:positive",
+        "mode": "positive",
+        "execution_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[contract_rejection]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-CONTRACT-001:negative",
+        "mode": "negative",
+        "execution_id": "tests/test_crossjoin_unit.py::test_candidate_unit[contract_rejection]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-CONTRACT-001:regression",
+        "mode": "regression",
+        "execution_id": "tests/test_crossjoin_integration.py::test_candidate_integration[contract_rejection]",
+        "expected": "ASSERTIONS_PASSED"
+      }
+    ]
+  },
+  {
+    "id": "PG-SNAPSHOT-001",
+    "state": "An authority snapshot is deeply immutable and detached from caller-owned values.",
+    "evidence": {
+      "contract": "contracts/traceability.json",
+      "candidate_cases": [
+        "immutable_snapshot"
+      ],
+      "test_receipt": "test-execution.json"
+    },
+    "causal_path": [
+      "Mutating caller inputs cannot change a detached immutable authority snapshot."
+    ],
+    "authority": "The named local API guard and caller-owned lifecycle. PACE gates local callbacks; the separate database epoch remains authoritative.",
+    "freshness": "Every scenario is bound to the current measured source digest and exact fresh pytest identity by native verification.",
+    "invariants": [
+      "PG-SNAPSHOT-001"
+    ],
+    "falsifier": "Any selected adversarial witness observes an admitted forbidden effect, wrong bytes, lost recovery intent, or an exceeded declared bound.",
+    "hold_condition": "A missing, failed, suppressed, stale, or unmapped execution prevents admission. External native-service transport, storage power loss, and multibackend contention remain separately qualified profiles.",
+    "scenarios": [
+      {
+        "id": "PG-SNAPSHOT-001:positive",
+        "mode": "positive",
+        "execution_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[immutable_snapshot]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-SNAPSHOT-001:negative",
+        "mode": "negative",
+        "execution_id": "tests/test_crossjoin_unit.py::test_candidate_unit[immutable_snapshot]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-SNAPSHOT-001:regression",
+        "mode": "regression",
+        "execution_id": "tests/test_crossjoin_integration.py::test_candidate_integration[immutable_snapshot]",
+        "expected": "ASSERTIONS_PASSED"
+      }
+    ]
+  },
+  {
+    "id": "PG-FENCE-001",
+    "state": "Effect, outbox, and epoch verification share an atomic PostgreSQL transaction.",
+    "evidence": {
+      "contract": "contracts/traceability.json",
+      "candidate_cases": [
+        "epoch_fence"
+      ],
+      "test_receipt": "test-execution.json"
+    },
+    "causal_path": [
+      "Stale or peer-mismatched authority cannot create an effect or outbox entry."
+    ],
+    "authority": "PostgreSQL session identity, epoch row lock, and one owned transaction; cache observations carry no grant.",
+    "freshness": "Every scenario is bound to the current measured source digest and exact fresh pytest identity by native verification.",
+    "invariants": [
+      "PG-FENCE-001"
+    ],
+    "falsifier": "Any selected adversarial witness observes an admitted forbidden effect, wrong bytes, lost recovery intent, or an exceeded declared bound.",
+    "hold_condition": "A missing, failed, suppressed, stale, or unmapped execution prevents admission. External native-service transport, storage power loss, and multibackend contention remain separately qualified profiles.",
+    "scenarios": [
+      {
+        "id": "PG-FENCE-001:positive",
+        "mode": "positive",
+        "execution_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[epoch_fence]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-FENCE-001:negative",
+        "mode": "negative",
+        "execution_id": "tests/test_crossjoin_unit.py::test_candidate_unit[epoch_fence]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-FENCE-001:regression",
+        "mode": "regression",
+        "execution_id": "tests/test_crossjoin_integration.py::test_candidate_integration[epoch_fence]",
+        "expected": "ASSERTIONS_PASSED"
+      }
+    ]
+  },
+  {
+    "id": "PG-OUTBOX-001",
+    "state": "Publication failures leave durable replayable work, without repeating the effect.",
+    "evidence": {
+      "contract": "contracts/traceability.json",
+      "candidate_cases": [
+        "outbox_replay"
+      ],
+      "test_receipt": "test-execution.json"
+    },
+    "causal_path": [
+      "Failed publication preserves pending work and replay does not repeat the effect."
+    ],
+    "authority": "PostgreSQL session identity, epoch row lock, and one owned transaction; cache observations carry no grant.",
+    "freshness": "Every scenario is bound to the current measured source digest and exact fresh pytest identity by native verification.",
+    "invariants": [
+      "PG-OUTBOX-001"
+    ],
+    "falsifier": "Any selected adversarial witness observes an admitted forbidden effect, wrong bytes, lost recovery intent, or an exceeded declared bound.",
+    "hold_condition": "A missing, failed, suppressed, stale, or unmapped execution prevents admission. External native-service transport, storage power loss, and multibackend contention remain separately qualified profiles.",
+    "scenarios": [
+      {
+        "id": "PG-OUTBOX-001:positive",
+        "mode": "positive",
+        "execution_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[outbox_replay]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-OUTBOX-001:negative",
+        "mode": "negative",
+        "execution_id": "tests/test_crossjoin_unit.py::test_candidate_unit[outbox_replay]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-OUTBOX-001:regression",
+        "mode": "regression",
+        "execution_id": "tests/test_crossjoin_integration.py::test_candidate_integration[outbox_replay]",
+        "expected": "ASSERTIONS_PASSED"
+      }
+    ]
+  },
+  {
+    "id": "PG-CHECKPOINT-001",
+    "state": "Durable checkpoints advance monotonically and Redis cannot authorize effects.",
+    "evidence": {
+      "contract": "contracts/traceability.json",
+      "candidate_cases": [
+        "checkpoint_order"
+      ],
+      "test_receipt": "test-execution.json"
+    },
+    "causal_path": [
+      "A lower checkpoint cannot replace a durable higher checkpoint."
+    ],
+    "authority": "PostgreSQL session identity, epoch row lock, and one owned transaction; cache observations carry no grant.",
+    "freshness": "Every scenario is bound to the current measured source digest and exact fresh pytest identity by native verification.",
+    "invariants": [
+      "PG-CHECKPOINT-001"
+    ],
+    "falsifier": "Any selected adversarial witness observes an admitted forbidden effect, wrong bytes, lost recovery intent, or an exceeded declared bound.",
+    "hold_condition": "A missing, failed, suppressed, stale, or unmapped execution prevents admission. External native-service transport, storage power loss, and multibackend contention remain separately qualified profiles.",
+    "scenarios": [
+      {
+        "id": "PG-CHECKPOINT-001:positive",
+        "mode": "positive",
+        "execution_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[checkpoint_order]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-CHECKPOINT-001:negative",
+        "mode": "negative",
+        "execution_id": "tests/test_crossjoin_unit.py::test_candidate_unit[checkpoint_order]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-CHECKPOINT-001:regression",
+        "mode": "regression",
+        "execution_id": "tests/test_crossjoin_integration.py::test_candidate_integration[checkpoint_order]",
+        "expected": "ASSERTIONS_PASSED"
+      }
+    ]
+  },
+  {
+    "id": "PG-CDC-001",
+    "state": "Streaming preserves bytes independently of input packet boundaries and enforces limits.",
+    "evidence": {
+      "contract": "contracts/traceability.json",
+      "candidate_cases": [
+        "packet_invariance",
+        "stream_limits"
+      ],
+      "test_receipt": "test-execution.json"
+    },
+    "causal_path": [
+      "Chunk boundaries and reconstruction are identical across source packetizations.",
+      "Oversized streams or frames fail within the declared bound."
+    ],
+    "authority": "The named local API guard and caller-owned lifecycle. PACE gates local callbacks; the separate database epoch remains authoritative.",
+    "freshness": "Every scenario is bound to the current measured source digest and exact fresh pytest identity by native verification.",
+    "invariants": [
+      "PG-CDC-001"
+    ],
+    "falsifier": "Any selected adversarial witness observes an admitted forbidden effect, wrong bytes, lost recovery intent, or an exceeded declared bound.",
+    "hold_condition": "A missing, failed, suppressed, stale, or unmapped execution prevents admission. External native-service transport, storage power loss, and multibackend contention remain separately qualified profiles.",
+    "scenarios": [
+      {
+        "id": "PG-CDC-001:positive",
+        "mode": "positive",
+        "execution_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[packet_invariance]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-CDC-001:negative",
+        "mode": "negative",
+        "execution_id": "tests/test_causal_streaming.py::test_deletion",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-CDC-001:regression",
+        "mode": "regression",
+        "execution_id": "tests/test_crossjoin_integration.py::test_candidate_integration[packet_invariance]",
+        "expected": "ASSERTIONS_PASSED"
+      }
+    ]
+  },
+  {
+    "id": "PG-PACE-001",
+    "state": "Terminal forbids authority and recovery needs explicit reconciliation evidence.",
+    "evidence": {
+      "contract": "contracts/traceability.json",
+      "candidate_cases": [
+        "terminal_authority",
+        "guarded_recovery"
+      ],
+      "test_receipt": "test-execution.json"
+    },
+    "causal_path": [
+      "Terminal or revoked authority cannot be restored by an ordinary request.",
+      "Connectivity without reconciliation does not restore primary authority."
+    ],
+    "authority": "The named local API guard and caller-owned lifecycle. PACE gates local callbacks; the separate database epoch remains authoritative.",
+    "freshness": "Every scenario is bound to the current measured source digest and exact fresh pytest identity by native verification.",
+    "invariants": [
+      "PG-PACE-001"
+    ],
+    "falsifier": "Any selected adversarial witness observes an admitted forbidden effect, wrong bytes, lost recovery intent, or an exceeded declared bound.",
+    "hold_condition": "A missing, failed, suppressed, stale, or unmapped execution prevents admission. External native-service transport, storage power loss, and multibackend contention remain separately qualified profiles.",
+    "scenarios": [
+      {
+        "id": "PG-PACE-001:positive",
+        "mode": "positive",
+        "execution_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[terminal_authority]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-PACE-001:negative",
+        "mode": "negative",
+        "execution_id": "tests/test_crossjoin_unit.py::test_candidate_unit[terminal_authority]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-PACE-001:regression",
+        "mode": "regression",
+        "execution_id": "tests/test_crossjoin_integration.py::test_candidate_integration[terminal_authority]",
+        "expected": "ASSERTIONS_PASSED"
+      }
+    ]
+  },
+  {
+    "id": "PG-OPS-001",
+    "state": "Durable local commit is admitted only when observed PostgreSQL WAL prerequisites are enabled; no storage power-loss proof is implied.",
+    "evidence": {
+      "contract": "contracts/traceability.json",
+      "candidate_cases": [
+        "wal_prerequisites"
+      ],
+      "test_receipt": "test-execution.json"
+    },
+    "causal_path": [
+      "Disabled WAL protection or asynchronous commit is rejected before a durability-dependent effect."
+    ],
+    "authority": "The named local API guard and caller-owned lifecycle. PACE gates local callbacks; the separate database epoch remains authoritative.",
+    "freshness": "Every scenario is bound to the current measured source digest and exact fresh pytest identity by native verification.",
+    "invariants": [
+      "PG-OPS-001"
+    ],
+    "falsifier": "Any selected adversarial witness observes an admitted forbidden effect, wrong bytes, lost recovery intent, or an exceeded declared bound.",
+    "hold_condition": "A missing, failed, suppressed, stale, or unmapped execution prevents admission. External native-service transport, storage power loss, and multibackend contention remain separately qualified profiles.",
+    "scenarios": [
+      {
+        "id": "PG-OPS-001:positive",
+        "mode": "positive",
+        "execution_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[wal_prerequisites]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-OPS-001:negative",
+        "mode": "negative",
+        "execution_id": "tests/test_crossjoin_unit.py::test_candidate_unit[wal_prerequisites]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-OPS-001:regression",
+        "mode": "regression",
+        "execution_id": "tests/test_crossjoin_integration.py::test_candidate_integration[wal_prerequisites]",
+        "expected": "ASSERTIONS_PASSED"
+      }
+    ]
+  },
+  {
+    "id": "PG-POOL-001",
+    "state": "A finite connection pool rejects excess concurrent leases within its timeout.",
+    "evidence": {
+      "contract": "contracts/traceability.json",
+      "candidate_cases": [
+        "pool_capacity"
+      ],
+      "test_receipt": "test-execution.json"
+    },
+    "causal_path": [
+      "An exhausted finite pool times out; it never creates an unbounded extra lease."
+    ],
+    "authority": "The named local API guard and caller-owned lifecycle. PACE gates local callbacks; the separate database epoch remains authoritative.",
+    "freshness": "Every scenario is bound to the current measured source digest and exact fresh pytest identity by native verification.",
+    "invariants": [
+      "PG-POOL-001"
+    ],
+    "falsifier": "Any selected adversarial witness observes an admitted forbidden effect, wrong bytes, lost recovery intent, or an exceeded declared bound.",
+    "hold_condition": "A missing, failed, suppressed, stale, or unmapped execution prevents admission. External native-service transport, storage power loss, and multibackend contention remain separately qualified profiles.",
+    "scenarios": [
+      {
+        "id": "PG-POOL-001:positive",
+        "mode": "positive",
+        "execution_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[pool_capacity]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-POOL-001:negative",
+        "mode": "negative",
+        "execution_id": "tests/test_crossjoin_unit.py::test_candidate_unit[pool_capacity]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-POOL-001:regression",
+        "mode": "regression",
+        "execution_id": "tests/test_crossjoin_integration.py::test_candidate_integration[pool_capacity]",
+        "expected": "ASSERTIONS_PASSED"
+      }
+    ]
+  },
+  {
+    "id": "PG-MIGRATION-001",
+    "state": "Applied migration bytes are bound to an immutable checksum and drift cannot execute.",
+    "evidence": {
+      "contract": "contracts/traceability.json",
+      "candidate_cases": [
+        "migration_drift"
+      ],
+      "test_receipt": "test-execution.json"
+    },
+    "causal_path": [
+      "Different bytes for an applied migration fail before the changed SQL executes."
+    ],
+    "authority": "The named local API guard and caller-owned lifecycle. PACE gates local callbacks; the separate database epoch remains authoritative.",
+    "freshness": "Every scenario is bound to the current measured source digest and exact fresh pytest identity by native verification.",
+    "invariants": [
+      "PG-MIGRATION-001"
+    ],
+    "falsifier": "Any selected adversarial witness observes an admitted forbidden effect, wrong bytes, lost recovery intent, or an exceeded declared bound.",
+    "hold_condition": "A missing, failed, suppressed, stale, or unmapped execution prevents admission. External native-service transport, storage power loss, and multibackend contention remain separately qualified profiles.",
+    "scenarios": [
+      {
+        "id": "PG-MIGRATION-001:positive",
+        "mode": "positive",
+        "execution_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[migration_drift]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-MIGRATION-001:negative",
+        "mode": "negative",
+        "execution_id": "tests/test_crossjoin_unit.py::test_candidate_unit[migration_drift]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-MIGRATION-001:regression",
+        "mode": "regression",
+        "execution_id": "tests/test_crossjoin_integration.py::test_candidate_integration[migration_drift]",
+        "expected": "ASSERTIONS_PASSED"
+      }
+    ]
+  },
+  {
+    "id": "PG-PEER-001",
+    "state": "Trusted Tailcat child peer identity is matched to one fixed database login before payload use.",
+    "evidence": {
+      "contract": "contracts/traceability.json",
+      "candidate_cases": [
+        "tailcat_binding"
+      ],
+      "test_receipt": "test-execution.json"
+    },
+    "causal_path": [
+      "Mismatched transport or database peer identity is rejected before any stream effect."
+    ],
+    "authority": "PostgreSQL session identity, epoch row lock, and one owned transaction; cache observations carry no grant.",
+    "freshness": "Every scenario is bound to the current measured source digest and exact fresh pytest identity by native verification.",
+    "invariants": [
+      "PG-PEER-001"
+    ],
+    "falsifier": "Any selected adversarial witness observes an admitted forbidden effect, wrong bytes, lost recovery intent, or an exceeded declared bound.",
+    "hold_condition": "A missing, failed, suppressed, stale, or unmapped execution prevents admission. External native-service transport, storage power loss, and multibackend contention remain separately qualified profiles.",
+    "scenarios": [
+      {
+        "id": "PG-PEER-001:positive",
+        "mode": "positive",
+        "execution_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[tailcat_binding]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-PEER-001:negative",
+        "mode": "negative",
+        "execution_id": "tests/test_crossjoin_unit.py::test_candidate_unit[tailcat_binding]",
+        "expected": "ASSERTIONS_PASSED"
+      },
+      {
+        "id": "PG-PEER-001:regression",
+        "mode": "regression",
+        "execution_id": "tests/test_crossjoin_integration.py::test_candidate_integration[tailcat_binding]",
+        "expected": "ASSERTIONS_PASSED"
+      }
+    ]
+  }
+]

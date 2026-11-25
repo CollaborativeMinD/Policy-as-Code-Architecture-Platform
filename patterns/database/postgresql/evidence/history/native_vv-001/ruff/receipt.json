@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "argv": [
+    "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+    "-m",
+    "ruff",
+    "check",
+    "src"
+  ],
+  "returncode": 0,
+  "reason": "COMPLETE",
+  "seconds": 0.03033014699758496,
+  "captured_bytes": 19,
+  "stdout": "pytest.stdout.log",
+  "stderr": "pytest.stderr.log"
+}

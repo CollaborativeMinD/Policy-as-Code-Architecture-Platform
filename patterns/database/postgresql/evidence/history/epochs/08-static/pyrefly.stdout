@@ -1,0 +1,41 @@
+pyrefly 1.3.2
+{
+  "errors": [
+    {
+      "line": 19,
+      "column": 9,
+      "stop_line": 19,
+      "stop_column": 22,
+      "path": "src/hmt_pg_patterns/orm_model.py",
+      "code": -2,
+      "name": "bad-override",
+      "description": "Class member `MetricRow.__tablename__` overrides parent class `SQLModel` in an inconsistent manner\n  `MetricRow.__tablename__` has type `_declared_directive[str]`, which is not assignable to `declared_attr[Unknown]`, the type of `SQLModel.__tablename__`",
+      "concise_description": "Class member `MetricRow.__tablename__` overrides parent class `SQLModel` in an inconsistent manner",
+      "severity": "error"
+    },
+    {
+      "line": 29,
+      "column": 69,
+      "stop_line": 29,
+      "stop_column": 74,
+      "path": "src/hmt_pg_patterns/outbox.py",
+      "code": -2,
+      "name": "bad-argument-type",
+      "description": "Argument `CheckpointData | None` is not assignable to parameter `checkpoint` with type `CheckpointData` in function `OutboxEvent.__init__`\n  The declared type does not allow `None`. Consider narrowing the value with an `is not None` check.",
+      "concise_description": "Argument `CheckpointData | None` is not assignable to parameter `checkpoint` with type `CheckpointData` in function `OutboxEvent.__init__`",
+      "severity": "error"
+    },
+    {
+      "line": 107,
+      "column": 52,
+      "stop_line": 107,
+      "stop_column": 67,
+      "path": "src/hmt_pg_patterns/outbox.py",
+      "code": -2,
+      "name": "missing-attribute",
+      "description": "Object of class `NoneType` has no attribute `stream_id`",
+      "concise_description": "Object of class `NoneType` has no attribute `stream_id`",
+      "severity": "error"
+    }
+  ]
+}

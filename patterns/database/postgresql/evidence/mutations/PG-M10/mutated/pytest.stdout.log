@@ -1,0 +1,11 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+___________________ test_foreign_scope_and_loss_are_rejected ___________________
+tests/test_checkpoints_cache.py:88: in test_foreign_scope_and_loss_are_rejected
+    assert cache.read(value) is None
+E   AssertionError: assert pmap({'digest': b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'stream_id': UUID('00dd5e5f-7056-480d-80f7-65fcb3627a64'), 'sequence': 0, 'epoch': 1, 'policy_digest': b'pppppppppppppppppppppppppppppppp', 'end': 7, 'db_role': 'hmt_test_peer'}) is None
+E    +  where pmap({'digest': b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', 'stream_id': UUID('00dd5e5f-7056-480d-80f7-65fcb3627a64'), 'sequence': 0, 'epoch': 1, 'policy_digest': b'pppppppppppppppppppppppppppppppp', 'end': 7, 'db_role': 'hmt_test_peer'}) = read(CheckpointData(db_role='hmt_test_peer', stream_id=UUID('00dd5e5f-7056-480d-80f7-65fcb3627a64'), epoch=1, sequence=0, end=7, digest=b'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa', policy_digest=b'pppppppppppppppppppppppppppppppp'))
+E    +    where read = <hmt_pg_patterns.checkpoints.CheckpointCache object at 0x7f8b599da900>.read
+=========================== short test summary info ============================
+FAILED tests/test_checkpoints_cache.py::test_foreign_scope_and_loss_are_rejected
+1 failed in 0.29s

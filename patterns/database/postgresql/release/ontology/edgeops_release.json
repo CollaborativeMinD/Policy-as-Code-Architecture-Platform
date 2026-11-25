@@ -1,0 +1,115 @@
+{
+  "table": "release",
+  "kb_id": "EdgeOps_Release_TraceLifecycle",
+  "declaration_source": "project_sources/07-EdgeOps_Release_TraceLifecycle_FieldDeclarations.xml",
+  "declaration_sha256": "b54efb75ba60ecc82391dbb96fa282cf493cfca5ecfdafaf8a4a7f05199abf2b",
+  "columns": [
+    "release_unit_id",
+    "source_revision",
+    "artifact_hash",
+    "provenance_ref",
+    "test_evidence_ref",
+    "promotion_status",
+    "rollback_ref",
+    "regression_status",
+    "release_checklist_ref",
+    "evidence_id"
+  ],
+  "column_types": {
+    "release_unit_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "source_revision": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "artifact_hash": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "provenance_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "test_evidence_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "promotion_status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "rollback_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "regression_status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "release_checklist_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "evidence_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    }
+  },
+  "rows": [
+    {
+      "release_unit_id": "hmt-postgresql-design-patterns-1.0.0",
+      "source_revision": "9bc06522f27d4576f08caf44f4989031d1b145f1",
+      "artifact_hash": "sha256:6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "provenance_ref": "release/provenance.json",
+      "test_evidence_ref": "VERIFICATION_REPORT.md",
+      "promotion_status": "not_promoted_to_live_deployment",
+      "rollback_ref": null,
+      "regression_status": "PASS_software_and_applicable_native_admission",
+      "release_checklist_ref": "Runbook.md",
+      "evidence_id": "evidence/native42/summary.json"
+    }
+  ],
+  "field_dispositions": [
+    {
+      "row_index": 0,
+      "field": "rollback_ref",
+      "status": "not_applicable",
+      "reason": "No prior admitted PostgreSQL release artifact is claimed."
+    }
+  ],
+  "csv_null_token": "\\N",
+  "release_binding": "final_source_and_observed_receipts",
+  "artifact_hash_scope": "Admitted 183-file source artifact digest. The outer archive hash is supplied separately; no self-referential ZIP hash is embedded."
+}

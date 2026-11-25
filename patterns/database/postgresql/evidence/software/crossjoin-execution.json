@@ -1,0 +1,387 @@
+{
+  "method": "executed",
+  "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+  "run_id": "pg-admission-4370ce597c7c4f49b35b315fdeaa1987",
+  "tests": [
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[packet_invariance]",
+      "outcome": "PASS",
+      "seconds": 0.015
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[packet_invariance]",
+      "outcome": "PASS",
+      "seconds": 0.015
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[packet_invariance]",
+      "outcome": "PASS",
+      "seconds": 0.197
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[packet_invariance]",
+      "outcome": "PASS",
+      "seconds": 0.158
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[stream_limits]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[stream_limits]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[stream_limits]",
+      "outcome": "PASS",
+      "seconds": 0.015
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[stream_limits]",
+      "outcome": "PASS",
+      "seconds": 0.023
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[checkpoint_order]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[checkpoint_order]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[checkpoint_order]",
+      "outcome": "PASS",
+      "seconds": 0.023
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[checkpoint_order]",
+      "outcome": "PASS",
+      "seconds": 0.127
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[bounded_close]",
+      "outcome": "PASS",
+      "seconds": 0.012
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[bounded_close]",
+      "outcome": "PASS",
+      "seconds": 0.013
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[bounded_close]",
+      "outcome": "PASS",
+      "seconds": 0.06
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[bounded_close]",
+      "outcome": "PASS",
+      "seconds": 0.067
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[tls_profile]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[tls_profile]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[tls_profile]",
+      "outcome": "PASS",
+      "seconds": 0.009
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[tls_profile]",
+      "outcome": "PASS",
+      "seconds": 0.133
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[contract_rejection]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[contract_rejection]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[contract_rejection]",
+      "outcome": "PASS",
+      "seconds": 0.013
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[contract_rejection]",
+      "outcome": "PASS",
+      "seconds": 0.015
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[bounded_rows]",
+      "outcome": "PASS",
+      "seconds": 0.115
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[bounded_rows]",
+      "outcome": "PASS",
+      "seconds": 0.108
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[bounded_rows]",
+      "outcome": "PASS",
+      "seconds": 0.135
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[bounded_rows]",
+      "outcome": "PASS",
+      "seconds": 0.123
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[epoch_fence]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[epoch_fence]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[epoch_fence]",
+      "outcome": "PASS",
+      "seconds": 0.026
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[epoch_fence]",
+      "outcome": "PASS",
+      "seconds": 0.05
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[migration_drift]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[migration_drift]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[migration_drift]",
+      "outcome": "PASS",
+      "seconds": 0.015
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[migration_drift]",
+      "outcome": "PASS",
+      "seconds": 0.017
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[wal_prerequisites]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[wal_prerequisites]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[wal_prerequisites]",
+      "outcome": "PASS",
+      "seconds": 0.008
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[wal_prerequisites]",
+      "outcome": "PASS",
+      "seconds": 0.02
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[outbox_replay]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[outbox_replay]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[outbox_replay]",
+      "outcome": "PASS",
+      "seconds": 0.033
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[outbox_replay]",
+      "outcome": "PASS",
+      "seconds": 0.039
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[terminal_authority]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[terminal_authority]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[terminal_authority]",
+      "outcome": "PASS",
+      "seconds": 0.016
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[terminal_authority]",
+      "outcome": "PASS",
+      "seconds": 0.119
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[guarded_recovery]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[guarded_recovery]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[guarded_recovery]",
+      "outcome": "PASS",
+      "seconds": 0.016
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[guarded_recovery]",
+      "outcome": "PASS",
+      "seconds": 0.133
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[tailcat_binding]",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[tailcat_binding]",
+      "outcome": "PASS",
+      "seconds": 0.002
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[tailcat_binding]",
+      "outcome": "PASS",
+      "seconds": 0.022
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[tailcat_binding]",
+      "outcome": "PASS",
+      "seconds": 0.147
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[pool_capacity]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[pool_capacity]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[pool_capacity]",
+      "outcome": "PASS",
+      "seconds": 0.033
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[pool_capacity]",
+      "outcome": "PASS",
+      "seconds": 0.038
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[bound_values]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[bound_values]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[bound_values]",
+      "outcome": "PASS",
+      "seconds": 0.008
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[bound_values]",
+      "outcome": "PASS",
+      "seconds": 0.07
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[retry_budget]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[retry_budget]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[retry_budget]",
+      "outcome": "PASS",
+      "seconds": 0.016
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[retry_budget]",
+      "outcome": "PASS",
+      "seconds": 0.167
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[immutable_snapshot]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[immutable_snapshot]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[immutable_snapshot]",
+      "outcome": "PASS",
+      "seconds": 0.019
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[immutable_snapshot]",
+      "outcome": "PASS",
+      "seconds": 0.141
+    },
+    {
+      "test_id": "tests/test_crossjoin_unit.py::test_candidate_unit[rollback]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_regex.py::test_candidate_regex[rollback]",
+      "outcome": "PASS",
+      "seconds": 0.001
+    },
+    {
+      "test_id": "tests/test_crossjoin_integration.py::test_candidate_integration[rollback]",
+      "outcome": "PASS",
+      "seconds": 0.01
+    },
+    {
+      "test_id": "tests/test_crossjoin_e2e.py::test_candidate_e2e[rollback]",
+      "outcome": "PASS",
+      "seconds": 0.176
+    }
+  ]
+}

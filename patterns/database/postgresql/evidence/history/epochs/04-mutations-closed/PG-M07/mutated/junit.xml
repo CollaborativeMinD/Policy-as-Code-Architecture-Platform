@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="2.094" timestamp="2026-11-04T15:16:45.506811+07:00" hostname="18a71ec14d7e"><testcase classname="tests.test_authority_security" name="test_expiration_is_rechecked_after_authority_lock" time="2.029"><failure message="Failed: DID NOT RAISE Error">tests/test_authority_security.py:91: in test_expiration_is_rechecked_after_authority_lock
+    with pytest.raises(psycopg.Error, match="AUTHORITY_EXPIRED"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE Error</failure></testcase></testsuite></testsuites>

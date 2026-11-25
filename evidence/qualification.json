@@ -1,0 +1,76 @@
+{
+  "branch_exporter_tests": 5,
+  "continuity_sha256": "3d00c41064e83423784f03c5bb49b6c159c327d97a329ea117e23e795151ee51",
+  "cross_branch_admission": {
+    "configuration_sha256": "d0edb46d1deb29ba840a265508c4f2bcb298ec0aa0c8622c7ee4980c0b66bf0e",
+    "continuity_sha256": "3d00c41064e83423784f03c5bb49b6c159c327d97a329ea117e23e795151ee51",
+    "holds": [
+      {
+        "pattern": "PG-PAT-005",
+        "reason": "NO_QUALIFIED_FACTORY_BINDING"
+      },
+      {
+        "reason": "COMPOSITION_WITNESS_REQUIRED"
+      }
+    ],
+    "name": "retry-with-store",
+    "patterns": [
+      {
+        "binding": "reference",
+        "branch": "database",
+        "evidence_sha256": "6377fa00cb8627b95b4ba411fe90fd6fa706b682b5a2dd26426c290c16752f59",
+        "id": "PG-PAT-005",
+        "version": "1.0.0"
+      },
+      {
+        "binding": "ooda-v1",
+        "branch": "resilience",
+        "evidence_sha256": "2766b2c74bf13fde665662f2a9e482fb896d5327a082a76f270c8306cc6834c5",
+        "id": "resilience-ooda",
+        "version": "1"
+      }
+    ],
+    "registry": "patterns@1",
+    "registry_sha256": "2eda6f947406c6b6acceae0a8dc92d22043f5b27c85d9037d712f5b168c1cbcb",
+    "selection_sha256": "e7a15ffea7f1bcf5abe403db7babcde7ab10d2f9d2a2f46f064e7ba676abd4a7",
+    "status": "HOLD"
+  },
+  "custody": {
+    "factory_bindings": [
+      "resilience-ooda"
+    ],
+    "intake_source_sha256": "a1e5d895afc190c4b92ffcc37536a2a1c31df64999230b320d49581b60e05131",
+    "preserved_files": 1969,
+    "registry_entries": 33,
+    "status": "PASS"
+  },
+  "exported_configurations": [
+    {
+      "file": "ooda-starter.zip",
+      "profiles": [
+        "delivery",
+        "lookup"
+      ],
+      "sha256": "a4c3c16592a9b5f0aeaeb186908ff26da0f7b2cf367e3858782282d81c498dc7"
+    },
+    {
+      "file": "ooda-all.zip",
+      "profiles": [
+        "async_lookup",
+        "backoff_lookup",
+        "connection_lookup",
+        "delivery",
+        "fixed_lookup",
+        "jittered_lookup",
+        "logged_validation",
+        "lookup",
+        "optional_lookup"
+      ],
+      "sha256": "e6622b1e8da6521b149445d7fa0a5e49fb8180e41667502278ebe06743d83cb8"
+    }
+  ],
+  "factory_tests": 4,
+  "registry_sha256": "2eda6f947406c6b6acceae0a8dc92d22043f5b27c85d9037d712f5b168c1cbcb",
+  "shared_retry_runtime_sha256": "393b5fd61462f5cbd1d033fda1ff8c58d24f4dd4921bcfcfb506b43c4ec0b04e",
+  "status": "PASS"
+}

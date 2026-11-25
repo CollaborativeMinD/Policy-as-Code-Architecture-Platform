@@ -1,0 +1,6005 @@
+{
+  "status": "PASS",
+  "run_id": "pg-admission-c28b0679915045b19c389bc69df5f055",
+  "completed_at": "2026-11-04T08:36:13.619583+00:00",
+  "source_digest": "6710f678900766f47969172cc2f1da03de3eb9d6fb42ca86135cb2e3f59ca11d",
+  "gates": {
+    "structure": {
+      "status": "PASS",
+      "files": [
+        {
+          "path": "src/hmt_pg_patterns/__init__.py",
+          "physical_loc": 3,
+          "counted_loc": 2,
+          "band": "NOMINAL",
+          "functions": [],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/analytics.py",
+          "physical_loc": 58,
+          "counted_loc": 49,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "_frame",
+              "line": 25,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "metric_frames",
+              "line": 40,
+              "physical_loc": 19,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 4
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/async_driver.py",
+          "physical_loc": 50,
+          "counted_loc": 38,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "fetch_metrics",
+              "line": 13,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "insert_metric",
+              "line": 21,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "transaction_retry",
+              "line": 26,
+              "physical_loc": 18,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 3
+            },
+            {
+              "name": "_transaction_once",
+              "line": 46,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/asyncpg_driver.py",
+          "physical_loc": 62,
+          "counted_loc": 51,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "fetch_metrics",
+              "line": 17,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "insert_metric",
+              "line": 28,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "close_connection",
+              "line": 35,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            },
+            {
+              "name": "connection",
+              "line": 49,
+              "physical_loc": 14,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/asyncpg_pool.py",
+          "physical_loc": 55,
+          "counted_loc": 46,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "close_pool",
+              "line": 14,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            },
+            {
+              "name": "pool",
+              "line": 28,
+              "physical_loc": 20,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 2
+            },
+            {
+              "name": "lease",
+              "line": 51,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/authority.py",
+          "physical_loc": 37,
+          "counted_loc": 29,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "__init__",
+              "line": 11,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "identity",
+              "line": 14,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "admit",
+              "line": 20,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "checkpoint",
+              "line": 31,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/authority_async.py",
+          "physical_loc": 40,
+          "counted_loc": 32,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "__init__",
+              "line": 11,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "identity",
+              "line": 14,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "admit",
+              "line": 21,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "checkpoint",
+              "line": 33,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/authority_types.py",
+          "physical_loc": 85,
+          "counted_loc": 62,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "receipt",
+              "line": 75,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "checkpoint",
+              "line": 81,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "header",
+              "line": 32,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/bulk.py",
+          "physical_loc": 33,
+          "counted_loc": 26,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "copy_metrics",
+              "line": 12,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            },
+            {
+              "name": "pipeline_metrics",
+              "line": 25,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/checkpoints.py",
+          "physical_loc": 46,
+          "counted_loc": 37,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "__init__",
+              "line": 14,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "_key",
+              "line": 18,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "offer",
+              "line": 22,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "read",
+              "line": 36,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/checkpoints_lua.py",
+          "physical_loc": 34,
+          "counted_loc": 32,
+          "band": "NOMINAL",
+          "functions": [],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/checkpoints_snapshot.py",
+          "physical_loc": 32,
+          "counted_loc": 24,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "immutable_checkpoint",
+              "line": 12,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "encode_checkpoint",
+              "line": 21,
+              "physical_loc": 12,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/config.py",
+          "physical_loc": 88,
+          "counted_loc": 79,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "enforce_security",
+              "line": 28,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 2
+            },
+            {
+              "name": "server_settings",
+              "line": 42,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "connect_kwargs",
+              "line": 52,
+              "physical_loc": 17,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "asyncpg_kwargs",
+              "line": 70,
+              "physical_loc": 19,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/diagnostics.py",
+          "physical_loc": 45,
+          "counted_loc": 34,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "wal_settings",
+              "line": 29,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "explain_page",
+              "line": 40,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "require_local_durable_commit",
+              "line": 20,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/driver_contracts.py",
+          "physical_loc": 23,
+          "counted_loc": 16,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "owned_transaction",
+              "line": 10,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "pool_limits",
+              "line": 18,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/migrations.py",
+          "physical_loc": 49,
+          "counted_loc": 41,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "migration_inputs",
+              "line": 12,
+              "physical_loc": 14,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "apply_migrations",
+              "line": 28,
+              "physical_loc": 22,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 4
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/models.py",
+          "physical_loc": 54,
+          "counted_loc": 41,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "bounded_keys",
+              "line": 22,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "require_timezone",
+              "line": 33,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/orm.py",
+          "physical_loc": 64,
+          "counted_loc": 53,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "engine_options",
+              "line": 21,
+              "physical_loc": 23,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "create_pg_engine",
+              "line": 46,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "insert_metric",
+              "line": 52,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "fetch_metrics",
+              "line": 59,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/orm_async.py",
+          "physical_loc": 29,
+          "counted_loc": 21,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "create_pg_engine",
+              "line": 11,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "insert_metric",
+              "line": 17,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "fetch_metrics",
+              "line": 24,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/orm_model.py",
+          "physical_loc": 47,
+          "counted_loc": 34,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "insert_metric",
+              "line": 27,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "fetch_metrics",
+              "line": 34,
+              "physical_loc": 14,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/outbox.py",
+          "physical_loc": 123,
+          "counted_loc": 96,
+          "band": "WATCH",
+          "functions": [
+            {
+              "name": "_idle",
+              "line": 20,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "_event",
+              "line": 25,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "claim",
+              "line": 34,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "recover",
+              "line": 42,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "finish",
+              "line": 54,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 1
+            },
+            {
+              "name": "_current",
+              "line": 65,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "_publish",
+              "line": 80,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 2
+            },
+            {
+              "name": "relay_checkpoint",
+              "line": 95,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "rebuild_checkpoint",
+              "line": 103,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 2
+            },
+            {
+              "name": "reconcile",
+              "line": 118,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/pace.py",
+          "physical_loc": 80,
+          "counted_loc": 66,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "available_mode",
+              "line": 13,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "recovery_state",
+              "line": 26,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 0
+            },
+            {
+              "name": "step",
+              "line": 41,
+              "physical_loc": 27,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 1
+            },
+            {
+              "name": "require_operation",
+              "line": 70,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "perform",
+              "line": 77,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/pace_models.py",
+          "physical_loc": 63,
+          "counted_loc": 47,
+          "band": "NOMINAL",
+          "functions": [],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/pools.py",
+          "physical_loc": 42,
+          "counted_loc": 33,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "_options",
+              "line": 11,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 0
+            },
+            {
+              "name": "sync_pool",
+              "line": 24,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 1
+            },
+            {
+              "name": "async_pool",
+              "line": 35,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/queries.py",
+          "physical_loc": 56,
+          "counted_loc": 42,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "qualified_table",
+              "line": 25,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "snapshot_metric",
+              "line": 32,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "metric_values",
+              "line": 37,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "window_values",
+              "line": 43,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "bounded_metrics",
+              "line": 49,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/streaming.py",
+          "physical_loc": 48,
+          "counted_loc": 44,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "stream_chunks",
+              "line": 10,
+              "physical_loc": 39,
+              "band": "NOMINAL",
+              "arguments": 5,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/streaming_async_writer.py",
+          "physical_loc": 23,
+          "counted_loc": 17,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "write",
+              "line": 11,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "store",
+              "line": 18,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/streaming_contracts.py",
+          "physical_loc": 77,
+          "counted_loc": 60,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "__init__",
+              "line": 9,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "__post_init__",
+              "line": 40,
+              "physical_loc": 15,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/streaming_runtime.py",
+          "physical_loc": 90,
+          "counted_loc": 76,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "_positive",
+              "line": 10,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "_deliver",
+              "line": 15,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 2
+            },
+            {
+              "name": "_packet",
+              "line": 26,
+              "physical_loc": 14,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 1
+            },
+            {
+              "name": "_consume",
+              "line": 42,
+              "physical_loc": 24,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 4
+            },
+            {
+              "name": "_cleanup",
+              "line": 68,
+              "physical_loc": 15,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 2
+            },
+            {
+              "name": "cleanup_source",
+              "line": 85,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/streaming_scan.py",
+          "physical_loc": 123,
+          "counted_loc": 107,
+          "band": "WATCH",
+          "functions": [
+            {
+              "name": "__init__",
+              "line": 13,
+              "physical_loc": 18,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "state",
+              "line": 33,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "offset",
+              "line": 38,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "_available",
+              "line": 42,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "feed",
+              "line": 48,
+              "physical_loc": 15,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "_cut",
+              "line": 64,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "_scan",
+              "line": 73,
+              "physical_loc": 35,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 3
+            },
+            {
+              "name": "finish",
+              "line": 109,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "abort",
+              "line": 117,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/streaming_state.py",
+          "physical_loc": 58,
+          "counted_loc": 50,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "__init__",
+              "line": 19,
+              "physical_loc": 12,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 0
+            },
+            {
+              "name": "request",
+              "line": 32,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "accept",
+              "line": 46,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/streaming_writer.py",
+          "physical_loc": 42,
+          "counted_loc": 37,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "_store_chunks",
+              "line": 11,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            },
+            {
+              "name": "write",
+              "line": 20,
+              "physical_loc": 23,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 3
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/sync_driver.py",
+          "physical_loc": 49,
+          "counted_loc": 37,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "fetch_metrics",
+              "line": 13,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "insert_metric",
+              "line": 21,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "transaction_retry",
+              "line": 27,
+              "physical_loc": 16,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 3
+            },
+            {
+              "name": "_transaction_once",
+              "line": 45,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/transport.py",
+          "physical_loc": 57,
+          "counted_loc": 44,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "require_tailcat_peer",
+              "line": 38,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "bind_tailcat_connection",
+              "line": 49,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "__post_init__",
+              "line": 27,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/worker.py",
+          "physical_loc": 37,
+          "counted_loc": 29,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "main",
+              "line": 17,
+              "physical_loc": 17,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/worker_config.py",
+          "physical_loc": 56,
+          "counted_loc": 46,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "load_config",
+              "line": 44,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "secure_projection",
+              "line": 25,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 2
+            },
+            {
+              "name": "binding",
+              "line": 39,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/worker_io.py",
+          "physical_loc": 73,
+          "counted_loc": 60,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "read_frame",
+              "line": 30,
+              "physical_loc": 25,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 4
+            },
+            {
+              "name": "_expired",
+              "line": 57,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "process_deadline",
+              "line": 63,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "payload",
+              "line": 22,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/worker_projection.py",
+          "physical_loc": 21,
+          "counted_loc": 18,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "project",
+              "line": 7,
+              "physical_loc": 15,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 3
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "src/hmt_pg_patterns/worker_service.py",
+          "physical_loc": 94,
+          "counted_loc": 82,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "_role_contract",
+              "line": 21,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "_state",
+              "line": 30,
+              "physical_loc": 17,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "_durability",
+              "line": 49,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "execute_stream",
+              "line": 58,
+              "physical_loc": 22,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 0
+            },
+            {
+              "name": "serve",
+              "line": 82,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/__init__.py",
+          "physical_loc": 1,
+          "counted_loc": 1,
+          "band": "NOMINAL",
+          "functions": [],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/authority_samples.py",
+          "physical_loc": 67,
+          "counted_loc": 55,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "register",
+              "line": 24,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "request",
+              "line": 32,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "counts",
+              "line": 47,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "grant_peer",
+              "line": 56,
+              "physical_loc": 12,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/causal_samples.py",
+          "physical_loc": 45,
+          "counted_loc": 38,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "replace_function",
+              "line": 11,
+              "physical_loc": 15,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 1
+            },
+            {
+              "name": "fail_outbox_insert",
+              "line": 29,
+              "physical_loc": 17,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/conftest.py",
+          "physical_loc": 75,
+          "counted_loc": 61,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "pg_dsn",
+              "line": 19,
+              "physical_loc": 23,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 3
+            },
+            {
+              "name": "pg_conn",
+              "line": 45,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "db_config",
+              "line": 52,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "redis_url",
+              "line": 65,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "redis_client",
+              "line": 71,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/crossjoin_cases.py",
+          "physical_loc": 58,
+          "counted_loc": 54,
+          "band": "NOMINAL",
+          "functions": [],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/crossjoin_e2e_authority.py",
+          "physical_loc": 61,
+          "counted_loc": 50,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "immutable_snapshot",
+              "line": 13,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "epoch_fence",
+              "line": 25,
+              "physical_loc": 12,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "outbox_replay",
+              "line": 39,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "checkpoint_order",
+              "line": 52,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/crossjoin_e2e_driver.py",
+          "physical_loc": 88,
+          "counted_loc": 70,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "tls_profile",
+              "line": 22,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "bound_values",
+              "line": 31,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "rollback",
+              "line": 39,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "retry_budget",
+              "line": 50,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "committed_then_closed",
+              "line": 65,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 3
+            },
+            {
+              "name": "bounded_close",
+              "line": 74,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "contract_rejection",
+              "line": 80,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "rejected",
+              "line": 54,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/crossjoin_e2e_extensions.py",
+          "physical_loc": 76,
+          "counted_loc": 66,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "pool_capacity",
+              "line": 24,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 3
+            },
+            {
+              "name": "migration_drift",
+              "line": 37,
+              "physical_loc": 15,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 3
+            },
+            {
+              "name": "tailcat_binding",
+              "line": 54,
+              "physical_loc": 12,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "bounded_rows",
+              "line": 68,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/crossjoin_e2e_flow.py",
+          "physical_loc": 50,
+          "counted_loc": 40,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "prepare",
+              "line": 49,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "write",
+              "line": 25,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "complete",
+              "line": 29,
+              "physical_loc": 18,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/crossjoin_e2e_stream_pace.py",
+          "physical_loc": 72,
+          "counted_loc": 58,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "packet_invariance",
+              "line": 16,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "stream_limits",
+              "line": 24,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "terminal_authority",
+              "line": 33,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "guarded_recovery",
+              "line": 44,
+              "physical_loc": 14,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "wal_prerequisites",
+              "line": 60,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "commit_requiring_durability",
+              "line": 65,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/crossjoin_live_authority.py",
+          "physical_loc": 92,
+          "counted_loc": 77,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "immutable_snapshot",
+              "line": 28,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "epoch_fence",
+              "line": 43,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "outbox_replay",
+              "line": 56,
+              "physical_loc": 14,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "checkpoint_order",
+              "line": 72,
+              "physical_loc": 21,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "offer",
+              "line": 21,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "read",
+              "line": 24,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/crossjoin_live_driver.py",
+          "physical_loc": 100,
+          "counted_loc": 79,
+          "band": "WATCH",
+          "functions": [
+            {
+              "name": "tls_profile",
+              "line": 19,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "bound_values",
+              "line": 29,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "rollback",
+              "line": 39,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "retry_budget",
+              "line": 50,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "observed_close",
+              "line": 65,
+              "physical_loc": 15,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "bounded_close",
+              "line": 82,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "contract_rejection",
+              "line": 86,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "wal_prerequisites",
+              "line": 94,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "operation",
+              "line": 40,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "operation",
+              "line": 53,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/crossjoin_live_extensions.py",
+          "physical_loc": 81,
+          "counted_loc": 69,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "pool_capacity",
+              "line": 23,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 3
+            },
+            {
+              "name": "migration_drift",
+              "line": 36,
+              "physical_loc": 16,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 3
+            },
+            {
+              "name": "migration_table_exists",
+              "line": 54,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "tailcat_binding",
+              "line": 61,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "bounded_rows",
+              "line": 74,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/crossjoin_live_pace.py",
+          "physical_loc": 40,
+          "counted_loc": 34,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "terminal_authority",
+              "line": 11,
+              "physical_loc": 12,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "guarded_recovery",
+              "line": 25,
+              "physical_loc": 16,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/crossjoin_live_stream.py",
+          "physical_loc": 60,
+          "counted_loc": 47,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "reconstruct",
+              "line": 12,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "packet_invariance",
+              "line": 21,
+              "physical_loc": 12,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "stream_limits",
+              "line": 53,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "__init__",
+              "line": 36,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "__iter__",
+              "line": 40,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "__next__",
+              "line": 43,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "close",
+              "line": 49,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/crossjoin_unit_authority.py",
+          "physical_loc": 62,
+          "counted_loc": 50,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "checkpoint_value",
+              "line": 16,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "immutable_snapshot",
+              "line": 28,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "epoch_fence",
+              "line": 41,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "outbox_replay",
+              "line": 49,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "checkpoint_order",
+              "line": 55,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/crossjoin_unit_driver.py",
+          "physical_loc": 99,
+          "counted_loc": 74,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "tls_profile",
+              "line": 20,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "bound_values",
+              "line": 27,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "rollback",
+              "line": 35,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "retry_budget",
+              "line": 52,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "bounded_close",
+              "line": 76,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "contract_rejection",
+              "line": 84,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "wal_prerequisites",
+              "line": 93,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "transaction",
+              "line": 48,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "rejected",
+              "line": 55,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "__init__",
+              "line": 66,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "close",
+              "line": 69,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "terminate",
+              "line": 72,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/crossjoin_unit_extensions.py",
+          "physical_loc": 61,
+          "counted_loc": 47,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "pool_capacity",
+              "line": 20,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "migration_drift",
+              "line": 39,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 2
+            },
+            {
+              "name": "tailcat_binding",
+              "line": 50,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 2
+            },
+            {
+              "name": "bounded_rows",
+              "line": 58,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "__init__",
+              "line": 27,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "transaction",
+              "line": 31,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "execute",
+              "line": 34,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/crossjoin_unit_pace.py",
+          "physical_loc": 50,
+          "counted_loc": 42,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "observation",
+              "line": 9,
+              "physical_loc": 14,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "terminal_authority",
+              "line": 25,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "guarded_recovery",
+              "line": 36,
+              "physical_loc": 15,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/crossjoin_unit_stream.py",
+          "physical_loc": 49,
+          "counted_loc": 38,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "chunk_policy",
+              "line": 11,
+              "physical_loc": 12,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "scan",
+              "line": 25,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "packet_invariance",
+              "line": 37,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "stream_limits",
+              "line": 44,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/driver_samples.py",
+          "physical_loc": 14,
+          "counted_loc": 10,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "sample",
+              "line": 8,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/service_runtime.py",
+          "physical_loc": 94,
+          "counted_loc": 83,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "free_port",
+              "line": 11,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "wait_ready",
+              "line": 17,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 3
+            },
+            {
+              "name": "child_service",
+              "line": 30,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 3
+            },
+            {
+              "name": "postgres_service",
+              "line": 46,
+              "physical_loc": 22,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "redis_service",
+              "line": 71,
+              "physical_loc": 24,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/streaming_oracle.py",
+          "physical_loc": 103,
+          "counted_loc": 91,
+          "band": "WATCH",
+          "functions": [
+            {
+              "name": "oracle",
+              "line": 10,
+              "physical_loc": 14,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            },
+            {
+              "name": "check_partition",
+              "line": 26,
+              "physical_loc": 18,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 2
+            },
+            {
+              "name": "exhaustive_partitions",
+              "line": 46,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "randomized_packets",
+              "line": 55,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 2
+            },
+            {
+              "name": "qualify",
+              "line": 66,
+              "physical_loc": 38,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/streaming_samples.py",
+          "physical_loc": 39,
+          "counted_loc": 29,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "no_close_source",
+              "line": 38,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "__init__",
+              "line": 11,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 0
+            },
+            {
+              "name": "__aiter__",
+              "line": 16,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "__anext__",
+              "line": 19,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 2
+            },
+            {
+              "name": "aclose",
+              "line": 30,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/tailcat_runtime.py",
+          "physical_loc": 75,
+          "counted_loc": 64,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "client_key",
+              "line": 11,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "ready_address",
+              "line": 23,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            },
+            {
+              "name": "server",
+              "line": 34,
+              "physical_loc": 30,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 3
+            },
+            {
+              "name": "exchange",
+              "line": 66,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 5,
+              "control_depth": 0
+            },
+            {
+              "name": "binary_path",
+              "line": 71,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_admission_binding.py",
+          "physical_loc": 96,
+          "counted_loc": 76,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "binding_data",
+              "line": 15,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_all_four_families_bind_to_current_source",
+              "line": 30,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_failure_or_suppression_never_becomes_passing_evidence",
+              "line": 41,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "test_absent_witness_is_retained_as_failed",
+              "line": 50,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_old_source_evidence_rejected_before_insertion",
+              "line": 57,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_prior_witness_cannot_be_overwritten",
+              "line": 65,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_xml_preserves_skipped_and_failure_states",
+              "line": 72,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_parametrized_id_is_preserved",
+              "line": 84,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_xml_empty_discovery_cannot_pass",
+              "line": 92,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_admission_coverage.py",
+          "physical_loc": 97,
+          "counted_loc": 75,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "measured",
+              "line": 10,
+              "physical_loc": 17,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_pure_branch_gate_cannot_hide_behind_lines",
+              "line": 29,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "test_exact_ninety_percent_is_accepted",
+              "line": 37,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "test_missing_module_is_not_dropped_from_denominator",
+              "line": 41,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "test_instrumentation_must_be_explicit_boolean",
+              "line": 48,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 1
+            },
+            {
+              "name": "test_duplicate_normalized_paths_cannot_replace_a_module",
+              "line": 54,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "test_escaping_coverage_path_rejected",
+              "line": 62,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "test_impossible_counts_rejected",
+              "line": 77,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_zero_branch_population_is_not_vacuous_admission",
+              "line": 88,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "test_lines_and_branches_have_independent_thresholds",
+              "line": 95,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_admission_evidence.py",
+          "physical_loc": 46,
+          "counted_loc": 35,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_changed_source_changes_identity_and_restoration_matches",
+              "line": 9,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_generated_bytecode_is_not_source_truth",
+              "line": 20,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_prior_receipt_is_not_rewritten",
+              "line": 31,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_gate_exception_produces_nonpassing_receipt",
+              "line": 39,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "broken",
+              "line": 40,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_admission_matrix.py",
+          "physical_loc": 89,
+          "counted_loc": 66,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "dimensions",
+              "line": 15,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_full_cartesian_population_and_explicit_exclusions",
+              "line": 19,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "test_history_cannot_be_overwritten_or_deleted",
+              "line": 34,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            },
+            {
+              "name": "test_corrupted_candidate_population_is_detected",
+              "line": 46,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "test_duplicate_dimensions_fail_before_materialization",
+              "line": 55,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_ambiguous_case_cannot_hide_exclusions",
+              "line": 61,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_candidate_resource_limit_cannot_be_silently_truncated",
+              "line": 67,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_missing_family_obligation_is_rejected",
+              "line": 73,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_uncovered_declared_failure_relation_is_rejected",
+              "line": 79,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_duplicate_json_keys_rejected",
+              "line": 85,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_admission_native.py",
+          "physical_loc": 92,
+          "counted_loc": 80,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_native_transfer_preserves_every_candidate_and_failed_execution",
+              "line": 23,
+              "physical_loc": 29,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_edited_passing_json_cannot_replace_failed_junit",
+              "line": 54,
+              "physical_loc": 19,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_new_loop_site_cannot_inherit_old_bound_claim",
+              "line": 75,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "test_failed_bound_witness_cannot_establish_power10",
+              "line": 82,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_admission_process.py",
+          "physical_loc": 47,
+          "counted_loc": 33,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "execute",
+              "line": 10,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 0
+            },
+            {
+              "name": "test_real_process_success_retains_both_logs",
+              "line": 16,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_nonzero_is_not_a_success_receipt",
+              "line": 25,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_timeout_revokes_execution",
+              "line": 30,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_output_budget_terminates_flood",
+              "line": 36,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "test_invalid_timeout_fails_before_process",
+              "line": 45,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_admission_structure.py",
+          "physical_loc": 101,
+          "counted_loc": 77,
+          "band": "WATCH",
+          "functions": [
+            {
+              "name": "test_function_policy_boundaries",
+              "line": 21,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "test_module_policy_boundaries",
+              "line": 37,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "make_source",
+              "line": 41,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "test_exact_limit_is_not_legacy_off_by_one",
+              "line": 48,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_function_refactor_band_denies_further_responsibility",
+              "line": 55,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_empty_source_and_parse_error_fail_closed",
+              "line": 60,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_suppression_aliases_are_observed",
+              "line": 74,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_literal_error_names_are_not_suppression",
+              "line": 78,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_argument_and_control_depth_measurements",
+              "line": 82,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_method_self_is_not_a_callers_argument",
+              "line": 91,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_linked_source_is_rejected",
+              "line": 96,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_admission_traceability.py",
+          "physical_loc": 87,
+          "counted_loc": 70,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_unmapped_executed_test_cannot_be_discarded",
+              "line": 17,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "test_new_runtime_file_requires_explicit_refinement",
+              "line": 25,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "causal_ledger",
+              "line": 37,
+              "physical_loc": 15,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_all_distinct_causal_experiments_extend_complete_ledger",
+              "line": 54,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_missing_causal_execution_is_retained_as_failure",
+              "line": 61,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_old_causal_source_and_omitted_experiment_are_rejected",
+              "line": 69,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_qualification_code_changes_bound_source_identity",
+              "line": 81,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_async_driver.py",
+          "physical_loc": 71,
+          "counted_loc": 54,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_async_parameter_read_and_write",
+              "line": 15,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "test_async_retry_rolls_back_then_replays",
+              "line": 22,
+              "physical_loc": 16,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "test_async_exhaustion_and_nonretry_error",
+              "line": 40,
+              "physical_loc": 14,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            },
+            {
+              "name": "test_coroutine_cancellation_rolls_back_staged_write",
+              "line": 56,
+              "physical_loc": 16,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            },
+            {
+              "name": "operation",
+              "line": 25,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "operation",
+              "line": 41,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "operation",
+              "line": 59,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_asyncpg_driver.py",
+          "physical_loc": 59,
+          "counted_loc": 45,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_asyncpg_bound_io_and_classified_close",
+              "line": 15,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            },
+            {
+              "name": "test_asyncpg_context_rolls_back_failed_transaction",
+              "line": 26,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 4
+            },
+            {
+              "name": "test_asyncpg_original_query_exception_survives_teardown",
+              "line": 37,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            },
+            {
+              "name": "test_asyncpg_finite_pool_lease_and_close",
+              "line": 43,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 3
+            },
+            {
+              "name": "test_exhausted_pool_wait_is_bounded",
+              "line": 52,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 5
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_asyncpg_lifecycle_faults.py",
+          "physical_loc": 49,
+          "counted_loc": 40,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_primary_failure_preserved_with_cleanup_failure",
+              "line": 16,
+              "physical_loc": 17,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 2
+            },
+            {
+              "name": "test_successful_body_does_not_hide_cleanup_failure",
+              "line": 39,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 2
+            },
+            {
+              "name": "factory",
+              "line": 19,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "factory",
+              "line": 42,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_authority_atomic.py",
+          "physical_loc": 83,
+          "counted_loc": 70,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_atomic_digest_replay_and_exact_bytes",
+              "line": 13,
+              "physical_loc": 14,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_outer_rollback_removes_effect_head_and_intent",
+              "line": 29,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "test_idempotency_conflict_keeps_single_effect",
+              "line": 48,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 1
+            },
+            {
+              "name": "test_chain_rejects_gap_or_forgery_before_any_effect",
+              "line": 58,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "test_contiguous_append_and_immutable_history",
+              "line": 65,
+              "physical_loc": 19,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_authority_security.py",
+          "physical_loc": 108,
+          "counted_loc": 95,
+          "band": "WATCH",
+          "functions": [
+            {
+              "name": "test_role_is_server_identity_and_client_claim_forbidden",
+              "line": 15,
+              "physical_loc": 21,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "test_direct_sql_contract_cannot_bypass_python_validation",
+              "line": 52,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 1
+            },
+            {
+              "name": "test_revocation_fences_new_effect_and_old_replay",
+              "line": 60,
+              "physical_loc": 15,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "test_expiration_is_rechecked_after_authority_lock",
+              "line": 77,
+              "physical_loc": 19,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "test_unregistered_identity_and_expired_lease_are_denied",
+              "line": 98,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_bulk_analytics.py",
+          "physical_loc": 53,
+          "counted_loc": 41,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_atomic_bulk_and_duplicate_rollback",
+              "line": 19,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "test_server_cursor_batches_have_explicit_stable_schema",
+              "line": 27,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_early_generator_close_releases_cursor_and_transaction",
+              "line": 39,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_bulk_validates_entire_batch_before_first_database_effect",
+              "line": 49,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_causal_authority.py",
+          "physical_loc": 60,
+          "counted_loc": 49,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_deletion",
+              "line": 13,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_restoration",
+              "line": 23,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_matched_control",
+              "line": 34,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "test_alternate_path",
+              "line": 44,
+              "physical_loc": 17,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_causal_checkpoint.py",
+          "physical_loc": 66,
+          "counted_loc": 55,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_deletion",
+              "line": 16,
+              "physical_loc": 14,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "test_restoration",
+              "line": 32,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "test_matched_control",
+              "line": 45,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "test_alternate_path",
+              "line": 58,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_causal_pace.py",
+          "physical_loc": 66,
+          "counted_loc": 53,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "bypass_recovery",
+              "line": 14,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 0
+            },
+            {
+              "name": "test_deletion",
+              "line": 19,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_restoration",
+              "line": 29,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_matched_control",
+              "line": 44,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "test_alternate_path",
+              "line": 55,
+              "physical_loc": 12,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_causal_streaming.py",
+          "physical_loc": 58,
+          "counted_loc": 41,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "scan",
+              "line": 14,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "split",
+              "line": 20,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "reset_window_at_packet",
+              "line": 24,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "test_deletion",
+              "line": 31,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_restoration",
+              "line": 39,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_matched_control",
+              "line": 47,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_alternate_path",
+              "line": 51,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_causal_transaction.py",
+          "physical_loc": 70,
+          "counted_loc": 59,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_deletion",
+              "line": 13,
+              "physical_loc": 12,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_restoration",
+              "line": 27,
+              "physical_loc": 15,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "test_matched_control",
+              "line": 44,
+              "physical_loc": 15,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_alternate_path",
+              "line": 61,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_checkpoints_cache.py",
+          "physical_loc": 105,
+          "counted_loc": 88,
+          "band": "WATCH",
+          "functions": [
+            {
+              "name": "snapshot",
+              "line": 15,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_snapshot_is_persistent_and_encoding_is_exact",
+              "line": 30,
+              "physical_loc": 12,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "test_redis_ordering_above_float_precision",
+              "line": 44,
+              "physical_loc": 16,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_poisoned_projection_never_becomes_authority",
+              "line": 73,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "test_foreign_scope_and_loss_are_rejected",
+              "line": 81,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_unavailable_and_unknown_driver_outcomes_fail_closed",
+              "line": 94,
+              "physical_loc": 12,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "eval",
+              "line": 98,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_config.py",
+          "physical_loc": 80,
+          "counted_loc": 65,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "config",
+              "line": 13,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_secret_safe_config_and_bounded_settings",
+              "line": 19,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_invalid_connection_config",
+              "line": 41,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_production_security_gates",
+              "line": 48,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "test_tls_ca_uses_hostname_verified_context",
+              "line": 60,
+              "physical_loc": 14,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_unvalidated_copy_cannot_bypass_connection_admission",
+              "line": 77,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_crossjoin_e2e.py",
+          "physical_loc": 41,
+          "counted_loc": 35,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_candidate_e2e",
+              "line": 38,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_crossjoin_integration.py",
+          "physical_loc": 41,
+          "counted_loc": 35,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_candidate_integration",
+              "line": 38,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_crossjoin_regex.py",
+          "physical_loc": 15,
+          "counted_loc": 10,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_candidate_regex",
+              "line": 12,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_crossjoin_unit.py",
+          "physical_loc": 14,
+          "counted_loc": 9,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_candidate_unit",
+              "line": 11,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_deployment_contracts.py",
+          "physical_loc": 53,
+          "counted_loc": 46,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_shipped_role_grants_preserve_authority_boundary",
+              "line": 12,
+              "physical_loc": 27,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "test_runtime_containment_and_wal_config_are_concrete",
+              "line": 41,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_diagnostics.py",
+          "physical_loc": 50,
+          "counted_loc": 39,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_wal_guard_rejects_weakened_settings",
+              "line": 19,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 1
+            },
+            {
+              "name": "test_wal_guard_accepts_local_commit_configuration",
+              "line": 27,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_missing_observations_fail_visibly",
+              "line": 33,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "test_postgresql_plan_and_settings_are_observed",
+              "line": 42,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_fixture_protocol_regressions.py",
+          "physical_loc": 41,
+          "counted_loc": 33,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_two_open_clients_keep_their_prepared_plans",
+              "line": 11,
+              "physical_loc": 15,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "test_copy_consumes_multiple_protocol_data_frames",
+              "line": 28,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "test_copy_fail_message_rolls_back_and_connection_recovers",
+              "line": 35,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_migrations.py",
+          "physical_loc": 44,
+          "counted_loc": 37,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_migration_inputs_reject_empty_unsafe_and_oversized",
+              "line": 11,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_checksum_bound_migration_and_transaction_rollback",
+              "line": 26,
+              "physical_loc": 19,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_models.py",
+          "physical_loc": 57,
+          "counted_loc": 46,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "metric",
+              "line": 11,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_valid_metric_and_window",
+              "line": 17,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_contract_rejects_invalid_metric",
+              "line": 39,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_resource_bounds",
+              "line": 55,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_mutation_evidence.py",
+          "physical_loc": 78,
+          "counted_loc": 63,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "process",
+              "line": 10,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "details",
+              "line": 21,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_process_failure_is_never_caught",
+              "line": 44,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "test_nonassertion_results_are_unviable",
+              "line": 51,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_only_assertion_failures_count_as_caught",
+              "line": 55,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_junit_distinguishes_runtime_failure_from_fixture_error",
+              "line": 63,
+              "physical_loc": 16,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_mutation_isolation.py",
+          "physical_loc": 80,
+          "counted_loc": 67,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "source_tree",
+              "line": 12,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_frozen_copy_has_independent_bytes_and_original_is_unchanged",
+              "line": 19,
+              "physical_loc": 20,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_patch_target_cannot_escape_owned_copy",
+              "line": 52,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "test_symlink_patch_target_cannot_touch_original",
+              "line": 58,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_unviable_anchor_and_syntax_never_modify_source",
+              "line": 69,
+              "physical_loc": 12,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_mutation_witnesses.py",
+          "physical_loc": 35,
+          "counted_loc": 26,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_epoch_guard_new_stream",
+              "line": 13,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_active_guard",
+              "line": 23,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_pace_guard_precedes_callback",
+              "line": 31,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_orm_drivers.py",
+          "physical_loc": 48,
+          "counted_loc": 39,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_core_and_sqlmodel_commit_and_seek",
+              "line": 14,
+              "physical_loc": 15,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 2
+            },
+            {
+              "name": "test_strict_dto_precedes_engine_or_session_access",
+              "line": 32,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_sqlalchemy_async_uses_native_psycopg",
+              "line": 38,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_outbox_recovery.py",
+          "physical_loc": 121,
+          "counted_loc": 102,
+          "band": "WATCH",
+          "functions": [
+            {
+              "name": "test_crash_before_first_send_is_explicitly_rebuildable",
+              "line": 21,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "test_send_then_lost_ack_records_observation_after_revocation",
+              "line": 36,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "test_cache_loss_rebuild_requires_current_same_epoch_authority",
+              "line": 47,
+              "physical_loc": 19,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "test_normal_relay_and_forged_claim_scope",
+              "line": 68,
+              "physical_loc": 19,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "test_unavailable_send_and_readback_remain_unknown",
+              "line": 89,
+              "physical_loc": 15,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_claim_token_state_and_transaction_guards",
+              "line": 106,
+              "physical_loc": 16,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "offer",
+              "line": 96,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "read",
+              "line": 99,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_pace.py",
+          "physical_loc": 88,
+          "counted_loc": 74,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "observation",
+              "line": 10,
+              "physical_loc": 14,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_capability_contracts",
+              "line": 38,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "test_causal_recovery_guard_deletion_restoration_controls",
+              "line": 48,
+              "physical_loc": 14,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_qualified_alternate_continues_without_redis",
+              "line": 64,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "test_temporal_boundaries_pressure_and_terminal_latch",
+              "line": 73,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "test_pace_rejects_nonfinite_and_invalid_policy",
+              "line": 84,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_pools.py",
+          "physical_loc": 38,
+          "counted_loc": 29,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_sync_pool_has_finite_capacity_and_closes",
+              "line": 13,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            },
+            {
+              "name": "test_async_pool_explicit_open_and_close",
+              "line": 24,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            },
+            {
+              "name": "test_sync_pool_still_closes_on_application_error",
+              "line": 34,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_query_contracts.py",
+          "physical_loc": 58,
+          "counted_loc": 42,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_identifier_allowlist_rejects_sql_text",
+              "line": 19,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_identifier_is_quoted_and_schema_qualified",
+              "line": 24,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_validation_bypass_and_nested_mutation_are_rejected_or_snapshotted",
+              "line": 28,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "test_infinite_iterator_has_finite_rejection_boundary",
+              "line": 40,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "test_retry_bounds_rejected_before_connection_use",
+              "line": 48,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_pool_and_teardown_deadlines_are_finite",
+              "line": 56,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_streaming_boundaries.py",
+          "physical_loc": 87,
+          "counted_loc": 68,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_deadline_types_and_limits_fail_before_source_consumption",
+              "line": 24,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "test_invalid_packet_types",
+              "line": 35,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_packet_and_total_capacity_and_released_view",
+              "line": 40,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 2
+            },
+            {
+              "name": "test_invalid_source_sink_and_reused_stats",
+              "line": 53,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 2
+            },
+            {
+              "name": "test_source_without_close_is_supported",
+              "line": 64,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_cleanup_and_sink_cancellation_are_visible",
+              "line": 75,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "sink",
+              "line": 82,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "__aiter__",
+              "line": 66,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "__anext__",
+              "line": 69,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_streaming_parity.py",
+          "physical_loc": 27,
+          "counted_loc": 23,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_all_historical_source_vectors_match_with_changed_packetization",
+              "line": 12,
+              "physical_loc": 16,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_streaming_pipeline.py",
+          "physical_loc": 93,
+          "counted_loc": 72,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_zero_queue_backpressure_and_complete_reconstruction",
+              "line": 13,
+              "physical_loc": 15,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_sync_sink_and_empty_packets_are_supported",
+              "line": 30,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_source_failure_keeps_primary_code_and_closes",
+              "line": 40,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "test_sink_failure_is_not_retried",
+              "line": 47,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "test_deadline_and_source_cancellation_propagate",
+              "line": 59,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 2
+            },
+            {
+              "name": "test_success_does_not_hide_cleanup_failure",
+              "line": 74,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "test_empty_packet_source_stops_at_finite_admission_count",
+              "line": 87,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "sink",
+              "line": 17,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "sink",
+              "line": 50,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_streaming_scanner.py",
+          "physical_loc": 110,
+          "counted_loc": 90,
+          "band": "WATCH",
+          "functions": [
+            {
+              "name": "test_independent_polynomial_and_all_tiny_partitions",
+              "line": 14,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_all_policy_dimensions_are_typed_and_finite",
+              "line": 38,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_empty_source_terminal_states_and_policy_type",
+              "line": 43,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "test_mutable_packet_is_snapshotted_and_partial_feed_aborts",
+              "line": 56,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 2
+            },
+            {
+              "name": "test_precreated_feed_revalidates_live_total_bound",
+              "line": 71,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "test_invalid_packet_capacity_and_released_views",
+              "line": 79,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 2
+            },
+            {
+              "name": "test_non_contiguous_memoryview_preserves_logical_bytes",
+              "line": 94,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_short_tail_retains_rolling_window_across_cut",
+              "line": 101,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_streaming_writer.py",
+          "physical_loc": 108,
+          "counted_loc": 89,
+          "band": "WATCH",
+          "functions": [
+            {
+              "name": "test_sync_storage_replay_and_immutable_tip",
+              "line": 19,
+              "physical_loc": 14,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_source_failure_owns_cleanup_and_origin_replay",
+              "line": 35,
+              "physical_loc": 17,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_writer_empty_cap_and_strict_epoch",
+              "line": 54,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_async_authority_and_writer",
+              "line": 67,
+              "physical_loc": 26,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            },
+            {
+              "name": "test_async_caller_rollback_owns_commit",
+              "line": 95,
+              "physical_loc": 14,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 3
+            },
+            {
+              "name": "source",
+              "line": 39,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "exercise",
+              "line": 71,
+              "physical_loc": 20,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 2
+            },
+            {
+              "name": "exercise",
+              "line": 98,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 3
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_sync_driver.py",
+          "physical_loc": 86,
+          "counted_loc": 64,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_keyset_page_is_bounded_and_deterministic",
+              "line": 13,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_exception_rolls_back_complete_transaction",
+              "line": 24,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "test_retry_reexecutes_whole_transaction_only_on_admitted_sqlstate",
+              "line": 33,
+              "physical_loc": 15,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "test_retry_exhaustion_rolls_back",
+              "line": 50,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_uniqueness_and_uncertain_transport_never_retry",
+              "line": 60,
+              "physical_loc": 19,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_savepoint_cannot_substitute_for_retry_owner",
+              "line": 81,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "operation",
+              "line": 36,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "operation",
+              "line": 51,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "conflict",
+              "line": 64,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "transport",
+              "line": 72,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_teardown_faults.py",
+          "physical_loc": 45,
+          "counted_loc": 31,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_close_deadline_forces_and_classifies_termination",
+              "line": 28,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_graceful_close_is_distinct_from_timeout",
+              "line": 36,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_unexpected_close_error_propagates",
+              "line": 43,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "__init__",
+              "line": 14,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "close",
+              "line": 17,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "terminate",
+              "line": 23,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_transport_binding.py",
+          "physical_loc": 45,
+          "counted_loc": 37,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_binding_configuration_is_bounded",
+              "line": 17,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "test_context_mismatch_denies_before_database",
+              "line": 23,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "test_fixed_login_and_stored_binding_required",
+              "line": 34,
+              "physical_loc": 12,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_worker_cli.py",
+          "physical_loc": 66,
+          "counted_loc": 54,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_cli_success_and_rejection",
+              "line": 20,
+              "physical_loc": 17,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 2
+            },
+            {
+              "name": "test_deadline_cancellation_and_hard_exit_contract",
+              "line": 39,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 2
+            },
+            {
+              "name": "test_hard_deadline_terminates_a_blocked_process",
+              "line": 51,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_invalid_hard_deadline_never_launches_watchdog",
+              "line": 63,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_worker_contracts.py",
+          "physical_loc": 113,
+          "counted_loc": 96,
+          "band": "WATCH",
+          "functions": [
+            {
+              "name": "config_data",
+              "line": 16,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "test_private_configuration_and_link_rejection",
+              "line": 29,
+              "physical_loc": 16,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_request_cannot_weaken_projection_config",
+              "line": 56,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_closed_request_and_canonical_payload",
+              "line": 62,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            },
+            {
+              "name": "test_ingress_frames",
+              "line": 83,
+              "physical_loc": 12,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 3
+            },
+            {
+              "name": "test_ingress_stall_and_expired_budget",
+              "line": 97,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 3
+            },
+            {
+              "name": "test_invalid_ingress_limits_fail_before_descriptor_use",
+              "line": 111,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_worker_deadline_attacks.py",
+          "physical_loc": 72,
+          "counted_loc": 61,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "diagnostic_pipe",
+              "line": 15,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_hard_exit_does_not_depend_on_diagnostic_pipe",
+              "line": 29,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_private_fifo_is_rejected_without_waiting_for_a_writer",
+              "line": 39,
+              "physical_loc": 14,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "test_rejection_has_no_blocking_diagnostic_dependency",
+              "line": 57,
+              "physical_loc": 16,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_worker_e2e.py",
+          "physical_loc": 72,
+          "counted_loc": 63,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "worker_inputs",
+              "line": 17,
+              "physical_loc": 25,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "invoke",
+              "line": 44,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 1
+            },
+            {
+              "name": "test_worker_commits_replays_reconciles_and_obeys_revocation",
+              "line": 54,
+              "physical_loc": 19,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tests/test_worker_failures.py",
+          "physical_loc": 86,
+          "counted_loc": 73,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "test_cache_failure_keeps_committed_effect_and_recoverable_work",
+              "line": 15,
+              "physical_loc": 17,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "test_privileged_or_unobserved_role_is_rejected",
+              "line": 35,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "production_config",
+              "line": 42,
+              "physical_loc": 12,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "test_observed_tls_and_wal_prerequisites_are_both_required",
+              "line": 56,
+              "physical_loc": 18,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "test_connection_owners_close_resources_after_primary_failure",
+              "line": 76,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 4
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/__init__.py",
+          "physical_loc": 1,
+          "counted_loc": 1,
+          "band": "NOMINAL",
+          "functions": [],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/admission_binding.py",
+          "physical_loc": 52,
+          "counted_loc": 49,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "bind_executions",
+              "line": 7,
+              "physical_loc": 46,
+              "band": "WATCH",
+              "arguments": 3,
+              "control_depth": 3
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/admission_campaign.py",
+          "physical_loc": 93,
+          "counted_loc": 85,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "pytest_command",
+              "line": 19,
+              "physical_loc": 19,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "execute_tests",
+              "line": 40,
+              "physical_loc": 19,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 0
+            },
+            {
+              "name": "bind_campaign",
+              "line": 61,
+              "physical_loc": 33,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/admission_causal.py",
+          "physical_loc": 74,
+          "counted_loc": 69,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "append_witness",
+              "line": 7,
+              "physical_loc": 30,
+              "band": "NOMINAL",
+              "arguments": 5,
+              "control_depth": 0
+            },
+            {
+              "name": "attach_causal",
+              "line": 39,
+              "physical_loc": 36,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 4
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/admission_coverage.py",
+          "physical_loc": 60,
+          "counted_loc": 51,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "expected_sources",
+              "line": 6,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "normalize_source",
+              "line": 12,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "summary_counts",
+              "line": 20,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "check_coverage",
+              "line": 31,
+              "physical_loc": 30,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/admission_evidence.py",
+          "physical_loc": 109,
+          "counted_loc": 95,
+          "band": "WATCH",
+          "functions": [
+            {
+              "name": "timestamp",
+              "line": 11,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            },
+            {
+              "name": "file_digest",
+              "line": 15,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "write_json",
+              "line": 19,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "inventory_paths",
+              "line": 24,
+              "physical_loc": 29,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 3
+            },
+            {
+              "name": "source_snapshot",
+              "line": 55,
+              "physical_loc": 29,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "check_traceability",
+              "line": 86,
+              "physical_loc": 24,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 3
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/admission_harness.py",
+          "physical_loc": 31,
+          "counted_loc": 26,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "binary_identity",
+              "line": 10,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "harness_identity",
+              "line": 19,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/admission_junit.py",
+          "physical_loc": 52,
+          "counted_loc": 47,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "node_id",
+              "line": 7,
+              "physical_loc": 14,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "read_junit",
+              "line": 23,
+              "physical_loc": 30,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 3
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/admission_process.py",
+          "physical_loc": 71,
+          "counted_loc": 63,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "capture",
+              "line": 13,
+              "physical_loc": 19,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 4
+            },
+            {
+              "name": "terminate",
+              "line": 34,
+              "physical_loc": 6,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "run_command",
+              "line": 42,
+              "physical_loc": 30,
+              "band": "NOMINAL",
+              "arguments": 5,
+              "control_depth": 4
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/admission_refinements.py",
+          "physical_loc": 72,
+          "counted_loc": 64,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "read_registry",
+              "line": 11,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "check_refinements",
+              "line": 15,
+              "physical_loc": 28,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "full_test_manifest",
+              "line": 45,
+              "physical_loc": 28,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 3
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/admission_structure.py",
+          "physical_loc": 120,
+          "counted_loc": 105,
+          "band": "WATCH",
+          "functions": [
+            {
+              "name": "band",
+              "line": 7,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "control_depth",
+              "line": 13,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "function_metrics",
+              "line": 28,
+              "physical_loc": 12,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "suppressed",
+              "line": 42,
+              "physical_loc": 15,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "inspect_file",
+              "line": 59,
+              "physical_loc": 20,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            },
+            {
+              "name": "violations",
+              "line": 81,
+              "physical_loc": 12,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "check_structure",
+              "line": 95,
+              "physical_loc": 26,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 3
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/admit.py",
+          "physical_loc": 83,
+          "counted_loc": 72,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "observed_gate",
+              "line": 20,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 1
+            },
+            {
+              "name": "campaign",
+              "line": 29,
+              "physical_loc": 40,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 1
+            },
+            {
+              "name": "main",
+              "line": 71,
+              "physical_loc": 9,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/candidate_ledger.py",
+          "physical_loc": 131,
+          "counted_loc": 119,
+          "band": "WATCH",
+          "functions": [
+            {
+              "name": "canonical_digest",
+              "line": 13,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "append_candidate",
+              "line": 20,
+              "physical_loc": 26,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 2
+            },
+            {
+              "name": "create_ledger",
+              "line": 48,
+              "physical_loc": 30,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 2
+            },
+            {
+              "name": "check_ledger",
+              "line": 80,
+              "physical_loc": 43,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "export_tables",
+              "line": 125,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/candidate_model.py",
+          "physical_loc": 95,
+          "counted_loc": 79,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "unique_keys",
+              "line": 11,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            },
+            {
+              "name": "load_dimensions",
+              "line": 20,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "identity_rows",
+              "line": 29,
+              "physical_loc": 11,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "validate_dimensions",
+              "line": 42,
+              "physical_loc": 15,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "validate_cases",
+              "line": 59,
+              "physical_loc": 21,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            },
+            {
+              "name": "applicability",
+              "line": 82,
+              "physical_loc": 8,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 2
+            },
+            {
+              "name": "test_id",
+              "line": 92,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/candidate_sql.py",
+          "physical_loc": 55,
+          "counted_loc": 48,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "create_tables",
+              "line": 43,
+              "physical_loc": 4,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "protect_history",
+              "line": 49,
+              "physical_loc": 7,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/mutation_campaign.py",
+          "physical_loc": 130,
+          "counted_loc": 119,
+          "band": "WATCH",
+          "functions": [
+            {
+              "name": "run_mutant",
+              "line": 17,
+              "physical_loc": 44,
+              "band": "NOMINAL",
+              "arguments": 5,
+              "control_depth": 2
+            },
+            {
+              "name": "campaign",
+              "line": 63,
+              "physical_loc": 49,
+              "band": "WATCH",
+              "arguments": 3,
+              "control_depth": 2
+            },
+            {
+              "name": "main",
+              "line": 114,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/mutation_execution.py",
+          "physical_loc": 57,
+          "counted_loc": 53,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "run_pytest",
+              "line": 13,
+              "physical_loc": 45,
+              "band": "WATCH",
+              "arguments": 4,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/mutation_models.py",
+          "physical_loc": 22,
+          "counted_loc": 15,
+          "band": "NOMINAL",
+          "functions": [],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/mutation_probe.py",
+          "physical_loc": 29,
+          "counted_loc": 24,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "pytest_sessionstart",
+              "line": 11,
+              "physical_loc": 19,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/mutation_python.py",
+          "physical_loc": 84,
+          "counted_loc": 81,
+          "band": "NOMINAL",
+          "functions": [],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/mutation_results.py",
+          "physical_loc": 64,
+          "counted_loc": 54,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "_failure_text",
+              "line": 9,
+              "physical_loc": 2,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            },
+            {
+              "name": "junit_details",
+              "line": 13,
+              "physical_loc": 28,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "classify",
+              "line": 43,
+              "physical_loc": 17,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "passed",
+              "line": 62,
+              "physical_loc": 3,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/mutation_sql.py",
+          "physical_loc": 41,
+          "counted_loc": 39,
+          "band": "NOMINAL",
+          "functions": [],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/mutation_storage.py",
+          "physical_loc": 70,
+          "counted_loc": 62,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "freeze_source",
+              "line": 10,
+              "physical_loc": 13,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "mutation_path",
+              "line": 25,
+              "physical_loc": 16,
+              "band": "NOMINAL",
+              "arguments": 2,
+              "control_depth": 1
+            },
+            {
+              "name": "apply_mutation",
+              "line": 43,
+              "physical_loc": 28,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/native_vv.py",
+          "physical_loc": 73,
+          "counted_loc": 64,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "build",
+              "line": 14,
+              "physical_loc": 44,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "main",
+              "line": 60,
+              "physical_loc": 10,
+              "band": "NOMINAL",
+              "arguments": 0,
+              "control_depth": 1
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/native_vv_analysis.py",
+          "physical_loc": 72,
+          "counted_loc": 65,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "fresh_analysis",
+              "line": 13,
+              "physical_loc": 31,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 1
+            },
+            {
+              "name": "observations",
+              "line": 46,
+              "physical_loc": 27,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 4
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/native_vv_database.py",
+          "physical_loc": 75,
+          "counted_loc": 66,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "copy_ledger",
+              "line": 21,
+              "physical_loc": 19,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 3
+            },
+            {
+              "name": "add_families",
+              "line": 42,
+              "physical_loc": 34,
+              "band": "NOMINAL",
+              "arguments": 3,
+              "control_depth": 3
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/native_vv_inputs.py",
+          "physical_loc": 65,
+          "counted_loc": 57,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "read",
+              "line": 12,
+              "physical_loc": 5,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "current_inputs",
+              "line": 19,
+              "physical_loc": 33,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 1
+            },
+            {
+              "name": "native_executions",
+              "line": 54,
+              "physical_loc": 12,
+              "band": "NOMINAL",
+              "arguments": 1,
+              "control_depth": 0
+            }
+          ],
+          "test_suppression": false
+        },
+        {
+          "path": "tools/native_vv_power10.py",
+          "physical_loc": 34,
+          "counted_loc": 32,
+          "band": "NOMINAL",
+          "functions": [
+            {
+              "name": "bind_power10",
+              "line": 4,
+              "physical_loc": 31,
+              "band": "NOMINAL",
+              "arguments": 4,
+              "control_depth": 2
+            }
+          ],
+          "test_suppression": false
+        }
+      ],
+      "errors": [],
+      "metric": "physical lines including comments and blanks",
+      "watch_count": 15
+    },
+    "traceability": {
+      "status": "PASS",
+      "errors": [],
+      "requirements": 16,
+      "traceability_sha256": "5fffeb007d7753324e0880964a4471106d7fa6ce2207b4833ab95b4b55c3d797"
+    },
+    "refinements": {
+      "status": "PASS",
+      "inventory_gaps": [],
+      "unmapped_public_contracts": [],
+      "source_files": 42,
+      "test_files": 51,
+      "public_contracts": 44
+    },
+    "candidate_space": {
+      "status": "PASS",
+      "candidate_count": 896,
+      "expected_count": 896,
+      "applicable": 19,
+      "not_applicable": 877,
+      "assertions": 76,
+      "sql": "SELECT i.id,f.id,g.id FROM dimensions i CROSS JOIN dimensions f CROSS JOIN dimensions g WHERE i.kind='invariant' AND f.kind='failure' AND g.kind='gate' ORDER BY i.id,f.id,g.id",
+      "exclusions_missing_predicates": 0
+    },
+    "pytest": {
+      "status": "PASS",
+      "argv": [
+        "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "--import-mode=importlib",
+        "-p",
+        "pytest_cov.plugin",
+        "-p",
+        "pytest_asyncio.plugin",
+        "-o",
+        "junit_family=xunit1",
+        "--cov=hmt_pg_patterns",
+        "--cov-branch",
+        "--cov-report=json:/workspace/scratch/e7495113964e/work/final/software/coverage.json",
+        "--junitxml=/workspace/scratch/e7495113964e/work/final/software/junit.xml",
+        "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests"
+      ],
+      "returncode": 0,
+      "reason": "COMPLETE",
+      "seconds": 17.937238493999757,
+      "captured_bytes": 2437,
+      "stdout": "pytest.stdout.log",
+      "stderr": "pytest.stderr.log"
+    },
+    "source_stability": {
+      "status": "PASS"
+    },
+    "witnesses": {
+      "status": "PASS",
+      "test_count": 446,
+      "test_binding": {
+        "status": "PASS",
+        "missing_or_nonpassing": [],
+        "assertions": 76
+      },
+      "coverage": {
+        "status": "PASS",
+        "branch_percent": 95.32374100719424,
+        "minimum_branch_percent": 90,
+        "covered_branches": 265,
+        "num_branches": 278,
+        "line_percent": 98.77017678708685,
+        "minimum_line_percent": 90,
+        "covered_lines": 1285,
+        "num_statements": 1301,
+        "scope": "all delivered src/hmt_pg_patterns/*.py, recursively",
+        "tooling_scope": "independent admission tool tests and structural checks",
+        "files": 39
+      },
+      "causal": {
+        "status": "PASS",
+        "edges": 5,
+        "missing_or_nonpassing": [],
+        "experiment_count": 20
+      },
+      "junit_sha256": "c687a723682a2ac6f6ea9d30b7031377207e811e125a3cca3cf890586742c48f"
+    }
+  },
+  "scope": "fresh software tests and explicit PostgreSQL branch contracts",
+  "native_ci42": "Separate immutable 42-lane campaign; this runner does not replace it.",
+  "promotion_authority": false
+}

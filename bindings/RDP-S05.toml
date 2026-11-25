@@ -1,0 +1,7 @@
+version = 1
+pattern = "RDP-S05"
+scope = "software"
+
+[settings]
+root = "a"
+nodes = [{ node_id = "a", weight = 2, children = ["b"] }, { node_id = "b", weight = 3, children = [] }]

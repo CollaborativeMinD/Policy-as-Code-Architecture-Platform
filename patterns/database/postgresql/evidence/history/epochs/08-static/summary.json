@@ -1,0 +1,177 @@
+[
+  {
+    "lane": "mypy",
+    "returncode": 1,
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+      "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/mypy.py",
+      "--root",
+      "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql",
+      "src"
+    ]
+  },
+  {
+    "lane": "pyrefly",
+    "returncode": 1,
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+      "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/pyrefly.py",
+      "--root",
+      "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql",
+      "src"
+    ]
+  },
+  {
+    "lane": "ruff",
+    "returncode": 1,
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+      "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/ruff.py",
+      "--root",
+      "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql",
+      "src",
+      "tests",
+      "tools",
+      "qualification",
+      "fixtures/pglite/apply_callback.py"
+    ]
+  },
+  {
+    "lane": "pylint",
+    "returncode": 0,
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+      "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/pylint.py",
+      "--root",
+      "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql",
+      "src"
+    ]
+  },
+  {
+    "lane": "bandit",
+    "returncode": 0,
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+      "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/bandit.py",
+      "--root",
+      "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql",
+      "src"
+    ]
+  },
+  {
+    "lane": "deptry",
+    "returncode": 0,
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+      "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/deptry.py",
+      "--root",
+      "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql",
+      "src"
+    ]
+  },
+  {
+    "lane": "semgrep",
+    "returncode": 0,
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+      "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/semgrep.py",
+      "--root",
+      "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql",
+      "--config",
+      "admission/semgrep.yaml",
+      "src"
+    ]
+  },
+  {
+    "lane": "secret-contract",
+    "returncode": 0,
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+      "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/secret-contract.py",
+      "--root",
+      "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql",
+      "--inventory",
+      "worktree"
+    ]
+  },
+  {
+    "lane": "source-contract",
+    "returncode": 0,
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+      "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/source-contract.py",
+      "--root",
+      "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql",
+      "--sources-json",
+      "[\"src\",\"tests\",\"tools\",\"qualification\"]",
+      "--module-limit",
+      "149",
+      "--function-limit",
+      "49"
+    ]
+  },
+  {
+    "lane": "structural-complexity",
+    "returncode": 0,
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+      "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/structural-complexity.py",
+      "--root",
+      "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql",
+      "--scope",
+      "src",
+      "--scope",
+      "tests",
+      "--scope",
+      "tools",
+      "--scope",
+      "qualification"
+    ]
+  },
+  {
+    "lane": "architecture-contract",
+    "returncode": 1,
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+      "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/architecture-contract.py",
+      "--root",
+      "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql",
+      "--source",
+      "src/hmt_pg_patterns",
+      "--package",
+      "hmt_pg_patterns",
+      "--allowed-json",
+      "{\".\":[\".\"]}"
+    ]
+  },
+  {
+    "lane": "adversarial-hints",
+    "returncode": 0,
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+      "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/adversarial-hints.py",
+      "--tree",
+      "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src"
+    ]
+  },
+  {
+    "lane": "structured-data",
+    "returncode": 0,
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+      "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/structured-data.py",
+      "--root",
+      "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql"
+    ]
+  },
+  {
+    "lane": "yamllint",
+    "returncode": 0,
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+      "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/yamllint.py",
+      "--root",
+      "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql"
+    ]
+  }
+]

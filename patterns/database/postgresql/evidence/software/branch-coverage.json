@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "branch_percent": 95.32374100719424,
+  "minimum_branch_percent": 90,
+  "covered_branches": 265,
+  "num_branches": 278,
+  "line_percent": 98.77017678708685,
+  "minimum_line_percent": 90,
+  "covered_lines": 1285,
+  "num_statements": 1301,
+  "scope": "all delivered src/hmt_pg_patterns/*.py, recursively",
+  "tooling_scope": "independent admission tool tests and structural checks",
+  "files": 39
+}

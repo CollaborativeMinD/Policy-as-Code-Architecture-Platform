@@ -1,0 +1,8 @@
+version = 1
+pattern = "RDP-S03"
+scope = "software"
+
+[settings]
+now = 1
+expires_at = 10
+policy_epoch = 1

@@ -1,0 +1,5 @@
+{
+  "path": "sql/02_authority.sql",
+  "before_sha256": "cf3df01dd62ebddf42b6e61ffea4caabe21027301ce1287170ffbd24df21a9ed",
+  "after_sha256": "17c21865009fe1acde3f99b772cfa1e5fe17e78978d03b08b69bd1863a8054ac"
+}

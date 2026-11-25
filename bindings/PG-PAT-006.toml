@@ -1,0 +1,9 @@
+version = 1
+pattern = "PG-PAT-006"
+scope = "software"
+
+[settings]
+database = { host = "127.0.0.1", port = 5432, dbname = "fixture", user = "reader", profile = "test", sslmode = "disable", connect_timeout = 5, statement_timeout_ms = 5000, lock_timeout_ms = 1000, idle_transaction_timeout_ms = 10000 }
+size = 4
+timeout_ms = 1000
+driver = "psycopg-sync"

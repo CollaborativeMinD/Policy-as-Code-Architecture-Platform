@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="0.052" timestamp="2026-11-04T15:51:58.536669+07:00" hostname="18a71ec14d7e"><testcase classname="tests.test_streaming_scanner" name="test_mutable_packet_is_snapshotted_and_partial_feed_aborts" time="0.001" /></testsuite></testsuites>

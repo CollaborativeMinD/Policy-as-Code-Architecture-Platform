@@ -1,0 +1,149 @@
+[
+  {
+    "path": "README.md",
+    "status": "new",
+    "sha256": "b448377aec66e0e99e3d8772a630e8754fb508307866a7c1b42bc35ad7288d73",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "Index.md",
+    "status": "new",
+    "sha256": "8c6dc8560ea8fe2b04ca51064d90ba05f77c3a9b4d3b74344b37b8d3ecee2dbc",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "SKILLS.md",
+    "status": "new",
+    "sha256": "02ef53863b4b9fb63844684bcae73bf7c904b526f18c35243a50882999f15462",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "patterns/01-secure-postgresql-configuration/README.md",
+    "status": "new",
+    "sha256": "dea738ab0dc6f96356119fcfe515677b496460a9d9faca20d197224718d1c8d5",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "patterns/02-psycopg-sync-bound-sql/README.md",
+    "status": "new",
+    "sha256": "b276d64aa997abe2e4123b8b295495a9999a597274a0eea0de3479babd645bec",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "patterns/03-psycopg-async-bound-sql/README.md",
+    "status": "new",
+    "sha256": "a3ee079d6118ebebedae905c511bf5e934c795e472f8c2b3286b28401b0bf3f6",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "patterns/04-asyncpg-bounded-lifecycle/README.md",
+    "status": "new",
+    "sha256": "b03b744c48ed356fde786a74a6f78aca56bf26172ce7add28212779d77c809ff",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "patterns/05-owned-transactions-and-bounded-retry/README.md",
+    "status": "new",
+    "sha256": "b9f93b1fcd73d85af0a469efbd889dcc848784f6a4b815c7936dd4d5d88b2a06",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "patterns/06-finite-connection-pools/README.md",
+    "status": "new",
+    "sha256": "08f59d5cd01fa2c033363d06cdf1f866214f0c1a1700b35037ebbe42cb8ba079",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "patterns/07-sqlalchemy-postgresql-core-and-async/README.md",
+    "status": "new",
+    "sha256": "c24412f2abdaa54a84ecedb35e59b402bb2a54c3a20105298da6f8541a098b23",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "patterns/08-sqlmodel-postgresql-mapping/README.md",
+    "status": "new",
+    "sha256": "a0026e583890ec133ee42a2a3114ceeb6e8d2e012609cdabb5234f83c92f5f70",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "patterns/09-strict-pydantic-data-contracts/README.md",
+    "status": "new",
+    "sha256": "0ddab968dd5f0bb392234bcd58894f943752dcad093567958f5a2db8de285d86",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "patterns/10-polars-server-cursor-batches/README.md",
+    "status": "new",
+    "sha256": "3e3f2123626c24ab8506bf83c2c942f463deceb29b1338f507ba0e964d931475",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "patterns/11-atomic-copy-and-pipeline-batches/README.md",
+    "status": "new",
+    "sha256": "6bed63adf77ba96d0a8221fccf49107fd2c69ed868cc71b075366dd62c3b22b0",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "patterns/12-checksum-bound-migrations/README.md",
+    "status": "new",
+    "sha256": "9d3efdabee2953ab6f9fd3792937bb69a7249193576e20607c25c9821b7547de",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "patterns/13-peer-epoch-authority-and-tailcat-worker/README.md",
+    "status": "new",
+    "sha256": "6f34f731c57385141d7602ba9e8c75a36668904125640ae4a6bd1c9343a58184",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "patterns/14-wal-checkpoints-outbox-and-redis-projection/README.md",
+    "status": "new",
+    "sha256": "ad165e97fbb50f638e5ba031e4efac3fcfe6ea1471d1227611d8b3a903763559",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "patterns/15-content-defined-streaming/README.md",
+    "status": "new",
+    "sha256": "91699c38935f3e2b1c60d09d9243d908ae3033337a8fcebaabf53fdee2e29606",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "patterns/16-pace-capability-and-recovery/README.md",
+    "status": "new",
+    "sha256": "796a72f72d20f0f4b6c29bbf0f753b350e331f356a95fc7939528eb20adc82d1",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "patterns/17-postgresql-plans-indexes-and-operations/README.md",
+    "status": "new",
+    "sha256": "50d49eadfc6ecc154c0fc590e4077b9a8c1f5a4780460ce25a6105d73e2447aa",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  },
+  {
+    "path": "catalog.json",
+    "status": "new",
+    "sha256": "6377fa00cb8627b95b4ba411fe90fd6fa706b682b5a2dd26426c290c16752f59",
+    "recorded_at": "2026-11-04T08:28:53.898727+00:00",
+    "purpose": "PostgreSQL pattern usage, implementation, and evidence navigation"
+  }
+]

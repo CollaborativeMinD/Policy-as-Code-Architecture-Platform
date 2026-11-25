@@ -1,0 +1,11 @@
+{
+  "valid": true,
+  "tests": 1,
+  "failures": 0,
+  "assertion_failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "test_ids": [
+    "tests/test_mutation_witnesses.py::test_active_guard"
+  ]
+}

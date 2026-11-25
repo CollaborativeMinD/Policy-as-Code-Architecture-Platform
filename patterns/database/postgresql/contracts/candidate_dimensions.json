@@ -1,0 +1,484 @@
+{
+  "schema_id": "urn:hmt:pg:candidate-dimensions:1.0.0",
+  "bounds": {
+    "max_dimension_items": 32,
+    "max_candidate_rows": 4096
+  },
+  "invariants": [
+    {
+      "id": "PG-CONFIG-001",
+      "requirement": "PG-CONFIG-001",
+      "description": "Connection configuration preserves production TLS and bounded loopback test admission.",
+      "failure_modes": [
+        "FM-SECURITY"
+      ]
+    },
+    {
+      "id": "PG-QUERY-001",
+      "requirement": "PG-QUERY-001",
+      "description": "Values are bound and dynamic identifiers are admitted before SQL execution.",
+      "failure_modes": [
+        "FM-INJECTION"
+      ]
+    },
+    {
+      "id": "PG-TX-001",
+      "requirement": "PG-TX-001",
+      "description": "A failed owned transaction leaves no partial database effect.",
+      "failure_modes": [
+        "FM-PARTIAL"
+      ]
+    },
+    {
+      "id": "PG-RETRY-001",
+      "requirement": "PG-RETRY-001",
+      "description": "Only known transaction-abort SQLSTATEs retry, within a finite attempt budget.",
+      "failure_modes": [
+        "FM-RETRY"
+      ]
+    },
+    {
+      "id": "PG-CLOSE-001",
+      "requirement": "PG-CLOSE-001",
+      "description": "Async connection teardown finishes within its configured deadline.",
+      "failure_modes": [
+        "FM-RESOURCE"
+      ]
+    },
+    {
+      "id": "PG-CONTRACT-001",
+      "requirement": "PG-CONTRACT-001",
+      "description": "Strict telemetry contracts reject malformed or unbounded inputs before persistence.",
+      "failure_modes": [
+        "FM-CONTRACT",
+        "FM-RESOURCE"
+      ]
+    },
+    {
+      "id": "PG-SNAPSHOT-001",
+      "requirement": "PG-SNAPSHOT-001",
+      "description": "An authority snapshot is deeply immutable and detached from caller-owned values.",
+      "failure_modes": [
+        "FM-MUTATION"
+      ]
+    },
+    {
+      "id": "PG-FENCE-001",
+      "requirement": "PG-FENCE-001",
+      "description": "Effect, outbox, and epoch verification share an atomic PostgreSQL transaction.",
+      "failure_modes": [
+        "FM-EPOCH"
+      ]
+    },
+    {
+      "id": "PG-OUTBOX-001",
+      "requirement": "PG-OUTBOX-001",
+      "description": "Publication failures leave durable replayable work, without repeating the effect.",
+      "failure_modes": [
+        "FM-REPLAY"
+      ]
+    },
+    {
+      "id": "PG-CHECKPOINT-001",
+      "requirement": "PG-CHECKPOINT-001",
+      "description": "Durable checkpoints advance monotonically and Redis cannot authorize effects.",
+      "failure_modes": [
+        "FM-REGRESSION"
+      ]
+    },
+    {
+      "id": "PG-CDC-001",
+      "requirement": "PG-CDC-001",
+      "description": "Streaming preserves bytes independently of input packet boundaries and enforces limits.",
+      "failure_modes": [
+        "FM-PACKET",
+        "FM-RESOURCE"
+      ]
+    },
+    {
+      "id": "PG-PACE-001",
+      "requirement": "PG-PACE-001",
+      "description": "Terminal forbids authority and recovery needs explicit reconciliation evidence.",
+      "failure_modes": [
+        "FM-EPOCH",
+        "FM-RECOVERY"
+      ]
+    },
+    {
+      "id": "PG-OPS-001",
+      "requirement": "PG-OPS-001",
+      "description": "Durable local commit is admitted only when observed PostgreSQL WAL prerequisites are enabled; no storage power-loss proof is implied.",
+      "failure_modes": [
+        "FM-DURABILITY"
+      ]
+    },
+    {
+      "id": "PG-POOL-001",
+      "requirement": "PG-POOL-001",
+      "description": "A finite connection pool rejects excess concurrent leases within its timeout.",
+      "failure_modes": [
+        "FM-RESOURCE"
+      ]
+    },
+    {
+      "id": "PG-MIGRATION-001",
+      "requirement": "PG-MIGRATION-001",
+      "description": "Applied migration bytes are bound to an immutable checksum and drift cannot execute.",
+      "failure_modes": [
+        "FM-MUTATION"
+      ]
+    },
+    {
+      "id": "PG-PEER-001",
+      "requirement": "PG-PEER-001",
+      "description": "Trusted Tailcat child peer identity is matched to one fixed database login before payload use.",
+      "failure_modes": [
+        "FM-PEER"
+      ]
+    }
+  ],
+  "failure_modes": [
+    {
+      "id": "FM-SECURITY",
+      "requirement": "An unsafe connection profile or malformed endpoint enters the boundary."
+    },
+    {
+      "id": "FM-INJECTION",
+      "requirement": "SQL syntax is supplied through a value or an unapproved identifier."
+    },
+    {
+      "id": "FM-PARTIAL",
+      "requirement": "Execution faults after beginning an effect but before durable completion."
+    },
+    {
+      "id": "FM-RETRY",
+      "requirement": "A retryable or unknown error attempts to exceed bounded work."
+    },
+    {
+      "id": "FM-RESOURCE",
+      "requirement": "A connection or streaming source exceeds the declared resource budget."
+    },
+    {
+      "id": "FM-CONTRACT",
+      "requirement": "Malformed fields, nonfinite values, or unknown fields cross the contract."
+    },
+    {
+      "id": "FM-MUTATION",
+      "requirement": "Caller mutation changes the state after validation."
+    },
+    {
+      "id": "FM-EPOCH",
+      "requirement": "An obsolete authority epoch or wrong peer attempts a write."
+    },
+    {
+      "id": "FM-REPLAY",
+      "requirement": "A work item or uncertain acknowledgment is replayed."
+    },
+    {
+      "id": "FM-REGRESSION",
+      "requirement": "A checkpoint tries to move backward or substitute cache authority."
+    },
+    {
+      "id": "FM-PACKET",
+      "requirement": "Input packet boundaries change without changing the source bytes."
+    },
+    {
+      "id": "FM-RECOVERY",
+      "requirement": "Connectivity returns before reconciliation and authority guards hold."
+    },
+    {
+      "id": "FM-DURABILITY",
+      "requirement": "Required fsync, full-page writes, or synchronous commit protection is disabled."
+    },
+    {
+      "id": "FM-PEER",
+      "requirement": "Transport child peer identity or its bound database role does not match the trusted host binding."
+    }
+  ],
+  "gates": [
+    {
+      "id": "G-INPUT",
+      "requirement": "Admit a bounded typed input or reject before external effects."
+    },
+    {
+      "id": "G-TRANSACTION",
+      "requirement": "Commit only the checked epoch, effect, and outbox atomically."
+    },
+    {
+      "id": "G-DELIVERY",
+      "requirement": "Retain or acknowledge replayable work and monotonic checkpoints."
+    },
+    {
+      "id": "G-RECOVERY",
+      "requirement": "Stop within a bound and restore authority only with explicit guards."
+    }
+  ],
+  "cases": [
+    {
+      "id": "tls_profile",
+      "invariant_id": "PG-CONFIG-001",
+      "failure_id": "FM-SECURITY",
+      "gate_id": "G-INPUT",
+      "requirement": "PG-CONFIG-001",
+      "assertion": "Unsafe plaintext production or nonloopback test configuration is rejected.",
+      "families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "bound_values",
+      "invariant_id": "PG-QUERY-001",
+      "failure_id": "FM-INJECTION",
+      "gate_id": "G-INPUT",
+      "requirement": "PG-QUERY-001",
+      "assertion": "Untrusted SQL text remains data and unadmitted identifiers are rejected.",
+      "families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "rollback",
+      "invariant_id": "PG-TX-001",
+      "failure_id": "FM-PARTIAL",
+      "gate_id": "G-TRANSACTION",
+      "requirement": "PG-TX-001",
+      "assertion": "Injected operation failure leaves the metrics table unchanged.",
+      "families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "retry_budget",
+      "invariant_id": "PG-RETRY-001",
+      "failure_id": "FM-RETRY",
+      "gate_id": "G-RECOVERY",
+      "requirement": "PG-RETRY-001",
+      "assertion": "Retry budget exhausts exactly and uncertain connection errors are not retried.",
+      "families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "bounded_close",
+      "invariant_id": "PG-CLOSE-001",
+      "failure_id": "FM-RESOURCE",
+      "gate_id": "G-RECOVERY",
+      "requirement": "PG-CLOSE-001",
+      "assertion": "A stalled graceful close forces termination within the explicit deadline.",
+      "families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "contract_rejection",
+      "invariant_id": "PG-CONTRACT-001",
+      "failure_id": "FM-CONTRACT",
+      "gate_id": "G-INPUT",
+      "requirement": "PG-CONTRACT-001",
+      "assertion": "Invalid telemetry fails strict validation before the database write.",
+      "families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "immutable_snapshot",
+      "invariant_id": "PG-SNAPSHOT-001",
+      "failure_id": "FM-MUTATION",
+      "gate_id": "G-INPUT",
+      "requirement": "PG-SNAPSHOT-001",
+      "assertion": "Mutating caller inputs cannot change a detached immutable authority snapshot.",
+      "families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "epoch_fence",
+      "invariant_id": "PG-FENCE-001",
+      "failure_id": "FM-EPOCH",
+      "gate_id": "G-TRANSACTION",
+      "requirement": "PG-FENCE-001",
+      "assertion": "Stale or peer-mismatched authority cannot create an effect or outbox entry.",
+      "families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "outbox_replay",
+      "invariant_id": "PG-OUTBOX-001",
+      "failure_id": "FM-REPLAY",
+      "gate_id": "G-DELIVERY",
+      "requirement": "PG-OUTBOX-001",
+      "assertion": "Failed publication preserves pending work and replay does not repeat the effect.",
+      "families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "checkpoint_order",
+      "invariant_id": "PG-CHECKPOINT-001",
+      "failure_id": "FM-REGRESSION",
+      "gate_id": "G-DELIVERY",
+      "requirement": "PG-CHECKPOINT-001",
+      "assertion": "A lower checkpoint cannot replace a durable higher checkpoint.",
+      "families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "packet_invariance",
+      "invariant_id": "PG-CDC-001",
+      "failure_id": "FM-PACKET",
+      "gate_id": "G-DELIVERY",
+      "requirement": "PG-CDC-001",
+      "assertion": "Chunk boundaries and reconstruction are identical across source packetizations.",
+      "families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "stream_limits",
+      "invariant_id": "PG-CDC-001",
+      "failure_id": "FM-RESOURCE",
+      "gate_id": "G-INPUT",
+      "requirement": "PG-CDC-001",
+      "assertion": "Oversized streams or frames fail within the declared bound.",
+      "families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "terminal_authority",
+      "invariant_id": "PG-PACE-001",
+      "failure_id": "FM-EPOCH",
+      "gate_id": "G-TRANSACTION",
+      "requirement": "PG-PACE-001",
+      "assertion": "Terminal or revoked authority cannot be restored by an ordinary request.",
+      "families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "guarded_recovery",
+      "invariant_id": "PG-PACE-001",
+      "failure_id": "FM-RECOVERY",
+      "gate_id": "G-RECOVERY",
+      "requirement": "PG-PACE-001",
+      "assertion": "Connectivity without reconciliation does not restore primary authority.",
+      "families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "wal_prerequisites",
+      "invariant_id": "PG-OPS-001",
+      "failure_id": "FM-DURABILITY",
+      "gate_id": "G-TRANSACTION",
+      "requirement": "PG-OPS-001",
+      "assertion": "Disabled WAL protection or asynchronous commit is rejected before a durability-dependent effect.",
+      "families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "pool_capacity",
+      "invariant_id": "PG-POOL-001",
+      "failure_id": "FM-RESOURCE",
+      "gate_id": "G-INPUT",
+      "requirement": "PG-POOL-001",
+      "assertion": "An exhausted finite pool times out; it never creates an unbounded extra lease.",
+      "families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "migration_drift",
+      "invariant_id": "PG-MIGRATION-001",
+      "failure_id": "FM-MUTATION",
+      "gate_id": "G-TRANSACTION",
+      "requirement": "PG-MIGRATION-001",
+      "assertion": "Different bytes for an applied migration fail before the changed SQL executes.",
+      "families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "tailcat_binding",
+      "invariant_id": "PG-PEER-001",
+      "failure_id": "FM-PEER",
+      "gate_id": "G-INPUT",
+      "requirement": "PG-PEER-001",
+      "assertion": "Mismatched transport or database peer identity is rejected before any stream effect.",
+      "families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    },
+    {
+      "id": "bounded_rows",
+      "invariant_id": "PG-CONTRACT-001",
+      "failure_id": "FM-RESOURCE",
+      "gate_id": "G-INPUT",
+      "requirement": "PG-CONTRACT-001",
+      "assertion": "An oversized or infinite row source is rejected before bulk database effects.",
+      "families": [
+        "unit",
+        "regex",
+        "integration",
+        "e2e"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+version = 1
+pattern = "RDP-B05"
+scope = "software"
+
+[settings]
+normalizer = "uppercase"
+text = "  hello  "

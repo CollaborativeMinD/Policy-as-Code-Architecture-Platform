@@ -1,0 +1,6 @@
+version = 1
+pattern = "PG-PAT-013"
+scope = "software"
+
+[settings]
+expected_db_role = "fixture_reader"

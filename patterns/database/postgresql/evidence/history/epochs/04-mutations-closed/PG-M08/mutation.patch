@@ -1,0 +1,12 @@
+--- sql/02_authority.sql
++++ sql/02_authority.sql.mutated
+@@ -93,8 +93,7 @@
+  INSERT INTO hmt_pg.stream_head(db_role,stream_id,epoch,policy_digest) VALUES(a.db_role,v.stream_id,v.epoch,v.policy_digest)
+   ON CONFLICT ON CONSTRAINT stream_head_pkey DO NOTHING;
+  SELECT * INTO STRICT head FROM hmt_pg.stream_head s WHERE s.db_role=a.db_role AND s.stream_id=v.stream_id FOR UPDATE;
+- IF ROW(head.epoch,head.sequence+1,head.end_offset,head.digest,head.policy_digest) IS DISTINCT FROM
+-  ROW(v.epoch,v.sequence,v.start_offset,v.previous_digest,v.policy_digest) THEN RAISE EXCEPTION 'CHECKPOINT_CONFLICT'; END IF;
++ IF false THEN RAISE EXCEPTION 'CHECKPOINT_CONFLICT'; END IF;
+  d:=hmt_pg.chunk_digest(a.db_role,v,p);
+  IF a.expires_at<=clock_timestamp() THEN RAISE EXCEPTION 'AUTHORITY_EXPIRED'; END IF;
+  INSERT INTO hmt_pg.chunk_effect VALUES(a.db_role,v.stream_id,v.request_id,v.epoch,v.sequence,v.start_offset,

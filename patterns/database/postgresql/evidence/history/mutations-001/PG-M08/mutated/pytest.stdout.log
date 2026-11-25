@@ -1,0 +1,22 @@
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+_________ test_chain_rejects_gap_or_forgery_before_any_effect[change0] _________
+tests/test_authority_atomic.py:60: in test_chain_rejects_gap_or_forgery_before_any_effect
+    with pytest.raises(psycopg.Error, match="CHECKPOINT_CONFLICT"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE Error
+_________ test_chain_rejects_gap_or_forgery_before_any_effect[change1] _________
+tests/test_authority_atomic.py:60: in test_chain_rejects_gap_or_forgery_before_any_effect
+    with pytest.raises(psycopg.Error, match="CHECKPOINT_CONFLICT"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE Error
+_________ test_chain_rejects_gap_or_forgery_before_any_effect[change2] _________
+tests/test_authority_atomic.py:60: in test_chain_rejects_gap_or_forgery_before_any_effect
+    with pytest.raises(psycopg.Error, match="CHECKPOINT_CONFLICT"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE Error
+=========================== short test summary info ============================
+FAILED tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change0]
+FAILED tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change1]
+FAILED tests/test_authority_atomic.py::test_chain_rejects_gap_or_forgery_before_any_effect[change2]
+3 failed in 1.89s

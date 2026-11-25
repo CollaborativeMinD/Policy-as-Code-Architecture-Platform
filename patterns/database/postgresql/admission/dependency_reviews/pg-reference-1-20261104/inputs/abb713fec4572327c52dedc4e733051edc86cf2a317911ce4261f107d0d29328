@@ -1,0 +1,17 @@
+{
+  "admission": "/workspace/scratch/e7495113964e/work/final/software",
+  "analysis": "/workspace/scratch/e7495113964e/work/final/native_vv/analysis.json",
+  "epoch": "pg-reference-1-20261104",
+  "mutation": "/workspace/scratch/e7495113964e/work/final/mutations/mutation-report.json",
+  "native_vv": "/workspace/scratch/e7495113964e/work/final/native_vv/native-vv-result.json",
+  "supply": {
+    "backend_advisory": "/workspace/scratch/e7495113964e/work/native_review/backend/advisory.receipt.json",
+    "backend_identity": "/workspace/scratch/e7495113964e/work/native_review/backend/identity.json",
+    "backend_license": "/workspace/scratch/e7495113964e/work/native_review/backend/license.receipt.json",
+    "default_license_hold": "/workspace/scratch/e7495113964e/work/epochs/final-license.json",
+    "license_profile": "/workspace/scratch/e7495113964e/work/native_review/license/profile.json",
+    "npm_advisory": "/workspace/scratch/e7495113964e/work/native_review/root_audits/npm.receipt.json",
+    "python_advisory": "/workspace/scratch/e7495113964e/work/native_review/root_audits/python.receipt.json",
+    "python_license": "/workspace/scratch/e7495113964e/work/native_review/license/receipt.json"
+  }
+}

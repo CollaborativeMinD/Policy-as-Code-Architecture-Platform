@@ -1,0 +1,9 @@
+version = 1
+pattern = "PG-PAT-008"
+scope = "software"
+
+[settings]
+id = 1
+status = "active"
+telemetry = { temperature = 2.0 }
+observed_at = "2026-01-01T00:00:00+00:00"

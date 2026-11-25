@@ -1,0 +1,7 @@
+version = 1
+pattern = "PG-PAT-017"
+scope = "software"
+
+[settings]
+window = { status = "active", after_id = 0, limit = 4 }
+wal = { fsync = "on", full_page_writes = "on", synchronous_commit = "on", wal_level = "replica" }

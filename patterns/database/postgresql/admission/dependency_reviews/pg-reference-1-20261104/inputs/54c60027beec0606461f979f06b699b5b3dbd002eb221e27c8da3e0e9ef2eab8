@@ -1,0 +1,24 @@
+{
+  "argv": [
+    "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+    "/workspace/scratch/e7495113964e/work/admission_sources/ci42/tools/pip-audit.py",
+    "--root",
+    "/workspace/scratch/e7495113964e/work/native_review/backend",
+    "/workspace/scratch/e7495113964e/work/native_review/backend/requirements.txt"
+  ],
+  "environment_path": "/workspace/scratch/e7495113964e/work/.analyzers/bin:/root/.codex/tmp/arg0-linux/codex-arg0F34LPa:/opt/codex/codex-path:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/override:/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/codex/runtimes/codex-primary-runtime/dependencies/bin/fallback",
+  "promotion_authorized": false,
+  "pythonpath": "",
+  "returncode": 0,
+  "status": "PASS",
+  "stderr": {
+    "bytes": 265,
+    "path": "/workspace/scratch/e7495113964e/work/native_review/backend/advisory.stderr",
+    "sha256": "79d30422388543b2563e1dde76bb7e7857d7ef0c6fdf05c8c71598633ca07e1e"
+  },
+  "stdout": {
+    "bytes": 107,
+    "path": "/workspace/scratch/e7495113964e/work/native_review/backend/advisory.stdout",
+    "sha256": "7917dc46dfd4f74ef07d079f6c7368d0eef18f8ce84b80018418a603fed1c45a"
+  }
+}

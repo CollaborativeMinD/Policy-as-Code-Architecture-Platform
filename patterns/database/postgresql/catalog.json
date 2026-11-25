@@ -1,0 +1,923 @@
+{
+  "schema_id": "urn:hmt:postgresql:pattern-catalog:1.0.0",
+  "branch": "database_design_patterns/postgresql",
+  "version": "1.0.0",
+  "database": "PostgreSQL",
+  "catalog_role": "Independent implementation inventory; not an admission verdict or a legacy-catalog edit.",
+  "pattern_count": 17,
+  "source_module_count": 39,
+  "source_inventory": [
+    "src/hmt_pg_patterns/__init__.py",
+    "src/hmt_pg_patterns/analytics.py",
+    "src/hmt_pg_patterns/async_driver.py",
+    "src/hmt_pg_patterns/asyncpg_driver.py",
+    "src/hmt_pg_patterns/asyncpg_pool.py",
+    "src/hmt_pg_patterns/authority.py",
+    "src/hmt_pg_patterns/authority_async.py",
+    "src/hmt_pg_patterns/authority_types.py",
+    "src/hmt_pg_patterns/bulk.py",
+    "src/hmt_pg_patterns/checkpoints.py",
+    "src/hmt_pg_patterns/checkpoints_lua.py",
+    "src/hmt_pg_patterns/checkpoints_snapshot.py",
+    "src/hmt_pg_patterns/config.py",
+    "src/hmt_pg_patterns/diagnostics.py",
+    "src/hmt_pg_patterns/driver_contracts.py",
+    "src/hmt_pg_patterns/migrations.py",
+    "src/hmt_pg_patterns/models.py",
+    "src/hmt_pg_patterns/orm.py",
+    "src/hmt_pg_patterns/orm_async.py",
+    "src/hmt_pg_patterns/orm_model.py",
+    "src/hmt_pg_patterns/outbox.py",
+    "src/hmt_pg_patterns/pace.py",
+    "src/hmt_pg_patterns/pace_models.py",
+    "src/hmt_pg_patterns/pools.py",
+    "src/hmt_pg_patterns/queries.py",
+    "src/hmt_pg_patterns/streaming.py",
+    "src/hmt_pg_patterns/streaming_async_writer.py",
+    "src/hmt_pg_patterns/streaming_contracts.py",
+    "src/hmt_pg_patterns/streaming_runtime.py",
+    "src/hmt_pg_patterns/streaming_scan.py",
+    "src/hmt_pg_patterns/streaming_state.py",
+    "src/hmt_pg_patterns/streaming_writer.py",
+    "src/hmt_pg_patterns/sync_driver.py",
+    "src/hmt_pg_patterns/transport.py",
+    "src/hmt_pg_patterns/worker.py",
+    "src/hmt_pg_patterns/worker_config.py",
+    "src/hmt_pg_patterns/worker_io.py",
+    "src/hmt_pg_patterns/worker_projection.py",
+    "src/hmt_pg_patterns/worker_service.py"
+  ],
+  "governing_focus": [
+    "PostgreSQL functionality",
+    "delivery semantics",
+    "bounded optimization",
+    "maintainability",
+    "security"
+  ],
+  "qualification_boundary": {
+    "software": "Executable SQL/driver/Redis composition and bounded local contracts; consult current evidence.",
+    "native_postgresql": "Separate native service profile; no inference from a single-backend WASM fixture.",
+    "tailcat_wire": "Separate qualification profile; managed host startup blocked by netlink EPERM.",
+    "durability": "Observed WAL prerequisites do not establish storage power-loss or replication recovery."
+  },
+  "patterns": [
+    {
+      "id": "PG-PAT-001",
+      "number": 1,
+      "slug": "01-secure-postgresql-configuration",
+      "title": "Verified PostgreSQL configuration",
+      "intent": "Admit one explicit PostgreSQL connection profile before opening a driver or ORM connection.",
+      "contract_ids": [
+        "PG-CONFIG-001"
+      ],
+      "source_files": [
+        "src/hmt_pg_patterns/config.py",
+        "src/hmt_pg_patterns/__init__.py"
+      ],
+      "test_files": [
+        "tests/test_config.py",
+        "tests/test_worker_contracts.py"
+      ],
+      "public_apis": [
+        "DbConfig",
+        "DbConfig.connect_kwargs",
+        "DbConfig.asyncpg_kwargs"
+      ],
+      "execution_models": [
+        "sync",
+        "asyncio"
+      ],
+      "data_interfaces": [
+        "libpq",
+        "asyncpg TLS"
+      ],
+      "resource_contract": "Connect 1\u201330 s; statement 100\u201360,000 ms; lock 1\u201310,000 ms and below statement timeout; idle transaction 100\u2013120,000 ms.",
+      "limitations": [
+        "A configuration check does not prove an actual TLS handshake or database role privilege set.",
+        "The loopback test profile grants no production qualification."
+      ],
+      "upstream_sources": [
+        {
+          "title": "PostgreSQL TLS verification",
+          "url": "https://www.postgresql.org/docs/current/libpq-ssl.html"
+        },
+        {
+          "title": "Psycopg installation variants",
+          "url": "https://www.psycopg.org/psycopg3/docs/basic/install.html"
+        }
+      ],
+      "readme": "patterns/01-secure-postgresql-configuration/README.md"
+    },
+    {
+      "id": "PG-PAT-002",
+      "number": 2,
+      "slug": "02-psycopg-sync-bound-sql",
+      "title": "Psycopg synchronous bound SQL",
+      "intent": "Perform bounded PostgreSQL reads and validated writes with explicit connection and transaction ownership.",
+      "contract_ids": [
+        "PG-QUERY-001",
+        "PG-TX-001",
+        "PG-CONTRACT-001"
+      ],
+      "source_files": [
+        "src/hmt_pg_patterns/sync_driver.py",
+        "src/hmt_pg_patterns/queries.py"
+      ],
+      "test_files": [
+        "tests/test_sync_driver.py",
+        "tests/test_query_contracts.py",
+        "tests/test_fixture_protocol_regressions.py"
+      ],
+      "public_apis": [
+        "sync_driver.fetch_metrics",
+        "sync_driver.insert_metric",
+        "queries.qualified_table"
+      ],
+      "execution_models": [
+        "sync"
+      ],
+      "data_interfaces": [
+        "raw PostgreSQL SQL"
+      ],
+      "resource_contract": "Each page contains 1\u201310,000 rows; status is a closed enum; id is a positive PostgreSQL bigint.",
+      "limitations": [
+        "Separate pages at READ COMMITTED do not form a stable multi-page snapshot.",
+        "One connection serializes its commands and shares its transaction state."
+      ],
+      "upstream_sources": [
+        {
+          "title": "Psycopg parameter binding",
+          "url": "https://www.psycopg.org/psycopg3/docs/basic/params.html"
+        },
+        {
+          "title": "PostgreSQL LIMIT ordering",
+          "url": "https://www.postgresql.org/docs/current/queries-limit.html"
+        }
+      ],
+      "readme": "patterns/02-psycopg-sync-bound-sql/README.md"
+    },
+    {
+      "id": "PG-PAT-003",
+      "number": 3,
+      "slug": "03-psycopg-async-bound-sql",
+      "title": "Psycopg native asyncio SQL",
+      "intent": "Expose the same PostgreSQL value and transaction contract through awaited driver operations.",
+      "contract_ids": [
+        "PG-QUERY-001",
+        "PG-TX-001",
+        "PG-CONTRACT-001"
+      ],
+      "source_files": [
+        "src/hmt_pg_patterns/async_driver.py"
+      ],
+      "test_files": [
+        "tests/test_async_driver.py",
+        "tests/test_pools.py"
+      ],
+      "public_apis": [
+        "async_driver.fetch_metrics",
+        "async_driver.insert_metric"
+      ],
+      "execution_models": [
+        "asyncio"
+      ],
+      "data_interfaces": [
+        "raw PostgreSQL SQL"
+      ],
+      "resource_contract": "The same QueryWindow and DbConfig bounds apply; one connection has one transaction owner.",
+      "limitations": [
+        "Cancellation does not establish whether a commit reached PostgreSQL.",
+        "The SQL fixture does not qualify native CancelRequest delivery."
+      ],
+      "upstream_sources": [
+        {
+          "title": "Psycopg asynchronous operations",
+          "url": "https://www.psycopg.org/psycopg3/docs/advanced/async.html"
+        }
+      ],
+      "readme": "patterns/03-psycopg-async-bound-sql/README.md"
+    },
+    {
+      "id": "PG-PAT-004",
+      "number": 4,
+      "slug": "04-asyncpg-bounded-lifecycle",
+      "title": "asyncpg with bounded teardown",
+      "intent": "Use raw asyncio PostgreSQL access while making connection closure, failures, and forced termination observable.",
+      "contract_ids": [
+        "PG-QUERY-001",
+        "PG-CLOSE-001",
+        "PG-CONTRACT-001"
+      ],
+      "source_files": [
+        "src/hmt_pg_patterns/asyncpg_driver.py"
+      ],
+      "test_files": [
+        "tests/test_asyncpg_driver.py",
+        "tests/test_teardown_faults.py",
+        "tests/test_asyncpg_lifecycle_faults.py"
+      ],
+      "public_apis": [
+        "asyncpg_driver.connection",
+        "asyncpg_driver.fetch_metrics",
+        "asyncpg_driver.insert_metric",
+        "asyncpg_driver.close_connection"
+      ],
+      "execution_models": [
+        "asyncio"
+      ],
+      "data_interfaces": [
+        "asyncpg PostgreSQL protocol"
+      ],
+      "resource_contract": "Connect and command budgets come from DbConfig; teardown timeout is finite, positive, and at most 30 s.",
+      "limitations": [
+        "No comparative throughput or latency ranking is claimed.",
+        "Forced termination is an explicit fallback outcome, not graceful-close evidence."
+      ],
+      "upstream_sources": [
+        {
+          "title": "asyncpg API",
+          "url": "https://magicstack.github.io/asyncpg/current/api/index.html"
+        },
+        {
+          "title": "asyncpg usage",
+          "url": "https://magicstack.github.io/asyncpg/current/usage.html"
+        }
+      ],
+      "readme": "patterns/04-asyncpg-bounded-lifecycle/README.md"
+    },
+    {
+      "id": "PG-PAT-005",
+      "number": 5,
+      "slug": "05-owned-transactions-and-bounded-retry",
+      "title": "Owned transactions and bounded retry",
+      "intent": "Retry a complete aborted PostgreSQL transaction under an explicit attempt budget and ownership contract.",
+      "contract_ids": [
+        "PG-TX-001",
+        "PG-RETRY-001"
+      ],
+      "source_files": [
+        "src/hmt_pg_patterns/driver_contracts.py",
+        "src/hmt_pg_patterns/sync_driver.py",
+        "src/hmt_pg_patterns/async_driver.py"
+      ],
+      "test_files": [
+        "tests/test_sync_driver.py",
+        "tests/test_async_driver.py",
+        "tests/test_query_contracts.py"
+      ],
+      "public_apis": [
+        "sync_driver.transaction_retry",
+        "async_driver.transaction_retry",
+        "driver_contracts.owned_transaction"
+      ],
+      "execution_models": [
+        "sync",
+        "asyncio"
+      ],
+      "data_interfaces": [
+        "PostgreSQL transactions"
+      ],
+      "resource_contract": "Attempts are strict integers from 1 through 5; default 3. Requires an idle autocommit connection.",
+      "limitations": [
+        "Arbitrary callback CPU or external I/O is not bounded by the database attempt count.",
+        "This primitive does not resolve ambiguous commit acknowledgments."
+      ],
+      "upstream_sources": [
+        {
+          "title": "PostgreSQL serialization failure handling",
+          "url": "https://www.postgresql.org/docs/current/mvcc-serialization-failure-handling.html"
+        },
+        {
+          "title": "Psycopg transaction contexts",
+          "url": "https://www.psycopg.org/psycopg3/docs/basic/transactions.html"
+        }
+      ],
+      "readme": "patterns/05-owned-transactions-and-bounded-retry/README.md"
+    },
+    {
+      "id": "PG-PAT-006",
+      "number": 6,
+      "slug": "06-finite-connection-pools",
+      "title": "Finite connection pools",
+      "intent": "Make PostgreSQL connection capacity, checkout wait, readiness, and shutdown explicit at one ownership layer.",
+      "contract_ids": [
+        "PG-POOL-001",
+        "PG-CLOSE-001",
+        "PG-CONFIG-001"
+      ],
+      "source_files": [
+        "src/hmt_pg_patterns/pools.py",
+        "src/hmt_pg_patterns/asyncpg_pool.py",
+        "src/hmt_pg_patterns/driver_contracts.py"
+      ],
+      "test_files": [
+        "tests/test_pools.py",
+        "tests/test_asyncpg_driver.py",
+        "tests/test_teardown_faults.py"
+      ],
+      "public_apis": [
+        "pools.sync_pool",
+        "pools.async_pool",
+        "asyncpg_pool.pool",
+        "asyncpg_pool.lease",
+        "asyncpg_pool.close_pool"
+      ],
+      "execution_models": [
+        "sync",
+        "asyncio"
+      ],
+      "data_interfaces": [
+        "psycopg_pool",
+        "asyncpg pool"
+      ],
+      "resource_contract": "Capacity 1\u201332; checkout/close budgets finite and at most 30 s; Psycopg pending waiters capped at twice capacity.",
+      "limitations": [
+        "Asyncpg and SQLAlchemy waiters also require application task-admission control.",
+        "A pool context must outlive all work that borrows its connections."
+      ],
+      "upstream_sources": [
+        {
+          "title": "Psycopg connection pools",
+          "url": "https://www.psycopg.org/psycopg3/docs/advanced/pool.html"
+        },
+        {
+          "title": "asyncpg pool API",
+          "url": "https://magicstack.github.io/asyncpg/current/api/index.html"
+        }
+      ],
+      "readme": "patterns/06-finite-connection-pools/README.md"
+    },
+    {
+      "id": "PG-PAT-007",
+      "number": 7,
+      "slug": "07-sqlalchemy-postgresql-core-and-async",
+      "title": "SQLAlchemy PostgreSQL Core and asyncio",
+      "intent": "Offer SQLAlchemy transaction and pooling ownership over the explicit Psycopg PostgreSQL dialect.",
+      "contract_ids": [
+        "PG-QUERY-001",
+        "PG-TX-001",
+        "PG-POOL-001",
+        "PG-CONTRACT-001"
+      ],
+      "source_files": [
+        "src/hmt_pg_patterns/orm.py",
+        "src/hmt_pg_patterns/orm_async.py"
+      ],
+      "test_files": [
+        "tests/test_orm_drivers.py"
+      ],
+      "public_apis": [
+        "orm.create_pg_engine",
+        "orm.insert_metric",
+        "orm.fetch_metrics",
+        "orm_async.create_pg_engine",
+        "orm_async.insert_metric",
+        "orm_async.fetch_metrics"
+      ],
+      "execution_models": [
+        "sync",
+        "asyncio"
+      ],
+      "data_interfaces": [
+        "SQLAlchemy Core"
+      ],
+      "resource_contract": "Pool size 1\u201332, max_overflow=0, finite checkout wait, bounded QueryWindow.",
+      "limitations": [
+        "The reference supplies Core operations; arbitrary ORM relationship loading is outside it.",
+        "Engines and sessions are lifecycle objects, not per-row constructs."
+      ],
+      "upstream_sources": [
+        {
+          "title": "SQLAlchemy PostgreSQL dialects",
+          "url": "https://docs.sqlalchemy.org/en/21/dialects/postgresql.html"
+        },
+        {
+          "title": "SQLAlchemy transaction ownership",
+          "url": "https://docs.sqlalchemy.org/en/21/core/connections.html"
+        },
+        {
+          "title": "SQLAlchemy asyncio",
+          "url": "https://docs.sqlalchemy.org/en/21/orm/extensions/asyncio.html"
+        }
+      ],
+      "readme": "patterns/07-sqlalchemy-postgresql-core-and-async/README.md"
+    },
+    {
+      "id": "PG-PAT-008",
+      "number": 8,
+      "slug": "08-sqlmodel-postgresql-mapping",
+      "title": "SQLModel PostgreSQL mapping",
+      "intent": "Map a PostgreSQL table without treating an ORM constructor as strict input admission.",
+      "contract_ids": [
+        "PG-CONTRACT-001",
+        "PG-QUERY-001",
+        "PG-TX-001"
+      ],
+      "source_files": [
+        "src/hmt_pg_patterns/orm_model.py",
+        "src/hmt_pg_patterns/models.py"
+      ],
+      "test_files": [
+        "tests/test_orm_drivers.py",
+        "tests/test_models.py"
+      ],
+      "public_apis": [
+        "orm_model.MetricRow",
+        "orm_model.insert_metric",
+        "orm_model.fetch_metrics"
+      ],
+      "execution_models": [
+        "sync"
+      ],
+      "data_interfaces": [
+        "SQLModel over SQLAlchemy/Psycopg"
+      ],
+      "resource_contract": "One bounded keyset page; finite engine pool inherited from pattern 07.",
+      "limitations": [
+        "Only the synchronous SQLModel reference is implemented.",
+        "SQLModel table declarations do not replace reviewed PostgreSQL migrations."
+      ],
+      "upstream_sources": [
+        {
+          "title": "SQLModel separate data and table models",
+          "url": "https://sqlmodel.tiangolo.com/tutorial/fastapi/multiple-models/"
+        },
+        {
+          "title": "SQLModel validation semantics",
+          "url": "https://sqlmodel.tiangolo.com/advanced/datetime/"
+        }
+      ],
+      "readme": "patterns/08-sqlmodel-postgresql-mapping/README.md"
+    },
+    {
+      "id": "PG-PAT-009",
+      "number": 9,
+      "slug": "09-strict-pydantic-data-contracts",
+      "title": "Strict PostgreSQL data contracts",
+      "intent": "Validate telemetry, query windows, and authority receipts at every persistence or parsing boundary.",
+      "contract_ids": [
+        "PG-CONTRACT-001",
+        "PG-SNAPSHOT-001"
+      ],
+      "source_files": [
+        "src/hmt_pg_patterns/models.py",
+        "src/hmt_pg_patterns/queries.py",
+        "src/hmt_pg_patterns/authority_types.py"
+      ],
+      "test_files": [
+        "tests/test_models.py",
+        "tests/test_query_contracts.py",
+        "tests/test_authority_security.py",
+        "tests/test_checkpoints_cache.py"
+      ],
+      "public_apis": [
+        "Metric",
+        "QueryWindow",
+        "BatchSpec",
+        "queries.snapshot_metric",
+        "authority_types.ChunkRequest",
+        "authority_types.CheckpointData"
+      ],
+      "execution_models": [
+        "sync",
+        "asyncio"
+      ],
+      "data_interfaces": [
+        "Pydantic DTOs",
+        "PostgreSQL JSONB and bigint"
+      ],
+      "resource_contract": "Telemetry has at most 64 bounded keys and finite float values; aware timestamps; bounded bigint IDs and query sizes; chunk bytes 1\u20131,048,576.",
+      "limitations": [
+        "Metric.telemetry remains a mutable nested dictionary despite frozen=True.",
+        "Pydantic model_construct/model_copy are not admission boundaries; public primitives revalidate."
+      ],
+      "upstream_sources": [
+        {
+          "title": "Pydantic strict mode",
+          "url": "https://pydantic.dev/docs/validation/latest/concepts/strict_mode/"
+        },
+        {
+          "title": "Pydantic model configuration",
+          "url": "https://pydantic.dev/docs/validation/latest/api/pydantic/config/"
+        }
+      ],
+      "readme": "patterns/09-strict-pydantic-data-contracts/README.md"
+    },
+    {
+      "id": "PG-PAT-010",
+      "number": 10,
+      "slug": "10-polars-server-cursor-batches",
+      "title": "Polars through a PostgreSQL server cursor",
+      "intent": "Convert bounded server-fetched rows into stable-schema Polars batches without implicit full-result buffering.",
+      "contract_ids": [
+        "PG-CONTRACT-001",
+        "PG-QUERY-001",
+        "PG-TX-001"
+      ],
+      "source_files": [
+        "src/hmt_pg_patterns/analytics.py",
+        "src/hmt_pg_patterns/models.py"
+      ],
+      "test_files": [
+        "tests/test_bulk_analytics.py",
+        "tests/test_fixture_protocol_regressions.py"
+      ],
+      "public_apis": [
+        "analytics.metric_frames",
+        "analytics.SCHEMA"
+      ],
+      "execution_models": [
+        "sync"
+      ],
+      "data_interfaces": [
+        "PostgreSQL named cursor",
+        "Polars DataFrame"
+      ],
+      "resource_contract": "Batch size 1\u20134,096; total rows at most QueryWindow.limit (1\u201310,000); finite fetch loop; bounded DTO fields.",
+      "limitations": [
+        "The bound concerns client-retained rows, not all server executor memory.",
+        "Early termination requires explicit generator closure."
+      ],
+      "upstream_sources": [
+        {
+          "title": "Polars database batch caveats",
+          "url": "https://docs.pola.rs/api/python/stable/reference/api/polars.read_database.html"
+        },
+        {
+          "title": "Psycopg server cursors",
+          "url": "https://www.psycopg.org/psycopg3/docs/advanced/cursors.html"
+        }
+      ],
+      "readme": "patterns/10-polars-server-cursor-batches/README.md"
+    },
+    {
+      "id": "PG-PAT-011",
+      "number": 11,
+      "slug": "11-atomic-copy-and-pipeline-batches",
+      "title": "Atomic COPY and pipeline batches",
+      "intent": "Select a PostgreSQL batch mechanism while preserving full-batch validation and transaction rollback.",
+      "contract_ids": [
+        "PG-CONTRACT-001",
+        "PG-TX-001"
+      ],
+      "source_files": [
+        "src/hmt_pg_patterns/bulk.py",
+        "src/hmt_pg_patterns/queries.py",
+        "src/hmt_pg_patterns/driver_contracts.py"
+      ],
+      "test_files": [
+        "tests/test_bulk_analytics.py",
+        "tests/test_fixture_protocol_regressions.py"
+      ],
+      "public_apis": [
+        "bulk.copy_metrics",
+        "bulk.pipeline_metrics"
+      ],
+      "execution_models": [
+        "sync"
+      ],
+      "data_interfaces": [
+        "PostgreSQL COPY FROM STDIN",
+        "Psycopg pipeline"
+      ],
+      "resource_contract": "At most 10,000 validated rows before database I/O; each mode requires an idle autocommit connection and owns one transaction.",
+      "limitations": [
+        "COPY and pipeline are separate modes; neither is a throughput guarantee.",
+        "The complete admitted batch is retained for validation; this is not an unbounded streaming importer."
+      ],
+      "upstream_sources": [
+        {
+          "title": "Psycopg row COPY",
+          "url": "https://www.psycopg.org/psycopg3/docs/basic/copy.html"
+        },
+        {
+          "title": "Psycopg pipeline mode",
+          "url": "https://www.psycopg.org/psycopg3/docs/advanced/pipeline.html"
+        }
+      ],
+      "readme": "patterns/11-atomic-copy-and-pipeline-batches/README.md"
+    },
+    {
+      "id": "PG-PAT-012",
+      "number": 12,
+      "slug": "12-checksum-bound-migrations",
+      "title": "Checksum-bound PostgreSQL migrations",
+      "intent": "Apply a finite, owner-authored migration inventory transactionally and reject changed bytes after application.",
+      "contract_ids": [
+        "PG-MIGRATION-001",
+        "PG-TX-001"
+      ],
+      "source_files": [
+        "src/hmt_pg_patterns/migrations.py"
+      ],
+      "test_files": [
+        "tests/test_migrations.py"
+      ],
+      "public_apis": [
+        "migrations.migration_inputs",
+        "migrations.apply_migrations"
+      ],
+      "execution_models": [
+        "sync"
+      ],
+      "data_interfaces": [
+        "PostgreSQL SQL migrations",
+        "transaction advisory lock"
+      ],
+      "resource_contract": "1\u201399 migration files; at most 262,144 bytes per file; constrained names; symlinks rejected.",
+      "limitations": [
+        "Only migrations valid inside a transaction are supported.",
+        "The directory must be host-owned and stable while read; checksums are not signatures."
+      ],
+      "upstream_sources": [
+        {
+          "title": "PostgreSQL explicit locking",
+          "url": "https://www.postgresql.org/docs/current/explicit-locking.html"
+        }
+      ],
+      "readme": "patterns/12-checksum-bound-migrations/README.md"
+    },
+    {
+      "id": "PG-PAT-013",
+      "number": 13,
+      "slug": "13-peer-epoch-authority-and-tailcat-worker",
+      "title": "Peer and epoch authority with a fixed Tailcat worker",
+      "intent": "Bind trusted transport identity to one fixed database LOGIN and recheck epoch authority in the transaction that changes PostgreSQL state.",
+      "contract_ids": [
+        "PG-PEER-001",
+        "PG-FENCE-001",
+        "PG-CONTRACT-001"
+      ],
+      "source_files": [
+        "src/hmt_pg_patterns/authority.py",
+        "src/hmt_pg_patterns/authority_async.py",
+        "src/hmt_pg_patterns/authority_types.py",
+        "src/hmt_pg_patterns/transport.py",
+        "src/hmt_pg_patterns/worker.py",
+        "src/hmt_pg_patterns/worker_config.py",
+        "src/hmt_pg_patterns/worker_io.py",
+        "src/hmt_pg_patterns/worker_service.py",
+        "sql/02_authority.sql",
+        "sql/03_checkpoints.sql"
+      ],
+      "test_files": [
+        "tests/test_authority_atomic.py",
+        "tests/test_authority_security.py",
+        "tests/test_transport_binding.py",
+        "tests/test_worker_contracts.py",
+        "tests/test_worker_e2e.py"
+      ],
+      "public_apis": [
+        "Authority",
+        "AsyncAuthority",
+        "TailcatBinding",
+        "bind_tailcat_connection",
+        "worker.main",
+        "worker_service.execute_stream"
+      ],
+      "execution_models": [
+        "sync",
+        "asyncio",
+        "fixed child process"
+      ],
+      "data_interfaces": [
+        "PostgreSQL SECURITY DEFINER entry points",
+        "Tailcat CLI stdin/stdout"
+      ],
+      "resource_contract": "One fixed peer/LOGIN mapping; private configuration at most 16 KiB; worker payload at most 64 KiB; frame at most 128 KiB; hard process deadline at most 30 s.",
+      "limitations": [
+        "Trusted launcher environment is an OS containment assumption, not authentication of an arbitrary caller-supplied mapping.",
+        "Default software composition does not qualify native LOGIN authentication or Tailcat wire transport.",
+        "Worker chunks commit individually; a later failure can leave a committed prefix for origin replay."
+      ],
+      "upstream_sources": [
+        {
+          "title": "Tailcat pinned CLI source",
+          "url": "https://github.com/tailscale/tailcat/blob/v0.7.0/cmd/tailcat/tailcat.go"
+        },
+        {
+          "title": "PostgreSQL function security",
+          "url": "https://www.postgresql.org/docs/current/sql-createfunction.html"
+        }
+      ],
+      "readme": "patterns/13-peer-epoch-authority-and-tailcat-worker/README.md"
+    },
+    {
+      "id": "PG-PAT-014",
+      "number": 14,
+      "slug": "14-wal-checkpoints-outbox-and-redis-projection",
+      "title": "WAL, immutable checkpoints, outbox, and Redis projection",
+      "intent": "Keep authority and replay custody in PostgreSQL while treating Redis as a recoverable projection and Pyrsistent as immutable in-memory state.",
+      "contract_ids": [
+        "PG-FENCE-001",
+        "PG-SNAPSHOT-001",
+        "PG-OUTBOX-001",
+        "PG-CHECKPOINT-001",
+        "PG-OPS-001"
+      ],
+      "source_files": [
+        "src/hmt_pg_patterns/checkpoints.py",
+        "src/hmt_pg_patterns/checkpoints_lua.py",
+        "src/hmt_pg_patterns/checkpoints_snapshot.py",
+        "src/hmt_pg_patterns/outbox.py",
+        "src/hmt_pg_patterns/worker_projection.py",
+        "src/hmt_pg_patterns/diagnostics.py",
+        "sql/02_authority.sql",
+        "sql/03_checkpoints.sql"
+      ],
+      "test_files": [
+        "tests/test_checkpoints_cache.py",
+        "tests/test_outbox_recovery.py",
+        "tests/test_authority_atomic.py",
+        "tests/test_worker_e2e.py",
+        "tests/test_diagnostics.py"
+      ],
+      "public_apis": [
+        "immutable_checkpoint",
+        "encode_checkpoint",
+        "CheckpointCache",
+        "outbox.claim",
+        "outbox.recover",
+        "outbox.relay_checkpoint",
+        "outbox.reconcile",
+        "outbox.rebuild_checkpoint",
+        "worker_projection.project"
+      ],
+      "execution_models": [
+        "sync"
+      ],
+      "data_interfaces": [
+        "PostgreSQL WAL transactions",
+        "Redis Lua CAS",
+        "Pyrsistent PMap"
+      ],
+      "resource_contract": "Checkpoint encoding at most 8 KiB; cache TTL 300 s; recovery pages 1\u2013100 events; finite worker projection budget at most 514.",
+      "limitations": [
+        "Persistent Pyrsistent collections preserve versions in memory and do not provide disk durability.",
+        "Redis publication can race a later authority revocation; every new database effect rechecks current authority.",
+        "Configuration observations do not prove storage power-loss durability or exactly-once external publication."
+      ],
+      "upstream_sources": [
+        {
+          "title": "Pyrsistent upstream",
+          "url": "https://github.com/tobgu/pyrsistent"
+        },
+        {
+          "title": "PostgreSQL WAL reliability",
+          "url": "https://www.postgresql.org/docs/current/wal-reliability.html"
+        }
+      ],
+      "readme": "patterns/14-wal-checkpoints-outbox-and-redis-projection/README.md"
+    },
+    {
+      "id": "PG-PAT-015",
+      "number": 15,
+      "slug": "15-content-defined-streaming",
+      "title": "Content-defined streaming into PostgreSQL",
+      "intent": "Preserve byte content and deterministic boundaries across packetizations, then persist ordered chunks through the same database authority contract.",
+      "contract_ids": [
+        "PG-CDC-001",
+        "PG-CONTRACT-001",
+        "PG-FENCE-001",
+        "PG-CHECKPOINT-001"
+      ],
+      "source_files": [
+        "src/hmt_pg_patterns/streaming.py",
+        "src/hmt_pg_patterns/streaming_contracts.py",
+        "src/hmt_pg_patterns/streaming_scan.py",
+        "src/hmt_pg_patterns/streaming_runtime.py",
+        "src/hmt_pg_patterns/streaming_state.py",
+        "src/hmt_pg_patterns/streaming_writer.py",
+        "src/hmt_pg_patterns/streaming_async_writer.py"
+      ],
+      "test_files": [
+        "tests/test_streaming_scanner.py",
+        "tests/test_streaming_parity.py",
+        "tests/test_streaming_pipeline.py",
+        "tests/test_streaming_boundaries.py",
+        "tests/test_streaming_writer.py"
+      ],
+      "public_apis": [
+        "Policy",
+        "Scanner",
+        "stream_chunks",
+        "StreamWriter",
+        "AsyncStreamWriter",
+        "StreamLimits",
+        "StreamStats"
+      ],
+      "execution_models": [
+        "sync",
+        "asyncio"
+      ],
+      "data_interfaces": [
+        "content-defined byte chunks",
+        "PostgreSQL bytea effects"
+      ],
+      "resource_contract": "Policy bounds packet bytes, total bytes, packet count, window, chunk size, and async quantum; each sink is awaited before the next chunk is delivered.",
+      "limitations": [
+        "Origin replay requires the same immutable source, stream UUID, epoch, and chunk policy.",
+        "A blocking synchronous source.next is not preempted by an asyncio deadline.",
+        "This is byte-content chunking, not a PostgreSQL change-data-capture or logical-decoding connector."
+      ],
+      "upstream_sources": [
+        {
+          "title": "Branch source lineage",
+          "url": "references/primitive_lineage.json"
+        }
+      ],
+      "readme": "patterns/15-content-defined-streaming/README.md"
+    },
+    {
+      "id": "PG-PAT-016",
+      "number": 16,
+      "slug": "16-pace-capability-and-recovery",
+      "title": "PACE capability and guarded recovery",
+      "intent": "Select PostgreSQL service capabilities from trusted observations while keeping effect authority in the database.",
+      "contract_ids": [
+        "PG-PACE-001",
+        "PG-FENCE-001"
+      ],
+      "source_files": [
+        "src/hmt_pg_patterns/pace.py",
+        "src/hmt_pg_patterns/pace_models.py"
+      ],
+      "test_files": [
+        "tests/test_pace.py",
+        "tests/test_worker_e2e.py"
+      ],
+      "public_apis": [
+        "pace.step",
+        "pace.require_operation",
+        "pace.perform",
+        "PaceState",
+        "Observation",
+        "PacePolicy"
+      ],
+      "execution_models": [
+        "sync control plane"
+      ],
+      "data_interfaces": [
+        "PostgreSQL operation admission"
+      ],
+      "resource_contract": "Finite policy bounds, monotonic observations, maximum sample gap, recovery sample count, dwell interval, and pressure threshold.",
+      "limitations": [
+        "Local PACE state is not an authority token and cannot replace a fresh database epoch check.",
+        "Policy defaults are reference values, not mission-calibrated health thresholds."
+      ],
+      "upstream_sources": [
+        {
+          "title": "Branch executable policy",
+          "url": "src/hmt_pg_patterns/pace.py"
+        }
+      ],
+      "readme": "patterns/16-pace-capability-and-recovery/README.md"
+    },
+    {
+      "id": "PG-PAT-017",
+      "number": 17,
+      "slug": "17-postgresql-plans-indexes-and-operations",
+      "title": "PostgreSQL plans, indexes, and WAL observations",
+      "intent": "Inspect the actual PostgreSQL query plan and durability prerequisites without issuing mutating maintenance operations in the hot path.",
+      "contract_ids": [
+        "PG-OPS-001",
+        "PG-QUERY-001"
+      ],
+      "source_files": [
+        "src/hmt_pg_patterns/diagnostics.py",
+        "sql/01_metrics.sql"
+      ],
+      "test_files": [
+        "tests/test_diagnostics.py"
+      ],
+      "public_apis": [
+        "diagnostics.explain_page",
+        "diagnostics.wal_settings",
+        "WalSettings.require_local_durable_commit"
+      ],
+      "execution_models": [
+        "sync"
+      ],
+      "data_interfaces": [
+        "EXPLAIN FORMAT JSON",
+        "PostgreSQL settings and indexes"
+      ],
+      "resource_contract": "Only the fixed bounded keyset query is explainable; diagnostic settings use fixed expressions and inherited statement deadlines.",
+      "limitations": [
+        "A plan is an observation, not a benchmark or guarantee of index selection.",
+        "Observed WAL configuration is a prerequisite, not storage, crash-recovery, or replication proof."
+      ],
+      "upstream_sources": [
+        {
+          "title": "PostgreSQL EXPLAIN",
+          "url": "https://www.postgresql.org/docs/current/using-explain.html"
+        },
+        {
+          "title": "PostgreSQL WAL reliability",
+          "url": "https://www.postgresql.org/docs/current/wal-reliability.html"
+        }
+      ],
+      "readme": "patterns/17-postgresql-plans-indexes-and-operations/README.md"
+    }
+  ]
+}

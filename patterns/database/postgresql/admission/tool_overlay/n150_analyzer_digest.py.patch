@@ -1,0 +1,8 @@
+--- original/src/hmt_native/optimization/n150_analyzer_digest.py
++++ overlay/src/hmt_native/optimization/n150_analyzer_digest.py
+@@ -2,4 +2,4 @@
+ 
+ 
+ def analyzer_digest():
+-    return identity("optimization")
++    return "sha256:" + identity("optimization")

@@ -1,0 +1,3504 @@
+{
+  "checked_at": "2026-11-04T08:47:52.332331+00:00",
+  "source_archive_sha256": "5e4d800ac89d07a2b55670b44032fe2cb93202fc6c78cd17298e9fc5aafc1e22",
+  "files": 699,
+  "unchanged": true,
+  "mismatches": [],
+  "manifest": [
+    {
+      "path": "hmt-reusable-design-references/.dockerignore",
+      "sha256": "b9d48f2ca3abcb6178497d29dfcef1d99caffabbafea1e8f2b42600b26d5eceb",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/.env.example",
+      "sha256": "6de2bea3f50094ca485b20a2423291f46ee29127d19fc85d6406852c31273913",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/.gitignore",
+      "sha256": "d23deb070a98707e8d8367267ddf12a348e9437a8ef4ce25122d9f277d385553",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/.python-version",
+      "sha256": "2d82946ffb2ecf549699ebb86ecbbe663bbc19d53c49c681a1a425f003f80ddb",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/Agents.md",
+      "sha256": "723bf1667f5859363b84f089e89298d554edf1183e51eda83b99ac503c591a5e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/Index.md",
+      "sha256": "461ea430ebba9502dc08df3398c8c68c4f4cccdcd97a6ed6c3ad6214dae092ac",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/README.md",
+      "sha256": "42ae1a21e18e19a784279dbb70b533e46220ad4f10e01ea45a034de5c7b7757a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/Runbook.md",
+      "sha256": "51fcf731df42ffe625f93838a1bba8e0952a55a95845198831ffdea85f99de9b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/SHA256SUMS.txt",
+      "sha256": "26052dec61de2a8a85ccae75ebcf54f9814370a0266bca55e8d12e4a42c0f84d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/SKILLS.md",
+      "sha256": "6f94e4145a65319ef13bd882212d5dd81d8772cfeeed43e3310011e9bdb963f5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/Start_here.md",
+      "sha256": "7003a0607b854ab0862ea03345aad1455a30d25240356bc2e675ec179ef5b5b9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/catalog.json",
+      "sha256": "e7ff7e999152cc4b79db43aaed057d5ce29e7158632933f04b2084b4cf9e82c4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/compose.yaml",
+      "sha256": "f5610d6648bb5e0ad91904a3a579a0331fac4a8cfe460af6ba0d414625577798",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/implementation_laws.html",
+      "sha256": "a9e7897fdb34935f16cd1746dd9d344e94d401d37e2f35a1086744fd61347cef",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/pyproject.toml",
+      "sha256": "2ce6a7f536424abf9ec3c3b17aa907f10864c50a1e45168d8ecdcef40d73707c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/scaffold.policy.json",
+      "sha256": "dfed744de6574b02d909f5453fb8b2c63a2d3996a8d978df38bb942cfd4fcbbe",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/task_plan.md",
+      "sha256": "45ab883d18bae7353f957f26e178833b9dfef52b45767a824d49ed1eb7a2afc4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/uv.lock",
+      "sha256": "586fbd17c2d0e2ec87ec8a01e62dfe7b8cb2b2154b0749c7a54ce316600e3af9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/deployments/OWNER_INTEGRATION.md",
+      "sha256": "0ba4826f0c3255181539a0d733827ab684e3b9ced0217b8af5f5394ba5641df9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/deployments/auth_config.example.json",
+      "sha256": "87fac2d172195198610e3a05e376cd064b36b2a4786f74ef004154ada70b6509",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/deployments/base_image_receipt.json",
+      "sha256": "c0d5bd40f1cd8a136e74b68a6c3e86b8abb112bcba599c896d45035210a930c4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/deployments/hub_client.example.json",
+      "sha256": "175f178304570e1679554793071ffd749fabcbf7047173ce5d1a7fb20fa63a65",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/deployments/seccomp.json",
+      "sha256": "87ab5222ef04c45e2b367c22b02978646ed84d0f813e98739a52947f48c10c91",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/admission_controls.json",
+      "sha256": "91fc8dea8582a31c5e727720eb22164e116da22f9ffae1278c92849f299cde9f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/policy_bindings.json",
+      "sha256": "4f4945572d22c8edfef923f8b0e3db03f1f961c17f089351985c373f78d629f3",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/source_registry.json",
+      "sha256": "189e5f4fe4d70396c29eccbd079988ac5e8c557254482d7d32cd61dd168eb2b8",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/cumulative_gate_ledger.csv",
+      "sha256": "bdd2c4a9a28fc23424d8d6473856e07e62721158bcad7b4be905d8a462d54cda",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/ledger_seal.json",
+      "sha256": "f53412ce053d93a8b2437288f62cee386e1fb0a3aa9be8f6e3b9017cc8ce018c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/ledgers.sqlite3",
+      "sha256": "6988a905eb909f1f01ab22bc3e9c58569943152a24a0df28763fb8b908e7aff1",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/single_agent_ledger.csv",
+      "sha256": "b1c618accfa5b58eda7a208f0b9064ba652ed6d0b01b5543e671c3c9632be8c1",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/architecture/formula_registry.json",
+      "sha256": "b3b4abc9d312cdcd97a5a36d8217311d2906e733133ce98c060609a3cb12cf50",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/architecture/mission_invariants.md",
+      "sha256": "d091caf179fe8ea9a1e16fb19d9133ab9725246c70d2742595c0c346be45bac0",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/architecture/reason_codes.json",
+      "sha256": "b01837da4967e7515033e76da0214d2fee90e73cd236615f86ff20503d58d824",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/architecture/requirements_traceability.md",
+      "sha256": "29567373085b253e52f71217ee611dcd274cb5604e2762092fa8d1ff72b9bd87",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/contracts/auth-config.schema.json",
+      "sha256": "f043d3113bc41ad239764d027178ba0b64eb7173e07f5f788c99c51c0ca40292",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/contracts/campaign-request.schema.json",
+      "sha256": "88af8ceb20450971617f3cb366f993c2ea04a5c691de37b5b5885469ef0a4d0c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/contracts/catalog.schema.json",
+      "sha256": "63f8c9563a4c8c3d8f23dcf25fc46fe593bb468778c3c77f93074132869671a4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/contracts/lane_policy.yaml",
+      "sha256": "1117ac45eb7ec0facff35b708e0b0cb7bb03bfec23b5eae2c849e3d91314c826",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/contracts/machine_handoff_response.schema.json",
+      "sha256": "949b21130ae84f83e0b59ddae45c6f580cadc25931893f411ee1fdcb86efdd65",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/contracts/mcp_contract.schema.json",
+      "sha256": "f59b074c57eb98bdad947df77b3c27c2b2685adef167a5eaac349478707ed8fb",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/contracts/pattern.schema.json",
+      "sha256": "aa2f740640c2c9953970b6ef757976abe0388f386f4a05ce001350c535d7fc82",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/contracts/qualification.schema.json",
+      "sha256": "a5ee30167392dd929e811a16b320af7b18b90660723956dca2065e7856ea81d1",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/contracts/repair-request.schema.json",
+      "sha256": "e65d5c27da7ee0621cd8973f0bd2636bb876daf112d5b68e06e5fb0f91807300",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/contracts/seam-request.schema.json",
+      "sha256": "c6247b51295492ae6f82dd8b0d1443dd1b281d51e25d33c883b6c81169d369dc",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/contracts/transform-request.schema.json",
+      "sha256": "3f1801e280432cc05fe4fff9fb6a8c65be8b58c0965912876366cff412dbe78e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/contracts/triage-request.schema.json",
+      "sha256": "560d630476f21543031963d630853611e5049b4df880f56c22ef6205f80645ba",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/contracts/workflow-plan.schema.json",
+      "sha256": "37b1b175edda8d769f457ff63237625aac90a55d4cda1348ae9e3cb9af39a723",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/contracts/workflow_plan.schema.json",
+      "sha256": "37b1b175edda8d769f457ff63237625aac90a55d4cda1348ae9e3cb9af39a723",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/HMT_Content_Defined_Streaming_v1.0.0.zip",
+      "sha256": "611bb42d0c346948b2aa34f7495fbd41732503891f88bc5dd04a64d9fa0e96c3",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/HMT_Peer_Bound_Authority_v1.0.0.zip",
+      "sha256": "a9f399b80ff87d02c724f34eb1cd5126ad122c8f67f05694d28ae0e54ba23e0e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/HMT_Agent_Domain_Procedure_FastPath_WorkflowInjection_v1.1.0.zip",
+      "sha256": "9c541495b3a47dbf554e3ba931adef49ca58fb5c805da69fed9bd6fcfb8a4eb6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/server/README.md",
+      "sha256": "bd6b5507700866f4351c438cd9042415568b6aaaabbc3c533e3958af288de1d6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_reusable_design_patterns.egg-info-PKG-INFO",
+      "sha256": "f1d2dc463d5e5527ac6d0629e084bd1ef3df60c11424bf208f9f334f25df8cf4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/provenance/HMT_RDP_MACHINE_HANDOFF_v1.0.0.json",
+      "sha256": "8f115efec3e17c940da3c7f5e3b5d0ac2a7577c6e44802cc348e66ccd333a826",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/provenance/HMT_RDP_MACHINE_HANDOFF_v1.0.0.schema.json",
+      "sha256": "2829957852b31c6bcadbd83430e1027ae0eaac5c62c6be9d8c2e5cd4b336e555",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/provenance/archived_checkpoint_binding.json",
+      "sha256": "76e7ed73994da27ce32cd2c6342a4cfcf30696d8658c592815b896802be4c490",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/provenance/artifact_history.json",
+      "sha256": "de13411425e7db7bd65dbb0498c91a22d1837c2528f1a7b4010f472321b30d2c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/provenance/build_order.md",
+      "sha256": "4d31f086128db32a0ba3677d7e7c41bc905d7cdfaa2eb340219ddfa44c32e177",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/provenance/ci_artifact_retention_pin.json",
+      "sha256": "89cdaad8f9f3ed46e3ade4eea8e3ee8787b319b91887fa946edac192c5f8263a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/provenance/ci_reference_audit.json",
+      "sha256": "3a5d2f09dbaf723f8fd1fa16dd5aba52bb662c59c6a1c25dd87a642661eba148",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/provenance/legacy_state_fixture_residual.json",
+      "sha256": "71e8a1e5a44d2e983d2329edd386d4d21d90863c68f19e13d9915df2676a2932",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/provenance/requirements_inception.json",
+      "sha256": "25d769afd04419f51f7cd91c3505ed40602352a0fa4e3120a2fb7728e056553d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/provenance/reuse_discovery.json",
+      "sha256": "a45cf43993ed3c1a4062c950fb02f37d09c164aaac9d3468239e2d20e79c8b04",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/provenance/scope_amendment.json",
+      "sha256": "8a14028cbe78b14fe80e592cafe223580b3f0ba759edf21c96d97c9955553bf6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/.github/workflows/candidate.yml",
+      "sha256": "2daf1417e771e80798c8aed0fce46830fcca6b0ce8455b33efeb01a197cec99d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tools/command_crash_child.py",
+      "sha256": "1f8a27acce3df90581155e649cfcd7c08272993852ace30bcfdbb2fc5b0d97df",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tools/coverage_gate.py",
+      "sha256": "5d7f1772ef3ab3037ed4603226441680dfb8f2b5be78eb638c5dc164b18fa39b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tools/gates.py",
+      "sha256": "519ea28492402089ae1c3eb9f080dce801c68cd23f41a8e8b5898d738f50bcb1",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tools/mutation_cases.py",
+      "sha256": "f6297683b1da7b7127899660c7a7dcd810715b82b2e013aa7a35ac7888796d3b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tools/mutations.py",
+      "sha256": "9f12e57d2ea91ff9a9465fcbfdafa582849095b1511acce55787ab70cae7c275",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tools/native_books.py",
+      "sha256": "97b420db609f69d98cb4805e7c59c0e1db98bd35f9f179c534cfbe9cfb56287e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tools/network_smoke.py",
+      "sha256": "205c1e2522e5d7b9e63f9945d413ebd78bae041852ede25c5bfbe917107da57e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tools/policy_gate.py",
+      "sha256": "b25caad598e72ae69462eeb7d4422e614c6fe10c4cf45720ed69e0514e6672d0",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tools/reconcile.py",
+      "sha256": "f06f2f9ca47daf255e3c42722150f92657bdd3d1834808502c6609a8c9b11994",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tools/release_archive.py",
+      "sha256": "2f592753700eea76aa72409f33f25c131cf8d92adba84a69624ab18207324b66",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tools/secret_scan.py",
+      "sha256": "80400e3ce6da8b3eb512afece8de53af575755ab6933ef8c9d335d34595c0ccc",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tools/smoke_fixture.py",
+      "sha256": "4fa7e51371f1d5582664a07447cd6b910e635f72dfd261a613cc2b3c914f98c5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tools/structure.py",
+      "sha256": "3a25cf12775d77d50ddd73f12fec129802fdf3362d0a2814d8d1fbfe37bc4d7a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tools/supply.py",
+      "sha256": "5fac382783d3282ca50a293bf231ad01dca18c92c3ae4c5cf8dba9d629b58792",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tests/conftest.py",
+      "sha256": "228b9eade2f731915c5400e8fd70fb6ae226706ae90936bd1cc390d33b571635",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tests/test_admission.py",
+      "sha256": "7c5d835cfb0f9ff1bbf6025ad150e75d839531aa5efeb4b70356427b4bc811cb",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tests/test_audit_transport.py",
+      "sha256": "475f8fe5d0b64289a9a72be5c76b684c51244a9e0f99a6a210ffe06c8e4a5a9a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tests/test_auth.py",
+      "sha256": "24cd6c2687d7a601cab574abaff029b3dda95848f3356fdc4fa116675051419f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tests/test_books.py",
+      "sha256": "b42f6c6435762e722bdad238dd7032b8ae17620bd613d48b601aa058dda3bbf1",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tests/test_catalog_contract.py",
+      "sha256": "5e7c53d6b770d9bf7b28e02940f5c276b91358f9e0bf3ef2f3cea72494e8a901",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tests/test_cli.py",
+      "sha256": "eea2eadd2f8073eca152e6ab10a5b672cb353ebda8037c35454d3fc339aff826",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tests/test_command_process.py",
+      "sha256": "90773e8b2f24765d449afae9de7087c81b8eae8c07afddcbe041e3c56da4239e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tests/test_environment.py",
+      "sha256": "11d96b9302d1f449b823f96c1dd277c6da32a06cd5a44a7cc0810728f5eec26a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tests/test_health.py",
+      "sha256": "5907a7cd97138400834faa10bd2fd92c8aee78d4d682d80794b31d72efaccde9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tests/test_integrity.py",
+      "sha256": "365314c3bd9adb7c2c61de43b5eca682e4eb2f4626f97abf53823f5beb2abdfb",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tests/test_model_adapter.py",
+      "sha256": "36ba1eb41adb07f61489bf7540e93267682b3112a98d0e7f7807e9f0d68a45b7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tests/test_native_http.py",
+      "sha256": "3f6deb68404cb406f767bc5d3944d099794828e697a76f4f641c6740f9c7c5e8",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tests/test_pattern_boundaries.py",
+      "sha256": "f0d0956eb16910048d6e586c1194cefacea12b6d2589987d2d8430b35a9b24a6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tests/test_pressure.py",
+      "sha256": "7fd699e5390e6f1d6321b36dfa656143f151e3b784db05026a9d5f859818ae90",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tests/test_seams.py",
+      "sha256": "f2787c92498758d2c707cb6b3e74551caa83dfd53dc0d2c12b25c380c408da09",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/tests/test_workflows.py",
+      "sha256": "9a60ddc3b120081403a307358517e024351e55118520773212548819eb1b73d6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/release/BLUF.md",
+      "sha256": "c85fde69cbc2d13bef598c83ea6b68347e17cf503e90b1601d2f3ff2ca8aaea1",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/release/REVIEW_DECISIONS.md",
+      "sha256": "6d46a47c920aa6a03e03e88f8a3d71d93f84df7cf67367d548200a638b43a0e5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/release/SBOM.cyclonedx.1.6.json",
+      "sha256": "8caa0c3bcd0e9c760326fa05fd56389d35f951d10f1ba21414f4ea2d6701bd8b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/release/admission_host_pins.json",
+      "sha256": "20504e8653a2f457a774b51fe643f5d4a9d5fdc7da7db99cc1d5a51ca6db59ba",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/release/artifact_manifest.json",
+      "sha256": "b08b1cba1e2d415fba4e8d8c13e17958494dc73969ca81c6abdd0638e7c9433b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/release/final_source_bindings.json",
+      "sha256": "ee0a5563af82d3a3362e4c711d9faba87e59a5465db7cd50076e3e74ab90518a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/release/library_manifest.json",
+      "sha256": "820705d4709f0302f8c1b2c9cce432cd45c4c6e9bfe9a86842ca2756cc05e75e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/release/machine_handoff.json",
+      "sha256": "fe98f56623fd2134f6ca36b189f8c4936fe4163c3e2108fdd99914c22fe644a5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/release/requirements_traceability.json",
+      "sha256": "36b5e7aa3bc2a3cefe54da8c4f38e2dad2a799dc4438edba98898aa79347dc9c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/release/software_status.json",
+      "sha256": "d58d10c5ed15327b1953ada3b808a172415980205f00e148ed8f153bf7e348d9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/release/stage_outcomes.json",
+      "sha256": "1a6d0cc7846a82bc47a2dca67be77d89656a0fc3401124a036d1584a3ee391d7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/bounded-reference-transformation/SKILL.md",
+      "sha256": "875f03e5707e623faa9fab68a8e9bf8864424e12490032008d802e4324d754aa",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/bounded-reference-transformation/input.example.json",
+      "sha256": "a9a3c0ce3af36a67422243b12dcaee97f6fd4ccb66d1f7bd675d924c4835bb39",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/bounded-reference-transformation/input.schema.json",
+      "sha256": "3f1801e280432cc05fe4fff9fb6a8c65be8b58c0965912876366cff412dbe78e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/bounded-reference-transformation/output.schema.json",
+      "sha256": "37b1b175edda8d769f457ff63237625aac90a55d4cda1348ae9e3cb9af39a723",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/bounded-reference-transformation/receipt.example.json",
+      "sha256": "f3cd94b3d4ad96b3e790645ad8f4b53ef2aaa3ddd27151b745fe7cdb963fbff4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_reusable_design_patterns.egg-info/SOURCES.txt",
+      "sha256": "97031e676994563d2f0e198b16e46f2e3e8e97aa5286e1313c3bbd383b087fb7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_reusable_design_patterns.egg-info/dependency_links.txt",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_reusable_design_patterns.egg-info/requires.txt",
+      "sha256": "8ea707c5a974e1ae748cd46b8b9aa6d9b95b26fa905bf27e121e52ba672077ba",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_reusable_design_patterns.egg-info/top_level.txt",
+      "sha256": "306119ead76f323b073b7b486db4754e023609bac06562cecbc9318fdb721d90",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/pattern-triage/SKILL.md",
+      "sha256": "629eb7fe0fdba566a33a468e51df4c996950de81dd3fe2cc73333e72a9c15237",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/pattern-triage/input.example.json",
+      "sha256": "f0d360ed51b1569bfa7015a6cfef4c38fc76b28fdd45b26ba98f4955b6474638",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/pattern-triage/input.schema.json",
+      "sha256": "560d630476f21543031963d630853611e5049b4df880f56c22ef6205f80645ba",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/pattern-triage/output.schema.json",
+      "sha256": "37b1b175edda8d769f457ff63237625aac90a55d4cda1348ae9e3cb9af39a723",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/pattern-triage/receipt.example.json",
+      "sha256": "150542ecb225818522129185d50b40d014c45c5b2ca1a938c1397b39751767f4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/provenance/historical_payloads/HMT_RDP_S0_Checkpoint_HOLD_2026-10-11.zip",
+      "sha256": "a319573ffc85caf80a19f1fdbac9be2c5150891581df25d109714e4b30e853a2",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/provenance/historical_payloads/dtk_v4_original_cleanroom.zip",
+      "sha256": "bad961e1dbbe38e36684a7ae984fd3d9ca5993f386699b90e1a3251abcd1b536",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/integration-seam-review/SKILL.md",
+      "sha256": "7a4bf9f78875a1b5e36500d67913d873bbad5f561b603f9b4a07bc09fb92e1a5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/integration-seam-review/input.example.json",
+      "sha256": "a6567e22ad404f943923f0c8bfcbdde5b9b650bad47779698f7931851eebea33",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/integration-seam-review/input.schema.json",
+      "sha256": "c6247b51295492ae6f82dd8b0d1443dd1b281d51e25d33c883b6c81169d369dc",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/integration-seam-review/output.schema.json",
+      "sha256": "37b1b175edda8d769f457ff63237625aac90a55d4cda1348ae9e3cb9af39a723",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/integration-seam-review/receipt.example.json",
+      "sha256": "52742652b507d1295d7ae2c420359d24216c390228e958ba171f43e479b08b8a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/Agents.md",
+      "sha256": "9662610b26c08d9c05b4b508097f58f62aacbb58efd0d0c2b09220f6519c5220",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/Closeout.md",
+      "sha256": "b908c97ad2607b2f472e2dc5344dffb1b0805e5d213caddfc22abf343c267029",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/Index.md",
+      "sha256": "b8365b787e6484928b35204200b93390648938b9b22d6d5b74c61db1edcad839",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/README.md",
+      "sha256": "e4836760f0d7752ebebf9a1a5a2e94c96441792c7f98d3e47065e9650b40b5c8",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/Runbook.md",
+      "sha256": "e9b33cdf64e70a9c2b54e28e5c1c9175fe9a9dd570fd3f135f84635676086602",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/SKILL.md",
+      "sha256": "b0f650918602714e4e24d25d8f1b9a73dfaf942772651f11371c1e4c899ec12b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/implementation_laws.html",
+      "sha256": "ff3c9379358076e17265ed424d870fe0bbcb8e31aae76a5e4e661e673be081fe",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/pyproject.toml",
+      "sha256": "66c8a8a73ccbb089570fd74e067874df7e4679b62844d50fca70b4efec6f83de",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/rdp_alignment.ttl",
+      "sha256": "491a66c5d8dea4e811f96e291d88f47d42d2f938d42b335da9008bce0e358aac",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/rdp_closed_world_shapes.ttl",
+      "sha256": "1ad59477b29b1118124377ec018dbc2c4a60472242a1b7b5fdf075105b8d48fc",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/rdp_core.ttl",
+      "sha256": "4698ac4f3bacc4445919491df95df90ee841ee5f80cdef47e44ded8c42017d34",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/rdp_relations.ttl",
+      "sha256": "c00ac24337b3eb580d6ea31162af97457168870ddba86466520e8c57befb3ee8",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/rdp_shapes.ttl",
+      "sha256": "e726f7ba8047275ff250b0826c08e046f8ab58020dd0d93b528022d432332996",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/relations.json",
+      "sha256": "e84ab163ddb487510810379dee845afeb9b49d0225aeafd639839d05e19cd19f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/requirements.lock.txt",
+      "sha256": "c70e1ddf2f00301c4d7503fd43aef7a82896f380a157419c14b9dfa96b672cad",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/task_plan.md",
+      "sha256": "54365d60f643d1999690444657b03493013aa4fbf03467f6f0f36f944afcacf1",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/uv.lock",
+      "sha256": "cc8ce2f1264e2f105cc85d24b8def86f37bda87938540f34afe158430579ad7d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/__init__.py",
+      "sha256": "07f73fc8f81c59c96cda0da10b5e4e8c4e38a4666df6e50cd536671b80b6244b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/audit.py",
+      "sha256": "86561eb873db827f8d92a65790aeb38452d408248c78925f5b15b52820f3f9b7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/auth.py",
+      "sha256": "5727a00b8d1c9c43e817073d6b977f9407fa224977040ae74459f55e222bac48",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/catalog_models.py",
+      "sha256": "503a393cd6a4fae293d5b10fe6c8b148e219cbc7e23df45cfcf81173b9f09f94",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/cli.py",
+      "sha256": "ef306cef19a1629f52c41fd6447a561b330018f6a140541f5e6e3427c26d073f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/common.py",
+      "sha256": "62f093a2d0576e6ccb862f02901a0877f7e187d7990778e0745be0ca275b16e2",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/environment.py",
+      "sha256": "27c42be7e74d5e6f24f232da82f74ec8f4c3186ce3ea61a955389469bbaf5c5b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/health.py",
+      "sha256": "037e0ed1c7a9c35cf51488e87667c3dba4748b7ed4e68fa9c81a323cdc6f17b5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/integrity.py",
+      "sha256": "98795c8c9d291117112c2cf8e062004e7da3a9a2a4a4e188ff3899051224b04a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/json_types.py",
+      "sha256": "9104b94094006428adf00e9e599b1ad6355e0847e704976aa0430e48ea7731ae",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/model_adapter.py",
+      "sha256": "ccec44039ecc73b4032c0af2ef3691ee351b09d99aaab25a8d82c74ab25dd42d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/pattern_inventory.py",
+      "sha256": "433f68a0376719ae4aaa56977ae8f2305330585d45e63a4a29e6d69f1f54048a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/pattern_loader.py",
+      "sha256": "4441f064fbdf17efe3b8f17c4c563b7dc01d8437725d0bd1abebd715eb15a852",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/planning.py",
+      "sha256": "093ee37517eabc12fbf389358d466a21414f5c62b8723457b985f871f9d27377",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/registry.py",
+      "sha256": "77495cbf2419d1f017bfcda714b9ceb8feeff181ed6e83e6a6613065b552957c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/server.py",
+      "sha256": "ec029314cdfc5af9011a587c61e99010e9cf1b56b517e873bffe97d184626c76",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/server_tools.py",
+      "sha256": "0e26396f7fa403c7011efa9cb5782175840dca1160c72b13b758c6dca1eb2e35",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/service.py",
+      "sha256": "041817ac6a9721b8f67422044537f02370845d6ea8e43d899cb26c09cd660f87",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/sqlite_store.py",
+      "sha256": "4052fb02f4cf7662b0ca93bd50265d0d3673eb16e3537e017fdc1a600e1e8cc0",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/telemetry.py",
+      "sha256": "1b9d62758b8e49c0718ae0b0e44c930d39bc02147a0ed39f819640b15a7a37cf",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/transport.py",
+      "sha256": "0f4311dc8080a5078c131831c1a761b751985e87efcc9c629294eda642c080ca",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/wire_contract.py",
+      "sha256": "9d74b5467ae694ab07c6da4412c0c58f9db94c0336e11b3d6a8f05f7e06f80fc",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/workflow_args.py",
+      "sha256": "9ab70fa4718ce7c96b3ed267b2d986339d9ae5f4acd409c779dde82deefba0db",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/workflow_models.py",
+      "sha256": "782a11c5146eafd9eefa07e5d3903c9fc00a7ba1cd423cc5c57de9887151ebb7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/src/hmt_rdp/workflows.py",
+      "sha256": "d19937aca3dce8aa04e4e7ea53e122095bf645b6ebcf5bb81cb7664596551e23",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/command/SKILL.md",
+      "sha256": "50fdb13cdf7f67969086d860645a3a202b8a948fd2dc22e3d9f5b188ae7d2a07",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/command/contracts.py",
+      "sha256": "d98ce9d900f98a7d48dd45eca4d926be680be6e998f5d42c9c5aec2112375cd2",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/command/example.py",
+      "sha256": "39a2ef3f0feca4c9cb175b4e6f01e2983fe1cc8c39062be1cdf9ab825103fd69",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/command/lesson.json",
+      "sha256": "6da7f52157838dab023e2f0fb79f7606a75793a3f51d32d9624c1cae0c2a7cd5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/command/manifest.json",
+      "sha256": "5d3ec356782b14f26c251b5dfa854abc262c1c690bc0974acb32348555b57531",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/command/notebook.py",
+      "sha256": "962864633ef83091a02d71085dd0d75821d12d0dcffd22fee8b6187fc5925ba0",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/command/reference.py",
+      "sha256": "ac618ab3a5d7acb03dd712463e9f0236473b560b379075e5db89e89d6f994d6b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/rrca-repair-plan/SKILL.md",
+      "sha256": "2f2a180ef443087a484e21db575f51b68e716fb052abfb6c3c152ad54065e2d5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/rrca-repair-plan/input.example.json",
+      "sha256": "e9e1fc27ed541bbcb7f11e1af31b28b21dde2917c1823db1de3d86588e446725",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/rrca-repair-plan/input.schema.json",
+      "sha256": "e65d5c27da7ee0621cd8973f0bd2636bb876daf112d5b68e06e5fb0f91807300",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/rrca-repair-plan/output.schema.json",
+      "sha256": "37b1b175edda8d769f457ff63237625aac90a55d4cda1348ae9e3cb9af39a723",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/rrca-repair-plan/receipt.example.json",
+      "sha256": "d72c2748c827b586954291a6e4a9dcc2a9d8f23573ea7f967a06af34d2df8f93",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/qualification-campaign/SKILL.md",
+      "sha256": "af77486b316fba630b7e758335356ebcbe36607827142f3ffc4b0bf73ada9872",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/qualification-campaign/input.example.json",
+      "sha256": "a5707edb0bd36b9bfcfec06315dcfc14bd35b00b7aaee7bad6d82b06284461cb",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/qualification-campaign/input.schema.json",
+      "sha256": "88af8ceb20450971617f3cb366f993c2ea04a5c691de37b5b5885469ef0a4d0c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/qualification-campaign/output.schema.json",
+      "sha256": "37b1b175edda8d769f457ff63237625aac90a55d4cda1348ae9e3cb9af39a723",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/qualification-campaign/receipt.example.json",
+      "sha256": "0f9541cd1514f5e1fe776e7abac2c9668eb74cfa5a6ae31d3493774dd4422150",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/strategy/SKILL.md",
+      "sha256": "5976dad54751d46d139f295ff1bd17a9297b42aa764a8fc5985092eb264e7227",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/strategy/contracts.py",
+      "sha256": "c0952c5745f23e30606f4141672707d2d8718f0e78ba6477c02662bb0065e10e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/strategy/example.py",
+      "sha256": "1963dfa6cd8a72d4c710789fbc772fa55da5a3b54b9c637a531be9bce7e9d6b5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/strategy/lesson.json",
+      "sha256": "87fa5cbb138982dcf41296b5d54e8c3c227e7110cb3d2cf19dc545bfaccafed5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/strategy/manifest.json",
+      "sha256": "c4e70c5a3f3e4fe94c16fc56571912c7d74bdc434934c952ccc2c689100b03a8",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/strategy/notebook.py",
+      "sha256": "bfe3b5eed875964f4d9295b4cd162ff06d70dbd55148308f7e76c5539e5728ba",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/strategy/reference.py",
+      "sha256": "d5dd2ab66fc74aee991c326dcb59954339a97f145af2085f4ac49757244b02be",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/chain-of-responsibility/SKILL.md",
+      "sha256": "5697435e10ec60f5513064c02ffb12987c57c0a0b3ee23982b7bfae1765bc54e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/chain-of-responsibility/contracts.py",
+      "sha256": "be48b61af6ae69f7f40e42ff9ff4f78d89ab387c8dfc260c72a9e022721feb2e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/chain-of-responsibility/example.py",
+      "sha256": "0ceee402e6e02bd0d6650b2c40720ffbc9c96dd0a6ab5c7cb850edb0ec264749",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/chain-of-responsibility/lesson.json",
+      "sha256": "f09b23670be4d38a68c2a9e29aa31489bfbab0afc4892244f682d41c384d34fa",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/chain-of-responsibility/manifest.json",
+      "sha256": "38c2a4d2d7940f832bbddaadea8a3cda0e134c05715e053d37219381f37b0cc4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/chain-of-responsibility/notebook.py",
+      "sha256": "4f24c7a55834be71107a40241353992b3b7c47a5287918a222525fe3c23dd183",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/chain-of-responsibility/reference.py",
+      "sha256": "acd2a71431cdf966545e0d6d026bab7b85af14e0c22b0534b0d427ac85ffaf72",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/iterator/SKILL.md",
+      "sha256": "235dbeaef814d6d0d96bb3bb921ca061808c87d1379280f155bc3090460cebd3",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/iterator/contracts.py",
+      "sha256": "7f9a2cfe3bd46139957ab03c69663e2665e9bdd9252b820f6a0502e3520c58e5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/iterator/example.py",
+      "sha256": "dfcc448f64188136be3627919f06c484919884958d56a0a94642d80e5ef4dba6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/iterator/lesson.json",
+      "sha256": "bde08e5cf5004bfd085fd26b39dee14b0302a1f3585543bd24a02dafe5481146",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/iterator/manifest.json",
+      "sha256": "c960b153ac0b71ee63df0bd682864c89fc4e258ad7bced94263cb2b524ff68eb",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/iterator/notebook.py",
+      "sha256": "be1692324bd6b6768537c1c6ec57108a032a7c9fd2fb9802f99cee8f65a858fe",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/iterator/reference.py",
+      "sha256": "4d8a50edd8f911f355df11c97f797bfabb7cb08b17725b9ff05e240661348b69",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/state/SKILL.md",
+      "sha256": "0b04e63d82d06738e08208ddaaa63b0184b17e737f2fcc20c032646e85d9be9d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/state/contracts.py",
+      "sha256": "69dcddebe9977970cb0b7021efcd2b0ead4bb64e51078f4e61d19993b0046559",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/state/example.py",
+      "sha256": "a3957cd9aabd1d6d22f95cb7526bc4a70f02b2530f796edb9ae03ac26a79b237",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/state/lesson.json",
+      "sha256": "7d9ece3678df443eecc72423c034fb53f6b0ef4961bfd2331d945a4815687c53",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/state/manifest.json",
+      "sha256": "be3bbc7f683524ad7e0ccaab7ee8111381375e3926b30bc4681a45ec8f66d1f1",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/state/notebook.py",
+      "sha256": "8c232f080841cf6c2f7c9b9d93bfebb29f7ce8c2b8146f084a33ee1d555996f4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/state/reference.py",
+      "sha256": "924dc22d3e3686c00c756bdbd94fc7e490b8a3d6688c4a0bcdc50a7d004af247",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/global/hmt_global_declarative_requirements_v1.0.0.yaml",
+      "sha256": "d0dc366e9b1e6e5c3ead0333a4fdb5147ca78ddd7baa5aaa3b0a64ad6e3a386c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/observer/SKILL.md",
+      "sha256": "0f109489d904a4e4c4611f8481ea82794100667f9ed6f9ea49795f9d0606363f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/observer/contracts.py",
+      "sha256": "e7afef2e8633ef0a378a3c66a29a11408af8a7e50794b76b202af13e0e1a0231",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/observer/example.py",
+      "sha256": "c2be7c8dd7b1ae30fceccd06ce199daedacedc0b291544b430b68b99c2903208",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/observer/lesson.json",
+      "sha256": "9045d866d04a1dc1541d6a5237f0c3bf065fd4477ac375bc44dbed9bb86a94c6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/observer/manifest.json",
+      "sha256": "425cabeaf6cc5836719e0f273432fa935f1ea55ca9aa136f2c441e5798e6c121",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/observer/notebook.py",
+      "sha256": "c960975738a9b80cd2527626cbe069b7d2650d8f16f2bdad61b3d9c78148eb41",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/observer/reference.py",
+      "sha256": "252c8c0be4b06ba5a0cca01a6f18ac31ebf7c58301dcf21e0526d11310375be2",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/bounded-reference-transformation/tests/test_bounded_reference_transformation.py",
+      "sha256": "fb081b50afca35d64b1437ed594bf5c30d9722539ed261d59c3d06a02bfc7355",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/template-method/SKILL.md",
+      "sha256": "863cfbe911585da12d8cc0dcde402c94513efd8d0fe3827c4fcfdba782965139",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/template-method/contracts.py",
+      "sha256": "8d609918628f6b9d6a7892938797fb0f9c449f8794d7b51a0ba4591dbb58e1bc",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/template-method/example.py",
+      "sha256": "94ea5fa25a26941ff3ef023abf1eb0344c582a7c0943c5d9af2b51457fb61c19",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/template-method/lesson.json",
+      "sha256": "15857fef434a071987998e755cfe6a8e94fde508f9349c9edbef6ee4cff74060",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/template-method/manifest.json",
+      "sha256": "c0bd108a8791e98e57e8a3f7ceeff8864c8d1bc30c9509b73564cf9aeda0e1ab",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/template-method/notebook.py",
+      "sha256": "bb3a8be9f7bda5d9ec0cbaab1e4d3b87892bc9c7e6e29bf2c06ea5affee7b4ca",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/template-method/reference.py",
+      "sha256": "b89f63d1f0adc451ab0dd447b95a5572053724303f2cd37cd4d0accdb0046837",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/agent-profiles/agent_profile_catalog.yaml",
+      "sha256": "a7942318081974287cd20dd81c6c5e3831c04aafb30ae87165180f2e1f697f79",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/agent-profiles/blue-team.yaml",
+      "sha256": "c7dffda9870dfa805b56479c9b72bf38c7d279a34569e4728706a6c0c8ae9c57",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/agent-profiles/generic-builder-specialist.yaml",
+      "sha256": "8858a8e6c7a5094d4534e14c8c42ddc35a5c2d2b28fe996934938bef0e45b7a3",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/agent-profiles/planner-decomposition.yaml",
+      "sha256": "8d907b5c60bd2f862a6aa167fe8aced42b88bec5d0ffef9b1b09028ab7afcf35",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/agent-profiles/red-team.yaml",
+      "sha256": "5ac639f7ce533326657d55a4568e66d0088c2e947a2375f42c77cf9ad0a49075",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/agent-profiles/semantic-convergence.yaml",
+      "sha256": "2262b1000ecab9e1ce63e016ba6e1b2dcbcb3143b0a3dbca9f84ff42d895767a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/agent-profiles/task-orchestrator-id-tagger.yaml",
+      "sha256": "34da96705ad8709840f63e8b532e8bdb6a984fe5724b57688176ba7a0c0e3226",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/adapter/SKILL.md",
+      "sha256": "67dd2f060ccceb0a520c2b277747d953003d9f595c821cd6c275915ae30d565e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/adapter/contracts.py",
+      "sha256": "a65adb6adeabaecb1202e2423c5848413e549e93a4411f8f187f5e22e3bf09df",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/adapter/example.py",
+      "sha256": "6207cb7669c873cde8d3ddd5dd41d9e501bbc43050cf29a1c4874923d652fd77",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/adapter/lesson.json",
+      "sha256": "24fc718f9774da9997d3e100239c483158ed1706db94e04b3ebd6a40913a0dff",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/adapter/manifest.json",
+      "sha256": "258e15768999a2cab50b925c9014c8829fb88c10a2fcb8ff94294398c85e216a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/adapter/notebook.py",
+      "sha256": "f567bb4cbf58867fe4c6aa068e257c176dafea4e2f4246c1080ed7891ed59506",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/adapter/reference.py",
+      "sha256": "baed8510a6f46133bd5ea6ccca8f6928a76471116b89f423520c42c50b27475f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/decorator/SKILL.md",
+      "sha256": "5dc88ce77c3241e42163312b60be2b40b8b5fbbec0ee8bb4e5cf8ec06d2bdb36",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/decorator/contracts.py",
+      "sha256": "fe1597125bd550ec42dd1a17cf947c7501a64b3523a48a33c3b45418b74d962d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/decorator/example.py",
+      "sha256": "276f0552ac5e305dc92ea5f38cf3e528dad4b70310a6f1bbb2723c2faf330356",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/decorator/lesson.json",
+      "sha256": "7730fee6072afe6aed9916f20d14353515f34334bc5550459afc019805ee4267",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/decorator/manifest.json",
+      "sha256": "d16e229f78c223b89e81d486727fa9bb60db8b355c7507b933b195d7c6c20a49",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/decorator/notebook.py",
+      "sha256": "819d57a6b19eb6f1e8a6cef8b924bce3eeaee9da6e8a8b68e3f7ef8c00f6ec04",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/decorator/reference.py",
+      "sha256": "eab911f9c6f01781b24d704d291fc82bcf12ce0070c8f6f2c487492f79216b13",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/pattern-triage/tests/test_pattern_triage.py",
+      "sha256": "34cf453a144320b53451e9b7a740757ff21be92d018a695e0e99b85028046582",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/composite/SKILL.md",
+      "sha256": "ae89ad27e28a08666d37debb409f0a2d8f921a4e021ce3b4b6425c176f5429f3",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/composite/contracts.py",
+      "sha256": "edb75fed4ad8edb196fc3338d3118cf6ba9835e691ab12c821a11552beb98c2a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/composite/example.py",
+      "sha256": "e356b17b3def32fa463658400d18518f79e94b88f1454869adb8aa11e1f2be57",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/composite/lesson.json",
+      "sha256": "e7c11140aa9872d4e60f9ed83a28799a3bdf7cd98aa93a56103522c753d85f6b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/composite/manifest.json",
+      "sha256": "68e71b74894ca708b2d98ccd3a167f551e367e45178d5c02daca3126dc651db7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/composite/notebook.py",
+      "sha256": "5bb69c6c82864a65dc82f46b74377cd04e675ab528853477cb908088406fb02e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/composite/reference.py",
+      "sha256": "4c215e02b46a93659c0c87aaa710c315fa83338fc8661938fab4ecb3d63fb5f8",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/proxy/SKILL.md",
+      "sha256": "55a3af1f870a450af98bedd8aac7c67a785e9b75b246d1c4fcb45a785458bcda",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/proxy/contracts.py",
+      "sha256": "013e967f6f21e614a25cdf90785e1e14f2c4288605440d94aa9753617d2bf7df",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/proxy/example.py",
+      "sha256": "7297339f8a5350dbdce3d8a04e5135f7766161983b019d359be857bd7963fc73",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/proxy/lesson.json",
+      "sha256": "90f588a418fb3cfa4ee4b7865fcb247d27855bc4bd2879ff31fc04762ec40317",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/proxy/manifest.json",
+      "sha256": "3feb5559637d242d465edc1b375886835e7ee828069dae44b1ee4b41e071d23f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/proxy/notebook.py",
+      "sha256": "d00059bfe56e17d983f7bb0891d7aa65c93b0add1691e357d152104b00281fd3",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/proxy/reference.py",
+      "sha256": "4041ad190c3a070da9b593df4cbd4ae69790366ee990227b9df77b37faf34bde",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/integration-seam-review/tests/test_integration_seam_review.py",
+      "sha256": "84cc48958fc92cfbb2651e23c8a75490dffc9d70974dcd0e12658e87b0525604",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/facade/SKILL.md",
+      "sha256": "e1ec97b6376c58c36e5c67a75bfc0c3f45422cf79bd6c6e4396aa3a5a67d6ba4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/facade/contracts.py",
+      "sha256": "3b9eb80d61017c558e04c3bffd7adefa702827d37dfb296f2851f6566dd63437",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/facade/example.py",
+      "sha256": "9d96a225a3c78ad3c9e0e256ce165125b5ee83f6894daa67432241085d74dc55",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/facade/lesson.json",
+      "sha256": "3907b78437137c3a2475a44933127f20b86e16b901582fd0747e44829b2b80cc",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/facade/manifest.json",
+      "sha256": "4546e11bd787c9cc2ccd428da4cf0e03ef5e4cd956c85ac04ec5dcad5a03209b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/facade/notebook.py",
+      "sha256": "15bc4f1d3edda646c533d322c489bbf858ea8d6a58dd9486a431764be1ce2bf5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/facade/reference.py",
+      "sha256": "360c277bd8f6a23a87e96f71dcdf3287e5f1f9d08e2cbf286ceb2d3062ff04a9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/provenance/field_audit.json",
+      "sha256": "b429cf36b7c39454c4befc3edca73a2412edf938dbab087e32776dca7a8a916a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/provenance/field_extension_ledger.json",
+      "sha256": "ee036726257b38db848f2cbb73d7e5a7f8bbb2231e571d3d7224dfead1a810b3",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/provenance/input_manifest.json",
+      "sha256": "98b229b419e7f3f0c955ef817e324f00dbe749636b2e1ae3c39618ec5ae1acfc",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/provenance/requirements_matrix.json",
+      "sha256": "17c9fc62a3f1941019f95dc4991dbd6886ff91a748f5bd1f163616bbd73cb98e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/provenance/source_mapping.json",
+      "sha256": "6ea1f4960c23d87ac46e9393fa34149109943046b59c940cfe8a82e7a2a11ec3",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/provenance/source_pin_spec.json",
+      "sha256": "dc11084c70fa6cdc5f7a76f8b978d3a1a6d8cf1c73fdcdb9838f2f90a8ecb627",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/.test-evidence/shacl_report.ttl",
+      "sha256": "4a53a3befd9bcdb7273ef3d6e47a83be519927771faee49ef0d2a44ee23be2be",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/.test-evidence/shacl_report.txt",
+      "sha256": "77debc800e6c973b66475968bdf71e2e667df8f4108e7f5299fe1651e6606dc9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/.test-evidence/shape_validation.json",
+      "sha256": "80b2562fbd27f47e8e9b786279655faa0d198861cc643cc2ff26f29e436b90b5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/graphs/rdp_canonical.nq",
+      "sha256": "5efa37df0d2f35ce823927a36bef5dc086e1aacc5efbb7da01dd30ee7442f139",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/graphs/rdp_dataset.trig",
+      "sha256": "9dba47391547c94c57679218a5f9abca5be6cbde1c0c35e83a13b891772ba44b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/graphs/rdp_source_catalog.ttl",
+      "sha256": "22f5e66ebf47ebcad4c4a326dd275ad2de966831373ba57d0b86017ead5ee8a3",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/tools/field_audit.py",
+      "sha256": "2d6a2df7d66a48fffa89b6f697c4794bdd7bbfe2e913f78ac27d02cbf3171061",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/tools/finalize_release.py",
+      "sha256": "4800dec71b206e38120750425d218ba17ca18dd25aed1255ed31556021f3dc48",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/tools/generate_provenance.py",
+      "sha256": "1a0e4875f3e30d374dfd6345fc11d526d24c2078528df1f43b826c64c1b84fda",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/tools/run_shacl_mutants.py",
+      "sha256": "3afdd1d37fa7fcb2114b0b72f0a2458e6e9e3fed321f47d88a2b5331da5e6e84",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/release/SHA256SUMS.txt",
+      "sha256": "c26894aa5b61ae9ced3db144e11b4a44842cb9ba45a51bbc8a7cf427538db09f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/release/artifact_manifest.json",
+      "sha256": "bca1f3696bb757214ff81365bded05b0598d96b21b4c82deedf9492ae83e9fff",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/release/graph_manifest.json",
+      "sha256": "3d16be152998a3ac1a2752b2ae374ea2caf091dceda47cd6d2dd4a8e50ef4766",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/release/machine_handoff.json",
+      "sha256": "b87d430cd72710f8f581a90a51b4025fabd78bfef458c037988fbbe590eb31fc",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/release/qualification.json",
+      "sha256": "1f75a810bc70c38a5c1a6b56b97eab170ef21ea84b6ff610c46bc1d42e6ae3ee",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/queries/INDEX.md",
+      "sha256": "2f3958a75e35e5fb97d5b6a7d412c8529098d5ccec3c016c5030f2a3a3bb3832",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/queries/Q01_intent_to_patterns.rq",
+      "sha256": "f54a1088abf3f5ef3cbb71a8cec06db44c8daf3ce55b27be8cfbb8030d12461b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/queries/Q02_pattern_reference_lineage.rq",
+      "sha256": "73e46f657e4848c74928f286cd1782a472e3f53cb9d8021e5d41f2d673486f30",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/queries/Q03_reverse_impact_trace.rq",
+      "sha256": "249c9e9b3634a2785f44db3b66973437bfb89c2571ecc3a5b490c9aebcf4f173",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/queries/Q04_workflow_mcp_surface.rq",
+      "sha256": "6c2435a66687bb0af3de8d4f7e628ae5ebb0da3b930a96b56edb8e2ae36d192a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/queries/Q05_policy_impact.rq",
+      "sha256": "305afcb26005829a73fa569653ba64d46d60a96f44d4c8153e3d71abdfec59e5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/queries/Q06_evidence_claim_scope.rq",
+      "sha256": "71e44e4e16d394cb490a207db64d46ef830efecf2dcfd972563b8c60085c571b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/queries/Q07_interface_fit.rq",
+      "sha256": "d1b4ddb40b1955e6b629e83a8e08a119a5aed0b36d7b5e05fa8e0bbfdd2c2f52",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/queries/Q08_dependency_blast_radius.rq",
+      "sha256": "6a9c4be8f8fc7c739f4aee4bf555b48f605c8bb16784f5c7bbde62de33e019d5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/queries/Q09_candidate_vs_admitted.rq",
+      "sha256": "732098a71c62d7d7ee021aa37f3b4174c8b73a565a4f8b9f8f16fbea44b5f7bc",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/queries/Q10_integrity_diagnostics.rq",
+      "sha256": "0689818243c3fa35b078974756b841b05c6f776ec56f6431ba69c2cccbd326e2",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/queries/Q11_semantic_delta.rq",
+      "sha256": "70963430489f369a0e97ed9baa68f13b0db6912bed8a597df3575f4007d75a41",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/queries/Q12_query_template_route.rq",
+      "sha256": "0b8407b25b24d0b60a42649ddae096fb23b8e36e9916a50d94efc52b03c62830",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/queries/QUERY_TEST_MATRIX_v1.0.0.json",
+      "sha256": "16216def1baaf1cc8ec7e6163aa5dc8793bd89f55462cdb0796325a4e88963c5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/command/tests/test_command.py",
+      "sha256": "e6423ce7a88854cc15126e2aab9897bad086ce82316d39563c9c03e651d8f121",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/command/evidence/qualification.json",
+      "sha256": "a6ad153d5f7a284bd950950d8acf7003615d495b7e846070890280445493d5eb",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/qualification-campaign/tests/test_qualification_campaign.py",
+      "sha256": "0e38b8a4c118f8ae65d153b0dfcf26a68134f9e70046899feccea8f61fa8926f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/workflows/rrca-repair-plan/tests/test_rrca_repair_plan.py",
+      "sha256": "dfd853296b0a41ef9384bbefd1d90790cc57368cb56559633ad8d1d087188766",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/strategy/tests/test_strategy.py",
+      "sha256": "4f0629f9ae0e6616439e0ab12d0020ec24122e70406e46f743ed29b4f5b62aa4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/singleton/SKILL.md",
+      "sha256": "c2bf3bc9b5d3f2a29d8fa6393af1376c3da096b0c87ab70103f24023af603ae8",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/singleton/contracts.py",
+      "sha256": "4daa48edf8ecf4810c7e3d704da1622498eba84bc5f55096ffa53321f812772f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/singleton/example.py",
+      "sha256": "b02f6d51517f1a40b62c9fa0a36b75a6d77e8f866ad9d255309f526e77f3cfcc",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/singleton/lesson.json",
+      "sha256": "f96f4000b4577537575bd6d6c47327e385178e8a262ae244bad931671d0c08eb",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/singleton/manifest.json",
+      "sha256": "c1a6125c9b1ea705a9e60e128d66defeac4fd8a2ba4d40b13afe576912886897",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/singleton/notebook.py",
+      "sha256": "f59c52c967ceb07843c50feba15ce5f8b85883f36be0204a33c564683a00eac1",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/singleton/reference.py",
+      "sha256": "22c2731bb4f4e2d1e11e4fdad5332611bc4531e1680947486d13c59f2cb6bc8e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/chain-of-responsibility/evidence/qualification.json",
+      "sha256": "e0554de2bdd48fde5acd316441f4a3cb901e21137433a089f57f49c68e79cfdf",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/builder/SKILL.md",
+      "sha256": "70c1fe7ed6997944648f5301e654995be1632b2c7ea4eceaa703ee355a8ad9e3",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/builder/contracts.py",
+      "sha256": "8ff0aadfb119d3cc9b5ac7e87bda2dbf2ea14e019b990b0ceeb02d5db12039ea",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/builder/example.py",
+      "sha256": "4fb9f4accb1c6fb6e2047bd0fd4df3085d9934bb7201ad2b9c8a383751c6ca52",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/builder/lesson.json",
+      "sha256": "6e1798c6c864b943625c21489e100c1aa7736dee909b8aa7023edd300feb16b6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/builder/manifest.json",
+      "sha256": "073d00925eb0dee686d282707f2f90397cd851b0c92054a422620dcc757df220",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/builder/notebook.py",
+      "sha256": "c602ffef38091d59fbd767ea59a4bf2e7334fb2a9db56b9522abf64ce6c6508e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/builder/reference.py",
+      "sha256": "0b94423ba889b03318dbe781a47ced6df7dcebd6bdb06d0d19c2dc1bf2e8c5b1",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/strategy/evidence/qualification.json",
+      "sha256": "9736a24054e4490bdc5e6f1d4f63d36f79887bc893028bc5c2751e8d71e0116a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/state/tests/test_state.py",
+      "sha256": "81a6681116572145bc9633f52184494fd131ff964cceba3ad6386faaa048ca35",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/chain-of-responsibility/tests/test_chain_of_responsibility.py",
+      "sha256": "5601a28654daf12aecf4d6a5c72f52533d6d40ed114665d16d0d9eb4cf0ed456",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/iterator/tests/test_iterator.py",
+      "sha256": "94b325547af8d5a625fb2ff86ac9bdcc3d8e992e46193b68b9d01d7e66719283",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/iterator/evidence/qualification.json",
+      "sha256": "50484daa1ede75a11790ef0165cd50b3af672a240a75858fbab634621991fecf",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/factory-method/SKILL.md",
+      "sha256": "4c9fc0582d7bfaccc54dd737b364c44841604efc1eca63bb9bab15edf07888e6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/factory-method/contracts.py",
+      "sha256": "05f24e4166895ac5838b1679cbdb4c7f2ffc4e0f5c8a69dd353394ba2b8b78e9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/factory-method/example.py",
+      "sha256": "6942b1edc2a2495836e51f47c1f52aee18f426e69c6ce1166b50c8bb5d5e2fbf",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/factory-method/lesson.json",
+      "sha256": "c6ce70adab43d9570b6f54ad18ab01ce869b9925d149a8a8f3a06f4514087648",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/factory-method/manifest.json",
+      "sha256": "d29de901e172ddeba0a4b59b54b006d52f94cab50d93f12e2e2fb5ffd7783a35",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/factory-method/notebook.py",
+      "sha256": "3ecc1486084ee8f4e2b3eaece40c299b0f65f798b61c26c03638c76815b30b8d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/factory-method/reference.py",
+      "sha256": "0a8b347c069d477f8f9404692ff5105a4559862783e0da528777a7819849cf0c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/state/evidence/qualification.json",
+      "sha256": "6cd8cee0e1cb0d2a6e4ec5c3dd9bb39dbd1f0cdb3ea1bb810ae9332935f39214",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/tests/conftest.py",
+      "sha256": "d5bd61849ba333ed1df482cfa08f0758acd5d24156de4442501c01a54511fd79",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/advisory-audit.json",
+      "sha256": "6ea9df5e365b3547fc23477bb1739d99b3351eef7cd03ccc8aee75d212e83b3d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/bandit.json",
+      "sha256": "33f11551c1404a75c2322b35491a9b24becefcca12b49e8e4f82a83e36026958",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/dtk_activation_boundary_replay.json",
+      "sha256": "dea6073be89b983be04d2586bf32d3b6a2c9f46fa9acfccc8e162208b69472fb",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/dtk_activation_denial_fresh.json",
+      "sha256": "3b6f6de22f21ba37db382a6a795bb05dd10d77c5ad06829fbaf3ad4978c39f42",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/dtk_cleanroom_qualification.json",
+      "sha256": "051ba78f288e87ca26ca9f78cedbf0b3295f276d63ec34399d97501a86d786bd",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/dtk_cleanroom_tests.json",
+      "sha256": "001d86fd37e55e3f43d349442e6d8f2478a99a970cc8a28d61058ddfd7907ae5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/dtk_cleanroom_tests_retry.json",
+      "sha256": "451be6e83b259894246b850a54444acfcc6b8889045d6dfc01a058ae248597fb",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/dtk_double_build_replay.json",
+      "sha256": "9ccfc0370ee07218745d0e6606d5a9d8c8ed018d26da0007650d29d6ddca2e54",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/dtk_generate.json",
+      "sha256": "8e92421a5c048d2602f29e6c1ed86ccc1288b673d8219e1ad662f3131c9726eb",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/dtk_load_fresh.json",
+      "sha256": "bb16aacbd6920e3ce4fd2c475a4c9496a22e9ac0348abd114a7ecb4a81506bdd",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/dtk_lock_fresh.json",
+      "sha256": "234d01175797b1194b7fb5cff70c418724f9f8185fe577c701a8208cefce6364",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/dtk_residual_register.json",
+      "sha256": "993ce533a5bd7a08f25d0f32ae9b5bb090e6ec746ca338c3b089a4a0b6f766d2",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/dtk_sync_fresh.json",
+      "sha256": "9b2c8189316211de8af0b9d3bbb79a954552ab4c5b592fa115bf42e15bd05e6a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/dtk_tests.json",
+      "sha256": "657d35676e8d4498cfd72a934be9561668fcd76e3a97b9ba8fc6c5be116ce87d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/dtk_validate.json",
+      "sha256": "74becadd260788c3791f1dc3ad99c63d4eb9417a885939e9992f40688bdc9c14",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/historical_policy_aperture.json",
+      "sha256": "2565f1d481551ed9c249015b99130a9201b2de68df72b471c58a3058d1c9995e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/historical_source_test_parity.json",
+      "sha256": "934c905266d76ad28f9774bc32a85872fa2017fbd2c07321963c7ac0ea40420d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/hold_dispositions.json",
+      "sha256": "4ec9d3bd6b532b81a0e9fc79b1506751c7a389d6e562de51a194e8120088ed07",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/ledger_seal_before_git_custody.json",
+      "sha256": "f722001383f397e13e05cb0ef6dd6ec291161b43ac360069418da2d9caf4ee86",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/ledger_seal_before_profile_reconciliation.json",
+      "sha256": "dbf247187f26f5044a5087fa391adf67ccee2c0bc15c90ada7d99cf544031774",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/marimo_historical_native.json",
+      "sha256": "34b785d9166c90d7f56346d713888c10630cda579046226059257375e7cbf751",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/marimo_historical_recomputed.json",
+      "sha256": "876eb493651fb0207af21391c01a829a1f46a38351a48dd1312a55b022820a97",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/marimo_historical_tests.json",
+      "sha256": "7543f74c5a4d42b972743f348405948cbc8696abec6a8e91ae708f99bc178da3",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/marimo_native_qualification.json",
+      "sha256": "0de35733ba3ba0c79d5a4a366a93028f6ad07037b1987d0fac74eab5559d37e8",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/mutations.json",
+      "sha256": "7b5a113e9d7c7d48c6df41ebf348004a5d7100c079b80accb09e3b70caa86a9e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/native_profile_conflicts.json",
+      "sha256": "8cef46c8178c5ca4192eee047ed10f4e53b6279a93960dc1a1ab7f753624bbbf",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/network_smoke.json",
+      "sha256": "fddab23f6e282a38ee50edb8c67e40431aa5b561fe821ffd1a1ef82e5a785f90",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/network_smoke_repaired.json",
+      "sha256": "140d74cafd0fffb5403702c3fbc0ba857cbaed69afc4a221a7a03dedbab2f920",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/pattern_mutations.json",
+      "sha256": "f788a5b0f222ecee603bea4cb5b9dd14bbd881af98564f53438e39c72ac9b599",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_software_compile.json",
+      "sha256": "3be93295b8dc23e2b67b27fa63e6cbd8c6ac2e43435f40f2406086a42c130e82",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_software_verify.json",
+      "sha256": "a45c1120603b2b9f2880d2e5cdb8d4b30862fb35e1b141d0431502af3a527768",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/scaffold_create_policy.json",
+      "sha256": "b473c1d76e00d7cfa1dccaeac9fd6237d73cc8e6c2976e64acbd58298d5ad3b4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/scaffold_final_validate.json",
+      "sha256": "419969ae95881ab1d678528ceafd446f5a63d77641c19d14c85d73c33e416752",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/scaffold_plan_command.json",
+      "sha256": "482b0fcfb007995eea82e54d9d481bc1b2f5645a4b91f9e98c286dfac021618a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/truth_serum_native.json",
+      "sha256": "33df63ae3881e53d017635b84a26e36bc555308ac403283a3e9afa9ec6b3929b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/truth_serum_native_profile.json",
+      "sha256": "da41f693ce51b41ed0fb5fbcf24f6eaf9e1850da5da9bff1993f5b0ac963d76c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/observer/evidence/qualification.json",
+      "sha256": "5a876642433c93137eded6944d7506d7281ad0a8b6b015faf192535be60749ab",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/adapter/tests/test_adapter.py",
+      "sha256": "7d616123a9cc68249582dc228e9afcff90a4d64359c0238722c15f6e1a1ece94",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/template-method/evidence/qualification.json",
+      "sha256": "50842208aeab77eff43868670d0bf6e30c79cdf7f15a81d5ce3f20960e7e07eb",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/adapter/evidence/qualification.json",
+      "sha256": "764f4b18ff32d0a67a4b3024ce1a553a8006b1328979325b27a03513828ac0bf",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/template-method/tests/test_template_method.py",
+      "sha256": "d4b25a069307c9c6876d43b2f3382b3df796d0aa38ae9a6785dd0fb27c4b574f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/policies/mcp/HMT_Baseline_MCP_Tools_v1.3.0.yaml",
+      "sha256": "a9e5cb1ca183e3227cab1c8f1660c08c2618c5c4e5ca737050c01df02ce04d39",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/policies/finite-state-machine/default-pace-matrix_v1.yaml",
+      "sha256": "6413c1d0ec79fbf8b9b7ed74b91faec6bf68bad53d9361db9f31686e43a86aee",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/policies/finite-state-machine/matrix-contract_v1.0.0.yaml",
+      "sha256": "dbbdc2ba1566d413ba886c4bf63e2700c3048fa56b9bb14abb2ddee2f1a33c98",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/policies/axioms/HMT_Axioms_Policy_v2.0.0.yaml",
+      "sha256": "007b744b8fc3f17ccb5117a1f2a4860a1516e38856c6b507212bbf5754d78945",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/policies/model-roles/HMT_Model_Roles_and_Convergence_Policy_v1.2.0.yaml",
+      "sha256": "afe7fe511cd2a6492005702ba94cc9085217d5558c0d45147a7a6b38eaa61a5a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/policies/claim-admission/HMT_Type_Level_Claim_Admission_Policy_v1.0.0.yaml",
+      "sha256": "c9fc9ae74d600147cf3f6fc79e13f08337d0c51d151a2f6b8c5cda43a6888891",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/policies/reverse-rca/HMT_rrca_policy_v4.yaml",
+      "sha256": "7cd327869c1c709736b693ffaf363544b38e5ba66f67ca8a9328d2768692711b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/policies/reuse-constraints/HMT_Reference_Bounded_Transformation_Policy_v1.0.0.yaml",
+      "sha256": "4ed6156e0b0fc14680a0cc3c74b203d8fa93b5ba0f1f78fe80e8c2a7e4c8c218",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/policies/reuse-constraints/HMT_Reuse_Extension_and_Promotion_Policy_v1.0.0.yaml",
+      "sha256": "ee8d9d304c9b1a8ec48c886285b5bb52d58c23003e94de3e5f3394710fe6adf8",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/behavioral/observer/tests/test_observer.py",
+      "sha256": "6517b588e79b45698d6e075cf5966a558d2e103b54ea09792f688ffa187ea1aa",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/composite/evidence/qualification.json",
+      "sha256": "8fd24611ea9c4f6fe3981bed19c719ee4c29db9892298d633eac462560b6e9ee",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/decorator/evidence/qualification.json",
+      "sha256": "c0682ac941b130d06f6255dde53c3d55214debc1fd91a5da6739d46ce31f87a5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/decorator/tests/test_decorator.py",
+      "sha256": "6a399c76c033e5196213204e34b82ba3547bc2eed3efba9ea72b001a27658152",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/composite/tests/test_composite.py",
+      "sha256": "d8acf5a02bc32e415f582a7b12837865816b9b5e89a52b4a662b26c9a573561c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/FSM.PACE.DEFAULT.001-CONTRACT-1.0.0.json",
+      "sha256": "4c6f4b1416fa2d8decb7ba6c9464a3c6cd31e4a860a69619052b6f950ab6e7dd",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/HMT-AGENT-110-1.0.0.json",
+      "sha256": "71e0b33ff86ede13bb7cdfb1d59798d69d3681c0e4710e530a31c9757b9148e6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/HMT-AGENT-120-1.0.0.json",
+      "sha256": "c3e0db3596b4d5d1b67d2c9e09bdeac76c1372cc20779f540667501df41419c7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/HMT-AGENT-130-1.0.0.json",
+      "sha256": "be71b5988045f5652038fe1c883edf11518d6e3f7cb4f23db7187108aa18c7e7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/HMT-AGENT-140-1.0.0.json",
+      "sha256": "4e0d6b3372e6f82ef4145e6075066ae5d9cdb8b45c2da39d28bce6355d49e4be",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/HMT-AGENT-150-1.0.0.json",
+      "sha256": "efbbd5252008765f13a9bd80eee3e2087e52e88ee152e647f525383126e8db51",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/HMT-AGENT-160-1.0.0.json",
+      "sha256": "192883c3e62030c8cd2aca5541f6856f3df6bc75aefc1543ae290222d81a2ae3",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/HMT-AGENT-PROFILE-CATALOG-1.0.0.json",
+      "sha256": "f8ad6a0e0c4c2cc19bfe20d71b976720aaf049b11a1c822b8cbe7e04b3cd2967",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/HMT-AXIOMS-2.0.0.json",
+      "sha256": "881ef731c6437e307a7196af625e31b92564d5f3cd5743b5723d935440938bf6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/HMT-GLOBAL-DECLARATIVE-IAC-1.0.0.json",
+      "sha256": "5bb1c36f5adacd0db347b941ca176bf88a372532c963df4985b319d19a59e1c0",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/HMT-MCP-BASELINE-1.3.0.json",
+      "sha256": "52c6d42fcc94410043a100b442b4a0683721f2420b40839b8aef9802e31cf213",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/HMT-MODEL-ROLES-CONVERGENCE-1.2.0.json",
+      "sha256": "6f21452efa2a0b78e835f53d72ff491354f3eba2efa5030cdb82cda91febbb90",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/HMT-REFERENCE-BOUNDED-TRANSFORMATION-1.0.0.json",
+      "sha256": "3fb8d114b68c6fae4a24a270b505c143e7c73e467221ec38cdd440e42cce3000",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/HMT-REUSE-EXTENSION-PROMOTION-1.0.0.json",
+      "sha256": "9fa1e73f1423c13e0779180964d5cc9c209d5f6c5a265f5f50b8f33a94a61c8f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/HMT-RRCA-POLICY-4.0.0.json",
+      "sha256": "88291ada6d84b5aa4e640233e4d1b8e74aa0ed3b2f60fac71de6def033db8647",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/HMT-SECURITY-DEPLOYMENT-RUNTIME-ASSURANCE-1.0.0.json",
+      "sha256": "5c9b2930cc2da9786d2b96a27a33859445e1759e881c9083c9684d7ed5ff42d2",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/HMT-STRUCTURAL-COMPLEXITY-1.0.0.json",
+      "sha256": "7bbed00a7aba569b9a417eea3ebbcc78463a10cc2fd044aa1e39d67d275f75b6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/HMT-TESTING-CONTINUOUS-ADMISSION-1.0.0.json",
+      "sha256": "6998603b69efe7abbd3c2bfa886f9352a450a6aa4844a26ad40a9182146dbc29",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/HMT-TYPE-LEVEL-CLAIM-ADMISSION-1.0.0.json",
+      "sha256": "330c0f056f8142a90f8f0896a4d6ad45a01ae6b2823abb9f1c31e7c49ca7df1f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/schemas/policies/tss.pace_pavlovian_default_matrix-1.0.0.json",
+      "sha256": "7a76aace85623042d52dc30560b0ddc07730b7cff53db4801fa0735f3e6c2124",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/policies/test-and-admission/HMT_Executable_Testing_and_Continuous_Admission_Policy_v1.0.0.yaml",
+      "sha256": "aecf26fdbad916884c59d812fcca4075a3551c29cb86de94a1a7256a2b743f18",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/facade/evidence/qualification.json",
+      "sha256": "00bf725572f07a1c3b4dbafecedd9dbb649b405f38d1a0dacca23f7940a0e375",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/facade/tests/test_facade.py",
+      "sha256": "3bb7ed73b0cd1b00898278661bf5f85b6f8400f6caf0db587dd4c4f4709af5c6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/proxy/evidence/qualification.json",
+      "sha256": "6d9c7e5ebb637d350a5430218443024336a0312b71027011cf7fe60477ccb1ba",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/singleton/evidence/qualification.json",
+      "sha256": "d50fe98d77553c443138c3f4e0b51e64a6920278b19586b1ad7b93bb38b03833",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/policies/structural-complexity/HMT_Structural_Complexity_Policy_v1.0.0.yaml",
+      "sha256": "06003116dfef6b126ff760fe4d18af4e2af3bd933bc89387d42f33e9b5a30eb6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/builder/tests/test_builder.py",
+      "sha256": "cf77abee3dfdd7cd4a69d3fe0c92b40f4e0319aff9d8a6679b0625a6773dc3fd",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/singleton/tests/test_singleton.py",
+      "sha256": "3c0273e57f880f8060464d791749fae3ea728c558858241c340a3ddf8df952bf",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/fixtures/expected_answers/Q01.json",
+      "sha256": "8dd91052a63f493c3fcdf2d835104149f2f7a409fa732a2bbca6ab720746e91a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/fixtures/expected_answers/Q02.json",
+      "sha256": "e6a5270e2271bb6560c74c486031f26f9473347c548c7d856b83d12ce2494a11",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/fixtures/expected_answers/Q03.json",
+      "sha256": "f17ba8b965e09c684b60a137fe9524e51e5a5ac577b0e315f35c9f3b4678c4fc",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/fixtures/expected_answers/Q04.json",
+      "sha256": "cf2a5a2401f600deea4cdf656ed762ae01a403debc484edc673e684e9f210e23",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/fixtures/expected_answers/Q05.json",
+      "sha256": "d13553f5a914bc8682ca297f3655e9cc8aef336d8404963b415e3f99232725d8",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/fixtures/expected_answers/Q06.json",
+      "sha256": "457bb2c8cf78667b40747bd5db32694691c9dd0bee87b324491a9c479bec31e1",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/fixtures/expected_answers/Q07.json",
+      "sha256": "02408fe96477752875c460be191230dca64ed8ed74ea07fca412818f6542fd4a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/fixtures/expected_answers/Q08.json",
+      "sha256": "71c343be112e1bcf0cff93d626f57d90607e978e64029c4ceaad1947da0fee3c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/fixtures/expected_answers/Q09.json",
+      "sha256": "33ece98e790b90cfa490d3ffcc3c9436664bb7b665ff427283d261f997cc5be6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/fixtures/expected_answers/Q10.json",
+      "sha256": "d2b09bb121d5d2a0fecd7325a0e6b4b44d2c310556af3a26550cfcffbc5930ed",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/fixtures/expected_answers/Q11.json",
+      "sha256": "0257a6bd9fea0a99b842335cf76840498794a3124efc598bb221652acb099e7d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/fixtures/expected_answers/Q12.json",
+      "sha256": "7b466c1737be06051cc82af70da560e1fb340b9866eec46b2d8a0b68af78efea",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/policy/released/policies/security-deployment-runtime-assurance/HMT_Security_Deployment_and_Runtime_Assurance_Policy_v1.0.0.yaml",
+      "sha256": "1119b8f0054f777c3a635fcbddd7d31aef8854bd93c65106e354c2efe1b141c4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/structural/proxy/tests/test_proxy.py",
+      "sha256": "d101832fd19f7519c6a922e24c8c166bdbfb4addea84375c36eeda26415de217",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/tests/integration/test_graph.py",
+      "sha256": "2386e77f66bfa606176974b66cf22625f026d57762ec7b8c36f577e9f528b43a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/SHA256SUMS.txt",
+      "sha256": "ccd61e36d1c5b5df2f40ca6d5789eb2f15504e3165d8fe946fb66e3c4e535903",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/annotated_types-0.8.0-py3-none-any.whl",
+      "sha256": "f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/attrs-26.1.0-py3-none-any.whl",
+      "sha256": "c647aa4a12dfbad9333ca4e71fe62ddc36f4e63b2d260a37a8b83d2f043ac309",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/coverage-7.16.2-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+      "sha256": "5375ebd99038021b35e99dc88255022912c06565d316212f4a576e4b08d30f5d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/html5rdf-1.2.1-py2.py3-none-any.whl",
+      "sha256": "1f519121bc366af3e485310dc8041d2e86e5173c1a320fac3dc9d2604069b83e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/iniconfig-2.3.1-py3-none-any.whl",
+      "sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/jsonschema-4.26.0-py3-none-any.whl",
+      "sha256": "d489f15263b8d200f8387e64b4c3a75f06629559fb73deb8fdfb525f2dab50ce",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/jsonschema_specifications-2025.9.1-py3-none-any.whl",
+      "sha256": "98802fee3a11ee76ecaca44429fda8a41bff98b00a0f2838151b113f210cc6fe",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/networkx-3.7-py3-none-any.whl",
+      "sha256": "e3fd2c13a7814cee3746340d8d7f8598a67f16a58bf47fb7f8793fab6efca1b0",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/owlrl-7.1.4-py3-none-any.whl",
+      "sha256": "e78b46020169783345636da93a467d318f18700c483184dd15e885850cf64775",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/packaging-26.3-py3-none-any.whl",
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/pluggy-1.6.0-py3-none-any.whl",
+      "sha256": "e920276dd6813095e9377c0bc5566d94c932c33b27a3e3945d8389c374dd4746",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/prettytable-3.18.0-py3-none-any.whl",
+      "sha256": "b3346e0e6f79180833aebaac088ae926340586cf6d7d991b9eb125b65f72313a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/pydantic-2.14.1-py3-none-any.whl",
+      "sha256": "9195d967ec791692a04438115466764fb8b9a27b31f14a760437694f40d6b454",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "93ba4e9d8210d941c200431a56b2c0400b131865947903937ed3ec5404307d2e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/pygments-2.21.0-py3-none-any.whl",
+      "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/pyparsing-3.3.3-py3-none-any.whl",
+      "sha256": "ece8c00a69cf01b45d0b1dedabb469c90d8caf996d4fda40f147627a122849a4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/pyshacl-0.30.1-py3-none-any.whl",
+      "sha256": "d7e0c21b25e948bb643dbc5db6258da64a90a8ac89055c1fe562b469031072aa",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/pytest-9.1.1-py3-none-any.whl",
+      "sha256": "37a86b45efb9a47a61a36449063e8e18d0cab3161329fc099eb21783169c4f0c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/pytest_cov-7.1.0-py3-none-any.whl",
+      "sha256": "a0461110b7865f9a271aa1b51e516c9a95de9d696734a2f71e3e78f46e1d4678",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/rdflib-7.5.0-py3-none-any.whl",
+      "sha256": "b011dfc40d0fc8a44252e906dcd8fc806a7859bc231be190c37e9568a31ac572",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/referencing-0.37.0-py3-none-any.whl",
+      "sha256": "381329a9f99628c9069361716891d34ad94af76e461dcb0335825aecc7692231",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "addeda51556dac7c1a2f14cda62db8b621cd12afba3091d03a96c72932387eab",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/typing_extensions-4.16.0-py3-none-any.whl",
+      "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/typing_inspection-0.4.4-py3-none-any.whl",
+      "sha256": "65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/vendor/wheelhouse/wcwidth-0.9.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+      "sha256": "751bef0ab404b6a1dc028b56b4b85d46486be1c55833f80da533e42dc691f389",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/tests/api/test_facade.py",
+      "sha256": "92e39e7673ff0154c2f2eefa869ce62ed3de536f94232cbcbb9198c38bf22fe6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/tests/behavioral/test_pressure.py",
+      "sha256": "f15bab11645f8b613dc322a0628cd764189f621ac4b84c9e4321c50f852a0cb5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/tests/behavioral/test_query_goldens.py",
+      "sha256": "207581f53b8b0eafd9c4e5b7a1536f02497206c1d9fa355799c2c5d892aab8e3",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/factory-method/evidence/qualification.json",
+      "sha256": "5cbdab054eb5471a5c2782e356e08fbeb36ebd9105fab8729b9900c07c1d258f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/factory-method/tests/test_factory_method.py",
+      "sha256": "8a4d9c4d5631e35ad29ee1285a3bcbedd3f72338fed01e7ce632dd21c12c6e4d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/src/hmt_rdp_ontology/__init__.py",
+      "sha256": "37e11c7f5d645740cc1067edf7a4c1b148097614e8601d0e99863a1c82d13ab6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/src/hmt_rdp_ontology/admission.py",
+      "sha256": "9372b6caa809490ece37ad0542c3e5d5ea344a34a8e09f46b38a8d2255c29b2f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/src/hmt_rdp_ontology/build_cli.py",
+      "sha256": "2fc55f3bd05a968302459b65ad94afdf5ec418be07e9e7f036b7944da59b6f8e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/src/hmt_rdp_ontology/cli.py",
+      "sha256": "926676598f4b24b275de9434baa6b965eaf33672d079d12686a98c94506a24db",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/src/hmt_rdp_ontology/compile_formulas.py",
+      "sha256": "e4d930144405f7f26877acacbadb85c39fc82c315217345346b4269b5ddebe03",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/src/hmt_rdp_ontology/compile_patterns.py",
+      "sha256": "b2bf0cbfd110438d66cdee81753d582de7006d991c614032531a5ef31013160f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/src/hmt_rdp_ontology/compile_rest.py",
+      "sha256": "69d6c9100a777cc7f2170cdac9e41ff618922dc404a7e24699412cfc03666d45",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/src/hmt_rdp_ontology/compiler.py",
+      "sha256": "67cdce5c52ab06c510ebd6574df55c5a479a3bcd9f44fd9396dbc0c20690ce57",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/src/hmt_rdp_ontology/mapping.py",
+      "sha256": "66255173324ecbacb60dad69094f6faef4fcaeab9d47b5263e42a6f926a445be",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/src/hmt_rdp_ontology/model.py",
+      "sha256": "339d71808d2d13fba5d194e84f3ce458841bddb8df5fcb7dcec6081ce55456f7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/src/hmt_rdp_ontology/queries.py",
+      "sha256": "c87e7b1c7ea7f5ee215ebcde70e06b33e5825df82fdaddf7a26bcdde20af44da",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/src/hmt_rdp_ontology/shacl_mutants.py",
+      "sha256": "14f59999b2aa2f8da8192a47922ce606abad242d58380f8426803ca264042526",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/src/hmt_rdp_ontology/shacl_validation.py",
+      "sha256": "0fbcf3ae4510ae927259f03e61cb392e0104f938246554aa3ec48d7917eded25",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/src/hmt_rdp_ontology/shape_authoring.py",
+      "sha256": "6fcd0363a0284a81f7a5f50715c88e52b196581753b40f1f61c116c692c0b7cc",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/src/hmt_rdp_ontology/tracer.py",
+      "sha256": "d6e3198f2d30ba14005d1814a9507d719b98d943341d7d1902f9a120d4f9613a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/src/hmt_rdp_ontology/verifier.py",
+      "sha256": "810ca2e723893074071f1b8d983fd76f3e7fb2db4a14395514a109a423cf6d9c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/src/hmt_rdp_ontology/verify_cli.py",
+      "sha256": "688884030bbee0cf932c9d6ed79c55a8c1a030711ec0746c252887d202c8e733",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/tests/negative/test_boundary.py",
+      "sha256": "9b2534202028fa7ead38da16171203360f3fb3ac9bfa25e81fc29af5fad8f108",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-gates/G-ENV-002.json",
+      "sha256": "8d4f8af221697e079fa7e0bf5bcbd17011544304b42ea3662a24ff0f263b2674",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-gates/G-REPO-001.json",
+      "sha256": "7211d4f9ec543426c811d1fd5c463bc885a78018ceb28567daaf475b88677dd7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-gates/G-STATIC-003-mypy.json",
+      "sha256": "76e3046d7b666f41cf91395e3992b3f0f01b1e83bb2c84214431ba0075a11c62",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-gates/G-STATIC-003-ruff.json",
+      "sha256": "3cc59a5d5fc37cc2769aa2940dcb3c02d6b25c5e8ef40642a744b276dee54ebc",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/tests/mutation/test_mutants.py",
+      "sha256": "051a4478a09ceef5b5a15f927d6c8e2c8485b7c4e35bd15d039b404885c43ec3",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/patterns/creational/builder/evidence/qualification.json",
+      "sha256": "51fdab220ee9451b60cba8315647b8fba236449086a67d05709777855b199c26",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/tests/shacl/test_engine.py",
+      "sha256": "30fd249eb426a53768bb534b4faf13293208aeaa01b772abd2317178ef741f55",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-static/G-REPO-001.json",
+      "sha256": "7211d4f9ec543426c811d1fd5c463bc885a78018ceb28567daaf475b88677dd7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-static/G-SEAL-007-secrets.json",
+      "sha256": "273e3e9cc03867473eaf75ae07b36f107effece3177f6718446bba3333e7e381",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-static/G-STATIC-003-aperture.json",
+      "sha256": "9f404734fb1a0b96ab6f6dd1412b372d76024d7712db9afdf8c7f69ce0980940",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-static/G-STATIC-003-cognitive.json",
+      "sha256": "8a7685c49d145e01a8d98ade6a8f7ee08765d24c56be0f813208ea153e98ebb3",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-static/G-STATIC-003-ruff.json",
+      "sha256": "20aaa08b4f2469e592790e49da01b818485fe6642131a4194fb1f3e428957ef5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-regression-02/G-EXIST-004.json",
+      "sha256": "3d3cfca1fb98a2cfd7b5423626e3fef85c800fe8217f6fc7491c4c6abcc659fc",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-regression-02/coverage.json",
+      "sha256": "c05f89bb9ceab921f204ec2bb014c8920512c9f2a259391b7841614b70890469",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-regression-04/G-EXIST-004.json",
+      "sha256": "a887771667edcad9dac98815692b57f43109ef84492c72dcbd60f1ca93225234",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-regression-04/coverage.json",
+      "sha256": "572c0db0751fbb10e4d2ee8433826689743b47ec858ac99d17f94fe8c136991d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-regression-04/negative_guard_inventory.json",
+      "sha256": "e74c28e0f6eb60e8d1830aef8b5811e48ae645cb78dc704b06a7c0738ec8f266",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-regression-04/production_coverage.json",
+      "sha256": "12c2e64deb4cf95ccb9bfab9395b99499a55f1d810d1b78b1fa645d90887dbaf",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-regression-03/G-EXIST-004.json",
+      "sha256": "ad81a5870d678440a14bfec13cc6e31716b2612397af46dc5b5ab9947013c6c1",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-regression-03/coverage.json",
+      "sha256": "eb69c03cc9e378705be6980c6930b4cf0578cc68d8a322861b0c5179a98cc441",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-regression-03/production_coverage.json",
+      "sha256": "413cc7447b12c97083ad0eee5e6458b2d44136d136c014658ff6cc510369cfc7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/tests/unit/test_source.py",
+      "sha256": "cafa11e85d0f89152ce9a249a31724bcd1931165373ad5a17e4dd226572980bd",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-regression/G-EXIST-004.json",
+      "sha256": "c81a6771cc95c8b549a2d44417fc44b67f87fa16dad73d499b091c9454f69b21",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/final-regression/coverage.json",
+      "sha256": "d9240598fcce9df53d86d32a3e821c3b83b9607b85bcd971e5c2421ab5542d74",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/git_custody/dtk_scaffold_git_tree_fixture.json",
+      "sha256": "74c3043bdd949a817a3665ac056a00327a8f042086858d5983d8e83977c9b317",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/git_custody/git_object_custody.json",
+      "sha256": "f0e37f319756e56223f87ad755eb14ea8b5cd2ff0e139d4a353360bee3898b10",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/git_custody/rdp_scaffold_git_tree.json",
+      "sha256": "e3b629cac730b23f7f8851b899585bb38a8b711c6e7bb3ba0bc4786d4f7f74ab",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/git_custody/rdp_scaffold_git_tree_fixture.json",
+      "sha256": "0d081514cb586b045fb97e4d387ba478f9304684e4858a92cfb9baad599d5c3f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/campaign.json",
+      "sha256": "b9d645bc9276133c0f749e8f84af1bc1fee89468eeed4a15507479a374958fe4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/complete_after.json",
+      "sha256": "d184d34e61c0e3b9ff203eb899bf28fff5d81a5e1fe2803a71e98a66ce6ed332",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/complete_before.json",
+      "sha256": "635ddd5e1009b30b2ea6c0615302c8f0451d15233fa1d1d6908854119b879659",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/editor_client_restart.json",
+      "sha256": "5fa9f7b43c2ebbd8ed86c98b5e11df4d4c06202a3ff046c517d072e72c56eb51",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/native_books.json",
+      "sha256": "02db6698643e6f86c7328597e42e7182b16d00456b8c1fea2ea3f286b99986d9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/native_scaffold.json",
+      "sha256": "0cb339ac4c34dd1ecceb53cbbab8352c7e692b9e6009b01faf4a6e67c3cdd3fe",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/native_truth_profile.json",
+      "sha256": "1f5ec8e1b4a0076722360f3d0f64f9a37e0809b6297b77dda3bd755b83ae553c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/network_smoke.json",
+      "sha256": "140d74cafd0fffb5403702c3fbc0ba857cbaed69afc4a221a7a03dedbab2f920",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/pytest.json",
+      "sha256": "d70268a99ee2ecc75f8e3dde147e8d23b386618adfa4153280835b534398fdc8",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates/G-ENV-002.json",
+      "sha256": "f25a6bd5d6a7b0d55513edba75a426b31a24bd9168dd9768ecdc77dcbf9249af",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates/G-REPO-001.json",
+      "sha256": "7211d4f9ec543426c811d1fd5c463bc885a78018ceb28567daaf475b88677dd7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates/G-STATIC-003-cognitive.json",
+      "sha256": "c0b703b69f149f7b3402bbcd5f6a4fa1f9e417eadad7559d0b939bf166d08589",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates/G-STATIC-003-mypy.json",
+      "sha256": "e0a1c823aaef859829aced39f0cff342dbe1ac55bf8da1275d5daeaf768f0c68",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates/G-STATIC-003-ruff.json",
+      "sha256": "20aaa08b4f2469e592790e49da01b818485fe6642131a4194fb1f3e428957ef5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_profile_input/request.json",
+      "sha256": "edaafc8f5d7d76ee95b5cd6fee697f5f760ab5d4e8a08fa13f9a79b38469c69b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_profile_input/truth_serum_native_profile.json",
+      "sha256": "da41f693ce51b41ed0fb5fbcf24f6eaf9e1850da5da9bff1993f5b0ac963d76c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/runtime_truth_final/admission_report.json",
+      "sha256": "9ce058ea332fbce28d1ba5c74919452c0978e34076b4e21b981415fa2abeddbc",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/runtime_truth_final/admission_trace.jsonl",
+      "sha256": "4a5c3743444fa3b7e451ca210c5e16418d1d2dd5ec12c467408bf3981511c447",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/runtime_truth_native/admission_report.json",
+      "sha256": "9b6f3fc47d4df87d846261f2425c1ad0f860e359dc009500a79ae96e7435dd57",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/runtime_truth_native/admission_trace.jsonl",
+      "sha256": "2264727522674114ba43857ad7cddb7e4b5b1dce25c3c71706c6985a8d27db58",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/G-ASSUME-005.json",
+      "sha256": "e29b863e9d914db127607b17084d1d8cbafd86bc9aff706a8a778cb90b566dcc",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/G-ENV-002.json",
+      "sha256": "622405904916fc7024b821bdefc501fa1773d1ea1b8297178623e9763f1680a7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/G-EXIST-004.json",
+      "sha256": "d8a1e0281532bec60fec943d781ae8a6bd107770bf67c38585648f01a02edc47",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/G-INTEG-006.json",
+      "sha256": "93a28a8ce1104da03d596db3f887b504fa1fe8d958ef3018e942c821b79cb0b1",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/G-RDP-BOOKS-004.json",
+      "sha256": "239169bea0e4f7fed4c4242afcc997cb855bfc626d6ab2551bdc50dbb3ecf8a4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/G-REPO-001.json",
+      "sha256": "7211d4f9ec543426c811d1fd5c463bc885a78018ceb28567daaf475b88677dd7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/G-SEAL-007-advisories.json",
+      "sha256": "b67bfa27f2d618c7cbb30c815756b6fc63e4525732398aab2fe085bc34de492e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/G-SEAL-007-bandit.json",
+      "sha256": "5ba9f4e935c18825d380d640b141a02b100639a7ea8ad239dbf166a985c4fffe",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/G-SEAL-007-secrets.json",
+      "sha256": "273e3e9cc03867473eaf75ae07b36f107effece3177f6718446bba3333e7e381",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/G-SEAL-007-supply.json",
+      "sha256": "05220835c7e7e00d0704540371037f5ad1442438beb6dd1c34b4ba43132d1306",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/G-STATIC-003-aperture.json",
+      "sha256": "9f404734fb1a0b96ab6f6dd1412b372d76024d7712db9afdf8c7f69ce0980940",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/G-STATIC-003-cognitive.json",
+      "sha256": "8faf2d8facb10c8bc6b0745e2e3d6d92d02f26603c5233bbb3af0df2dbbe5da9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/G-STATIC-003-mypy.json",
+      "sha256": "e0a1c823aaef859829aced39f0cff342dbe1ac55bf8da1275d5daeaf768f0c68",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/G-STATIC-003-ruff.json",
+      "sha256": "20aaa08b4f2469e592790e49da01b818485fe6642131a4194fb1f3e428957ef5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/advisory-audit.json",
+      "sha256": "6ea9df5e365b3547fc23477bb1739d99b3351eef7cd03ccc8aee75d212e83b3d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/bandit.json",
+      "sha256": "49c6a7dd09cffeb164d45760d2a9a2ddcd961fa5741065ebc91a47009a3535c3",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/coverage.json",
+      "sha256": "c7922caf111cd3f78ffaa0a6ad82819ae05befc4913bf75d6678fa56bdb3e2e5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/mutations.json",
+      "sha256": "88169d5b728258d67b2017815b5d665b13eb839a531743d81c55d48017b39ec2",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/negative_guard_inventory.json",
+      "sha256": "f589c0ee73b46f21d2ead3b5ff4f1f397fd9352278327c2e6eccc8a347a50cf2",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/network_smoke.json",
+      "sha256": "140d74cafd0fffb5403702c3fbc0ba857cbaed69afc4a221a7a03dedbab2f920",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/production_coverage.json",
+      "sha256": "508f97c9e7f066033334f408537ce3902bd0667b393d334f31d695014e97d293",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/sbom.json",
+      "sha256": "8caa0c3bcd0e9c760326fa05fd56389d35f951d10f1ba21414f4ea2d6701bd8b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-02/G-ASSUME-005.json",
+      "sha256": "93d39f6a69aeccc931a6100094d6fd79eeec1a277f4de98d5c06e02de4b4c490",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-02/G-ENV-002.json",
+      "sha256": "d5637a6619fe5142fec4a28248ceb2b6557a058e4e21edd7f29ca52fc9ea96b7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-02/G-EXIST-004.json",
+      "sha256": "eb36c6e255e49aa7aaf78f6030a02539eecf63fe5c6b7a7f5761bfe6f0e5460c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-02/G-INTEG-006.json",
+      "sha256": "69639ac61ab387929bb202fb91f65b6cf248be4a53b68dd14d32277cd4f76a42",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-02/G-REPO-001.json",
+      "sha256": "7211d4f9ec543426c811d1fd5c463bc885a78018ceb28567daaf475b88677dd7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-02/G-STATIC-003-aperture.json",
+      "sha256": "9f404734fb1a0b96ab6f6dd1412b372d76024d7712db9afdf8c7f69ce0980940",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-02/G-STATIC-003-cognitive.json",
+      "sha256": "3b94a575f526ba8d91d4fa3f6974ba575e57953cd29f343737707462bb941b98",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-02/G-STATIC-003-mypy.json",
+      "sha256": "e0a1c823aaef859829aced39f0cff342dbe1ac55bf8da1275d5daeaf768f0c68",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-02/G-STATIC-003-ruff.json",
+      "sha256": "20aaa08b4f2469e592790e49da01b818485fe6642131a4194fb1f3e428957ef5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-02/coverage.json",
+      "sha256": "7fdcabfbbc07c4b248032c7e2ab1125bb9883d768c0ca5bbb3d0a5aa520e1265",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-02/mutations.json",
+      "sha256": "0d31b32bac18fc426c462a4056d110b462e8aebaf26fcdb60d2087e2007c9f98",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_native_profile/consumer-profile/manifest.json",
+      "sha256": "f5da937f9c1207759dd6325262790eeeb4db09bdded6d9da6e1906ebaa5a76a7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_native_profile/consumer-profile/rrca_ir.json",
+      "sha256": "067cd94cc0bcc8ba57750a4f73769733183b4c5bc0d9299c160bcf679a4dfa6d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/historical_exports/01_reachability.html",
+      "sha256": "c50e80ae19f502a8233e90f9d03ac6b86fdf40d187a98787a7c77185ddc1139b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/historical_exports/02_viability.html",
+      "sha256": "fcac6b9a6fd4a59255e5930ef3d1b2c9340996b3aa60eea62858abdae7b1a373",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/historical_exports/03_clf_cbf_safety.html",
+      "sha256": "c34659aba915ec7b49cb419aea70031d3c282ace7139d5a58c011d86a2d59219",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/historical_exports/04_zonotope_geometry.html",
+      "sha256": "3bb1c4e108a0ad6e8113b981bbf1fbe05b755678af70bde62944b12a7a4a3d99",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/historical_exports/05_covariance_geometry.html",
+      "sha256": "b747fa7f9fbce720bc0297bc27ad86978a8d6fbc3706e1af4e1bdb7361cc3142",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/historical_exports/06_adversarial_estimation.html",
+      "sha256": "39735d0df0e5a20db2e8ef1d73c9adcf113831c9c09786099f12834dbdbe48f8",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/historical_exports/07_timing_abortability.html",
+      "sha256": "1d62249841031a2e5a6f019202dc1c88a1407b563a024d58b2aa31277ad033b5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/historical_exports/08_hybrid_authority.html",
+      "sha256": "a6ede60bf5b88fc3114633af195f10b9f6760640eb226bd87919161b3431236b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/historical_exports/09_information_airlocks.html",
+      "sha256": "01f12f2c84be445b5fc9ce06505bb4cd609fbc3cce6acb4923ac49893542b883",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/historical_exports/10_reduction_classification.html",
+      "sha256": "894add0606d9e95f968e3f5926ad835a096f82d2d36b3cc7d21c88a115b1e676",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/historical_exports/11_wave_witnesses.html",
+      "sha256": "c1bb94f1a18a8b71fc150185b65a9dec55c8fa42fa33d90b84660ee1153dca74",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/historical_exports/12_reservoir_dynamics.html",
+      "sha256": "bb8110b6e3a04f2a4b6d3850ebdd0a17280569acc7d82db071aa5df46db737f1",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/historical_exports/13_scenario_coverage.html",
+      "sha256": "94c55a8068ea9c9b19d745009e7686c7f41a0201720b5f02a87822bb4d2d91e9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/historical_exports/calculus-field-card_v6.html",
+      "sha256": "859beb2e1218d732cf2afb0cefd09e21ea1e31e4829b8c2a74a5fb431636d7de",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/historical_exports/campaign.json",
+      "sha256": "25810f1328abe59fa4b57e499f882f6e3a3aaa5227f28d5aca90570c689f7574",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/historical_exports/geo-alg-field-card_v1.html",
+      "sha256": "7247567ce9f36cc080e14f2f59afbbad1e0f0dfc1048cd708f427109a00628a5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-11-ontology/cleanroom_replay.json",
+      "sha256": "107df862c4b4582653ee3b5675f4eaafccf77e7aa2a7905d8ddddf9d0e1d23ce",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-11-ontology/gates.json",
+      "sha256": "30319876e3e8377576e6fdd70002a3a2668560aad1e781effc48244776f156e5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-11-ontology/pytest.xml",
+      "sha256": "4874a982acc6c3f670df960cd3720fee512fa7fc39579267fce8d779b658e184",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-11-ontology/pytest_summary.txt",
+      "sha256": "fb7e42a7ce9d65a6d12cb8793d1ee598e8122f3d121d74919bd6c6fb4142f1c1",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-11-ontology/rrca_gate_ledger.sqlite",
+      "sha256": "0180da94304b5b33c0622f698128f9e087ce6fada2f3f262d79d89d1f80b8ec4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-11-ontology/rrca_ledger.json",
+      "sha256": "4fb743262087655d5bd99d1ceba35f87651b7edd0251487fd57a1683f055d665",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-11-ontology/shape_validation.json",
+      "sha256": "8b532de18f3415a217fd04a07374d7013ce0515472ac9d4d94d6fe5773b30d5d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-11-ontology/tracers.json",
+      "sha256": "af94ef46ab9a6ace7baf603bc300529b88055150f0c02357c35ae99eb39c0077",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_native_profile/consumer-profile/evidence/evidence_manifest.json",
+      "sha256": "4876be3a8b243da185f155242f78c1a6ce943f9059c270b874e8777df60269cc",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_native_profile/consumer-profile/receipts/compile_receipt.json",
+      "sha256": "a25286e069f9577e5f41af822dcc20a9d8ef5c3236789386763a840eb0a2e209",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_native_profile/consumer-profile/receipts/projection_parity.json",
+      "sha256": "45f0cfb6d7b3e7767cf7a45beb29462b64e404b20ac6d6a594a58af8009be0de",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_native_profile/consumer-profile/receipts/shacl_validation.json",
+      "sha256": "97d7fd3c468f0cf53083193133682a4b64a416c24b2a6178d6e8d64432bfbd63",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_native_profile/consumer-profile/receipts/verification_receipt.json",
+      "sha256": "5294d8bf18af6d26244352720603e529a4fd66112805dd77b1293a2c8dbfdf61",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/native_books/adapter.html",
+      "sha256": "5c5df55815b9852771178758ce1060607b49a56f9fc68841f81f478710b6e5ff",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/native_books/builder.html",
+      "sha256": "0bb5851761e879a9e0580097f654f0b2d0d8c5f49d18962117857b350b238a52",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/native_books/chain-of-responsibility.html",
+      "sha256": "5bcd0591a1f1def728fb32ea6172cedcb930350ab0de24fa28383360516b5e31",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/native_books/command.html",
+      "sha256": "6b928818dc51525295d29aad6ace72d19be747c5b18cdd0671430cb089333597",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/native_books/composite.html",
+      "sha256": "4475b09bdcdfd115fb0f4c1de4c3ef2c318b4129349921efcdf69c17e9c81523",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/native_books/decorator.html",
+      "sha256": "549d338304b1fd7a2a6658bd78c7c09f607d4f7548325176a39e99f9f72d7393",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/native_books/facade.html",
+      "sha256": "a9a4001046398f0d9b648bd15ddc25c0a723a94ca00d6735a8a8fb2f3c84a7f2",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/native_books/factory-method.html",
+      "sha256": "addf420f63eca8919ec8cc62cb21e9818bdca94dda3ba34940aab987f6c89942",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/native_books/iterator.html",
+      "sha256": "11f8a092899414e42465a0c4e98f188a9c25d90c0b56ba653c708fe53a480932",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/native_books/native_books.json",
+      "sha256": "13547e3146428199c8252d4262f6fac647a06964cd867583b5e9da19180406d6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/native_books/observer.html",
+      "sha256": "1da01832fd02c7bfc4954ad3fba5c59386b4c08d893638e941160dbb46ac999d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/native_books/proxy.html",
+      "sha256": "a5d53f30bf7f5ce33e172e142ee267b6775ee9d6c15a0116d6cad9aff4a92ea7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/native_books/singleton.html",
+      "sha256": "f08142874b980dfd6cc32bd46d01360b1b105a13a4c78c294c160bdc47f9c73a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/native_books/state.html",
+      "sha256": "7cd3236699fc1eb7fa987579271bcd5eec1a10df4d1bdda138c1ec581940881a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/native_books/strategy.html",
+      "sha256": "17c1c97fc22bd5063be64f47709664368ed8f29914141780fbc9e5341ba3649f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/native_books/template-method.html",
+      "sha256": "77c8f972f8241c7bce025fa1faec042ca07d5a0363196a6cf96255a2b535b2e6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_native_profile/consumer-profile/projections/case.nq",
+      "sha256": "1d00c408eecaad56c0fc88e2266bcbdff199193f12fae76bcabdaad0b893f037",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_native_profile/consumer-profile/projections/case.sqlite",
+      "sha256": "269df36c3e56bfd90cda7efdd32568b1926ed8aff9fdf7d47dbbd79f15ce8a39",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_native_profile/consumer-profile/projections/duckdb_projection.sql",
+      "sha256": "efd006b74877c8004aa6e270c53b794ddf13829d0302f45254baa937b881c703",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/coverage.json",
+      "sha256": "07f0b92c6bbb9cc26cc5b1a323e7a0738ae52e78404a27197775098343b86527",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/dependency_receipt.json",
+      "sha256": "42fc0143dee72c8d0cd5eee5db793bd365058763a43cebc7c26a474439956ae5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/gates.json",
+      "sha256": "ff2bd35505ad4bb697121f97b48eda7c34204ad59bdc65125e406ecfa50809b4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/inherited_SHA256SUMS.txt",
+      "sha256": "1278fd38474ec91653a66970c58c06043907ab06e7867bdeb70da0afe0726852",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/inherited_artifact_manifest.json",
+      "sha256": "ef8de2e99c57d11e2bfcd1b48fec3479e0b5fb225ed27da8e8240e260aa26df0",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/inherited_machine_handoff.json",
+      "sha256": "35451af57ee95a5ba99c37174bf18aa4de0aac71abad96228cf278b1be656de5",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/inherited_qualification.json",
+      "sha256": "e934376f54852b0a7d42993053c9499a68c57b7ae6185cf5fd96c126da9834da",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/input_overlay_custody.json",
+      "sha256": "39a9a45dcb6b1dc6248d38928de8951524c22872470543a2930250c0f346ee3e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/offline_install.txt",
+      "sha256": "e3bb7a503fe9cd03b2dc9507ef6da0cc47d7b8b039896987014b0f88b5b8f052",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/pytest.xml",
+      "sha256": "2a0e80a4dd01178b661a6722da732c316c10addd7754b993d0fdaad95bf3eda8",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/pytest_summary.txt",
+      "sha256": "cead1355c659cd2a2b0d2860dd85dcc9d7967449a5b3da6626111547890c92f0",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/rrca_gate_ledger.sqlite",
+      "sha256": "412d99bfbadfb9b3e3de64e005f58b18b8ecec79343111fc4a498e2185d62925",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/rrca_ledger.json",
+      "sha256": "32a64a57616d7e32347176bc8c4eac3fe455fa09b9fad2e6aab562e218123c4d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/shacl_mutation_results.json",
+      "sha256": "dd1d0ebdbba26380c044ae8961fcd215388cdfecf2eb2609ee1d8fd44029fbb6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/shacl_mutation_summary.txt",
+      "sha256": "dd1d0ebdbba26380c044ae8961fcd215388cdfecf2eb2609ee1d8fd44029fbb6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/shacl_report.ttl",
+      "sha256": "4a53a3befd9bcdb7273ef3d6e47a83be519927771faee49ef0d2a44ee23be2be",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/shacl_report.txt",
+      "sha256": "77debc800e6c973b66475968bdf71e2e667df8f4108e7f5299fe1651e6606dc9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/shape_validation.json",
+      "sha256": "df4a80a5fef576937b4b73f13c7417e6a16050a4a7fa0f36e30fcb6f486f40f9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/verify_cli_output.json",
+      "sha256": "df4a80a5fef576937b4b73f13c7417e6a16050a4a7fa0f36e30fcb6f486f40f9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_native_profile/consumer-profile/source/build_request.json",
+      "sha256": "9d1cc713c09671fe944343401198da1c173acc6ca887a5afde632313c45570c2",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_native_profile/consumer-profile/source/cumulative_gate_ledger.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_native_profile/consumer-profile/source/single_agent_ledger.json",
+      "sha256": "14375707e5dd4c9c2f93237c01e6fbf90a4d22bba339cfa28d565b147d92fb29",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_native_profile/consumer-profile/source/sub_agent_attestations.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_native_profile/consumer-profile/source/supervised_agent_ledger.json",
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/rrca_native_profile/consumer-profile/evidence/artifacts/native-report/truth_serum_native_profile.json",
+      "sha256": "da41f693ce51b41ed0fb5fbcf24f6eaf9e1850da5da9bff1993f5b0ac963d76c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/native_books/adapter.html",
+      "sha256": "7e59739ac7a51cf6c639ebe5de1aa88682944b06c3ac9d160b7dca6d72a7312c",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/native_books/builder.html",
+      "sha256": "6bb6fc2b03a437c7290a86ddab8ba7b6234ddf4af606c1aaa001fe02ba2027b7",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/native_books/chain-of-responsibility.html",
+      "sha256": "373a6402b7cbc38351b3c937df866c20884fea78d4953b533c4af1f020904b60",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/native_books/command.html",
+      "sha256": "1cde61a675844399daedbe5e9bc58a9008564339fb025ea4abd81a968bc7a8d9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/native_books/composite.html",
+      "sha256": "5b8a0858a02aaa760e918980e8ccf9429fd7b3cc0eb0b9d44f7e6ab4df616311",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/native_books/decorator.html",
+      "sha256": "1481ae5a6394fafb4029060e521128a71a19fdde061382c1a511c27faad851f8",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/native_books/facade.html",
+      "sha256": "771bafe1571261f668bb383a4e94ad0266561ea205418f3b95c70d773ad37a96",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/native_books/factory-method.html",
+      "sha256": "163ff39a3fb2bb89a1280b5c2fe4a95c06e6dcb0009185d93e8d5e53fac241b4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/native_books/iterator.html",
+      "sha256": "67a8980b67af5423fec64fd37d7058bce2cfccb58723d6e7eef1c44ec3546f95",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/native_books/native_books.json",
+      "sha256": "76c9ee20e2479856c85546c0b1475bc85e7c37904f6fd61387ab92ea15270308",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/native_books/observer.html",
+      "sha256": "a9c57540157efa687b8d78d5250a1a2c6f2972f11371b34681a9dc81c022dd8f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/native_books/proxy.html",
+      "sha256": "5acbdc9afca08cd801c13549e6c9321de51323d89ed897330d909d7e54d83d05",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/native_books/singleton.html",
+      "sha256": "e14596442ba512565508e8e21265841e0cac3336937d79c6e526274308397558",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/native_books/state.html",
+      "sha256": "cde618ef6565e4ed3c15cae3434f558356034619fb671f1c2de57ea18c767e8b",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/native_books/strategy.html",
+      "sha256": "525209e91dd29f334fab219b609b8c1959a0d4226cc859140388b107cbc64d5d",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/qualified-gates-03/native_books/template-method.html",
+      "sha256": "b3d8a505189cae886dc9a25f6119dbfd16a996790b24a42025933937d4e15c76",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/native_books/adapter.html",
+      "sha256": "369d259b3123dcaf897d567fa2424d813f93859f8906fc662f81d459915bf28f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/native_books/builder.html",
+      "sha256": "96a801919005d17bdb6d92919bef20057942cf67232fcb42ea49b2cd33018eb9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/native_books/chain-of-responsibility.html",
+      "sha256": "ee952eb92e14f19c9e2660d14696db93300a82cc1cccdee8a2d4eaa5eee8c27f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/native_books/command.html",
+      "sha256": "57447b35f64280323b53508143e6d2c52a9e96c01822feebd4eae4a40d2d06c4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/native_books/composite.html",
+      "sha256": "d49d58e8b87beba493dcdc90447623517586c98405ffd90cddbdcc271106d52a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/native_books/decorator.html",
+      "sha256": "9ac7e0ef11a444138bd58475769ffad79f0af3f99309396c97159c449a76b1ce",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/native_books/facade.html",
+      "sha256": "3c122966bf6bdcb79c0151c96cef293e24c356c05a59e5578bfbed372578f4e0",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/native_books/factory-method.html",
+      "sha256": "c1a8a9a6269b7bd8694bc527aed4032dd4b3eda1270e0bbb5488df45a908e0ff",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/native_books/iterator.html",
+      "sha256": "d8a0fc029480833b405e6477999332bcba464405c9ffedb7c40372d8f31fd378",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/native_books/native_books.json",
+      "sha256": "eb21c7497d36b358c994cd0d4b8cb11d305be52d245f7708a96d8e47fdbdd46e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/native_books/observer.html",
+      "sha256": "ea305c5007ada15fc387991a0e9de840b24749117162788dd272f8bf34360418",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/native_books/proxy.html",
+      "sha256": "9b6b8aa3beed196ffaef50589a6a06a47a866f21a9fb0cbf6f4ae2ee0d29d876",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/native_books/singleton.html",
+      "sha256": "ec2468748f6db99c4990b16f9064c0570e8cb38b7fda5f71eec6acb57a6f2297",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/native_books/state.html",
+      "sha256": "76334fbd58275e3a9f4ebfe6c27037e881ea43c7aaf1996038f69e623c277c53",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/native_books/strategy.html",
+      "sha256": "ae63f285967dc75faab9e460c7fd80196b0cdaafac52a86d83d532fce19bc520",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/evidence/epochs/2026-10-11-software/cleanroom/native_books/template-method.html",
+      "sha256": "d3de3c60b3fdbbb523bedd9eef4f86600071038205481361f04b8bb261fb79f2",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/equivalent_concept.ttl",
+      "sha256": "4a53a3befd9bcdb7273ef3d6e47a83be519927771faee49ef0d2a44ee23be2be",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/equivalent_concept.txt",
+      "sha256": "77debc800e6c973b66475968bdf71e2e667df8f4108e7f5299fe1651e6606dc9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/forge_release.ttl",
+      "sha256": "e7d60bb19d0e3b7bc60e36c1f29112281326645b6d96d4b9653a8cd785930376",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/forge_release.txt",
+      "sha256": "adc9c97d107b04568dcb03b3bd857aaf405bae90a18a53ceaaf0b6f4f85a88f6",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/missing_evidence.ttl",
+      "sha256": "03597157f5e6662b793b0028e198f85a7dd97586b7600c9f1d9dffcadaa6d54a",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/missing_evidence.txt",
+      "sha256": "586e084303f01675b427362a59adb6b0b9f2697f8efa3afaf82b53f975fc8b07",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/no_mapping.ttl",
+      "sha256": "d581abc22aa2c52264b4e28a1d3f5f47b90d3b7089a1b9c12458da693ff54d33",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/no_mapping.txt",
+      "sha256": "f73dab590dda819f353e79301ece3da2cf9e3d6bb4c4f5cb4baeaf27ca6ac51f",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/policy_sha.ttl",
+      "sha256": "4a53a3befd9bcdb7273ef3d6e47a83be519927771faee49ef0d2a44ee23be2be",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/policy_sha.txt",
+      "sha256": "77debc800e6c973b66475968bdf71e2e667df8f4108e7f5299fe1651e6606dc9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/promoted_admission.ttl",
+      "sha256": "5fb42e3494886341d66c536c4041d3f818468c451fc4d4f9912a69e0d0ede061",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/promoted_admission.txt",
+      "sha256": "ef7c9eea347d4f1f015216cfba31f0ab44fb41e4fd40d688fa681352458eb5f4",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/removed_relation.ttl",
+      "sha256": "6adecf31e072c3cd2faf95acce6c55ec5b334b4ae69e6cb65388cfaae37845a8",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/removed_relation.txt",
+      "sha256": "78fb8e320474cf56ac350343972a7b2bc274a4e1220d1fbf913868d2a738feca",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/source_sha.ttl",
+      "sha256": "4a53a3befd9bcdb7273ef3d6e47a83be519927771faee49ef0d2a44ee23be2be",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/source_sha.txt",
+      "sha256": "77debc800e6c973b66475968bdf71e2e667df8f4108e7f5299fe1651e6606dc9",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/tenth_tool.ttl",
+      "sha256": "9a27d0620e3bfbb34d29ce4b0d0526a0494c94edb21dc7f8c492326aeca5f79e",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/tenth_tool.txt",
+      "sha256": "e49059e48495b289308144d46a996dc60d33846bbec39a5e78e4a4e2d958f2f1",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/workflow_execute.ttl",
+      "sha256": "c030526f4cae7a4a339eb7e65e4b4f1f9ffc69ab7b35fa5ebe2f0ab507d66c55",
+      "matches_extracted": true
+    },
+    {
+      "path": "hmt-reusable-design-references/ontology/evidence/epochs/2026-10-12-closeout/mutants/workflow_execute.txt",
+      "sha256": "c5c1bd7e0fab596ac2f4043c0495fc24d33ae21fbab35798b64f12e91bcf8d29",
+      "matches_extracted": true
+    }
+  ]
+}

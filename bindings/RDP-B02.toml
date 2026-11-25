@@ -1,0 +1,7 @@
+version = 1
+pattern = "RDP-B02"
+scope = "software"
+
+[settings]
+event = { event_id = "fixture", sequence = 1, payload = "hello" }
+subscribers = ["echo", "uppercase"]

@@ -1,0 +1,15 @@
+--- src/hmt_pg_patterns/checkpoints_lua.py
++++ src/hmt_pg_patterns/checkpoints_lua.py.mutated
+@@ -13,9 +13,9 @@
+  return #x<19 or (#x==19 and x<='9223372036854775807')
+ end
+ local function cmp(a,b)
+- if #a~=#b then return #a<#b and -1 or 1 end
+- if a==b then return 0 end
+- return a<b and -1 or 1
++ local left,right=tonumber(a),tonumber(b)
++ if left==right then return 0 end
++ return left<right and -1 or 1
+ end
+ if not ok or type(old)~='table' or not decimal(old.epoch) or not decimal(old.sequence) then return 'INVALID' end
+ if old.db_role~=next.db_role or old.stream_id~=next.stream_id then return 'INVALID' end

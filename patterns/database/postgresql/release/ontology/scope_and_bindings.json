@@ -1,0 +1,88 @@
+{
+  "metadata_scope": "Software reference delivery; host-process deployment surfaces are references, not a deployed system.",
+  "mission_formula_scope": {
+    "selected_mission_formula_families": [],
+    "selected_mission_equations": [],
+    "disposition": "not_applicable",
+    "reason": "No physical mission model or twin fidelity claim is in this PostgreSQL software branch."
+  },
+  "profiles": [
+    {
+      "id": "software_reference",
+      "status": "PASS",
+      "source_digest": "6771f2465d4f6e644f13af47375e562ccaee1a5476d44e8846954b0095fa13b7",
+      "reported_tests_passed": 446,
+      "reported_skips": 0,
+      "reported_branches_covered": 265,
+      "reported_branches_total": 278,
+      "reported_lines_covered": 1285,
+      "reported_lines_total": 1301,
+      "reported_mutants_caught": 12,
+      "reported_mutants_total": 12,
+      "observation_authority": "evidence/software/summary.json; evidence/mutations/mutation-report.json; evidence/native_vv/native-vv-result.json; evidence/native42/summary.json",
+      "scope": "Live PostgreSQL WASM SQL with explicit test session identity, native Redis, Python worker service composition, software contracts and native admission tools.",
+      "evidence_refs": [
+        "evidence/software/summary.json",
+        "evidence/native42/summary.json"
+      ]
+    },
+    {
+      "id": "native_worker",
+      "status": "NOT_QUALIFIED",
+      "test_ref": "qualification/native_worker_test.py",
+      "observed_failure": "AUTHORITY_DENIED after PGlite ignored startup username.",
+      "scope": "Fixed child plus true native PostgreSQL LOGIN identity; this is distinct from in-process test-session composition."
+    },
+    {
+      "id": "tailcat_wire",
+      "status": "NOT_QUALIFIED",
+      "test_ref": "qualification/tailcat_wire_test.py",
+      "observed_failure": "Netlink EPERM before tunnel establishment;03-tailcat.xml records TAILCAT_SERVER_EXITED.",
+      "scope": "Actual pinned Tailcat/local-DERP authenticated transport to fixed LOGIN worker."
+    }
+  ],
+  "supplied_sources": [
+    {
+      "path": "project_sources/04-EdgeOps_Env_ReproduceStack_FieldDeclarations.xml",
+      "sha256": "ab5f29718d0c50f6f753f15c79b27dd6ca67950d5cad30d8ea2dd25d6b9f75ab"
+    },
+    {
+      "path": "project_sources/08-EdgeOps_Containment_HardenRuntime_FieldDeclarations.xml",
+      "sha256": "05e78d02d3e308214c9b0ff2e5f366558ce02d68bdf7739438bd3277878aeade"
+    },
+    {
+      "path": "project_sources/03-EdgeOps_Contracts_ValidateSeams_FieldDeclarations.xml",
+      "sha256": "118978723c6aeda5ae909d8edc4a1c7bbf868c8b99958b9009398c0502ad0630"
+    },
+    {
+      "path": "project_sources/06-EdgeOps_Orchestration_ReadyDeploy_FieldDeclarations.xml",
+      "sha256": "df79864474a2ec0aea99717bb31f4264b4c285af0c0296bf8d3070ad5296c830"
+    },
+    {
+      "path": "project_sources/07-EdgeOps_Release_TraceLifecycle_FieldDeclarations.xml",
+      "sha256": "b54efb75ba60ecc82391dbb96fa282cf493cfca5ecfdafaf8a4a7f05199abf2b"
+    },
+    {
+      "path": "project_sources/05-EdgeOps_FieldDeclarations_Federated.xml",
+      "sha256": "b2e54021c3820ec45e74d9b0d1104c423d2598622f23c093449c6f48c91c8c81"
+    },
+    {
+      "path": "project_sources/09-Ontology_MachineHandoff_Schema.json",
+      "sha256": "916f5a82442a85b18c941c760ee058bdc8b64a797667f088de4f92ac4beb3142"
+    },
+    {
+      "path": "project_sources/11-Ontology_FederatedBaseline_Core.ttl",
+      "sha256": "d01595e2f9e549f51556964dc91a0ee7629d6fba3744fc78d86a5e3855c918f3"
+    },
+    {
+      "path": "project_sources/12-Ontology_FederatedBaseline_SubtypeCore.ttl",
+      "sha256": "2de2b0ad9cd705946926e659a5ed34ca478b9d7ed00df5ad381d05d99f7f7861"
+    },
+    {
+      "path": "project_sources/16-rrca_verification_and_validation_v4.md",
+      "sha256": "9e40b6b088a8196f959fba170403d0b6da8340a27ab1fe04a5843004e234076d"
+    }
+  ],
+  "source_revision": "9bc06522f27d4576f08caf44f4989031d1b145f1",
+  "provenance_id": "hmt-pg-reference-1.0.0-20261104-6771f2465d4f"
+}

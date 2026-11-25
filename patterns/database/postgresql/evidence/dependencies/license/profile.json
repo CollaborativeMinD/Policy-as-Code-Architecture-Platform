@@ -1,0 +1,161 @@
+{
+  "added_exact_token": "LGPL-3.0-only",
+  "allowed": [
+    "MIT",
+    "Apache",
+    "BSD",
+    "PSF",
+    "Python Software Foundation",
+    "MPL",
+    "ISC",
+    "CNRI",
+    "Public Domain",
+    "Unlicense",
+    "LGPL-3.0-only"
+  ],
+  "epoch": "pg-reference-1-20261104",
+  "exact_package_bindings": {
+    "psycopg": {
+      "classifiers": [
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Developers",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: Microsoft :: Windows",
+        "Operating System :: POSIX",
+        "Programming Language :: Python :: 3 :: Only",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
+        "Programming Language :: Python :: 3.14",
+        "Programming Language :: Python :: 3.15",
+        "Programming Language :: Python :: Implementation :: CPython",
+        "Programming Language :: Python :: Implementation :: PyPy",
+        "Topic :: Database",
+        "Topic :: Database :: Front-Ends",
+        "Topic :: Software Development",
+        "Topic :: Software Development :: Libraries :: Python Modules"
+      ],
+      "expression": "LGPL-3.0-only",
+      "license": null,
+      "version": "3.3.7"
+    },
+    "psycopg-binary": {
+      "classifiers": [
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Developers",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: Microsoft :: Windows",
+        "Operating System :: POSIX",
+        "Programming Language :: Cython",
+        "Programming Language :: Python :: 3 :: Only",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
+        "Programming Language :: Python :: 3.14",
+        "Programming Language :: Python :: 3.15",
+        "Programming Language :: Python :: Implementation :: CPython",
+        "Topic :: Database",
+        "Topic :: Database :: Front-Ends",
+        "Topic :: Software Development",
+        "Topic :: Software Development :: Libraries :: Python Modules"
+      ],
+      "expression": "LGPL-3.0-only",
+      "license": null,
+      "version": "3.3.7"
+    },
+    "psycopg-pool": {
+      "classifiers": [
+        "Development Status :: 5 - Production/Stable",
+        "Intended Audience :: Developers",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: Microsoft :: Windows",
+        "Operating System :: POSIX",
+        "Programming Language :: Python :: 3 :: Only",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
+        "Programming Language :: Python :: 3.14",
+        "Programming Language :: Python :: 3.15",
+        "Programming Language :: Python :: Implementation :: CPython",
+        "Programming Language :: Python :: Implementation :: PyPy",
+        "Topic :: Database",
+        "Topic :: Database :: Front-Ends",
+        "Topic :: Software Development",
+        "Topic :: Software Development :: Libraries :: Python Modules"
+      ],
+      "expression": "LGPL-3.0-only",
+      "license": null,
+      "version": "3.3.3"
+    }
+  },
+  "human_approval": false,
+  "legal_compatibility_opinion": false,
+  "lock": {
+    "bytes": 124988,
+    "path": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/uv.lock",
+    "sha256": "73baf5c7335997906a9f22bd8cce04b5837ff65796b23de3578115c580f8847c"
+  },
+  "native_default_hold": {
+    "bytes": 73,
+    "path": "/workspace/scratch/e7495113964e/work/epochs/final-license.json",
+    "sha256": "c27a647860a8316b000d101d9ad84fd19395958eda041d082caa9d4a4aefdc2c"
+  },
+  "native_rule_modified": false,
+  "platform_exclusions": {
+    "colorama": [
+      "sys_platform == 'win32'"
+    ],
+    "tzdata": [
+      "sys_platform == 'win32'"
+    ]
+  },
+  "promotion_authorized": false,
+  "pyproject": {
+    "bytes": 2080,
+    "path": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/pyproject.toml",
+    "sha256": "2016fe4bc3bea91d5830d18e9a4aadaad626a946674c315a57ca84264b3bcd92"
+  },
+  "roots": [
+    "annotated-types",
+    "asyncpg",
+    "asyncpg-stubs",
+    "attrs",
+    "coverage",
+    "duckdb",
+    "greenlet",
+    "hypothesis",
+    "iniconfig",
+    "jsonschema",
+    "jsonschema-specifications",
+    "packaging",
+    "pluggy",
+    "polars",
+    "polars-runtime-32",
+    "psycopg",
+    "psycopg-binary",
+    "psycopg-pool",
+    "pydantic",
+    "pydantic-core",
+    "pygments",
+    "pyrsistent",
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov",
+    "pyyaml",
+    "redis",
+    "referencing",
+    "rpds-py",
+    "ruff",
+    "sortedcontainers",
+    "sqlalchemy",
+    "sqlmodel",
+    "typing-extensions",
+    "typing-inspection"
+  ],
+  "schema": "hmt.pg.chosen-license-profile/1",
+  "scope": "Installed Linux Python reference dependencies, metadata inventory only; no vendored dependencies shipped.",
+  "selection_authority": "Existing user request for Psycopg references; explicit parent implementation instruction."
+}

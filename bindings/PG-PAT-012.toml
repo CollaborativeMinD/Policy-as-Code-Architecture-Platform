@@ -1,0 +1,6 @@
+version = 1
+pattern = "PG-PAT-012"
+scope = "software"
+
+[settings]
+filenames = ["01_metrics.sql", "02_authority.sql", "03_checkpoints.sql"]

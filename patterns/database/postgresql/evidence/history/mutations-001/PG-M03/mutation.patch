@@ -1,0 +1,11 @@
+--- src/hmt_pg_patterns/streaming_scan.py
++++ src/hmt_pg_patterns/streaming_scan.py.mutated
+@@ -59,7 +59,7 @@
+         if self._offset + view.nbytes > self.policy.max_total_bytes:
+             raise StreamError("STREAM_CAPACITY")
+         # Own an immutable, bounded snapshot even while the iterator is suspended.
+-        return self._scan(bytes(view))
++        return self._scan(view)
+ 
+     def _cut(self, reason):
+         value = Chunk(

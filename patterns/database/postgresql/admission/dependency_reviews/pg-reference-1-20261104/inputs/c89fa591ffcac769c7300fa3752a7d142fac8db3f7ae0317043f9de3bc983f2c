@@ -1,0 +1,672 @@
+{
+  "audit_id": "PG-AUDIT-ADMISSION-001",
+  "created_utc": "2026-11-04T07:26:28.372683+00:00",
+  "attestation": {
+    "agent": "/root/admission_audit",
+    "scope": "Read-only inspection of the supplied RDP ZIP and all recursively nested ZIP directory entries, baseline Agents.md and native engineering gates, three current v2 policy Markdown files, nested peer/streaming qualification entrypoints, inherited exact-15 catalog schema, current handoff schema, EdgeOps field declarations, and RRCA ledger shape. No inherited bytes changed. No new branch software or service behavior evaluated.",
+    "qualification_claim": "AUDIT_COMPLETE; this audit is not candidate admission, independent institutional approval, or proof of software correctness.",
+    "output_is_scratch": true
+  },
+  "source_hashes": {
+    "baseline/hmt-reusable-design-references/Agents.md": "723bf1667f5859363b84f089e89298d554edf1183e51eda83b99ac503c591a5e",
+    "baseline/hmt-reusable-design-references/Runbook.md": "51fcf731df42ffe625f93838a1bba8e0952a55a95845198831ffdea85f99de9b",
+    "baseline/hmt-reusable-design-references/contracts/catalog.schema.json": "63f8c9563a4c8c3d8f23dcf25fc46fe593bb468778c3c77f93074132869671a4",
+    "baseline/hmt-reusable-design-references/catalog.json": "e7ff7e999152cc4b79db43aaed057d5ce29e7158632933f04b2084b4cf9e82c4",
+    "baseline/hmt-reusable-design-references/ontology/Agents.md": "9662610b26c08d9c05b4b508097f58f62aacbb58efd0d0c2b09220f6519c5220",
+    "baseline/hmt-reusable-design-references/policy/admission_controls.json": "91fc8dea8582a31c5e727720eb22164e116da22f9ffae1278c92849f299cde9f",
+    "baseline/hmt-reusable-design-references/policy/source_registry.json": "189e5f4fe4d70396c29eccbd079988ac5e8c557254482d7d32cd61dd168eb2b8",
+    "baseline/hmt-reusable-design-references/release/admission_host_pins.json": "20504e8653a2f457a774b51fe643f5d4a9d5fdc7da7db99cc1d5a51ca6db59ba",
+    "baseline/hmt-reusable-design-references/provenance/ci_reference_audit.json": "3a5d2f09dbaf723f8fd1fa16dd5aba52bb662c59c6a1c25dd87a642661eba148",
+    "baseline/hmt-reusable-design-references/evidence/epochs/2026-10-11-software/native_profile_conflicts.json": "8cef46c8178c5ca4192eee047ed10f4e53b6279a93960dc1a1ab7f753624bbbf",
+    "baseline/hmt-reusable-design-references/tools/command_crash_child.py": "1f8a27acce3df90581155e649cfcd7c08272993852ace30bcfdbb2fc5b0d97df",
+    "baseline/hmt-reusable-design-references/tools/coverage_gate.py": "5d7f1772ef3ab3037ed4603226441680dfb8f2b5be78eb638c5dc164b18fa39b",
+    "baseline/hmt-reusable-design-references/tools/gates.py": "519ea28492402089ae1c3eb9f080dce801c68cd23f41a8e8b5898d738f50bcb1",
+    "baseline/hmt-reusable-design-references/tools/mutation_cases.py": "f6297683b1da7b7127899660c7a7dcd810715b82b2e013aa7a35ac7888796d3b",
+    "baseline/hmt-reusable-design-references/tools/mutations.py": "9f12e57d2ea91ff9a9465fcbfdafa582849095b1511acce55787ab70cae7c275",
+    "baseline/hmt-reusable-design-references/tools/native_books.py": "97b420db609f69d98cb4805e7c59c0e1db98bd35f9f179c534cfbe9cfb56287e",
+    "baseline/hmt-reusable-design-references/tools/network_smoke.py": "205c1e2522e5d7b9e63f9945d413ebd78bae041852ede25c5bfbe917107da57e",
+    "baseline/hmt-reusable-design-references/tools/policy_gate.py": "b25caad598e72ae69462eeb7d4422e614c6fe10c4cf45720ed69e0514e6672d0",
+    "baseline/hmt-reusable-design-references/tools/reconcile.py": "f06f2f9ca47daf255e3c42722150f92657bdd3d1834808502c6609a8c9b11994",
+    "baseline/hmt-reusable-design-references/tools/release_archive.py": "2f592753700eea76aa72409f33f25c131cf8d92adba84a69624ab18207324b66",
+    "baseline/hmt-reusable-design-references/tools/secret_scan.py": "80400e3ce6da8b3eb512afece8de53af575755ab6933ef8c9d335d34595c0ccc",
+    "baseline/hmt-reusable-design-references/tools/smoke_fixture.py": "4fa7e51371f1d5582664a07447cd6b910e635f72dfd261a613cc2b3c914f98c5",
+    "baseline/hmt-reusable-design-references/tools/structure.py": "3a25cf12775d77d50ddd73f12fec129802fdf3362d0a2814d8d1fbfe37bc4d7a",
+    "baseline/hmt-reusable-design-references/tools/supply.py": "5fac382783d3282ca50a293bf231ad01dca18c92c3ae4c5cf8dba9d629b58792",
+    "upload/PACE-T Ops Matrix Policy_v2.0.0.md": "ab17df9ff81f31dfaa1a768111c641e1b1c7f837c8d3a2511ec50b1770da42b1",
+    "upload/Structural Complexity Policy_v2.0.0.md": "c4ba62091f9b4d52d4950a5d9b9e4c4f698013748d53905547d14dfb9072188b",
+    "upload/Verification and Validation Policy_v2.0.0.md": "481bd9bf1ed7921a8e373aaab591a8bd94de2dcd463e57dd5398d366f4fa1e87",
+    "project_sources/09-Ontology_MachineHandoff_Schema.json": "916f5a82442a85b18c941c760ee058bdc8b64a797667f088de4f92ac4beb3142",
+    "project_sources/10-Ontology_MachineHandoff_Example.json": "ebdcd7b5652be4ba82709ff0c8cf914c6877afe7a958d8abd3e22de0dccf72ef",
+    "project_sources/16-rrca_verification_and_validation_v4.md": "9e40b6b088a8196f959fba170403d0b6da8340a27ab1fe04a5843004e234076d",
+    "project_sources/03-EdgeOps_Contracts_ValidateSeams_FieldDeclarations.xml": "118978723c6aeda5ae909d8edc4a1c7bbf868c8b99958b9009398c0502ad0630",
+    "project_sources/04-EdgeOps_Env_ReproduceStack_FieldDeclarations.xml": "ab5f29718d0c50f6f753f15c79b27dd6ca67950d5cad30d8ea2dd25d6b9f75ab",
+    "project_sources/05-EdgeOps_FieldDeclarations_Federated.xml": "b2e54021c3820ec45e74d9b0d1104c423d2598622f23c093449c6f48c91c8c81",
+    "project_sources/06-EdgeOps_Orchestration_ReadyDeploy_FieldDeclarations.xml": "df79864474a2ec0aea99717bb31f4264b4c285af0c0296bf8d3070ad5296c830",
+    "project_sources/07-EdgeOps_Release_TraceLifecycle_FieldDeclarations.xml": "b54efb75ba60ecc82391dbb96fa282cf493cfca5ecfdafaf8a4a7f05199abf2b",
+    "project_sources/08-EdgeOps_Containment_HardenRuntime_FieldDeclarations.xml": "05e78d02d3e308214c9b0ff2e5f366558ce02d68bdf7739438bd3277878aeade",
+    "upload/hmt-reusable-design-references.zip": "5e4d800ac89d07a2b55670b44032fe2cb93202fc6c78cd17298e9fc5aafc1e22",
+    "work/primitive_sources/HMT_Content_Defined_Streaming_v1.0.0/Agents.md": "a32d63d8e70963509e38238e6b209ddaea2f205460a3b2f4cc9b456ff5929d9f",
+    "work/primitive_sources/HMT_Content_Defined_Streaming_v1.0.0/run_vv.py": "66dc34107dc5075e51fb07c229e352ddf1be17cba08344bc48d8affcbb1640a7",
+    "work/primitive_sources/HMT_Content_Defined_Streaming_v1.0.0/verify_manifest.py": "3954c7177baf7387441c25c1c08fb7791f87dd289bdd67a1e0a3f9b716153271",
+    "work/primitive_sources/HMT_Content_Defined_Streaming_v1.0.0/vv/quality.py": "f5cbc71ed5fa8424ddbf24e19f4bf9c0d736be49fc5b090c27c04fe507a54463",
+    "work/primitive_sources/HMT_Peer_Bound_Authority_v1.0.0/Agents.md": "a32d63d8e70963509e38238e6b209ddaea2f205460a3b2f4cc9b456ff5929d9f",
+    "work/primitive_sources/HMT_Peer_Bound_Authority_v1.0.0/run_vv.py": "66dc34107dc5075e51fb07c229e352ddf1be17cba08344bc48d8affcbb1640a7",
+    "work/primitive_sources/HMT_Peer_Bound_Authority_v1.0.0/verify_manifest.py": "3954c7177baf7387441c25c1c08fb7791f87dd289bdd67a1e0a3f9b716153271",
+    "work/primitive_sources/HMT_Peer_Bound_Authority_v1.0.0/vv/quality.py": "f5cbc71ed5fa8424ddbf24e19f4bf9c0d736be49fc5b090c27c04fe507a54463",
+    "work/admission_sources/ci42/Agents.md": "f27e25603d411ddab44596b791d551812e6e3ae0aa5200dbe861898f6da69a95",
+    "work/admission_sources/ci42/Runbook.md": "8abd08158eee78097871e9d4267dccfba87a1a4847162181b5ea24268e3e65ac",
+    "work/admission_sources/ci42/orchestrator/QUALIFICATION.md": "1ea7fb53597d6fe938b0d9a7945d5d685e095f268b9aedbb5a12af221b78f24b",
+    "work/admission_sources/ci42/orchestrator/schemas/request.schema.json": "4365836660e441769d3d7a40a565eefdad35660931230d302a59bc8488904165",
+    "work/admission_sources/ci42/orchestrator/examples/admission-template.json": "c1500d6413161a769b74611e273ef834a66e97b0d0cced57724db7af328280de",
+    "work/admission_sources/ci42/lanes.json": "e9e562d1234af44d05e6124d966925bf2d34504cecb8e7bf107a67cfc9406ffa",
+    "work/admission_sources/ci42/src/hmt_policy/qualification.py": "b964e38ef4c87f144e2bdbb5362ae2207955c9c59686ea6b3f9fe8a98e8c409e",
+    "work/admission_sources/ci42/src/hmt_policy/evidence.py": "c51db8ad0ff25ead4af931213c5c816b73395b11b6bfb751baa15883f3905f67",
+    "work/admission_sources/ci42/src/hmt_policy/ledger_schema.py": "079664ac7a38d96bb9efd65212f3a1b27a9bfbca0bf7dae2876d02cdd3405431",
+    "work/admission_sources/ci42/src/hmt_policy/coverage_gate.py": "9b59bf440a94bbd4f1e098d8c07087b8c8c1bd7a854c8ea2fd22edf8cade509e"
+  },
+  "nested_archives": [
+    {
+      "location": "hmt-reusable-design-references.zip!hmt-reusable-design-references/patterns/HMT_Content_Defined_Streaming_v1.0.0.zip",
+      "sha256": "611bb42d0c346948b2aa34f7495fbd41732503891f88bc5dd04a64d9fa0e96c3",
+      "size_bytes": 100486,
+      "entries": 54,
+      "entrypoints": [
+        "HMT_Content_Defined_Streaming_v1.0.0/run_vv.py",
+        "HMT_Content_Defined_Streaming_v1.0.0/verify_manifest.py"
+      ]
+    },
+    {
+      "location": "hmt-reusable-design-references.zip!hmt-reusable-design-references/patterns/HMT_Peer_Bound_Authority_v1.0.0.zip",
+      "sha256": "a9f399b80ff87d02c724f34eb1cd5126ad122c8f67f05694d28ae0e54ba23e0e",
+      "size_bytes": 123807,
+      "entries": 76,
+      "entrypoints": [
+        "HMT_Peer_Bound_Authority_v1.0.0/run_vv.py",
+        "HMT_Peer_Bound_Authority_v1.0.0/verify_manifest.py"
+      ]
+    },
+    {
+      "location": "hmt-reusable-design-references.zip!hmt-reusable-design-references/patterns/HMT_Agent_Domain_Procedure_FastPath_WorkflowInjection_v1.1.0.zip",
+      "sha256": "9c541495b3a47dbf554e3ba931adef49ca58fb5c805da69fed9bd6fcfb8a4eb6",
+      "size_bytes": 81395,
+      "entries": 33,
+      "entrypoints": []
+    },
+    {
+      "location": "hmt-reusable-design-references.zip!hmt-reusable-design-references/provenance/historical_payloads/HMT_RDP_S0_Checkpoint_HOLD_2026-10-11.zip",
+      "sha256": "a319573ffc85caf80a19f1fdbac9be2c5150891581df25d109714e4b30e853a2",
+      "size_bytes": 434441,
+      "entries": 119,
+      "entrypoints": []
+    },
+    {
+      "location": "hmt-reusable-design-references.zip!hmt-reusable-design-references/provenance/historical_payloads/HMT_RDP_S0_Checkpoint_HOLD_2026-10-11.zip!HMT-RDP-S0-Checkpoint/provenance/epochs/docs_before_native.zip",
+      "sha256": "d0f8e97eb543a5232d4f3621ebfba3ba020b46a5df3a450c5ac218cb177cc9d7",
+      "size_bytes": 2131,
+      "entries": 3,
+      "entrypoints": []
+    },
+    {
+      "location": "hmt-reusable-design-references.zip!hmt-reusable-design-references/provenance/historical_payloads/dtk_v4_original_cleanroom.zip",
+      "sha256": "bad961e1dbbe38e36684a7ae984fd3d9ca5993f386699b90e1a3251abcd1b536",
+      "size_bytes": 10471449,
+      "entries": 200,
+      "entrypoints": []
+    }
+  ],
+  "critical_findings": [
+    {
+      "id": "AUD-01",
+      "finding": "The supplied root engineering driver is tied to old hmt_rdp plus exactly 15 design books, not a generic new-branch admission launcher. Run generic intact tools individually on the PostgreSQL cwd and use new branch-native checks for candidate requirements; preserve legacy PASS/FAIL receipts as scoped observations.",
+      "evidence": [
+        "tools/gates.py",
+        "tools/native_books.py",
+        "tools/mutations.py",
+        "contracts/catalog.schema.json"
+      ]
+    },
+    {
+      "id": "AUD-02",
+      "finding": "v2 structural policy blocks functions >=60 and modules >=180, with refactor bands beginning at 50 and 150. Legacy tools/structure.py uses >60/>180 and counted nonblank/noncomment LOC; nested vv/quality.py uses >60/>180 physical lines. Do not alter either inherited tool. Add strict v2 physical/count inventory and avoid refactor-required bands in new source.",
+      "evidence": [
+        "tools/structure.py",
+        "upload/Structural Complexity Policy_v2.0.0.md"
+      ]
+    },
+    {
+      "id": "AUD-03",
+      "finding": "Legacy coverage_gate.check computes blended line+branch percentage. v2 explicitly requires >=90% branch coverage. Retain inherited blended check but independently check covered_branches/num_branches across all new production code and fail if <90%. A suite can pass blended while failing policy.",
+      "evidence": [
+        "tools/coverage_gate.py",
+        "upload/Verification and Validation Policy_v2.0.0.md"
+      ]
+    },
+    {
+      "id": "AUD-04",
+      "finding": "Source registry explicitly says original hmt-tools.zip and other six-source archives were excluded from exported packet. The supplied ZIP contains historical native Truth Serum/reference_build/rrca-build/scaffoldctl receipts and hash manifests, but not their original executable tool distributions. No fresh native execution can be claimed from those old receipts. Search user attachment context for a separate standalone admission attachment if present; scope any absence to exact tool execution, not the database build.",
+      "expected_tools_archive_sha256": "9ab0a770ed72d186bf17ed06b7f20c3c5a719883ac668d1a299503d3c23fa7c5",
+      "evidence": [
+        "policy/source_registry.json",
+        "Runbook.md",
+        "evidence/epochs/2026-10-11-software/truth_serum_native_profile.json"
+      ]
+    },
+    {
+      "id": "AUD-05",
+      "finding": "Existing catalog minItems=maxItems=15 and IDs RDP-[CSB]xx and family enum creational/structural/behavioral. New database_design_patterns/postgresql needs independent schema/catalog, with a branch index integration reference; do not append PG items into frozen exact-15 catalog.",
+      "evidence": [
+        "contracts/catalog.schema.json",
+        "catalog.json"
+      ]
+    },
+    {
+      "id": "AUD-06",
+      "finding": "Current MachineHandoff schema allows only response wrapper and exact listed response properties; validation_status enum is lower-case pass/hold/fail. Keep rich gate decisions in linked artifacts, not extra handoff keys. Scope residuals; no unsupported field/mission validation holds.",
+      "evidence": [
+        "project_sources/09-Ontology_MachineHandoff_Schema.json"
+      ]
+    }
+  ],
+  "current_policy_requirements": {
+    "structure": {
+      "function": {
+        "nominal": "0..44",
+        "watch": "45..49",
+        "refactor_required": "50..59",
+        "block": ">=60"
+      },
+      "module": {
+        "nominal": "0..99",
+        "watch": "100..149",
+        "refactor_required": "150..179",
+        "block": ">=180"
+      },
+      "atomicity": [
+        "Atomic check and use",
+        "Immutable snapshot",
+        "Version/epoch mismatch aborts operation"
+      ],
+      "counting_note": "Current policy labels LOC but does not define counting. Report physical and nonblank/noncomment counts; use physical bounds for conservative acceptance; never reclassify existing tool counting."
+    },
+    "vv": {
+      "minimum_branch_coverage_percent": 90,
+      "required_test_families": [
+        "unit",
+        "negative",
+        "mutation",
+        "behavioral",
+        "API",
+        "filtering/routing/switching/queueing/scheduling",
+        "boundary",
+        "security/fault injection/CVE",
+        "semantic/structural",
+        "temporal authorization drift",
+        "causal edge deletion",
+        "speed",
+        "regex",
+        "integration",
+        "E2E"
+      ],
+      "candidate_ledger": "Preserve complete invariants CROSS JOIN failure_modes CROSS JOIN gates; every irrelevant triple NOT_APPLICABLE with violated applicability predicate. Separate unit, regex, integration, and E2E suites attack applicable findings.",
+      "causal_witnesses": [
+        "deletion",
+        "restoration",
+        "matched controls",
+        "alternate-path compensation"
+      ],
+      "supersession": "Same requirement, failure mechanism, and boundary or explicit changed contract plus causal summary."
+    },
+    "pace_t": {
+      "states": [
+        "P",
+        "A",
+        "C",
+        "E",
+        "T"
+      ],
+      "invariants": [
+        "A fallback preserves its declared degraded mode guarantees",
+        "Terminal has no further operational authority",
+        "Missing dependency triggers scoped design review",
+        "Recovery reconciles local operations, uncertain acknowledgments, authority epochs, and records before restoring primary",
+        "Guard recovery with margins and hysteresis; dependency presence alone is not recovery authority"
+      ]
+    },
+    "rrca": {
+      "cumulative_gate_columns": [
+        "timestamp",
+        "task",
+        "gate_id",
+        "requirement",
+        "status",
+        "evidence_ref",
+        "evidence_hash_reason"
+      ],
+      "rrca_columns": [
+        "timestamp",
+        "incident_id",
+        "checkpoint",
+        "observed_state",
+        "causal_evidence",
+        "validation_test",
+        "disposition",
+        "sub_agent_task_attestation"
+      ],
+      "rrca_column_note": "8th column required with supervised sub-agents; first seven match governing names. Use exact final field label evidence_hash/reason if preserving display schema, a normalized SQL column name may be mapped explicitly.",
+      "retention": "Rerun prior good gates at completed task checkpoints; preserve failure and repaired passes without rewriting previous receipts."
+    }
+  },
+  "legacy_admission_controls": {
+    "schema_id": "urn:hmt:rdp:admission-controls:1.0.0",
+    "module_loc_max": 180,
+    "function_loc_max": 60,
+    "cognitive_max": 10,
+    "nesting_max": 5,
+    "coverage_min": 90,
+    "required_test_families": [
+      "unit",
+      "negative",
+      "mutation",
+      "integration",
+      "behavioral",
+      "api"
+    ],
+    "required_pressure_lanes": [
+      "nominal",
+      "denied",
+      "degraded",
+      "intermittent",
+      "limited",
+      "ood",
+      "adverse"
+    ],
+    "required_tools": [
+      "ruff",
+      "mypy",
+      "complexipy",
+      "pytest",
+      "native_books",
+      "mutations",
+      "supply_audit",
+      "reconcile"
+    ],
+    "forbid_test_suppression": true
+  },
+  "commands": {
+    "variables": {
+      "PG_ROOT": "absolute new database_design_patterns/postgresql directory",
+      "BASE": "/workspace/scratch/e7495113964e/baseline/hmt-reusable-design-references",
+      "OUT": "absolute external evidence output directory; never an inherited source directory",
+      "PY": "candidate locked Python interpreter; Python >=3.12 recommended for TOML and existing syntax"
+    },
+    "applicable_unmodified_legacy_tools": [
+      {
+        "gate": "legacy-source-aperture",
+        "cwd": "$PG_ROOT",
+        "argv": [
+          "$PY",
+          "/workspace/scratch/e7495113964e/baseline/hmt-reusable-design-references/tools/structure.py"
+        ],
+        "purpose": "Runs source aperture over src/patterns/workflows/tests/tools; append stricter v2 checker.",
+        "write_scope": "none"
+      },
+      {
+        "gate": "legacy-coverage",
+        "cwd": "$PG_ROOT",
+        "argv": [
+          "$PY",
+          "/workspace/scratch/e7495113964e/baseline/hmt-reusable-design-references/tools/coverage_gate.py",
+          "$OUT/coverage.json"
+        ],
+        "purpose": "Legacy blended percentage; separately enforce pure branch percentage.",
+        "write_scope": "none"
+      },
+      {
+        "gate": "legacy-secrets",
+        "cwd": "$PG_ROOT",
+        "argv": [
+          "$PY",
+          "/workspace/scratch/e7495113964e/baseline/hmt-reusable-design-references/tools/secret_scan.py"
+        ],
+        "purpose": "Deny private PEM/key file names and markers; not a comprehensive secret scanner.",
+        "write_scope": "none"
+      },
+      {
+        "gate": "legacy-lock-sbom",
+        "cwd": "$PG_ROOT",
+        "argv": [
+          "$PY",
+          "/workspace/scratch/e7495113964e/baseline/hmt-reusable-design-references/tools/supply.py",
+          "--output",
+          "$OUT/sbom.json"
+        ],
+        "purpose": "Read branch uv.lock and installed metadata, emit CycloneDX inventory. Inspect installed flags; a successful generation is not dependency installation proof.",
+        "write_scope": "$OUT"
+      },
+      {
+        "gate": "inherited-policy-integrity",
+        "cwd": "/workspace/scratch/e7495113964e/baseline/hmt-reusable-design-references",
+        "argv": [
+          "$PY",
+          "/workspace/scratch/e7495113964e/baseline/hmt-reusable-design-references/tools/policy_gate.py"
+        ],
+        "purpose": "Verify immutable baseline released policies. Separately hash-pin the three supplied v2 Markdown files.",
+        "write_scope": "none"
+      }
+    ],
+    "branch_native_gate_examples": [
+      {
+        "gate": "environment",
+        "cwd": "$PG_ROOT",
+        "argv": [
+          "uv",
+          "sync",
+          "--frozen",
+          "--offline",
+          "--all-extras",
+          "--group",
+          "dev"
+        ],
+        "condition": "Use only if all declared extras are admissible and cache populated; otherwise choose documented locked install profile and retain unavailable dependencies."
+      },
+      {
+        "gate": "lock",
+        "cwd": "$PG_ROOT",
+        "argv": [
+          "uv",
+          "lock",
+          "--check",
+          "--offline"
+        ]
+      },
+      {
+        "gate": "lint",
+        "cwd": "$PG_ROOT",
+        "argv": [
+          "$PY",
+          "-m",
+          "ruff",
+          "check",
+          "src",
+          "tests",
+          "tools"
+        ]
+      },
+      {
+        "gate": "typing",
+        "cwd": "$PG_ROOT",
+        "argv": [
+          "$PY",
+          "-m",
+          "mypy",
+          "--strict",
+          "--no-incremental",
+          "src"
+        ]
+      },
+      {
+        "gate": "cognitive",
+        "cwd": "$PG_ROOT",
+        "argv": [
+          "complexipy",
+          "src",
+          "tests",
+          "tools",
+          "--max-complexity-allowed",
+          "10",
+          "--no-ignore"
+        ]
+      },
+      {
+        "gate": "unit-and-service-tests",
+        "cwd": "$PG_ROOT",
+        "argv": [
+          "$PY",
+          "-m",
+          "pytest",
+          "-q",
+          "--import-mode=importlib",
+          "--cov=hmt_pg_patterns",
+          "--cov-branch",
+          "--cov-report=json:$OUT/coverage.json"
+        ],
+        "condition": "Package name must match actual branch package. No skip/xfail. Integration readiness must be explicit, and actual PostgreSQL/Redis paths exercised for claims."
+      },
+      {
+        "gate": "static-security",
+        "cwd": "$PG_ROOT",
+        "argv": [
+          "$PY",
+          "-m",
+          "bandit",
+          "-r",
+          "src",
+          "-f",
+          "json",
+          "-o",
+          "$OUT/bandit.json"
+        ]
+      },
+      {
+        "gate": "dependency-advisories",
+        "cwd": "$PG_ROOT",
+        "argv": [
+          "pip-audit",
+          "--local",
+          "--skip-editable",
+          "--format",
+          "json",
+          "--output",
+          "$OUT/advisories.json"
+        ],
+        "condition": "Report database timestamp and exact installed profile; network unavailable != clean result."
+      }
+    ],
+    "inherited_primitive_replay": [
+      {
+        "source": "HMT_Content_Defined_Streaming_v1.0.0",
+        "manifest": [
+          "$PY",
+          "-B",
+          "/workspace/scratch/e7495113964e/work/primitive_sources/HMT_Content_Defined_Streaming_v1.0.0/verify_manifest.py"
+        ],
+        "suite": [
+          "$PY",
+          "-B",
+          "/workspace/scratch/e7495113964e/work/primitive_sources/HMT_Content_Defined_Streaming_v1.0.0/run_vv.py",
+          "--out",
+          "$OUT/HMT_Content_Defined_Streaming_v1.0.0",
+          "--mutations"
+        ],
+        "qualification": "Source-only replay for immutable primitive. Does not qualify PostgreSQL adapters or new composition. Optional --composition-source targets opposite primitive directory only when that composition exists."
+      },
+      {
+        "source": "HMT_Peer_Bound_Authority_v1.0.0",
+        "manifest": [
+          "$PY",
+          "-B",
+          "/workspace/scratch/e7495113964e/work/primitive_sources/HMT_Peer_Bound_Authority_v1.0.0/verify_manifest.py"
+        ],
+        "suite": [
+          "$PY",
+          "-B",
+          "/workspace/scratch/e7495113964e/work/primitive_sources/HMT_Peer_Bound_Authority_v1.0.0/run_vv.py",
+          "--out",
+          "$OUT/HMT_Peer_Bound_Authority_v1.0.0",
+          "--mutations"
+        ],
+        "qualification": "Source-only replay for immutable primitive. Does not qualify PostgreSQL adapters or new composition. Optional --composition-source targets opposite primitive directory only when that composition exists."
+      }
+    ],
+    "not_applicable_to_independent_branch": [
+      {
+        "tool": "tools/gates.py",
+        "predicate": "requires old policy/admission_controls.json, old tools paths, src/hmt_rdp, 15 old books, old network service and mutations; cannot call unmodified as PostgreSQL admission without changing scope"
+      },
+      {
+        "tool": "tools/native_books.py",
+        "predicate": "requires exactly 15 patterns/*/*/notebook.py with reference.py/example.py/manifest.json/evidence/qualification.json"
+      },
+      {
+        "tool": "tools/mutations.py",
+        "predicate": "fixed hmt_rdp/auth.py and 15 old pattern mutation strings"
+      },
+      {
+        "tool": "tools/network_smoke.py",
+        "predicate": "tests hmt_rdp service nine tools; independent PG branch is a Python library with no MCP service"
+      },
+      {
+        "tool": "ontology/tools and ontology/src/hmt_rdp_ontology",
+        "predicate": "compiles/admit-candidates for prior frozen CPI catalog; new branch has no requested RDF federation promotion"
+      },
+      {
+        "tool": "legacy full-driver host trust",
+        "predicate": "requires independent external trust pin and candidate matching trusted controls; do not invent authorizing trust from candidate-owned content"
+      }
+    ]
+  },
+  "catalog_integration": {
+    "existing_schema_id": "urn:hmt:rdp:catalog:1.0.0",
+    "existing_pattern_count_bounds": {
+      "min": 15,
+      "max": 15
+    },
+    "existing_record_required": [
+      "pattern_id",
+      "pattern_name",
+      "slug",
+      "family",
+      "version",
+      "classification",
+      "status",
+      "applicability",
+      "anti_patterns",
+      "known_limits",
+      "source_identity",
+      "source_sha256",
+      "policy_bindings",
+      "SKILL_path",
+      "notebook_path",
+      "example_ids",
+      "invariant_ids",
+      "test_refs",
+      "evidence_refs",
+      "reuse_disposition",
+      "non_claims",
+      "supersedes",
+      "simpler_alternative",
+      "aliases",
+      "intents"
+    ],
+    "safe_reuse": [
+      "Preserve stable pattern IDs within new PostgreSQL namespace",
+      "Record source path/hash and lineage",
+      "Bind applicable v2 policies by source hash",
+      "Link tests/evidence/examples/invariants",
+      "Classify reusable engineering reference and status by scoped software evidence",
+      "State applicability, anti-patterns, limits, simpler alternatives"
+    ],
+    "recommended_layout": "database_design_patterns/index.json points to postgresql/catalog.json, which validates against its own versioned PostgreSQL schema. A README/Index link is sufficient parent directory integration; do not mutate inherited 15-pattern service contract."
+  },
+  "handoff": {
+    "schema_sha256": "916f5a82442a85b18c941c760ee058bdc8b64a797667f088de4f92ac4beb3142",
+    "required_top_level": [
+      "response"
+    ],
+    "response_required": [
+      "agent_role",
+      "task_owned",
+      "implementation",
+      "risks",
+      "assumptions",
+      "follow_up_instructions",
+      "validation_status",
+      "artifact_refs",
+      "provenance_id"
+    ],
+    "validation_status_enum": [
+      "pass",
+      "hold",
+      "fail"
+    ],
+    "additional_properties": false,
+    "implementation_type": "string or list[str]",
+    "mapping": "agent_role=chief_edge_devsecops_iac_engineer; task_owned=PG branch scope; implementation=observed deliverables; risks=residual limitations only; assumptions=explicit branch scope; follow_up_instructions=only remaining relevant integration/admission actions; validation_status=pass/hold/fail for stated owned scope; artifact_refs=real file paths; provenance_id=creation ledger identifier. Bind extended gate status in referenced release report rather than relaxing schema."
+  },
+  "edgeops_field_declarations": {
+    "EdgeOps_Contracts_ValidateSeams": [
+      "seam_id",
+      "service_name",
+      "request_schema_ref",
+      "response_schema_ref",
+      "config_model_ref",
+      "openapi_export_ref",
+      "icd_ref",
+      "contract_version",
+      "validation_status",
+      "evidence_id"
+    ],
+    "EdgeOps_Env_ReproduceStack": [
+      "environment_id",
+      "deployment_profile",
+      "runtime_version",
+      "lockfile_hash",
+      "bootstrap_status",
+      "ci_parity_status",
+      "config_schema_ref",
+      "evidence_id"
+    ],
+    "EdgeOps_Orchestration_ReadyDeploy": [
+      "deployment_unit_id",
+      "topology_choice",
+      "service_name",
+      "dependency_ref",
+      "probe_policy_ref",
+      "pace_lane",
+      "rollback_point_ref",
+      "orchestration_status",
+      "shutdown_behavior_ref",
+      "evidence_id"
+    ],
+    "EdgeOps_Release_TraceLifecycle": [
+      "release_unit_id",
+      "source_revision",
+      "artifact_hash",
+      "provenance_ref",
+      "test_evidence_ref",
+      "promotion_status",
+      "rollback_ref",
+      "regression_status",
+      "release_checklist_ref",
+      "evidence_id"
+    ],
+    "EdgeOps_Containment_HardenRuntime": [
+      "container_id",
+      "image_ref",
+      "base_image_ref",
+      "build_stage_count",
+      "runtime_user",
+      "health_endpoint_ref",
+      "readiness_status",
+      "liveness_status",
+      "sbom_ref",
+      "evidence_id"
+    ]
+  },
+  "unexecuted": {
+    "admission_tools": "No runtime gates were executed by this read-only audit. Commands are derived from inspected source.",
+    "services": "No PostgreSQL, Redis, network, Docker, or host activation undertaken.",
+    "absent_source_tools": [
+      "hmt-tools.zip native reference_build, rrca-build, scaffoldctl, Truth Serum distributions are referenced but excluded in policy/source_registry.json. They must be obtained from actual attachment or user-owned source before claiming fresh native tool admission."
+    ]
+  },
+  "source_recovery": {
+    "event": "SOURCE_RECOVERED",
+    "timestamp": "2026-11-04T07:35:21.361649+00:00",
+    "artifact": "HMT-CI-42-Independent-Lane-Bundles_v2.0.0.zip",
+    "archive_sha256": "85882a410803d8741bdce4a56f6f6c2a7629e950bb5c938241bd6fd74944a6f1",
+    "path": "/workspace/scratch/e7495113964e/work/admission_sources/ci42",
+    "supersedes": "AUD-04 only as a present-source-availability conclusion; original baseline exclusion finding remains true. A separate authoritative attachment now supplies exactly 42 native lanes. No inherited bytes modified.",
+    "registry_count": 42
+  }
+}

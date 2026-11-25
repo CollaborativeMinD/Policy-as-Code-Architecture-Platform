@@ -1,0 +1,535 @@
+{
+  "recovery": {
+    "event": "SOURCE_RECOVERED",
+    "timestamp": "2026-11-04T07:35:21.361649+00:00",
+    "artifact": "HMT-CI-42-Independent-Lane-Bundles_v2.0.0.zip",
+    "archive_sha256": "85882a410803d8741bdce4a56f6f6c2a7629e950bb5c938241bd6fd74944a6f1",
+    "path": "/workspace/scratch/e7495113964e/work/admission_sources/ci42",
+    "supersedes": "AUD-04 only as a present-source-availability conclusion; original baseline exclusion finding remains true. A separate authoritative attachment now supplies exactly 42 native lanes. No inherited bytes modified.",
+    "registry_count": 42
+  },
+  "entrypoint": [
+    "python",
+    "/workspace/scratch/e7495113964e/work/admission_sources/ci42/src/hmt-ci-app.py",
+    "run",
+    "/absolute/PG_REQUEST.json"
+  ],
+  "request_schema": "/workspace/scratch/e7495113964e/work/admission_sources/ci42/orchestrator/schemas/request.schema.json",
+  "request_rules": [
+    "Exact registry key inventory of 42 lanes",
+    "args xor not_applicable per lane",
+    "Fresh run_id; target/evidence/suite roots distinct",
+    "Source scopes must exist; no source symlinks/special files",
+    "executor python requires explicit executable; lane python override supported",
+    "Default uv executes exact lane lock and declared interpreter",
+    "No skip after another lane failure; preserve every native receipt",
+    "Native statuses are not overridden: exit0 PASS, exit1 FAIL, exit2/HOLD; unknown exit uncertainty HOLD",
+    "All-excluded cannot PASS"
+  ],
+  "substitutions": [
+    "{target}",
+    "{suite}",
+    "{candidate}",
+    "{evidence}",
+    "{run}"
+  ],
+  "applicability_format": "orchestrator not_applicable uses absent list and/or absent_imports list plus reason. Do not use hmt_policy.applicability older predicate.kind format with this orchestrator.",
+  "preexisting_native_findings": [
+    {
+      "lane": "adversarial-agents",
+      "finding": "resource symbol resolves to loader function; subprocess ceilings references resource.setrlimit and errors",
+      "prior_exit": 1
+    },
+    {
+      "lane": "optimization",
+      "finding": "scan receipt expects prefixed sha256 but emits bare hash; structured OPT-CLI-ERROR/HOLD",
+      "prior_exit": "HOLD"
+    }
+  ],
+  "native_vv_contract": {
+    "database": "DuckDB with exact supplied ledger_schema.DDL; SQLite export must be imported, not opened as DuckDB",
+    "required_keys": [
+      "source_digest",
+      "database",
+      "applicability",
+      "claims",
+      "executions",
+      "manifest",
+      "execution",
+      "languages",
+      "mutation",
+      "coverage",
+      "power10"
+    ],
+    "four_families_per_pending_candidate": [
+      "unit",
+      "regex",
+      "integration",
+      "e2e"
+    ],
+    "all_global_families": [
+      "unit",
+      "negative",
+      "mutation",
+      "behavioral",
+      "api",
+      "routing",
+      "boundary",
+      "security",
+      "complexity",
+      "authorization_drift",
+      "causal",
+      "speed",
+      "regex",
+      "integration",
+      "e2e"
+    ],
+    "causal_experiments": [
+      "deletion",
+      "restoration",
+      "matched_control",
+      "alternate_path"
+    ],
+    "claim_questions": [
+      "state",
+      "evidence",
+      "causal_path",
+      "authority",
+      "freshness",
+      "invariants",
+      "falsifier",
+      "hold_condition"
+    ],
+    "claim_modes": [
+      "positive",
+      "negative",
+      "regression"
+    ],
+    "coverage": "Actual Python branch and line counts >=90, not blended proxy",
+    "mutation": "total>0, all caught, zero missed/timeout/unviable, end_time present",
+    "power10": "All ten rules with executed evidence or independently observed applicability predicate; every observed loop/global site bound to supplied AST digest"
+  },
+  "lane_suggestions_NOT_EXECUTABLE_REQUEST": {
+    "actionlint": {
+      "not_applicable": {
+        "absent": [
+          ".github/workflows/*.yml",
+          ".github/workflows/*.yaml"
+        ],
+        "reason": "No new GitHub workflow is part of the orchestration implementation."
+      },
+      "review_required": "Re-evaluate supplied predicate against final PG branch inventory. Original template reason is historical, not PG authority."
+    },
+    "adversarial-agents": {
+      "args": [
+        "ci",
+        "--repo",
+        "{target}",
+        "--baseline",
+        "SET_TO_IMMUTABLE_BASELINE_SHA",
+        "--candidate",
+        "{candidate}",
+        "--outbox",
+        "{evidence}/outbox.jsonl"
+      ],
+      "timeout": 180.0,
+      "review_required": "Bind target-owned dependency roots, provenance, observed test identities, domain profile, or full qualification contract; no fabricated placeholders."
+    },
+    "adversarial-hints": {
+      "args": [
+        "--tree",
+        "{target}/src"
+      ],
+      "timeout": 180.0
+    },
+    "architecture-contract": {
+      "args": [
+        "--root",
+        "{target}",
+        "--source",
+        "src/hmt_pg_patterns",
+        "--package",
+        "hmt_pg_patterns",
+        "--allowed-json",
+        "{\".\":[\".\"]}"
+      ],
+      "timeout": 180.0
+    },
+    "bandit": {
+      "args": [
+        "--root",
+        "{target}",
+        "src"
+      ],
+      "timeout": 180.0
+    },
+    "deptry": {
+      "args": [
+        "--root",
+        "{target}",
+        "src"
+      ],
+      "timeout": 180.0
+    },
+    "evidence-binding": {
+      "args": [
+        "--root",
+        "{target}"
+      ],
+      "timeout": 180.0
+    },
+    "gitops-contract": {
+      "not_applicable": {
+        "absent": [
+          "infrastructure/gitops/*.yaml",
+          "infrastructure/flux/install.yaml"
+        ],
+        "reason": "No GitOps or Flux manifests in this source-only runtime."
+      },
+      "review_required": "Re-evaluate supplied predicate against final PG branch inventory. Original template reason is historical, not PG authority."
+    },
+    "hadolint": {
+      "not_applicable": {
+        "absent": [
+          "Dockerfile",
+          "*.Dockerfile"
+        ],
+        "reason": "No container image or Dockerfile is delivered."
+      },
+      "review_required": "Re-evaluate supplied predicate against final PG branch inventory. Original template reason is historical, not PG authority."
+    },
+    "license-inventory": {
+      "args": [
+        "--root",
+        "{target}",
+        "--roots-json",
+        "[\"pydantic\"]"
+      ],
+      "timeout": 180.0,
+      "review_required": "Bind target-owned dependency roots, provenance, observed test identities, domain profile, or full qualification contract; no fabricated placeholders."
+    },
+    "marimo-check": {
+      "not_applicable": {
+        "absent_imports": [
+          "marimo"
+        ],
+        "reason": "No statically imported Marimo application exists in this source-only CLI."
+      },
+      "review_required": "Re-evaluate supplied predicate against final PG branch inventory. Original template reason is historical, not PG authority."
+    },
+    "mypy": {
+      "args": [
+        "--root",
+        "{target}",
+        "--config",
+        "orchestrator/config/mypy.ini",
+        "src"
+      ],
+      "timeout": 180.0,
+      "review_required": "Replace prior orchestrator paths with actual target configuration and test paths. Native requirements remain unchanged."
+    },
+    "notebook-test": {
+      "not_applicable": {
+        "absent_imports": [
+          "marimo"
+        ],
+        "reason": "No statically imported Marimo application exists in this source-only CLI."
+      },
+      "review_required": "Re-evaluate supplied predicate against final PG branch inventory. Original template reason is historical, not PG authority."
+    },
+    "optimization": {
+      "args": [
+        "scan",
+        "--root",
+        "{target}",
+        "--output",
+        "{evidence}/scan.json"
+      ],
+      "timeout": 180.0
+    },
+    "pip-audit": {
+      "args": [
+        "--root",
+        "{target}"
+      ],
+      "timeout": 180.0
+    },
+    "pylint": {
+      "args": [
+        "--root",
+        "{target}",
+        "src"
+      ],
+      "timeout": 180.0
+    },
+    "pyrefly": {
+      "args": [
+        "--root",
+        "{target}",
+        "--config",
+        "orchestrator/config/pyrefly.toml",
+        "src"
+      ],
+      "timeout": 180.0,
+      "review_required": "Replace prior orchestrator paths with actual target configuration and test paths. Native requirements remain unchanged."
+    },
+    "pytest": {
+      "args": [
+        "--root",
+        "{target}",
+        "--tests",
+        "tests",
+        "--coverage-source",
+        "src/hmt_pg_patterns",
+        "--coverage-min",
+        "90",
+        "--out",
+        "{evidence}/native"
+      ],
+      "timeout": 180.0
+    },
+    "repository-contract": {
+      "not_applicable": {
+        "absent": [
+          ".github/workflows/*.yml",
+          ".github/workflows/*.yaml"
+        ],
+        "reason": "No workflow topology is implemented; source, schema, and integrity contracts are tested separately."
+      },
+      "review_required": "Re-evaluate supplied predicate against final PG branch inventory. Original template reason is historical, not PG authority."
+    },
+    "ruff": {
+      "args": [
+        "--root",
+        "{target}",
+        "--config",
+        "orchestrator/config/ruff.toml",
+        "src",
+        "orchestrator/tests"
+      ],
+      "timeout": 180.0,
+      "review_required": "Replace prior orchestrator paths with actual target configuration and test paths. Native requirements remain unchanged."
+    },
+    "scaffold-validation": {
+      "not_applicable": {
+        "absent": [
+          "*.ttl",
+          "*scaffold*"
+        ],
+        "reason": "This is a runtime orchestrator, without scaffold templates or ontology authority assets."
+      },
+      "review_required": "Re-evaluate supplied predicate against final PG branch inventory. Original template reason is historical, not PG authority."
+    },
+    "secret-contract": {
+      "args": [
+        "--root",
+        "{target}",
+        "--inventory",
+        "worktree"
+      ],
+      "timeout": 180.0
+    },
+    "semgrep": {
+      "args": [
+        "--root",
+        "{target}",
+        "--config",
+        "orchestrator/config/semgrep.yaml",
+        "src"
+      ],
+      "timeout": 180.0,
+      "review_required": "Replace prior orchestrator paths with actual target configuration and test paths. Native requirements remain unchanged."
+    },
+    "shell-syntax": {
+      "not_applicable": {
+        "absent": [
+          "*.sh"
+        ],
+        "reason": "No shell program is delivered."
+      },
+      "review_required": "Re-evaluate supplied predicate against final PG branch inventory. Original template reason is historical, not PG authority."
+    },
+    "source-contract": {
+      "args": [
+        "--root",
+        "{target}",
+        "--sources-json",
+        "[\"src\",\"tests\",\"tools\"]",
+        "--module-limit",
+        "149",
+        "--function-limit",
+        "49"
+      ],
+      "timeout": 180.0
+    },
+    "structural-complexity": {
+      "args": [
+        "--root",
+        "{target}",
+        "--scope",
+        "src",
+        "--scope",
+        "tests",
+        "--scope",
+        "tools"
+      ],
+      "timeout": 180.0
+    },
+    "structured-data": {
+      "args": [
+        "--root",
+        "{target}"
+      ],
+      "timeout": 180.0
+    },
+    "terraform-validate": {
+      "not_applicable": {
+        "absent": [
+          "*.tf"
+        ],
+        "reason": "No Terraform is delivered."
+      },
+      "review_required": "Re-evaluate supplied predicate against final PG branch inventory. Original template reason is historical, not PG authority."
+    },
+    "test-traceability": {
+      "args": [
+        "--root",
+        "{target}",
+        "--expected",
+        "assurance/test-traceability.json",
+        "--execution",
+        "assurance/test-execution.json",
+        "--source-digest",
+        "SET_TO_RUNTIME_SOURCE_DIGEST"
+      ],
+      "timeout": 180.0,
+      "review_required": "Bind target-owned dependency roots, provenance, observed test identities, domain profile, or full qualification contract; no fabricated placeholders."
+    },
+    "trivy": {
+      "not_applicable": {
+        "absent": [
+          "Dockerfile",
+          "*.tar",
+          "*.oci"
+        ],
+        "reason": "No container image is built or delivered; Python dependency advisories use pip-audit."
+      },
+      "review_required": "Re-evaluate supplied predicate against final PG branch inventory. Original template reason is historical, not PG authority."
+    },
+    "unittest": {
+      "args": [
+        "--root",
+        "{target}",
+        "--start",
+        "orchestrator/tests/unittest",
+        "--coverage-source",
+        "src/hmt_ci",
+        "--out",
+        "{evidence}/native"
+      ],
+      "timeout": 180.0,
+      "review_required": "Replace prior orchestrator paths with actual target configuration and test paths. Native requirements remain unchanged."
+    },
+    "uv-lock": {
+      "args": [
+        "--root",
+        "{target}",
+        "."
+      ],
+      "timeout": 180.0
+    },
+    "yamllint": {
+      "args": [
+        "--root",
+        "{target}"
+      ],
+      "timeout": 180.0
+    },
+    "cargo-check": {
+      "not_applicable": {
+        "absent": [
+          "*.rs",
+          "Cargo.toml"
+        ],
+        "reason": "No Rust partition exists in the new orchestration surface."
+      },
+      "review_required": "Re-evaluate supplied predicate against final PG branch inventory. Original template reason is historical, not PG authority."
+    },
+    "cargo-clippy": {
+      "not_applicable": {
+        "absent": [
+          "*.rs",
+          "Cargo.toml"
+        ],
+        "reason": "No Rust partition exists in the new orchestration surface."
+      },
+      "review_required": "Re-evaluate supplied predicate against final PG branch inventory. Original template reason is historical, not PG authority."
+    },
+    "cargo-fmt": {
+      "not_applicable": {
+        "absent": [
+          "*.rs",
+          "Cargo.toml"
+        ],
+        "reason": "No Rust partition exists in the new orchestration surface."
+      },
+      "review_required": "Re-evaluate supplied predicate against final PG branch inventory. Original template reason is historical, not PG authority."
+    },
+    "cargo-test": {
+      "not_applicable": {
+        "absent": [
+          "*.rs",
+          "Cargo.toml"
+        ],
+        "reason": "No Rust partition exists in the new orchestration surface."
+      },
+      "review_required": "Re-evaluate supplied predicate against final PG branch inventory. Original template reason is historical, not PG authority."
+    },
+    "cargo-llvm-cov": {
+      "not_applicable": {
+        "absent": [
+          "*.rs",
+          "Cargo.toml"
+        ],
+        "reason": "No Rust partition exists in the new orchestration surface."
+      },
+      "review_required": "Re-evaluate supplied predicate against final PG branch inventory. Original template reason is historical, not PG authority."
+    },
+    "cargo-mutants": {
+      "not_applicable": {
+        "absent": [
+          "*.rs",
+          "Cargo.toml"
+        ],
+        "reason": "No Rust partition exists in the new orchestration surface."
+      },
+      "review_required": "Re-evaluate supplied predicate against final PG branch inventory. Original template reason is historical, not PG authority."
+    },
+    "cargo-deny": {
+      "not_applicable": {
+        "absent": [
+          "*.rs",
+          "Cargo.toml"
+        ],
+        "reason": "No Rust partition exists in the new orchestration surface."
+      },
+      "review_required": "Re-evaluate supplied predicate against final PG branch inventory. Original template reason is historical, not PG authority."
+    },
+    "pace-t": {
+      "args": [
+        "{target}/assurance/pace-evaluate.json"
+      ],
+      "timeout": 180.0,
+      "review_required": "Bind target-owned dependency roots, provenance, observed test identities, domain profile, or full qualification contract; no fabricated placeholders."
+    },
+    "verification-validation": {
+      "args": [
+        "qualify",
+        "{target}/assurance/qualification.json"
+      ],
+      "timeout": 180.0,
+      "review_required": "Bind target-owned dependency roots, provenance, observed test identities, domain profile, or full qualification contract; no fabricated placeholders."
+    }
+  },
+  "attestation": "Read-only inspection of recovered 42-lane registry, orchestrator schema/runbook/template, native qualification/evidence/coverage/claims/Power-of-10 modules. No lane execution or inherited modification performed."
+}

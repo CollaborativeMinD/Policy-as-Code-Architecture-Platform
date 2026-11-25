@@ -1,0 +1,193 @@
+{
+  "table": "seam",
+  "kb_id": "EdgeOps_Contracts_ValidateSeams",
+  "declaration_source": "project_sources/03-EdgeOps_Contracts_ValidateSeams_FieldDeclarations.xml",
+  "declaration_sha256": "118978723c6aeda5ae909d8edc4a1c7bbf868c8b99958b9009398c0502ad0630",
+  "columns": [
+    "seam_id",
+    "service_name",
+    "request_schema_ref",
+    "response_schema_ref",
+    "config_model_ref",
+    "openapi_export_ref",
+    "icd_ref",
+    "contract_version",
+    "validation_status",
+    "evidence_id"
+  ],
+  "column_types": {
+    "seam_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "service_name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "request_schema_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "response_schema_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "config_model_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "openapi_export_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "icd_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "contract_version": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "validation_status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "evidence_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    }
+  },
+  "rows": [
+    {
+      "seam_id": "PG-SEAM-PEER-BINDING",
+      "service_name": "fixed_tailcat_worker",
+      "request_schema_ref": "src/hmt_pg_patterns/worker_io.py::IngressRequest",
+      "response_schema_ref": "src/hmt_pg_patterns/worker_service.py::execute_stream",
+      "config_model_ref": "src/hmt_pg_patterns/worker_config.py::WorkerConfig",
+      "openapi_export_ref": null,
+      "icd_ref": "Runbook.md",
+      "contract_version": "1.0.0",
+      "validation_status": "pass_software_scope",
+      "evidence_id": "evidence/software/summary.json"
+    },
+    {
+      "seam_id": "PG-SEAM-EPOCH-ADMISSION",
+      "service_name": "hmt_pg.admit_chunk",
+      "request_schema_ref": "src/hmt_pg_patterns/authority_types.py::ChunkRequest",
+      "response_schema_ref": "src/hmt_pg_patterns/authority_types.py::Receipt",
+      "config_model_ref": "src/hmt_pg_patterns/config.py::DbConfig",
+      "openapi_export_ref": null,
+      "icd_ref": "sql/02_authority.sql",
+      "contract_version": "1.0.0",
+      "validation_status": "pass_software_scope",
+      "evidence_id": "evidence/software/summary.json"
+    },
+    {
+      "seam_id": "PG-SEAM-PROJECTION",
+      "service_name": "checkpoint_outbox_and_redis_projection",
+      "request_schema_ref": "src/hmt_pg_patterns/authority_types.py::CheckpointData",
+      "response_schema_ref": "src/hmt_pg_patterns/outbox.py::OutboxEvent",
+      "config_model_ref": "src/hmt_pg_patterns/worker_config.py::WorkerConfig",
+      "openapi_export_ref": null,
+      "icd_ref": "sql/03_checkpoints.sql",
+      "contract_version": "1.0.0",
+      "validation_status": "pass_software_scope",
+      "evidence_id": "evidence/software/summary.json"
+    },
+    {
+      "seam_id": "PG-SEAM-CDC",
+      "service_name": "bounded_content_defined_stream",
+      "request_schema_ref": "src/hmt_pg_patterns/streaming_contracts.py::Policy",
+      "response_schema_ref": "src/hmt_pg_patterns/streaming_contracts.py::Chunk",
+      "config_model_ref": "src/hmt_pg_patterns/streaming_contracts.py::StreamLimits",
+      "openapi_export_ref": null,
+      "icd_ref": "src/hmt_pg_patterns/streaming.py",
+      "contract_version": "1.0.0",
+      "validation_status": "pass_software_scope",
+      "evidence_id": "evidence/software/summary.json"
+    }
+  ],
+  "field_dispositions": [
+    {
+      "row_index": 0,
+      "field": "openapi_export_ref",
+      "status": "not_applicable",
+      "reason": "Python, SQL, and fixed stdin/stdout seams do not expose an OpenAPI service."
+    },
+    {
+      "row_index": 1,
+      "field": "openapi_export_ref",
+      "status": "not_applicable",
+      "reason": "Python, SQL, and fixed stdin/stdout seams do not expose an OpenAPI service."
+    },
+    {
+      "row_index": 2,
+      "field": "openapi_export_ref",
+      "status": "not_applicable",
+      "reason": "Python, SQL, and fixed stdin/stdout seams do not expose an OpenAPI service."
+    },
+    {
+      "row_index": 3,
+      "field": "openapi_export_ref",
+      "status": "not_applicable",
+      "reason": "Python, SQL, and fixed stdin/stdout seams do not expose an OpenAPI service."
+    },
+    {
+      "row_index": 0,
+      "field": "request_schema_ref/response_schema_ref/icd_ref",
+      "status": "code_or_interface_contract_locator",
+      "reason": "These are code/model/SQL locators, not independently exported JSON Schemas, ICD documents, or OpenAPI artifacts."
+    },
+    {
+      "row_index": 1,
+      "field": "request_schema_ref/response_schema_ref/icd_ref",
+      "status": "code_or_interface_contract_locator",
+      "reason": "These are code/model/SQL locators, not independently exported JSON Schemas, ICD documents, or OpenAPI artifacts."
+    },
+    {
+      "row_index": 2,
+      "field": "request_schema_ref/response_schema_ref/icd_ref",
+      "status": "code_or_interface_contract_locator",
+      "reason": "These are code/model/SQL locators, not independently exported JSON Schemas, ICD documents, or OpenAPI artifacts."
+    },
+    {
+      "row_index": 3,
+      "field": "request_schema_ref/response_schema_ref/icd_ref",
+      "status": "code_or_interface_contract_locator",
+      "reason": "These are code/model/SQL locators, not independently exported JSON Schemas, ICD documents, or OpenAPI artifacts."
+    }
+  ],
+  "csv_null_token": "\\N",
+  "release_binding": "final_source_and_observed_receipts",
+  "qualification_limit": "Peer-binding seam PASS uses injected trusted launcher context and explicit test session identity; native worker and wire remain NOT_QUALIFIED."
+}

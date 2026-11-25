@@ -1,0 +1,144 @@
+{
+  "table": "containment",
+  "kb_id": "EdgeOps_Containment_HardenRuntime",
+  "declaration_source": "project_sources/08-EdgeOps_Containment_HardenRuntime_FieldDeclarations.xml",
+  "declaration_sha256": "05e78d02d3e308214c9b0ff2e5f366558ce02d68bdf7739438bd3277878aeade",
+  "columns": [
+    "container_id",
+    "image_ref",
+    "base_image_ref",
+    "build_stage_count",
+    "runtime_user",
+    "health_endpoint_ref",
+    "readiness_status",
+    "liveness_status",
+    "sbom_ref",
+    "evidence_id"
+  ],
+  "column_types": {
+    "container_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "image_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "base_image_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "build_stage_count": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "runtime_user": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "health_endpoint_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "readiness_status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "liveness_status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "sbom_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "evidence_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    }
+  },
+  "rows": [
+    {
+      "container_id": null,
+      "image_ref": null,
+      "base_image_ref": null,
+      "build_stage_count": null,
+      "runtime_user": "hmt-pg (declared systemd service identity; not a deployment observation)",
+      "health_endpoint_ref": null,
+      "readiness_status": "reference_only_not_deployed",
+      "liveness_status": "software_deadline_regressions_observed",
+      "sbom_ref": "release/dependency_inventory.json",
+      "evidence_id": "evidence/history/epochs/11-rejection-regression.xml"
+    }
+  ],
+  "field_dispositions": [
+    {
+      "row_index": 0,
+      "field": "container_id",
+      "status": "not_applicable",
+      "reason": "Selected containment reference is a host process under systemd, not an OCI container."
+    },
+    {
+      "row_index": 0,
+      "field": "image_ref",
+      "status": "not_applicable",
+      "reason": "No OCI image is built by the selected host-process reference."
+    },
+    {
+      "row_index": 0,
+      "field": "base_image_ref",
+      "status": "not_applicable",
+      "reason": "No OCI base image belongs to the selected reference."
+    },
+    {
+      "row_index": 0,
+      "field": "build_stage_count",
+      "status": "not_applicable",
+      "reason": "No container image build stages exist in this scope."
+    },
+    {
+      "row_index": 0,
+      "field": "health_endpoint_ref",
+      "status": "not_applicable",
+      "reason": "The fixed stdin/stdout worker exposes no HTTP health endpoint."
+    },
+    {
+      "row_index": 0,
+      "field": "sbom_ref",
+      "status": "bound_inventory",
+      "reason": "Engineering dependency inventory; no standard SBOM conformance asserted."
+    }
+  ],
+  "csv_null_token": "\\N",
+  "release_binding": "final_source_and_observed_receipts"
+}

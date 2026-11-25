@@ -1,0 +1,10 @@
+{
+  "status": "FAIL",
+  "complete": true,
+  "total_mutants": 12,
+  "missed": 1,
+  "caught": 11,
+  "timeout": 0,
+  "unviable": 0,
+  "scope": "all_reported_mutants_without_equivalence_exemptions"
+}

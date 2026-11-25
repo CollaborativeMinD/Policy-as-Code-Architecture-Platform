@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/e7495113964e/work/admission_overlay/probe.py", line 29, in <module>
+    limits()
+    ~~~~~~^^
+  File "/workspace/scratch/e7495113964e/work/admission_overlay/probe.py", line 24, in limits
+    module.set_limits({'memory_limit_bytes': 536870912, 'timeout_seconds': 1.25,
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                       'output_limit_bytes': 4096})
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/e7495113964e/work/admission_sources/ci42/src/hmt_native/optimization/n168_set_limits.py", line 8, in set_limits
+    api.resource.setrlimit(api.resource.RLIMIT_AS, (memory, memory))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'function' object has no attribute 'setrlimit'

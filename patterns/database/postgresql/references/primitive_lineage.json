@@ -1,0 +1,415 @@
+{
+  "schema": "hmt-postgresql-primitive-lineage-v1",
+  "scope": "New PostgreSQL authority, immutable checkpoints, Redis projection recovery, Tailcat fixed-session binding, and bounded content-defined streaming. Inherited archives and upstream source are inspection-only and excluded from release.",
+  "source_archives": [
+    {
+      "name": "HMT_Content_Defined_Streaming_v1.0.0.zip",
+      "sha256": "611bb42d0c346948b2aa34f7495fbd41732503891f88bc5dd04a64d9fa0e96c3",
+      "fresh_unit_tests": 24,
+      "fresh_mutants_killed": 8,
+      "fresh_mutants_total": 8,
+      "manifest_files_verified": 53
+    },
+    {
+      "name": "HMT_Peer_Bound_Authority_v1.0.0.zip",
+      "sha256": "a9f399b80ff87d02c724f34eb1cd5126ad122c8f67f05694d28ae0e54ba23e0e",
+      "fresh_unit_tests": 46,
+      "fresh_composition_tests": 3,
+      "fresh_mutants_killed": 9,
+      "fresh_mutants_total": 9,
+      "manifest_files_verified": 75
+    }
+  ],
+  "upstream_authority": {
+    "repository": "https://github.com/CollaborativeMinD/HMT-Streaming-Governance",
+    "revision": "cee49bbe3d728dc5ea7a8fbb1f646bbd4d1a21a3",
+    "files": {
+      "database.py": "76e12f153856306fdd09b642f952cfa994e91ae1866754a709bbb5c105b4b906",
+      "tailcat_main.go": "de97c183bb17fadc1b2c2e293eee14a5bb7a72bcf9f5a197c8b5fcbf053e1840",
+      "schema.sql": "8962832c50861ee3c62d4f83357a630bc7be0157183b59e97dea28729eb7bbcb",
+      "authority.py": "08cf179dd38d7d78bd698100b6d5b5b462758d4baf691283df7b42443965785e",
+      "contracts.py": "92a33741365c9655efdbb89f6ba882778eb1dc370e6006d75211de4f18901606",
+      "admission.py": "d2d214d5a43b2fef8feb4ca9ffbdcafce34318416d6df1309d4ef57840cf45e3",
+      "records.py": "82dba80128bb5841deb6e60f3ae0418321dea096b6635b7fc65e42602c3b9fa1",
+      "effects.py": "d29d78d8271914f032cbcc5f3a9dcf6f98e7df5575360865eebb94f69b1dd07b"
+    }
+  },
+  "streaming_source_revision": "9eaec50df0753fbfa233809b27b84ae4d62ed167",
+  "reuse_decisions": [
+    "Retained the supplied CDC rolling recurrence, continuous window across cuts, content-before-maximum reason precedence, and immutable packet snapshots. Independent oracle recomputes each window without recurrence.",
+    "Adapted custody and idempotency contracts to session_user-derived PostgreSQL SECURITY DEFINER functions. No supplied implementation is represented as PostgreSQL-ready without this new composition.",
+    "Actual Tailcat authenticated child environment is a trusted launcher seam; arbitrary request fields and arbitrary environment mappings are not peer authentication.",
+    "Pyrsistent is new structural-sharing snapshot composition; the inspected upstream does not contain a Pyrsistent implementation.",
+    "Redis is a bounded disposable projection; a stored claim and fresh PostgreSQL checkpoint define scope. Projection replay is explicit and authority checked, never an exactly-once external delivery claim."
+  ],
+  "fresh_branch_verification": {
+    "tests_passed": 141,
+    "tests_failed": 0,
+    "production_branches_covered": 113,
+    "production_branches_total": 116,
+    "production_branch_percent": 97.41379310344827,
+    "engine": "PGlite PostgreSQL18.6 single backend and native Redis6.2.14",
+    "native_postgresql_multibackend": "NOT_EXECUTED",
+    "tailcat_local_derp_e2e": "BLOCKED_EXTERNAL_PROFILE; actual wire transport was not qualified by this primitive campaign.",
+    "power_loss_durability": "NOT_EXECUTED; fixed worker now enforces observed TLS and local WAL prerequisites in production.",
+    "focused_run_scope": "Primitive, causal, and mutation-runner suites; measured before final converter aliases and explicit Optional-result checks.",
+    "follow_up_after_type_refinements": {
+      "tests_passed": 21,
+      "tests_failed": 0,
+      "evidence_id": "primitive-type-regression"
+    },
+    "coverage_scope": "Focused measurement before the two final fail-closed Optional-result branches; final whole-source coverage is owned by the admission campaign."
+  },
+  "new_or_modified_files": [
+    {
+      "path": "sql/02_authority.sql",
+      "status": "new",
+      "sha256": "cf3df01dd62ebddf42b6e61ffea4caabe21027301ce1287170ffbd24df21a9ed"
+    },
+    {
+      "path": "sql/03_checkpoints.sql",
+      "status": "new",
+      "sha256": "329ab4e71f2cf27f39df6d3d9b36738b8ba05318571a1cb7cb9225ba70d62f2f"
+    },
+    {
+      "path": "src/hmt_pg_patterns/authority.py",
+      "status": "new",
+      "sha256": "4dbd11e3d5e2dee046de7654bae092d8fcd77383a22bc884920148f77213acba"
+    },
+    {
+      "path": "src/hmt_pg_patterns/authority_async.py",
+      "status": "new",
+      "sha256": "4640aa9af70711ea0d6274d0b1afbbc31dd1167c10f97ea243246821c9dcc991"
+    },
+    {
+      "path": "src/hmt_pg_patterns/authority_types.py",
+      "status": "new",
+      "sha256": "4c6be02100b69e9e9930d2b275b2867711297c4f017bf7fd56a2331e6923b855"
+    },
+    {
+      "path": "src/hmt_pg_patterns/checkpoints.py",
+      "status": "new",
+      "sha256": "edd92d8ef2fb9faea64a645c03c62588c088e7fb0441bba655d34891c30b6bf3"
+    },
+    {
+      "path": "src/hmt_pg_patterns/checkpoints_lua.py",
+      "status": "new",
+      "sha256": "70043ac9022ee1aca096ba7ad2cac4ee83f6ad92849a2e580c85cc56efc27722"
+    },
+    {
+      "path": "src/hmt_pg_patterns/checkpoints_snapshot.py",
+      "status": "new",
+      "sha256": "aacdb7380eb1f76fbb74a9b75dd5f548c3229d461b034bd4792b69c6bad1fe14"
+    },
+    {
+      "path": "src/hmt_pg_patterns/outbox.py",
+      "status": "new",
+      "sha256": "42ea0bf4235c003cccf38da9ac6b8cee7b16f10b128fc3cce1949a6ff7447d84"
+    },
+    {
+      "path": "src/hmt_pg_patterns/streaming.py",
+      "status": "new",
+      "sha256": "dfa4dc10ebf80ec2249deed3d94711ef714acc6ddec7000b6c59b552527dde2b"
+    },
+    {
+      "path": "src/hmt_pg_patterns/streaming_async_writer.py",
+      "status": "new",
+      "sha256": "5e4131046f275cf86c38e502a8950f428e4a4c86b2533496b034285da75707a9"
+    },
+    {
+      "path": "src/hmt_pg_patterns/streaming_contracts.py",
+      "status": "new",
+      "sha256": "116cc67083513bdeaf17d165c0fb931f435aae6bc3c0e1be401f83d2abb18286"
+    },
+    {
+      "path": "src/hmt_pg_patterns/streaming_runtime.py",
+      "status": "new",
+      "sha256": "b0592d798ca7cce672ed5113a7a77779f780b4fc4c36a3adb90901dd8a9f34e7"
+    },
+    {
+      "path": "src/hmt_pg_patterns/streaming_scan.py",
+      "status": "new",
+      "sha256": "dfad648f930834a2b9b4b6643efb7823a46c401cc9e3d14e86937a36f88b96e8"
+    },
+    {
+      "path": "src/hmt_pg_patterns/streaming_state.py",
+      "status": "new",
+      "sha256": "327d830ad415a6c103013cd5527c36cf829af67e1099251a48f46e8fb1fc44a5"
+    },
+    {
+      "path": "src/hmt_pg_patterns/streaming_writer.py",
+      "status": "new",
+      "sha256": "cdd003f10b553919c44f56f04cf9a6204ab9c7eb51d66cc084ed8a9e9d3c6769"
+    },
+    {
+      "path": "src/hmt_pg_patterns/transport.py",
+      "status": "new",
+      "sha256": "09e2c508dcc76b7ebb131fe18aa973be7558d463876306e4c7f58082807974e3"
+    },
+    {
+      "path": "tools/mutation_campaign.py",
+      "status": "new",
+      "sha256": "ef60cd4b805f7f4f20e8ab739894b91789e747431ae021e09cc45c6beaece5ce"
+    },
+    {
+      "path": "tools/mutation_execution.py",
+      "status": "new",
+      "sha256": "2610dcca26716ae4857df42497c9d2f0cd0e62b6dcd6fdb543cd216bdb9e13ff"
+    },
+    {
+      "path": "tools/mutation_models.py",
+      "status": "new",
+      "sha256": "6c7bf9023fb4cc0df3d2168f5d547cfe1ef60a0c03228c5192d04a5517a03e92"
+    },
+    {
+      "path": "tools/mutation_probe.py",
+      "status": "new",
+      "sha256": "8d222af1bd93925ec5d1472ab49932a747b3a10e55768ba626afb4942adbb07e"
+    },
+    {
+      "path": "tools/mutation_python.py",
+      "status": "new",
+      "sha256": "ee653d029fb9ca88112cf94a6e2a2a7d965fc412ed50da4a3816dea6cc7cf8b6"
+    },
+    {
+      "path": "tools/mutation_results.py",
+      "status": "new",
+      "sha256": "d867b2db3e2d20192e7bb5ca87210edc30f76d58f317405f5fb278be4874248b"
+    },
+    {
+      "path": "tools/mutation_sql.py",
+      "status": "new",
+      "sha256": "4a667f92fea4c8c6435d17730bae7c1cf99023589276ae749902f1b591028ddf"
+    },
+    {
+      "path": "tools/mutation_storage.py",
+      "status": "new",
+      "sha256": "6e1103b4226116d0192a7b31f20627eecb1c27711d0fd36a8faa318742fc7ae7"
+    }
+  ],
+  "known_limits": [
+    "Single-backend PGlite validates SQL/driver outcomes, not native contention, SCRAM/TLS, recovery, or power loss.",
+    "Auxiliary PGlite async test connections disable automatic prepared statements because backend session names persist across emulated client sessions.",
+    "Async cancellation is cooperative; a malicious awaitable that suppresses cancellation requires an outer process kill deadline.",
+    "Blocking source.next can block; fixed-command worker needs an outer owned process deadline.",
+    "A Redis write can occur after an authority snapshot is read and before a concurrent revocation. Redis never grants authority, and new database effects always repeat epoch admission.",
+    "Checkpoint rebuild requires active same-epoch authority; after revocation, only an already observed cached receipt can be recorded."
+  ],
+  "assurance_deltas": [
+    {
+      "incident_id": "PG-RRCA-M02",
+      "observed": "Initial isolated mutation epoch caught 11/12. Resetting the rolling window after each chunk escaped the selected historical parity vectors; all 12 source restorations passed.",
+      "causal_evidence": "When min_size >= window_size, full eligible chunks replenish the rolling window. A final tail shorter than window_size exposes the loss: for abcde with window4, original tail fingerprint 1650680933 versus mutant 101; independent int.from_bytes(bcde,big) is1650680933.",
+      "correction": "Added independent public tail-fingerprint witnesses for tail lengths 1, 2, and 3 and selected that boundary for PG-M02. Original parity suite and initial failed campaign retained. No mutant waived, no implementation altered for the witness.",
+      "validation_test": "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut",
+      "initial_evidence": "work/epochs/03-mutations/mutation-report.json",
+      "disposition": "INVESTIGATION_COMPLETE;SOLUTION_CANDIDATE_APPLIED;REGRESSION_PASS",
+      "closed_evidence_id": "04-mutations-closed"
+    }
+  ],
+  "mutation_verification": {
+    "initial_evidence_id": "03-mutations",
+    "initial_result": {
+      "caught": 11,
+      "missed": 1,
+      "timeout": 0,
+      "unviable": 0
+    },
+    "closed_evidence_id": "04-mutations-closed",
+    "source_digest": "f8176d2758232ae58f0ad7d87906df6d9a07d430f813017899093228ac98b886",
+    "total_mutants": 12,
+    "caught": 12,
+    "missed": 0,
+    "timeout": 0,
+    "unviable": 0,
+    "restorations_observed": 12,
+    "native_qualifier": "hmt_policy.mutation_gate.rust_mutations",
+    "native_status": "PASS",
+    "same_mutants_retained": true,
+    "original_frozen_source_unchanged": true,
+    "final_epoch_note": "Replay the same runner under the final release source; converter/type and worker repairs occurred after this interim frozen campaign."
+  },
+  "causal_witnesses": [
+    {
+      "requirement": "PG-FENCE-001",
+      "experiment": "deletion",
+      "test_id": "tests/test_causal_authority.py::test_deletion"
+    },
+    {
+      "requirement": "PG-FENCE-001",
+      "experiment": "restoration",
+      "test_id": "tests/test_causal_authority.py::test_restoration"
+    },
+    {
+      "requirement": "PG-FENCE-001",
+      "experiment": "matched_control",
+      "test_id": "tests/test_causal_authority.py::test_matched_control"
+    },
+    {
+      "requirement": "PG-FENCE-001",
+      "experiment": "alternate_path",
+      "test_id": "tests/test_causal_authority.py::test_alternate_path"
+    },
+    {
+      "requirement": "PG-CHECKPOINT-001",
+      "experiment": "deletion",
+      "test_id": "tests/test_causal_checkpoint.py::test_deletion"
+    },
+    {
+      "requirement": "PG-CHECKPOINT-001",
+      "experiment": "restoration",
+      "test_id": "tests/test_causal_checkpoint.py::test_restoration"
+    },
+    {
+      "requirement": "PG-CHECKPOINT-001",
+      "experiment": "matched_control",
+      "test_id": "tests/test_causal_checkpoint.py::test_matched_control"
+    },
+    {
+      "requirement": "PG-CHECKPOINT-001",
+      "experiment": "alternate_path",
+      "test_id": "tests/test_causal_checkpoint.py::test_alternate_path"
+    },
+    {
+      "requirement": "PG-PACE-001",
+      "experiment": "deletion",
+      "test_id": "tests/test_causal_pace.py::test_deletion"
+    },
+    {
+      "requirement": "PG-PACE-001",
+      "experiment": "restoration",
+      "test_id": "tests/test_causal_pace.py::test_restoration"
+    },
+    {
+      "requirement": "PG-PACE-001",
+      "experiment": "matched_control",
+      "test_id": "tests/test_causal_pace.py::test_matched_control"
+    },
+    {
+      "requirement": "PG-PACE-001",
+      "experiment": "alternate_path",
+      "test_id": "tests/test_causal_pace.py::test_alternate_path"
+    },
+    {
+      "requirement": "PG-CDC-001",
+      "experiment": "deletion",
+      "test_id": "tests/test_causal_streaming.py::test_deletion"
+    },
+    {
+      "requirement": "PG-CDC-001",
+      "experiment": "restoration",
+      "test_id": "tests/test_causal_streaming.py::test_restoration"
+    },
+    {
+      "requirement": "PG-CDC-001",
+      "experiment": "matched_control",
+      "test_id": "tests/test_causal_streaming.py::test_matched_control"
+    },
+    {
+      "requirement": "PG-CDC-001",
+      "experiment": "alternate_path",
+      "test_id": "tests/test_causal_streaming.py::test_alternate_path"
+    },
+    {
+      "requirement": "PG-TX-001",
+      "experiment": "deletion",
+      "test_id": "tests/test_causal_transaction.py::test_deletion"
+    },
+    {
+      "requirement": "PG-TX-001",
+      "experiment": "restoration",
+      "test_id": "tests/test_causal_transaction.py::test_restoration"
+    },
+    {
+      "requirement": "PG-TX-001",
+      "experiment": "matched_control",
+      "test_id": "tests/test_causal_transaction.py::test_matched_control"
+    },
+    {
+      "requirement": "PG-TX-001",
+      "experiment": "alternate_path",
+      "test_id": "tests/test_causal_transaction.py::test_alternate_path"
+    }
+  ],
+  "worker_review": {
+    "status": "CLOSED_SCOPED_SOFTWARE",
+    "reviewed_at": "2026-11-04T08:32:23.274312+00:00",
+    "scope": "Fixed peer binding, role privileges, framing/payload bounds, watchdog ownership, production WAL/TLS prerequisites, and bounded disposable projection.",
+    "findings": [
+      "PG-RRCA-WATCHDOG-PIPE",
+      "PG-RRCA-CONFIG-FIFO"
+    ],
+    "regression_evidence_id": "10-deadline-regression",
+    "regression_tests_passed": 26,
+    "regression_sha256": "32638e81bea52bc5032f36397729da6a03eaa2c9c7ebc122211e830a6a4c958f",
+    "remaining_blocking_findings": [],
+    "reviewed_files": [
+      {
+        "path": "src/hmt_pg_patterns/worker.py",
+        "sha256": "2d5037722af52ff9147d13f58ac221cb6b8ab3ea500ca363bbdb7d342c9e9d32"
+      },
+      {
+        "path": "src/hmt_pg_patterns/worker_config.py",
+        "sha256": "2b768cb71e5dbdb420eb027ff4465d7c3b933f8f36d8de0193fdd10314c849a1"
+      },
+      {
+        "path": "src/hmt_pg_patterns/worker_io.py",
+        "sha256": "ec9193248be502e745fd11ef87c84c1c8ee4573c973e3178b6d2bfcb25ef198f"
+      },
+      {
+        "path": "src/hmt_pg_patterns/worker_projection.py",
+        "sha256": "1573adb43bb7c42e7130046ac81523384b7b2b7ef10e39e9b3a85f12918000db"
+      },
+      {
+        "path": "src/hmt_pg_patterns/worker_service.py",
+        "sha256": "0a167639f96fe4b4cd012eb2b315eca6413660a3da5f340d24f28f975cc0a015"
+      }
+    ],
+    "qualification_limit": "This review and regression do not qualify actual Tailcat wire transport, native PostgreSQL contention, or power-loss durability."
+  },
+  "reverse_rca_events": [
+    {
+      "timestamp": "2026-11-04T08:10:04.874918+00:00",
+      "incident_id": "PG-RRCA-M02",
+      "checkpoint": "INITIAL_MUTATION_WITNESS",
+      "observed_state": "11/12 caught; one resetting-window mutant survived selected historical vectors.",
+      "causal_evidence": "Full eligible chunks refill the window; a final tail shorter than window_size exposes the missing predecessor bytes. Independent abcde/window 4 witness: expected 1650680933, mutant 101.",
+      "validation_test": "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut",
+      "disposition": "INVESTIGATION_COMPLETE;SOLUTION_CANDIDATE_APPLIED"
+    },
+    {
+      "timestamp": "2026-11-04T08:17:08.908389+00:00",
+      "incident_id": "PG-RRCA-M02",
+      "checkpoint": "REGRESSION_AND_RESTORATION",
+      "observed_state": "Same 12 mutants caught; zero missed/timeout/unviable; all 12 restored copies pass.",
+      "causal_evidence": "04-mutations-closed/mutation-report.json and native-mutation-qualification.json; initial failed 03-mutations epoch retained.",
+      "validation_test": [
+        "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[1]",
+        "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[2]",
+        "tests/test_streaming_scanner.py::test_short_tail_retains_rolling_window_across_cut[3]"
+      ],
+      "disposition": "INVESTIGATION_COMPLETE;SOLUTION_CANDIDATE_APPLIED"
+    },
+    {
+      "timestamp": "2026-11-04T08:32:23.274312+00:00",
+      "incident_id": "PG-RRCA-WATCHDOG-PIPE",
+      "checkpoint": "REPRODUCTION_REPAIR_REGRESSION",
+      "observed_state": "Closed or full stderr prevented the 0.1 s watchdog from exiting; both children required outer kill after 0.7 s. Repaired watchdog exits124 independently of logging.",
+      "causal_evidence": "worker_readonly_deadline_probe.json; root-owned worker_io._expired now calls os._exit directly; 10-deadline-regression.xml contains both passing process witnesses.",
+      "validation_test": [
+        "tests/test_worker_deadline_attacks.py::test_hard_exit_does_not_depend_on_diagnostic_pipe[closed]",
+        "tests/test_worker_deadline_attacks.py::test_hard_exit_does_not_depend_on_diagnostic_pipe[full]"
+      ],
+      "disposition": "INVESTIGATION_COMPLETE;SOLUTION_CANDIDATE_APPLIED"
+    },
+    {
+      "timestamp": "2026-11-04T08:32:23.274312+00:00",
+      "incident_id": "PG-RRCA-CONFIG-FIFO",
+      "checkpoint": "REPRODUCTION_REPAIR_REGRESSION",
+      "observed_state": "A private owned FIFO blocked config open before fstat and before watchdog start. O_NONBLOCK plus fstat and descriptor finally-close now reject it immediately.",
+      "causal_evidence": "worker_readonly_config_probe.json; final worker_config.load_config source and 10-deadline-regression.xml verified read-only.",
+      "validation_test": "tests/test_worker_deadline_attacks.py::test_private_fifo_is_rejected_without_waiting_for_a_writer",
+      "disposition": "INVESTIGATION_COMPLETE;SOLUTION_CANDIDATE_APPLIED"
+    }
+  ]
+}

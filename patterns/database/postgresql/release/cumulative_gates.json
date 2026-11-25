@@ -1,0 +1,130 @@
+{
+  "columns": [
+    "timestamp",
+    "task",
+    "gate_id",
+    "requirement",
+    "status",
+    "evidence_ref",
+    "evidence_hash_or_reason"
+  ],
+  "rows": [
+    {
+      "timestamp": "2026-11-04T07:38:21.890401+00:00",
+      "task": "T0 contracts and tracers",
+      "gate_id": "G-TRACER-001",
+      "requirement": "PG-SYNC-001/PG-AUTH-01/PG-REDIS-01",
+      "status": "PASS",
+      "evidence_ref": "evidence/history/tracer_evidence/tracer.json",
+      "evidence_hash_or_reason": "8108ea6c539a1bfb4fdfbb623de49b858d4dbb7dfb3006f2f96fa0a67b50c318"
+    },
+    {
+      "timestamp": "2026-11-04T07:38:21.890401+00:00",
+      "task": "T1 foundations",
+      "gate_id": "G-FOUNDATION-001",
+      "requirement": "PG-CONFIG-001/PG-CONTRACT-001/PG-PACE-001/PG-MIGRATION-001",
+      "status": "PASS",
+      "evidence_ref": "evidence/history/epochs/01-foundations/tests.xml",
+      "evidence_hash_or_reason": "e0089621faa9136c945b7a8bf873a3a51570c4049a1e4428714d4d0dc21c8431"
+    },
+    {
+      "timestamp": "2026-11-04T09:09:13.893310+00:00",
+      "task": "Final PostgreSQL software reference qualification",
+      "gate_id": "G-CANDIDATE",
+      "requirement": "Full CROSS JOIN before pruning",
+      "status": "PASS",
+      "evidence_ref": "evidence/software/candidate-space.json",
+      "evidence_hash_or_reason": "f780acdce11d570f1b4ff11b138faceb40c6c264c9608febe2b16519ba90ad67"
+    },
+    {
+      "timestamp": "2026-11-04T09:09:13.893310+00:00",
+      "task": "Final PostgreSQL software reference qualification",
+      "gate_id": "G-SOFTWARE",
+      "requirement": "All446 tests; no suppression",
+      "status": "PASS",
+      "evidence_ref": "evidence/software/summary.json",
+      "evidence_hash_or_reason": "fa31ea2a761e60b10d7f7e6ec9ee4f106c81a38b9e54be5c0b696cf609d528fd"
+    },
+    {
+      "timestamp": "2026-11-04T09:09:13.893310+00:00",
+      "task": "Final PostgreSQL software reference qualification",
+      "gate_id": "G-COVERAGE",
+      "requirement": "Actual branch and line thresholds independently>=90%",
+      "status": "PASS",
+      "evidence_ref": "evidence/software/branch-coverage.json",
+      "evidence_hash_or_reason": "846d680721dd9e95b9c2aa901b6d26c54ba3b5ec85083d452511ff992aa5edd5"
+    },
+    {
+      "timestamp": "2026-11-04T09:09:13.893310+00:00",
+      "task": "Final PostgreSQL software reference qualification",
+      "gate_id": "G-CAUSAL",
+      "requirement": "Five edges; deletion/restoration/matched-control/alternate-path",
+      "status": "PASS",
+      "evidence_ref": "evidence/software/causal-binding.json",
+      "evidence_hash_or_reason": "bcfdd8154ca47fd5248b484db4693b9aea6f79315eefe26944dbe3a18efc486a"
+    },
+    {
+      "timestamp": "2026-11-04T09:09:13.893310+00:00",
+      "task": "Final PostgreSQL software reference qualification",
+      "gate_id": "G-MUTATION",
+      "requirement": "All12 selected mutants caught and restored",
+      "status": "PASS",
+      "evidence_ref": "evidence/mutations/mutation-report.json",
+      "evidence_hash_or_reason": "904a69f598e6f91e3321a1c08c8d19c26c68172313d8cda1b78d12359fcd7a21"
+    },
+    {
+      "timestamp": "2026-11-04T09:09:13.893310+00:00",
+      "task": "Final PostgreSQL software reference qualification",
+      "gate_id": "G-NATIVE-VV",
+      "requirement": "Native15-family qualification and Power-of-10 mapping",
+      "status": "PASS",
+      "evidence_ref": "evidence/native_vv/native-vv-result.json",
+      "evidence_hash_or_reason": "868a7f925720074be59f5a44cacdedad0170b82d22be74a8b87c132c7919ac45"
+    },
+    {
+      "timestamp": "2026-11-04T09:09:13.893310+00:00",
+      "task": "Final PostgreSQL software reference qualification",
+      "gate_id": "G-NATIVE42-001",
+      "requirement": "Initial complete native standalone campaign",
+      "status": "FAIL",
+      "evidence_ref": "evidence/history/native42-001/summary.json",
+      "evidence_hash_or_reason": "7b8854eede1a0c8272952cb5fa005cd007d282f7844de99af2bf0e8cd6a0bac1"
+    },
+    {
+      "timestamp": "2026-11-04T09:09:13.893310+00:00",
+      "task": "Final PostgreSQL software reference qualification",
+      "gate_id": "G-NATIVE42-002",
+      "requirement": "All42 lanes;24PASS18explicitNA",
+      "status": "PASS",
+      "evidence_ref": "evidence/native42/summary.json",
+      "evidence_hash_or_reason": "2124bc606c1c44b92b9bdd33b732e8d8128f64611b0521e4e18c7ad9e5f54f3f"
+    },
+    {
+      "timestamp": "2026-11-04T09:09:13.893310+00:00",
+      "task": "Final PostgreSQL software reference qualification",
+      "gate_id": "G-NATIVE-LOGIN",
+      "requirement": "Native PostgreSQL child-worker startup authentication",
+      "status": "NOT_QUALIFIED",
+      "evidence_ref": "evidence/history/epochs/05-worker.xml",
+      "evidence_hash_or_reason": "5646b8a9140546f951108e4f8bf32de372c1c19ab4208d80a74d94e649bf4207"
+    },
+    {
+      "timestamp": "2026-11-04T09:09:13.893310+00:00",
+      "task": "Final PostgreSQL software reference qualification",
+      "gate_id": "G-TAILCAT-WIRE",
+      "requirement": "Actual encrypted Tailcat exchange",
+      "status": "NOT_QUALIFIED",
+      "evidence_ref": "evidence/history/epochs/03-tailcat.xml",
+      "evidence_hash_or_reason": "9feee2da95a990b4034a31f1307d03f88b74f6bd0063e57e0994797a4f40382c"
+    },
+    {
+      "timestamp": "2026-11-04T09:09:13.893310+00:00",
+      "task": "Final PostgreSQL software reference qualification",
+      "gate_id": "G-BASELINE",
+      "requirement": "Original699 inherited files unchanged",
+      "status": "PASS",
+      "evidence_ref": "release/baseline-integrity.json",
+      "evidence_hash_or_reason": "49af1d115ea9ed9d8f1dfd9a05de56696543a55bd2979f63577e5ed794f579c9"
+    }
+  ]
+}

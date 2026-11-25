@@ -1,0 +1,6 @@
+mypy 1.20.2 (compiled: yes)
+src/hmt_pg_patterns/asyncpg_pool.py:8:1:8:1: error: Skipping analyzing "asyncpg": module is installed, but missing library stubs or py.typed marker  [import-untyped]
+src/hmt_pg_patterns/migrations.py:47:26:47:26: error: Redundant cast to "str"  [redundant-cast]
+src/hmt_pg_patterns/asyncpg_driver.py:9:1:9:1: error: Skipping analyzing "asyncpg": module is installed, but missing library stubs or py.typed marker  [import-untyped]
+src/hmt_pg_patterns/asyncpg_driver.py:9:1:9:1: note: See https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-imports
+Found 3 errors in 3 files (checked 39 source files)

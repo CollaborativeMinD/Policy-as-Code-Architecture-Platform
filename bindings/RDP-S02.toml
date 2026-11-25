@@ -1,0 +1,7 @@
+version = 1
+pattern = "RDP-S02"
+scope = "software"
+
+[settings]
+catalog_count = 4
+evidence_count = 3

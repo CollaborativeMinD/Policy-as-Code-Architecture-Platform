@@ -1,0 +1,25 @@
+---
+rules:
+  - id: hmt-pg-no-dynamic-python
+    languages: [python]
+    severity: ERROR
+    message: Request data cannot become executable Python.
+    pattern-either:
+      - pattern: eval(...)
+      - pattern: exec(...)
+      - pattern: compile(...)
+  - id: hmt-pg-no-shell-execution
+    languages: [python]
+    severity: ERROR
+    message: Subprocess boundaries require argument arrays and shell=False.
+    pattern-either:
+      - pattern: subprocess.$F(..., shell=True, ...)
+      - pattern: os.system(...)
+      - pattern: os.popen(...)
+  - id: hmt-pg-no-executable-deserialization
+    languages: [python]
+    severity: ERROR
+    message: Network and checkpoint data must use closed non-executable contracts.
+    pattern-either:
+      - pattern: pickle.loads(...)
+      - pattern: pickle.load(...)

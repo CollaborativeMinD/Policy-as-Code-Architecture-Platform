@@ -1,0 +1,25 @@
+{
+  "status": "FAIL",
+  "argv": [
+    "/workspace/scratch/e7495113964e/work/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "--tb=short",
+    "-o",
+    "addopts=",
+    "-p",
+    "tools.mutation_probe",
+    "--junitxml=/workspace/scratch/e7495113964e/work/epochs/04-mutations-closed/PG-M09/mutated/junit.xml",
+    "tests/test_checkpoints_cache.py::test_redis_ordering_above_float_precision"
+  ],
+  "returncode": 1,
+  "reason": "COMPLETE",
+  "seconds": 0.851954014000512,
+  "captured_bytes": 638,
+  "stdout": "pytest.stdout.log",
+  "stderr": "pytest.stderr.log",
+  "import_verified": true,
+  "source_unchanged": true,
+  "source_digest": "646b48fe86f003479240e5c14369e235e70827fe2491ced1e75d37c9812c379e"
+}

@@ -1,0 +1,27 @@
+........................................................................ [ 16%]
+........................................................................ [ 32%]
+........................................................................ [ 48%]
+........................................................................ [ 64%]
+........................................................................ [ 80%]
+........................................................................ [ 96%]
+..............                                                           [100%]
+=============================== warnings summary ===============================
+tests/test_admission_native.py::test_native_transfer_preserves_every_candidate_and_failed_execution
+  /workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/candidate_ledger.py:130: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f70b96b1c60>
+    result[table] = [dict(row) for row in db.execute(f"SELECT * FROM {table}")]
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_admission_native.py::test_native_transfer_preserves_every_candidate_and_failed_execution
+  /workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/candidate_ledger.py:130: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f70b96b14e0>
+    result[table] = [dict(row) for row in db.execute(f"SELECT * FROM {table}")]
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.13.17-final-0 _______________
+
+Coverage JSON written to file /workspace/scratch/e7495113964e/work/final/software/coverage.json
+Required test coverage of 90.0% reached. Total coverage: 98.16%
+446 passed, 2 warnings in 16.80s

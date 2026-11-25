@@ -1,0 +1,198 @@
+{
+  "schema_id": "urn:hmt:pg:governing-inputs:1.0.0",
+  "recorded_at": "2026-11-04T08:34:53.637745+00:00",
+  "creation_event": {
+    "timestamp": "2026-11-04T07:19:55.263410+00:00",
+    "source": "/workspace/scratch/e7495113964e/upload/hmt-reusable-design-references.zip",
+    "sha256": "5e4d800ac89d07a2b55670b44032fe2cb93202fc6c78cd17298e9fc5aafc1e22",
+    "action": "readonly_baseline_extraction",
+    "new_branch": "database_design_patterns/postgresql",
+    "source_mutation": false
+  },
+  "inputs": [
+    {
+      "filename": "PACE-T Ops Matrix Policy_v2.0.0.md",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "ab17df9ff81f31dfaa1a768111c641e1b1c7f837c8d3a2511ec50b1770da42b1",
+      "bytes": 3251
+    },
+    {
+      "filename": "Structural Complexity Policy_v2.0.0.md",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "c4ba62091f9b4d52d4950a5d9b9e4c4f698013748d53905547d14dfb9072188b",
+      "bytes": 4627
+    },
+    {
+      "filename": "Verification and Validation Policy_v2.0.0.md",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "481bd9bf1ed7921a8e373aaab591a8bd94de2dcd463e57dd5398d366f4fa1e87",
+      "bytes": 3509
+    },
+    {
+      "filename": "hmt-reusable-design-references.zip",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "5e4d800ac89d07a2b55670b44032fe2cb93202fc6c78cd17298e9fc5aafc1e22",
+      "bytes": 29072012
+    },
+    {
+      "filename": "01-tooling_normalization.xml",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "2680756ab5bbe5ce5dbb89338aa5bdc6be42745ade289949edbcf019f8526202",
+      "bytes": 2164
+    },
+    {
+      "filename": "02-system_prompt_baseline.xml",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "77e1ccb6ec1710fbe63a3c361cd10ae3b26aa8c8595164a14208715ecf43ba42",
+      "bytes": 3726
+    },
+    {
+      "filename": "03-EdgeOps_Contracts_ValidateSeams_FieldDeclarations.xml",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "118978723c6aeda5ae909d8edc4a1c7bbf868c8b99958b9009398c0502ad0630",
+      "bytes": 522
+    },
+    {
+      "filename": "04-EdgeOps_Env_ReproduceStack_FieldDeclarations.xml",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "ab5f29718d0c50f6f753f15c79b27dd6ca67950d5cad30d8ea2dd25d6b9f75ab",
+      "bytes": 490
+    },
+    {
+      "filename": "05-EdgeOps_FieldDeclarations_Federated.xml",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "b2e54021c3820ec45e74d9b0d1104c423d2598622f23c093449c6f48c91c8c81",
+      "bytes": 1847
+    },
+    {
+      "filename": "06-EdgeOps_Orchestration_ReadyDeploy_FieldDeclarations.xml",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "df79864474a2ec0aea99717bb31f4264b4c285af0c0296bf8d3070ad5296c830",
+      "bytes": 537
+    },
+    {
+      "filename": "07-EdgeOps_Release_TraceLifecycle_FieldDeclarations.xml",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "b54efb75ba60ecc82391dbb96fa282cf493cfca5ecfdafaf8a4a7f05199abf2b",
+      "bytes": 531
+    },
+    {
+      "filename": "08-EdgeOps_Containment_HardenRuntime_FieldDeclarations.xml",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "05e78d02d3e308214c9b0ff2e5f366558ce02d68bdf7739438bd3277878aeade",
+      "bytes": 516
+    },
+    {
+      "filename": "09-Ontology_MachineHandoff_Schema.json",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "916f5a82442a85b18c941c760ee058bdc8b64a797667f088de4f92ac4beb3142",
+      "bytes": 1701
+    },
+    {
+      "filename": "10-Ontology_MachineHandoff_Example.json",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "ebdcd7b5652be4ba82709ff0c8cf914c6877afe7a958d8abd3e22de0dccf72ef",
+      "bytes": 1112
+    },
+    {
+      "filename": "11-Ontology_FederatedBaseline_Core.ttl",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "d01595e2f9e549f51556964dc91a0ee7629d6fba3744fc78d86a5e3855c918f3",
+      "bytes": 13664
+    },
+    {
+      "filename": "12-Ontology_FederatedBaseline_SubtypeCore.ttl",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "2de2b0ad9cd705946926e659a5ed34ca478b9d7ed00df5ad381d05d99f7f7861",
+      "bytes": 18602
+    },
+    {
+      "filename": "13-team_context.xml",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "0673c2ee8f30ad8bd829a50708c78505da870528224a0824970a58112e8afd19",
+      "bytes": 6142
+    },
+    {
+      "filename": "14-sentinel_core_kernel_release.zip",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "0202a18f8f89d2221544c90b7e1d97c23fb24863e7aa8bcf02458a42f111da74",
+      "bytes": 193658
+    },
+    {
+      "filename": "15-digital_twin_ssot_mission_threads_screens.zip",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "b64259e51cdb5f75e1dfbd610d4b9c12df44246a7c4245b54ffb9202aaf1faad",
+      "bytes": 1515742
+    },
+    {
+      "filename": "16-rrca_verification_and_validation_v4.md",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "9e40b6b088a8196f959fba170403d0b6da8340a27ab1fe04a5843004e234076d",
+      "bytes": 5063
+    },
+    {
+      "filename": "17-white_board-6-.html",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "4b2e57379bf7f00f6733ffd283b6106c489c7cb98c4d945e3fbd9586b15068e5",
+      "bytes": 44816
+    },
+    {
+      "filename": "18-scratch_pad-6-.py",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "fb7a7282579cec0bf20ba80a3da771e3510086892e7e0d5f923d9249f248ee56",
+      "bytes": 12937
+    },
+    {
+      "filename": "19-Classical_Calculus_Mobile_Field_Card_v6.py",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "55b739d4ce49d05bcc1686432faa302da1542ff5ea3123216b8dfe4c67566d90",
+      "bytes": 76311
+    },
+    {
+      "filename": "20-Geometric_Algebra_PGA_Mobile_Field_Card_v1.py",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "aa59bfb38c5f391167d0da5e1bd8b83fda0b4312036926a57023ad6255a24355",
+      "bytes": 48575
+    },
+    {
+      "filename": "HMT-CI-42-Independent-Lane-Bundles_v2.0.0.zip",
+      "classification": "inherited",
+      "included": false,
+      "sha256": "85882a410803d8741bdce4a56f6f6c2a7629e950bb5c938241bd6fd74944a6f1",
+      "bytes": 11142664
+    }
+  ],
+  "scope_decisions": {
+    "environment": "Exact Python/uv/npm locks and fixture identity prevent mutable build dependencies.",
+    "containment": "Strict profiles, least-privilege PostgreSQL grants, finite payload/work/deadlines, and a bounded systemd service reference protect the worker boundary.",
+    "seams": "Parameterized drivers, strict models, session-user authority, epoch/TTL fencing, and atomic outbox writes enforce active seams.",
+    "deployment": "Owned migrations, checksum replay, explicit role provisioning, and fixed Tailcat execution make the selected deployment path concrete.",
+    "release": "Source-bound evidence, full candidate ledger, original tool receipts/overlays, manifests, and machine handoff preserve lineage."
+  },
+  "math_scope": "CDC polynomial recurrence is derived from the supplied streaming primitive. No mission digital-twin mathematical model is deployed; the twin compendium and sentinel archive remain inherited references and are not repackaged.",
+  "knowledge_scope": "Full knowledge_base.md and full EdgeOps narrative documents were not present in supplied sources; the available exact baseline, field declarations, ontology, and v2 policies govern the implemented scope. No missing content was invented."
+}

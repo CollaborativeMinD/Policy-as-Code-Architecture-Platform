@@ -1,0 +1,62 @@
+[
+  {
+    "lane": "bandit",
+    "exit_code": 1,
+    "stdout_tail": "oqa: S311 - replayable test data, not keys.\\n69     tiny = Policy(block_size_target=3, window_size=2, min_size=2, max_size=5)\\n\",\"col_offset\":34,\"end_col_offset\":53,\"filename\":\"/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/streaming_oracle.py\",\"issue_confidence\":\"HIGH\",\"issue_cwe\":{\"id\":330,\"link\":\"https://cwe.mitre.org/data/definitions/330.html\"},\"issue_severity\":\"LOW\",\"issue_text\":\"Standard pseudo-random generators are not suitable for security/cryptographic purposes.\",\"line_number\":68,\"line_range\":[68],\"more_info\":\"https://bandit.readthedocs.io/en/1.9.4/blacklists/blacklist_calls.html#b311-random\",\"test_id\":\"B311\",\"test_name\":\"blacklist\"}]}\n",
+    "stderr_tail": ""
+  },
+  {
+    "lane": "mypy",
+    "exit_code": 1,
+    "stdout_tail": " | DataType | type[int] | type[float] | type[bool] | type[str] | type[date] | <9 more items> | None] | Sequence[str | tuple[str, DataTypeClass | DataType | type[int] | type[float] | type[bool] | type[str] | type[date] | <9 more items> | None]] | None\"  [arg-type]\nsrc/hmt_pg_patterns/orm_model.py:30:16:30:27: error: Argument 1 to \"order_by\" of \"GenerativeSelect\" has incompatible type \"int\"; expected \"Literal[_NoArg.NO_ARG] | str | ColumnElement[Any] | _HasClauseElement[Any] | SQLCoreOperations[Any] | ExpressionElementRole[Any] | TypedColumnsClauseRole[Any] | Callable[[], ColumnElement[Any]] | LambdaElement | OrderByRole | None\"  [arg-type]\nFound 10 errors in 9 files (checked 33 source files)\n",
+    "stderr_tail": ""
+  },
+  {
+    "lane": "pyrefly",
+    "exit_code": 1,
+    "stdout_tail": "e[Any] | LambdaElement | OrderByRole | SQLCoreOperations[Any] | TypedColumnsClauseRole[Any] | _HasClauseElement[Any] | _NoArg | str | None` in function `sqlalchemy.sql.selectable.GenerativeSelect.order_by`\",\n      \"severity\": \"error\"\n    },\n    {\n      \"line\": 27,\n      \"column\": 92,\n      \"stop_line\": 27,\n      \"stop_column\": 93,\n      \"path\": \"src/hmt_pg_patterns/sync_driver.py\",\n      \"code\": -2,\n      \"name\": \"bad-return\",\n      \"description\": \"Function declared to return `T`, but one or more paths are missing an explicit `return`\",\n      \"concise_description\": \"Function declared to return `T`, but one or more paths are missing an explicit `return`\",\n      \"severity\": \"error\"\n    }\n  ]\n}",
+    "stderr_tail": " WARN PYTHONPATH environment variable is set to `/workspace/scratch/e7495113964e/work/admission_sources/ci42/src`. Checks in other environments may not include these paths.\n INFO 5 errors\n"
+  },
+  {
+    "lane": "deptry",
+    "exit_code": 0,
+    "stdout_tail": "deptry 0.25.1\n",
+    "stderr_tail": "Scanning 33 files...\n\nSuccess! No dependency issues found.\n"
+  },
+  {
+    "lane": "ruff",
+    "exit_code": 1,
+    "stdout_tail": "\",\n37 +     \"causal_edges\",\n38 +     \"causal_witnesses\",\n39 +     \"case_bindings\",\n40 + )\n41 |\n--------------------------------------------------------------------------------\n51 |         for operation in (\"UPDATE\", \"DELETE\"):\n   -             db.execute(f\"CREATE TRIGGER freeze_{table}_{operation} BEFORE {operation} \"\n   -                        f\"ON {table} BEGIN SELECT RAISE(ABORT,'APPEND_ONLY_LEDGER'); END\")\n52 +             db.execute(\n53 +                 f\"CREATE TRIGGER freeze_{table}_{operation} BEFORE {operation} \"\n54 +                 f\"ON {table} BEGIN SELECT RAISE(ABORT,'APPEND_ONLY_LEDGER'); END\"\n55 +             )\n   |\n\n51 files would be reformatted, 7 files already formatted\n",
+    "stderr_tail": ""
+  },
+  {
+    "lane": "pylint",
+    "exit_code": 1,
+    "stdout_tail": "         \"module\": \"hmt_pg_patterns.asyncpg_driver\",\n            \"obj\": \"connection\",\n            \"line\": 52,\n            \"column\": 15,\n            \"endLine\": 52,\n            \"endColumn\": 24,\n            \"path\": \"src/hmt_pg_patterns/asyncpg_driver.py\",\n            \"absolutePath\": \"/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/asyncpg_driver.py\"\n        }\n    ],\n    \"statistics\": {\n        \"messageTypeCount\": {\n            \"fatal\": 0,\n            \"error\": 1,\n            \"warning\": 7,\n            \"refactor\": 10,\n            \"convention\": 100,\n            \"info\": 0\n        },\n        \"modulesLinted\": 36,\n        \"score\": 8.876611418047883\n    }\n}\n",
+    "stderr_tail": ""
+  },
+  {
+    "lane": "structural-complexity",
+    "exit_code": 0,
+    "stdout_tail": "sion_evidence.py\", \"sha256\": \"01daa72f39961de58076ebcd5edee8fad50d58f856c32fbf05282709a4b4fce6\"}, {\"path\": \"tools/admission_junit.py\", \"sha256\": \"ff4d1e27c35fcb3d7772c55cc8c9e0a2610e6e6c17f16a93e1b28324ee2e94cd\"}, {\"path\": \"tools/admission_structure.py\", \"sha256\": \"eef4a6208436ce155e96d3f68e2480c625f15ec8eb19f6b55229c869bf123b1e\"}, {\"path\": \"tools/candidate_ledger.py\", \"sha256\": \"fb6607d97fd8067ecf4bc127b2ce4df6a0b4df7a7cd0caec972f60c903757564\"}, {\"path\": \"tools/candidate_model.py\", \"sha256\": \"6b126dd35d1d2ba530e87457ad262689502e5cc88cc8b9bf1a54575a9aefe79b\"}, {\"path\": \"tools/candidate_sql.py\", \"sha256\": \"50fcc4d82db01487eebd3111306b8fff107d72246c2fef1e74d7cbb06a98480d\"}], \"status\": \"PASS\"}\n",
+    "stderr_tail": ""
+  },
+  {
+    "lane": "source-contract",
+    "exit_code": 0,
+    "stdout_tail": "8\"},{\"path\":\"tools/admission_evidence.py\",\"sha256\":\"01daa72f39961de58076ebcd5edee8fad50d58f856c32fbf05282709a4b4fce6\"},{\"path\":\"tools/admission_junit.py\",\"sha256\":\"ff4d1e27c35fcb3d7772c55cc8c9e0a2610e6e6c17f16a93e1b28324ee2e94cd\"},{\"path\":\"tools/admission_structure.py\",\"sha256\":\"eef4a6208436ce155e96d3f68e2480c625f15ec8eb19f6b55229c869bf123b1e\"},{\"path\":\"tools/candidate_ledger.py\",\"sha256\":\"fb6607d97fd8067ecf4bc127b2ce4df6a0b4df7a7cd0caec972f60c903757564\"},{\"path\":\"tools/candidate_model.py\",\"sha256\":\"6b126dd35d1d2ba530e87457ad262689502e5cc88cc8b9bf1a54575a9aefe79b\"},{\"path\":\"tools/candidate_sql.py\",\"sha256\":\"50fcc4d82db01487eebd3111306b8fff107d72246c2fef1e74d7cbb06a98480d\"}],\"status\":\"PASS\"}\n",
+    "stderr_tail": ""
+  },
+  {
+    "lane": "secret-contract",
+    "exit_code": 1,
+    "stdout_tail": "{\"reason\":\"HOLD_GIT_INVENTORY_UNAVAILABLE\",\"status\":\"HOLD\"}\n",
+    "stderr_tail": ""
+  },
+  {
+    "lane": "structured-data",
+    "exit_code": 0,
+    "stdout_tail": "{\"checked\": 2, \"findings\": [], \"status\": \"PASS\"}\n",
+    "stderr_tail": ""
+  }
+]

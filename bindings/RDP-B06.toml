@@ -1,0 +1,10 @@
+version = 1
+pattern = "RDP-B06"
+scope = "software"
+
+[settings]
+records = [{ record_id = "a", value = 4 }, { record_id = "b", value = 7 }]
+size = 1
+offset = 0
+now = 1
+expires_at = 10

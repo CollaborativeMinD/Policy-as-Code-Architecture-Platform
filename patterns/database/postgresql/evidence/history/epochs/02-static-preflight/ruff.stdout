@@ -1,0 +1,1561 @@
+ruff 0.16.10
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/__init__.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/analytics.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/async_driver.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/asyncpg_driver.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/asyncpg_pool.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/authority.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/authority_async.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/authority_types.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/bulk.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/checkpoints.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/checkpoints_lua.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/checkpoints_snapshot.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/config.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/diagnostics.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/driver_contracts.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/migrations.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/models.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/orm.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/orm_async.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/orm_model.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/outbox.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/pace.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/pace_models.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/pools.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/queries.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/streaming.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/streaming_async_writer.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/streaming_contracts.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/streaming_oracle.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/streaming_scan.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/streaming_writer.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/sync_driver.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/transport.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/conftest.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/driver_samples.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/service_runtime.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_async_driver.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_asyncpg_driver.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_bulk_analytics.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_config.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_diagnostics.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_migrations.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_models.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_orm_drivers.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_pace.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_pools.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_query_contracts.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_sync_driver.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_teardown_faults.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/__init__.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/admission_binding.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/admission_coverage.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/admission_evidence.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/admission_junit.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/admission_structure.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/candidate_ledger.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/candidate_model.py
+/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tools/candidate_sql.py
+[
+  {
+    "cell": null,
+    "code": "C901",
+    "end_location": {
+      "column": 19,
+      "row": 29
+    },
+    "filename": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/src/hmt_pg_patterns/streaming.py",
+    "fix": null,
+    "location": {
+      "column": 11,
+      "row": 29
+    },
+    "message": "`_consume` is too complex (13 > 10)",
+    "name": "complex-structure",
+    "noqa_row": 29,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/complex-structure"
+  },
+  {
+    "cell": null,
+    "code": "F401",
+    "end_location": {
+      "column": 25,
+      "row": 2
+    },
+    "filename": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_config.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 1,
+            "row": 3
+          },
+          "location": {
+            "column": 1,
+            "row": 2
+          }
+        }
+      ],
+      "message": "Remove unused import: `pathlib.Path`"
+    },
+    "location": {
+      "column": 21,
+      "row": 2
+    },
+    "message": "`pathlib.Path` imported but unused",
+    "name": "unused-import",
+    "noqa_row": 2,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-import"
+  },
+  {
+    "cell": null,
+    "code": "F401",
+    "end_location": {
+      "column": 25,
+      "row": 2
+    },
+    "filename": "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/tests/test_migrations.py",
+    "fix": {
+      "applicability": "safe",
+      "edits": [
+        {
+          "content": "",
+          "end_location": {
+            "column": 1,
+            "row": 3
+          },
+          "location": {
+            "column": 1,
+            "row": 2
+          }
+        }
+      ],
+      "message": "Remove unused import: `pathlib.Path`"
+    },
+    "location": {
+      "column": 21,
+      "row": 2
+    },
+    "message": "`pathlib.Path` imported but unused",
+    "name": "unused-import",
+    "noqa_row": 2,
+    "severity": "error",
+    "url": "https://docs.astral.sh/ruff/rules/unused-import"
+  }
+]unformatted: File would be reformatted
+  --> src/hmt_pg_patterns/analytics.py:2:1
+   |
+1  | """PG-ANALYTICS-001: bounded PostgreSQL server-cursor batches into Polars."""
+2  +
+3  | from collections.abc import Iterator
+--------------------------------------------------------------------------------
+13 | SCHEMA = {
+   -     "id": pl.Int64, "status": pl.String, "telemetry_json": pl.String,
+14 +     "id": pl.Int64,
+15 +     "status": pl.String,
+16 +     "telemetry_json": pl.String,
+17 |     "observed_at": pl.Datetime("us", "UTC"),
+--------------------------------------------------------------------------------
+24 |         metric = Metric.model_validate(row)
+   -         output.append({
+   -             "id": metric.id, "status": metric.status,
+   -             "telemetry_json": json.dumps(metric.telemetry, allow_nan=False, sort_keys=True),
+   -             "observed_at": metric.observed_at.astimezone(UTC),
+   -         })
+25 +         output.append(
+26 +             {
+27 +                 "id": metric.id,
+28 +                 "status": metric.status,
+29 +                 "telemetry_json": json.dumps(metric.telemetry, allow_nan=False, sort_keys=True),
+30 +                 "observed_at": metric.observed_at.astimezone(UTC),
+31 +             }
+32 +         )
+33 |     return pl.DataFrame(output, schema=SCHEMA)
+   |
+
+unformatted: File would be reformatted
+  --> src/hmt_pg_patterns/async_driver.py:2:1
+   |
+1  | """PG-ASYNC-001: native asyncio; cancellation propagates through transaction exit."""
+2  +
+3  | from collections.abc import Callable
+--------------------------------------------------------------------------------
+24 |
+   - async def transaction_retry(conn: psycopg.AsyncConnection, operation: Callable, attempts: int = 3) -> T:
+25 + async def transaction_retry(
+26 +     conn: psycopg.AsyncConnection, operation: Callable, attempts: int = 3
+27 + ) -> T:
+28 |     """Retry only 40001/40P01, never cancellation, transport loss, or uncertain commit.
+   |
+
+unformatted: File would be reformatted
+ --> src/hmt_pg_patterns/asyncpg_driver.py:2:1
+  |
+1 | """PG-ASYNCPG-001: native PostgreSQL bindings and classified bounded teardown."""
+2 +
+3 | import asyncio
+  |
+
+unformatted: File would be reformatted
+  --> src/hmt_pg_patterns/asyncpg_pool.py:2:1
+   |
+1  | """PG-ASYNCPG-POOL-001: bounded pool lifecycle with explicit forced termination."""
+2  +
+3  | import asyncio
+--------------------------------------------------------------------------------
+27 |     instance = await asyncpg.create_pool(
+   -         **config.asyncpg_kwargs(), min_size=1, max_size=size,
+   -         max_queries=10000, max_inactive_connection_lifetime=60,
+28 +         **config.asyncpg_kwargs(),
+29 +         min_size=1,
+30 +         max_size=size,
+31 +         max_queries=10000,
+32 +         max_inactive_connection_lifetime=60,
+33 |     )
+   |
+
+unformatted: File would be reformatted
+  --> src/hmt_pg_patterns/authority.py:20:47
+   |
+19 |     def admit(self, request):
+   -         request = ChunkRequest.model_validate(request.model_dump() if isinstance(request, ChunkRequest) else request)
+20 +         request = ChunkRequest.model_validate(
+21 +             request.model_dump() if isinstance(request, ChunkRequest) else request
+22 +         )
+23 |         with self.connection.transaction():
+--------------------------------------------------------------------------------
+30 |         with self.connection.transaction():
+   -             row = self.connection.execute("SELECT * FROM hmt_pg.read_checkpoint(%s)", (stream_id,)).fetchone()
+31 +             row = self.connection.execute(
+32 +                 "SELECT * FROM hmt_pg.read_checkpoint(%s)", (stream_id,)
+33 +             ).fetchone()
+34 |         return checkpoint(row)
+   |
+
+unformatted: File would be reformatted
+  --> src/hmt_pg_patterns/authority_async.py:21:47
+   |
+20 |     async def admit(self, request):
+   -         request = ChunkRequest.model_validate(request.model_dump() if isinstance(request, ChunkRequest) else request)
+21 +         request = ChunkRequest.model_validate(
+22 +             request.model_dump() if isinstance(request, ChunkRequest) else request
+23 +         )
+24 |         async with self.connection.transaction():
+--------------------------------------------------------------------------------
+32 |         async with self.connection.transaction():
+   -             cursor = await self.connection.execute("SELECT * FROM hmt_pg.read_checkpoint(%s)", (stream_id,))
+33 +             cursor = await self.connection.execute(
+34 +                 "SELECT * FROM hmt_pg.read_checkpoint(%s)", (stream_id,)
+35 +             )
+36 |             row = await cursor.fetchone()
+   |
+
+unformatted: File would be reformatted
+  --> src/hmt_pg_patterns/authority_types.py:30:22
+   |
+29 |         value = self.model_dump(mode="json", exclude={"data", "previous_digest", "policy_digest"})
+   -         value.update(previous_digest=self.previous_digest.hex(), policy_digest=self.policy_digest.hex())
+30 +         value.update(
+31 +             previous_digest=self.previous_digest.hex(), policy_digest=self.policy_digest.hex()
+32 +         )
+33 |         return value
+   |
+
+unformatted: File would be reformatted
+ --> src/hmt_pg_patterns/bulk.py:2:1
+  |
+1 | """PG-BULK-001: separate atomic COPY and pipeline modes, bounded validated input."""
+2 +
+3 | from collections.abc import Iterable
+  |
+
+unformatted: File would be reformatted
+  --> src/hmt_pg_patterns/checkpoints_lua.py:3:10
+   |
+2  |
+   - OFFER = r'''
+3  + OFFER = r"""
+4  | local fresh = ARGV[1]
+--------------------------------------------------------------------------------
+29 | redis.call('SET',KEYS[1],fresh,'EX',ARGV[2]); return 'APPLIED'
+   - '''
+30 + """
+31 |
+   - READ = "if redis.call('STRLEN',KEYS[1])>8192 then return false end; return redis.call('GET',KEYS[1])"
+32 + READ = (
+33 +     "if redis.call('STRLEN',KEYS[1])>8192 then return false end; return redis.call('GET',KEYS[1])"
+34 + )
+   |
+
+unformatted: File would be reformatted
+  --> src/hmt_pg_patterns/config.py:2:1
+   |
+1  | """PG-CONFIG-001: explicit TLS, bounded timeouts, and secret-safe settings."""
+2  +
+3  | from pathlib import Path
+--------------------------------------------------------------------------------
+51 |         result = {
+   -             "host": self.host, "port": self.port, "dbname": self.dbname,
+   -             "user": self.user, "sslmode": self.sslmode,
+52 +             "host": self.host,
+53 +             "port": self.port,
+54 +             "dbname": self.dbname,
+55 +             "user": self.user,
+56 +             "sslmode": self.sslmode,
+57 |             "connect_timeout": self.connect_timeout,
+--------------------------------------------------------------------------------
+70 |         result = {
+   -             "host": self.host, "port": self.port, "database": self.dbname,
+   -             "user": self.user, "ssl": tls, "timeout": self.connect_timeout,
+71 +             "host": self.host,
+72 +             "port": self.port,
+73 +             "database": self.dbname,
+74 +             "user": self.user,
+75 +             "ssl": tls,
+76 +             "timeout": self.connect_timeout,
+77 |             "command_timeout": self.statement_timeout_ms / 1000,
+   |
+
+unformatted: File would be reformatted
+ --> src/hmt_pg_patterns/diagnostics.py:2:1
+  |
+1 | """PG-OPS-001: read-only plans and explicit PostgreSQL WAL settings."""
+2 +
+3 | from typing import Literal
+  |
+
+unformatted: File would be reformatted
+ --> src/hmt_pg_patterns/driver_contracts.py:2:1
+  |
+1 | """PG-TX-001 and PG-POOL-001: fail closed on unowned transactions and limits."""
+2 +
+3 | import math
+  |
+
+unformatted: File would be reformatted
+  --> src/hmt_pg_patterns/migrations.py:2:1
+   |
+1  | """PG-MIGRATION-001: checksum-bound, transactional PostgreSQL migrations."""
+2  +
+3  | from hashlib import sha256
+--------------------------------------------------------------------------------
+35 |         for name, digest, sql in inputs:
+   -             row = conn.execute("SELECT sha256 FROM hmt_pg.schema_migrations WHERE name=%s",
+   -                                (name,)).fetchone()
+36 +             row = conn.execute(
+37 +                 "SELECT sha256 FROM hmt_pg.schema_migrations WHERE name=%s", (name,)
+38 +             ).fetchone()
+39 |             if row is not None:
+   |
+
+unformatted: File would be reformatted
+ --> src/hmt_pg_patterns/models.py:2:1
+  |
+1 | """PG-CONTRACT-001: strict DTOs before persistence or analytics."""
+2 +
+3 | from datetime import datetime
+  |
+
+unformatted: File would be reformatted
+  --> src/hmt_pg_patterns/orm.py:2:1
+   |
+1  | """PG-ORM-001: PostgreSQL SQLAlchemy Core, explicit transactions, finite pooling."""
+2  +
+3  | from sqlalchemy import URL, bindparam, create_engine, text
+--------------------------------------------------------------------------------
+23 |     url = URL.create(
+   -         "postgresql+psycopg", username=config.user, password=password,
+   -         host=config.host, port=config.port, database=config.dbname,
+24 +         "postgresql+psycopg",
+25 +         username=config.user,
+26 +         password=password,
+27 +         host=config.host,
+28 +         port=config.port,
+29 +         database=config.dbname,
+30 |     )
+--------------------------------------------------------------------------------
+34 |     return url, {
+   -         "connect_args": connect_args, "pool_size": size, "max_overflow": 0,
+   -         "pool_timeout": config.connect_timeout, "pool_pre_ping": True,
+35 +         "connect_args": connect_args,
+36 +         "pool_size": size,
+37 +         "max_overflow": 0,
+38 +         "pool_timeout": config.connect_timeout,
+39 +         "pool_pre_ping": True,
+40 |         "hide_parameters": True,
+   |
+
+unformatted: File would be reformatted
+ --> src/hmt_pg_patterns/orm_async.py:2:1
+  |
+1 | """PG-ORM-ASYNC-001: one SQLAlchemy connection/session per concurrent task."""
+2 +
+3 | from sqlalchemy.ext.asyncio import create_async_engine
+  |
+
+unformatted: File would be reformatted
+  --> src/hmt_pg_patterns/orm_model.py:2:1
+   |
+1  | """PG-SQLMODEL-001: strict application DTO before a PostgreSQL SQLModel table."""
+2  +
+3  | from datetime import datetime
+--------------------------------------------------------------------------------
+28 |     status, after_id, limit = window_values(window)
+   -     statement = select(MetricRow).where(
+   -         MetricRow.status == status, MetricRow.id > after_id,
+   -     ).order_by(MetricRow.id).limit(limit)
+29 +     statement = (
+30 +         select(MetricRow)
+31 +         .where(
+32 +             MetricRow.status == status,
+33 +             MetricRow.id > after_id,
+34 +         )
+35 +         .order_by(MetricRow.id)
+36 +         .limit(limit)
+37 +     )
+38 |     with Session(engine) as session:
+   |
+
+unformatted: File would be reformatted
+  --> src/hmt_pg_patterns/outbox.py:29:48
+   |
+28 |         return None
+   -     checkpoint = CheckpointData.model_validate(dict(zip(CheckpointData.model_fields, row[2:], strict=True)))
+29 +     checkpoint = CheckpointData.model_validate(
+30 +         dict(zip(CheckpointData.model_fields, row[2:], strict=True))
+31 +     )
+32 |     return OutboxEvent(event_id=row[0], claim_id=row[1], checkpoint=checkpoint)
+   |
+
+unformatted: File would be reformatted
+  --> src/hmt_pg_patterns/pace.py:2:1
+   |
+1  | """PG-PACE-001: degradation preserves declared capability; recovery is guarded."""
+2  +
+3  | from .pace_models import Mode, Observation, PacePolicy, PaceState
+--------------------------------------------------------------------------------
+20 | def recovery_state(old: PaceState, obs: Observation, policy: PacePolicy, pressure: float):
+   -     ready = (obs.reconciled and not obs.uncertain_ack and obs.epoch_current
+   -              and obs.margin >= policy.recovery_margin and pressure <= policy.pressure_limit)
+21 +     ready = (
+22 +         obs.reconciled
+23 +         and not obs.uncertain_ack
+24 +         and obs.epoch_current
+25 +         and obs.margin >= policy.recovery_margin
+26 +         and pressure <= policy.pressure_limit
+27 +     )
+28 |     count = min(old.healthy_samples + 1, policy.recovery_samples) if ready else 0
+--------------------------------------------------------------------------------
+40 |         target = Mode.TERMINAL
+   -     pressure = old.pressure * policy.pressure_decay ** elapsed
+41 +     pressure = old.pressure * policy.pressure_decay**elapsed
+42 |     pressure += max(0.0, policy.recovery_margin - obs.margin) * elapsed
+--------------------------------------------------------------------------------
+48 |         reason = "TERMINAL_LATCHED"
+   -     return PaceState(mode=mode, pressure=pressure, healthy_samples=count,
+   -                      healthy_since=since, last_at=obs.now, reason=reason)
+49 +     return PaceState(
+50 +         mode=mode,
+51 +         pressure=pressure,
+52 +         healthy_samples=count,
+53 +         healthy_since=since,
+54 +         last_at=obs.now,
+55 +         reason=reason,
+56 +     )
+   |
+
+unformatted: File would be reformatted
+ --> src/hmt_pg_patterns/pace_models.py:2:1
+  |
+1 | """PG-PACE-001: bounded observations and explicit recovery policy."""
+2 +
+3 | from enum import StrEnum
+  |
+
+unformatted: File would be reformatted
+  --> src/hmt_pg_patterns/pools.py:2:1
+   |
+1  | """PG-POOL-001: finite capacity, explicit readiness, one pool owner per layer."""
+2  +
+3  | from contextlib import asynccontextmanager, contextmanager
+--------------------------------------------------------------------------------
+12 |         "kwargs": dict(config.connect_kwargs(), autocommit=True),
+   -         "min_size": 1, "max_size": size, "max_waiting": size * 2,
+   -         "timeout": timeout, "open": False,
+13 +         "min_size": 1,
+14 +         "max_size": size,
+15 +         "max_waiting": size * 2,
+16 +         "timeout": timeout,
+17 +         "open": False,
+18 |     }
+   |
+
+unformatted: File would be reformatted
+ --> src/hmt_pg_patterns/queries.py:2:1
+  |
+1 | """PG-QUERY-001: schema-qualified SQL, values bound, identifiers allowlisted."""
+2 +
+3 | from collections.abc import Iterable
+  |
+
+unformatted: File would be reformatted
+   --> src/hmt_pg_patterns/streaming_oracle.py:88:16
+    |
+87  |         )
+    -         data = rng.randbytes(rng.randrange(4097)) if case % 3 else bytes([case % 256]) * rng.randrange(4097)
+88  +         data = (
+89  +             rng.randbytes(rng.randrange(4097))
+90  +             if case % 3
+91  +             else bytes([case % 256]) * rng.randrange(4097)
+92  +         )
+93  |         for packets in (
+--------------------------------------------------------------------------------
+100 |             byte_count += len(data)
+    -     return dict(seed=seed, cases=cases, partitions=partitions, bytes_checked=byte_count, status="PASS")
+101 +     return dict(
+102 +         seed=seed, cases=cases, partitions=partitions, bytes_checked=byte_count, status="PASS"
+103 +     )
+    |
+
+unformatted: File would be reformatted
+  --> src/hmt_pg_patterns/streaming_scan.py:20:22
+   |
+19 |         self._remove = tuple(byte * removal % PRIME for byte in range(256))
+   -         self._mask = p.block_size_target - 1 if p.block_size_target & (p.block_size_target - 1) == 0 else None
+20 +         self._mask = (
+21 +             p.block_size_target - 1
+22 +             if p.block_size_target & (p.block_size_target - 1) == 0
+23 +             else None
+24 +         )
+25 |         self._window = deque()
+--------------------------------------------------------------------------------
+61 |     def _cut(self, reason):
+   -         value = Chunk(self._index, self._start, self._offset, bytes(self._buffer), self._fingerprint, reason)
+62 +         value = Chunk(
+63 +             self._index, self._start, self._offset, bytes(self._buffer), self._fingerprint, reason
+64 +         )
+65 |         self._buffer.clear()
+--------------------------------------------------------------------------------
+79 |                 # POLY-01: H' = (256*H + incoming - outgoing*256**W) mod P.
+   -                 old = self._remove[self._window.popleft()] if len(self._window) == p.window_size else 0
+80 +                 old = (
+81 +                     self._remove[self._window.popleft()]
+82 +                     if len(self._window) == p.window_size
+83 +                     else 0
+84 +                 )
+85 |                 self._fingerprint = ((self._fingerprint << 8) + byte - old) % PRIME
+   |
+
+unformatted: File would be reformatted
+  --> src/hmt_pg_patterns/streaming_writer.py:25:45
+   |
+24 |             raise StreamError("DATABASE_CHUNK_CAPACITY")
+   -         self.policy_digest = hashlib.sha256(json.dumps(asdict(self.policy), sort_keys=True).encode()).digest()
+25 +         self.policy_digest = hashlib.sha256(
+26 +             json.dumps(asdict(self.policy), sort_keys=True).encode()
+27 +         ).digest()
+28 |         self.previous = bytes(32)
+--------------------------------------------------------------------------------
+33 |         key = f"hmt-pg-v1:{self.epoch}:{chunk.index}:{hashlib.sha256(chunk.data).hexdigest()}"
+   -         return ChunkRequest(stream_id=self.stream_id, request_id=uuid5(self.stream_id, key), epoch=self.epoch,
+   -                             sequence=chunk.index, start=chunk.start, previous_digest=self.previous,
+   -                             policy_digest=self.policy_digest, data=chunk.data)
+34 +         return ChunkRequest(
+35 +             stream_id=self.stream_id,
+36 +             request_id=uuid5(self.stream_id, key),
+37 +             epoch=self.epoch,
+38 +             sequence=chunk.index,
+39 +             start=chunk.start,
+40 +             previous_digest=self.previous,
+41 +             policy_digest=self.policy_digest,
+42 +             data=chunk.data,
+43 +         )
+44 |
+45 |     def accept(self, result, db_role):
+46 |         self.previous = result.digest
+   -         value = CheckpointData(db_role=db_role, stream_id=result.stream_id, epoch=result.epoch,
+   -                                sequence=result.sequence, end=result.end, digest=result.digest,
+   -                                policy_digest=result.policy_digest)
+47 +         value = CheckpointData(
+48 +             db_role=db_role,
+49 +             stream_id=result.stream_id,
+50 +             epoch=result.epoch,
+51 +             sequence=result.sequence,
+52 +             end=result.end,
+53 +             digest=result.digest,
+54 +             policy_digest=result.policy_digest,
+55 +         )
+56 |         self.snapshot = immutable_checkpoint(value)
+   |
+
+unformatted: File would be reformatted
+ --> src/hmt_pg_patterns/sync_driver.py:2:1
+  |
+1 | """PG-SYNC-001: borrowed connections, bounded reads, explicit transaction retries."""
+2 +
+3 | from collections.abc import Callable
+  |
+
+unformatted: File would be reformatted
+  --> src/hmt_pg_patterns/transport.py:26:67
+   |
+25 |     def __post_init__(self):
+   -         if not isinstance(self.peer_key, str) or not re.fullmatch(r"nodekey:[0-9a-f]{64}", self.peer_key):
+26 +         if not isinstance(self.peer_key, str) or not re.fullmatch(
+27 +             r"nodekey:[0-9a-f]{64}", self.peer_key
+28 +         ):
+29 |             raise PeerBindingError("INVALID_PEER_BINDING")
+   -         if not isinstance(self.db_role, str) or not re.fullmatch(r"[a-z][a-z0-9_]{0,62}", self.db_role):
+30 +         if not isinstance(self.db_role, str) or not re.fullmatch(
+31 +             r"[a-z][a-z0-9_]{0,62}", self.db_role
+32 +         ):
+33 |             raise PeerBindingError("INVALID_ROLE_BINDING")
+--------------------------------------------------------------------------------
+47 |     identity = Authority(connection).identity()
+   -     if identity.db_role != binding.db_role or not hmac.compare_digest(identity.peer_key, binding.peer_key):
+48 +     if identity.db_role != binding.db_role or not hmac.compare_digest(
+49 +         identity.peer_key, binding.peer_key
+50 +     ):
+51 |         raise PeerBindingError("DATABASE_PEER_MISMATCH")
+   |
+
+unformatted: File would be reformatted
+  --> tests/conftest.py:2:1
+   |
+1  | """No skip-on-missing dependency: integration fixtures fail visibly."""
+2  +
+3  | import json
+--------------------------------------------------------------------------------
+29 |                 path.mkdir(parents=True, exist_ok=True)
+   -                 (path / "service_identity.json").write_text(json.dumps({
+   -                     "postgres_version": version,
+   -                     "profile": "pglite" if "PGlite" in version else "native_postgresql",
+   -                     "native_contention_qualified": False,
+   -                 }, indent=2) + "\n")
+30 +                 (path / "service_identity.json").write_text(
+31 +                     json.dumps(
+32 +                         {
+33 +                             "postgres_version": version,
+34 +                             "profile": "pglite" if "PGlite" in version else "native_postgresql",
+35 +                             "native_contention_qualified": False,
+36 +                         },
+37 +                         indent=2,
+38 +                     )
+39 +                     + "\n"
+40 +                 )
+41 |         yield dsn
+--------------------------------------------------------------------------------
+53 |     parts = conninfo_to_dict(pg_dsn)
+   -     return DbConfig(host=parts.get("host", "127.0.0.1"), port=int(parts["port"]),
+   -                     dbname=parts.get("dbname", "postgres"), user=parts["user"],
+   -                     profile="test", sslmode="disable")
+54 +     return DbConfig(
+55 +         host=parts.get("host", "127.0.0.1"),
+56 +         port=int(parts["port"]),
+57 +         dbname=parts.get("dbname", "postgres"),
+58 +         user=parts["user"],
+59 +         profile="test",
+60 +         sslmode="disable",
+61 +     )
+62 |
+   |
+
+unformatted: File would be reformatted
+  --> tests/driver_samples.py:2:1
+   |
+1  | """Deterministic DTOs shared by driver tests; no dependency stubs."""
+2  +
+3  | from datetime import UTC, datetime
+--------------------------------------------------------------------------------
+7  | def sample(identifier=1, status="active"):
+   -     return Metric(id=identifier, status=status, telemetry={"temperature": 42.25},
+   -                   observed_at=datetime(2026, 1, 2, 3, 4, tzinfo=UTC))
+8  +     return Metric(
+9  +         id=identifier,
+10 +         status=status,
+11 +         telemetry={"temperature": 42.25},
+12 +         observed_at=datetime(2026, 1, 2, 3, 4, tzinfo=UTC),
+13 +     )
+   |
+
+unformatted: File would be reformatted
+  --> tests/service_runtime.py:2:1
+   |
+1  | """Disposable child services; native DSNs take precedence over the SQL test engine."""
+2  +
+3  | from contextlib import contextmanager
+--------------------------------------------------------------------------------
+54 |     port = free_port()
+   -     command = ["node", cli, "--db=memory://", f"--port={port}",
+   -                "--host=127.0.0.1", "--max-connections=8"]
+55 +     command = [
+56 +         "node",
+57 +         cli,
+58 +         "--db=memory://",
+59 +         f"--port={port}",
+60 +         "--host=127.0.0.1",
+61 +         "--max-connections=8",
+62 +     ]
+63 |     with child_service(command, port, folder / "postgres.log"):
+   -         yield (f"host=127.0.0.1 port={port} dbname=postgres user=postgres "
+   -                "sslmode=disable connect_timeout=5")
+64 +         yield (
+65 +             f"host=127.0.0.1 port={port} dbname=postgres user=postgres "
+66 +             "sslmode=disable connect_timeout=5"
+67 +         )
+68 |
+--------------------------------------------------------------------------------
+79 |     port = free_port()
+   -     command = [binary, "--port", str(port), "--bind", "127.0.0.1",
+   -                "--protected-mode", "yes", "--save", "", "--appendonly", "no"]
+80 +     command = [
+81 +         binary,
+82 +         "--port",
+83 +         str(port),
+84 +         "--bind",
+85 +         "127.0.0.1",
+86 +         "--protected-mode",
+87 +         "yes",
+88 +         "--save",
+89 +         "",
+90 +         "--appendonly",
+91 +         "no",
+92 +     ]
+93 |     with child_service(command, port, folder / "redis.log"):
+   |
+
+unformatted: File would be reformatted
+  --> tests/test_async_driver.py:2:1
+   |
+1  | """PG-ASYNC-001: async lifecycle, real rollback, and coroutine cancellation."""
+2  +
+3  | import asyncio
+--------------------------------------------------------------------------------
+21 |     attempts = []
+22 +
+23 |     async def operation(conn):
+24 |         attempts.append(1)
+25 |         await driver.insert_metric(conn, sample())
+26 |         if len(attempts) < 2:
+   -             await conn.execute("DO $$ BEGIN RAISE EXCEPTION 'retry witness' "
+   -                                "USING ERRCODE='40001'; END $$")
+27 +             await conn.execute(
+28 +                 "DO $$ BEGIN RAISE EXCEPTION 'retry witness' USING ERRCODE='40001'; END $$"
+29 +             )
+30 |         return 7
+31 +
+32 |     async with await psycopg.AsyncConnection.connect(pg_dsn, autocommit=True) as conn:
+--------------------------------------------------------------------------------
+40 |         await driver.insert_metric(conn, sample())
+   -         await conn.execute("DO $$ BEGIN RAISE EXCEPTION 'retry witness' "
+   -                            "USING ERRCODE='40P01'; END $$")
+41 +         await conn.execute(
+42 +             "DO $$ BEGIN RAISE EXCEPTION 'retry witness' USING ERRCODE='40P01'; END $$"
+43 +         )
+44 +
+45 |     async with await psycopg.AsyncConnection.connect(pg_dsn, autocommit=True) as conn:
+--------------------------------------------------------------------------------
+55 |     staged, release = asyncio.Event(), asyncio.Event()
+56 +
+57 |     async def operation(conn):
+58 |         await driver.insert_metric(conn, sample())
+59 |         staged.set()
+60 |         await release.wait()
+61 +
+62 |     async with await psycopg.AsyncConnection.connect(pg_dsn, autocommit=True) as conn:
+   |
+
+unformatted: File would be reformatted
+ --> tests/test_asyncpg_driver.py:2:1
+  |
+1 | """PG-ASYNCPG-001: live PostgreSQL protocol and visible close fallback."""
+2 +
+3 | import warnings
+  |
+
+unformatted: File would be reformatted
+ --> tests/test_bulk_analytics.py:2:1
+  |
+1 | """PG-BULK-001 / PG-ANALYTICS-001: atomic batches and actual server cursor lifetime."""
+2 +
+3 | from contextlib import closing
+  |
+
+unformatted: File would be reformatted
+  --> tests/test_config.py:2:1
+   |
+1  | """PG-CONFIG-001: reject unsafe config before opening a socket."""
+2  +
+3  | from pathlib import Path
+--------------------------------------------------------------------------------
+12 | def config(**changes):
+   -     return DbConfig(host="127.0.0.1", user="hmt_reader", profile="test",
+   -                     sslmode="disable", **changes)
+13 +     return DbConfig(
+14 +         host="127.0.0.1", user="hmt_reader", profile="test", sslmode="disable", **changes
+15 +     )
+16 |
+--------------------------------------------------------------------------------
+27 |
+   - @pytest.mark.parametrize("changes", [
+   -     {"port": 0}, {"connect_timeout": 0}, {"lock_timeout_ms": 5000},
+   -     {"dbname": "postgres;DROP SCHEMA public"}, {"user": "x' OR 1=1"},
+   -     {"connect_timeout": True}, {"statement_timeout_ms": float("nan")},
+   - ])
+28 + @pytest.mark.parametrize(
+29 +     "changes",
+30 +     [
+31 +         {"port": 0},
+32 +         {"connect_timeout": 0},
+33 +         {"lock_timeout_ms": 5000},
+34 +         {"dbname": "postgres;DROP SCHEMA public"},
+35 +         {"user": "x' OR 1=1"},
+36 +         {"connect_timeout": True},
+37 +         {"statement_timeout_ms": float("nan")},
+38 +     ],
+39 + )
+40 | def test_invalid_connection_config(changes):
+--------------------------------------------------------------------------------
+63 |     context = ssl.create_default_context()
+   -     with patch("hmt_pg_patterns.config.ssl.create_default_context", return_value=context) as factory:
+64 +     with patch(
+65 +         "hmt_pg_patterns.config.ssl.create_default_context", return_value=context
+66 +     ) as factory:
+67 |         result = settings.asyncpg_kwargs()
+   |
+
+unformatted: File would be reformatted
+  --> tests/test_diagnostics.py:2:1
+   |
+1  | """PG-OPS-001: plan visibility and configuration-based WAL rejection."""
+2  +
+3  | from unittest.mock import Mock
+--------------------------------------------------------------------------------
+9  |
+   - @pytest.mark.parametrize("fsync,full_page,sync", [
+   -     ("off", "on", "on"), ("on", "off", "on"), ("on", "on", "off"),
+   - ])
+10 + @pytest.mark.parametrize(
+11 +     "fsync,full_page,sync",
+12 +     [
+13 +         ("off", "on", "on"),
+14 +         ("on", "off", "on"),
+15 +         ("on", "on", "off"),
+16 +     ],
+17 + )
+18 | def test_wal_guard_rejects_weakened_settings(fsync, full_page, sync):
+   -     settings = WalSettings(fsync=fsync, full_page_writes=full_page,
+   -                            synchronous_commit=sync, wal_level="replica")
+19 +     settings = WalSettings(
+20 +         fsync=fsync, full_page_writes=full_page, synchronous_commit=sync, wal_level="replica"
+21 +     )
+22 |     with pytest.raises(ValueError):
+--------------------------------------------------------------------------------
+26 | def test_wal_guard_accepts_local_commit_configuration():
+   -     WalSettings(fsync="on", full_page_writes="on", synchronous_commit="local",
+   -                 wal_level="replica").require_local_durable_commit()
+27 +     WalSettings(
+28 +         fsync="on", full_page_writes="on", synchronous_commit="local", wal_level="replica"
+29 +     ).require_local_durable_commit()
+30 |
+--------------------------------------------------------------------------------
+44 |     assert isinstance(wal_settings(pg_conn), WalSettings)
+   -     indexes = pg_conn.execute("SELECT indexname FROM pg_indexes WHERE schemaname=%s "
+   -                               "AND tablename=%s", ("hmt_pg", "metrics")).fetchall()
+45 +     indexes = pg_conn.execute(
+46 +         "SELECT indexname FROM pg_indexes WHERE schemaname=%s AND tablename=%s",
+47 +         ("hmt_pg", "metrics"),
+48 +     ).fetchall()
+49 |     assert ("metrics_status_id_idx",) in indexes
+   |
+
+unformatted: File would be reformatted
+  --> tests/test_migrations.py:2:1
+   |
+1  | """PG-MIGRATION-001: atomic replay and mutation drift rejection."""
+2  +
+3  | from pathlib import Path
+--------------------------------------------------------------------------------
+34 |     (tmp_path / "92_rollback.sql").write_text(
+   -         "INSERT INTO hmt_pg.migration_probe VALUES (1); SELECT 1/0")
+35 +         "INSERT INTO hmt_pg.migration_probe VALUES (1); SELECT 1/0"
+36 +     )
+37 |     with pytest.raises(psycopg.errors.DivisionByZero):
+38 |         apply_migrations(pg_conn, tmp_path)
+39 |     assert pg_conn.execute("SELECT count(*) FROM hmt_pg.migration_probe").fetchone() == (0,)
+   -     assert pg_conn.execute("SELECT count(*) FROM hmt_pg.schema_migrations WHERE name=%s",
+   -                            ("92_rollback.sql",)).fetchone() == (0,)
+40 +     assert pg_conn.execute(
+41 +         "SELECT count(*) FROM hmt_pg.schema_migrations WHERE name=%s", ("92_rollback.sql",)
+42 +     ).fetchone() == (0,)
+   |
+
+unformatted: File would be reformatted
+  --> tests/test_models.py:2:1
+   |
+1  | """PG-CONTRACT-001: malformed telemetry never reaches the database API."""
+2  +
+3  | from datetime import datetime, timezone
+--------------------------------------------------------------------------------
+9  | def metric(**changes):
+   -     values = dict(id=1, status="active", telemetry={"temp": 20.5},
+   -                   observed_at=datetime.now(timezone.utc))
+10 +     values = dict(
+11 +         id=1, status="active", telemetry={"temp": 20.5}, observed_at=datetime.now(timezone.utc)
+12 +     )
+13 |     values.update(changes)
+--------------------------------------------------------------------------------
+22 |
+   - @pytest.mark.parametrize("changes", [
+   -     {"id": True}, {"id": 0}, {"id": 2**63}, {"status": "active' OR 1=1 --"},
+   -     {"telemetry": {"bad-key": 1.0}}, {"telemetry": {"x": float("inf")}},
+   -     {"telemetry": {"x": float("nan")}}, {"telemetry": {"x": True}},
+   -     {"telemetry": {f"x{i}": 1.0 for i in range(65)}},
+   -     {"observed_at": datetime(2026, 1, 1)}, {"unexpected": 1},
+   - ])
+23 + @pytest.mark.parametrize(
+24 +     "changes",
+25 +     [
+26 +         {"id": True},
+27 +         {"id": 0},
+28 +         {"id": 2**63},
+29 +         {"status": "active' OR 1=1 --"},
+30 +         {"telemetry": {"bad-key": 1.0}},
+31 +         {"telemetry": {"x": float("inf")}},
+32 +         {"telemetry": {"x": float("nan")}},
+33 +         {"telemetry": {"x": True}},
+34 +         {"telemetry": {f"x{i}": 1.0 for i in range(65)}},
+35 +         {"observed_at": datetime(2026, 1, 1)},
+36 +         {"unexpected": 1},
+37 +     ],
+38 + )
+39 | def test_contract_rejects_invalid_metric(changes):
+--------------------------------------------------------------------------------
+43 |
+   - @pytest.mark.parametrize("factory,values", [
+   -     (QueryWindow, {"after_id": -1}), (QueryWindow, {"limit": 0}),
+   -     (QueryWindow, {"limit": 10001}), (BatchSpec, {"batch_size": 0}),
+   -     (BatchSpec, {"max_rows": 1000001}), (BatchSpec, {"batch_size": True}),
+   - ])
+44 + @pytest.mark.parametrize(
+45 +     "factory,values",
+46 +     [
+47 +         (QueryWindow, {"after_id": -1}),
+48 +         (QueryWindow, {"limit": 0}),
+49 +         (QueryWindow, {"limit": 10001}),
+50 +         (BatchSpec, {"batch_size": 0}),
+51 +         (BatchSpec, {"max_rows": 1000001}),
+52 +         (BatchSpec, {"batch_size": True}),
+53 +     ],
+54 + )
+55 | def test_resource_bounds(factory, values):
+   |
+
+unformatted: File would be reformatted
+ --> tests/test_orm_drivers.py:2:1
+  |
+1 | """PG-ORM-001: PostgreSQL types, committed writes, and strict DTO admission."""
+2 +
+3 | import pytest
+  |
+
+unformatted: File would be reformatted
+  --> tests/test_pace.py:2:1
+   |
+1  | """PG-PACE-001: distinct degraded contracts and hysteretic recovery."""
+2  +
+3  | import pytest
+--------------------------------------------------------------------------------
+9  | def observation(**changes):
+   -     values = dict(now=1.0, margin=0.8, database_ready=True, cache_ready=True,
+   -                   transport_ready=True, authority_valid=True, epoch_current=True,
+   -                   reconciled=True, uncertain_ack=False)
+10 +     values = dict(
+11 +         now=1.0,
+12 +         margin=0.8,
+13 +         database_ready=True,
+14 +         cache_ready=True,
+15 +         transport_ready=True,
+16 +         authority_valid=True,
+17 +         epoch_current=True,
+18 +         reconciled=True,
+19 +         uncertain_ack=False,
+20 +     )
+21 |     values.update(changes)
+22 |     return Observation(**values)
+23 |
+24 |
+   - @pytest.mark.parametrize("changes,expected", [
+   -     ({}, Mode.PRIMARY), ({"cache_ready": False}, Mode.ALTERNATE),
+   -     ({"transport_ready": False}, Mode.CONTINGENCY),
+   -     ({"database_ready": False}, Mode.EMERGENCY),
+   -     ({"authority_valid": False}, Mode.TERMINAL),
+   -     ({"epoch_current": False}, Mode.TERMINAL), ({"margin": 0.0}, Mode.TERMINAL),
+   - ])
+25 + @pytest.mark.parametrize(
+26 +     "changes,expected",
+27 +     [
+28 +         ({}, Mode.PRIMARY),
+29 +         ({"cache_ready": False}, Mode.ALTERNATE),
+30 +         ({"transport_ready": False}, Mode.CONTINGENCY),
+31 +         ({"database_ready": False}, Mode.EMERGENCY),
+32 +         ({"authority_valid": False}, Mode.TERMINAL),
+33 +         ({"epoch_current": False}, Mode.TERMINAL),
+34 +         ({"margin": 0.0}, Mode.TERMINAL),
+35 +     ],
+36 + )
+37 | def test_capability_contracts(changes, expected):
+38 |     assert available_mode(observation(**changes)) == expected
+39 |     state = step(PaceState(), observation(**changes))
+40 |     assert state.mode == expected
+   -     assert ("write" in OPERATIONS[expected]) == (expected in {Mode.PRIMARY, Mode.ALTERNATE,
+   -                                                             Mode.CONTINGENCY})
+41 +     assert ("write" in OPERATIONS[expected]) == (
+42 +         expected in {Mode.PRIMARY, Mode.ALTERNATE, Mode.CONTINGENCY}
+43 +     )
+44 |
+   |
+
+unformatted: File would be reformatted
+ --> tests/test_pools.py:2:1
+  |
+1 | """PG-POOL-001: explicit readiness, connection lease, release, and owner close."""
+2 +
+3 | import pytest
+  |
+
+unformatted: File would be reformatted
+  --> tests/test_query_contracts.py:2:1
+   |
+1  | """PG-QUERY-001: no unchecked DTO/identifier or unbounded iterable admission."""
+2  +
+3  | from itertools import repeat
+--------------------------------------------------------------------------------
+13 |
+   - @pytest.mark.parametrize("value", ["metrics;DROP TABLE x", "public.metrics", "\nmetrics", "Metrics", ""])
+14 + @pytest.mark.parametrize(
+15 +     "value", ["metrics;DROP TABLE x", "public.metrics", "\nmetrics", "Metrics", ""]
+16 + )
+17 | def test_identifier_allowlist_rejects_sql_text(value):
+--------------------------------------------------------------------------------
+50 |
+   - @pytest.mark.parametrize("size,timeout", [(0, 1), (33, 1), (True, 1), (1, 0),
+   -                                          (1, 31), (1, float("inf")), (1, True)])
+51 + @pytest.mark.parametrize(
+52 +     "size,timeout", [(0, 1), (33, 1), (True, 1), (1, 0), (1, 31), (1, float("inf")), (1, True)]
+53 + )
+54 | def test_pool_and_teardown_deadlines_are_finite(size, timeout):
+   |
+
+unformatted: File would be reformatted
+  --> tests/test_sync_driver.py:2:1
+   |
+1  | """PG-SYNC-001 / PG-TX-001: real SQL, parameter isolation, and rollback witnesses."""
+2  +
+3  | import psycopg
+--------------------------------------------------------------------------------
+33 |     attempts = []
+34 +
+35 |     def operation(conn):
+36 |         attempts.append(len(attempts))
+37 |         insert_metric(conn, sample())
+38 |         if len(attempts) < 3:
+   -             conn.execute("DO $$ BEGIN RAISE EXCEPTION 'retry witness' "
+   -                          "USING ERRCODE='" + code + "'; END $$")
+39 +             conn.execute(
+40 +                 "DO $$ BEGIN RAISE EXCEPTION 'retry witness' USING ERRCODE='" + code + "'; END $$"
+41 +             )
+42 |         return "committed"
+43 +
+44 |     assert transaction_retry(pg_conn, operation) == "committed"
+--------------------------------------------------------------------------------
+51 |         insert_metric(conn, sample())
+   -         conn.execute("DO $$ BEGIN RAISE EXCEPTION 'retry witness' "
+   -                      "USING ERRCODE='40001'; END $$")
+52 +         conn.execute("DO $$ BEGIN RAISE EXCEPTION 'retry witness' USING ERRCODE='40001'; END $$")
+53 +
+54 |     with pytest.raises(psycopg.errors.SerializationFailure):
+--------------------------------------------------------------------------------
+61 |     calls = []
+62 +
+63 |     def conflict(conn):
+64 |         calls.append(1)
+65 |         insert_metric(conn, sample())
+66 +
+67 |     with pytest.raises(psycopg.errors.UniqueViolation):
+68 |         transaction_retry(pg_conn, conflict)
+69 |     assert len(calls) == 1
+70 +
+71 |     def transport(conn):
+72 |         calls.append(1)
+73 |         raise psycopg.OperationalError("synthetic uncertain transport")
+74 +
+75 |     with pytest.raises(psycopg.OperationalError):
+   |
+
+unformatted: File would be reformatted
+ --> tests/test_teardown_faults.py:2:1
+  |
+1 | """Deterministic lifecycle fault injection; no claim of real network coverage."""
+2 +
+3 | import asyncio
+  |
+
+unformatted: File would be reformatted
+  --> tools/admission_binding.py:2:1
+   |
+1  | """Preserve every candidate assertion and attach current, observed test witnesses."""
+2  +
+3  | from contextlib import closing
+--------------------------------------------------------------------------------
+22 |             actual = expected if passed else "TEST_NOT_PASSED"
+   -             db.execute("INSERT INTO executions VALUES (?,?,?,?,?,?)",
+   -                        (execution["run_id"] + ":" + assertion, assertion, source,
+   -                         "PASS" if passed else "FAIL", actual, evidence_digest))
+   -             manifest.append({"test_id": identity, "source_requirement_or_invariant": requirement,
+   -                              "evidence_ref": "junit.xml"})
+23 +             db.execute(
+24 +                 "INSERT INTO executions VALUES (?,?,?,?,?,?)",
+25 +                 (
+26 +                     execution["run_id"] + ":" + assertion,
+27 +                     assertion,
+28 +                     source,
+29 +                     "PASS" if passed else "FAIL",
+30 +                     actual,
+31 +                     evidence_digest,
+32 +                 ),
+33 +             )
+34 +             manifest.append(
+35 +                 {
+36 +                     "test_id": identity,
+37 +                     "source_requirement_or_invariant": requirement,
+38 +                     "evidence_ref": "junit.xml",
+39 +                 }
+40 +             )
+41 |             selected.append(witness or {"test_id": identity, "outcome": "MISSING"})
+--------------------------------------------------------------------------------
+45 |     subset["tests"] = selected
+   -     return {"status": "FAIL" if missing else "PASS", "missing_or_nonpassing": missing,
+   -             "assertions": len(manifest), "manifest": manifest, "execution": subset}
+46 +     return {
+47 +         "status": "FAIL" if missing else "PASS",
+48 +         "missing_or_nonpassing": missing,
+49 +         "assertions": len(manifest),
+50 +         "manifest": manifest,
+51 +         "execution": subset,
+52 +     }
+   |
+
+unformatted: File would be reformatted
+  --> tools/admission_coverage.py:2:1
+   |
+1  | """PG-ADMIT-002: pure branch coverage over every delivered production module."""
+2  +
+3  | from pathlib import Path
+4  |
+5  |
+6  | def expected_sources(root):
+   -     return {path.relative_to(root).as_posix()
+   -             for path in (root / "src/hmt_pg_patterns").rglob("*.py")}
+7  +     return {
+8  +         path.relative_to(root).as_posix() for path in (root / "src/hmt_pg_patterns").rglob("*.py")
+9  +     }
+10 |
+--------------------------------------------------------------------------------
+34 |         raise ValueError("BRANCH_MEASUREMENT_REQUIRED")
+   -     observed = {normalize_source(name, root): row["summary"]
+   -                 for name, row in report["files"].items()}
+35 +     observed = {
+36 +         normalize_source(name, root): row["summary"] for name, row in report["files"].items()
+37 +     }
+38 |     expected = expected_sources(root)
+--------------------------------------------------------------------------------
+45 |     percent = 100 * covered / branches
+   -     return {"status": "PASS" if percent >= 90 else "FAIL",
+   -             "branch_percent": percent, "minimum_branch_percent": 90,
+   -             "covered_branches": covered, "num_branches": branches,
+   -             "line_percent": 100 * lines / statements if statements else 100,
+   -             "covered_lines": lines, "num_statements": statements,
+   -             "scope": "all delivered src/hmt_pg_patterns/*.py, recursively",
+   -             "tooling_scope": "independent admission tool tests and structural checks",
+   -             "files": len(observed)}
+46 +     return {
+47 +         "status": "PASS" if percent >= 90 else "FAIL",
+48 +         "branch_percent": percent,
+49 +         "minimum_branch_percent": 90,
+50 +         "covered_branches": covered,
+51 +         "num_branches": branches,
+52 +         "line_percent": 100 * lines / statements if statements else 100,
+53 +         "covered_lines": lines,
+54 +         "num_statements": statements,
+55 +         "scope": "all delivered src/hmt_pg_patterns/*.py, recursively",
+56 +         "tooling_scope": "independent admission tool tests and structural checks",
+57 +         "files": len(observed),
+58 +     }
+   |
+
+unformatted: File would be reformatted
+  --> tools/admission_evidence.py:2:1
+   |
+1  | """Source identity and append-only receipts for one fresh engineering test run."""
+2  +
+3  | from datetime import datetime, timezone
+--------------------------------------------------------------------------------
+34 |                 paths.append(path)
+   -     paths.extend(root / name for name in ("pyproject.toml", "uv.lock")
+   -                  if (root / name).exists())
+35 +     paths.extend(root / name for name in ("pyproject.toml", "uv.lock") if (root / name).exists())
+36 |     if not paths or len(paths) > 4096:
+--------------------------------------------------------------------------------
+49 |         files[path.relative_to(root).as_posix()] = file_digest(path)
+   -     return {"source_digest": canonical_digest(files), "files": files,
+   -             "total_bytes": total, "measured_at": timestamp(),
+   -             "scope": ["src", "tests", "tools", "contracts", "sql", "pyproject.toml", "uv.lock"]}
+50 +     return {
+51 +         "source_digest": canonical_digest(files),
+52 +         "files": files,
+53 +         "total_bytes": total,
+54 +         "measured_at": timestamp(),
+55 +         "scope": ["src", "tests", "tools", "contracts", "sql", "pyproject.toml", "uv.lock"],
+56 +     }
+57 |
+--------------------------------------------------------------------------------
+67 |     for row in rows:
+   -         cases = {case["id"] for case in dimensions["cases"]
+   -                  if case["invariant_id"] == row["id"]}
+68 +         cases = {case["id"] for case in dimensions["cases"] if case["invariant_id"] == row["id"]}
+69 |         if cases != set(row["case_ids"]):
+--------------------------------------------------------------------------------
+76 |                 errors.append("SOURCE_REFERENCE_INVALID:" + reference)
+   -     return {"status": "FAIL" if errors else "PASS", "errors": errors,
+   -             "requirements": len(rows), "traceability_sha256": file_digest(path)}
+77 +     return {
+78 +         "status": "FAIL" if errors else "PASS",
+79 +         "errors": errors,
+80 +         "requirements": len(rows),
+81 +         "traceability_sha256": file_digest(path),
+82 +     }
+   |
+
+unformatted: File would be reformatted
+  --> tools/admission_junit.py:2:1
+   |
+1  | """Bind native pytest XML to exact test identities; suppression never becomes PASS."""
+2  +
+3  | from pathlib import Path
+--------------------------------------------------------------------------------
+12 |         marker = Path(filename).stem
+   -         classes = parts[parts.index(marker) + 1:] if marker in parts else []
+13 +         classes = parts[parts.index(marker) + 1 :] if marker in parts else []
+14 |     else:
+   -         module_end = max((i for i, part in enumerate(parts) if part.startswith("test_")),
+   -                          default=len(parts) - 1)
+   -         filename = "/".join(parts[:module_end + 1]) + ".py"
+   -         classes = parts[module_end + 1:]
+15 +         module_end = max(
+16 +             (i for i, part in enumerate(parts) if part.startswith("test_")), default=len(parts) - 1
+17 +         )
+18 +         filename = "/".join(parts[: module_end + 1]) + ".py"
+19 +         classes = parts[module_end + 1 :]
+20 |     return "::".join([filename, *classes, testcase.get("name", "")])
+--------------------------------------------------------------------------------
+38 |             outcome = "FAIL"
+   -         tests.append({"test_id": identity, "outcome": outcome,
+   -                       "seconds": float(node.get("time", "0"))})
+39 +         tests.append(
+40 +             {"test_id": identity, "outcome": outcome, "seconds": float(node.get("time", "0"))}
+41 +         )
+42 |     if not tests or len(tests) > 10000:
+43 |         raise ValueError("EXECUTED_TEST_POPULATION_BOUND")
+   -     return {"method": "executed", "source_digest": source_digest, "run_id": run_id,
+   -             "tests": tests, "passed": sum(row["outcome"] == "PASS" for row in tests),
+   -             "failed": sum(row["outcome"] == "FAIL" for row in tests),
+   -             "suppressed": sum(row["outcome"] == "SUPPRESSED" for row in tests)}
+44 +     return {
+45 +         "method": "executed",
+46 +         "source_digest": source_digest,
+47 +         "run_id": run_id,
+48 +         "tests": tests,
+49 +         "passed": sum(row["outcome"] == "PASS" for row in tests),
+50 +         "failed": sum(row["outcome"] == "FAIL" for row in tests),
+51 +         "suppressed": sum(row["outcome"] == "SUPPRESSED" for row in tests),
+52 +     }
+   |
+
+unformatted: File would be reformatted
+   --> tools/admission_structure.py:2:1
+    |
+1   | """PG-ADMIT-001: current-policy physical LOC, control depth, and test integrity."""
+2   +
+3   | import ast
+--------------------------------------------------------------------------------
+13  | def control_depth(node, level=0):
+    -     controls = (ast.If, ast.For, ast.AsyncFor, ast.While, ast.Try,
+    -                 ast.With, ast.AsyncWith, ast.Match)
+14  +     controls = (
+15  +         ast.If,
+16  +         ast.For,
+17  +         ast.AsyncFor,
+18  +         ast.While,
+19  +         ast.Try,
+20  +         ast.With,
+21  +         ast.AsyncWith,
+22  +         ast.Match,
+23  +     )
+24  |     depth = level + isinstance(node, controls)
+    -     return max([depth, *(control_depth(child, depth)
+    -                          for child in ast.iter_child_nodes(node))])
+25  +     return max([depth, *(control_depth(child, depth) for child in ast.iter_child_nodes(node))])
+26  |
+--------------------------------------------------------------------------------
+31  |     size = node.end_lineno - node.lineno + 1
+    -     return {"name": node.name, "line": node.lineno, "physical_loc": size,
+    -             "band": band(size, True), "arguments": len(arguments) - implicit,
+    -             "control_depth": control_depth(node)}
+32  +     return {
+33  +         "name": node.name,
+34  +         "line": node.lineno,
+35  +         "physical_loc": size,
+36  +         "band": band(size, True),
+37  +         "arguments": len(arguments) - implicit,
+38  +         "control_depth": control_depth(node),
+39  +     }
+40  |
+--------------------------------------------------------------------------------
+46  |         if isinstance(node, ast.ImportFrom):
+    -             aliases.update(item.asname or item.name for item in node.names
+    -                            if item.name in names)
+    -     return any((isinstance(node, ast.Attribute) and node.attr in names)
+    -                or (isinstance(node, ast.Call) and isinstance(node.func, ast.Name)
+    -                    and node.func.id in aliases) for node in ast.walk(tree))
+47  +             aliases.update(item.asname or item.name for item in node.names if item.name in names)
+48  +     return any(
+49  +         (isinstance(node, ast.Attribute) and node.attr in names)
+50  +         or (
+51  +             isinstance(node, ast.Call)
+52  +             and isinstance(node.func, ast.Name)
+53  +             and node.func.id in aliases
+54  +         )
+55  +         for node in ast.walk(tree)
+56  +     )
+57  |
+--------------------------------------------------------------------------------
+62  |     lines = source.splitlines()
+    -     functions = [function_metrics(node) for node in ast.walk(tree)
+    -                  if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))]
+    -     record = {"path": path.relative_to(root).as_posix(), "physical_loc": len(lines),
+    -               "counted_loc": sum(bool(line.strip()) and not line.lstrip().startswith("#")
+    -                                  for line in lines), "band": band(len(lines)),
+    -               "functions": functions, "test_suppression": suppressed(tree)}
+63  +     functions = [
+64  +         function_metrics(node)
+65  +         for node in ast.walk(tree)
+66  +         if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef))
+67  +     ]
+68  +     record = {
+69  +         "path": path.relative_to(root).as_posix(),
+70  +         "physical_loc": len(lines),
+71  +         "counted_loc": sum(
+72  +             bool(line.strip()) and not line.lstrip().startswith("#") for line in lines
+73  +         ),
+74  +         "band": band(len(lines)),
+75  +         "functions": functions,
+76  +         "test_suppression": suppressed(tree),
+77  +     }
+78  |     return record
+--------------------------------------------------------------------------------
+96  |     root = Path(root).resolve()
+    -     paths = sorted(path for folder in ("src", "tests", "tools")
+    -                    for path in (root / folder).rglob("*.py"))
+97  +     paths = sorted(
+98  +         path for folder in ("src", "tests", "tools") for path in (root / folder).rglob("*.py")
+99  +     )
+100 |     records, errors = [], []
+--------------------------------------------------------------------------------
+108 |             records.append(record)
+    -             errors.extend({"path": record["path"], "reason": reason}
+    -                           for reason in violations(record))
+109 +             errors.extend(
+110 +                 {"path": record["path"], "reason": reason} for reason in violations(record)
+111 +             )
+112 |         except (OSError, ValueError, SyntaxError, UnicodeError) as error:
+113 |             errors.append({"path": str(path), "reason": type(error).__name__})
+    -     return {"status": "FAIL" if errors else "PASS", "files": records,
+    -             "errors": errors, "metric": "physical lines including comments and blanks",
+    -             "watch_count": sum(row["band"] == "WATCH" for row in records)}
+114 +     return {
+115 +         "status": "FAIL" if errors else "PASS",
+116 +         "files": records,
+117 +         "errors": errors,
+118 +         "metric": "physical lines including comments and blanks",
+119 +         "watch_count": sum(row["band"] == "WATCH" for row in records),
+120 +     }
+    |
+
+unformatted: File would be reformatted
+   --> tools/candidate_ledger.py:2:1
+    |
+1   | """Materialize every CROSS JOIN row and retain explicit exclusions and witnesses."""
+2   +
+3   | from contextlib import closing
+--------------------------------------------------------------------------------
+13  | def canonical_digest(value):
+    -     raw = json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False,
+    -                      allow_nan=False).encode()
+14  +     raw = json.dumps(
+15  +         value, sort_keys=True, separators=(",", ":"), ensure_ascii=False, allow_nan=False
+16  +     ).encode()
+17  |     return hashlib.sha256(raw).hexdigest()
+--------------------------------------------------------------------------------
+23  |     if not case:
+    -         db.execute("INSERT INTO predicates VALUES (?,?,?,?,?)",
+    -                    (excluded_id, *triple, predicate))
+    -     db.execute("INSERT INTO candidates VALUES (?,?,?,?,?,?)",
+    -                (candidate_id, *triple, "PENDING" if case else "NOT_APPLICABLE", excluded_id))
+24  +         db.execute("INSERT INTO predicates VALUES (?,?,?,?,?)", (excluded_id, *triple, predicate))
+25  +     db.execute(
+26  +         "INSERT INTO candidates VALUES (?,?,?,?,?,?)",
+27  +         (candidate_id, *triple, "PENDING" if case else "NOT_APPLICABLE", excluded_id),
+28  +     )
+29  |     if case:
+    -         db.execute("INSERT INTO case_bindings VALUES (?,?,?)",
+    -                    (candidate_id, case["id"], case["assertion"]))
+30  +         db.execute(
+31  +             "INSERT INTO case_bindings VALUES (?,?,?)",
+32  +             (candidate_id, case["id"], case["assertion"]),
+33  +         )
+34  |         for family in case["families"]:
+    -             db.execute("INSERT INTO assertions VALUES (?,?,?,?,?,?)",
+    -                        (f"{candidate_id}:{family}", candidate_id, case["requirement"],
+    -                         family, test_id(case["id"], family), "ASSERTIONS_PASSED"))
+35  +             db.execute(
+36  +                 "INSERT INTO assertions VALUES (?,?,?,?,?,?)",
+37  +                 (
+38  +                     f"{candidate_id}:{family}",
+39  +                     candidate_id,
+40  +                     case["requirement"],
+41  +                     family,
+42  +                     test_id(case["id"], family),
+43  +                     "ASSERTIONS_PASSED",
+44  +                 ),
+45  +             )
+46  |
+--------------------------------------------------------------------------------
+55  |         create_tables(db)
+    -         for group, kind in (("invariants", "invariant"), ("failure_modes", "failure"),
+    -                             ("gates", "gate")):
+    -             db.executemany("INSERT INTO dimensions VALUES (?,?,?)",
+    -                            [(kind, row["id"], row["requirement"]) for row in data[group]])
+56  +         for group, kind in (
+57  +             ("invariants", "invariant"),
+58  +             ("failure_modes", "failure"),
+59  +             ("gates", "gate"),
+60  +         ):
+61  +             db.executemany(
+62  +                 "INSERT INTO dimensions VALUES (?,?,?)",
+63  +                 [(kind, row["id"], row["requirement"]) for row in data[group]],
+64  +             )
+65  |         triples = db.execute(CROSS_JOIN).fetchall()
+66  |         for index, triple in enumerate(triples, 1):
+67  |             append_candidate(db, index, triple, data)
+    -         db.executemany("INSERT INTO metadata VALUES (?,?)",
+    -                        [("dimensions_digest", canonical_digest(data)),
+    -                         ("source_digest", source_digest), ("expected_count", str(len(triples)))])
+68  +         db.executemany(
+69  +             "INSERT INTO metadata VALUES (?,?)",
+70  +             [
+71  +                 ("dimensions_digest", canonical_digest(data)),
+72  +                 ("source_digest", source_digest),
+73  +                 ("expected_count", str(len(triples))),
+74  +             ],
+75  +         )
+76  |         protect_history(db)
+--------------------------------------------------------------------------------
+82  |         expected = db.execute(CROSS_JOIN).fetchall()
+    -         observed = db.execute("SELECT invariant_id,failure_id,gate_id FROM candidates "
+    -                               "ORDER BY invariant_id,failure_id,gate_id").fetchall()
+    -         invalid = db.execute("SELECT count(*) FROM candidates c LEFT JOIN predicates p "
+    -                              "ON p.id=c.predicate_id WHERE c.status='NOT_APPLICABLE' "
+    -                              "AND (p.reason IS NULL OR trim(p.reason)='')").fetchone()[0]
+    -         applicable = db.execute("SELECT count(*) FROM candidates WHERE status='PENDING'").fetchone()[0]
+83  +         observed = db.execute(
+84  +             "SELECT invariant_id,failure_id,gate_id FROM candidates "
+85  +             "ORDER BY invariant_id,failure_id,gate_id"
+86  +         ).fetchall()
+87  +         invalid = db.execute(
+88  +             "SELECT count(*) FROM candidates c LEFT JOIN predicates p "
+89  +             "ON p.id=c.predicate_id WHERE c.status='NOT_APPLICABLE' "
+90  +             "AND (p.reason IS NULL OR trim(p.reason)='')"
+91  +         ).fetchone()[0]
+92  +         applicable = db.execute(
+93  +             "SELECT count(*) FROM candidates WHERE status='PENDING'"
+94  +         ).fetchone()[0]
+95  |         assertions = db.execute("SELECT count(*) FROM assertions").fetchone()[0]
+96  |         passed = bool(expected) and expected == observed and not invalid
+97  |         passed = passed and applicable > 0 and assertions == applicable * 4
+    -     return {"status": "PASS" if passed else "FAIL", "candidate_count": len(observed),
+    -             "expected_count": len(expected), "applicable": applicable,
+    -             "not_applicable": len(observed) - applicable, "assertions": assertions,
+    -             "sql": CROSS_JOIN, "exclusions_missing_predicates": invalid}
+98  +     return {
+99  +         "status": "PASS" if passed else "FAIL",
+100 +         "candidate_count": len(observed),
+101 +         "expected_count": len(expected),
+102 +         "applicable": applicable,
+103 +         "not_applicable": len(observed) - applicable,
+104 +         "assertions": assertions,
+105 +         "sql": CROSS_JOIN,
+106 +         "exclusions_missing_predicates": invalid,
+107 +     }
+108 |
+    |
+
+unformatted: File would be reformatted
+ --> tools/candidate_model.py:2:1
+  |
+1 | """PG-ADMIT-003: bounded, explicit applicability for the complete candidate space."""
+2 +
+3 | import json
+  |
+
+unformatted: File would be reformatted
+  --> tools/candidate_sql.py:4:74
+   |
+3  | DDL = (
+   -     "CREATE TABLE dimensions(kind TEXT,id TEXT,requirement TEXT NOT NULL,"
+   -     "PRIMARY KEY(kind,id))",
+4  +     "CREATE TABLE dimensions(kind TEXT,id TEXT,requirement TEXT NOT NULL,PRIMARY KEY(kind,id))",
+5  |     "CREATE TABLE predicates(id TEXT PRIMARY KEY,invariant_id TEXT,failure_id TEXT,"
+--------------------------------------------------------------------------------
+28 |
+   - TABLES = ("dimensions", "predicates", "candidates", "metadata", "assertions", "executions",
+   -           "supersessions", "causal_edges", "causal_witnesses", "case_bindings")
+29 + TABLES = (
+30 +     "dimensions",
+31 +     "predicates",
+32 +     "candidates",
+33 +     "metadata",
+34 +     "assertions",
+35 +     "executions",
+36 +     "supersessions",
+37 +     "causal_edges",
+38 +     "causal_witnesses",
+39 +     "case_bindings",
+40 + )
+41 |
+--------------------------------------------------------------------------------
+51 |         for operation in ("UPDATE", "DELETE"):
+   -             db.execute(f"CREATE TRIGGER freeze_{table}_{operation} BEFORE {operation} "
+   -                        f"ON {table} BEGIN SELECT RAISE(ABORT,'APPEND_ONLY_LEDGER'); END")
+52 +             db.execute(
+53 +                 f"CREATE TRIGGER freeze_{table}_{operation} BEFORE {operation} "
+54 +                 f"ON {table} BEGIN SELECT RAISE(ABORT,'APPEND_ONLY_LEDGER'); END"
+55 +             )
+   |
+
+51 files would be reformatted, 7 files already formatted

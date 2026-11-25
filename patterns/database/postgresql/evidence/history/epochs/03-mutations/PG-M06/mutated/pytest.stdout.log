@@ -1,0 +1,10 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+______________________________ test_active_guard _______________________________
+tests/test_mutation_witnesses.py:26: in test_active_guard
+    with pytest.raises(psycopg.Error, match="AUTHORITY_DENIED"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E   Failed: DID NOT RAISE Error
+=========================== short test summary info ============================
+FAILED tests/test_mutation_witnesses.py::test_active_guard - Failed: DID NOT ...
+1 failed in 1.95s

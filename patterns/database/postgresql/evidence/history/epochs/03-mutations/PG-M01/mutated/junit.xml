@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.046" timestamp="2026-11-04T15:09:26.984787+07:00" hostname="18a71ec14d7e"><testcase classname="tests.test_streaming_parity" name="test_all_historical_source_vectors_match_with_changed_packetization" time="0.003"><failure message="AssertionError: upstream-00&#10;assert [[0, 22, 2057...0cb53b'], ...] == [[0, 35, 34, ...fccb59'], ...]&#10;  &#10;  At index 0 diff: [0, 22, 2057759323498015592, 'content', '22cb4df00cddd6067ad5cfa2bba9857f21a06843e1a6e39ad1a68cb9a45ab8b7'] != [0, 35, 34, 'content', 'f12dd12340cb84e4d0d9958d62be7c59bb8f7243a7420fd043177ac542a26aaa']&#10;  Left contains 3 more items, first extra item: [1966, 1988, 2230825541439854086, 'content', '6e0478fd7625aaeb7669144665854dd1f1209b3d8b3bf413cce9919eea2e716f']&#10;[+1 more line; full report in element text]">tests/test_streaming_parity.py:26: in test_all_historical_source_vectors_match_with_changed_packetization
+    assert actual == vector["expected"], vector["id"]
+E   AssertionError: upstream-00
+E   assert [[0, 22, 2057...0cb53b'], ...] == [[0, 35, 34, ...fccb59'], ...]
+E     
+E     At index 0 diff: [0, 22, 2057759323498015592, 'content', '22cb4df00cddd6067ad5cfa2bba9857f21a06843e1a6e39ad1a68cb9a45ab8b7'] != [0, 35, 34, 'content', 'f12dd12340cb84e4d0d9958d62be7c59bb8f7243a7420fd043177ac542a26aaa']
+E     Left contains 3 more items, first extra item: [1966, 1988, 2230825541439854086, 'content', '6e0478fd7625aaeb7669144665854dd1f1209b3d8b3bf413cce9919eea2e716f']
+E     Use -v to get more diff</failure></testcase></testsuite></testsuites>

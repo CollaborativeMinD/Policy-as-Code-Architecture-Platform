@@ -1,0 +1,20 @@
+{
+  "bluf": "# RDP-B03 \u2014 State\n\n## 1. BLUF\nApply explicit PACE-T transition order and hysteresis without string ordering. Use the pure delta function for this small reflex model. Added abstraction earns its cost only when the declared variation or custody is needed.\n\n",
+  "identity": "## 2. Identity and contracts\nVersion 1.0.0; RDP-B03-INV-001. Strict frozen Pydantic contracts reject extra fields and invalid bounds. Source pins live in manifest.json and catalog.json. Engineering reference only; no operational or promotion authority. FF-RDP-STATE-01 / RDP-EQ-01\n\n",
+  "problem": "## 3. Problem and anti-pattern\nRecovery fallbacks reopen TERMINAL, or stale history drives transitions. The live negative witness below runs a bounded local counterexample or forbidden input. It is an educational defect, not privileged service code.\n\n",
+  "mechanism": "## 4. Mechanism and simpler alternative\ntransition(Tick); two-of-three soft demotion, five clear recovery, terminal absorption.\n\nSimpler alternative: pure delta plus immutable policy/history. Responsibilities and associations are visible in the actual implementation. No inherited scanner/provider authority is copied.\n\nThe source below identifies the actual interfaces, constructor dependencies and associations. The educational fixture shows the invalid input and any deliberately defective comparison.\n\n",
+  "inputs": "## 6. Worked inputs\nChoose nominal or edge. Declared bounds are enforced by contracts.py. Both choices recompute a positive result and an independent negative predicate. The JSON output exposes the exact input and output.\n\n",
+  "pressure": "## 8. Behavior under pressure\nFailure hypothesis: invalid transition or stale history. A True negative_detected predicate means the forbidden behavior was rejected or the defective fixture differed from the lawful oracle. Tests include boundary and exception/replay pressure as applicable.\n\n",
+  "applicability": "## 9. Applicability gate\nApply explicit PACE-T transition order and hysteresis without string ordering. Use the pure delta function for this small reflex model.\n\nThe pure delta plus immutable policy/history comparison avoids carrying a hierarchy when a plain function or immutable table satisfies the same contract.\n\nAlternative pattern: Strategy when its documented variation is the actual problem. This pattern costs extra contracts, classes, state or dispatch; prefer the simpler alternative unless its ownership/variation boundary is required.\n\n",
+  "reproducibility": "## 10. Reproducibility and non-claims\nFrom repository root: `uv run --frozen pytest -q patterns/behavioral/state/tests`. Run `uv run --frozen marimo run patterns/behavioral/state/notebook.py`. Python/marimo versions are frozen in uv.lock. Evidence is source-bound in evidence/qualification.json; digests in manifest.json. Native script/export is separate from local Hub/browser qualification. No physics, hostile-host isolation, distributed exactly-once, production identity, or human promotion claim.\n",
+  "invalid_model": "Tick",
+  "invalid_payload": {
+    "state": "PRIMARY",
+    "soft_failures": [],
+    "recovery_streak": 0,
+    "pressure": false,
+    "hard_terminal": false,
+    "emergency": false,
+    "history_epoch": 2
+  }
+}

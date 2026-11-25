@@ -1,0 +1,19 @@
+--- original/src/hmt_native/adversarial_agents/n051_ceilings.py
++++ overlay/src/hmt_native/adversarial_agents/n051_ceilings.py
+@@ -1,10 +1,10 @@
+ from __future__ import annotations
+-from . import api
++from .n012_resource import resource
+ 
+ 
+ def ceilings(output_bytes: int, memory_bytes: int) -> None:
+-    api.resource.setrlimit(api.resource.RLIMIT_FSIZE, (output_bytes, output_bytes))
+-    api.resource.setrlimit(api.resource.RLIMIT_AS, (memory_bytes, memory_bytes))
+-    api.resource.setrlimit(api.resource.RLIMIT_CPU, (12, 12))
+-    api.resource.setrlimit(api.resource.RLIMIT_CORE, (0, 0))
+-    api.resource.setrlimit(api.resource.RLIMIT_NOFILE, (64, 64))
++    resource.setrlimit(resource.RLIMIT_FSIZE, (output_bytes, output_bytes))
++    resource.setrlimit(resource.RLIMIT_AS, (memory_bytes, memory_bytes))
++    resource.setrlimit(resource.RLIMIT_CPU, (12, 12))
++    resource.setrlimit(resource.RLIMIT_CORE, (0, 0))
++    resource.setrlimit(resource.RLIMIT_NOFILE, (64, 64))

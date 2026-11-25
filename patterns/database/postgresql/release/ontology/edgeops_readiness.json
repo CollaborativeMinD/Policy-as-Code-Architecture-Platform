@@ -1,0 +1,174 @@
+{
+  "table": "readiness",
+  "kb_id": "EdgeOps_Orchestration_ReadyDeploy",
+  "declaration_source": "project_sources/06-EdgeOps_Orchestration_ReadyDeploy_FieldDeclarations.xml",
+  "declaration_sha256": "df79864474a2ec0aea99717bb31f4264b4c285af0c0296bf8d3070ad5296c830",
+  "columns": [
+    "deployment_unit_id",
+    "topology_choice",
+    "service_name",
+    "dependency_ref",
+    "probe_policy_ref",
+    "pace_lane",
+    "rollback_point_ref",
+    "orchestration_status",
+    "shutdown_behavior_ref",
+    "evidence_id"
+  ],
+  "column_types": {
+    "deployment_unit_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "topology_choice": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "service_name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "dependency_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "probe_policy_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "pace_lane": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "rollback_point_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "orchestration_status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "shutdown_behavior_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    },
+    "evidence_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "authority": "local serialization choice; source XML declares names only"
+    }
+  },
+  "rows": [
+    {
+      "deployment_unit_id": "PG-UNIT-SOFTWARE-P",
+      "topology_choice": "fixed child process with external PostgreSQL and Redis",
+      "service_name": "hmt-pg-worker",
+      "dependency_ref": "uv.lock",
+      "probe_policy_ref": "src/hmt_pg_patterns/worker_service.py::_state",
+      "pace_lane": "P",
+      "rollback_point_ref": null,
+      "orchestration_status": "software_reference_only_not_deployed",
+      "shutdown_behavior_ref": "src/hmt_pg_patterns/worker_io.py::process_deadline",
+      "evidence_id": "evidence/software/summary.json"
+    },
+    {
+      "deployment_unit_id": "PG-UNIT-SOFTWARE-A",
+      "topology_choice": "database effects continue while Redis projection is unavailable",
+      "service_name": "hmt-pg-worker",
+      "dependency_ref": "uv.lock",
+      "probe_policy_ref": "src/hmt_pg_patterns/worker_service.py::_state",
+      "pace_lane": "A",
+      "rollback_point_ref": null,
+      "orchestration_status": "software_reference_only_not_deployed",
+      "shutdown_behavior_ref": "deployment/hmt-pg-worker.service",
+      "evidence_id": "evidence/software/summary.json"
+    },
+    {
+      "deployment_unit_id": "PG-UNIT-EXTERNAL-QUALIFICATION",
+      "topology_choice": "Tailcat pinned peer to fixed LOGIN worker",
+      "service_name": "hmt-pg-worker",
+      "dependency_ref": "qualification/tailcat_wire_test.py",
+      "probe_policy_ref": "qualification/native_worker_test.py",
+      "pace_lane": null,
+      "rollback_point_ref": null,
+      "orchestration_status": "NOT_QUALIFIED",
+      "shutdown_behavior_ref": "deployment/hmt-pg-worker.service",
+      "evidence_id": "evidence/history/epochs/03-tailcat.xml"
+    }
+  ],
+  "field_dispositions": [
+    {
+      "row_index": 0,
+      "field": "rollback_point_ref",
+      "status": "not_applicable",
+      "reason": "This new branch has no prior admitted PostgreSQL release; operator stop/preserve-custody instructions remain in Runbook.md."
+    },
+    {
+      "row_index": 1,
+      "field": "rollback_point_ref",
+      "status": "not_applicable",
+      "reason": "This new branch has no prior admitted PostgreSQL release; operator stop/preserve-custody instructions remain in Runbook.md."
+    },
+    {
+      "row_index": 2,
+      "field": "pace_lane",
+      "status": "not_qualified",
+      "reason": "No operational lane is inferred from a blocked external transport/profile attempt."
+    },
+    {
+      "row_index": 2,
+      "field": "rollback_point_ref",
+      "status": "not_applicable",
+      "reason": "This new branch has no prior admitted PostgreSQL release; operator stop/preserve-custody instructions remain in Runbook.md."
+    },
+    {
+      "row_index": 0,
+      "field": "rollback_point_ref",
+      "status": "not_applicable",
+      "reason": "No preceding admitted PostgreSQL release or live deployment is claimed."
+    },
+    {
+      "row_index": 1,
+      "field": "rollback_point_ref",
+      "status": "not_applicable",
+      "reason": "No preceding admitted PostgreSQL release or live deployment is claimed."
+    },
+    {
+      "row_index": 2,
+      "field": "rollback_point_ref",
+      "status": "not_applicable",
+      "reason": "No preceding admitted PostgreSQL release or live deployment is claimed."
+    }
+  ],
+  "csv_null_token": "\\N",
+  "release_binding": "final_source_and_observed_receipts"
+}

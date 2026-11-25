@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "fresh_apply": "fixture callback applied; upstream preserved and both hashes verified",
+  "idempotent_apply": "fixture callback already applied and hash verified",
+  "upstream_snapshot_exact": true,
+  "one_byte_drift_rejected": true
+}

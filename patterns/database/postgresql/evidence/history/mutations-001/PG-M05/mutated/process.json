@@ -1,0 +1,25 @@
+{
+  "status": "FAIL",
+  "argv": [
+    "/workspace/scratch/e7495113964e/build/database_design_patterns/postgresql/.venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "--tb=short",
+    "-o",
+    "addopts=",
+    "-p",
+    "tools.mutation_probe",
+    "--junitxml=/workspace/scratch/e7495113964e/work/final/mutations/PG-M05/mutated/junit.xml",
+    "tests/test_mutation_witnesses.py::test_epoch_guard_new_stream"
+  ],
+  "returncode": 1,
+  "reason": "COMPLETE",
+  "seconds": 2.707675172998279,
+  "captured_bytes": 651,
+  "stdout": "pytest.stdout.log",
+  "stderr": "pytest.stderr.log",
+  "import_verified": true,
+  "source_unchanged": true,
+  "source_digest": "cc66cc5db07861e47690416f8079437785b8fd657f214f9dc9950fd6be1447d7"
+}

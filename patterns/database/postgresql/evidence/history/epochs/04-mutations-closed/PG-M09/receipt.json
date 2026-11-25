@@ -1,0 +1,85 @@
+{
+  "id": "PG-M09",
+  "requirement": "PG-CHECKPOINT-001",
+  "path": "src/hmt_pg_patterns/checkpoints_lua.py",
+  "selector": "tests/test_checkpoints_cache.py::test_redis_ordering_above_float_precision",
+  "outcome": "caught",
+  "source_digest": "f8176d2758232ae58f0ad7d87906df6d9a07d430f813017899093228ac98b886",
+  "mutated_source_digest": "646b48fe86f003479240e5c14369e235e70827fe2491ced1e75d37c9812c379e",
+  "restored_source_digest": "f8176d2758232ae58f0ad7d87906df6d9a07d430f813017899093228ac98b886",
+  "restoration_observed": true,
+  "restored_file_sha256": "70043ac9022ee1aca096ba7ad2cac4ee83f6ad92849a2e580c85cc56efc27722",
+  "application_error": null,
+  "mutation_process": {
+    "status": "FAIL",
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--tb=short",
+      "-o",
+      "addopts=",
+      "-p",
+      "tools.mutation_probe",
+      "--junitxml=/workspace/scratch/e7495113964e/work/epochs/04-mutations-closed/PG-M09/mutated/junit.xml",
+      "tests/test_checkpoints_cache.py::test_redis_ordering_above_float_precision"
+    ],
+    "returncode": 1,
+    "reason": "COMPLETE",
+    "seconds": 0.851954014000512,
+    "captured_bytes": 638,
+    "stdout": "pytest.stdout.log",
+    "stderr": "pytest.stderr.log",
+    "import_verified": true,
+    "source_unchanged": true,
+    "source_digest": "646b48fe86f003479240e5c14369e235e70827fe2491ced1e75d37c9812c379e"
+  },
+  "mutation_tests": {
+    "valid": true,
+    "tests": 1,
+    "failures": 1,
+    "assertion_failures": 1,
+    "errors": 0,
+    "skipped": 0,
+    "test_ids": [
+      "tests/test_checkpoints_cache.py::test_redis_ordering_above_float_precision"
+    ]
+  },
+  "restoration_process": {
+    "status": "PASS",
+    "argv": [
+      "/workspace/scratch/e7495113964e/work/.venv/bin/python",
+      "-m",
+      "pytest",
+      "-q",
+      "--tb=short",
+      "-o",
+      "addopts=",
+      "-p",
+      "tools.mutation_probe",
+      "--junitxml=/workspace/scratch/e7495113964e/work/epochs/04-mutations-closed/PG-M09/restored/junit.xml",
+      "tests/test_checkpoints_cache.py::test_redis_ordering_above_float_precision"
+    ],
+    "returncode": 0,
+    "reason": "COMPLETE",
+    "seconds": 0.9364567510019697,
+    "captured_bytes": 98,
+    "stdout": "pytest.stdout.log",
+    "stderr": "pytest.stderr.log",
+    "import_verified": true,
+    "source_unchanged": true,
+    "source_digest": "f8176d2758232ae58f0ad7d87906df6d9a07d430f813017899093228ac98b886"
+  },
+  "restoration_tests": {
+    "valid": true,
+    "tests": 1,
+    "failures": 0,
+    "assertion_failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "test_ids": [
+      "tests/test_checkpoints_cache.py::test_redis_ordering_above_float_precision"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "argv": [
+    "/workspace/scratch/e7495113964e/work/.analyzers/bin/python",
+    "-m",
+    "mypy",
+    "src/hmt_pg_patterns"
+  ],
+  "returncode": 0,
+  "reason": "COMPLETE",
+  "seconds": 0.24778276999859372,
+  "captured_bytes": 44,
+  "stdout": "pytest.stdout.log",
+  "stderr": "pytest.stderr.log"
+}
