@@ -12,3 +12,7 @@ The release contains 33 verified bindings with zero unresolved holds. The workfl
 Respect branch-local instructions. Preserve the imported evidence and record new witness results in the factory receipts. Keep each adapter's settings closed. PostgreSQL verification uses software fixtures.
 
 Test a policy variation with a copied TOML and an exact selection. Run the default campaign when changing shared binding code or release defaults.
+
+## Live operator console
+
+Use the [console guide](Console.md) to observe inventory, publish scoped TOML changes, run admitted tasks and verify their receipts.

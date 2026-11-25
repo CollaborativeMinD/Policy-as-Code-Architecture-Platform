@@ -41,3 +41,7 @@ The OODA starter chooses two profiles. The full selection chooses nine from the 
 5. **Package and ship.** Verify each ZIP against its receipt. For a repository release, wait for local Forgejo to admit the exact commit before pushing to GitHub.
 
 Keep the TOML selection, ZIP, and receipt together. Use the campaign report to trace each archive to its configuration and source. [Runbook](Runbook.md) · [Agent instructions](AGENTS.md) · [Factory skill](SKILL.md)
+
+## Live operator console
+
+Use the [console guide](Console.md) to observe inventory, publish scoped TOML changes, run admitted tasks and verify their receipts.

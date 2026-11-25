@@ -44,3 +44,7 @@ On the receiving system, unpack into an empty directory and follow the bundled R
 3. Push the same commit to GitHub and verify the remote ref. Keep the local run and artifact as the admission record.
 
 To reproduce the gate in a local Python 3.13 environment, install the lock and run `python -m pip check`, `python -m unittest -v`, and `python qualify_bindings.py ./qualified-bindings` with a fresh destination. [Forgejo workflow](.forgejo/workflows/qualification.yml)
+
+## Live operator console
+
+Use the [console guide](Console.md) to observe inventory, publish scoped TOML changes, run admitted tasks and verify their receipts.

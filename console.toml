@@ -1,0 +1,41 @@
+version = 1
+component = "Architecture Platform"
+host = "127.0.0.1"
+port = 8774
+protocol = "2026-07-28"
+poll_seconds = 3
+
+[roles]
+viewer = ["inventory.read"]
+admin = ["inventory.read", "policy.open", "policy.apply"]
+agent = ["inventory.read", "task.execute"]
+
+[resources.behavioral-strategy]
+operation = "selection.export"
+editable_inputs = []
+source = "selections/behavioral-strategy.toml"
+[resources.behavioral-strategy.inputs]
+
+[resources.creational-builder]
+operation = "selection.export"
+editable_inputs = []
+source = "selections/creational-builder.toml"
+[resources.creational-builder.inputs]
+
+[resources.structural-adapter]
+operation = "selection.export"
+editable_inputs = []
+source = "selections/structural-adapter.toml"
+[resources.structural-adapter.inputs]
+
+[resources.postgres-transaction]
+operation = "selection.export"
+editable_inputs = []
+source = "selections/postgres-transaction.toml"
+[resources.postgres-transaction.inputs]
+
+[resources.ooda-starter]
+operation = "selection.export"
+editable_inputs = []
+source = "selections/ooda-starter.toml"
+[resources.ooda-starter.inputs]

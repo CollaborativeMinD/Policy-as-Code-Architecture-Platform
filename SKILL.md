@@ -14,3 +14,7 @@ Start from the 33 verified bindings. The release scope has zero unresolved holds
 5. For an authorized repository release, confirm local Forgejo admitted the exact commit. Read back the artifact before publishing the commit.
 
 Match the receipt to the selected policy, original evidence, observed effect, and ZIP. [Runbook](Runbook.md) · [Continuity policy](patterns/DESIGN_PATTERNS.md)
+
+## Live operator console
+
+Use the [console guide](Console.md) to observe inventory, publish scoped TOML changes, run admitted tasks and verify their receipts.
